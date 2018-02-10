@@ -1,8 +1,8 @@
 # motley
 CSS Framework based on ITCSS
-
-`npm install`
- Run the server to get hbs components
-`node app.js`
- Open another Terminal and run:
-`grunt watch`
+ 
+ Run `npm install`
+ #### To get hbs components
+ Run `node app.js`
+ ### ( In a sepearate window) To watch CSS 
+ Run `grunt watch`
