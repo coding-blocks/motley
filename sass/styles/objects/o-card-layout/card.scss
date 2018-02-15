@@ -1,0 +1,12 @@
+.o-layout-card  {
+  display: block;
+  @include padding-mixin(25.5px , null, null, 19.5px);
+}
+
+.o-image-card {
+  margin-bottom: 22.5px;
+}
+
+.o-text-card {
+  margin-bottom: 18.5px;
+}

@@ -10,4 +10,8 @@ $global-transition: all 300ms ease-in-out !default;
 $global-font-family: Effra;
 $global-font-style: normal !default;
 $global-font-weight: normal !default;
-$global-font-src: local('Effra'), url('../../../public/fonts/Effra_Std_Rg.woff') format('woff');
+$global-font-src: local('Effra'), url('../../../public/fonts/Effra_Std_Rg.ttf') format('ttf');
+
+$global-container-width: 551px;
+$global-container-height: 106px;
+
