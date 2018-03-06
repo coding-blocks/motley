@@ -252,11 +252,21 @@ th {
 img {
   max-width: 100% !important; }
 
+button {
+  background: none;
+  width: 100%;
+  height: 100%;
+  border: none; }
+
+ul {
+  list-style: none; }
+
 .card {
   width: 283px;
   height: 328px;
   box-shadow: 0 20px 57px 0 rgba(51, 51, 51, 0.1);
-  border: solid 0.5px #e8e8e8; }
+  border: solid 0.5px #e8e8e8;
+  background: #ffffff; }
 
 .card-text {
   width: 181px;
@@ -277,6 +287,64 @@ img {
 .card-image {
   width: 58.5px;
   height: 65.5px; }
+
+.button-dashed, .button-solid {
+  font-family: "Effra";
+  font-size: 18.1px;
+  font-weight: inherit;
+  text-align: left; }
+
+.button-dashed {
+  width: 173px;
+  height: 44px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -ms-border-radius: 22px;
+  border-radius: 22px;
+  background: #ffffff;
+  color: #ed8080; }
+
+.button-solid {
+  width: 94.5px;
+  height: 42.5px;
+  -moz-border-radius: 21.2px;
+  -webkit-border-radius: 21.2px;
+  -ms-border-radius: 21.2px;
+  border-radius: 21.2px;
+  background: linear-gradient(to right, #ed7397, #ec8773);
+  color: #ffffff; }
+
+.nav-list {
+  float: right; }
+
+.nav-items {
+  font-family: Effra;
+  font-size: 18.1px;
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 52px; }
+
+.nav-logo {
+  height: 55.8px;
+  margin-top: 5px;
+  margin-left: 28px; }
+
+.card-stack {
+  margin-left: 140px;
+  position: relative;
+  margin-top: 30px; }
+  .card-stack .card:nth-child(1) {
+    left: 15px;
+    z-index: 99; }
+  .card-stack .card:nth-child(2) {
+    left: 30px;
+    z-index: 98; }
+  .card-stack .card:nth-child(3) {
+    left: 45px;
+    z-index: 97; }
+
+.card-stack .card:nth-child(1), .card-stack .card:nth-child(2), .card-stack .card:nth-child(3) {
+  position: absolute; }
 
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
@@ -1212,12 +1280,25 @@ body {
 .o-layout-card {
   display: block;
   padding-top: 25.5px;
-  padding-left: 19.5px; }
+  padding-left: 19.5px;
+  position: relative;
+  top: 252px;
+  margin-left: -32px; }
+  .o-layout-card .button-solid {
+    margin-left: 140px;
+    position: relative;
+    top: 10px; }
 
 .o-image-card {
   margin-bottom: 22.5px; }
 
 .o-text-card {
   margin-bottom: 18.5px; }
+
+.button-dashed {
+  border: 1px solid; }
+
+.nav-list li {
+  display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */

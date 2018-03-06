@@ -2,6 +2,7 @@
   @include dimensions(283px, 328px);
   box-shadow: 0 20px 57px 0 $card-box-shadow;
   border: solid .5px $card-box-border;
+  background: $white;
 }
 
 .card-text {

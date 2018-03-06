@@ -1,6 +1,8 @@
+@import "settings/settings.color";
 @import "settings/settings.global";
 @import "settings/settings.font";
-@import "settings/settings.color";
+
+@import "_utilities.scss";
 
 @import "_tools.scss";
 
