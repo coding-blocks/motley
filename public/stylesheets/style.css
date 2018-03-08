@@ -1116,12 +1116,16 @@ body {
   padding-top: 25.5px;
   padding-left: 19.5px;
   position: relative;
-  top: 252px;
-  margin-left: -32px; }
+  margin-top: 25.5px; }
   .o-layout-card .button-solid {
     margin-left: 140px;
     position: relative;
     top: 10px; }
+
+.grid {
+  margin-left: 34px;
+  margin-right: 34px;
+  padding: 32px; }
 
 .o-image-card {
   margin-bottom: 22.5px; }
