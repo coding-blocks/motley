@@ -364,6 +364,32 @@ ul {
   margin-top: 2px;
   position: absolute; }
 
+#mentors, .card-mentors:nth-child(1), .card-mentors:nth-child(2), .card-mentors:nth-child(3) {
+  width: 34.5px;
+  height: 34.5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  background-color: #e9e9e9; }
+
+.card-mentors:nth-child(1) {
+  z-index: 100;
+  margin-left: 0px;
+  opacity: 1; }
+
+.card-mentors:nth-child(2) {
+  z-index: 99;
+  margin-left: -20px;
+  opacity: 0.5; }
+
+.card-mentors:nth-child(3) {
+  z-index: 98;
+  margin-left: -40px;
+  opacity: 0; }
+
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1303,8 +1329,8 @@ body {
   margin-top: 25.5px; }
   .o-layout-card .button-solid {
     margin-left: 140px;
-    position: relative;
-    top: 78px; }
+    position: absolute;
+    top: 278px; }
 
 .grid {
   margin-left: 34px;
@@ -1330,6 +1356,7 @@ body {
 .card-stack .o-text-card {
   margin-bottom: 18.5px; }
 .card-stack .button-solid {
-  top: 10px; }
+  top: 10px;
+  position: relative; }
 
 /*# sourceMappingURL=app.css.map */

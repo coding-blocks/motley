@@ -1,0 +1,16 @@
+#mentors {
+  @include dimensions(34.5px, 34.5px);
+  @include border-radius(50%);
+  position: relative;
+  display: inline-block;
+  background-color: $card-mentor;
+}
+
+@for $i from 0 through 2 {
+  .card-mentors:nth-child(#{$i+1}) {
+    @extend #mentors;
+    z-index: 100 - $i;
+    margin-left: - multiply-px($i,20px);
+    opacity: 1 - multiply-px($i,.5);
+  }
+}
