@@ -1,3 +1,7 @@
+.card-layout {
+  margin-top: 22.5px;
+}
+
 .card {
   @include dimensions(283px, 353px);
   box-shadow: 0 20px 57px 0 $card-box-shadow;
