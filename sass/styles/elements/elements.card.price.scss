@@ -1,8 +1,10 @@
 .card-price-details {
   display: inline-block;
-  position: relative;
-  top: 15px;
   padding-right: 18px;
+  position: absolute;
+  top: 305px;
+  max-height: 50px;
+  overflow: hidden;
 }
 
 .card-batches {

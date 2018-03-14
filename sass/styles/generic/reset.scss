@@ -4,7 +4,9 @@
 // Print styles.
 // Inlined to avoid the additional HTTP request: h5bp.com/r
 // ==========================================================================
-
+body {
+  @include font('Effra', 27.6px, normal);
+}
 @media print {
   *,
   *:before,
