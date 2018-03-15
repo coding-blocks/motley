@@ -1,0 +1,27 @@
+.accordian{
+    width: 1239px;
+    @include font('latto', 28.1px, normal);
+    .accordian-head{
+        min-height: 106px;
+        // @include dimensions(1239px, 106px);
+        background-color: $white;
+    }
+    .accordian-li{
+        min-height: 106px;
+        // @include dimensions(1239px, 106px);
+        background-color: $accordian-li;
+        @include border(solid, 0.7px, #cccccc);
+    }
+}
+
+.accordian[data-show=true]{
+    .accordian-li{
+        display: block;
+    }
+}
+
+.accordian[data-show=false]{
+    .accordian-li{
+        display: none;
+    }
+}

@@ -431,6 +431,71 @@ ul {
   .card-batch-details span {
     color: red; }
 
+.accordian {
+  width: 1239px;
+  font-family: "latto";
+  font-size: 28.1px;
+  font-weight: normal; }
+  .accordian .accordian-head {
+    min-height: 106px;
+    background-color: #ffffff; }
+  .accordian .accordian-li {
+    min-height: 106px;
+    background-color: #fdfdfd;
+    border: solid 0.7px #cccccc; }
+
+.accordian[data-show=true] .accordian-li {
+  display: block; }
+
+.accordian[data-show=false] .accordian-li {
+  display: none; }
+
+.accordian-status {
+  font-family: "latto";
+  font-size: 23.9px;
+  font-weight: normal; }
+
+.accordian-li-duration {
+  font-family: "Lato";
+  font-size: 23.9px;
+  font-weight: normal; }
+
+.accordian-li-heading {
+  color: #8dbf75; }
+
+.status-circle .circle-back {
+  width: 51px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+.status-circle .circle-front {
+  width: 39px;
+  height: 39px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform: translateY(14%); }
+
+.status-circle[data-completed="true"] .circle-back {
+  background-color: #d7f1d3; }
+
+.status-circle[data-completed="true"] .circle-front {
+  background-color: #8dbf75; }
+
+.status-circle[data-completed="true"] .circle-front::after {
+  content: "V"; }
+
+.status-circle[data-completed="false"] .circle-back {
+  background-color: #bebebe; }
+
+.status-circle[data-completed="false"] .circle-front {
+  background-color: #ffffff; }
+
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
  * Copyright 2011-2015 Twitter, Inc.
