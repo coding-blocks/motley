@@ -8,7 +8,8 @@
 .card-mentor {
    padding-bottom: 10px;
    max-height: 67px;
-   margin-top: 67px;
+   margin-top: 37px;
+   margin-bottom: 25px;
 }
 
 .card-mentor-image {
@@ -29,12 +30,14 @@
   display: inline-block;
   margin-left: 20px;
   width: 161px;
+  font-size: 14.1px;
 }
 
 .card-mentor-name {
   margin-top: 7.5px;
-  max-height: 35px;
+  max-height: 45px;
   overflow: hidden;
+  font-size: 17.1px;
 }
 
 .card-mentor-divider {

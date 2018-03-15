@@ -1,8 +1,7 @@
 @font-face {
-  font-family: Effra;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  src: local("Effra"), url("../../../public/fonts/Effra_Std_Rg.ttf") format("ttf"); }
+  font-weight: normal; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -184,7 +183,7 @@ th {
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 body {
-  font-family: "Effra";
+  font-family: "Raleway";
   font-size: 27.6px;
   font-weight: normal; }
 
@@ -266,15 +265,16 @@ ul {
 .card-text {
   width: 296px;
   height: 53px;
-  font-family: Effra-Regular;
+  font-family: "Raleway";
   font-size: 17.1px;
   font-weight: 300;
-  color: #333333; }
+  color: #333333;
+  overflow: hidden; }
 
 .card-heading {
-  width: 209px;
+  width: 309px;
   height: 48px;
-  font-family: Effra-Regular;
+  font-family: "Raleway";
   font-size: 22.6px;
   font-weight: 300;
   color: #333333; }
@@ -284,7 +284,7 @@ ul {
   height: 91px; }
 
 .button-dashed, .button-solid {
-  font-family: "Effra";
+  font-family: "Raleway";
   font-size: 18.1px;
   font-weight: inherit;
   text-align: left; }
@@ -313,7 +313,7 @@ ul {
   float: right; }
 
 .nav-items {
-  font-family: Effra;
+  font-family: "Raleway", sans-serif;
   font-size: 18.1px;
   font-weight: normal;
   display: inline-block;
@@ -374,7 +374,8 @@ ul {
 .card-mentor {
   padding-bottom: 10px;
   max-height: 67px;
-  margin-top: 67px; }
+  margin-top: 37px;
+  margin-bottom: 25px; }
 
 .card-mentor-image {
   display: inline-block;
@@ -399,12 +400,14 @@ ul {
 .card-mentor-text {
   display: inline-block;
   margin-left: 20px;
-  width: 161px; }
+  width: 161px;
+  font-size: 14.1px; }
 
 .card-mentor-name {
   margin-top: 7.5px;
-  max-height: 35px;
-  overflow: hidden; }
+  max-height: 45px;
+  overflow: hidden;
+  font-size: 17.1px; }
 
 .card-mentor-divider {
   border: 0.5px solid #e9e9e9;
@@ -1255,7 +1258,7 @@ body {
 
 .classroom-header .classroom-text {
   display: inline-block;
-  font-family: "Effra";
+  font-family: "Raleway";
   font-size: 27.6px;
   font-weight: normal;
   transform: translateY(80%);
