@@ -1,5 +1,5 @@
 #mentors {
-  @include dimensions(34.5px, 34.5px);
+  @include dimensions(50px, 50px);
   @include border-radius(50%);
   position: relative;
   display: inline-block;
@@ -8,6 +8,7 @@
 .card-mentor {
    padding-bottom: 10px;
    max-height: 67px;
+   margin-top: 67px;
 }
 
 .card-mentor-image {
