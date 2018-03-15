@@ -6,12 +6,5 @@
      display: inline-block;
    }
 
-   .classroom-text {
-     display: inline-block;
-     @include font('Raleway', 27.6px, normal);
-     transform: translateY(80%);
-     text-align: left;
-     color: #333333;
-   }
 }
 

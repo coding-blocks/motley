@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal; }
 
@@ -183,7 +183,7 @@ th {
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 body {
-  font-family: "Raleway";
+  font-family: "Lato", sans-serif;
   font-size: 27.6px;
   font-weight: normal; }
 
@@ -265,7 +265,7 @@ ul {
 .card-text {
   width: 296px;
   height: 53px;
-  font-family: "Raleway";
+  font-family: "Lato", sans-serif;
   font-size: 17.1px;
   font-weight: 300;
   color: #333333;
@@ -274,7 +274,7 @@ ul {
 .card-heading {
   width: 309px;
   height: 48px;
-  font-family: "Raleway";
+  font-family: "Lato", sans-serif;
   font-size: 22.6px;
   font-weight: 300;
   color: #333333; }
@@ -284,8 +284,8 @@ ul {
   height: 91px; }
 
 .button-dashed, .button-solid {
-  font-family: "Raleway";
-  font-size: 18.1px;
+  font-family: "Lato", sans-serif;
+  font-size: 19.9px;
   font-weight: inherit;
   text-align: left; }
 
@@ -313,14 +313,14 @@ ul {
   float: right; }
 
 .nav-items {
-  font-family: "Raleway", sans-serif;
-  font-size: 18.1px;
+  font-family: "Lato", sans-serif;
+  font-size: 19.9px;
   font-weight: normal;
   display: inline-block;
   margin-right: 52px; }
 
 .nav-logo {
-  height: 55.8px;
+  height: 75px;
   margin-top: 5px;
   margin-left: 28px; }
 
@@ -400,7 +400,7 @@ ul {
 .card-mentor-text {
   display: inline-block;
   margin-left: 20px;
-  width: 161px;
+  width: 191px;
   font-size: 14.1px; }
 
 .card-mentor-name {
@@ -430,6 +430,16 @@ ul {
   font-size: 19.1px; }
   .card-batch-details span {
     color: red; }
+
+.classroom-text {
+  text-transform: uppercase;
+  font-size: 39.3px;
+  transform: translateY(50%); }
+
+.classroom-para {
+  font-size: 24.3px;
+  text-align: left;
+  width: 698px; }
 
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
@@ -1218,7 +1228,7 @@ body {
     margin-left: 150px;
     position: absolute;
     top: 415px;
-    left: 108px; }
+    left: 98px; }
 
 .grid {
   margin-left: 34px;
@@ -1255,12 +1265,3 @@ body {
 
 .classroom-header .classroom-image {
   display: inline-block; }
-
-.classroom-header .classroom-text {
-  display: inline-block;
-  font-family: "Raleway";
-  font-size: 27.6px;
-  font-weight: normal;
-  transform: translateY(80%);
-  text-align: left;
-  color: #333333; }
