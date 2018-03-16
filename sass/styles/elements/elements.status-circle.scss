@@ -1,35 +1,24 @@
 .status-circle {
-    .circle-back{
-        @include dimensions(51px, 50px);
-        @include border-radius(50%);
-    }
-    .circle-front{
-        @include dimensions(39px, 39px);
-        @include border-radius(50%);
-        margin: 0 auto;
-        transform: translateY(14%);
-    }
+    @include dimensions(51px, 51px);   
+}
+
+.circle-back{
+    @include dimensions(51px, 51px);
+    @include border-radius(50%);
+    background-color: $status-back-complete;
+}
+.circle-front{
+    @include dimensions(39px, 39px);
+    @include border-radius(50%);
+    background-color: $status-front-complete;
+    margin: 0 auto;
+    transform: translateY(14%);
 }
 
 .status-circle[data-completed= "true"]{
-    .circle-back{
-        background-color: $status-back-complete;
-    }
-
-    .circle-front{
-        background-color: $status-front-complete;
-    }
-    .circle-front::after{
-        content: "V";
-    }
+    
 }
 
 .status-circle[data-completed= "false"]{
-    .circle-back{
-        background-color: $status-back-incomplete;
-    }
-
-    .circle-front{
-        background-color: $white;
-    }
+    
 }

@@ -14,6 +14,10 @@ app.get('/overview', function(req,res){
     res.render('overview');
 })
 
+app.get('/accordian', function(req,res){
+    res.render('accordian');
+})
+
 // Set server port
 app.listen(4000);
 console.log('server is running');

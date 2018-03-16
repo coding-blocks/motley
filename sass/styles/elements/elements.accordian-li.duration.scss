@@ -1,3 +1,6 @@
 .accordian-li-duration{
-    @include font('Lato', 23.9px, normal);
+    @include padding-mixin(0,0,0,0);
+    font-size: 24px;
+    text-align: right;
+    color: $default-accordian-font;
 }
