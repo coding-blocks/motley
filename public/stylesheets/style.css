@@ -1,8 +1,7 @@
 @font-face {
-  font-family: Effra;
+  font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  src: local("Effra"), url("../../../public/fonts/Effra_Std_Rg.ttf") format("ttf"); }
+  font-weight: normal; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -183,6 +182,11 @@ th {
   padding: 0; }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 27.6px;
+  font-weight: normal; }
+
 @media print {
   *,
   *:before,
@@ -252,35 +256,36 @@ ul {
   margin-top: 22.5px; }
 
 .card {
-  width: 283px;
-  height: 353px;
+  width: 403px;
+  height: 503px;
   box-shadow: 0 20px 57px 0 rgba(51, 51, 51, 0.1);
   border: solid 0.5px #e8e8e8;
   background: #ffffff; }
 
 .card-text {
-  width: 181px;
+  width: 296px;
   height: 53px;
-  font-family: Effra-Regular;
-  font-size: 15.8px;
+  font-family: "Lato", sans-serif;
+  font-size: 17.1px;
   font-weight: 300;
-  color: #333333; }
+  color: #333333;
+  overflow: hidden; }
 
 .card-heading {
-  width: 189px;
-  height: unset;
-  font-family: Effra-Regular;
-  font-size: 20.1px;
+  width: 309px;
+  height: 48px;
+  font-family: "Lato", sans-serif;
+  font-size: 22.6px;
   font-weight: 300;
   color: #333333; }
 
 .card-image {
-  width: 58.5px;
-  height: 65.5px; }
+  width: 81px;
+  height: 91px; }
 
 .button-dashed, .button-solid {
-  font-family: "Effra";
-  font-size: 18.1px;
+  font-family: "Lato", sans-serif;
+  font-size: 19.9px;
   font-weight: inherit;
   text-align: left; }
 
@@ -295,12 +300,12 @@ ul {
   color: #ed8080; }
 
 .button-solid {
-  width: 94.5px;
-  height: 42.5px;
-  -moz-border-radius: 21.2px;
-  -webkit-border-radius: 21.2px;
-  -ms-border-radius: 21.2px;
-  border-radius: 21.2px;
+  width: 135px;
+  height: 60px;
+  -moz-border-radius: 42.5px;
+  -webkit-border-radius: 42.5px;
+  -ms-border-radius: 42.5px;
+  border-radius: 42.5px;
   background: linear-gradient(to right, #ed7397, #ec8773);
   color: #ffffff; }
 
@@ -308,14 +313,14 @@ ul {
   float: right; }
 
 .nav-items {
-  font-family: Effra;
-  font-size: 18.1px;
+  font-family: "Lato", sans-serif;
+  font-size: 19.9px;
   font-weight: normal;
   display: inline-block;
   margin-right: 52px; }
 
 .nav-logo {
-  height: 55.8px;
+  height: 75px;
   margin-top: 5px;
   margin-left: 28px; }
 
@@ -341,22 +346,23 @@ ul {
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  border: 3px solid #ff6666;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #ff6666;
   position: absolute;
-  top: 6px;
-  left: 245px; }
+  top: 20px;
+  left: 355px; }
 
 .expert-text {
-  font-size: 12px;
-  left: 239px;
+  font-size: 13px;
+  left: 350px;
   margin-top: 2px;
-  position: absolute; }
+  position: absolute;
+  top: 50px; }
 
 #mentors, .card-mentors:nth-child(1), .card-mentors:nth-child(2), .card-mentors:nth-child(3) {
-  width: 34.5px;
-  height: 34.5px;
+  width: 50px;
+  height: 50px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -366,12 +372,15 @@ ul {
   background-color: #e9e9e9; }
 
 .card-mentor {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  max-height: 67px;
+  margin-top: 37px;
+  margin-bottom: 25px; }
 
 .card-mentor-image {
   display: inline-block;
-  top: -15px;
-  position: relative; }
+  position: relative;
+  min-width: 51.53px; }
 
 .card-mentors:nth-child(1) {
   z-index: 100;
@@ -391,10 +400,14 @@ ul {
 .card-mentor-text {
   display: inline-block;
   margin-left: 20px;
-  width: 161px; }
+  width: 191px;
+  font-size: 14.1px; }
 
 .card-mentor-name {
-  margin-top: 7.5px; }
+  margin-top: 7.5px;
+  max-height: 45px;
+  overflow: hidden;
+  font-size: 17.1px; }
 
 .card-mentor-divider {
   border: 0.5px solid #e9e9e9;
@@ -402,18 +415,31 @@ ul {
 
 .card-price-details {
   display: inline-block;
-  position: relative;
-  top: 15px;
-  padding-right: 18px; }
+  padding-right: 18px;
+  position: absolute;
+  top: 425px;
+  max-height: 50px;
+  overflow: hidden; }
 
 .card-batches {
-  font-size: 12px;
+  font-size: 17.1px;
   margin-bottom: 5px; }
 
 .card-batch-details {
-  display: inline-block; }
+  display: inline-block;
+  font-size: 19.1px; }
   .card-batch-details span {
     color: red; }
+
+.classroom-text {
+  text-transform: uppercase;
+  font-size: 39.3px;
+  transform: translateY(50%); }
+
+.classroom-para {
+  font-size: 24.3px;
+  text-align: left;
+  width: 698px; }
 
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
@@ -1201,7 +1227,8 @@ body {
   .o-layout-card .button-solid {
     margin-left: 150px;
     position: absolute;
-    top: 300px; }
+    top: 415px;
+    left: 98px; }
 
 .grid {
   margin-left: 34px;
@@ -1209,10 +1236,10 @@ body {
   padding: 32px; }
 
 .o-image-card {
-  margin-bottom: 19.5px; }
+  margin-bottom: 27px; }
 
 .o-text-card {
-  margin-bottom: 6px; }
+  margin-bottom: 11px; }
 
 .button-dashed {
   border: 1px solid; }
@@ -1232,3 +1259,9 @@ body {
 .card-stack .button-solid {
   top: 10px;
   position: relative; }
+
+.classroom-header-box {
+  padding: 44px; }
+
+.classroom-header .classroom-image {
+  display: inline-block; }
