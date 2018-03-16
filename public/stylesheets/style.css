@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-style: normal;
   font-weight: normal; }
 
@@ -183,7 +183,7 @@ th {
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 27.6px;
   font-weight: normal; }
 
@@ -265,7 +265,7 @@ ul {
 .card-text {
   width: 296px;
   height: 53px;
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 17.1px;
   font-weight: 300;
   color: #333333;
@@ -274,7 +274,7 @@ ul {
 .card-heading {
   width: 309px;
   height: 48px;
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 22.6px;
   font-weight: 300;
   color: #333333; }
@@ -284,7 +284,7 @@ ul {
   height: 91px; }
 
 .button-dashed, .button-solid {
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 19.9px;
   font-weight: inherit;
   text-align: left; }
@@ -296,7 +296,7 @@ ul {
   -webkit-border-radius: 22px;
   -ms-border-radius: 22px;
   border-radius: 22px;
-  background: linear-gradient(to right, #ed7397, #ec8773);
+  background: linear-gradient(to right, #ed7298, #ec8871);
   color: #ed8080; }
 
 .button-solid {
@@ -306,14 +306,19 @@ ul {
   -webkit-border-radius: 42.5px;
   -ms-border-radius: 42.5px;
   border-radius: 42.5px;
-  background: linear-gradient(to right, #ed7397, #ec8773);
+  background: linear-gradient(to right, #ed7298, #ec8871);
   color: #ffffff; }
+
+nav {
+  margin-bottom: 56px;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 10px; }
 
 .nav-list {
   float: right; }
 
 .nav-items {
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 19.9px;
   font-weight: normal;
   display: inline-block;
@@ -431,15 +436,39 @@ ul {
   .card-batch-details span {
     color: red; }
 
-.classroom-text {
-  text-transform: uppercase;
-  font-size: 39.3px;
-  transform: translateY(50%); }
+.pos-rating {
+  font-size: 32px;
+  color: #fce298; }
 
-.classroom-para {
-  font-size: 24.3px;
-  text-align: left;
-  width: 698px; }
+.neg-rating {
+  font-size: 32px;
+  color: #cccccc; }
+
+.circle-back {
+  width: 113px;
+  height: 113px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
+  margin-left: -16px; }
+
+.circle-front {
+  width: 86px;
+  height: 84px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform: translateY(18%);
+  background: linear-gradient(to right, #ed7298, #ec8871); }
+
+.progress-text {
+  transform: translateY(65%);
+  color: #ffffff;
+  text-align: center; }
 
 /*!
  * Bootstrap v3.3.6 (http://getgrid.com)
@@ -1261,7 +1290,54 @@ body {
   position: relative; }
 
 .classroom-header-box {
-  padding: 44px; }
+  padding-right: 44px;
+  padding-left: 44px;
+  border-right: 2px solid #cccccc; }
 
 .classroom-header .classroom-image {
   display: inline-block; }
+
+.classroom-text {
+  text-transform: uppercase;
+  font-size: 38px;
+  transform: translateY(50%); }
+
+.classroom-para {
+  font-size: 24.1px;
+  text-align: left;
+  word-wrap: break-word;
+  margin-top: 43px; }
+
+.course-progress-2 {
+  padding-left: 45px; }
+
+.course-progress-heading {
+  font-size: 28.2px; }
+
+.progress-text {
+  font-size: 28.2px;
+  text-align: center; }
+
+.course-progress-detail {
+  padding: 30px;
+  padding-left: 21px; }
+
+.lectures-completed {
+  font-size: 25px;
+  padding: 0;
+  margin-bottom: 5px; }
+
+.reset-progress {
+  color: #fc4f4f;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0; }
+
+.row {
+  padding: 10px; }
+
+.course-progress-box .button-solid {
+  width: 294px;
+  height: 76.9px; }
+  .course-progress-box .button-solid button {
+    font-size: 28px; }

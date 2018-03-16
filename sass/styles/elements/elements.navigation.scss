@@ -1,3 +1,8 @@
+nav {
+  margin-bottom: 56px;
+  border-bottom: 1px solid $nav-border;
+  padding: 10px;
+}
 .nav-list {
   @include float(right);
 }
