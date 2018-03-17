@@ -55,10 +55,12 @@
         }
 
         .circle-back{
+            @include dimensions(51px, 51px);
             background-color: $status-back-complete;
         }
     
         .circle-front{
+            @include dimensions(39px, 39px);
             background-color: $status-front-complete;
         }
         .circle-front::after{
@@ -69,10 +71,12 @@
 
     .accordian-li[data-completed="false"]{
         .circle-back{
+            @include dimensions(51px, 51px);
             background-color: $status-back-incomplete;
         }
     
         .circle-front{
+            @include dimensions(39px, 39px);
             background-color: $white;
         }
     }
