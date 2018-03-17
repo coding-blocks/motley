@@ -6,30 +6,43 @@
 
 .accordian-head{
     @include flexbox(row);
-    justify-content: left;
     @include padding-mixin(43px, 32px, 40px, 45px);
+    width: 100%;
     min-height: 106px;
     background-color: $white;
-    align-items: center;
 }
 
 .accordian-li{
-    @include flexbox('row');
-    justify-content: left;
+    width: 100%;
     border-bottom: solid 1px $default-border;
     min-height: 106px;
     background-color: $accordian-li;
-    align-items: center;
 }
 
-.accordian[data-show=true]{
+.accordian-ul[data-show=true]{
     .accordian-li{
         @include flexbox(row);
     }
 }
 
-.accordian[data-show=false]{
+.accordian-ul[data-show=false]{
     .accordian-li{
         display: none;
     }
 }
+
+.li-left, .li-right{
+    @include flexbox(row);
+    align-items: center;
+}
+
+.li-left{
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.li-right{
+    justify-content: flex-end;
+    width: 30%
+}
+
