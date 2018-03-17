@@ -1,8 +1,3 @@
-nav {
-  margin-bottom: 56px;
-  border-bottom: 1px solid $nav-border;
-  padding: 10px;
-}
 .nav-list {
   @include float(right);
 }
@@ -14,6 +9,6 @@ nav {
 }
 
 .nav-logo {
-  height: 75px;
+  height: 55.8px;
   @include margin(5px, null, null, 28px);
 }

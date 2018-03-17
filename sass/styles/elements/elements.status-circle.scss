@@ -1,21 +1,16 @@
+.status-circle {
+    @include dimensions(51px, 51px);   
+}
 
 .circle-back{
-  @include dimensions(113px, 113px);
-  @include border-radius(50%);
-  background: $course-progress-circle-front;
-  margin-left: -16px;
+    @include dimensions(51px, 51px);
+    @include border-radius(50%);
+    background-color: $status-back-complete;
 }
-
 .circle-front{
-  @include dimensions(86px, 84px);
-  @include border-radius(50%);
-  margin: 0 auto;
-  transform: translateY(18%);
-  background: $button-gradient;
-}
-
-.progress-text {
-  transform: translateY(65%);
-  color: $white;
-  @include textalign(center);
+    @include dimensions(39px, 39px);
+    @include border-radius(50%);
+    background-color: $status-front-complete;
+    margin: 0 auto;
+    transform: translateY(14%);
 }

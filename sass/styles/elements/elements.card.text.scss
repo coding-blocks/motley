@@ -11,14 +11,14 @@
 
 .card-text {
   @include dimensions(296px,53px);
-  @include font($global-font-family, 17.1px, 300);
+  @include font('Raleway', 17.1px, 300);
   color: $global-font-text-color;
   overflow: hidden;
 }
 
 .card-heading {
   @include dimensions(309px, 48px);
-  @include font($global-font-family, 22.6px, 300);
+  @include font('Raleway', 22.6px, 300);
   color: $global-font-heading-color;
 
 }
