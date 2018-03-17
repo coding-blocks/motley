@@ -1,6 +1,6 @@
 
 %button-text {
-  @include font('Raleway', $global-font-size, inherit);
+  @include font($global-font-family, $global-font-size, inherit);
   @include textalign(left);
 }
 

@@ -1,4 +1,12 @@
+var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
+var serveStatic = require('serve-static');
+
+var mountFolder = function (connect, dir) {
+    return serveStatic(require('path').resolve(dir));
+};
+
 module.exports = function(grunt) {
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     grunt.initConfig ({
         sass: {
             dist: {
@@ -7,8 +15,13 @@ module.exports = function(grunt) {
                 }
             }
         },
-
         watch: {
+            static: {
+                files: ['public/**/*'],
+                options: {
+                    livereload: true
+                }
+            },
             source: {
                 files: ['sass/**/*.scss'],
                 tasks: ['sass'],
@@ -16,12 +29,35 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             }
+        },
+        connect: {
+            options: {
+                port: 9000,
+                hostname: '0.0.0.0'
+            },
+            livereload: {
+                options: {
+                    middleware: function (connect) {
+                        return [
+                            //lrSnippet,
+                            mountFolder(connect, './public')
+                        ];
+                    }
+                }
+            }
+        },
+        open: {
+            server: {
+                url: 'http://localhost:9000'
+            }
         }
-
-
     });
 
-    grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch','sass']);
+    grunt.registerTask('server', function (target) {
+        grunt.task.run([
+            'connect:livereload',
+            'open',
+            'watch'
+        ]);
+    });
 };
