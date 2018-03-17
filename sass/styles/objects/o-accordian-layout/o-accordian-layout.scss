@@ -93,5 +93,9 @@
         }
     }
 
+    .row{
+        @include padding-mixin(0,0,0,0);
+    }
+
 
 }
