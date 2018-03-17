@@ -10,16 +10,14 @@
     }
 
     .accordian-head{
-        @include padding-mixin(37px, 32px, 41px, 33px);
         min-height: 106px;
         .accordian-collapsar{
+            @include margin(0px, 41px, 0px, 0px);
             width: 40px;
-            width:40px;
         }
         .accordian-heading{
             font-size: 32px;
             font-weight: 500;
-            @include margin(0px, 0px, 0px, 41px);
             width: 60%;
         }
         .accordian-status{
@@ -28,55 +26,52 @@
     }
 
     .accordian-li{
-        @include padding-mixin(37px, 32px, 41px, 33px);
         position: relative;
         min-height: 106px;
 
         .accordian-li-type{
+            @include margin(0px, 41px, 0px, 0px);
             width: 40px;
-            width:40px;
         }
         .accordian-li-heading{
-            @include margin(0px, 0px, 0px, 41px);
             width: 60%;
         }
         .accordian-li-duration{
             @include margin(0px, 0px, 0px, 100px);
         }
-        .status-circle{
+        .circle-back{
             @include dimensions(51px, 51px);
-            @include margin(0px, 0px, 0px, 31px);
+            @include margin(0, 0, 0, 31px);
+        }
+
+        .circle-front{
+            @include dimensions(39px, 39px);
         }
     }
 
     .accordian-li[data-completed="true"]{
         .accordian-li-heading{
-            color: $status-front-complete;
+            color: $font-complete;
         }
 
         .circle-back{
-            @include dimensions(51px, 51px);
             background-color: $status-back-complete;
         }
     
         .circle-front{
-            @include dimensions(39px, 39px);
             background-color: $status-front-complete;
         }
         .circle-front::after{
             content: "";
         }
-
     }
 
     .accordian-li[data-completed="false"]{
         .circle-back{
-            @include dimensions(51px, 51px);
             background-color: $status-back-incomplete;
         }
     
         .circle-front{
-            @include dimensions(39px, 39px);
             background-color: $white;
         }
     }
@@ -96,6 +91,4 @@
     .row{
         @include padding-mixin(0,0,0,0);
     }
-
-
 }

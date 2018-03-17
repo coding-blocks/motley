@@ -1,18 +1,19 @@
 .accordian-ul{
-    @include font('Cabin', 27px, medium);
+    @include font('Cabin', 27px, 500);
     @include border(solid, 1px, $default-border);
     @include margin(0px, 0px, 20px, 0px);
 }
 
 .accordian-head{
     @include flexbox(row);
-    @include padding-mixin(43px, 32px, 40px, 45px);
+    @include padding-mixin(0, 32px, 0, 33px);
     width: 100%;
     min-height: 106px;
     background-color: $white;
 }
 
 .accordian-li{
+    @include padding-mixin(0, 32px, 0, 33px);
     width: 100%;
     border-bottom: solid 1px $default-border;
     min-height: 106px;
