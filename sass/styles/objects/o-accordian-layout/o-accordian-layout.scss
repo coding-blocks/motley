@@ -1,0 +1,97 @@
+.o-accordian{
+    .accordian-ul{
+        .accordian-li:first-child{
+            border-top: solid 1px $default-border;
+        }
+        
+        .accordian-li:last-child{
+            @include border(solid, 0px, white);
+        }
+    }
+
+    .accordian-head{
+        @include padding-mixin(37px, 32px, 41px, 33px);
+        min-height: 106px;
+        .accordian-collapsar{
+            width: 40px;
+            width:40px;
+        }
+        .accordian-heading{
+            font-size: 32px;
+            font-weight: 500;
+            @include margin(0px, 0px, 0px, 41px);
+            width: 60%;
+        }
+        .accordian-status{
+
+        }
+    }
+
+    .accordian-li{
+        @include padding-mixin(37px, 32px, 41px, 33px);
+        position: relative;
+        min-height: 106px;
+
+        .accordian-li-type{
+            width: 40px;
+            width:40px;
+        }
+        .accordian-li-heading{
+            @include margin(0px, 0px, 0px, 41px);
+            width: 60%;
+        }
+        .accordian-li-duration{
+            @include margin(0px, 0px, 0px, 100px);
+        }
+        .status-circle{
+            @include dimensions(51px, 51px);
+            @include margin(0px, 0px, 0px, 31px);
+        }
+    }
+
+    .accordian-li[data-completed="true"]{
+        .accordian-li-heading{
+            color: $status-front-complete;
+        }
+
+        .circle-back{
+            @include dimensions(51px, 51px);
+            background-color: $status-back-complete;
+        }
+    
+        .circle-front{
+            @include dimensions(39px, 39px);
+            background-color: $status-front-complete;
+        }
+        .circle-front::after{
+            content: "";
+        }
+
+    }
+
+    .accordian-li[data-completed="false"]{
+        .circle-back{
+            @include dimensions(51px, 51px);
+            background-color: $status-back-incomplete;
+        }
+    
+        .circle-front{
+            @include dimensions(39px, 39px);
+            background-color: $white;
+        }
+    }
+
+    .accordian-ul[data-show=true]{
+        .accordian-li{
+            @include flexbox(row);
+        }
+    }
+
+    .accordian-ul[data-show=false]{
+        .accordian-li{
+            display: none;
+        }
+    }
+
+
+}

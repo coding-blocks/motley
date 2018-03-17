@@ -10,6 +10,17 @@ app.use(express.static('public'));
 app.get('/', function(req, res) {
     res.render('index');
 });
+app.get('/overview', function(req,res){
+    res.render('overview');
+})
+
+app.get('/accordian', function(req,res){
+    res.render('accordian');
+})
+
+app.get('/star', function(req,res) {
+    res.render('star');
+});
 
 app.get('/overview', function(req,res){
     res.render('overview');
