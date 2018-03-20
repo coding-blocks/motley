@@ -1,6 +1,6 @@
 .o-recent-card{
   //@include flexbox(row);
-  //justify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   .card{
     @include dimensions(599px, 578px);

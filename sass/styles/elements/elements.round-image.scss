@@ -1,0 +1,10 @@
+.round-img{
+  @include border-radius(50%);
+  @include dimensions(99px, 99px);
+  display: inline-block;
+  background-color: $nav-border;
+
+  img{
+    max-width: 100%;
+  }
+}
