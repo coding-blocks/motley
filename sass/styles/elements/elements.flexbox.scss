@@ -1,0 +1,9 @@
+.flex-row{
+  @include flexbox(row);
+  justify-content: center;
+}
+
+.flex-col{
+  @include flexbox(column);
+  justify-content: center;
+}

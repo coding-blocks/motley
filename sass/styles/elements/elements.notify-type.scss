@@ -1,0 +1,20 @@
+.notify-type{
+  //@include dimensions(48px, 48px);
+}
+
+.notify-icon{
+  @include padding-mixin(10px, 0, 0, 0);
+  float: left;
+}
+
+.notify-dot{
+  @include dimensions(10px, 10px);
+  @include border-radius(50%);
+  background-color: $button-element-level;
+  display: none;
+  float: left;
+}
+
+.new{
+  display: block;
+}

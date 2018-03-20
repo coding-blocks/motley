@@ -1,0 +1,9 @@
+.heading-u{
+  @include padding-mixin(0, 0, 23px, 0);
+  @include margin(0, 0, 49px, 0);
+  width: 372px;
+  border-bottom: solid 1px $global-font-text-color;
+  color: $global-font-text-color;
+  font-size: 30px;
+  font-weight: 600;
+}
