@@ -1,6 +1,5 @@
-.o-recent-card{
-  //@include flexbox(row);
-  //justify-content: center;
+.o-recent-layout{
+  justify-content: center;
   flex-wrap: wrap;
   .card{
     @include dimensions(599px, 578px);
@@ -25,7 +24,7 @@
     font-size: 25px;
     font-weight:500;
     width: 86%;
-    height: 24px;
+    height: auto;
   }
 
   .pull-right{
@@ -43,6 +42,7 @@
   }
 
   .notify-type{
+    flex: none;
     @include margin(0, 32px, 0, 0);
   }
 
