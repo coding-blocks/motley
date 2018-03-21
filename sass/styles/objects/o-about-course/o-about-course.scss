@@ -1,6 +1,5 @@
 .o-about-course{
   flex-wrap: wrap-reverse;
-  //justify-content: center;
   align-items: flex-end;
 
   .classroom-para{
@@ -11,6 +10,7 @@
   }
 
   .about-left{
+    @include margin(0, 32px, 0, 0);
     &>.flex-row{
       @include margin(0, 0, 72px, 0);
     }
