@@ -1,18 +1,24 @@
 .notify-type{
-  //@include dimensions(48px, 48px);
+  @include  flexbox(row);
+  align-items: flex-start;
 }
 
 .notify-icon{
   @include padding-mixin(10px, 0, 0, 0);
-  float: left;
+  flex: none;
+  width: 40px;
+
 }
+
+
 
 .notify-dot{
   @include dimensions(10px, 10px);
   @include border-radius(50%);
+  flex: none;
   background-color: $button-element-level;
   display: none;
-  float: left;
+
 }
 
 .new{
