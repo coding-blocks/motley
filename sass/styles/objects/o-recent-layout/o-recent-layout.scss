@@ -51,13 +51,4 @@
     @include padding-mixin(0,0,0,0);
   }
 
-  [class*="col"]{
-    @include padding-mixin(0,0,0,0);
-  }
-
-  .card-text{
-    padding-top: 2%;
-  }
-
-
 }
