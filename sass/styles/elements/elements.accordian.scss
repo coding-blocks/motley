@@ -14,7 +14,7 @@
 }
 
 .accordian-li{
-    @include padding-mixin(30px, 32px, 30px, 33px);
+    @include padding-mixin(15px, 32px, 15px, 33px);
     justify-content: space-between;
     border-bottom: solid 1px $default-border;
     min-height: 106px;
