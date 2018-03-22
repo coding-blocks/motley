@@ -7,7 +7,6 @@
         .accordian-heading{
             font-size: 32px;
             font-weight: 500;
-            width: 60%;
         }
     }
 
@@ -16,9 +15,11 @@
             @include margin(0px, 41px, 0px, 0px);
             flex: none;
         }
-        .accordian-li-duration{
-            @include margin(0px, 0px, 0px, 100px);
+
+        .accordian-li-heading{
+            width: 75%;
         }
+
         .circle-back{
             @include dimensions(51px, 51px);
             @include margin(0, 0, 0, 31px);

@@ -7,12 +7,15 @@
 .accordian-head{
     @include flexbox(row);
     @include padding-mixin(0, 32px, 0, 45px);
+    justify-content: space-between;
+    width: 100%;
     min-height: 106px;
     background-color: $white;
 }
 
 .accordian-li{
-    @include padding-mixin(0, 32px, 0, 33px);
+    @include padding-mixin(30px, 32px, 30px, 33px);
+    justify-content: space-between;
     border-bottom: solid 1px $default-border;
     min-height: 106px;
     background-color: $accordian-li;
@@ -38,18 +41,4 @@
     }
 }
 
-.li-left, .li-right{
-    @include flexbox(row);
-    align-items: center;
-}
-
-.li-left{
-    justify-content: flex-start;
-    width: 70%;
-}
-
-.li-right{
-    justify-content: flex-end;
-    width: 30%
-}
 
