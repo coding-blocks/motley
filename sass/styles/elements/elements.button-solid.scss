@@ -18,13 +18,20 @@
   $solid-button-height,
   $solid-button-border-radius,
   $button-gradient,
-  $solid-button-color) {
+  $solid-button-color),
+
+  (circle,
+  $circle-button-width,
+  $circle-button-height,
+  $circle-button-border-radius,
+  $circle-button-background,
+  $circle-button-color){
 
   .button-#{$type} {
     @extend %button-text;
     @include dimensions($width, $height);
     @include border-radius($border-radius);
-    background: $button-gradient;
+    background: $background;
     color: $color;
   }
 }
