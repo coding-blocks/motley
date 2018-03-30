@@ -33,11 +33,11 @@
         }
 
         .circle-back{
-            background-color: $status-back-complete;
+            background: $status-back-complete;
         }
     
         .circle-front{
-            background-color: $status-front-complete;
+            background: $font-complete;
         }
         .circle-front::after{
             content: "";
@@ -46,11 +46,11 @@
 
     .accordian-li[data-completed="false"]{
         .circle-back{
-            background-color: $status-back-incomplete;
+            background: $status-back-incomplete;
         }
     
         .circle-front{
-            background-color: $white;
+            background: $white;
         }
     }
 }
