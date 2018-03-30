@@ -1,9 +1,8 @@
 .tab-nav{
   @include font('Cabin', 30px, 600);
   @include flexbox(column);
+  @include dimensions(100vw, 114px);
   justify-content: center;
-  width: 100vw;
-  height: 114px;
   background-color: $global-font-heading-color;
   color: $white;
 }
