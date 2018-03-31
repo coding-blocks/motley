@@ -1,0 +1,56 @@
+.o-accordian{
+
+    .accordian-head{
+        .accordian-collapsar{
+            @include margin(0px, 41px, 0px, 0px);
+        }
+        .accordian-heading{
+            font-size: 32px;
+            font-weight: 500;
+        }
+    }
+
+    .accordian-li{
+        .accordian-li-type{
+            @include margin(0px, 41px, 0px, 0px);
+            flex: none;
+        }
+        
+        .circle-back{
+            @include dimensions(51px, 51px);
+            @include margin(0, 0, 0, 31px);
+            flex:none;
+        }
+
+        .circle-front{
+            @include dimensions(39px, 39px);
+        }
+    }
+
+    .accordian-li[data-completed="true"]{
+        .accordian-li-heading{
+            color: $font-complete;
+        }
+
+        .circle-back{
+            background: $status-back-complete;
+        }
+    
+        .circle-front{
+            background: $font-complete;
+        }
+        .circle-front::after{
+            content: "";
+        }
+    }
+
+    .accordian-li[data-completed="false"]{
+        .circle-back{
+            background: $status-back-incomplete;
+        }
+    
+        .circle-front{
+            background: $white;
+        }
+    }
+}
