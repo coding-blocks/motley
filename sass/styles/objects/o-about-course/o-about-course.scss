@@ -7,10 +7,11 @@
     width: 614px;
     text-align: justify;
     display: inline-block;
+    font-size: 24.1px;
   }
 
   .about-left{
-    @include margin(0, 32px, 0, 0);
+    @include margin(0, 54px, 0, 0);
     &>.flex-row{
       @include margin(0, 0, 72px, 0);
     }
