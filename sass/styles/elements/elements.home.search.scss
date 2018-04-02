@@ -1,0 +1,4 @@
+.input-search {
+  @include dimensions(494px, 77px);
+  background-color: $search-box-color;
+}
