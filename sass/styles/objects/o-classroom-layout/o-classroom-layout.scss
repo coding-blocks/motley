@@ -1,27 +1,32 @@
-.classroom-header-box {
-  padding-right: 44px;
-  padding-left: 44px;
-  border-right: 2px solid $classroom-border;
-}
-.classroom-header {
-   .classroom-image {
-     display: inline-block;
-   }
+.classroom-container {
+  margin-bottom: 77px;
 
+  .classroom-header-box {
+    padding-right: 44px;
+    padding-left: 44px;
+    border-right: 2px solid $classroom-border;
+  }
+  .classroom-header {
+    .classroom-image {
+      display: inline-block;
+    }
+
+  }
+
+  .classroom-text {
+    text-transform: uppercase;
+    font-size: 38px;
+    transform: translateY(50%);
+  }
+
+  .classroom-para {
+    font-size: 24.1px;
+    @include textalign(left);
+    word-wrap: break-word;
+    margin-top: 43px;
+  }
 }
 
-.classroom-text {
-  text-transform: uppercase;
-  font-size: 38px;
-  transform: translateY(50%);
-}
-
-.classroom-para {
-  font-size: 24.1px;
-  @include textalign(left);
-  word-wrap: break-word;
-  margin-top: 43px;
-}
 
 .course-progress-2 {
   padding-left: 45px;
