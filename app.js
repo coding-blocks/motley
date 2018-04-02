@@ -30,6 +30,11 @@ app.get('/tab-nav', function(req,res) {
     res.render('tab-nav');
 });
 
+app.get('/search', function(req,res){
+   res.render('search.hbs');
+
+});
+
 // Set server port
 app.listen(4000);
 console.log('server is running');

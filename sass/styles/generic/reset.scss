@@ -115,3 +115,7 @@ button {
 ul {
   list-style: none;
 }
+
+input:focus {
+  outline:none !important;
+}
