@@ -2,36 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>Title</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav>
+<nav>
            <span>
                   <img src="images/online-logo.png" alt="online-logo" class="nav-logo">
            </span>
-        <ul class="nav-list">
-            <li class="nav-items">
-                About us
-            </li>
-            <li class="nav-items">
-                All Courses
-            </li>
-            <li class="nav-items">
-                Contact us
-            </li>
-            <li class="nav-items">
-                <div class="button-solid">
-                    <button>Login</button>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <ul class="nav-list">
+        <li class="nav-items">
+            About us
+        </li>
+        <li class="nav-items">
+            All Courses
+        </li>
+        <li class="nav-items">
+            Contact us
+        </li>
+        <li class="nav-items">
+            <div class="button-solid">
+                <button>Login</button>
+            </div>
+        </li>
+    </ul>
+</nav>
 </header>
-<div class="row">
+<div class="classroom-container row">
     <div class="classroom-header-box col-md-6 col-sm-12 col-xs-12">
         <div class="classroom-header row">
             <div class="classroom-image col-md-2 col-xs-2 col-sm-2">
@@ -67,7 +66,7 @@
     <div class="course-progress-box col-md-6 col-sm-12 col-xs-12">
         <div class="course-progress-2">
             <p class="course-progress-heading">Course Progress</p>
-            <div class="col-md-2">
+            <div data-completed="false" class="status-circle col-md-2">
                 <div class="circle-back">
                     <div class="circle-front">
                         <p class="progress-text">26%</p>
