@@ -1,18 +1,20 @@
 .o-video-player{
     .button-dashed{
         @include dimensions(239px, 54px);
-        @include border-radius(50px);
+        @include border-radius(27px);
         background-color: $vp-background;
         color: $white;
         text-align: center;
     }
 
     .o-accordian{
+        @include dimensions(20%, 100%);
+        border-right: solid 1px $vp-border;
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 20%;
         min-width: 326px;
+
         &.collapse{
             transform: translateX(-20%);
         }
@@ -24,6 +26,7 @@
         background-color: $vp-acc-head;
         color: $white;
         min-height: 79px;
+        border-bottom: solid 1px $vp-border;
     }
 
     .accordian-collapsar{
@@ -31,7 +34,8 @@
     }
 
     .accordian-ul{
-        @include border(solid, 1px, $vp-border);
+        // @include border(solid, 1px, $vp-border);
+        border: none;
         @include margin(0,0,0,0);
     }
 
@@ -50,8 +54,8 @@
         font-size: 20px;
     }
 
-    .accordian-status{
-        font-size: 22px;
+    .accordian-status, .main-h, .sub-h{
+        font-size: $font-medium;
     }
     
 
@@ -68,10 +72,6 @@
         flex: none;
     }
 
-    .main-h, .sub-h{
-        font-size: 22px;
-    }
-
     .main-h{
         @include margin(0,0,0,0);
         color: $white;
@@ -83,13 +83,14 @@
 
     .button-solid{
         @include dimensions(233px, 61px);
+        @include margin(0, 0, 0, 33px);
         text-align: center;
         font-size: 22px;
     }
 
     .video-media{
         &.collapse{
-            left: 20%;
+            right: 0px;
             width: 80%;
         }
     }
@@ -105,6 +106,14 @@
 
     video{
         @include dimensions(100%, 100%);
+    }
+
+    .notify-text{
+        cursor: pointer;
+    }
+
+    .new{
+        @include dimensions(8px, 8px);
     }
 
     
