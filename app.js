@@ -22,6 +22,10 @@ app.get('/star', function(req,res) {
     res.render('star');
 });
 
+app.get('/classroom', function(req,res) {
+    res.render('classroom-layout');
+});
+
 app.get('/tab-nav', function(req,res) {
     res.render('tab-nav');
 });
