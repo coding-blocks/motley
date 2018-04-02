@@ -34,6 +34,10 @@ app.get('/profile', function(req,res) {
     res.render('profile-page');
 });
 
+app.get('/timeline', function(req,res) {
+    res.render('timeline');
+});
+
 // Set server port
 app.listen(4000);
 console.log('server is running');

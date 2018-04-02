@@ -1,0 +1,111 @@
+.o-video-player{
+    .button-dashed{
+        @include dimensions(239px, 54px);
+        @include border-radius(50px);
+        background-color: $vp-background;
+        color: $white;
+        text-align: center;
+    }
+
+    .o-accordian{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 20%;
+        min-width: 326px;
+        &.collapse{
+            transform: translateX(-20%);
+        }
+        transition: all 0.35s ease;
+    }
+
+    .accordian-head{
+        @include padding-mixin(0, 11px, 0, 21px);
+        background-color: $vp-acc-head;
+        color: $white;
+        min-height: 79px;
+    }
+
+    .accordian-collapsar{
+        @include margin(0, 16px, 0, 0);
+    }
+
+    .accordian-ul{
+        @include border(solid, 1px, $vp-border);
+        @include margin(0,0,0,0);
+    }
+
+    .accordian-li{
+        @include padding-mixin(10px, 23px, 10px, 47px);
+        border-bottom: solid 1px $vp-border;
+        background-color: $vp-background;
+        min-height: 79px;
+    }
+
+    .accordian-li-heading{
+        color: $white;
+    }
+
+    .accordian-heading, .accordian-li-heading{
+        font-size: 20px;
+    }
+
+    .accordian-status{
+        font-size: 22px;
+    }
+    
+
+    .circle-front{
+        @include dimensions(29px, 29px);
+    }
+
+    .circle-back{
+        @include dimensions(37px, 37px);
+    }
+
+    .heading-d{
+        @include margin(0,0,0,0);
+        flex: none;
+    }
+
+    .main-h, .sub-h{
+        font-size: 22px;
+    }
+
+    .main-h{
+        @include margin(0,0,0,0);
+        color: $white;
+    }
+
+    .sub-h{
+        color: $faded-text;
+    }
+
+    .button-solid{
+        @include dimensions(233px, 61px);
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .video-media{
+        &.collapse{
+            left: 20%;
+            width: 80%;
+        }
+    }
+
+    @media all and (max-width: 1623px){
+        .video-media{   
+            &.collapse{
+                width: calc(100% - 326px);
+                left: 326px;
+            }
+        }
+    }
+
+    video{
+        @include dimensions(100%, 100%);
+    }
+
+    
+}
