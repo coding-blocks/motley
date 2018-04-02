@@ -1,8 +1,11 @@
 .o-announcement{
-
+  background-color: $nav-border;
+  
   .accordian-ul{
-
+    @include margin(0,auto, 32px, auto);
+    max-width: 80%;
   }
+
   .accordian-li{
     @include padding-mixin(52px, 152px, 55px, 58px);
     height: auto;
@@ -19,6 +22,10 @@
 
   .accordian-collapsar{
     @include margin(0, 83px, 0, 0);
+  }
+
+  .heading-u{
+    @include margin(0, 0, 55px, 10%);
   }
 
   .heading-d{
@@ -45,6 +52,14 @@
 
   .notify-icon{
     width: auto
+  }
+
+  .button-dashed{
+    @include dimensions(265px, 88px);
+    @include margin(80px, auto, 0, auto);
+    background: transparent;
+    font-size: 32px;
+    border-radius: 44px;
   }
 
 }

@@ -1,5 +1,5 @@
-.o-recent-layout{
-  justify-content: center;
+.o-overview-layout{
+  justify-content: start;
   flex-wrap: wrap;
   .card{
     @include dimensions(599px, 578px);

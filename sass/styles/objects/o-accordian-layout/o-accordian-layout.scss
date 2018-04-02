@@ -1,4 +1,11 @@
 .o-accordian{
+    background: $nav-border;
+
+    .accordian-ul{
+        @include margin(0, auto, 20px, auto);
+        max-width: 80%;
+    }
+
     .accordian-collapsar{
         @include margin(0px, 41px, 0px, 0px);
     }
