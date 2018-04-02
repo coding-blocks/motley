@@ -1,52 +1,25 @@
 .o-accordian{
-    .accordian-ul{
-        .accordian-li:first-child{
-            border-top: solid 1px $default-border;
-        }
-        
-        .accordian-li:last-child{
-            @include border(solid, 0px, white);
-        }
+    .accordian-collapsar{
+        @include margin(0px, 41px, 0px, 0px);
+    }
+    .accordian-heading{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .accordian-li-type{
+        @include margin(0px, 41px, 0px, 0px);
+        flex: none;
+    }
+    
+    .circle-back{
+        @include dimensions(51px, 51px);
+        @include margin(0, 0, 0, 31px);
+        flex:none;
     }
 
-    .accordian-head{
-        min-height: 106px;
-        .accordian-collapsar{
-            @include margin(0px, 41px, 0px, 0px);
-            width: 40px;
-        }
-        .accordian-heading{
-            font-size: 32px;
-            font-weight: 500;
-            width: 60%;
-        }
-        .accordian-status{
-
-        }
-    }
-
-    .accordian-li{
-        position: relative;
-        min-height: 106px;
-
-        .accordian-li-type{
-            @include margin(0px, 41px, 0px, 0px);
-            width: 40px;
-        }
-        .accordian-li-heading{
-            width: 60%;
-        }
-        .accordian-li-duration{
-            @include margin(0px, 0px, 0px, 100px);
-        }
-        .circle-back{
-            @include dimensions(51px, 51px);
-            @include margin(0, 0, 0, 31px);
-        }
-
-        .circle-front{
-            @include dimensions(39px, 39px);
-        }
+    .circle-front{
+        @include dimensions(39px, 39px);
+        transform: translateY(15%);
     }
 
     .accordian-li[data-completed="true"]{
@@ -55,11 +28,11 @@
         }
 
         .circle-back{
-            background-color: $status-back-complete;
+            background: $status-back-complete;
         }
     
         .circle-front{
-            background-color: $status-front-complete;
+            background: $font-complete;
         }
         .circle-front::after{
             content: "";
@@ -68,27 +41,11 @@
 
     .accordian-li[data-completed="false"]{
         .circle-back{
-            background-color: $status-back-incomplete;
+            background: $status-back-incomplete;
         }
     
         .circle-front{
-            background-color: $white;
+            background: $white;
         }
-    }
-
-    .accordian-ul[data-show=true]{
-        .accordian-li{
-            @include flexbox(row);
-        }
-    }
-
-    .accordian-ul[data-show=false]{
-        .accordian-li{
-            display: none;
-        }
-    }
-
-    .row{
-        @include padding-mixin(0,0,0,0);
     }
 }
