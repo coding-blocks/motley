@@ -34,6 +34,11 @@ app.get('/announcements', function(req,res) {
     res.render('announcements');
 });
 
+app.get('/search', function(req,res){
+   res.render('search.hbs');
+
+});
+
 // Set server port
 app.listen(4000);
 console.log('server is running');

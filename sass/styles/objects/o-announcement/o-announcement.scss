@@ -29,17 +29,18 @@
     @include margin(0, 0, 13px, 0);
     color: $global-font-text-color;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: $font-medium;
   }
 
   .sub-h{
     color: $default-accordian-font;
     font-size: 23.7px;
-    font-weight: 500;
+    font-weight: $font-medium;
   }
 
   .classroom-para{
     @include margin(0,0,0,0);
+    font-size: 24px;
   }
 
   .notify-icon{

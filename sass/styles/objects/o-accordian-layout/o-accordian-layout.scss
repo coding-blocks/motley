@@ -4,7 +4,7 @@
     }
     .accordian-heading{
         font-size: 32px;
-        font-weight: 500;
+        font-weight: $font-medium;
     }
     .accordian-li-type{
         @include margin(0px, 41px, 0px, 0px);

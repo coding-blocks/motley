@@ -19,7 +19,7 @@
   .card-text{
     flex:none;
     font-size: 25px;
-    font-weight:500;
+    font-weight: $font-medium;
     width: 86%;
     height: auto;
   }
@@ -50,7 +50,4 @@
     @include margin(58px, 0, 0, 0);
     @include padding-mixin(0,0,0,0);
   }
-
-
-
 }
