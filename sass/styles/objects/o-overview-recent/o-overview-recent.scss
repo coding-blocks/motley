@@ -1,5 +1,5 @@
 .o-overview-recent{
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   .card{
     @include dimensions(599px, 578px);
@@ -27,8 +27,8 @@
   .pull-right{
     @include margin(0, 49px, 45px, 0px);
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     cursor: pointer;
     color: $button-element-level;
     font-size: 25px;
