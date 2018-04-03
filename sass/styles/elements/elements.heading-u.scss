@@ -1,6 +1,6 @@
 //Heading with Underline
 
-.heading-u{
+.heading-u {
   @include padding-mixin(0, 0, 23px, 0);
   @include margin(0, 0, 49px, 0);
   width: 372px;
@@ -8,9 +8,4 @@
   color: $global-font-text-color;
   font-size: 30px;
   font-weight: $font-medium;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> f4cf194815a47d4251bc2068b8e29f89b474c15a
