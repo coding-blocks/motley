@@ -1,9 +1,10 @@
 .o-announcement{
   background-color: $nav-border;
+  padding-top: 40px;
   
   .accordian-ul{
     @include margin(0,auto, 32px, auto);
-    max-width: 80%;
+    max-width: 88%;
   }
 
   .accordian-li{
@@ -25,7 +26,7 @@
   }
 
   .heading-u{
-    @include margin(0, 0, 55px, 10%);
+    @include margin(0, 0, 55px, 6%);
   }
 
   .heading-d{
