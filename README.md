@@ -5,5 +5,5 @@ CSS Framework based on ITCSS
  #### Start grunt 
  Run `grunt watch`
  ###  Start node server
- Run `app.js`
+ Run node `app.js`
  
