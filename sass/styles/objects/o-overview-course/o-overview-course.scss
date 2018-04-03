@@ -11,7 +11,7 @@
   }
 
   .about-left{
-    @include margin(0, 54px, 0, 0);
+    @include margin(0, 24px, 0, 0);
     &>.flex-row{
       @include margin(0, 0, 72px, 0);
     }
