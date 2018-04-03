@@ -30,6 +30,10 @@ app.get('/tab-nav', function(req,res) {
     res.render('tab-nav');
 });
 
+app.get('/announcements', function(req,res) {
+    res.render('announcements');
+});
+
 app.get('/search', function(req,res){
    res.render('search.hbs');
 
