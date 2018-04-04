@@ -2,6 +2,8 @@
 CSS Framework based on ITCSS
  
  Run `npm install`
- #### Start server with live reloading
- Run `npm start`
-
+ #### Start grunt 
+ Run `grunt watch`
+ ###  Start node server
+ Run node `app.js`
+ 

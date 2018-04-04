@@ -31,7 +31,8 @@
                 </ul>
             </nav>
         </header>
-        <div class="row">
+
+        <div class="classroom-container row">
             <div class="classroom-header-box col-md-6 col-sm-12 col-xs-12">
                 <div class="classroom-header row">
                     <div class="classroom-image col-md-2 col-xs-2 col-sm-2">
@@ -67,7 +68,8 @@
             <div class="course-progress-box col-md-6 col-sm-12 col-xs-12">
                 <div class="course-progress-2">
                     <p class="course-progress-heading">Course Progress</p>
-                    <div class="col-md-2">
+
+                    <div data-completed="false" class="status-circle col-md-2">
                         <div class="circle-back">
                             <div class="circle-front">
                                 <p class="progress-text">26%</p>
@@ -80,7 +82,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-offset-7 col-md-5">
+                    <div class="col-md-offset-6 col-md-5">
                         <div class="button-solid">
                             <button>Resume Learning</button>
                         </div>
@@ -98,12 +100,15 @@
             </div>
         </div>
 
-        <div class="container o-announcement">
+        <div class="o-announcement">
+            <div class="heading-u">
+                Announcements (45)
+            </div>
             <div class="accordian-ul" data-show="true">
                 <div class="accordian-head">
                     <div class="flex-row">
                         <div class="accordian-collapsar">
-                            -
+                            <i class="fas fa-minus"></i>
                         </div>
                         <div class="img-desc flex-row">
                             <div class="round-img">
@@ -125,9 +130,9 @@
                     <div class="flex-row">
                         <div class="notify-type">
                             <div class="notify-icon">
+                                <span class="notify-dot new"></span>
                                 <img src="images/announcement.png" alt="">
                             </div>
-                            <div class="notify-dot new"></div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +157,7 @@
                 <div class="accordian-head">
                     <div class="flex-row">
                         <div class="accordian-collapsar">
-                            -
+                            <i class="fas fa-plus"></i>
                         </div>
                         <div class="img-desc flex-row">
                             <div class="round-img">
@@ -174,9 +179,9 @@
                     <div class="flex-row">
                         <div class="notify-type">
                             <div class="notify-icon">
+                                <span class="notify-dot new"></span>
                                 <img src="images/announcement.png" alt="">
                             </div>
-                            <div class="notify-dot new"></div>
                         </div>
                     </div>
                 </div>
@@ -201,7 +206,7 @@
                 <div class="accordian-head">
                     <div class="flex-row">
                         <div class="accordian-collapsar">
-                            -
+                            <i class="fas fa-minus"></i>
                         </div>
                         <div class="img-desc flex-row">
                             <div class="round-img">
@@ -223,9 +228,9 @@
                     <div class="flex-row">
                         <div class="notify-type">
                             <div class="notify-icon">
+                                <span class="notify-dot new"></span>
                                 <img src="images/announcement.png" alt="">
                             </div>
-                            <div class="notify-dot new"></div>
                         </div>
                     </div>
                 </div>
@@ -244,6 +249,10 @@
 
 
                 </div>
+            </div>
+
+            <div class="button-dashed">
+                <button>Load More</button>
             </div>
         </div>
 

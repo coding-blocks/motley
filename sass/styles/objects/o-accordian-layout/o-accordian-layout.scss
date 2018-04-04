@@ -1,30 +1,34 @@
 .o-accordian{
 
-    .accordian-head{
-        .accordian-collapsar{
-            @include margin(0px, 41px, 0px, 0px);
-        }
-        .accordian-heading{
-            font-size: 32px;
-            font-weight: 500;
-        }
+    @include padding-mixin(65px, 0, 0, 0);
+    background: $nav-border;
+
+    .accordian-ul{
+        @include margin(0, auto, 20px, auto);
+        max-width: 80%;
     }
 
-    .accordian-li{
-        .accordian-li-type{
-            @include margin(0px, 41px, 0px, 0px);
-            flex: none;
-        }
-        
-        .circle-back{
-            @include dimensions(51px, 51px);
-            @include margin(0, 0, 0, 31px);
-            flex:none;
-        }
+    .accordian-collapsar{
+        @include margin(0px, 41px, 0px, 0px);
+    }
+    .accordian-heading{
+        font-size: 32px;
+        font-weight: $font-normal;
+    }
+    .accordian-li-type{
+        @include margin(0px, 41px, 0px, 0px);
+        flex: none;
+    }
+    
+    .circle-back{
+        @include dimensions(51px, 51px);
+        @include margin(0, 0, 0, 31px);
+        flex:none;
+    }
 
-        .circle-front{
-            @include dimensions(39px, 39px);
-        }
+    .circle-front{
+        @include dimensions(39px, 39px);
+        transform: translateY(15%);
     }
 
     .accordian-li[data-completed="true"]{
