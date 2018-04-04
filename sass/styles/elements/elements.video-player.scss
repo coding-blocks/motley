@@ -1,25 +1,6 @@
-.video-player{
-    // @include dimensions(100vw, auto);
-    @include margin(100px, 0, 0, 0);//margin provided as navbar is wrappingup otherwise no need
-    background-color: $vp-background;
-}
-
 .vp-header{
     @include dimensions(100%, auto);
     max-height: 101px;
-}
-
-.timeline-toggler{
-    @include dimensions(20%, 101px);
-    min-width: 326px;
-    justify-content: center;
-    border-right: 1px solid $vp-border;
-}
-
-.lecture-desk{
-    @include padding-mixin(0, 27px, 0, 44px);
-    @include dimensions(80%, auto);
-    justify-content: space-between;
 }
 
 .video-media{
@@ -31,13 +12,4 @@
     background: $white;
     text-align: center;
     transition: all 0.35s ease;
-}
-
-.phone-toggler{
-    display: none;
-}
-
-.video-container{
-    position: relative;
-    height: 679px;
 }

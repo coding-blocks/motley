@@ -1,0 +1,18 @@
+.video-media{
+  &.collapse{
+    right: 0px;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 1623px){
+  .video-media{
+    &.collapse{
+      width: calc(100% - 326px);
+    }
+  }
+}
+
+video{
+  @include dimensions(100%, 100%);
+}

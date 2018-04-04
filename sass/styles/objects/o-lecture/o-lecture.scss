@@ -1,0 +1,62 @@
+.o-lecture{
+    @include margin(100px, 0, 0, 0);//margin provided as navbar is wrappingup otherwise no need
+    background-color: $vp-background;
+
+    .timeline-toggler{
+        @include dimensions(20%, 101px);
+        min-width: 326px;
+        justify-content: center;
+        border-right: 1px solid $vp-border;
+    }
+
+    .lecture-desk{
+        @include padding-mixin(0, 27px, 0, 44px);
+        @include dimensions(80%, auto);
+        justify-content: space-between;
+    }
+
+    .button-dashed{
+        @include dimensions(239px, 54px);
+        @include border-radius(27px);
+        background-color: $vp-background;
+        color: $white;
+        text-align: center;
+    }
+
+    .heading-d{
+        @include margin(0,0,0,0);
+        flex: none;
+    }
+
+    .main-h{
+        @include margin(0,0,0,0);
+        font-size: 22px;
+        color: $white;
+    }
+
+    .sub-h{
+        font-size:22px;
+        color: $faded-text;
+    }
+
+    .button-solid{
+        @include dimensions(233px, 61px);
+        @include margin(0, 0, 0, 33px);
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .notify-text{
+        cursor: pointer;
+    }
+
+    .new{
+        @include dimensions(8px, 8px);
+    }
+
+    .video-container{
+        position: relative;
+        height: 679px;
+    }
+
+}

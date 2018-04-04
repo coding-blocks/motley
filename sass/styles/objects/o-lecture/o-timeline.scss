@@ -1,0 +1,60 @@
+.o-timeline{
+  .o-accordian{
+    @include dimensions(20%, 100%);
+    border-right: solid 1px $vp-border;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 326px;
+
+    &.collapse{
+      transform: translateX(-20%);
+    }
+    transition: all 0.35s ease;
+  }
+
+  .accordian-head{
+    @include padding-mixin(0, 11px, 0, 21px);
+    background-color: $vp-acc-head;
+    color: $white;
+    min-height: 79px;
+    border-bottom: solid 1px $vp-border;
+  }
+
+  .accordian-collapsar{
+    @include margin(0, 16px, 0, 0);
+  }
+
+  .accordian-ul{
+    border: none;
+    margin-bottom: 0px
+  }
+
+  .accordian-li{
+    @include padding-mixin(10px, 23px, 10px, 47px);
+    border-bottom: solid 1px $vp-border;
+    background-color: $vp-background;
+    min-height: 79px;
+  }
+
+  .accordian-li-heading{
+    color: $white;
+  }
+
+  .accordian-heading, .accordian-li-heading{
+    font-size: 20px;
+  }
+
+  .accordian-status, .main-h, .sub-h{
+    font-size: 22px;
+  }
+
+
+  .circle-front{
+    @include dimensions(29px, 29px);
+  }
+
+  .circle-back{
+    @include dimensions(37px, 37px);
+  }
+}
