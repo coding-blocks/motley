@@ -1,9 +1,4 @@
-.vp-header{
-    @include dimensions(100%, auto);
-    max-height: 101px;
-}
-
-.video-media{
+.video-player{
     @include dimensions(100%, 679px);
     position: absolute;
     top: 0px;

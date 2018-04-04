@@ -6,12 +6,12 @@
 .main-h{
   @include margin(0, 0, 8px, 0);
   font-size:28.8px;
-  font-weight: 600;
+  font-weight: $font-medium;
   color: $global-font-text-color;
 }
 
 .sub-h{
   font-size: 23.3px;
-  font-weight: 600;
+  font-weight: $font-medium;
   color: $font-sub-heading;
 }

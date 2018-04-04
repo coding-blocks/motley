@@ -1,6 +1,10 @@
 .o-lecture{
-    @include margin(100px, 0, 0, 0);//margin provided as navbar is wrappingup otherwise no need
     background-color: $vp-background;
+
+    .lecture-header{
+        @include dimensions(100%, auto);
+        max-height: 101px;
+    }
 
     .timeline-toggler{
         @include dimensions(20%, 101px);
@@ -28,14 +32,17 @@
         flex: none;
     }
 
+    .main-h, .sub-h{
+        font-size: $font-xs;
+        font-weight: $font-normal;
+    }
+
     .main-h{
         @include margin(0,0,0,0);
-        font-size: 22px;
         color: $white;
     }
 
     .sub-h{
-        font-size:22px;
         color: $faded-text;
     }
 
@@ -43,7 +50,7 @@
         @include dimensions(233px, 61px);
         @include margin(0, 0, 0, 33px);
         text-align: center;
-        font-size: 22px;
+        font-size: $font-sm;
     }
 
     .notify-text{

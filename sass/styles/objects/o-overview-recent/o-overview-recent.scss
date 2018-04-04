@@ -1,4 +1,4 @@
-.o-recent-layout{
+.o-overview-recent{
   justify-content: center;
   flex-wrap: wrap;
   .card{
@@ -19,7 +19,7 @@
   .card-text{
     flex:none;
     font-size: 25px;
-    font-weight:500;
+    font-weight: $font-normal;
     width: 86%;
     height: auto;
   }
@@ -27,8 +27,8 @@
   .pull-right{
     @include margin(0, 49px, 45px, 0px);
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     cursor: pointer;
     color: $button-element-level;
     font-size: 25px;
@@ -50,7 +50,4 @@
     @include margin(58px, 0, 0, 0);
     @include padding-mixin(0,0,0,0);
   }
-
-
-
 }

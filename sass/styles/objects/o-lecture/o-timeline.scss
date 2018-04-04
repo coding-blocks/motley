@@ -1,10 +1,10 @@
 .o-timeline{
+  height: 679px;
+  overflow-y: auto;
   .o-accordian{
-    @include dimensions(20%, 100%);
+    @include dimensions(20%, auto);
+    padding-top: 0px;
     border-right: solid 1px $vp-border;
-    position: absolute;
-    top: 0px;
-    left: 0px;
     min-width: 326px;
 
     &.collapse{
@@ -13,10 +13,13 @@
     transition: all 0.35s ease;
   }
 
+  .accordian-li-heading, .accordian-status, .accordian-head{
+    color: $white;
+  }
+
   .accordian-head{
     @include padding-mixin(0, 11px, 0, 21px);
     background-color: $vp-acc-head;
-    color: $white;
     min-height: 79px;
     border-bottom: solid 1px $vp-border;
   }
@@ -27,7 +30,8 @@
 
   .accordian-ul{
     border: none;
-    margin-bottom: 0px
+    margin: 0 0;
+    max-width: 100%;
   }
 
   .accordian-li{
@@ -37,16 +41,12 @@
     min-height: 79px;
   }
 
-  .accordian-li-heading{
-    color: $white;
-  }
-
   .accordian-heading, .accordian-li-heading{
     font-size: 20px;
   }
 
   .accordian-status, .main-h, .sub-h{
-    font-size: 22px;
+    font-size: $font-xs;
   }
 
 

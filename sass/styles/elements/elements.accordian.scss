@@ -1,5 +1,5 @@
 .accordian-ul{
-    @include font('Cabin', 27px, 500);
+    @include font('Cabin', 27px, $font-normal);
     @include border(solid, 1px, $default-border);
     @include margin(0px, 0px, 20px, 0px);
 }
@@ -7,8 +7,8 @@
 .accordian-head{
     @include flexbox(row);
     @include padding-mixin(0, 32px, 0, 45px);
+    @include dimensions(100%, auto);
     justify-content: space-between;
-    width: 100%;
     min-height: 106px;
     background-color: $white;
     cursor: pointer;

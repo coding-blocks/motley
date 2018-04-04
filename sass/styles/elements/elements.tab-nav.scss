@@ -16,7 +16,7 @@
 .tab-items{
   @include padding-mixin(0px, 9px, 0px, 0px);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: $font-medium;
   cursor: pointer;
   &:hover{
     color: $button-element-level;
