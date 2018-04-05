@@ -11,6 +11,7 @@
 
   .card {
     @include dimensions(383px, 467px);
+
   }
 
   .card:nth-child(2) {
