@@ -1,12 +1,10 @@
 .o-timeline{
-  height: 679px;
-  overflow-y: auto;
+  @include dimensions(calc(20% + 15px), 100%);
+  overflow-y: scroll;
+  min-width: 326px;
+  border-right: solid 1px $vp-border;
   .o-accordian{
-    @include dimensions(20%, auto);
     padding-top: 0px;
-    border-right: solid 1px $vp-border;
-    min-width: 326px;
-
     &.collapse{
       transform: translateX(-20%);
     }
