@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Main</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="o-lecture">
+            <div class="lecture-header flex-row">
+                <div class="timeline-toggler flex-row">
+                    <button class="button-dashed" onclick="timelineToggler()">X Table of Content</button>
+                </div>
+                <div class="flex-row lecture-desk">
+                    <div class="heading-d">
+                        <div class="main-h">
+                            Section 1.1 - Fast Exponentiation
+                        </div>
+                        <div class="sub-h">
+                            Section 1 - Mathematics
+                        </div>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="notify-type">
+                            <div class="notify-text">
+                                <span class="notify-dot new"></span>
+                                Solve Doubts
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="button-solid">< Go to Dashboard</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="o-timeline">
+                    <div class="o-accordian">
+                        <div class="accordian-ul" data-show="true">
+                            <div class="accordian-head">
+                                <div class="flex-row">
+                                    <div class="accordian-collapsar">
+                                        -
+                                    </div>
+                                    <div class="accordian-heading">
+                                        Mathematics 1.0
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="accordian-status">
+                                        <span class="completed">2</span>/ 6
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-completed="true" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.1 - Chewbacca and Number, HackerBlocks
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div data-completed="true" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.2 - Tavas and SaDDas, Codeforces 535-B
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.3 - Fast Exponentiation
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.4 - Unique Number-III, Hackerblocks
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordian-ul" data-show="false">
+                            <div class="accordian-head">
+                                <div class="flex-row">
+                                    <div class="accordian-collapsar">
+                                        +
+                                    </div>
+                                    <div class="accordian-heading">
+                                        Mathematics 1.0
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="accordian-status">
+                                        <span class="completed">2</span>/ 6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordian-ul" data-show="false">
+                            <div class="accordian-head">
+                                <div class="flex-row">
+                                    <div class="accordian-collapsar">
+                                        +
+                                    </div>
+                                    <div class="accordian-heading">
+                                        Mathematics 1.0
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="accordian-status">
+                                        <span class="completed">2</span>/ 6
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.3 - Fast Exponentiation
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <div class="accordian-li-heading">
+                                        1.4 - Unique Number-III, Hackerblocks
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="video-player collapse">
+                    <video src="" controls></video>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <script>
+            function timelineToggler(){
+                var accord= document.getElementsByClassName('o-accordian')[0];
+                var videoPlayer= document.getElementsByClassName('video-player')[0];
+                accord.classList.toggle('collapse');
+                videoPlayer.classList.toggle('collapse');
+                
+            }
+        </script>
+    </body>
+</html>

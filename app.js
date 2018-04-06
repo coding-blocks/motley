@@ -34,9 +34,17 @@ app.get('/announcements', function(req,res) {
     res.render('announcements');
 });
 
+app.get('/profile', function(req,res) {
+    res.render('profile-page');
+})
+
 app.get('/search', function(req,res){
    res.render('search.hbs');
 
+});
+
+app.get('/timeline', function(req,res) {
+    res.render('timeline');
 });
 
 // Set server port
