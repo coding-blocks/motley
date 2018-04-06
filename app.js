@@ -15,11 +15,11 @@ app.get('/overview', function(req,res){
 })
 
 app.get('/accordian', function(req,res){
-    res.render('accordian');
+    res.render('templates/partials/accordian');
 })
 
 app.get('/star', function(req,res) {
-    res.render('star');
+    res.render('templates/partials/star');
 });
 
 app.get('/classroom', function(req,res) {
@@ -27,7 +27,7 @@ app.get('/classroom', function(req,res) {
 });
 
 app.get('/tab-nav', function(req,res) {
-    res.render('tab-nav');
+    res.render('templates/partials/tab-nav');
 });
 
 app.get('/announcements', function(req,res) {
@@ -39,12 +39,16 @@ app.get('/profile', function(req,res) {
 })
 
 app.get('/search', function(req,res){
-   res.render('search.hbs');
+   res.render('templates/partials/search.hbs');
 
 });
 
 app.get('/timeline', function(req,res) {
     res.render('timeline');
+});
+
+app.get('/buy-top', function(req,res) {
+    res.render('templates/partials/buy-top');
 });
 
 // Set server port
