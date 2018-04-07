@@ -15,11 +15,11 @@ app.get('/overview', function(req,res){
 })
 
 app.get('/accordian', function(req,res){
-    res.render('templates/partials/accordian');
+    res.render('accordian');
 })
 
 app.get('/star', function(req,res) {
-    res.render('templates/partials/star');
+    res.render('star');
 });
 
 app.get('/classroom', function(req,res) {
@@ -27,7 +27,7 @@ app.get('/classroom', function(req,res) {
 });
 
 app.get('/tab-nav', function(req,res) {
-    res.render('templates/partials/tab-nav');
+    res.render('tab-nav');
 });
 
 app.get('/announcements', function(req,res) {
@@ -39,7 +39,7 @@ app.get('/profile', function(req,res) {
 })
 
 app.get('/search', function(req,res){
-   res.render('templates/partials/search.hbs');
+   res.render('search.hbs');
 
 });
 
@@ -48,7 +48,7 @@ app.get('/timeline', function(req,res) {
 });
 
 app.get('/buy-top', function(req,res) {
-    res.render('templates/partials/buy-top');
+    res.render('buy-top');
 });
 
 // Set server port

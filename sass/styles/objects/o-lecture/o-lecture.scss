@@ -1,5 +1,6 @@
 .o-lecture{
     background-color: $vp-background;
+    margin-top: -54px;
 
     .lecture-header{
         @include dimensions(100%, auto);
