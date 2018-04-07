@@ -47,6 +47,10 @@ app.get('/timeline', function(req,res) {
     res.render('timeline');
 });
 
+app.get('/buy-top', function(req,res) {
+    res.render('buy-top');
+});
+
 // Set server port
 app.listen(4000);
 console.log('server is running');
