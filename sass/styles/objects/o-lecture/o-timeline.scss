@@ -3,6 +3,8 @@
   overflow-y: scroll;
   min-width: 326px;
   border-right: solid 1px $vp-border;
+  background-color: $vp-background;
+
   .o-accordian{
     padding-top: 0px;
     &.collapse{
@@ -54,5 +56,9 @@
 
   .circle-back{
     @include dimensions(37px, 37px);
+  }
+
+  .li-left{
+    width: 78%;
   }
 }

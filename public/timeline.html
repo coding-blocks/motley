@@ -7,7 +7,29 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
-
+        <header>
+            <nav>
+               <span>
+                      <img src="images/online-logo.png" alt="online-logo" class="nav-logo">
+               </span>
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        About us
+                    </li>
+                    <li class="nav-items">
+                        All Courses
+                    </li>
+                    <li class="nav-items">
+                        Contact us
+                    </li>
+                    <li class="nav-items">
+                        <div class="button-solid">
+                            <button>Login</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="o-lecture">
             <div class="lecture-header flex-row">
                 <div class="timeline-toggler flex-row">
@@ -39,12 +61,12 @@
                 </div>
             </div>
 
-            <div class="video-container">
+            <div class="lecture-content">
                 <div class="o-timeline">
                     <div class="o-accordian">
                         <div class="accordian-ul" data-show="true">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         -
                                     </div>
@@ -62,9 +84,9 @@
 
                             <div data-completed="true" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
-                                        1.1 - Chewbacca and Number, HackerBlocks
+                                        1.1 - Chewbacca Number, HackerBlocks
                                     </div>
                                 </div>
 
@@ -78,7 +100,7 @@
 
                             <div data-completed="true" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
                                         1.2 - Tavas and SaDDas, Codeforces 535-B
                                     </div>
@@ -94,7 +116,7 @@
 
                             <div data-completed="false" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
                                         1.3 - Fast Exponentiation
                                     </div>
@@ -110,7 +132,7 @@
 
                             <div data-completed="false" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
                                         1.4 - Unique Number-III, Hackerblocks
                                     </div>
@@ -128,7 +150,7 @@
 
                         <div class="accordian-ul" data-show="false">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         +
                                     </div>
@@ -147,7 +169,7 @@
 
                         <div class="accordian-ul" data-show="false">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         +
                                     </div>
@@ -165,7 +187,7 @@
 
                             <div data-completed="false" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
                                         1.3 - Fast Exponentiation
                                     </div>
@@ -181,7 +203,7 @@
 
                             <div data-completed="false" class="accordian-li">
                                 <div class="li-left flex-row">
-                                    {{!-- <div class="accordian-li-type"></div> --}}
+                                    <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
                                         1.4 - Unique Number-III, Hackerblocks
                                     </div>
@@ -199,10 +221,12 @@
                     </div>
                 </div>
 
-
-                <div class="video-player collapse">
-                    <video src="" controls></video>
+                <div class="video-container collapse">
+                    <div class="video-player">
+                        <video src="" controls></video>
+                    </div>
                 </div>
+                
             </div>
             
 
@@ -211,9 +235,9 @@
         <script>
             function timelineToggler(){
                 var accord= document.getElementsByClassName('o-accordian')[0];
-                var videoPlayer= document.getElementsByClassName('video-player')[0];
+                var videoContainer= document.getElementsByClassName('video-container')[0];
                 accord.classList.toggle('collapse');
-                videoPlayer.classList.toggle('collapse');
+                videoContainer.classList.toggle('collapse');
                 
             }
         </script>

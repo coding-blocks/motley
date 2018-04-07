@@ -55,7 +55,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('server', function (target) {
         grunt.task.run([
-            'connect:livereload',
+            'sass',
+            'connect',
             'open',
             'watch'
         ]);

@@ -1,5 +1,6 @@
 .o-lecture{
     background-color: $vp-background;
+    margin-top: -54px;
 
     .lecture-header{
         @include dimensions(100%, auto);
@@ -61,7 +62,7 @@
         @include dimensions(8px, 8px);
     }
 
-    .video-container{
+    .lecture-content{
         position: relative;
         height: 679px;
     }
