@@ -7,6 +7,8 @@
     min-height: 140px;
     padding: 0 70px;
     background-color: $vp-background;
+    transition: all 0.35s ease;
+
     .o-image-card{
       @include dimensions(90px, 90px);
       @include margin(0, 40px, 0, 0);
@@ -47,7 +49,5 @@
     &.slide-up{
       transform: translateY(-350px);
     }
-  
-    transition: all 0.35s ease;
   }
   
