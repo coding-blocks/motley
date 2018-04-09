@@ -1,7 +1,13 @@
 .video-player{
     @include dimensions(100%, 100%);
+    
     video{
       @include dimensions(100%, 100%);
+    }
+
+    iframe{
+      @include dimensions(100%, 100%);
+      border: none;
     }
   }
   

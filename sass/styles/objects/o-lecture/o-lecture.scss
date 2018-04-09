@@ -9,7 +9,7 @@
 
     .timeline-toggler{
         @include dimensions(20%, 101px);
-        min-width: 326px;
+        min-width: 20%;
         justify-content: center;
         border-right: 1px solid $vp-border;
     }
