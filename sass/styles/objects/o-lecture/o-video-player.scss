@@ -1,13 +1,13 @@
 .video-container{
   @include dimensions(100%, 100%);
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   background: $vp-background;
   transition: all 0.35s ease;
 
   &.collapse{
-    right: 0px;
+    right: 0;
     width: 80%;
   }
 }
