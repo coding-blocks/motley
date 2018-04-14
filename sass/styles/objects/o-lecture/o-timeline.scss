@@ -3,13 +3,14 @@
   overflow-y: auto;
   border-right: solid 1px $vp-border;
   background-color: $vp-background;
+  transition: all 0.35s ease;
+
+  &.collapse {
+    transform: translateX(-40%);
+  }
 
   .o-accordian{
     padding-top: 0px;
-    &.collapse{
-      transform: translateX(-40%);
-    }
-    transition: all 0.35s ease;
   }
 
   .accordian-li-heading, .accordian-status, .accordian-head{
