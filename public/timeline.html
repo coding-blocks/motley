@@ -61,12 +61,12 @@
                 </div>
             </div>
 
-            <div class="video-container">
+            <div class="lecture-content">
                 <div class="o-timeline">
                     <div class="o-accordian">
                         <div class="accordian-ul" data-show="true">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         -
                                     </div>
@@ -86,7 +86,7 @@
                                 <div class="li-left flex-row">
                                     <!-- <div class="accordian-li-type"></div> -->
                                     <div class="accordian-li-heading">
-                                        1.1 - Chewbacca and Number, HackerBlocks
+                                        1.1 - Chewbacca Number, HackerBlocks
                                     </div>
                                 </div>
 
@@ -150,7 +150,7 @@
 
                         <div class="accordian-ul" data-show="false">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         +
                                     </div>
@@ -167,9 +167,9 @@
                             </div>
                         </div>
 
-                        <div class="accordian-ul" data-show="false">
+                        <div class="accordian-ul" data-show="true">
                             <div class="accordian-head">
-                                <div class="flex-row">
+                                <div class="li-left flex-row">
                                     <div class="accordian-collapsar">
                                         +
                                     </div>
@@ -216,15 +216,49 @@
                                 </div>
 
                             </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    <!-- <div class="accordian-li-type"></div> -->
+                                    <div class="accordian-li-heading">
+                                        1.4 - Unique Number-III, Hackerblocks
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div data-completed="false" class="accordian-li">
+                                <div class="li-left flex-row">
+                                    <!-- <div class="accordian-li-type"></div> -->
+                                    <div class="accordian-li-heading">
+                                        1.4 - Unique Number-III, Hackerblocks
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div class="circle-back">
+                                        <div class="circle-front"></div>
+                                    </div>
+                                </div>
+
+                            </div>
                             
                         </div>
                     </div>
                 </div>
 
-
-                <div class="video-player collapse">
-                    <video src="" controls></video>
+                <div class="video-container collapse">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/mFbitwLUCRs" controls allowfullscreen></iframe>
+                    </div>
                 </div>
+                
             </div>
             
 
@@ -232,10 +266,10 @@
 
         <script>
             function timelineToggler(){
-                var accord= document.getElementsByClassName('o-accordian')[0];
-                var videoPlayer= document.getElementsByClassName('video-player')[0];
-                accord.classList.toggle('collapse');
-                videoPlayer.classList.toggle('collapse');
+                var timeline= document.getElementsByClassName('o-timeline')[0];
+                var videoContainer= document.getElementsByClassName('video-container')[0];
+                timeline.classList.toggle('collapse');
+                videoContainer.classList.toggle('collapse');
                 
             }
         </script>
