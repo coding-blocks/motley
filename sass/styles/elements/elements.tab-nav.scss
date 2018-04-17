@@ -1,6 +1,6 @@
 .tab-nav{
   @include flexbox(column);
-  @include dimensions(100vw, 100px);
+  @include dimensions(100%, 100px);
   @include padding-mixin(0, 60px, 0, 60px);
   justify-content: center;
   background-color: $global-font-heading-color;
@@ -11,12 +11,10 @@
 
 .tab-list{
   @include flexbox(row);
-  @include padding-mixin(0,0,0,0);
   justify-content: space-around;
 }
 
 .tab-items{
-  @include padding-mixin(0px, 9px, 0px, 0px);
   cursor: pointer;
   &:hover{
     color: $button-element-level;
@@ -24,6 +22,6 @@
 }
 
 .active{
-  border-bottom: solid 3px $button-element-level;
+  border-bottom: solid 2px $button-element-level;
   color: $button-element-level;
 }
