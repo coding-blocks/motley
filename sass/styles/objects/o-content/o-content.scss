@@ -1,21 +1,21 @@
-.o-lecture{
+.o-content-container{
     background-color: $vp-background;
     margin-top: -54px;
     height: calc(100vh - 111px);//set according to height of navbar;
 
-    .lecture-header{
+    .content-header{
         @include dimensions(100%, 100%);
         max-height: 101px;
     }
 
-    .timeline-toggler{
+    .desk-toggler{
         @include dimensions(20%, 101px);
         min-width: 20%;
         justify-content: center;
         border-right: 1px solid $vp-border;
     }
 
-    .lecture-desk{
+    .content-dashboard{
         @include padding-mixin(0, 27px, 0, 44px);
         @include dimensions(80%, auto);
         justify-content: space-between;
@@ -63,9 +63,39 @@
         @include dimensions(8px, 8px);
     }
 
-    .lecture-content{
+    .content{
         position: relative;
         height: calc(100% - 101px);//set according to .lecture-header;
+    }
+
+    .content-desk{
+        @include dimensions(20%, 100%);
+        overflow-y: auto;
+        border-right: solid 1px $vp-border;
+        background-color: $vp-background;
+        transition: all 0.35s ease;
+
+        &.collapse {
+            transform: translateX(-40%);
+        }
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .content-media{
+        @include dimensions(100%, 100%);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background: $vp-background;
+        transition: all 0.35s ease;
+
+        &.collapse{
+            right: 0%;
+            width: 80%;
+        }
     }
 
 }
