@@ -53,4 +53,5 @@
 .heading{
   @extend %bold;
   text-transform: capitalize;
+  font-size: $font-md;
 }
