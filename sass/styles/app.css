@@ -4262,7 +4262,7 @@ html {
   .home-row .home-column {
     position: static; }
 
-.o-pb-section {
+.o-pb {
   width: 30%;
   height: 100%;
   overflow-y: auto;
@@ -4271,9 +4271,9 @@ html {
   display: inline-block;
   background: #ffffff;
   position: relative; }
-  .o-pb-section.collapse {
+  .o-pb.collapse {
     transform: translateX(-40%); }
-  .o-pb-section .tab-nav {
+  .o-pb .tab-nav {
     background: #ffffff;
     font-size: 1.125rem;
     font-weight: 500;
@@ -4282,7 +4282,7 @@ html {
     box-shadow: 0px 14px 41px 0 rgba(51, 51, 51, 0.1);
     position: sticky;
     top: 0px; }
-  .o-pb-section::-webkit-scrollbar {
+  .o-pb::-webkit-scrollbar {
     display: none; }
 
 .editor-container {
@@ -4296,17 +4296,17 @@ html {
   .editor-container.collapse {
     width: 70%; }
 
-.o-pb-statement {
+.pb-statement {
   padding-top: 30px;
   padding-right: 56px;
   padding-bottom: 30px;
   padding-left: 30px; }
-  .o-pb-statement .para {
+  .pb-statement .para {
     font-size: 1.125rem;
     margin: 25px 0; }
-  .o-pb-statement .heading {
+  .pb-statement .heading {
     font-size: 1.125rem; }
-  .o-pb-statement .faded-cont {
+  .pb-statement .faded-cont {
     margin: 18px 0; }
 
 .container-courses {

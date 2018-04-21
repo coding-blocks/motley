@@ -5,37 +5,47 @@
     <title>Main</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <header>
     <nav>
-               <span>
-                      <img src="images/online-logo.png" alt="online-logo" class="nav-logo">
-               </span>
+           <span>
+                  <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
+           </span>
         <ul class="nav-list">
-            <li class="nav-items">
+            <li class="nav-items pointer">
                 About us
             </li>
-            <li class="nav-items">
+            <li class="nav-items pointer">
                 All Courses
             </li>
-            <li class="nav-items">
+            <li class="nav-items pointer">
                 Contact us
             </li>
-            <li class="nav-items">
+            <li class="nav-items pointer">
                 <div class="button-solid">
                     <button>Login</button>
                 </div>
             </li>
         </ul>
+
+        <div class="input-search nav-search">
+            <input type="text" placeholder="Search here">
+            <img src="images/searchicon.png" alt="search">
+        </div>
     </nav>
 </header>
-<div class="o-lecture">
-    <div class="lecture-header flex-row">
-        <div class="timeline-toggler flex-row">
-            <button class="button-dashed" onclick="probsectionToggler()">X Table of Content</button>
+
+
+<div class="o-content-section">
+    <div class="header flex-row">
+        <div class="section-toggler flex-row">
+            <div class="button-dashed">
+                <button onclick="sectionToggler()">X Table of Content</button>
+            </div>
         </div>
-        <div class="flex-row lecture-desk">
+        <div class="flex-row dashboard">
             <div class="heading-d">
                 <div class="main-h">
                     Section 1.1 - Fast Exponentiation
@@ -53,58 +63,243 @@
                     </div>
                 </div>
 
-                <div class="button-solid">
-                    <button>< Go to Dashboard</button>
+                <div>
+                    <button class="button-solid">< Go to Dashboard</button>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="lecture-content">
-        <div class="o-pb-section">
-            <div class="tab-nav">
-                <div class="tab-list">
-                    <div class="tab-items active">Problem</div>
-                    <div class="tab-items">Submissions</div>
-                    <div class="tab-items">Leaderboard</div>
+    <div class="content-section">
+        <div class="section">
+            <div class="o-accordian">
+                <div class="accordian-ul" data-show="true">
+                    <div class="accordian-head">
+                        <div class="li-left flex-row">
+                            <div class="accordian-collapsar">
+                                -
+                            </div>
+                            <div class="accordian-heading">
+                                Mathematics 1.0
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="accordian-status">
+                                <span class="completed">2</span>/ 6
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-completed="true" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.1 - Chewbacca Number, HackerBlocks
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="true" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.2 - Tavas and SaDDas, Codeforces 535-B
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.3 - Fast Exponentiation
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.4 - Unique Number-III, Hackerblocks
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordian-ul" data-show="false">
+                    <div class="accordian-head">
+                        <div class="li-left flex-row">
+                            <div class="accordian-collapsar">
+                                +
+                            </div>
+                            <div class="accordian-heading">
+                                Mathematics 1.0
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="accordian-status">
+                                <span class="completed">2</span>/ 6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordian-ul" data-show="true">
+                    <div class="accordian-head">
+                        <div class="li-left flex-row">
+                            <div class="accordian-collapsar">
+                                +
+                            </div>
+                            <div class="accordian-heading">
+                                Mathematics 1.0
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="accordian-status">
+                                <span class="completed">2</span>/ 6
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.3 - Fast Exponentiation
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.4 - Unique Number-III, Hackerblocks
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.4 - Unique Number-III, Hackerblocks
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-completed="false" class="accordian-li">
+                        <div class="li-left flex-row">
+                            <div class="accordian-li-heading">
+                                1.4 - Unique Number-III, Hackerblocks
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="circle-back">
+                                <div class="circle-front"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-
-            <div class="o-pb-statement">
-                <div class="heading-U">birthday paradox</div>
-                <div class="para">
-                    Your task is simple, determine the minimum number of people required in the room so that two have
-                    same birthday with probability greater than or equal to 'p'. (Assume there are 365 days in every year)
-                </div>
-
-                <div class="heading">Input Format:</div>
-                <div class="para">
-                    Single line containing the given probability.
-                </div>
-
-                <div class="heading">Contraints:</div>
-                <div class="faded-cont">
-                    0< p<= 1
-                </div>
-
-                <div class="heading"> output format</div>
-                <div class="para">
-                    Print an integral value denoting minimum number of people.
-                </div>
-
-                <div class="heading">sample input</div>
-                <div class="faded-cont">
-                    0< p <=1
-                </div>
-
-            </div>
-
-
         </div>
 
-        <div class="editor-container collapse">
+        <div class="content collapse">
+            <div class="o-pb"><!-- problem-->
+                <div class="pb-desk">
+                    <div class="tab-nav">
+                        <div class="tab-list">
+                            <div class="tab-items active">Problem</div>
+                            <div class="tab-items">Submissions</div>
+                            <div class="tab-items">Leaderboard</div>
+                        </div>
+                    </div>
 
+                    <div class="pb-statement">
+                        <div class="heading-U">birthday paradox</div>
+                        <div class="para">
+                            Your task is simple, determine the minimum number of people required in the room so that two have
+                            same birthday with probability greater than or equal to 'p'. (Assume there are 365 days in every year)
+                        </div>
+
+                        <div class="heading">Input Format:</div>
+                        <div class="para">
+                            Single line containing the given probability.
+                        </div>
+
+                        <div class="heading">Contraints:</div>
+                        <div class="faded-cont">
+                            0< p<= 1
+                        </div>
+
+                        <div class="heading"> output format</div>
+                        <div class="para">
+                            Print an integral value denoting minimum number of people.
+                        </div>
+
+                        <div class="heading">sample input</div>
+                        <div class="faded-cont">
+                            0< p <=1
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="dragger-ps-ce"></div>
+
+                <div class="code-editor"></div>
+            </div>
         </div>
 
     </div>
@@ -112,14 +307,42 @@
 
 </div>
 
+</body>
 <script>
-    function probsectionToggler(){
-        var probsection= document.getElementsByClassName('o-pb-section')[0];
-        var editorContainer= document.getElementsByClassName('editor-container')[0];
-        probsection.classList.toggle('collapse');
-        editorContainer.classList.toggle('collapse');
+    var pbDesk= $('.pb-desk');
+    var pbSection= $('.o-pb');
+    var leftPsCe= pbDesk.outerWidth() - 2;
+    var dragPBCE= $('#dragger-ps-ce');
+    var ce= $('.code-editor');
+
+    function sectionToggler(){
+        var section= document.getElementsByClassName('section')[0];
+        var contentMedia= document.getElementsByClassName('content')[0];
+        section.classList.toggle('collapse');
+        contentMedia.classList.toggle('collapse');
 
     }
+
+    dragPBCE.css({'left': leftPsCe.toString()+ 'px'});
+
+    dragPBCE.on('mousedown', (e)=>{
+        drag(e);
+    });
+
+
+    function drag(e){
+        $(document).on('mouseup', ()=>{
+            $(document).off('mousemove');
+        })
+
+        $(document).on('mousemove', (e)=>{
+            let x= e.clientX- pbSection.offset().left;
+            let y= e.clientY;
+            let leftPercent= x/ pbSection.outerWidth() * 100;
+            pbDesk.css({'width': leftPercent.toString() + '%'});
+            ce.css({'width': (100-leftPercent).toString() + '%'});
+            dragPBCE.css({'left': x + 'px'});
+        })
+    }
 </script>
-</body>
 </html>
