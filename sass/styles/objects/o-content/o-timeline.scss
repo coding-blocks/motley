@@ -1,4 +1,4 @@
-.content-desk{
+.section{
   .o-accordian{
     padding-top: 0px;
   }
@@ -8,14 +8,14 @@
   }
 
   .accordian-head{
-    @include padding-mixin(0, 11px, 0, 21px);
+    @include padding-mixin(0, 19px, 0, 5px);
     background-color: $vp-acc-head;
     min-height: 79px;
     border-bottom: solid 1px $vp-border;
   }
 
   .accordian-collapsar{
-    @include margin(0, 16px, 0, 0);
+    @include margin(0, 12px, 0, 0);
   }
 
   .accordian-ul{
@@ -25,14 +25,14 @@
   }
 
   .accordian-li{
-    @include padding-mixin(10px, 23px, 10px, 47px);
+    @include padding-mixin(10px, 14px, 10px, 47px);
     border-bottom: solid 1px $vp-border;
     background-color: $vp-background;
     min-height: 79px;
   }
 
   .accordian-heading, .accordian-li-heading{
-    font-size: 20px;
+    font-size: $font-xs;
   }
 
   .accordian-status, .main-h, .sub-h{
@@ -42,6 +42,7 @@
 
   .circle-front{
     @include dimensions(29px, 29px);
+    transform: translateY(13%);
   }
 
   .circle-back{
