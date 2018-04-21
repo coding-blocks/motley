@@ -4,7 +4,7 @@
 
   .classroom-para{
     @include margin(0,0,40px,0);
-    flex: 2;
+    flex: 25%;
     text-align: justify;
     display: inline-block;
     font-size: $font-sm;

@@ -4,18 +4,18 @@
 
 // Heading with Sub-Description
 .heading-d{
-  @include margin(0,0, 31px, 0);
+  @include margin(0,0, 25px, 0);
 }
 
 .main-h{
-  @include margin(0, 0, 8px, 0);
-  font-size:28.8px;
+  //@include margin(0, 0, 8px, 0);
+  font-size:$font-md;
   @extend %bold;
   color: $global-font-text-color;
 }
 
 .sub-h{
-  font-size: 23.3px;
+  font-size: $font-sm;
   @extend %bold;
   color: $font-sub-heading;
 }
