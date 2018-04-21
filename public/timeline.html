@@ -7,35 +7,42 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-               <span>
-                      <img src="images/online-logo.png" alt="online-logo" class="nav-logo">
-               </span>
-                <ul class="nav-list">
-                    <li class="nav-items">
-                        About us
-                    </li>
-                    <li class="nav-items">
-                        All Courses
-                    </li>
-                    <li class="nav-items">
-                        Contact us
-                    </li>
-                    <li class="nav-items">
-                        <div class="button-solid">
-                            <button>Login</button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="o-content-container">
-            <div class="content-header flex-row">
-                <div class="desk-toggler flex-row">
-                    <button class="button-dashed" onclick="deskToggler()">X Table of Content</button>
+    <header>
+        <nav>
+           <span>
+                  <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
+           </span>
+            <ul class="nav-list">
+                <li class="nav-items pointer">
+                    About us
+                </li>
+                <li class="nav-items pointer">
+                    All Courses
+                </li>
+                <li class="nav-items pointer">
+                    Contact us
+                </li>
+                <li class="nav-items pointer">
+                    <div class="button-solid">
+                        <button>Login</button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="input-search nav-search">
+                <input type="text" placeholder="Search here">
+                <img src="images/searchicon.png" alt="search">
+            </div>
+        </nav>
+    </header>
+        <div class="o-content-section">
+            <div class="header flex-row">
+                <div class="section-toggler flex-row">
+                    <div class="button-dashed">
+                        <button onclick="sectionToggler()">X Table of Content</button>
+                    </div>
                 </div>
-                <div class="flex-row content-dashboard">
+                <div class="flex-row dashboard">
                     <div class="heading-d">
                         <div class="main-h">
                             Section 1.1 - Fast Exponentiation
@@ -61,8 +68,8 @@
                 </div>
             </div>
 
-            <div class="content">
-                <div class="content-desk">
+            <div class="content-section">
+                <div class="section">
                     <div class="o-accordian">
                         <div class="accordian-ul" data-show="true">
                             <div class="accordian-head">
@@ -245,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="content-media collapse">
+                <div class="content collapse">
                     <div class="video-player">
                         <iframe src="https://www.youtube.com/embed/mFbitwLUCRs" controls allowfullscreen></iframe>
                     </div>
@@ -257,10 +264,10 @@
         </div>
 
         <script>
-            function deskToggler(){
-                var desk= document.getElementsByClassName('content-desk')[0];
-                var contentMedia= document.getElementsByClassName('content-media')[0];
-                desk.classList.toggle('collapse');
+            function sectionToggler(){
+                var section= document.getElementsByClassName('section')[0];
+                var contentMedia= document.getElementsByClassName('content')[0];
+                section.classList.toggle('collapse');
                 contentMedia.classList.toggle('collapse');
                 
             }
