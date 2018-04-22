@@ -50,11 +50,11 @@
     }
 
     .button-solid{
-        @include dimensions(153px, 61px);
+        @include dimensions(233px, 61px);
         @include margin(0, 0, 0, 33px);
         text-align: center;
         font-size: $font-sm;
-        max-width: 153px;
+        max-width: 233px;
     }
 
     .notify-text{
