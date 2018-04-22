@@ -8,7 +8,6 @@
   overflow-y: auto;
   background-color: $vp-background;
   transition: transform 0.35s ease;
-  //display: inline-block;
   background: $white;
   position: relative;
   float: left;
@@ -32,15 +31,19 @@
   &::-webkit-scrollbar{
     display: none;
   }
-
 }
 
+#dragger-ps-ce{
+  @include dimensions(10px, 100%);
+  position: absolute;
+  top: 0;
+  cursor: ew-resize;
+  z-index: 20;
+}
 
-//-----------------------------------------Remove this part-------------------------------------------------------------
-.code-editor{
-  width: 70%;
-  height: 100%;
-  background: seagreen;
-  display: inline-block;
-  float: left;
+#dragger-ce-rs{
+  @include dimensions(100%, 10px);
+  position: absolute;
+  cursor: ns-resize;
+  z-index: 20;
 }
