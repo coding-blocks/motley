@@ -4,6 +4,11 @@
 // Print styles.
 // Inlined to avoid the additional HTTP request: h5bp.com/r
 // ==========================================================================
+
+* {
+  outline: none;
+}
+
 body {
   @include font($global-font-family, 27.6px, normal);
   padding-top: 100px;
