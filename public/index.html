@@ -109,9 +109,9 @@
                </div>
 
                <div class="card-stack-btn">
-                   <a class="prev" href="prev">&lt;&nbsp;&nbsp;Prev</a>
+                   <a class="prev" >&lt;&nbsp;&nbsp;Prev</a>
                    &nbsp;&nbsp;
-                   <a class="next" href="next">Next &nbsp;&nbsp;&gt;</a>
+                   <a class="next" >Next &nbsp;&nbsp;&gt;</a>
                </div>
            </div>
 
@@ -418,7 +418,106 @@
         <!--<button>Register</button>-->
     <!--</div>-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="JS/carousel.js" type="application/javascript"></script>
+ <!--  <script src="JS/carousel.js" type="application/javascript"></script> -->
     <script src="http://localhost:35729/livereload.js"></script>
+    <script type="text/javascript">
+      let currentIndex = 2
+
+      class carouselCard {
+        
+
+        constructor (el, cssConf = {}) {
+          this.element = el
+          this.translateX = 0
+          this.translateY = 0
+          $(this.element).css(cssConf)
+        }
+
+        setTranslateY (val) {
+          this.translateY = val
+        }
+
+        addTranslateX (val) {
+          this.translateX += val
+        }
+
+        setHeight (h) {
+          this.height = h
+        }
+
+        apply () {
+          $(this.element).css({
+            height: this.height,
+            transform: `translate(${this.translateX}%, ${this.translateY}%)`
+          })
+        }
+      }
+
+      let carouselCards = Array.from(document.querySelectorAll('.card-stack > .card')).map(el => {
+        return new carouselCard (el, {
+          transition: '0.8s'
+        })
+      })
+
+      $('.card-stack-btn > a')[1].onclick = function () {
+        reRender(1)
+        currentIndex++
+      }
+
+      $('.card-stack-btn > a')[0].onclick = function () {
+        currentIndex--
+        reRender(-1)
+        
+      }
+    
+      reRender = function (factor) {
+
+        if (currentIndex < 2) {
+          currentIndex = 2
+          return;
+        }
+
+        if  (currentIndex >= 5) {
+          currentIndex = 4
+          return
+        }
+
+        for(let i = 0 ; i < carouselCards.length ; i++) {
+          let card = carouselCards[i]
+
+          let normalize = factor == -1 ? 1 : 0
+          if (i < currentIndex) {
+            card.setHeight(325)
+            card.setTranslateY(0)
+            card.addTranslateX(-110*factor)
+          } else if (i == currentIndex-normalize) {
+            card.setHeight(325)
+            card.setTranslateY(0)
+            card.addTranslateX(-16*factor)
+          } else if (i <= currentIndex+1-normalize ) {
+            card.setHeight(239)
+            card.addTranslateX(-16*factor)
+            card.setTranslateY(20)
+          } else if (i <= currentIndex+2-normalize) {
+            card.setHeight(142)
+            card.setTranslateY(72)
+            card.addTranslateX(-16*factor)
+          }
+
+          if (i <= currentIndex+2)
+            card.apply()
+        }
+      }
+
+
+    </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
