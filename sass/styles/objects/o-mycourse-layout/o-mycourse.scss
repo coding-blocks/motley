@@ -1,0 +1,41 @@
+.my-course {
+  padding-top: 58px;
+  .card {
+    height: 450px;
+  }
+   .batch {
+     margin-bottom: 30px;
+   }
+
+  .card-text {
+    font-size: $font-sm;
+    color: #666666;
+  }
+
+   .red-card-text {
+     font-size: $font-sm;
+     color: #ff6666;
+   }
+
+  .price {
+    font-size: $font-md;
+    color: #ff6666;
+  }
+
+  .price-detail {
+    padding: 0;
+  }
+
+  .my-course-grid {
+    margin-top: 5%;
+    padding-left: 0;
+  }
+
+  .footer {
+    margin-top: 20px;
+    .card-text {
+      text-transform: uppercase;
+      font-size: $font-sm;
+    }
+  }
+}
