@@ -75,20 +75,10 @@
   position: absolute;
 }
 
-.heading {
-  p {
-    font-size: 1rem;
-    color: $white;
-  }
-
-  span {
-    color: $button-element-level;
-    font-size: 1rem;
-  }
-}
 
 .output {
   background-color: $editor-line-number;
+
 }
 
 .input {
@@ -103,6 +93,18 @@
 .output, .input {
   height: 150px;
   padding-top: 22px;
+
+  .heading {
+    p {
+      font-size: 1rem;
+      color: $white;
+    }
+
+    span {
+      color: $button-element-level;
+      font-size: 1rem;
+    }
+  }
    .input-box {
      padding-top: 10px;
      color: #ccc;
