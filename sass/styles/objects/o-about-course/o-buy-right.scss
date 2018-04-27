@@ -22,12 +22,13 @@
     @include dimensions(100%, 336px);
     position: relative;
     cursor: pointer;
+    padding-top: 50px;
   }
 
   .card-video{
     .status-circle{
       position: absolute;
-      transform: translate(208px, 123px);
+      transform: translate(208px, 73px);
       z-index: 10;
     }
 
@@ -65,5 +66,19 @@
 
   &.slide-right{
     transform: translateX(600px);
+  }
+
+  .card-text{
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card-img{
+    @include margin(0, auto, 10px, auto);
+    @include dimensions(350px, 240px);
+
+    img{
+      max-height: 100%;
+    }
   }
 }
