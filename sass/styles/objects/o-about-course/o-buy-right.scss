@@ -3,9 +3,10 @@
   top: 130px;
   transition: all 0.35s ease;
   right: -14px;
+  width: 42%;
 
   .card{
-    @include dimensions(505px, 730px);
+    @include dimensions(100%, 730px);
     padding-bottom: 30px;
     overflow-y: scroll;
   }
