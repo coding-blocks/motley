@@ -19,7 +19,16 @@
     margin-top: 25px;
   }
 }
-
+.grid-background {
+    background-color: #f6f6f6;
+    margin-top: 3%;
+    padding-bottom: 5%;
+}
+.grid-background > .heading {
+    padding-top: 2%;
+    width: 25%;
+    margin-left: 3%;
+}
 .grid {
   margin-left: 34px;
   margin-right: 34px;
