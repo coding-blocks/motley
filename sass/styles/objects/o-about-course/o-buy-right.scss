@@ -1,5 +1,5 @@
 .o-buy-right{
-  @include dimensions(33%, 80%)
+  @include dimensions(33%, 80%);
   position: fixed;
   top: 145px;
   transition: all 0.35s ease;
