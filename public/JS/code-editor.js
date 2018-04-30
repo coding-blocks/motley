@@ -1,10 +1,10 @@
 /**
  * Created by Vibhu Dujari on 4/22/18
  */
-
-var editor = ace.edit("editor");
-editor.setTheme("ace/theme/monokai");
-editor.session.setMode("ace/mode/javascript");
+//
+// var editor = ace.edit("editor");
+// editor.setTheme("ace/theme/monokai");
+// editor.session.setMode("ace/mode/javascript");
 
 var leftPsCe= $('.pb-desk').outerWidth() - 5;
 var topCeRs= $('#editor').outerHeight() - 5;
@@ -50,7 +50,7 @@ function drag(dragevent, direction, limit){
 
 
     $(document).on('mousemove', (e)=>{
-        editor.resize();
+        // editor.resize();
 
         if(direction){
             let x= e.clientX- first.offset().left;//subtracted as clientX is in respect to viewport and not parent;
