@@ -24,6 +24,7 @@
     @include dimensions(100%, 336px);
     position: relative;
     cursor: pointer;
+    padding-top: 50px;
   }
 
   .card-video{
@@ -49,11 +50,6 @@
       max-height: 82px;
       transform: translateY(-109%);
       background: $white;
-      text-align: center;
-
-      .icon{
-        transform: translateY(80%);
-      }
     }
   }
 
@@ -94,12 +90,17 @@
     transform: translateX(105%);
   }
 
-  .preview{
-    @include dimensions(100%, 100%);
+  .card-text{
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-    iframe{
-      @include dimensions(100%, 100%);
-      border: none;
+  .card-img{
+    @include margin(0, auto, 10px, auto);
+    @include dimensions(68%, 240px);
+
+    img{
+      max-height: 100%;
     }
   }
 }
