@@ -134,16 +134,3 @@ input:focus {
   height: 100%
 }
 
-
-@each $dis
-in
-(block),
-(inline),
-(inline-block),
-(flex),
-(none){
-  .display-#{$dis}{
-      @include display($dis);
-  }
-}
-
