@@ -3,7 +3,6 @@
   @include dimensions(113px, 113px);
   @include border-radius(50%);
   background: $course-progress-circle-front;
-  margin-left: -16px;
 }
 
 .circle-front{
