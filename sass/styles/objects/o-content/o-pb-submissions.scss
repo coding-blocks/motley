@@ -2,11 +2,12 @@
   padding: 8%;
 
   .card{
-    height: 350px;
-    max-width: 356px;
+    height: auto;
+    max-width: 440px;
     margin: 25px auto;
     position: relative;
     padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .circle-container{
@@ -21,18 +22,16 @@
 
   .circle-back{
     @include dimensions(100%, 100%);
-    max-width: 80px;
-    max-height: 80px;
     position: absolute;
     top: 0;
   }
 
   .circle-front{
     @include dimensions(80%, 80%);
-    transform: translateY(-21%);
+    transform: none;
     position: absolute;
-    top: 25%;
-    left: 8%;
+    top: 10%;
+    left: 10%;
   }
 
   .circle-md{
@@ -44,16 +43,12 @@
     @include dimensions(100%, 100%);
     max-width: 36px;
     max-height: 36px;
-
-    .progress-text{
-      transform: translateY(-62%);
-    }
   }
 
   .progress-text{
     font-size: $font-mds;
-    transform: translateY(-21%);
     font-weight: $font-medium;
+    transform: none;
   }
 
   .pass{
@@ -74,7 +69,6 @@
     background: $default-border;
     margin: 9px auto;
     opacity: 0.11;
-
   }
 
   .test-cases{
@@ -86,9 +80,7 @@
 
   .button-solid{
     @include dimensions(46%, 42px);
-    margin: 0 27%;
+    margin: 10px auto;
     font-size: $global-font-size;
-    position: absolute;
-    bottom: 25px;
   }
 }
