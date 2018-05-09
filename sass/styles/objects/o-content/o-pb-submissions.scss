@@ -82,5 +82,6 @@
     @include dimensions(46%, 42px);
     margin: 10px auto;
     font-size: $global-font-size;
+    max-width: 150px;
   }
 }
