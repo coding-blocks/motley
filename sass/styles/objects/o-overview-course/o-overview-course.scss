@@ -12,8 +12,12 @@
   }
 
   .course-features{
-
+    &>.row{
+      padding: 0;
+      margin-bottom: 40px;
+    }
   }
+
   .round-img{
     @include dimensions(100%, 100%);
     position: absolute;
@@ -28,10 +32,12 @@
     padding: 0 4%;
   }
 
+  .img-box{
+    max-width: 72px;
+  }
+
   .img-container{
     position: relative;
     padding-bottom: 100%;
-    max-width: 100px;
-    max-height: 100px;
   }
 }
