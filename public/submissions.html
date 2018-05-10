@@ -9,6 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<header>
+    <nav>
+           <span>
+                  <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
+           </span>
+        <ul class="nav-list">
+            <li class="nav-items pointer">
+                About us
+            </li>
+            <li class="nav-items pointer">
+                All Courses
+            </li>
+            <li class="nav-items pointer">
+                Contact us
+            </li>
+            <li class="nav-items pointer">
+                <div class="button-solid">
+                    <button>Login</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="input-search nav-search">
+            <input type="text" placeholder="Search here">
+            <img src="images/searchicon.png" alt="search">
+        </div>
+    </nav>
+</header>
+
+
 <div class="o-content-section">
     <div class="header flex-row">
         <div class="section-toggler flex-row">
@@ -43,21 +73,22 @@
     </div>
 
     <div class="content-section">
-        <div class="section">
+        <div class="section collapse">
             <div class="o-accordian">
                 <div class="accordian-ul" data-show="true">
                     <div class="accordian-head">
                         <div class="li-left flex-row">
                             <div class="accordian-collapsar">
-                                +
+                                -
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
-                                Mathematics 1.0
-                                Mathematics 1.0
                             </div>
+                        </div>
+
+                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">99</span>/ 99
+                                <span class="completed">2</span>/ 6
                             </div>
                         </div>
                     </div>
@@ -132,29 +163,31 @@
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
-                                Mathematics 1.0
-                                Mathematics 1.0
                             </div>
+                        </div>
+
+                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">99</span>/ 99
+                                <span class="completed">2</span>/ 6
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="accordian-ul" data-show="true">
-                   <div class="accordian-head">
+                    <div class="accordian-head">
                         <div class="li-left flex-row">
                             <div class="accordian-collapsar">
                                 +
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
-                                Mathematics 1.0
-                                Mathematics 1.0
                             </div>
+                        </div>
+
+                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">99</span>/ 99
+                                <span class="completed">2</span>/ 6
                             </div>
                         </div>
                     </div>
@@ -223,7 +256,7 @@
             </div>
         </div>
 
-        <div class="content collapse">
+        <div class="content">
             <div class="o-pb"><!-- problem-->
                 <div class="pb-desk">
                     <div class="tab-nav">
@@ -234,33 +267,172 @@
                         </div>
                     </div>
 
-                    <div class="o-pb-statement">
-                        <div class="heading-U">birthday paradox</div>
-                        <div class="para">
-                            Your task is simple, determine the minimum number of people required in the room so that two have
-                            same birthday with probability greater than or equal to 'p'. (Assume there are 365 days in every year)
+                    <div class="o-pb-submissions">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-container">
+                                        <div class="circle-back circle-md pass d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">C++</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-4">
+                                    <div class="status-circle">
+                                        <div class="circle-back"></div>
+                                        <div class="circle-front d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="circle-container">
+                                        <div class="circle-back circle-md pass d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">150</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 para">Language Used</div>
+                                <div class="col-4 para">Total Score</div>
+                                <div class="col-4 para">Time Taken(ms)</div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <div class="test-cases row no-gutters">
+                                <div class="col-6">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="circle-container">
+                                                <div class="circle-back circle-sm pass d-flex justify-content-center">
+                                                    <p class="progress-text align-self-center">3</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="para">
+                                                Test Cases Passed
+                                            </div>
+                                            <div class="para">
+                                                (1, 2, 3, 4, 5)<!-- MUST use spaces btw testcase number-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="circle-container">
+                                                <div class="circle-back circle-sm fail d-flex justify-content-center">
+                                                    <p class="progress-text align-self-center">3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="para">
+                                                Test Cases Failed
+                                            </div>
+                                            <div class="para">
+                                                (1, 2, 3, 4)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button-solid">
+                                <button>View Submission</button>
+                            </div>
                         </div>
 
-                        <div class="heading">Input Format:</div>
-                        <div class="para">
-                            Single line containing the given probability.
-                        </div>
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="circle-container">
+                                        <div class="circle-back circle-md pass d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">C++</p>
+                                        </div>
+                                    </div>
 
-                        <div class="heading">Contraints:</div>
-                        <div class="faded-cont">
-                            0< p<= 1
-                        </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="status-circle">
+                                        <div class="circle-back"></div>
+                                        <div class="circle-front d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="circle-container">
+                                        <div class="circle-back circle-md pass d-flex justify-content-center">
+                                            <p class="progress-text align-self-center">150</p>
+                                        </div>
+                                    </div>
 
-                        <div class="heading"> output format</div>
-                        <div class="para">
-                            Print an integral value denoting minimum number of people.
-                        </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 para">Language Used</div>
+                                <div class="col-4 para">Total Score</div>
+                                <div class="col-4 para">Time Taken(ms)</div>
+                            </div>
 
-                        <div class="heading">sample input</div>
-                        <div class="faded-cont">
-                            0< p <=1
-                        </div>
+                            <div class="divider"></div>
 
+                            <div class="test-cases row no-gutters">
+                                <div class="col-6">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="circle-container">
+                                                <div class="circle-back circle-sm pass d-flex justify-content-center">
+                                                    <p class="progress-text align-self-center">3</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="para">
+                                                Test Cases Passed
+                                            </div>
+                                            <div class="para">
+                                                (1, 2, 3, 4, 5)<!-- MUST use spaces btw testcase number-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <div class="circle-container">
+                                                <div class="circle-back circle-sm fail d-flex justify-content-center">
+                                                    <p class="progress-text align-self-center">3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="para">
+                                                Test Cases Failed
+                                            </div>
+                                            <div class="para">
+                                                (1, 2, 3, 4)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button-solid">
+                                <button>View Submission</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
