@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
@@ -33,13 +34,34 @@
 </header>
 
 <div class="classroom-container row">
-    <div class="classroom-header-box col-md-6 col-sm-12 col-xs-12">
+
+    <div class="classroom-header-box col-md-6 col-sm-12">
         <div class="classroom-header row">
-            <div class="classroom-image col-md-2 col-xs-2 col-sm-2">
+            <div class="classroom-image col-2 col-md-2">
                 <img src="images/c++" alt="">
             </div>
-            <div class="classroom-text col-md-10 col-xs-10 col-sm-10">
+            <div class="classroom-text col-10 col-md-10">
                 Competitive Programming
+
+                <div class="rating mob">
+                    <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="neg-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="edit-rating">Edit my rating</span>
+
+                </div>
             </div>
         </div>
         <p class="classroom-para">
@@ -50,41 +72,46 @@
             <span class="pos-rating">
                 <i class="fas fa-star"></i>
             </span>
-            <span class="pos-rating">
+                <span class="pos-rating">
                 <i class="fas fa-star"></i>
             </span>
-            <span class="pos-rating">
+                <span class="pos-rating">
                 <i class="fas fa-star"></i>
             </span>
-            <span class="pos-rating">
+                <span class="pos-rating">
                 <i class="fas fa-star"></i>
             </span>
-            <span class="neg-rating">
+                <span class="neg-rating">
                 <i class="fas fa-star"></i>
             </span>
-
+            <span class="edit-rating">Edit my rating</span>
         </div>
     </div>
     <div class="course-progress-box col-md-6 col-sm-12 col-xs-12">
-        <div class="course-progress-2">
-            <p class="course-progress-heading">Course Progress</p>
+        <div class="course-progress-heading row no-gutters">
+            <div class="heading col-4 col-md-6 align-self-center">Course Progress</div>
+            <div class="divider-h col-6 align-self-center"></div>
+        </div>
 
-            <div data-completed="false" class="status-circle col-md-2">
-                <div class="circle-back">
-                    <div class="circle-front">
+        <div class="progress row no-gutters justify-content-around align-items-center">
+            <div class="progress-circle col-3 col-md-3">
+                <div class="status-circle">
+                    <div class="circle-back"></div>
+                    <div class="circle-front d-flex flex-column justify-content-center">
                         <p class="progress-text">26%</p>
                     </div>
                 </div>
             </div>
-            <div class="course-progress-detail col-md-10">
-                <p class="lectures-completed">12 of 46 Lectures completed</p>
-                <p class="reset-progress">Reset Progress</p>
+
+            <div class="course-progress-detail col-5 col-md-9">
+                <p class="heading-mob">Course Progress</p>
+                <p class="lectures-completed">12 of 46 completed</p>
+                <button class="reset-progress">Reset Progress</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-5 col-md-5">
+
+            <div class="offset-md-5 col-4 col-md-5">
                 <div class="button-solid">
-                    <button>Resume Learning</button>
+                    <button>Resume</button>
                 </div>
             </div>
         </div>
@@ -262,57 +289,57 @@
 
 
     <!-- -----------------------------------------About this course--------------------------------- -->
-    <div class="heading-u">
-        About This Course
-    </div>
+    <!--<div class="heading-u">-->
+        <!--About This Course-->
+    <!--</div>-->
 
-    <div class="o-overview-course flex-row">
-        <div class="course-features">
-            <div class="flex-row">
-                <div class="img-desc flex-row">
-                    <div class="round-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="classroom-para">
-                        30+ Hours Video Content
-                    </div>
-                </div>
+    <!--<div class="o-overview-course flex-row">-->
+        <!--<div class="course-features">-->
+            <!--<div class="flex-row">-->
+                <!--<div class="img-desc flex-row">-->
+                    <!--<div class="round-img">-->
+                        <!--<img src="" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="classroom-para">-->
+                        <!--30+ Hours Video Content-->
+                    <!--</div>-->
+                <!--</div>-->
 
-                <div class="img-desc flex-row">
-                    <div class="round-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="classroom-para">
-                        Full Lifetime Access
-                    </div>
-                </div>
-            </div>
+                <!--<div class="img-desc flex-row">-->
+                    <!--<div class="round-img">-->
+                        <!--<img src="" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="classroom-para">-->
+                        <!--Full Lifetime Access-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
-            <div class="flex-row">
-                <div class="img-desc flex-row">
-                    <div class="round-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="classroom-para">
-                        Certification of Completion
-                    </div>
-                </div>
+            <!--<div class="flex-row">-->
+                <!--<div class="img-desc flex-row">-->
+                    <!--<div class="round-img">-->
+                        <!--<img src="" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="classroom-para">-->
+                        <!--Certification of Completion-->
+                    <!--</div>-->
+                <!--</div>-->
 
-                <div class="img-desc flex-row">
-                    <div class="round-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="classroom-para">
-                        Supplemental Resources
-                    </div>
-                </div>
-            </div>
-        </div>
+                <!--<div class="img-desc flex-row">-->
+                    <!--<div class="round-img">-->
+                        <!--<img src="" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="classroom-para">-->
+                        <!--Supplemental Resources-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <div class="classroom-para">
-            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted to ensure your success in challenges such as Google CodeJam, Google Kickstart, ACM-ICPC, and more. This 8 week programme will kickstart your foray in to the exciting world of competitive coding. You will master commonly used problem solving techniques, hone your mathematical analysis skills, and push the boundaries of your reasoning abilities. The course will cover Advanced Data Structures like Segment Trees, Binary Index / Fenwick Trees.
-        </div>
-    </div>
+        <!--<div class="classroom-para">-->
+            <!--Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted to ensure your success in challenges such as Google CodeJam, Google Kickstart, ACM-ICPC, and more. This 8 week programme will kickstart your foray in to the exciting world of competitive coding. You will master commonly used problem solving techniques, hone your mathematical analysis skills, and push the boundaries of your reasoning abilities. The course will cover Advanced Data Structures like Segment Trees, Binary Index / Fenwick Trees.-->
+        <!--</div>-->
+    <!--</div>-->
 
     <!-------------------------------------------About Instructors------------------------------------>
     <div class="heading-u">
@@ -321,7 +348,7 @@
 
     <div class="o-about-instructors container-fluid">
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-12">
                 <div class="img-desc row">
                     <div class="col-4">
                         <div class="img-container">
@@ -349,7 +376,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-12">
                 <div class="img-desc row">
                     <div class="col-4">
                         <div class="img-container">
@@ -380,7 +407,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-12">
                 <div class="img-desc row">
                     <div class="col-4">
                         <div class="img-container">
@@ -408,7 +435,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-12">
                 <div class="img-desc row">
                     <div class="col-4">
                         <div class="img-container">
