@@ -22,10 +22,15 @@
 @import "objects/o-content/o-problem";
 @import "objects/o-content/o-pb-statement";
 @import "objects/o-content/o-pb-leaderboard";
+@import "objects/o-content/o-pb-submissions";
 @import "objects/o-courses/o-courses";
 @import "objects/o-content/o-code-editor";
 @import "objects/o-progress/o-progress";
+@import "objects/o-sidebar/o-sidebar";
 @import "objects/o-about-course/o-accordian";
 @import "objects/o-mycourse-layout/o-mycourse";
 @import "objects/o-about-course/o-about-course";
+@import "objects/o-content/o-document.scss";
 @import "objects/o-footer/o-footer.scss";
+@import "objects/o-doubt/o-doubt.scss";
+@import "objects/o-otp-enroll/o-otp-enroll";

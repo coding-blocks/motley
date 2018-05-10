@@ -1,5 +1,14 @@
+%button-config{
+  @include dimensions(100%, 52px);
+  @include border-radius(40px);
+  font-size: 0.937rem;
+  font-weight: $font-medium;
+  max-width: 191px;
+}
+
+
 .o-buy-right{
-  @include dimensions(33%, 80%);
+  @include dimensions(37%, 80%);
   position: fixed;
   top: 145px;
   transition: all 0.35s ease;
@@ -12,19 +21,25 @@
     overflow-y: scroll;
   }
 
+  .button-container{
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+
   .button-solid{
-    @include margin(37px, auto, 40px, auto);
-    @include dimensions(56%, 80px);
-    font-size: $font-md;
-    font-weight: $font-medium;
-    max-width: 304px;
+    @extend %button-config;
+    margin-right: 4%;
+  }
+
+  .button-dashed{
+    @extend %button-config;
+    @include border(solid, 2px, $button-element-level);
   }
 
   .card-video{
     @include dimensions(100%, 336px);
     position: relative;
     cursor: pointer;
-    padding-top: 50px;
   }
 
   .card-video{
@@ -50,6 +65,11 @@
       max-height: 82px;
       transform: translateY(-109%);
       background: $white;
+      text-align: center;
+
+      .icon{
+        transform: translateY(80%);
+      }
     }
   }
 
@@ -90,17 +110,12 @@
     transform: translateX(105%);
   }
 
-  .card-text{
-    text-transform: uppercase;
-    text-align: center;
-  }
+  .preview{
+    @include dimensions(100%, 100%);
 
-  .card-img{
-    @include margin(0, auto, 10px, auto);
-    @include dimensions(68%, 240px);
-
-    img{
-      max-height: 100%;
+    iframe{
+      @include dimensions(100%, 100%);
+      border: none;
     }
   }
 }
