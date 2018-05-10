@@ -1,5 +1,9 @@
 @media all and (max-width:767px){
   .o-overview-recent{
+    .card{
+      height: 470px;
+    }
+
     .card-text{
       font-size: $global-font-size;
     }
