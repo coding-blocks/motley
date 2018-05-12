@@ -80,16 +80,17 @@
    .duration {
      display: none;
    }
- }
-  .accordian-li {
 
-    .flex-row {
-      display: none;
-    }
-    .li-left {
-      display: block;
-      width: 100%;
-    }
-  }
+   .accordian-li, .accordian-head{
+     .flex-row:last-child{
+       display: none;
+     }
+
+     .li-left {
+       width: 100%;
+     }
+   }
+ }
+
 }
 
