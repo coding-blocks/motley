@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,38 +7,9 @@
     <title>Main</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav>
-           <span>
-                  <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
-           </span>
-        <ul class="nav-list">
-            <li class="nav-items pointer">
-                About us
-            </li>
-            <li class="nav-items pointer">
-                All Courses
-            </li>
-            <li class="nav-items pointer">
-                Contact us
-            </li>
-            <li class="nav-items pointer">
-                <div class="button-solid">
-                    <button>Login</button>
-                </div>
-            </li>
-        </ul>
-
-        <div class="input-search nav-search">
-            <input type="text" placeholder="Search here">
-            <img src="images/searchicon.png" alt="search">
-        </div>
-    </nav>
-</header>
-
 
 <div class="o-content-section">
     <div class="header flex-row">
@@ -46,34 +18,67 @@
                 <button onclick="sectionToggler()">X Table of Content</button>
             </div>
         </div>
-        <div class="flex-row dashboard">
-            <div class="heading-d">
+
+        <div class="dashboard row no-gutters justify-content-between">
+            <div class="col-6 heading-d align-self-center">
                 <div class="main-h">
-                    Section 1.1 - Fast Exponentiation
+                    Fast Exponentiation
                 </div>
                 <div class="sub-h">
-                    Section 1 - Mathematics
+                    Mathematics
                 </div>
             </div>
 
-            <div class="flex-row">
-                <div class="notify-type">
-                    <div class="notify-text">
-                        <span class="notify-dot new"></span>
-                        Solve Doubts
+            <div class="col-6">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 notify-type align-self-center">
+                        <div class="notify-text">
+                            <span class="notify-dot new"></span>
+                            Solve Doubts
+                        </div>
+                    </div>
+
+                    <div class="button-solid col-12 col-md-4 align-self-center">
+                        <button>lt Go to Dashboard</button>
                     </div>
                 </div>
 
-                <div>
-                    <button class="button-solid">< Go to Dashboard</button>
-                </div>
             </div>
 
         </div>
     </div>
 
     <div class="content-section">
-        <div class="section collapse">
+        <div class="content collapse">
+
+            <div class="content">
+                <div class="container-fluid o-document">
+                    <div class="row">
+                        <div class="col-md-4 heading">
+                            Document heading
+                        </div>
+                        <div class="offset-md-4 offset-lg-5 col-md-4 col-lg-3">
+                            <div class="button-solid float-right">
+                                <button>
+                                    Download as PDF
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row markdown">
+                        <iframe src="https://docs.google.com/gview?url=https://minio.cb.lk/amoeba/e9ce3e39-66d5-45ad-a4b2-9f2b71688732.pdf&amp;embedded=true" style="width:100%" frameborder="0">
+                        </iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-collapsor row justify-content-between">
+                <div class="col-10 align-self-center">TABLE OF CONTENTS</div>
+                <div class="align-self-center"><i class="fas fa-chevron-down"></i></div>
+            </div>
             <div class="o-accordian">
                 <div class="accordian-ul" data-show="true">
                     <div class="accordian-head">
@@ -95,6 +100,9 @@
 
                     <div data-completed="true" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-green-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.1 - Chewbacca Number, HackerBlocks
                             </div>
@@ -110,6 +118,9 @@
 
                     <div data-completed="true" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-green-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.2 - Tavas and SaDDas, Codeforces 535-B
                             </div>
@@ -125,6 +136,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.3 - Fast Exponentiation
                             </div>
@@ -140,6 +154,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -194,6 +211,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.3 - Fast Exponentiation
                             </div>
@@ -209,6 +229,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -224,6 +247,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -239,6 +265,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -255,37 +284,19 @@
                 </div>
             </div>
         </div>
-
-        <div class="content">
-            <div class="container-fluid o-document">
-                <div class="row">
-                    <div class="col-md-4 heading">
-                        Document heading
-                    </div>
-                    <div class="offset-md-4 offset-lg-5 col-md-4 col-lg-3">
-                        <div class="button-solid float-right">
-                            <button>
-                                Download as PDF
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row markdown">
-                        lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
-                </div>
-            </div>
-            
-        </div>
-
     </div>
 
 
 </div>
 
+<script>
+    function sectionToggler(){
+        var section= document.getElementsByClassName('section')[0];
+        var contentMedia= document.getElementsByClassName('content')[0];
+        section.classList.toggle('collapse');
+        contentMedia.classList.toggle('collapse');
+
+    }
+</script>
 </body>
-
-<script src="JS/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="JS/code-editor.js" type="text/javascript"></script>
-
 </html>
