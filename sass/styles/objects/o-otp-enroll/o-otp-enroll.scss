@@ -3,7 +3,7 @@
   background: $nav-border;
   font-size: $global-font-size;
   font-weight: $font-medium;
-  @include padding-mixin(20px, 0px, 20px, 40px)
+  @include padding-mixin(20px, 0px, 20px, 40px);
 
   .input-search{
     @include dimensions(100%, 60px);
