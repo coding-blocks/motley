@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Main</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheets/style.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -33,13 +34,34 @@
         </header>
 
         <div class="classroom-container row">
-            <div class="classroom-header-box col-md-6 col-sm-12 col-xs-12">
+
+            <div class="classroom-header-box col-md-6 col-12">
                 <div class="classroom-header row">
-                    <div class="classroom-image col-md-2 col-xs-2 col-sm-2">
-                        <img src="images/c++">
+                    <div class="classroom-image col-2">
+                        <img src="images/c++" alt="">
                     </div>
-                    <div class="classroom-text col-md-10 col-xs-10 col-sm-10">
+                    <div class="classroom-text col-10">
                         Competitive Programming
+
+                        <div class="rating mob">
+                    <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                            <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                            <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                            <span class="pos-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                            <span class="neg-rating">
+                        <i class="fas fa-star"></i>
+                    </span>
+                            <span class="edit-rating">Edit my rating</span>
+
+                        </div>
                     </div>
                 </div>
                 <p class="classroom-para">
@@ -47,44 +69,49 @@
                     Google Kickstart, ACM-ICPC, and more.
                 </p>
                 <div class="rating">
+            <span class="pos-rating">
+                <i class="fas fa-star"></i>
+            </span>
                     <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
+                <i class="fas fa-star"></i>
+            </span>
                     <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
+                <i class="fas fa-star"></i>
+            </span>
                     <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
+                <i class="fas fa-star"></i>
+            </span>
                     <span class="neg-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-
+                <i class="fas fa-star"></i>
+            </span>
+                    <span class="edit-rating">Edit my rating</span>
                 </div>
             </div>
-            <div class="course-progress-box col-md-6 col-sm-12 col-xs-12">
-                <div class="course-progress-2">
-                    <p class="course-progress-heading">Course Progress</p>
+            <div class="course-progress-box col-md-6 col-12 ">
+                <div class="course-progress-heading row no-gutters">
+                    <div class="heading col-4 col-md-6 align-self-center">Course Progress</div>
+                    <div class="divider-h col-6 align-self-center"></div>
+                </div>
 
-                    <div data-completed="false" class="status-circle col-md-2">
-                        <div class="circle-back">
-                            <div class="circle-front">
+                <div class="progress row no-gutters justify-content-around align-items-center">
+                    <div class="progress-circle col-3 col-md-3">
+                        <div class="status-circle">
+                            <div class="circle-back"></div>
+                            <div class="circle-front d-flex flex-column justify-content-center">
                                 <p class="progress-text">26%</p>
                             </div>
                         </div>
                     </div>
-                    <div class="course-progress-detail col-md-10">
-                        <p class="lectures-completed">12 of 46 Lectures completed</p>
-                        <p class="reset-progress">Reset Progress</p>
+
+                    <div class="course-progress-detail col-5 col-md-9">
+                        <p class="heading-mob">Course Progress</p>
+                        <p class="lectures-completed">12 of 46 completed</p>
+                        <button class="reset-progress">Reset Progress</button>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-offset-6 col-md-5">
+
+                    <div class="offset-md-5 col-4 col-md-5">
                         <div class="button-solid">
-                            <button>Resume Learning</button>
+                            <button>Resume</button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +133,7 @@
             </div>
             <div class="accordian-ul" data-show="true">
                 <div class="accordian-head">
-                    <div class="flex-row">
+                    <div class=" flex-row">
                         <div class="accordian-collapsar">
                             <i class="fas fa-minus"></i>
                         </div>
@@ -114,14 +141,12 @@
                             <div class="round-img">
                                 <img src="" alt="">
                             </div>
-                            <div>
-                                <div class="heading-d">
-                                    <div class="main-h">
-                                        New Design and Prototype Section!
-                                    </div>
-                                    <div class="sub-h">
-                                        Prateek Narang | 45 min ago
-                                    </div>
+                            <div class="heading-d">
+                                <div class="main-h">
+                                    New Design and Prototype Section!
+                                </div>
+                                <div class="sub-h">
+                                    Prateek Narang | 45 min ago
                                 </div>
                             </div>
                         </div>
@@ -155,7 +180,7 @@
 
             <div class="accordian-ul" data-show="false">
                 <div class="accordian-head">
-                    <div class="flex-row">
+                    <div class=" flex-row">
                         <div class="accordian-collapsar">
                             <i class="fas fa-plus"></i>
                         </div>
@@ -163,14 +188,12 @@
                             <div class="round-img">
                                 <img src="" alt="">
                             </div>
-                            <div>
-                                <div class="heading-d">
-                                    <div class="main-h">
-                                        New Design and Prototype Section!
-                                    </div>
-                                    <div class="sub-h">
-                                        Prateek Narang | 45 min ago
-                                    </div>
+                            <div class="heading-d">
+                                <div class="main-h">
+                                    New Design and Prototype Section!
+                                </div>
+                                <div class="sub-h">
+                                    Prateek Narang | 45 min ago
                                 </div>
                             </div>
                         </div>
@@ -204,7 +227,7 @@
 
             <div class="accordian-ul" data-show="true">
                 <div class="accordian-head">
-                    <div class="flex-row">
+                    <div class=" flex-row">
                         <div class="accordian-collapsar">
                             <i class="fas fa-minus"></i>
                         </div>
@@ -212,14 +235,12 @@
                             <div class="round-img">
                                 <img src="" alt="">
                             </div>
-                            <div>
-                                <div class="heading-d">
-                                    <div class="main-h">
-                                        New Design and Prototype Section!
-                                    </div>
-                                    <div class="sub-h">
-                                        Prateek Narang | 45 min ago
-                                    </div>
+                            <div class="heading-d">
+                                <div class="main-h">
+                                    New Design and Prototype Section!
+                                </div>
+                                <div class="sub-h">
+                                    Prateek Narang | 45 min ago
                                 </div>
                             </div>
                         </div>
