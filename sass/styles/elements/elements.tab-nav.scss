@@ -12,10 +12,15 @@
 .tab-list{
   @include flexbox(row);
   justify-content: space-around;
+  height: 100%;
+  padding-top: 35px;
 }
 
 .tab-items{
+  flex: 1;
   cursor: pointer;
+  text-align: center;
+
   &:hover{
     color: $button-element-level;
   }
@@ -26,6 +31,6 @@
 }
 
 .active{
-  border-bottom: solid 2px $button-element-level;
+  border-bottom: solid 4px $button-element-level;
   color: $button-element-level;
 }
