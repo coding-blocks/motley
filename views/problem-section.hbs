@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-<header>
-    <nav>
-           <span>
-                  <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
-           </span>
-        <ul class="nav-list">
-            <li class="nav-items pointer">
-                About us
-            </li>
-            <li class="nav-items pointer">
-                All Courses
-            </li>
-            <li class="nav-items pointer">
-                Contact us
-            </li>
-            <li class="nav-items pointer">
-                <div class="button-solid">
-                    <button>Login</button>
-                </div>
-            </li>
-        </ul>
-
-        <div class="input-search nav-search">
-            <input type="text" placeholder="Search here">
-            <img src="images/searchicon.png" alt="search">
-        </div>
-    </nav>
-</header>
-
-
+{{> nav-bar }}
 <div class="o-content-section">
     <div class="header flex-row">
         <div class="section-toggler flex-row">
@@ -46,49 +6,52 @@
                 <button onclick="sectionToggler()">X Table of Content</button>
             </div>
         </div>
-        <div class="flex-row dashboard">
-            <div class="heading-d">
+
+        <div class="dashboard row no-gutters justify-content-between">
+            <div class="col-6 heading-d align-self-center">
                 <div class="main-h">
-                    Section 1.1 - Fast Exponentiation
+                    Fast Exponentiation
                 </div>
                 <div class="sub-h">
-                    Section 1 - Mathematics
+                    Mathematics
                 </div>
             </div>
 
-            <div class="flex-row">
-                <div class="notify-type">
-                    <div class="notify-text">
-                        <span class="notify-dot new"></span>
-                        Solve Doubts
+            <div class="col-6">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 notify-type align-self-center">
+                        <div class="notify-text">
+                            <span class="notify-dot new"></span>
+                            Solve Doubts
+                        </div>
+                    </div>
+
+                    <div class="button-solid col-12 col-md-4 align-self-center">
+                        <button>lt Go to Dashboard</button>
                     </div>
                 </div>
 
-                <div>
-                    <button class="button-solid">< Go to Dashboard</button>
-                </div>
             </div>
 
         </div>
     </div>
 
     <div class="content-section">
-        <div class="section collapse">
+        <div class="section">
             <div class="o-accordian">
                 <div class="accordian-ul" data-show="true">
                     <div class="accordian-head">
                         <div class="li-left flex-row">
                             <div class="accordian-collapsar">
-                                -
+                                +
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
+                                Mathematics 1.0
+                                Mathematics 1.0
                             </div>
-                        </div>
-
-                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">2</span>/ 6
+                                <span class="completed">99</span>/ 99
                             </div>
                         </div>
                     </div>
@@ -163,31 +126,29 @@
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
+                                Mathematics 1.0
+                                Mathematics 1.0
                             </div>
-                        </div>
-
-                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">2</span>/ 6
+                                <span class="completed">99</span>/ 99
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="accordian-ul" data-show="true">
-                    <div class="accordian-head">
+                   <div class="accordian-head">
                         <div class="li-left flex-row">
                             <div class="accordian-collapsar">
                                 +
                             </div>
                             <div class="accordian-heading">
                                 Mathematics 1.0
+                                Mathematics 1.0
+                                Mathematics 1.0
                             </div>
-                        </div>
-
-                        <div class="flex-row">
                             <div class="accordian-status">
-                                <span class="completed">2</span>/ 6
+                                <span class="completed">99</span>/ 99
                             </div>
                         </div>
                     </div>
@@ -256,161 +217,43 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content collapse">
             <div class="o-pb"><!-- problem-->
                 <div class="pb-desk">
                     <div class="tab-nav">
                         <div class="tab-list">
-                            <div class="tab-items">Problem</div>
+                            <div class="tab-items active">Problem</div>
                             <div class="tab-items">Submissions</div>
-                            <div class="tab-items active">Leaderboard</div>
+                            <div class="tab-items">Leaderboard</div>
                         </div>
                     </div>
 
-                    <div class="o-pb-leaderboard">
-                        <div class="badge">
-                            <img src="images/badge.png" alt="">
-                        </div>
-
-                        <div class="heading">
-                            Siddharth Jain
-                        </div>
-
+                    <div class="o-pb-statement">
+                        <div class="heading-U">birthday paradox</div>
                         <div class="para">
-                            Score: 100 | Language: C++
+                            Your task is simple, determine the minimum number of people required in the room so that two have
+                            same birthday with probability greater than or equal to 'p'. (Assume there are 365 days in every year)
                         </div>
 
-
-                        <div class="t-head row">
-                            <div class="t-data col-2">Rank</div>
-                            <div class="t-data col-5">User</div>
-                            <div class="t-data col-2">Score</div>
-                            <div class="t-data col-3">Language</div>
+                        <div class="heading">Input Format:</div>
+                        <div class="para">
+                            Single line containing the given probability.
                         </div>
 
-                        <div class="t-row row">
-                            <div class="t-data col-2">2</div>
-                            <div class="t-data col-5">Ashu Deshwal</div>
-                            <div class="t-data col-2">100</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">3</div>
-                            <div class="t-data col-5">Anshul Garg</div>
-                            <div class="t-data col-2">70</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">4</div>
-                            <div class="t-data col-5">Chirag Gupta</div>
-                            <div class="t-data col-2">70</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">5</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">C</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">6</div>
-                            <div class="t-data col-5">Arnav Gupta</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">Python</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">7</div>
-                            <div class="t-data col-5">Abhishek Gupta</div>
-                            <div class="t-data col-2">40</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">8</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">100</div>
-                            <div class="t-data col-3">C++</div>
+                        <div class="heading">Contraints:</div>
+                        <div class="faded-cont">
+                            0< p<= 1
                         </div>
 
-                        <div class="t-row row">
-                            <div class="t-data col-2">4</div>
-                            <div class="t-data col-5">Chirag Gupta</div>
-                            <div class="t-data col-2">70</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">5</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">C</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">6</div>
-                            <div class="t-data col-5">Arnav Gupta</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">Python</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">7</div>
-                            <div class="t-data col-5">Abhishek Gupta</div>
-                            <div class="t-data col-2">40</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">8</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">100</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">6</div>
-                            <div class="t-data col-5">Arnav Gupta</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">Python</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">7</div>
-                            <div class="t-data col-5">Abhishek Gupta</div>
-                            <div class="t-data col-2">40</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">8</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">100</div>
-                            <div class="t-data col-3">C++</div>
+                        <div class="heading"> output format</div>
+                        <div class="para">
+                            Print an integral value denoting minimum number of people.
                         </div>
 
-                        <div class="t-row row">
-                            <div class="t-data col-2">4</div>
-                            <div class="t-data col-5">Chirag Gupta</div>
-                            <div class="t-data col-2">70</div>
-                            <div class="t-data col-3">C++</div>
+                        <div class="heading">sample input</div>
+                        <div class="faded-cont">
+                            0< p <=1
                         </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">5</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">C</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">6</div>
-                            <div class="t-data col-5">Arnav Gupta</div>
-                            <div class="t-data col-2">50</div>
-                            <div class="t-data col-3">Python</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">7</div>
-                            <div class="t-data col-5">Abhishek Gupta</div>
-                            <div class="t-data col-2">40</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-                        <div class="t-row row">
-                            <div class="t-data col-2">8</div>
-                            <div class="t-data col-5">Arun Nair</div>
-                            <div class="t-data col-2">100</div>
-                            <div class="t-data col-3">C++</div>
-                        </div>
-
 
                     </div>
                 </div>
@@ -422,7 +265,7 @@
 
                     <div id="dragger-ce-rs"></div><!-- code-editor -- result-->
 
-                    <div>
+                    <div class="options-result">
                         <div class="editor-options row justify-content-between">
                             <div class="select-list align-self-center">
                                 <div class="select-box">
@@ -471,7 +314,7 @@
                                 </div>
                                 <div class="output  col-md-6 col-sm-6 col-xs-12">
                                     <div class="row">
-                                        <div class="heading col-md-6">
+                                        <div class="heading col-12">
                                             <p>
                                                 Output : &nbsp;
                                                 <span>
@@ -498,10 +341,3 @@
 
 
 </div>
-
-</body>
-
-<script src="JS/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="JS/code-editor.js" type="text/javascript"></script>
-
-</html>
