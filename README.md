@@ -11,7 +11,7 @@ Motley is a new generation CSS framework based on [ITCSS](https://www.xfive.co/b
  
  1. Clone the source code
 
- `git clone https://github.com/aayusharora/motley.git`
+ `git clone https://github.com/coding-blocks/motley.git`
 
 2. Install development dependencies
 
