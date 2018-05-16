@@ -11,6 +11,7 @@ Motley is a new generation CSS framework based on [ITCSS](https://www.xfive.co/b
 2. Change directory to `motley` and Install development dependencies
 
 `cd motley`
+
  `yarn install`
 
 3. Run a local development server
