@@ -22,6 +22,12 @@ Motley is a new generation CSS framework based on [ITCSS](https://www.xfive.co/b
  `grunt server`
  
  Motley will start running on [localhost:9000](http://localhost:9000/)
+ 
+ ## Maintainers
+ 
+ 1. [Aayush Arora](https://github.com/aayusharora) 
+ 2. [Vibhu Dujari](https://github.com/vdvibhu20)
+ 3. [Abhishek Gupta](https://github.com/abhishek97)
 
  
  
