@@ -8,20 +8,20 @@ var mountFolder = function (connect, dir) {
 };
 
 const getPartials = () => fs
-        .readdirSync('./components')
+        .readdirSync('./examples/components')
         .filter(filename => filename.split('.').pop() === 'hbs')
         .map (filename => filename.split('.')[0])
         .reduce( (acc, filename) => {
-            acc[filename] = path.join('./components', filename + '.hbs')
+            acc[filename] = path.join('./examples/components', filename + '.hbs')
             return acc;
         }, {})
 
 const getFiles = () => fs
-        .readdirSync('./views')
+        .readdirSync(`./examples/views`)
         .filter(filename => filename.split('.').pop() === 'hbs')
         .map (filename => filename.split('.')[0])
         .reduce( (acc, filename) => {
-            acc[path.join('./static', filename + '.html')] = path.join('./views', filename + '.hbs')
+            acc[path.join('./examples/html', filename + '.html')] = path.join('./examples/views', filename + '.hbs')
             return acc;
         }, {})
 
@@ -33,14 +33,14 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/stylesheets/style.css' : 'sass/styles/app.scss'
+                    'examples/public/stylesheets/style.css' : 'sass/styles/app.scss'
                 }
             }
         },
         hbs: {
             public: {
                 options: {
-                    layout: "./views/layouts/index.hbs",
+                    layout: './examples/views/layouts/default.hbs',
                     partials: getPartials(),
                 },
                 files: getFiles ()
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 }
             },
             hbs: {
-                files: ['views/**/*.hbs'],
+                files: ['examples/views/**/*.hbs'],
                 tasks: ['hbs'],
                 options: {
                     livereload: true
@@ -78,8 +78,8 @@ module.exports = function(grunt) {
                     middleware: function (connect) {
                         return [
                             //lrSnippet,
-                            mountFolder(connect, './public'),
-                            mountFolder(connect, './static')
+                            mountFolder(connect, './examples/public'),
+                            mountFolder(connect, './examples/html')
                         ];
                     }
                 }
