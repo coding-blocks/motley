@@ -29,6 +29,12 @@
     left: 0;
     width: 100%;
   }
+
+  .img-container{
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 10%;
+  }
 }
 
 .testclass{
