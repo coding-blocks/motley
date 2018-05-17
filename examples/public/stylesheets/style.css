@@ -292,10 +292,6 @@ input:focus {
 .card-image {
   width: 17%; }
 
-.grid-background {
-  background-color: #f6f6f6;
-  padding: 5%; }
-
 .button-dashed, .button-solid, .button-circle {
   font-family: "Cabin", sans-serif;
   font-size: 16px;
@@ -1021,35 +1017,6 @@ nav {
   .dropdown-li:not(:first-child) {
     border-top: solid 1px #f4f4f4; }
 
-.red {
-  color: #ff6666; }
-
-.black {
-  color: #333333; }
-
-.white {
-  color: #ffffff; }
-
-.grey {
-  color: #666666; }
-
-.green {
-  color: #8dbf75; }
-
-.bg-red {
-  background-color: #e8685d; }
-
-.bg-black {
-  background-color: #333333; }
-
-.bg-white {
-  background-color: #ffffff; }
-
-.bg-grey {
-  background-color: #f6f6f6; }
-
-.bg-green {
-  background-color: #8dbf75; }
 
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
