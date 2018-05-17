@@ -35,6 +35,11 @@ footer {
 	.text-center {
 		text-align: center;
 	}
+
+	.separate {
+		border-right: 2px solid black;
+		flex-grow: 1;
+	}
 }
 
 @media screen and (max-width: 768px) {
