@@ -3114,6 +3114,10 @@ html {
   .o-layout-card .price-detail {
     margin-top: 25px; }
 
+.grid-background {
+   background-color: #f6f6f6;
+   padding: 5%; }
+
 .grid {
   margin: 0;
   padding: 32px; }
