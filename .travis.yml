@@ -1,11 +1,17 @@
 language: node_js
 node_js:
-  - "iojs"
-  - "8"
-deploy:
-provider: pages
-skip-cleanup: true
-github-token: $GITHUB_TOKEN 
-keep-history: true
-on:
-  branch: gh-pages
+  - "stable"
+script: gulp travis  
+before_install: npm install -g grunt-cli
+install: npm install
+before_script: grunt build
+cache:
+  directories:
+    - "node_modules"
+# deploy:
+# provider: pages
+# skip-cleanup: true
+# github-token: $GITHUB_TOKEN 
+# keep-history: true
+# on:
+#   branch: gh-pages
