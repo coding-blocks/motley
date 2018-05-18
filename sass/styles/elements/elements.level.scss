@@ -5,6 +5,7 @@
   @include dimensions(30px,30px);
   border: 6px solid $button-element-level;
   margin: 0 auto;
+  position: relative;
 }
 
 .expert-text {
@@ -17,6 +18,7 @@
   @include dimensions(30px,30px);
   border: 6px solid $intermediate-level;
   margin: 0 auto;
+  position: relative;
 }
 
 .advanced-text {
@@ -29,6 +31,7 @@
   @include dimensions(30px,30px);
   border: 6px solid $status-front-complete;
   margin: 0 auto;
+  position: relative;
 }
 
 .beginner-text {
