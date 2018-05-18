@@ -25,9 +25,7 @@
                  <div class="word-wrap card-text">
                      Learn data structures & algorithm in C++
                  </div>
-                 <div class="button-solid">
-                     <button>Register</button>
-                 </div>
+                 {{> button}}
              </div>
 
              <div class="card o-layout-card ">
@@ -40,9 +38,7 @@
                  <div class="card-text">
                      Learn data structures & algorithm in C++
                  </div>
-                 <div class="button-solid">
-                     <button>Register</button>
-                 </div>
+                 {{> button}}
              </div>
 
              <div class="card o-layout-card ">
@@ -55,9 +51,7 @@
                  <div class="card-text">
                      Learn data structures & algorithm in C++
                  </div>
-                 <div class="button-solid">
-                     <button>Register</button>
-                 </div>
+                 {{> button}}
              </div>
 
              <div class="card o-layout-card ">
@@ -70,9 +64,7 @@
                  <div class="card-text">
                      Learn data structures & algorithm in C++
                  </div>
-                 <div class="button-solid">
-                     <button>Register</button>
-                 </div>
+                 {{> button}}
              </div>
 
              <div class="card-stack-btn">
@@ -137,10 +129,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -185,10 +174,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -233,10 +219,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -281,10 +264,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -329,10 +309,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -377,10 +354,7 @@
                       </div>
                   </div>
                   <div class="button-parent col-md-6 col-sm-6 col-xs-12">
-
-                      <div class="button-solid">
-                          <button>Register</button>
-                      </div>
+                      {{> button}}
                   </div>
               </div>
 
@@ -397,8 +371,8 @@
     </div>
   </div>
   <div class="row flex-column flex-md-row justify-content-between cards-box">
-    
-    
+
+
     <div class="offering-card">
         <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
           <div class="left order-2 order-md-1">
@@ -415,22 +389,6 @@
         </div>
     </div>
 
-    
-    <div class="offering-card">
-        <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
-          <div class="left order-2 order-md-1">
-            <div class="offering-card-heading">
-              Comprehensive learning
-            </div>
-            <div class="card-body">
-              A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.
-            </div>
-          </div>
-          <div class="right order-1 order-md-2">
-            <img src="http://via.placeholder.com/130x130">
-          </div>
-        </div>
-    </div>
 
     <div class="offering-card">
         <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
@@ -496,8 +454,24 @@
         </div>
     </div>
 
-   
-  </div>  
+    <div class="offering-card">
+        <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
+          <div class="left order-2 order-md-1">
+            <div class="offering-card-heading">
+              Comprehensive learning
+            </div>
+            <div class="card-body">
+              A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.
+            </div>
+          </div>
+          <div class="right order-1 order-md-2">
+            <img src="http://via.placeholder.com/130x130">
+          </div>
+        </div>
+    </div>
+
+
+  </div>
 </div>
 
 </div>
@@ -545,7 +519,7 @@
             </div>
             <div class="row justify-content-center links text-center">
                 Copyright 2018 - Coding Blocks Pvt Ltd
-            </div> 
+            </div>
       </div>
     </div>
   </footer>
@@ -557,7 +531,7 @@
     let currentIndex = 2
 
     class carouselCard {
-      
+
 
       constructor (el, cssConf = {}) {
         this.element = el
@@ -600,9 +574,9 @@
     $('.card-stack-btn > a')[0].onclick = function () {
       currentIndex--
       reRender(-1)
-      
+
     }
-  
+
     reRender = function (factor) {
 
       if (currentIndex < 2) {
