@@ -281,7 +281,6 @@ input:focus {
   overflow: hidden; }
 
 .card-heading {
-  max-width: 309px;
   height: 10%;
   overflow: hidden;
   font-family: "Cabin", sans-serif;
@@ -291,6 +290,10 @@ input:focus {
 
 .card-image {
   width: 17%; }
+
+.grid-background {
+  background-color: #f6f6f6;
+  padding: 5%; }
 
 .button-dashed, .button-solid, .button-circle {
   font-family: "Cabin", sans-serif;
@@ -461,12 +464,6 @@ nav {
   display: inline-block;
   background-color: #e9e9e9; }
 
-.card-mentor {
-  padding-bottom: 10px;
-  max-height: 67px;
-  margin-top: 37px;
-  margin-bottom: 25px; }
-
 .card-mentor-image {
   display: inline-block;
   position: relative;
@@ -486,30 +483,30 @@ nav {
 
 .card-mentor-text {
   display: inline-block;
-  margin-left: 10px;
   font-size: 14.1px;
   position: relative;
-  top: -6px; }
+  top: -6px;
+  padding-left: 10px; }
 
 .card-mentor-name {
-  max-height: 25px;
   overflow: hidden;
   font-size: 17.1px; }
 
 .card-mentor-divider {
-  border: 0.5px solid #e9e9e9; }
+  border: 0.5px solid #e9e9e9;
+  margin: 20px 0; }
 
 .card-price-details {
   display: inline-block;
   max-height: 70px; }
 
 .card-batches {
-  font-size: 17.1px;
+  font-size: 16px;
   margin-bottom: 5px; }
 
 .card-batch-details {
   display: inline-block;
-  font-size: 19.1px; }
+  font-size: 16px; }
   .card-batch-details span {
     color: red; }
 
@@ -1016,6 +1013,36 @@ nav {
     background: #fafafa; }
   .dropdown-li:not(:first-child) {
     border-top: solid 1px #f4f4f4; }
+
+.red {
+  color: #ff6666; }
+
+.black {
+  color: #333333; }
+
+.white {
+  color: #ffffff; }
+
+.grey {
+  color: #666666; }
+
+.green {
+  color: #8dbf75; }
+
+.bg-red {
+  background-color: #e8685d; }
+
+.bg-black {
+  background-color: #333333; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-grey {
+  background-color: #f6f6f6; }
+
+.bg-green {
+  background-color: #8dbf75; }
 
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -3107,22 +3134,32 @@ html {
   position: relative; }
   .o-layout-card .button-solid {
     position: absolute;
-    top: 5px;
-    left: 39%; }
+    position: absolute;
+    right: 0; }
   .o-layout-card .button-parent {
-    position: relative; }
+    position: relative;
+    height: 50px; }
   .o-layout-card .price-detail {
     margin-top: 25px; }
-
-.grid-background {
-  background-color: #f6f6f6;
-  padding: 5%; }
+  .o-layout-card .pos-rating, .o-layout-card .neg-rating, .o-layout-card .edit-rating {
+    font-size: 16px; }
+  .o-layout-card .rating {
+    margin: 6% 0; }
+  .o-layout-card .edit-rating {
+    border: none; }
+  .o-layout-card .header {
+    margin-bottom: 30px; }
+  .o-layout-card .footer {
+    text-align: center;
+    font-size: 0.875rem; }
+  .o-layout-card .row {
+    padding: 0; }
 
 .grid {
   margin: 0;
   padding: 32px; }
   .grid .o-image-card {
-    margin-bottom: 27px;
+    margin-bottom: 15px;
     padding-top: 40px; }
   .grid .o-layout-card {
     padding-right: 25px;
@@ -4700,7 +4737,13 @@ footer {
     flex: 0 0 50%;
     max-width: 50%; } }
 
-@media screen and (min-width: 632px) and (max-width: 832px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .o-layout-card .footer {
+    text-align: left;
+    font-size: 16px; }
+  .o-layout-card .card-mentors:nth-child(2) {
+    z-index: 99;
+    margin-left: 20px; }
   .grid {
     margin: 0; }
   .card {
@@ -4715,66 +4758,74 @@ footer {
     float: left;
     display: contents;
     overflow: hidden;
-    max-width: 40%;
-    font-size: 1rem; }
+    max-width: 70%;
+    margin-bottom: 0;
+    margin-top: 10px; }
   .card-text {
     overflow: hidden;
     width: 70%;
     display: inline-block;
     font-size: 1rem; }
   .card-mentor {
-    display: flex; }
+    display: flex;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%; }
   .card-mentor-image {
     padding-bottom: 16.5%;
     width: 16.5%;
-    height: 0;
-    margin-left: -50px; }
+    height: 0; }
   .card-mentors {
     height: 50% !important;
     position: absolute !important;
     width: 50% !important; }
   .card {
-    height: 45vw;
-    padding-top: 40px; }
+    padding-top: 40px;
+    height: auto;
+    padding-bottom: 20px; }
   .card-image {
-    width: 10%; }
+    width: 14%; }
+  .card-price-details {
+    float: right; }
   .card-text {
     display: block; }
   .grid .o-image-card {
-    padding-top: 0; }
+    padding-top: 0;
+    margin: 0; }
   .grid .row {
     padding: 0; }
-  .o-layout-card .button-solid {
-    left: 50%;
-    top: -5px; }
-  .button-dashed {
-    margin: 20px auto; } }
-
-@media screen and (max-width: 632px) {
   .button-dashed {
     margin: 20px auto; }
+  .card-price-details {
+    text-align: right; }
+  .card-text, .card-heading {
+    height: auto; } }
+
+@media screen and (max-width: 575px) {
   .card-layout {
     flex: 0 0 100%;
     max-width: 100%; }
-  .card-mentor-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    top: 1px; }
-  .card-mentor-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px; }
-  .card-price-details {
-    text-align: center;
-    width: 100%; } }
-
-@media screen and (max-width: 578px) {
-  .o-layout-card .button-solid {
-    position: relative;
-    margin: 4% auto;
-    left: 0; } }
+    .card-layout .button-dashed {
+      margin: 20px auto; }
+    .card-layout .card-mentor-text {
+      text-align: center;
+      display: block;
+      margin: 0 auto; }
+    .card-layout .card-mentor-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px; }
+    .card-layout .rating {
+      margin-top: 10px;
+      margin-bottom: 25px; }
+    .card-layout .card {
+      height: auto;
+      padding-bottom: 20px; }
+    .card-layout .card-text, .card-layout .card-heading {
+      height: auto; }
+    .card-layout .card-price-details {
+      text-align: left;
+      width: 100%; } }
 
 @media screen and (max-width: 767px) {
   .o-summary .classroom-text {
@@ -4854,6 +4905,12 @@ footer {
       padding: 0; }
     .classroom-container .classroom-para {
       display: none; }
+    .classroom-container .rating {
+      display: none; }
+      .classroom-container .rating.mob {
+        display: block; }
+        .classroom-container .rating.mob .pos-rating, .classroom-container .rating.mob .neg-rating {
+          font-size: 16px; }
   .course-progress-box {
     padding: 0;
     margin-top: 15px; }
@@ -4881,12 +4938,6 @@ footer {
     font-size: 1.125rem;
     font-weight: 600;
     display: block; }
-  .rating {
-    display: none; }
-    .rating.mob {
-      display: block; }
-      .rating.mob .pos-rating, .rating.mob .neg-rating {
-        font-size: 16px; }
   p {
     margin: 0; }
   .reset-progress, .edit-rating {

@@ -6,7 +6,18 @@
 
 }
 
-@media screen and (min-width: 632px) and (max-width: 832px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .o-layout-card{
+    .footer{
+      text-align: left;
+      font-size: $global-font-size;
+    }
+
+    .card-mentors:nth-child(2) {
+      z-index: 99;
+      margin-left: 20px;
+    }
+  }
 
   .grid {
     margin: 0;
@@ -30,8 +41,9 @@
     float: left;
     display: contents;
     overflow: hidden;
-    max-width: 40%;
-    font-size: 1rem;
+    max-width: 70%;
+    margin-bottom: 0;
+    margin-top: 10px;
   }
 
   .card-text {
@@ -43,13 +55,14 @@
 
   .card-mentor {
     display: flex;
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
   }
 
   .card-mentor-image {
     padding-bottom: 16.5%;
     width: 16.5%;
     height: 0;
-    margin-left: -50px;
   }
 
   .card-mentors {
@@ -59,79 +72,87 @@
   }
 
   .card {
-    height: 45vw;
     padding-top: 40px;
+    height: auto;
+    padding-bottom: 20px;
   }
 
   .card-image {
-    width: 10%;
+    width: 14%;
+  }
+  
+  .card-price-details{
+    float: right;
   }
 
   .card-text {
     display: block;
   }
+
   .grid {
     .o-image-card {
       padding-top: 0;
+      margin: 0;
     }
     .row {
       padding:0;
     }
   }
 
-  .o-layout-card {
-    .button-solid {
-      left: 50%;
-      top: -5px;
-    }
-  }
-
   .button-dashed {
     margin: 20px auto;
+  }
+  
+  .card-price-details{
+    text-align:  right;
+  }
+
+  .card-text, .card-heading{
+    height: auto;
   }
 }
 
 
-@media screen and (max-width: 632px) {
-  .button-dashed {
-    margin: 20px auto;
-  }
-
-  .card-layout {
+@media screen and (max-width: 575px) {
+  .card-layout{
     flex: 0 0 100% ;
     max-width: 100% ;
-  }
 
-  .card-mentor-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    top: 1px;
-  }
+    .button-dashed {
+      margin: 20px auto;
+    }
 
-  .card-mentor-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px;
-  }
+    .card-mentor-text {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+    }
 
+    .card-mentor-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-  .card-price-details {
-    text-align: center;
-    width: 100%;
-  }
+    .rating{
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
 
-}
+    .card{
+      height: auto;
+      padding-bottom: 20px;
+    }
 
+    .card-text, .card-heading{
+      height: auto;
+    }
 
-@media screen and (max-width: 578px) {
-  .o-layout-card {
-    .button-solid {
-      position: relative;
-      margin: 4% auto;
-      left: 0;
+    .card-price-details {
+      text-align: left;
+      width: 100%;
     }
   }
-
 }
