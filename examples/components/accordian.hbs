@@ -15,7 +15,8 @@
             </div>
         </div>
     </div>
-    {{> accordian-item}}
-    {{> accordian-item}}
-    {{> accordian-item}}
+
+    {{each accordian-item}}
+        {{> accordian-item}}
+    {{/each}}
 </div>
