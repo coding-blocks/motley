@@ -22,7 +22,7 @@
         top: -30px;
       }
   }
-  
+
   .sidebar {
     position: fixed;
     @include dimensions(55vw, 100%);
@@ -35,8 +35,9 @@
     .close {
       font-size: 24px;
       cursor: pointer;
-      float: right;
+      right: 10%;
       opacity: .4;
+      position: absolute;
     }
 
     .upper-half {
@@ -51,6 +52,7 @@
       .para {
         text-transform: uppercase;
         text-align: center;
+        float: none;
         @include padding-mixin(24px, 0, 25px, 0);
       }
 
