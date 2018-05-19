@@ -292,6 +292,10 @@ input:focus {
 .card-image {
   width: 17%; }
 
+.grid-background {
+  background-color: #f6f6f6;
+  padding: 5%; }
+
 .button-dashed, .button-solid, .button-circle {
   font-family: "Cabin", sans-serif;
   font-size: 16px;
@@ -377,6 +381,9 @@ nav {
 
 .active {
   color: linear-gradient(to right, #ed7298, #ec8871); }
+
+.logo-parent {
+  text-align: center; }
 
 .card-stack {
   position: relative; }
@@ -817,12 +824,6 @@ nav {
 .main-h, .sub-h, .heading-u, .heading-u-red, .heading-U, .heading {
   font-weight: 600; }
 
-.heading-d {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 25px;
-  margin-left: 0; }
-
 .main-h {
   font-size: 1.5rem;
   color: #333333;
@@ -1016,6 +1017,46 @@ nav {
     background: #fafafa; }
   .dropdown-li:not(:first-child) {
     border-top: solid 1px #f4f4f4; }
+
+.red {
+  color: #ff6666; }
+
+.black {
+  color: #333333; }
+
+.white {
+  color: #ffffff; }
+
+.grey {
+  color: #666666; }
+
+.green {
+  color: #8dbf75; }
+
+.bg-red {
+  background-color: #e8685d; }
+
+.bg-black {
+  background-color: #333333; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-grey {
+  background-color: #f6f6f6; }
+
+.bg-green {
+  background-color: #8dbf75; }
+
+.divider-h {
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8; }
+
+.divider-v {
+  width: 1px;
+  height: 100%;
+  background: #e8e8e8; }
 
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
@@ -3114,10 +3155,6 @@ html {
   .o-layout-card .price-detail {
     margin-top: 25px; }
 
-.grid-background {
-  background-color: #f6f6f6;
-  padding: 5%; }
-
 .grid {
   margin: 0;
   padding: 32px; }
@@ -3764,6 +3801,9 @@ html {
   text-align: justify;
   font-size: 1.25rem;
   display: block; }
+
+.o-about-instructors .heading-d {
+  margin-bottom: 25px; }
 
 .o-about-instructors .main-h {
   margin-bottom: 5px; }
@@ -4623,6 +4663,52 @@ footer {
   .o-notification .dropdown-li {
     padding: 20px 0; }
 
+.o-item-card {
+  padding: 5% 3%;
+  height: auto;
+  margin-bottom: 4%; }
+  .o-item-card .header {
+    margin-bottom: 25px; }
+  .o-item-card .footer {
+    margin-top: 40px; }
+  .o-item-card .main-h, .o-item-card .sub-h {
+    font-weight: 500; }
+  .o-item-card .main-h {
+    font-size: 1.25rem; }
+  .o-item-card .sub-h {
+    font-size: 16px; }
+  .o-item-card .item-details {
+    border-right: solid 1px #e8e8e8;
+    padding-right: 6%; }
+  .o-item-card .quantity-details {
+    padding-left: 6%; }
+  .o-item-card .price {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin-right: 2%; }
+  .o-item-card .fake-price {
+    color: #999999;
+    text-decoration: line-through;
+    margin-top: 5px; }
+  .o-item-card .item-quantity {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 25px; }
+  .o-item-card .item-img {
+    padding-right: 7%; }
+  .o-item-card .promo {
+    font-size: 0.875rem; }
+    .o-item-card .promo p {
+      margin: 0; }
+  .o-item-card .promo-img {
+    padding-right: 4%; }
+  .o-item-card .no-promo {
+    font-size: 0.75rem;
+    color: #999999;
+    text-align: right; }
+  .o-item-card .row {
+    padding: 0; }
+
 @media all and (max-width: 1334px) {
   .home-container {
     padding-left: 0; }
@@ -4644,6 +4730,11 @@ footer {
 
 .testclass {
   width: 100px; }
+
+@media all and (max-width: 875px) {
+  .logo-link {
+    display: inline-block;
+    min-width: 80%; } }
 
 @media all and (max-width: 767px) {
   .o-content-section {
@@ -4969,6 +5060,26 @@ footer {
     background: white; }
   .o-content-section .section.collapse {
     transform: none; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .o-item-card .item-quantity {
+    font-size: 16px; }
+  .o-item-card .price {
+    font-size: 1.25rem; }
+  .o-item-card .main-h {
+    font-size: 1.125rem; }
+  .o-item-card .sub-h {
+    font-size: 16px; } }
+
+@media screen and (max-width: 767px) {
+  .o-item-card {
+    height: auto;
+    padding: 5% 3%; }
+    .o-item-card .item-details {
+      border-right: none;
+      border-bottom: solid 1px #e8e8e8;
+      margin-bottom: 4%;
+      padding-bottom: 4%; } }
 
 .display-block {
   display: block !important; }
