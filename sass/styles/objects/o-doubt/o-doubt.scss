@@ -24,6 +24,7 @@
 
 	.doubt-head {
 		width: 100%;
+		flex-flow: row wrap;
 
 		.round-img {
 			@include dimensions(50px, 50px)
@@ -46,9 +47,15 @@
 		}
 
 		.reply {
-			width: 24%;
+			width: 11%;
+			min-width: 100px;
+			flex: 1;
 		}
 
 
+	}
+	.doubt-creator{
+		flex: 2;
+    	min-width: 250px;
 	}
 }
