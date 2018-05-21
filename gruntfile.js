@@ -101,4 +101,10 @@ module.exports = function(grunt) {
             'watch'
         ]);
     });
+    grunt.registerTask('build', function (target) {
+        grunt.task.run([
+            'hbs',
+            'sass'
+        ]);
+    });
 };
