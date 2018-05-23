@@ -55,6 +55,10 @@
 
     .video-player{
       padding: 23% 0;
+
+      .select-box{
+        display: none;
+      }
     }
 
     .notify-text{
