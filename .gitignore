@@ -1,5 +1,8 @@
 node_modules/
-.idea/ 
+.idea/
 .DS_Store
 public/stylesheets/
 sass/styles/app.css
+dist/
+examples/html/
+live/
