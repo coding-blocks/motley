@@ -11,8 +11,11 @@ cache:
     - "node_modules"
 install: yarn install
 before_script: grunt build
-script: yarn test  
-deploy:
+script: 
+    - sh create-dir.sh
+    - yarn test  
+deploy: 
+  local-dir: motley-gh
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
