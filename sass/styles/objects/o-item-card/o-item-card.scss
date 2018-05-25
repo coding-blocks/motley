@@ -32,26 +32,22 @@
     padding-left: 6%;
   }
 
-  .price{
+  .font-lg{
     font-size: $font-lg;
     font-weight: $font-medium;
     margin-right: 2%;
   }
 
-  .fake-price{
+  .line-through{
     color: $faded-text;
     text-decoration: line-through;
     margin-top: 5px;
   }
 
-  .item-quantity{
+  .detail-row{
     font-size: $font-sm;
     font-weight: $font-medium;
     margin-bottom: 25px;
-  }
-
-  .inc{
-
   }
 
   .item-img{
@@ -74,6 +70,10 @@
     font-size: $card-sm;
     color: $faded-text;
     text-align: right;
+  }
+
+  .total-items{
+    padding: 0 6px;
   }
 
   .row{
