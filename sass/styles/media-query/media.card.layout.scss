@@ -12,10 +12,6 @@
     margin: 0;
   }
 
-  .card {
-     padding: 8px;
-  }
-
   .card-layout {
     flex: 0 0 100%;
     max-width: 100%;
@@ -56,11 +52,6 @@
     height: 50% !important;
     position: absolute !important;
     width: 50% !important;
-  }
-
-  .card {
-    height: 45vw;
-    padding-top: 40px;
   }
 
   .card-image {
