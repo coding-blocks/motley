@@ -17,24 +17,41 @@
       z-index: 99;
       margin-left: 20px;
     }
+
+    .rating{
+      margin: 0;
+    }
+
+    .card-mentor-divider{
+      margin-top: 0;
+    }
   }
 
   .grid {
     margin: 0;
+
+    .o-image-card {
+      padding-top: 0;
+      padding-right: 15px;
+      margin: 0;
+      float: left;
+      width: 14%;
+      min-width: 75px;
+    }
+
+    .row {
+      padding:0;
+    }
   }
 
   .card {
-     padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .card-layout {
     flex: 0 0 100%;
     max-width: 100%;
-  }
-
-  .card-image {
-    float: left;
-    margin-right: 15px;
   }
 
   .card-heading {
@@ -62,7 +79,6 @@
   .card-mentor-image {
     padding-bottom: 16.5%;
     width: 16.5%;
-    height: 0;
   }
 
   .card-mentors {
@@ -70,33 +86,9 @@
     position: absolute !important;
     width: 50% !important;
   }
-
-  .card {
-    padding-top: 40px;
-    height: auto;
-    padding-bottom: 20px;
-  }
-
-  .card-image {
-    width: 14%;
-  }
   
   .card-price-details{
     float: right;
-  }
-
-  .card-text {
-    display: block;
-  }
-
-  .grid {
-    .o-image-card {
-      padding-top: 0;
-      margin: 0;
-    }
-    .row {
-      padding:0;
-    }
   }
 
   .button-dashed {
@@ -107,7 +99,7 @@
     text-align:  right;
   }
 
-  .card-text, .card-heading{
+  .card, .card-text, .card-heading{
     height: auto;
   }
 }
@@ -117,6 +109,10 @@
   .card-layout{
     flex: 0 0 100% ;
     max-width: 100% ;
+
+    .o-image-card{
+      width: 25%;
+    }
 
     .button-dashed {
       margin: 20px auto;
