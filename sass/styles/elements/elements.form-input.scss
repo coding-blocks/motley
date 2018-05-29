@@ -1,0 +1,23 @@
+/*--------------------------INPUT TEXT---------------------------*/
+.input-text {
+  @include dimensions(100%, 75px);
+  border: none;
+  font-size: $font-sm;
+  padding: 0 50px;
+  background-color: $nav-border;
+}
+
+.input-btn{
+  position: relative;
+
+  input{
+    padding-right: 95px;
+  }
+
+  button{
+    @include dimensions(auto, auto);
+    position: absolute;
+    right:30px;
+    top: 35%;
+  }
+}
