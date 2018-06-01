@@ -3,7 +3,9 @@
     max-width: 100%;
   }
 }
-
+.select-card {
+  @include border(solid, 2px, $button-element-level);
+}
 .o-address-card{
   height: 313px;
   padding: 40px 35px;
