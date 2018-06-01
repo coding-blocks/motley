@@ -1,7 +1,6 @@
 .o-checkout-card{
   @include padding-mixin(6%, 5%, 6%, 6%);
   height: auto;
-  max-width: 600px;
   font-size: $font-sm;
 
   .heading{
