@@ -1,4 +1,14 @@
 @media screen and (max-width: 772px){
+
+  .address-card {
+    h3 {
+      text-align: center;
+    }
+    .button-solid {
+      max-width: 180px;
+      margin: 0 auto;
+    }
+  }
   .o-address-card{
     padding: 40px 35px;
 
