@@ -1,51 +1,55 @@
-.o-edit-profile{
-  font-size: $font-md;
-  .card{
-    @include  dimensions(854px, 1234px);
-    @include padding-mixin(76px, 71px, 0px, 72px);
-    position: relative;
-    box-shadow: 0px 14px 41px 0 rgba(51, 51, 51, 0.1);
-    border: none;
-  }
-
-  .attributes{
-    justify-content: space-between;
-    height: 820px;
-    .flex-row{
-      justify-content: space-between;
+.o-edit-profile {
+    font-size: $font-md;
+    transform: scale(0.75);
+    transform-origin: top center;
+    margin-bottom: 60px;
+    .card {
+        @include dimensions(854px, 1234px);
+        @include padding-mixin(76px, 71px, 76px, 72px);
+        @include margin(0, auto, 0, auto);
+        position: relative;
+        box-shadow: 0px 14px 41px 0 rgba(51, 51, 51, 0.1);
+        border: none;
     }
-  }
 
-  input{
-    border: none;
-    background: $nav-border;
-    width: 517px;
-    height: 88px;
-    padding-left: 43px;
-    color: #666666;
-  }
+    .attributes {
+        justify-content: space-between;
+        height: 820px;
+        .flex-row {
+            justify-content: space-between;
+        }
+    }
 
-  input[disabled]{
-    background: $disabled-input;
-  }
+    input {
+        border: none;
+        background: $nav-border;
+        width: 517px;
+        height: 58px;
+        padding-left: 43px;
+        color: #666666;
+    }
 
-  .footer{
-    justify-content: flex-end;
-    position: absolute;
-    bottom:71px;
-    right: 71px;
-    font-size: 26px;
-    font-weight: $font-medium;
-  }
+    input[disabled] {
+        background: $disabled-input;
+    }
 
-  .button-solid{
-    @include dimensions(254px, 79px);
-    @include margin(0, 0, 0, 29px);
-    font-size: 26px;
-    font-weight: $font-medium;
-  }
+    .footer {
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 71px;
+        right: 71px;
+        font-size: 26px;
+        font-weight: $font-medium;
+    }
 
-  .flex-row{
-    width: 100%;
-  }
+    .button-solid {
+        @include dimensions(254px, 79px);
+        @include margin(0, 0, 0, 29px);
+        font-size: 26px;
+        font-weight: $font-medium;
+    }
+
+    .flex-row {
+        width: 100%;
+    }
 }

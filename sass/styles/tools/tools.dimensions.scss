@@ -1,7 +1,9 @@
-
-
 @mixin dimensions($width: $global-container-width, $height: $global-container-height) {
-  width: $width;
-  height: $height;
+    width: $width;
+    height: $height;
+}
+
+@mixin height-mixin($height: $global-container-height) {
+    height: $height;
 }
 
