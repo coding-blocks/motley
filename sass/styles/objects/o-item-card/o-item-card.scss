@@ -1,3 +1,10 @@
+.item-heading {
+  margin-top: 40px;
+  .heading-u {
+    border-bottom: 2px solid $search-box-color;
+  }
+}
+
 .o-item-card{
   padding: 5% 3%;
   height: auto;
