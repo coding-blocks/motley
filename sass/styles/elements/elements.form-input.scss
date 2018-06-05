@@ -1,19 +1,10 @@
 /*--------------------------INPUT TEXT---------------------------*/
-.text-input {
+.input-text {
   @include dimensions(100%, 75px);
   border: none;
   font-size: $font-sm;
   padding: 0 50px;
   background-color: $nav-border;
-
-  &.icon{
-    background-image: url("/images/fingerprint.png");
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-position-x: 30px;
-    background-position-y: center;
-    padding-left: 95px;
-  }
 }
 
 .input-btn{
@@ -47,7 +38,7 @@
     left: 5px;
     border-width: 0 2px 2px 0;
     background: transparent;
-    transform: rotate(45deg) translate(2px, 1px);
+    transform: rotate(45deg) translate(1px, -1px);
     visibility: visible;
   }
 
@@ -60,5 +51,6 @@
     background: $nav-border;
     visibility: visible;
     cursor: pointer;
+    margin-top: -2px;
   }
 }
