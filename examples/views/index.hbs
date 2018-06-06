@@ -397,25 +397,7 @@
     </div>
   </div>
   <div class="row flex-column flex-md-row justify-content-between cards-box">
-    
-    
-    <div class="offering-card">
-        <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
-          <div class="left order-2 order-md-1">
-            <div class="offering-card-heading">
-              Comprehensive learning
-            </div>
-            <div class="card-body">
-              A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.
-            </div>
-          </div>
-          <div class="right order-1 order-md-2">
-            <img src="http://via.placeholder.com/130x130">
-          </div>
-        </div>
-    </div>
 
-    
     <div class="offering-card">
         <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
           <div class="left order-2 order-md-1">
@@ -496,8 +478,23 @@
         </div>
     </div>
 
-   
-  </div>  
+    <div class="offering-card">
+        <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
+          <div class="left order-2 order-md-1">
+            <div class="offering-card-heading">
+              Comprehensive learning
+            </div>
+            <div class="card-body">
+              A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.A TA (Teaching Assistant) gets assigned to each individual student as soon as the course starts.
+            </div>
+          </div>
+          <div class="right order-1 order-md-2">
+            <img src="http://via.placeholder.com/130x130">
+          </div>
+        </div>
+    </div>
+
+  </div>
 </div>
 
 </div>
@@ -509,46 +506,7 @@
   <!--<div class="button-solid">-->
       <!--<button>Register</button>-->
   <!--</div>-->
-  <footer>
-    <div class="row justify-content-center height-100">
-      <div class="col-8">
-            <div class="row justify-content-center logo-row">
-              <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
-            </div>
-            <div class="d-flex flex-row flex-wrap justify-content-around links">
-              <span class="link">About Us</span>
-              <span class="link">|</span>
-              <a class="link" href="#">Contact Us</a>
-              <span class="link">|</span>
-              <a class="link" href="#">Hackerblocks</a>
-              <span class="link">|</span>
-              <a class="link" href="#">privacy policy</a>
-              <span class="link">|</span>
-              <a class="link" href="#">terms and conditions</a>
-            </div>
-            <div class="d-flex flex-row justify-content-center links">
-              <span class="link shadow">
-                <i class="fab fa-facebook-f"></i>
-              </span>
-              <span class="link shadow">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <span class="link shadow">
-                <i class="fab fa-youtube"></i>
-              </span>
-              <span class="link shadow">
-                <i class="fab fa-github"></i>
-              </span>
-              <span class="link shadow">
-                <i class="fab fa-linkedin-in"></i>
-              </span>
-            </div>
-            <div class="row justify-content-center links text-center">
-                Copyright 2018 - Coding Blocks Pvt Ltd
-            </div> 
-      </div>
-    </div>
-  </footer>
+  {{> footer}}
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--  <script src="JS/carousel.js" type="application/javascript"></script> -->
@@ -557,7 +515,7 @@
     let currentIndex = 2
 
     class carouselCard {
-      
+
 
       constructor (el, cssConf = {}) {
         this.element = el
@@ -600,9 +558,9 @@
     $('.card-stack-btn > a')[0].onclick = function () {
       currentIndex--
       reRender(-1)
-      
+
     }
-  
+
     reRender = function (factor) {
 
       if (currentIndex < 2) {
