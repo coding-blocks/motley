@@ -40,6 +40,12 @@ nav {
   color: $navLink;
 }
 
+.pointer {
+  .notify-dot {
+    position: absolute;   
+  }
+}
+
 .active {
   color: $button-gradient;
 }
