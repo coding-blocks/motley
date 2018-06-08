@@ -48,10 +48,11 @@
 	}
 
 	&.active .page-link {
-		z-index: 1;
+		z-index: -1;
 		color: #fff;
 		background-color: #ff6666;
 		border-bottom: #ff6666;
+		border-top: solid 1px #ff6666;
 	}
 
 	&.disabled .page-link {
