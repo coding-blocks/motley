@@ -50,11 +50,15 @@
 		}
 	}
 
-	.doubt-body :nth-child(n) {
-		white-space: pre-wrap;       
-		white-space: -moz-pre-wrap;  
-		white-space: -pre-wrap;      
-		white-space: -o-pre-wrap;    
-		word-wrap: break-word;
+	.doubt-body {
+		width: 100%;
+		
+		&:nth-child(n) {
+			white-space: pre-wrap;       
+			white-space: -moz-pre-wrap;  
+			white-space: -pre-wrap;      
+			white-space: -o-pre-wrap;    
+			word-wrap: break-word;
+		}
 	}
 }
