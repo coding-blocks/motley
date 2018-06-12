@@ -8,6 +8,9 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-layout-card{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     .footer{
       text-align: left;
       font-size: $global-font-size;
@@ -42,11 +45,6 @@
     .row {
       padding:0;
     }
-  }
-
-  .card {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   .card-layout {
