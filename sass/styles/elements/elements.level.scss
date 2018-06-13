@@ -11,6 +11,12 @@
 
 .expert-text {
   font-size: 13px;
+  @media(max-width: 768px) {
+    font-size: 7px;
+  }
+  @media(max-width: 980px) {
+    font-size: 10px;
+  }
   left: 87%;
   margin-top: 2px;
   position: absolute;
@@ -28,6 +34,12 @@
 
 .advanced-text {
   font-size: 13px;
+  @media(max-width: 768px) {
+    font-size: 7px;
+  }
+  @media(max-width: 980px) {
+    font-size: 10px;
+  }
   left: 84%;
   margin-top: 2px;
   position: absolute;
@@ -45,6 +57,12 @@
 
 .beginner-text {
   font-size: 13px;
+  @media(max-width: 768px) {
+    font-size: 7px;
+  }
+  @media(max-width: 980px) {
+    font-size: 10px;
+  }
   left: 84%;
   margin-top: 2px;
   position: absolute;
