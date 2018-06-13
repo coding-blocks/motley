@@ -82,7 +82,7 @@
              </div>
          </div>
      </div>
-     <div class="img-container col-xs-12 col-md-6">
+     <div class="img-container col-xs-12 col-sm-12 home-img-box">
          <img class="home-img" src="images/home.png" alt="home">
      </div>
  </div>
@@ -439,8 +439,8 @@
     </div>
   </div>
   <div class="row flex-column flex-md-row justify-content-between cards-box">
-    
-    
+
+
     <div class="offering-card">
         <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
           <div class="left order-2 order-md-1">
@@ -457,7 +457,7 @@
         </div>
     </div>
 
-    
+
     <div class="offering-card">
         <div class="d-flex flex-md-row flex-column align-items-center justify-content-between">
           <div class="left order-2 order-md-1">
@@ -605,7 +605,7 @@
             </div>
             <div class="row justify-content-center links text-center">
                 Copyright 2018 - Coding Blocks Pvt Ltd
-            </div> 
+            </div>
       </div>
     </div>
   </footer>
@@ -617,7 +617,7 @@
     let currentIndex = 2
 
     class carouselCard {
-      
+
 
       constructor (el, cssConf = {}) {
         this.element = el
@@ -660,9 +660,9 @@
     $('.card-stack-btn > a')[0].onclick = function () {
       currentIndex--
       reRender(-1)
-      
+
     }
-  
+
     reRender = function (factor) {
 
       if (currentIndex < 2) {
