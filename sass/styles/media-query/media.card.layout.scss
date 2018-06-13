@@ -28,13 +28,17 @@
     }
 
    .details {
-      font-size: 14px;
+      font-size: $font-xs;
       @include padding-mixin(50px, 30px, 50px, 30px);
     } 
 
     .heading-u-red {
-      font-size: 18px;
+      font-size: $font-mds;
       @include padding-mixin(0, 20px, 10px, 0);
+    }
+
+    .auth-link {
+      font-size: $font-xs;
     }
 
   }
@@ -128,17 +132,21 @@
     }
 
    .details {
-      font-size: 14px;
+      font-size: $card-md;
       @include padding-mixin(50px, 30px, 50px, 30px);
     }
 
     .button-solid {
-      font-size: 14px;
+      font-size: $card-md;
     }
 
     .heading-u-red {
-      font-size: 18px;
+      font-size: $font-xs;
       @include padding-mixin(0, 20px, 10px, 0);
+    }
+
+    .auth-link {
+      font-size: $card-sm;
     }
   } 
 
