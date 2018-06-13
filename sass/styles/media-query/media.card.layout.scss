@@ -22,6 +22,23 @@
     margin-right: 15px;
   }
 
+  .o-profile {
+    .nav-info {
+      display: none;
+    }
+
+   .details {
+      font-size: 14px;
+      @include padding-mixin(50px, 30px, 50px, 30px);
+    } 
+
+    .heading-u-red {
+      font-size: 18px;
+      @include padding-mixin(0, 20px, 10px, 0);
+    }
+
+  }
+
   .card-heading {
     float: left;
     display: contents;
@@ -104,6 +121,26 @@
     margin: 0 auto;
     top: 1px;
   }
+  
+  .o-profile {
+    .nav-info {
+      display: none;
+    }
+
+   .details {
+      font-size: 14px;
+      @include padding-mixin(50px, 30px, 50px, 30px);
+    }
+
+    .button-solid {
+      font-size: 14px;
+    }
+
+    .heading-u-red {
+      font-size: 18px;
+      @include padding-mixin(0, 20px, 10px, 0);
+    }
+  } 
 
   .card-mentor-image {
     display: flex;

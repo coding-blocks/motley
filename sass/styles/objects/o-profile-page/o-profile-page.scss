@@ -1,106 +1,71 @@
-.o-profile{
+.o-profile {
   justify-content: space-evenly;
   font-size: 22px;
-  .card{
-    @include  dimensions(100%,  fit-content);
-    @include  dimensions(100%, -moz-fit-content);
+
+  .card {
+    @include dimensions(100%, fit-content);
+    @include dimensions(100%, -moz-fit-content);
     @include margin(0, 0, 50px, 0);
     box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
-    border: none;
-    .info {
-      @include padding-mixin(15px, 100px, 35px, 100px);
-      text-align: center;
-
-      .profile-image {
-        height: 100px;
-        width: 100px;
-        border-radius: 999px;
-      }
-    }
-
-    .details {
-      @include padding-mixin(70px, 80px,  30px, 80px);
-
-      .profile-links {
-        justify-content: space-between;
-      }
-
-      .profile-button{
-        -moz-border-radius: 42.5px;
-        -webkit-border-radius: 42.5px;
-        -ms-border-radius: 42.5px;
-        border-radius: 42.5px;
-        background: linear-gradient(to right, #ed7298, #ec8871);
-        color: #ffffff;
-        @include padding-mixin(15px,  10px,  15px,  10px);
-        width: 200px;
-        font-size: $font-sm;
-        font-weight: $font-medium;
-      }
-
-      .profile-button:hover {
-        box-shadow: 0 10px 41px 0 rgba(236, 131, 122, 0.2); }
-
-      .auth-links {
-        @include margin(0, 10px, 0, 10px);
-      }
-    }
-
-    p {
-      text-align: center;
-      @include margin(10px, 0, 0, 0);
-    }
+    border: none; 
   }
+
+  .info {
+      @include padding-mixin(15px, 0, 35px, 0);
+      text-align: center;
+  }
+
+  .details {
+      @include padding-mixin(50px, 100px, 50px, 100px);
+  } 
 
   .separator {
     float: left;
-    height: 1px;
+    height: 2px;
     width: 200px;
-    @include margin(0, 0,  0,  0);
-    background: #d9d9d9;
-  }
-
-  .profile-heading {
-    font-size: 18px;
-    @include padding-mixin(20px, 0, 5px, 0);
+    @include margin(0, 0, 0, 0);
+    background: #D3D3D3; 
   }
 
   .heading-u-red {
     @include margin(0, 0, 0, 0);
+    @include padding-mixin(0, 20px, 25px, 0);
   }
 
-  .round-img{
+  .round-img {
     @include dimensions(151px, 151px);
   }
 
-  .edit{
+  .edit {
     @include margin(0, 0, 60px, 0);
     justify-content: space-between;
   }
 
-  .attributes{
+  .attributes {
     @include margin(0, 0, 10px, 0);
     height: fit-content;
     justify-content: space-between;
     font-weight: $font-normal;
-    .flex-row{
-      @include padding-mixin(20px,  0,  10px,  0);
+    .flex-row {
+      @include padding-mixin(20px, 0, 10px, 0);
       justify-content: space-between;
     }
   }
 
-  .faded{
+  .faded {
     color: $default-accordian-font;
   }
 
-  .button-circle{
+  .button-circle {
     @include margin(0, 0, 23px, 0);
     text-align: center;
   }
 
-  .flex-row{
+  .flex-row {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    @include margin(0, 0, 10px, 0);
+    @include padding-mixin(20px, 0, 10px, 0);
     justify-content: space-between;
   }
 
