@@ -1,39 +1,49 @@
 .o-profile {
   justify-content: space-evenly;
-  font-size: 22px;
-
+  font-size: $font-sm;
+  
   .card {
-    @include dimensions(100%, fit-content);
-    @include dimensions(100%, -moz-fit-content);
-    @include margin(0, 0, 50px, 0);
+    @include dimensions(100%, auto);
+    @include margin(0, 0, 30px, 0);
     box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
-    border: none; 
+    border: none;
+  }
+
+  .profile-pic {
+    @include padding-mixin(60px, 0, 0, 0);
   }
 
   .info {
-      @include padding-mixin(15px, 0, 35px, 0);
-      text-align: center;
+    @include padding-mixin(90px, 0, 50px, 0);
+    text-align: center;    
   }
 
   .details {
-      @include padding-mixin(50px, 100px, 50px, 100px);
+      @include padding-mixin(40px, 60px, 40px, 60px);
   } 
 
-  .separator {
-    float: left;
-    height: 2px;
-    width: 200px;
+  p {
     @include margin(0, 0, 0, 0);
-    background: #D3D3D3; 
+  }
+
+  .separator {
+    width: 167px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #cccccc;
   }
 
   .heading-u-red {
+    @include padding-mixin(0, 420px, 33px, 0);
     @include margin(0, 0, 0, 0);
-    @include padding-mixin(0, 20px, 25px, 0);
+    font-size: $font-mds;
   }
 
   .round-img {
-    @include dimensions(151px, 151px);
+    @include dimensions(120px, 120px);
+    position: absolute;
+    left: 32%;
+    top: 0;
   }
 
   .edit {
@@ -47,25 +57,44 @@
     justify-content: space-between;
     font-weight: $font-normal;
     .flex-row {
-      @include padding-mixin(20px, 0, 10px, 0);
+      @include padding-mixin(40px, 0, 20px, 0);
       justify-content: space-between;
     }
+  }
+
+  .button-solid {
+    width: 20%;
+    max-width: 162px;
+    font-size: $font-xs;
+    font-weight: $font-medium;
   }
 
   .faded {
     color: $default-accordian-font;
   }
 
-  .button-circle {
-    @include margin(0, 0, 23px, 0);
+  .auth-link {
     text-align: center;
+    @include margin(0, 10%, 0, 0);
+  }
+
+  .button-circle {
+    @include margin(0, 0, 30px, 0);
+    @include dimensions(70px, 70px);
+    text-align: center;
+    font-size: $font-sm;
+    font-weight: 600;
+  }
+
+  .links {
+    @include padding-mixin (30px, 0, 20px, 0);
   }
 
   .flex-row {
+    @include padding-mixin(30px, 0, 30px, 0);
     display: flex;
-    flex-direction: row;
     width: 100%;
-    @include padding-mixin(20px, 0, 10px, 0);
+    font-weight: $font-medium;
     justify-content: space-between;
   }
 
