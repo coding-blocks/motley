@@ -12,11 +12,11 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 180px, 33px, 0);
+      @include padding-mixin(0, 140px, 33px, 0);
     }
 
     .auth-link {
-      @include margin(0, 5%, 0, 0);
+      @include margin(0, 8%, 0, 0);
       font-size: $font-xs;
     }
   }
