@@ -1,7 +1,12 @@
+.login-signup{
+  background: url("/images/loginsvg.svg") no-repeat 50% -50px;
+  background-size: 1250px;
+}
+
 .o-login{
   @include dimensions(80%, auto);
   @include padding-mixin(60px, 72px, 60px, 80px);
-  margin: 0 auto;
+  @include margin(40px, auto, 0, auto);
   max-width: 828px;
 
   .input-btn{
