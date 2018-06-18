@@ -7,3 +7,5 @@ dist/
 examples/html/
 live/
 examples/public/stylesheets/
+*.swp
+*.swo
