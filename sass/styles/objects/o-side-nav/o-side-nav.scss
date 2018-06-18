@@ -1,15 +1,19 @@
 .nav-info {
-  .info {
+  font-size: $font-sm;
+
+  .card {
     @include dimensions(100%, auto);
     @include margin(0, 0, 30px, 0);
     @include padding-mixin(90px, 0, 50px, 0);
-    box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
-    border: none;
     text-align: center;
   }
 
   .profile-pic {
     @include padding-mixin(60px, 0, 0, 0);
+  }
+
+  .faded {
+    color: $default-accordian-font;
   }
 
   p {
@@ -29,7 +33,6 @@
 
   .flex-row {
     @include padding-mixin(30px, 0, 30px, 0);
-    display: flex;
     width: 100%;
     font-weight: $font-medium;
     justify-content: space-between;

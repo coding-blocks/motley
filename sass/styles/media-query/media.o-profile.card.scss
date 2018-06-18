@@ -24,19 +24,9 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-profile {
-    .nav-info {
-      display: none;
-    }
-
     .details {
       @include padding-mixin(55px, 30px, 25px, 30px);
       font-size: $font-xs;
-    }
-
-    .button-circle {
-      @include margin(0, 0, 20px, 0);
-      @include dimensions(60px, 60px);
-      font-size: $card-sm;
     }
 
     .flex-row {
@@ -57,10 +47,6 @@
 
 @media screen and (max-width: 575px) {
   .o-profile {
-    .nav-info {
-      display: none;
-    }
-
     .links {
       @include padding-mixin (10px, 0, 10px, 0);
     }
@@ -95,11 +81,6 @@
         @include padding-mixin(20px, 0, 10px, 0);
         justify-content: space-between;
       }
-    }
-
-    .flex-row {
-      @include padding-mixin(0, 0, 0, 0);
-      font-weight: $font-medium;
     }
   }
 }
