@@ -3,7 +3,6 @@
     flex: 0 0 50% ;
     max-width: 50% ;
   }
-
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -54,10 +53,8 @@
 
   .card-heading {
     float: left;
-    display: contents;
     overflow: hidden;
     max-width: 70%;
-    margin-bottom: 0;
     margin-top: 10px;
   }
 
@@ -96,13 +93,23 @@
   .button-dashed {
     margin: 20px auto;
   }
-  
-  .card-price-details{
-    text-align:  right;
-  }
 
   .card, .card-text, .card-heading{
     height: auto;
+  }
+
+  .o-course-card{
+    .card-price-details{
+      float: right;
+    }
+
+    .card-price-details{
+      text-align:  right;
+    }
+
+    .card-heading{
+      margin-bottom: 0;
+    }
   }
 }
 
