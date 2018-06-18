@@ -9,20 +9,12 @@
     border: none;
   }
 
-  .profile-pic {
-    @include padding-mixin(60px, 0, 0, 0);
-  }
-
-  .info {
-    @include padding-mixin(90px, 0, 50px, 0);
-    text-align: center;
-  }
-
   .details {
     @include padding-mixin(40px, 60px, 40px, 45px);
   }
 
   .input-text {
+    height: 60px;
     color: #666666;
   }
 
@@ -30,32 +22,10 @@
     background: $disabled-input;
   }
 
-  p {
-    @include margin(0, 0, 0, 0);
-  }
-
-  .profile-container {
-    position: absolute;
-    width: 100%;
-    top: 0;
-  }
-
-  .separator {
-    width: 167px;
-    height: 1px;
-    opacity: 0.3;
-    background-color: #cccccc;
-  }
-
   .heading-u-red {
     @include padding-mixin(0, 380px, 33px, 0);
     @include margin(0, 0, 0, 15px);
     font-size: $font-mds;
-  }
-
-  .round-img {
-    @include dimensions(120px, 120px);
-    margin-right: 28px;
   }
 
   .edit {
@@ -74,7 +44,6 @@
 
     .flex-row {
       @include padding-mixin(20px, 0, 20px, 0);
-      justify-content: space-between;
     }
     .detail-row {
       @include margin(20px, 0, 20px, 0);

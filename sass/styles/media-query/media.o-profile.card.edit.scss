@@ -16,7 +16,7 @@
 
     .attributes {
       .flex-row {
-        @include padding-mixin( 0, 0, 0,0);
+        @include padding-mixin(20px, 0, 0, 0);
       }
 
       .detail-row {
@@ -41,7 +41,7 @@
 
 
     .flex-row {
-      @include padding-mixin(0, 0, 0, 0);
+      @include padding-mixin(0, 0, 20px, 0);
       font-weight: $font-medium;
     }
 
@@ -61,7 +61,7 @@
 
     .attributes {
       .flex-row {
-        @include padding-mixin( 0, 0, 0,0);
+        @include padding-mixin(20px, 0, 0, 0);
       }
 
       .detail-row {
@@ -90,23 +90,24 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 103px, 13px, 0);
+      @include padding-mixin(0, 150px, 13px, 0);
       font-size: $font-xs;
     }
 
     .flex-row {
-      @include padding-mixin( 0, 0, 0, 0);
+      @include padding-mixin( 0, 0, 20px, 0);
       font-weight: $font-medium;
     }
 
     .button-solid {
       @include margin(0, 20px, 0, 0);
+      height: 35px;
       font-size: $card-sm;
     }
 
     .attributes {
       .flex-row {
-        @include padding-mixin( 0, 0, 0,0);
+        @include padding-mixin(20px, 0, 0, 0);
       }
 
       .input-text {
