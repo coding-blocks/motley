@@ -1,0 +1,55 @@
+@media screen and (max-width: 1200px) {
+  .o-app-page {
+
+    .details {
+      @include padding-mixin(40px, 40px, 40px, 40px);
+      font-size: $font-xs;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 180px, 33px, 0);
+    }
+
+    .app-card {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .o-app-page{
+    .details {
+      @include padding-mixin(40px, 30px, 25px, 30px);
+      font-size: $font-xs;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 180px, 10px, 0);
+      font-size: $font-mds;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .o-app-page{
+    .details {
+      @include padding-mixin(25px, 20px, 25px, 20px);
+      font-size: $card-sm;
+      font-weight: $font-medium;
+    }
+
+    .button-dashed {
+      font-size: $card-md;
+      width: 30%;
+    }
+
+    .remove-button {
+      font-size: $card-md;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 150px, 13px, 0);
+      font-size: $font-xs;
+    }
+  }
+}

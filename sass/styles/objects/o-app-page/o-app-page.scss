@@ -1,0 +1,70 @@
+.o-app-page {
+  justify-content: space-evenly;
+  font-size: $font-sm;
+
+  .card {
+    @include dimensions(100%, auto);
+    @include margin(0, 0, 30px, 0);
+    box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
+    border: none;
+  }
+
+  .border-card {
+    @include margin(0, 0, 30px, 0);
+  }
+
+  .details {
+    @include padding-mixin(40px, 60px, 40px, 60px);
+  }
+
+  .app-detail {
+    @include padding-mixin(30px, 70px, 0, 30px);
+  }
+
+  .app-row {
+    @include padding-mixin(10px, 0, 10px, 0);
+  }
+
+  .heading-u-red {
+    @include padding-mixin(0, 380px, 33px, 0);
+    @include margin(0, 0, 0, 0);
+    font-size: $font-mds;
+  }
+
+  .row {
+    @include padding-mixin(0, 0, 0, 0);
+  }
+
+  .attributes {
+    @include margin(0, 0, 10px, 0);
+    height: auto;
+    font-weight: $font-normal;
+
+    .flex-row {
+      @include padding-mixin(20px, 0, 20px, 0);
+    }
+  }
+
+  .button-dashed {
+    @include margin(0, 40px, 20px, 0);
+    width: 35%;
+    max-width: 136px;
+    font-size: $font-xs;
+    font-weight: $font-medium;
+  }
+
+  .faded {
+    color: $default-accordian-font;
+  }
+
+  .remove-button {
+    @include margin(0, 0, 20px, 30px);
+  }
+
+  .flex-row {
+    @include padding-mixin(30px, 0, 30px, 0);
+    width: 100%;
+    font-weight: $font-medium;
+  }
+
+}
