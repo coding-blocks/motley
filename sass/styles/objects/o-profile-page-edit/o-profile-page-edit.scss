@@ -16,6 +16,11 @@
     color: $navLink;
   }
 
+  .dropdown-ul {
+    box-shadow: unset;
+    padding-left: 5px;
+  }
+
   .input-text[disabled]{
     background: $disabled-input;
   }
