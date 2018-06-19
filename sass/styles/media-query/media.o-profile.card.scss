@@ -16,7 +16,7 @@
     }
 
     .auth-link {
-      @include margin(0, 8%, 0, 0);
+      @include margin(0, 6%, 0, 0);
       font-size: $font-xs;
     }
   }
@@ -30,7 +30,6 @@
     }
 
     .flex-row {
-      @include padding-mixin(0, 0, 0, 0);
       font-weight: $font-medium;
     }
 
@@ -57,12 +56,6 @@
       font-weight: $font-medium;
     }
 
-    .button-circle {
-      @include margin(0, 0, 10px, 0);
-      @include dimensions(30px, 30px);
-      font-size: $card-xs;
-    }
-
     .button-solid {
       font-size: $card-sm;
     }
@@ -70,10 +63,6 @@
     .heading-u-red {
       @include padding-mixin(0, 103px, 13px, 0);
       font-size: $font-xs;
-    }
-
-    .auth-link {
-      font-size: $card-sm;
     }
 
     .attributes {
