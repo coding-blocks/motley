@@ -9,10 +9,6 @@
     .heading-u-red {
       @include padding-mixin(0, 180px, 33px, 0);
     }
-
-    .app-card {
-      width: 100%;
-    }
   }
 }
 
@@ -21,6 +17,10 @@
     .details {
       @include padding-mixin(40px, 30px, 25px, 30px);
       font-size: $font-xs;
+    }
+
+    .border-card {
+      width: 100%;
     }
 
     .heading-u-red {
@@ -43,8 +43,8 @@
       width: 30%;
     }
 
-    .remove-button {
-      font-size: $card-md;
+    .border-card {
+      width: 100%;
     }
 
     .heading-u-red {

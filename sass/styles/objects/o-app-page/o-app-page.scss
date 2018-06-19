@@ -18,7 +18,7 @@
   }
 
   .app-detail {
-    @include padding-mixin(30px, 70px, 0, 30px);
+    @include padding-mixin(30px, 30px, 30px, 30px);
   }
 
   .app-row {
@@ -45,9 +45,16 @@
     }
   }
 
+  .button-row {
+    @include padding-mixin(20px, 0, 0, 0);
+  }
+
+  button {
+    @include margin(0, 0, 20px, 0);
+  }
+
   .button-dashed {
-    @include margin(0, 40px, 20px, 0);
-    width: 35%;
+    @include margin(0, 0, 0, 0);
     max-width: 136px;
     font-size: $font-xs;
     font-weight: $font-medium;
@@ -55,10 +62,6 @@
 
   .faded {
     color: $default-accordian-font;
-  }
-
-  .remove-button {
-    @include margin(0, 0, 20px, 30px);
   }
 
   .flex-row {
