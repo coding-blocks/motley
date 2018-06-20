@@ -5,5 +5,7 @@ examples/public/stylesheets/
 sass/styles/app.css
 dist/
 examples/html/
-examples/public/stylesheets/
 live/
+examples/public/stylesheets/
+*.swp
+*.swo
