@@ -11,7 +11,7 @@
   }
 
   .border-card {
-    @include padding-mixin(30px, 30px, 130px, 30px);
+    @include padding-mixin(30px, 30px, 120px, 30px);
     @include margin(0, 0, 30px, 0);
     position: relative;
   }
@@ -48,7 +48,7 @@
   .button-row {
     @include padding-mixin(20px, 60px, 0, 0);
     width: 100%;
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
   }
 
@@ -70,7 +70,7 @@
   }
 
   .flex-row {
-    @include padding-mixin(30px, 0, 30px, 0);
+    @include margin(30px, 0, 30px, 0);
     width: 100%;
     font-weight: $font-medium;
   }
