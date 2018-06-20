@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+  .o-client-page {
+
+    .details {
+      @include padding-mixin(40px, 40px, 40px, 40px);
+      font-size: $font-xs;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 140px, 33px, 0);
+    }
+
+    .client-card {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .o-client-page{
+
+    .details {
+      @include padding-mixin(40px, 30px, 25px, 30px);
+      font-size: $font-xs;
+    }
+
+    .button-solid {
+      font-size: $font-xs;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 180px, 10px, 0);
+      font-size: $font-mds;
+    }
+
+    .nav-info{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .o-client-page{
+
+    .details {
+      @include padding-mixin(25px, 20px, 25px, 20px);
+      font-size: $card-sm;
+      font-weight: $font-medium;
+    }
+
+    .button-dashed {
+      font-size: $card-md;
+    }
+
+    .button-solid {
+      font-size: $card-sm;
+    }
+
+    .heading-u-red {
+      @include padding-mixin(0, 63px, 13px, 0);
+      font-size: $font-xs;
+    }
+
+    .nav-info{
+      display: none;
+    }
+  }
+}

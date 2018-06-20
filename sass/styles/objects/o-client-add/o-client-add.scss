@@ -1,0 +1,108 @@
+.o-client-add {
+  justify-content: space-evenly;
+  font-size: $font-sm;
+
+  .card {
+    @include dimensions(100%, auto);
+    @include margin(0, 0, 30px, 0);
+    box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
+    border: none;
+  }
+
+  .profile-pic {
+    @include padding-mixin(60px, 0, 0, 0);
+  }
+
+  .info {
+    @include padding-mixin(90px, 0, 50px, 0);
+    text-align: center;
+  }
+
+  .details {
+    @include padding-mixin(40px, 60px, 40px, 45px);
+  }
+
+  .input-text {
+    color: #666666;
+  }
+
+  .input-text[disabled]{
+    background: $disabled-input;
+  }
+
+  p {
+    @include margin(0, 0, 0, 0);
+  }
+
+  .profile-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  .separator {
+    width: 167px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #cccccc;
+  }
+
+  .heading-u-red {
+    @include padding-mixin(0, 380px, 33px, 0);
+    @include margin(0, 0, 0, 15px);
+    font-size: $font-mds;
+  }
+
+  .round-img {
+    @include dimensions(120px, 120px);
+    margin-right: 28px;
+  }
+
+  .edit {
+    @include margin(0, 0, 60px, 0);
+    justify-content: space-between;
+  }
+
+  .row {
+    @include padding-mixin(0, 0, 0, 0);
+  }
+
+  .attributes {
+    @include margin(0, 0, 10px, 0);
+    height: auto;
+    font-weight: $font-normal;
+
+    .flex-row {
+      @include padding-mixin(20px, 0, 20px, 0);
+      justify-content: space-between;
+    }
+    .detail-row {
+      @include margin(20px, 0, 20px, 0);
+      width: 50%;
+    }
+  }
+
+  .button-solid {
+    width: 30%;
+    max-width: 162px;
+    font-size: $font-xs;
+    font-weight: $font-medium;
+  }
+
+  .faded {
+    color: $default-accordian-font;
+  }
+
+  .reset-button {
+    @include margin(0, 30px, 0, 0);
+  }
+
+  .flex-row {
+    @include padding-mixin(30px, 0, 30px, 0);
+    display: flex;
+    width: 100%;
+    font-weight: $font-medium;
+    justify-content: space-between;
+  }
+
+}

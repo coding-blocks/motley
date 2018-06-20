@@ -1,0 +1,78 @@
+.o-client-page {
+  justify-content: space-evenly;
+  font-size: $font-xs;
+
+  .card {
+    @include dimensions(100%, auto);
+    @include margin(0, 0, 30px, 0);
+    @include padding-mixin(40px, 60px, 40px, 60px);
+    box-shadow: 0 14px 41px 0 rgba(51, 51, 51, 0.1);
+    border: none;
+  }
+
+  .border-card {
+    @include padding-mixin(30px, 30px, 130px, 30px);
+    @include margin(0, 0, 30px, 0);
+    position: relative;
+  }
+
+  .client-row {
+    @include padding-mixin(10px, 0, 10px, 0);
+  }
+
+  .heading-u-red {
+    @include padding-mixin(0, 160px, 33px, 0);
+    @include margin(0, 0, 0, 0);
+    font-size: $font-mds;
+  }
+
+  .row {
+    @include padding-mixin(0, 0, 0, 0);
+  }
+
+  .attributes {
+    @include margin(0, 0, 10px, 0);
+    height: auto;
+    font-weight: $font-normal;
+
+    .flex-row {
+      @include padding-mixin(20px, 0, 20px, 0);
+      justify-content: space-between;
+    }
+  }
+
+  .button-row {
+     @include padding-mixin(20px, 60px, 0, 0);
+     width: 100%;
+     bottom: 20px;
+     position: absolute;
+   }
+
+  .button-solid {
+    width: 30%;
+    max-width: 182px;
+    font-size: $font-xs;
+    font-weight: $font-medium;
+  }
+
+  .button-dashed {
+    @include margin(0, 0, 0, 0);
+    max-width: 136px;
+    min-width: 90px;
+    width: 40%;
+    font-size: $font-xs;
+    font-weight: $font-medium;
+  }
+
+  .faded {
+    color: $default-accordian-font;
+  }
+
+  .flex-row {
+    @include padding-mixin(30px, 0, 30px, 0);
+    width: 100%;
+    font-weight: $font-medium;
+    justify-content: space-between;
+  }
+
+}
