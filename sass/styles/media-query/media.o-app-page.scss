@@ -19,7 +19,6 @@
   .o-app-page{
     .card {
       @include padding-mixin(40px, 30px, 25px, 30px);
-      font-size: $font-xs;
     }
 
     .border-card {
