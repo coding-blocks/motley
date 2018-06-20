@@ -1,20 +1,23 @@
 @media screen and (max-width: 1200px) {
   .o-app-page {
-
-    .details {
+    .card {
       @include padding-mixin(40px, 40px, 40px, 40px);
       font-size: $font-xs;
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 180px, 33px, 0);
+      @include padding-mixin(0, 280px, 33px, 0);
+    }
+
+    .button-dashed {
+      font-size: $global-font-size;
     }
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-app-page{
-    .details {
+    .card {
       @include padding-mixin(40px, 30px, 25px, 30px);
       font-size: $font-xs;
     }
@@ -32,10 +35,14 @@
 
 @media screen and (max-width: 575px) {
   .o-app-page{
-    .details {
+    .card {
       @include padding-mixin(25px, 20px, 25px, 20px);
-      font-size: $card-sm;
+      font-size: $card-md;
       font-weight: $font-medium;
+    }
+
+    .heading {
+      font-size: $global-font-size;
     }
 
     .button-dashed {
