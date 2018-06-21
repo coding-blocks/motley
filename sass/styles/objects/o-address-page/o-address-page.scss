@@ -21,7 +21,7 @@
   }
 
   .heading-u-red {
-    @include padding-mixin(0, 380px, 33px, 0);
+    @include padding-mixin(0, 200px, 33px, 0);
     @include margin(0, 0, 0, 0);
     font-size: $font-mds;
   }
