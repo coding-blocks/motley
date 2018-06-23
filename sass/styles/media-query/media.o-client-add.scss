@@ -31,7 +31,6 @@
   .o-client-add {
     .card {
       @include padding-mixin(55px, 10px, 25px, 30px);
-      font-size: $font-xs;
     }
 
     .flex-row {
@@ -52,13 +51,6 @@
     .button-solid {
       @include margin(0, 20px, 0, 0);
     }
-
-    .attributes {
-      .detail-row {
-        @include margin(20px, 0, 20px, 0);
-      }
-    }
-
   }
 }
 
@@ -75,13 +67,7 @@
       font-size: $font-xs;
     }
 
-    .flex-row {
-      @include padding-mixin( 0, 0, 0, 0);
-      font-weight: $font-medium;
-    }
-
     .button-solid {
-      @include margin(0, 20px, 0, 0);
       font-size: $card-sm;
     }
 
