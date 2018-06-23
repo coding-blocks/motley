@@ -6,11 +6,11 @@
     @include dimensions(100%, auto);
     @include margin(0, 0, 30px, 0);
     @include padding-mixin(40px, 60px, 40px, 45px);
-    border: none;
   }
   
   .input-text {
-    color: #666666;
+    height: 60px;
+    color: $navLink;
   }
 
   .input-text[disabled]{

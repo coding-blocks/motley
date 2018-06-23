@@ -6,7 +6,6 @@
     @include dimensions(100%, auto);
     @include margin(0, 0, 30px, 0);
     @include padding-mixin(40px, 60px, 40px, 60px);
-    border: none;
   }
 
   .border-card {

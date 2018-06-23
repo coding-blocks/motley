@@ -25,10 +25,6 @@
       @include padding-mixin(40px, 30px, 25px, 30px);
     }
 
-    .border-card {
-      width: 100%;
-    }
-
     .heading-u-red {
       @include padding-mixin(0, 140px, 10px, 0);
       font-size: $font-mds;
