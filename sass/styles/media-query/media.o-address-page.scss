@@ -30,7 +30,6 @@
   
       .heading-u-red {
         @include padding-mixin(0, 100px, 10px, 0);
-        font-size: $font-mds;
       }
     }
   }
