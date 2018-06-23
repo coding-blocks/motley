@@ -30,7 +30,7 @@
 @media screen and (min-width: 575px) and (max-width: 767px) {
   .o-client-add {
     .card {
-      @include padding-mixin(55px, 10px, 25px, 30px);
+      @include padding-mixin(55px, 30px, 25px, 30px);
     }
 
     .flex-row {
@@ -43,7 +43,6 @@
     }
 
     .input-text{
-      @include margin(0, 20px, 0, 0);
       height: 50px;
     }
 
@@ -56,7 +55,7 @@
 @media screen and (max-width: 575px) {
   .o-client-add {
     .card {
-      @include padding-mixin(25px, 0, 25px, 0);
+      @include padding-mixin(25px, 20px, 25px, 20px);
       font-size: $card-sm;
       font-weight: $font-medium;
     }
@@ -72,11 +71,9 @@
 
     .attributes {
       .input-text {
-        @include padding-mixin(0, 0, 0, 20px);
-        @include margin(0, 20px, 0, 0);
-        height: 40px;
+        height: 50px;
         font-size: $card-sm;
-        width: 60%;
+        width: 70%;
       }
 
       .label-input {
