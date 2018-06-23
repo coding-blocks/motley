@@ -9,6 +9,7 @@
   }
 
   .input-text {
+    @include padding-mixin(0, 20px, 0, 20px);
     height: 60px;
     color: $navLink;
   }
@@ -27,7 +28,7 @@
 
   .heading-u-red {
     @include padding-mixin(0, 380px, 33px, 0);
-    @include margin(0, 0, 0, 15px);
+    @include margin(0,0,0,0);
     font-size: $font-mds;
   }
 
