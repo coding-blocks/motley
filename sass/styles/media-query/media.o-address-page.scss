@@ -2,7 +2,6 @@
     .o-address-page {
       .card {
         @include padding-mixin(40px, 40px, 40px, 40px);
-        font-size: $font-xs;
       }
   
       .heading-u-red {
