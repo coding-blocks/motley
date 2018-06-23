@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 }
             },
             hbs: {
-                files: ['examples/views/**/*.hbs'],
+                files: ['examples/views/**/*.hbs', 'examples/components/**/*.hbs'],
                 tasks: ['hbs'],
                 options: {
                     livereload: true
