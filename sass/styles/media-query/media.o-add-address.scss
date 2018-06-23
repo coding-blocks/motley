@@ -2,7 +2,6 @@
   .o-add-address {
     .card {
       @include padding-mixin(40px, 40px, 40px, 40px);
-      font-size: $font-xs;
     }
 
     .heading-u-red {
@@ -25,7 +24,7 @@
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-add-address {
     .card {
-      @include padding-mixin(55px, 10px, 25px, 30px);
+      @include padding-mixin(55px, 30px, 25px, 30px);
       font-size: $global-font-size;
     }
 
@@ -36,11 +35,9 @@
 
     .heading-u-red {
       @include padding-mixin(0, 180px, 10px, 0);
-      font-size: $font-mds;
     }
 
     .input-text{
-      @include margin(0, 20px, 0, 0);
       height: 50px;
     }
 
@@ -77,9 +74,9 @@
       .input-text {
         @include padding-mixin(0, 0, 0, 20px);
         @include margin(0, 20px, 0, 0);
-        height: 40px;
+        height: 50px;
         font-size: $card-sm;
-        width: 60%;
+        width: 70%;
       }
 
       .label-input {

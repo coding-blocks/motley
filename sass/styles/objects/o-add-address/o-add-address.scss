@@ -5,7 +5,7 @@
   .card {
     @include dimensions(100%, auto);
     @include margin(0, 0, 30px, 0);
-    @include padding-mixin(40px, 60px, 40px, 45px);
+    @include padding-mixin(70px, 45px, 40px, 45px);
   }
 
   .input-text {
@@ -61,7 +61,7 @@
   }
 
   .flex-row {
-    @include padding-mixin(30px, 0, 30px, 0);
+    @include margin(0, 0, 30px, 0);
     width: 100%;
     font-weight: $font-medium;
     justify-content: space-between;
