@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
   .o-profile-edit {
-    .details {
+    .card {
       @include padding-mixin(40px, 40px, 40px, 40px);
       font-size: $font-xs;
     }
@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-profile-edit {
-    .details {
+    .card {
       @include padding-mixin(55px, 10px, 25px, 30px);
       font-size: $global-font-size;
     }
@@ -56,8 +56,8 @@
 
 @media screen and (max-width: 575px) {
   .o-profile-edit {
-    .details {
-      @include padding-mixin(25px, 0, 25px, 0);
+    .card {
+      @include padding-mixin(25px, 20px, 25px, 20px);
       font-size: $card-sm;
       font-weight: $font-medium;
     }
@@ -72,18 +72,15 @@
     }
 
     .button-solid {
-      @include margin(0, 20px, 0, 0);
       height: 35px;
       font-size: $card-sm;
     }
 
     .attributes {
       .input-text {
-        @include padding-mixin(0, 0, 0, 20px);
-        @include margin(0, 20px, 0, 0);
         height: 40px;
         font-size: $card-sm;
-        width: 60%;
+        width: 70%;
       }
 
       .label-input {
