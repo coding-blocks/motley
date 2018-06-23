@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .o-client-add {
     .card {
       @include padding-mixin(55px, 10px, 25px, 30px);
@@ -40,7 +40,6 @@
 
     .heading-u-red {
       @include padding-mixin(0, 140px, 10px, 0);
-      font-size: $font-mds;
     }
 
     .input-text{

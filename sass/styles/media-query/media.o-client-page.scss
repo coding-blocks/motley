@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .o-client-page{
     .card {
       @include padding-mixin(40px, 30px, 25px, 30px);
@@ -27,6 +27,10 @@
 
     .heading-u-red {
       @include padding-mixin(0, 140px, 10px, 0);
+    }
+
+    .border-card {
+      width: 100%;
     }
   }
 }
@@ -52,7 +56,6 @@
     }
 
     .border-card {
-      width: 100%;
       padding-bottom: 90px;
       padding-top: 20px;
     }
