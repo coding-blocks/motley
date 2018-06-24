@@ -28,10 +28,6 @@
     font-size: $font-xs;
   }
 
-  .red {
-    font-size: $font-sm;
-  }
-
   .row {
     @include padding-mixin(0, 0, 0, 0);
   }
