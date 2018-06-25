@@ -14,14 +14,14 @@
     }
 
     .attributes {
-      .flex-row {
-        @include padding-mixin(20px, 0, 0, 0);
-      }
-
       .detail-row {
         @include margin(20px, 0, 20px, 0);
         width: 100%;
       }
+    }
+
+    .round-img {
+      @include dimensions(100px, 100px);
     }
   }
 }
@@ -46,6 +46,10 @@
     .input-text{
       @include margin(0, 20px, 0, 0);
       height: 50px;
+    }
+
+    .round-img {
+      @include dimensions(80px, 80px);
     }
 
     .button-solid {
@@ -74,6 +78,10 @@
     .button-solid {
       height: 35px;
       font-size: $card-sm;
+    }
+    
+    .round-img {
+      @include dimensions(60px, 60px);
     }
 
     .attributes {
