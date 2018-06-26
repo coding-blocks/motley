@@ -15,7 +15,6 @@
 
     .attributes {
       .detail-row {
-        @include margin(0, 0, 20px, 0);
         width: 100%;
       }
     }
@@ -40,7 +39,6 @@
 
     .heading-u-red {
       @include padding-mixin(0, 180px, 10px, 0);
-      font-size: $font-mds;
     }
 
     .input-text{
