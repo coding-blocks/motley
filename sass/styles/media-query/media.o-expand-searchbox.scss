@@ -11,6 +11,14 @@
   }
 }
 @media (max-width: 767px){
+  .expand-search > input {
+    width: 100%;
+    padding-left: 45px;
+    background: $expand-search-bg url("/images/searchicon-w.png") no-repeat;
+    background-size: 23px;
+    background-position: center;
+    background-position-x: 15px;
+  }
   .search-cont {
     order: 3;
     padding-right: 10px !important;
