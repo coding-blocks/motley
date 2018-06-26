@@ -11,13 +11,22 @@
   }
 }
 @media (max-width: 767px){
-  .expand-search > input {
-    width: 100%;
-    padding-left: 45px;
-    background: $expand-search-bg url("/images/searchicon-w.png") no-repeat;
-    background-size: 23px;
-    background-position: center;
-    background-position-x: 15px;
+  .expand-search{
+    input {
+      width: 100%;
+      padding-left: 45px;
+      background: $expand-search-bg url("/images/searchicon-w.png") no-repeat;
+      background-size: 23px;
+      background-position: center;
+      background-position-x: 15px;
+      color: #fff;
+      &:-moz-placeholder {
+        color: #c5c5c5;
+      }
+      &::-webkit-input-placeholder {
+        color: #c5c5c5;
+      }
+    }
   }
   .search-cont {
     order: 3;
