@@ -27,6 +27,7 @@ const getFiles = () => fs
 
 
 module.exports = function(grunt) {
+    grunt.loadNpmTasks('grunt-contrib-clean');
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig ({
@@ -89,7 +90,12 @@ module.exports = function(grunt) {
             server: {
                 url: 'http://localhost:9000'
             }
-        }
+        },
+        clean: [
+            'dist',
+            'examples/html',
+            'examples/public/stylesheets/'
+        ]
     });
 
     grunt.registerTask('server', function (target) {
