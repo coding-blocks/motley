@@ -93,6 +93,7 @@ module.exports = function(grunt) {
         },
         clean: [
             'dist',
+            'live',
             'examples/html',
             'examples/public/stylesheets/'
         ]
