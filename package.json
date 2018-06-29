@@ -6,6 +6,7 @@
     "bootstrap-sass-grid": "^4.0.1",
     "express": "^4.16.2",
     "grunt": "^1.0.2",
+    "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-livereload": "^0.1.2",
     "grunt-contrib-watch": "^1.0.0",
@@ -21,8 +22,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "grunt clean",
     "start": "grunt server",
-    "build": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
+    "build": "grunt build",
+    "dist": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
   },
   "repository": {
     "type": "git",
