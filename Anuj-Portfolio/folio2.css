@@ -1,0 +1,167 @@
+.a{
+    flex-wrap: wrap;
+    position: relative;
+    height:749px;
+}
+.b{top:149px;
+    height:600px;
+    position: absolute;
+}
+.c1{
+    position: absolute;
+    top:160px;
+    color:black;
+    width:100%;
+    text-align: center;
+    font-size:23px;
+}
+.c2{
+    top:220px;
+    position: absolute;
+    color: black;
+    width:100%;
+    text-align: center;
+    font-size: 20px;
+}
+.offer{position: absolute;
+    border:1px solid orange;
+    color: white;
+    background-color: orange;
+    width:26%;
+    border-radius: 0.5em;
+    top:283px;
+    left:36%;
+    padding:2px;
+    text-align: center;
+}
+#logo{
+    height:148px;
+    position: absolute;
+    top:0px;
+    right:45%;
+    opacity: 0.8;
+}
+#namelogo{
+    width:16%;
+    height:15%;
+}
+.left{
+    position: absolute;
+    top:29%;
+    width:30%;
+    left:2%;
+}
+.name{font-size: 23px;
+    letter-spacing:1px;
+    position: absolute;
+    top:10%;
+    left:17%;
+    color:red;
+}
+.name2{
+    width:55%;
+    font-size:18px;
+    position: absolute;
+    left:16%;
+    top:50%;
+}
+
+.e{
+    top:24%;
+    display: flex;
+    position: absolute;
+    left:67%;
+    height:250px;
+    width:30%;
+    text-align: center;
+
+}
+.tab1
+{   border-bottom: 1px solid palevioletred;
+    height:40px;
+    width:33.3%;
+}
+.tab2,.tab3{
+    height:40px;
+    width:33.3%;
+}
+
+.active{
+    color:white;
+    text-decoration: none;
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+.option{
+    display:flex;
+    position: absolute;
+    width:40%;
+    text-align: center;
+    left:5%;
+    top:80%;
+    height:40px;
+}
+.option1{
+    mqrgin:auto 0;
+    height:100%;
+    width:35%;
+    background-color: #222222;
+    padding: 12px 0 0 0;
+    opacity: 0.8;
+}
+.option2{position: absolute;
+    left:36%;
+    mqrgin:auto 0;
+    height:100%;
+    width:35%;
+    padding: 12px 0 0 0;
+    background-color: #222222;
+    opacity: 0.8;
+}
+.option1:hover,.option2:hover{
+    background-color: crimson;
+    color:white;
+    opacity: 1;
+}
+@media (max-width: 1239px){
+    .name2{top:52%;
+        font-size: 16px;
+    }
+    .name{
+        top:6%;
+        font-size: 20px;
+    }
+}
+@media(max-width:1143px){
+    .name2{
+        width: 60%;
+    }
+}
+@media(max-width: 1036px){
+    .name2{
+        width:64%;
+    }
+}
+@media(max-width: 964px){
+    .name2{
+        width:100%;
+        top:58%;
+    }
+}
+@media(max-width: 736px){
+    .name{top:-7%;
+    }
+}
+@media (max-width: 628px) {
+    .name2{
+        width: 140%;
+    }
+    .c1{
+        font-size: 20px;
+    }
+    .c2{
+        font-size: 16px;
+    }
+}

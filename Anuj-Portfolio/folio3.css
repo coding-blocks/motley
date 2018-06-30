@@ -1,0 +1,316 @@
+.a{
+    flex-wrap: wrap;
+    position: relative;
+    height:1500px;
+}
+.b{top:10%;
+    height:600px;
+    position: absolute;
+}
+.c1{
+    position: absolute;
+    top:160px;
+    color:white;
+    width:100%;
+    text-align: center;
+    font-size:23px;
+}
+.c2{
+    top:220px;
+    position: absolute;
+    color: white;
+    width:100%;
+    text-align: center;
+    font-size: 20px;
+}
+.offer{position: absolute;
+    border:1px solid orange;
+    color: white;
+    background-color: orange;
+    width:26%;
+    border-radius: 0.5em;
+    top:283px;
+    left:36%;
+    padding:2px;
+    text-align: center;
+}
+#logo{
+    position: absolute;
+    top:0px;
+    right:45%;
+    opacity: 0.8;
+}
+.d{
+    position: absolute;
+    top:761px;
+    left:41px;
+    margin-top: 40px;
+    width:93%;
+    height:900px;
+}
+
+.e{
+    top:11px;
+    display: flex;
+    position: absolute;
+
+    height:54px;
+    width:100%;
+    text-align: center;
+    background-color: #161616;
+}
+.tab2
+{   background-color: red;
+    padding:13px 0;
+    color: white;
+    height:28px;
+    width:10%;
+}
+.tab1,.tab3{
+    padding: 13px 0;
+    color: white;
+    height:28px;
+    width:10%;
+}
+
+.f{
+    position: absolute;
+    left:123px;
+    width:800px;
+    height:638px;
+    border-left:0.5px solid lightslategrey;
+}
+.g{width: 23%;
+    position: absolute;
+    left:932px;
+    top:-10px;
+    height:450px;
+    width:280px;
+    background-color: cornflowerblue;
+
+}
+#fb{
+    position: absolute;
+    height:50px;
+    width: 50px;
+    bottom:128px;
+    left:19%;
+}
+#tweet{
+    position: absolute;
+    height:42px;
+    width: 42px;
+    bottom:130px;
+    left:36%;
+}
+#mail{
+    position: absolute;
+    height:40px;
+    width:40px;
+    bottom:130px;
+    left:53%;
+}
+#se{
+    border:1px solid black;
+    padding:2px;
+    position: absolute;
+    top:18px;
+    left:22px;
+    width:81%;
+    margin:0 auto;
+    height:100px;
+}
+#se:hover{
+    border:1px solid red;
+}
+.h{width:92%;
+    position: absolute;
+    top:157px;
+    left:5%;
+}
+a{
+    color: white;
+}
+td{
+    color: white;
+}
+tr{
+    padding-bottom: 3%;
+}
+table{
+    width:92%;
+    position: absolute;
+    }
+#homelogo{position: absolute;
+    top:-35px;
+    left:72px;
+    z-index: 0;
+    width:20%;
+    height:20%;
+
+}
+.home{z-index:1;
+    position: absolute;
+    top:-35px;
+    left:15px;
+}
+.info{
+    position: absolute;
+    top:-62px;
+}
+.para{
+    width:753px;
+    position: absolute;
+    left:22px;
+    top:106px;
+}
+.pp{
+    position: absolute;
+    top:75px;
+    display: none;
+}
+.all{
+    position: absolute;
+        top:7px;
+    width:100%;
+    height:693px;
+}
+.p1{
+position: absolute;
+    top:90px;
+    left:1%;
+    width: 58%;
+}
+.p2{
+    position: absolute;
+    top:27%;
+    left:1%;
+    width:58%;
+}
+.p3{
+    position: absolute;
+    top:39%;
+    left:1%;
+    width:58%;
+}
+.p4{
+    position: absolute;
+    top:51%;
+    left:1%;
+    width:58%;
+}
+.organisation{
+    position: absolute;
+    top:65%;
+    left:20%;
+}
+.orglogo{
+    position: absolute;
+    top:74%;
+    left:2%;
+}
+.footer1{position: absolute;
+    bottom:0px;
+    left:0px;
+    background-color: #222222;
+    border:1px solid black;
+    border-radius: 0.5em;
+    height:52px;
+    width:100%;
+}
+.footer2{
+    position: absolute;
+    padding:10px;
+    color:gray;
+}
+#pogo{
+    width:55px;
+    height: 55px;
+}
+#pogo:hover{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+}
+@media (max-width: 1279px) {
+    .d{width:100%;
+        left:0px;
+        position: absolute;
+    }
+    .g{width:256px;
+        top:19px;
+        left:0.5%;
+    }
+
+    .home{top:-18px;
+        z-index: 0;
+    }
+    #homelogo{
+        left:80px;
+        top:0px;
+        width:10%;
+        height:10%;
+        z-index: -1;
+    }
+    .f{border-left: 0.5px solid lightslategray;
+        border-top:0.5px solid lightslategray;
+        top:20px;
+        left:272px;
+        width:65%;
+        margin-right: 200px;
+    }
+
+}
+@media (max-width: 916px){
+    .c1{
+        font-size: 16px;
+    }
+    .c2{
+        font-size: 15px;
+    }
+    .offer{
+        width:32%;
+    }
+}
+@media(max-width: 796px){
+    .f{
+        width:55%;
+    }
+}
+@media(max-width: 638px){
+    .f{
+        width:40%;
+    }
+}
+@media (max-width: 642px) {
+    .b{
+        display :none;
+    }
+    .d{
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+    }
+    .g{width:297px;
+        top:25%;
+        margin:0 12%;
+    }
+    .e{
+        display: none;
+    }
+    .f {width:60%;
+        top: 12%;
+        left: 1%;
+    }
+    .all{
+        top:75%;
+        left:2%;
+    }
+    .p1,.p2,.p3,.p4,.orglogo{
+        width:150%;
+    }
+}
+
+
+
