@@ -1,6 +1,5 @@
 nav {
   border-bottom: 1px solid $nav-border;
-  padding: 10px;
   position: fixed;
   top:0;
   background: $white;
@@ -15,7 +14,7 @@ nav {
 .nav-items {
   @include font($global-font-family, $global-font-size, $global-font-weight);
   display: inline-block;
-  @include margin(null, 40px, null, null);
+  @include margin(null, 25px, null, null);
   text-transform: uppercase;
   position: relative;
 }
