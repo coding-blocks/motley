@@ -1,0 +1,6 @@
+@mixin box-shadow($box-shadow: $global-box-shadow, $moz: true, $webkit: true, $ms:true){
+  @if $moz    { -moz-box-shadow:    $box-shadow; }
+  @if $webkit { -webkit-box-shadow: $box-shadow; }
+  @if $ms     { -ms-box-shadow:     $box-shadow; }
+  box-shadow: $box-shadow;
+}
