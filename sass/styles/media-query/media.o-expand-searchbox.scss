@@ -19,12 +19,12 @@
       background-size: 23px;
       background-position: center;
       background-position-x: 15px;
-      color: #fff;
+      color: $white;
       &:-moz-placeholder {
-        color: #c5c5c5;
+        color: $expand-search-placeholder-color;
       }
       &::-webkit-input-placeholder {
-        color: #c5c5c5;
+        color: $expand-search-placeholder-color;
       }
     }
   }
