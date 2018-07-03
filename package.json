@@ -1,6 +1,6 @@
 {
-  "name": "motley",
-  "version": "1.0.0",
+  "name": "@coding-blocks/motley",
+  "version": "0.1.3",
   "description": "Motley is a new generation CSS framework based on ITCSS and Sass , it allows you to design component-driven webpages with little or no effort.",
   "devDependencies": {
     "bootstrap-sass-grid": "^4.0.1",
@@ -25,13 +25,17 @@
     "clean": "grunt clean",
     "start": "grunt server",
     "build": "grunt build",
+    "prePublishOnly": "npm run dist",
     "dist": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aayusharora/motley.git"
+    "url": "git+https://github.com/coding-blocks/motley.git"
   },
-  "author": "“aayusharora” <“aayush113002@gmail.com”>",
+  "author": "Coding Blocks <dev@codingblocks.com>",
+  "contributors": [
+    "“aayusharora” <“aayush113002@gmail.com”>"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/coding-blocks/motley/issues"
