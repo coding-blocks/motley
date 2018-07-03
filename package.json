@@ -25,6 +25,7 @@
     "clean": "grunt clean",
     "start": "grunt server",
     "build": "grunt build",
+    "prePublishOnly": "npm run dist",
     "dist": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
   },
   "repository": {
