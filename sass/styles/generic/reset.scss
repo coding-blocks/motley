@@ -11,7 +11,7 @@
 
 body {
   @include font($global-font-family, 16px, normal);
-  padding-top: 100px;
+  padding-top: 70px;
 }
 @media print {
   *,

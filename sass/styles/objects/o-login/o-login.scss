@@ -6,9 +6,13 @@
 
 .o-login{
   @include dimensions(80%, auto);
-  @include padding-mixin(60px, 72px, 60px, 80px);
-  @include margin(40px, auto, 0, auto);
+  @include padding-mixin(40px, 72px, 60px, 80px);
+  @include margin(10px, auto, 0, auto);
   max-width: 828px;
+
+  .input-text{
+    height: 60px;
+  }
 
   .input-btn{
     margin-bottom: 28px;
