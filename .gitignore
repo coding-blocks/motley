@@ -1,9 +1,11 @@
 node_modules/
 .idea/
 .DS_Store
-public/stylesheets/
+examples/public/stylesheets/
 sass/styles/app.css
 dist/
 examples/html/
-examples/public/stylesheets/
 live/
+examples/public/stylesheets/
+*.swp
+*.swo

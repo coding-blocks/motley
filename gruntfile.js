@@ -27,6 +27,7 @@ const getFiles = () => fs
 
 
 module.exports = function(grunt) {
+    grunt.loadNpmTasks('grunt-contrib-clean');
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig ({
@@ -54,7 +55,7 @@ module.exports = function(grunt) {
                 }
             },
             hbs: {
-                files: ['examples/views/**/*.hbs'],
+                files: ['examples/views/**/*.hbs', 'examples/components/**/*.hbs'],
                 tasks: ['hbs'],
                 options: {
                     livereload: true
@@ -89,7 +90,13 @@ module.exports = function(grunt) {
             server: {
                 url: 'http://localhost:9000'
             }
-        }
+        },
+        clean: [
+            'dist',
+            'live',
+            'examples/html',
+            'examples/public/stylesheets/'
+        ]
     });
 
     grunt.registerTask('server', function (target) {
