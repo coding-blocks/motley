@@ -52,6 +52,7 @@
     }
     
     .button-solid {
+      width: 50%;
       font-size: $card-md;
     }
 
@@ -66,7 +67,7 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 90px, 13px, 0);
+      @include padding-mixin(6px, 50px, 13px, 0);
       font-size: $font-xs;
     }
   }

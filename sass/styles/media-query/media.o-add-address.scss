@@ -55,12 +55,13 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 150px, 13px, 0);
+      @include padding-mixin(0, 130px, 13px, 0);
       font-size: $font-xs;
     }
 
     .button-solid {
-      height: 35px;
+      height: 50px;
+      width: 50%;
       font-size: $card-sm;
     }
 

@@ -58,10 +58,11 @@
 
     .button-solid {
       font-size: $card-sm;
+      width: 40%;
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 103px, 13px, 0);
+      @include padding-mixin(6px, 40px, 13px, 0);
       font-size: $font-xs;
     }
 
@@ -69,6 +70,11 @@
       .flex-row {
         @include padding-mixin(20px, 0, 10px, 0);
         justify-content: space-between;
+      }
+      .faded {
+        display: inline-block;
+        max-width: 7.1rem;
+        word-wrap: break-word;
       }
     }
   }

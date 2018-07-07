@@ -58,4 +58,9 @@
     font-size: $font-xs;
     font-weight: $font-medium;
   }
+  .grey {
+    button {
+      padding-left: 0;
+    }
+  }
 }
