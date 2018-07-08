@@ -11,7 +11,7 @@
 
 body {
   @include font($global-font-family, 16px, normal);
-  padding-top: 100px;
+  padding-top: 70px;
 }
 @media print {
   *,
@@ -133,4 +133,3 @@ input:focus {
 .height-100 {
   height: 100%
 }
-

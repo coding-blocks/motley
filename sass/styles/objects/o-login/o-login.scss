@@ -25,6 +25,7 @@
   .button-solid{
     @include dimensions(30%, 62px);
     font-size: $font-sm;
+    min-width: 120px;
     max-width: 198px;
   }
 
