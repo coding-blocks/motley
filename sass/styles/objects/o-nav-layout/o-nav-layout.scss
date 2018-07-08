@@ -21,7 +21,7 @@
 .main-nav{
   .round-img{
     @include dimensions(60px, 60px);
-    
+    padding: 3px 30px 3px 0;
     float: right;
     cursor: pointer;
   }
