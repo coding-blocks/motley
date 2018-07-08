@@ -6,8 +6,8 @@
 
 .o-login{
   @include dimensions(80%, auto);
-  @include padding-mixin(60px, 72px, 60px, 80px);
-  @include margin(40px, auto, 0, auto);
+  @include padding-mixin(40px, 72px, 60px, 80px);
+  @include margin(0, auto, 0, auto);
   max-width: 828px;
 
   .input-btn{
@@ -16,6 +16,10 @@
 
   .input-checkbox{
     @include margin(7px, 28px, 45px, 0);
+  }
+
+  .input-text{
+    height: 55px;
   }
 
   .button-solid{
@@ -59,4 +63,3 @@
     padding: 0;
   }
 }
-
