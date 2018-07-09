@@ -37,9 +37,13 @@ https://coding-blocks.github.io/motley
  ```
  
  # See Motley in Action
-- The application of Motley can be seen here [online.codingblocks.com](https://online.codingblocks.com/) 
-  We want Motley to be as easy to use, install, run, and develop for as many as
-  possible, and your feedback will help us get there!
+ We want Motley to be as easy to use, install, run, and develop for as many as
+ possible, and your feedback will help us get there!
+ 
+ Motley is used in the following websites - 
+ 
+ 1. [Coding Blocks Online](https://online.codingblocks.com)
+ 2. [Coding Blocks Account Dashboard](https://account.codingblocks.com)
 
  ## Maintainers
  
