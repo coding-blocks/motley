@@ -5,3 +5,7 @@
   height: $height;
 }
 
+@mixin width-fit($moz: true){
+  width: fit-content;
+  @if($moz)       {width: -moz-fit-content}
+}
