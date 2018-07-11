@@ -38,7 +38,7 @@
     @include dimensions(55vw, 100%);
     top: 0;
     left: 0;
-    z-index: 200;
+    z-index: 400;
     background-color: #ffffff;
     @include padding-mixin(7%, 5%, 7%, 5%);
     transition: margin 0.5s;
