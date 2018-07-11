@@ -1,0 +1,5 @@
+@mixin width-fit($moz: true, $webkit: true){
+  width: fit-content;
+  @if($moz)       {width: -moz-fit-content}
+  @if($webkit)       {width: -webkit-fit-content}
+}
