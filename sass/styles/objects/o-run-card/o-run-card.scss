@@ -76,11 +76,15 @@
   .tag-container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 
   .pill{
     @include margin(5px, 10px, 5px, 0);
+  }
+
+  .pill-sm{
+    @include margin(3px, 6px, 3px, 0);
   }
 
   .font-sm{
