@@ -1,0 +1,35 @@
+@media (max-width: 1334px){
+  .img-container {
+    max-width: 25%;
+    padding: 0 5px 0 0;
+    margin-top:0px; 
+  }
+}
+@media (max-width: 979px){
+  .img-container {
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .expand-search{
+    input {
+      width: 100%;
+      padding-left: 45px;
+      background: $expand-search-bg url("/images/searchicon-w.png") no-repeat;
+      background-size: 23px;
+      background-position: center;
+      background-position-x: 15px;
+      color: $white;
+      &:-moz-placeholder {
+        color: $expand-search-placeholder-color;
+      }
+      &::-webkit-input-placeholder {
+        color: $expand-search-placeholder-color;
+      }
+    }
+  }
+  .search-cont {
+    order: 3;
+    padding-right: 10px !important;
+  }
+}
