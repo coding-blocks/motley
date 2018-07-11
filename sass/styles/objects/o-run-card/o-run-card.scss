@@ -77,11 +77,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    margin-left: -5px;
   }
 
   .pill{
-    margin: 5px;
+    @include margin(5px, 10px, 5px, 0);
   }
 
   .font-sm{
