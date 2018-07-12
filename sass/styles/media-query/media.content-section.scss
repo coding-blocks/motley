@@ -39,6 +39,10 @@
       font-size: $global-font-size;
     }
 
+    .header {
+      max-height: 140px;
+    }
+
     .accordian-li{
       padding-left: 3%;
       padding-right: 5%;
@@ -54,7 +58,7 @@
     }
 
     .video-player{
-      padding: 23% 0;
+      padding: 15% 0;
     }
 
     .select-box{
@@ -71,7 +75,7 @@
   }
 }
 
-@media all and (max-width: 575px) {
+@media all and (max-width: 575px){
   .o-content-section{
     margin-top: -50px;
   }
