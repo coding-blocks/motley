@@ -4,10 +4,6 @@
     overflow: hidden;
   }
 
-  .row {
-    @include padding-mixin(0, 0, 0, 0);
-  }
-
   .attributes {
     .flex-row {
       @include padding-mixin(20px, 0, 20px, 0);

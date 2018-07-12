@@ -19,6 +19,10 @@
         font-weight: $font-medium;
     }
 
+    .row {
+        @include padding-mixin(0, 0, 0, 0);
+    }    
+
     .attributes {
         @include margin(0, 0, 10px, 0);
         height: auto;
@@ -65,7 +69,6 @@
         bottom: 40px;
         position: absolute;
     }
-
 
     .heading {
         font-size: $font-sm;

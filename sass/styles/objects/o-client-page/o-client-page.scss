@@ -4,10 +4,6 @@
     overflow: hidden;
   }
 
-  .row {
-    @include padding-mixin(0, 0, 0, 0);
-  }
-
   .attributes {
     @include margin(0, 0, 10px, 0);
     height: auto;

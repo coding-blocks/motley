@@ -1,8 +1,4 @@
 .o-profile-edit {
-  .row {
-    @include padding-mixin(0, 0, 0, 0);
-  }
-
   .profile-row {
     @include margin(20px, 0, 60px, 0);
   }
