@@ -63,5 +63,8 @@
       @include padding-mixin(0, 150px, 13px, 0);
       font-size: $font-xs;
     }
+    .grey {
+      padding-right: 2px;
+    }
   }
 }
