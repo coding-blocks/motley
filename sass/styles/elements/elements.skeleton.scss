@@ -1,0 +1,71 @@
+%skeleton {
+  height: 20px;
+  margin: 10px 20px;
+  border-radius: 20px;
+  background-color: $skeleton;
+ 
+}
+
+%skeleton-circle {
+  height: 70px;
+  margin: 60px 20px;
+
+  background-size:
+    50px 200px, /* highlight */
+    70px 70px, /* circle */
+    50% 20px,
+    35% 20px;
+
+  background-position:
+    -20% 0, /* highlight */
+    0 0, /* circle */
+    120px 10px,
+    120px 40px;  
+   
+  background-repeat: no-repeat;  
+  animation: shine-circle 1s infinite;  
+}
+
+.skeleton-lg {
+  @extend %skeleton;
+  width: 65%;
+}
+
+.skeleton-md {
+  @extend %skeleton;
+  width: 50%;
+}
+
+.skeleton-sm {
+  @extend %skeleton;
+  width: 40%;
+}
+
+.skeleton-animation {
+ 
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: linear-gradient( 
+      100deg,
+      rgba(255, 255, 255, 0), 
+      rgba(255, 255, 255, 0.5) 50%, 
+      rgba(255, 255, 255, 0) 80% 
+    );
+    background-position: 0 0;
+    background-size: 50px 100%;
+    background-repeat: no-repeat;
+    animation: shine 1s infinite;
+  }
+  
+}
+
+@keyframes shine {
+  to{
+    background-position: 100% 0;
+  }
+}
