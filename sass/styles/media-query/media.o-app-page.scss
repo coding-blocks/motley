@@ -1,14 +1,5 @@
 @media screen and (max-width: 1200px) {
   .o-app-page {
-    .card {
-      @include padding-mixin(40px, 40px, 40px, 40px);
-      font-size: $font-xs;
-    }
-
-    .heading-u-red {
-      @include padding-mixin(0, 280px, 33px, 0);
-    }
-
     .button-dashed {
       font-size: $global-font-size;
     }
@@ -17,27 +8,16 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .o-app-page{
-    .card {
-      @include padding-mixin(40px, 30px, 25px, 30px);
-    }
-
     .border-card {
       width: 100%;
-    }
-
-    .heading-u-red {
-      @include padding-mixin(0, 180px, 10px, 0);
-      font-size: $font-mds;
     }
   }
 }
 
 @media screen and (max-width: 575px) {
   .o-app-page{
-    .card {
-      @include padding-mixin(25px, 20px, 25px, 20px);
-      font-size: $card-md;
-      font-weight: $font-medium;
+    .heading-u-red {
+      margin-bottom: 20px;
     }
 
     .heading {
@@ -57,11 +37,6 @@
 
     .button-row {
       bottom: 30px;
-    }
-
-    .heading-u-red {
-      @include padding-mixin(0, 150px, 13px, 0);
-      font-size: $font-xs;
     }
   }
 }

@@ -1,18 +1,6 @@
 @media screen and (max-width: 1200px) {
     .o-address-page {
-      .card {
-        @include padding-mixin(40px, 40px, 40px, 40px);
-      }
-  
-      .heading-u-red {
-        @include padding-mixin(0, 100px, 33px, 0);
-      }
-  
       .button-dashed {
-        font-size: $global-font-size;
-      }
-      
-      .button-solid {
         font-size: $global-font-size;
       }
     }
@@ -20,28 +8,14 @@
   
   @media screen and (min-width: 576px) and (max-width: 767px) {
     .o-address-page{
-      .card {
-        @include padding-mixin(40px, 30px, 25px, 30px);
-      }
-  
       .border-card {
         width: 100%;
-      }
-  
-      .heading-u-red {
-        @include padding-mixin(0, 100px, 10px, 0);
       }
     }
   }
   
   @media screen and (max-width: 575px) {
     .o-address-page{
-      .card {
-        @include padding-mixin(25px, 20px, 25px, 20px);
-        font-size: $card-md;
-        font-weight: $font-medium;
-      }
-  
       .heading {
         font-size: $global-font-size;
       }
@@ -62,11 +36,6 @@
   
       .button-row {
         bottom: 30px;
-      }
-  
-      .heading-u-red {
-        @include padding-mixin(0, 60px, 13px, 0);
-        font-size: $font-xs;
       }
     }
   }
