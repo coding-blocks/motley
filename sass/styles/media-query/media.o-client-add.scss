@@ -1,4 +1,5 @@
 @media screen and (max-width: 1200px) {
+  $font-md: 10px;
   .o-client-add {
     .card {
       @include padding-mixin(40px, 40px, 40px, 40px);
@@ -85,4 +86,6 @@
       }
     }
   }
+
+  
 }
