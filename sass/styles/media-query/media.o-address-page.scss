@@ -1,9 +1,5 @@
 @media screen and (max-width: 1200px) {
-    .o-address-page {
-      .button-dashed {
-        font-size: $global-font-size;
-      }
-    }
+
   }
   
   @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -16,24 +12,6 @@
   
   @media screen and (max-width: 575px) {
     .o-address-page{
-      .heading {
-        font-size: $global-font-size;
-      }
-  
-      .button-dashed {
-        font-size: $card-md;
-      }
-      
-      .button-solid {
-        font-size: $card-md;
-      }
-  
-      .border-card {
-        width: 100%;
-        padding-bottom: 90px;
-        padding-top: 20px;
-      }
-  
       .button-row {
         bottom: 30px;
       }
