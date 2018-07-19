@@ -26,6 +26,13 @@
     .button-solid {
       font-size: $global-font-size;
     }
+
+    .nav-info {
+      .card {
+        @include padding-mixin (90px, 0, 50px, 0);
+        text-align: center;
+      }
+    }
   }
 }
 
