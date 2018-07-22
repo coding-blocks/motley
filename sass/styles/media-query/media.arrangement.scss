@@ -51,6 +51,10 @@
       height: 50px;
     }
 
+    .border-card{
+      width: 100%;
+    }
+
     .heading-u-red {
       @include padding-mixin(0, 180px, 20px, 0);
       font-size: $font-mds;
@@ -83,14 +87,9 @@
       font-size: $card-sm;
     }
 
-
-    .flex-row {
-      margin-bottom: 20px;
-    }
-
     .heading-u-red {
       @include padding-mixin(0, 93px, 13px, 0);
-      margin-bottom: 0;
+      margin-bottom: 20px;
       font-size: $font-xs;
     }
 

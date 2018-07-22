@@ -3,19 +3,11 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .o-app-page{
-    .border-card {
-      width: 100%;
-    }
-  }
+  
 }
 
 @media screen and (max-width: 575px) {
   .o-app-page{
-    .heading-u-red {
-      margin-bottom: 20px;
-    }
-
     .button-dashed {
       width: 30%;
     }
