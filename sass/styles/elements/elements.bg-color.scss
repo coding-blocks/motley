@@ -2,7 +2,9 @@ $list:  (red, $fail-red)
         (black, $global-font-text-color)
         (white, $white )
         (grey, $nav-border)
-        (green, $font-complete);
+        (green, $font-complete)
+        (grey2, $expand-search-bg)
+        (grey3, $expand-search-result-bg);
 
 @each $type, $color in $list {
   .bg-#{$type}{

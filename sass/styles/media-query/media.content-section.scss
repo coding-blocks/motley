@@ -72,10 +72,15 @@
       margin-left: 0;
       display: none;
     }
+
+    .search-container {
+      order: 3;
+      padding-right: 10px !important;
+    }
   }
 }
 
-@media all and (max-width: 575px){
+@media all and (max-width: 575px) {
   .o-content-section{
     margin-top: -50px;
   }
