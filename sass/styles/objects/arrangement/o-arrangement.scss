@@ -37,6 +37,14 @@
         .detail-row {
             @include margin(0, 0, 20px, 0);
         }
+
+        .faded {
+            display: inline-block;
+            max-width: 50%;
+            word-wrap: break-word;
+            text-align: right;
+            color: $navLink;
+        }
     }
 
     .input-text {
