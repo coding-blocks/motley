@@ -1,11 +1,5 @@
 @media screen and (max-width: 1200px) {
-  .o-add-address {
-    .attributes {
-      .detail-row {
-        @include margin(20px, 0, 20px, 0);
-      }
-    }
-  }
+
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px) {
@@ -25,10 +19,6 @@
     .attributes {
       .label-input {
         width: 30%;
-      }
-
-      .detail-row {
-        @include margin(10px, 0, 10px, 0);
       }
     }
   }
