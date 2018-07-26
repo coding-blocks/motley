@@ -1,4 +1,3 @@
-{{> nav-bar }}
 <div class="o-content-section">
     <div class="header flex-row">
         <div class="section-toggler flex-row">
@@ -6,24 +5,31 @@
                 <button onclick="sectionToggler()">X Table of Content</button>
             </div>
         </div>
-        <div class="flex-row dashboard">
-            <div class="heading-d">
+
+        <div class="dashboard row no-gutters justify-content-between">
+            <div class="col-6 heading-d align-self-center">
                 <div class="main-h">
-                    Section 1.1 - Fast Exponentiation
+                    Fast Exponentiation
                 </div>
                 <div class="sub-h">
-                    Section 1 - Mathematics
+                    Mathematics
                 </div>
             </div>
 
-            <div class="flex-row">
-                <div class="notify-type">
-                    <div class="notify-text">
-                        <span class="notify-dot new"></span>
-                        Solve Doubts
+            <div class="col-6">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 notify-type align-self-center">
+                        <div class="notify-text">
+                            <span class="notify-dot new"></span>
+                            Solve Doubts
+                        </div>
+                    </div>
+
+                    <div class="button-solid col-12 col-md-4 align-self-center">
+                        <button>&lt Go to Dashboard</button>
                     </div>
                 </div>
-                {{>button type='solid' text='Go to Dashboard'}}
+
             </div>
 
         </div>
@@ -54,6 +60,9 @@
 
                     <div data-completed="true" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-green-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.1 - Chewbacca Number, HackerBlocks
                             </div>
@@ -69,6 +78,9 @@
 
                     <div data-completed="true" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-green-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.2 - Tavas and SaDDas, Codeforces 535-B
                             </div>
@@ -84,6 +96,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.3 - Fast Exponentiation
                             </div>
@@ -99,6 +114,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -153,6 +171,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.3 - Fast Exponentiation
                             </div>
@@ -168,6 +189,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -183,6 +207,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -198,6 +225,9 @@
 
                     <div data-completed="false" class="accordian-li">
                         <div class="li-left flex-row">
+                            <div class="accordian-li-type">
+                                <div class="content-icon play-icon-red-dark"></div>
+                            </div>
                             <div class="accordian-li-heading">
                                 1.4 - Unique Number-III, Hackerblocks
                             </div>
@@ -219,11 +249,9 @@
             <div class="o-pb"><!-- problem-->
                 <div class="pb-desk">
                     <div class="tab-nav">
-                        <div class="tab-list">
-                            <div class="tab-items active">Problem</div>
-                            <div class="tab-items">Submissions</div>
-                            <div class="tab-items">Leaderboard</div>
-                        </div>
+                        <div class="tab-items active">Problem</div>
+                        <div class="tab-items">Submissions</div>
+                        <div class="tab-items">Leaderboard</div>
                     </div>
 
                     <div class="o-pb-submissions">
@@ -430,7 +458,7 @@
                             </div>
                         </div>
 
-                        <div class="result">
+                         <div class="result">
                             <div class="row">
                                 <div class="input col-md-6 col-sm-6 col-xs-12">
                                     <div class="row">
@@ -451,7 +479,7 @@
                                 </div>
                                 <div class="output  col-md-6 col-sm-6 col-xs-12">
                                     <div class="row">
-                                        <div class="heading col-md-6">
+                                        <div class="heading col-12">
                                             <p>
                                                 Output : &nbsp;
                                                 <span>
@@ -473,10 +501,5 @@
                 </div>
             </div>
         </div>
-
     </div>
-
-
 </div>
-
-{{> nav-bar }}
