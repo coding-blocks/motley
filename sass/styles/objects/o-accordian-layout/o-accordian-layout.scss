@@ -9,6 +9,7 @@
     .accordian-collapsar{
         @include dimensions(30px, 30px);
         @include margin(0px, 3%, 0px, 0px);
+        padding-top: 8px;
         text-align: center;
     }
 
