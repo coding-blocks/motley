@@ -25,10 +25,10 @@
     top: 0;
     margin-top: 35px;
 
-    &.slide-right {
+    &.slide-right{
       transform: unset;
     }
-
+    
     .button-dashed {
       margin: 0;
     }
@@ -47,9 +47,8 @@
       display: none;
     }
 
-    .accordian-li,
-    .accordian-head {
-      .flex-row:last-child {
+    .accordian-li, .accordian-head{
+      .flex-row:last-child{
         display: none;
       }
 
@@ -58,6 +57,7 @@
       }
     }
   }
+
 }
 
 @media screen and (max-width: 575px) {
