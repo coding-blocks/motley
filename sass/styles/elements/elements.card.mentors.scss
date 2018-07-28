@@ -9,7 +9,11 @@
 .card-mentor-image {
   display: inline-block;
   position: relative;
-  min-width: 51.53px;
+  min-width: 50px;
+}
+
+.card-mentors{
+  min-height: 25px;
 }
 
 @for $i from 0 through 2 {

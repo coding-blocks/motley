@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .o-layout-card {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -13,6 +13,10 @@
     .footer {
       text-align: left;
       font-size: $global-font-size;
+    }
+
+    .card-mentor{
+      margin:  0;
     }
 
     .card-mentors:nth-child(2) {
@@ -27,19 +31,23 @@
     .card-mentor-divider {
       margin-top: 0;
     }
+
+    .status-circle{
+      padding-bottom: 13%;
+      width: 13%;
+    }
+
+    .header{
+      margin-bottom: 18px;
+    }
+
+    .price-detail{
+      margin:  0;
+    }
   }
 
   .grid {
     margin: 0;
-
-    .o-image-card {
-      padding-top: 0;
-      padding-right: 15px;
-      margin: 0;
-      float: left;
-      width: 14%;
-      min-width: 75px;
-    }
 
     .row {
       padding: 0;
@@ -53,32 +61,32 @@
 
   .card-heading {
     overflow: hidden;
-    max-width: 70%;
+    max-width: 67%;
     margin-top: 10px;
   }
 
   .card-text {
     overflow: hidden;
-    width: 70%;
+    width: 67%;
     display: inline-block;
     font-size: 1rem;
   }
 
   .card-mentor {
     display: flex;
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
   }
 
   .card-mentor-image {
-    padding-bottom: 16.5%;
-    width: 16.5%;
+    padding-bottom: 11%;
+    width: 11%;
   }
 
   .card-mentors {
     height: 50% !important;
     position: absolute !important;
     width: 50% !important;
+    left: 0;
+    top: 0;
   }
   
   .card-price-details {
@@ -97,6 +105,15 @@
     height: auto;
   }
 
+  .o-image-card {
+    padding-top: 0;
+    padding-right: 15px;
+    margin: 0;
+    float: left;
+    width: 11%;
+    min-width: 68px;
+  }
+
   .o-course-card {
     .card-price-details {
       float: right;
@@ -113,39 +130,61 @@
 }
 
 @media screen and (max-width: 575px) {
+  .o-layout-card{
+    @include padding-s(10px, 12px);
+
+    .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details,{
+      font-size: $card-sms;
+    }
+
+    .status-circle{
+      right: 12px;
+    }
+  }
+
+  .o-course-card{
+    .header{
+      margin-bottom: 15px;
+    }
+
+    .difficulty-div{
+      top: 13px;
+    }
+  }
+
+
+  .grid{
+    padding: 0;
+  }
 
   .card-layout {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0;
   }
 
   .card-mentor-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    top: 1px;
+    font-size: $card-sms;
+    padding-left: 0;
+    top: 0;
+  }
+
+  .card-mentor-name, .footer, .card-text, .button-solid,{
+    font-size: $card-sm;
   }
 
   .o-image-card {
-    width: 25%;
+    min-width: 50px
   }
 
   .button-dashed {
     margin: 20px auto;
   }
 
-  .card-mentor-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    padding-left: 0;
-  }
-
   .card-mentor-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
   }
 
   .rating {
@@ -155,15 +194,36 @@
 
   .card {
     height: auto;
-    padding-bottom: 20px;
   }
 
   .card-text, .card-heading {
     height: auto;
   }
 
+  .card-heading{
+    font-size: $card-md;
+    margin: 0;
+  }
+  
   .card-price-details {
     text-align: left;
     width: 100%;
+  }
+
+  .expert-level{
+    @include dimensions(15px, 15px);
+    @include border(3px, solid, $button-element-level);
+  }
+
+  .expert-text{
+    font-size: $card-sms;
+  }
+
+  .button-solid{
+    height: 30px;
+  }
+
+  .card-mentor-divider{
+    @include margin-s(10px, 0);
   }
 }
