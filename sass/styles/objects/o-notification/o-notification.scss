@@ -5,8 +5,8 @@
   right: 0;
   left: unset;
   display: none;
-  top: 90%;
-  
+  top: 150%;
+
   .notify-text{
     color: $global-font-text-color;
     font-size: $card-md;
@@ -19,6 +19,6 @@
   }
 
   .dropdown-li{
-    padding: 20px 0;
+    padding: 2px 0;
   }
 }
