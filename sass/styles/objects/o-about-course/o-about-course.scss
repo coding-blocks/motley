@@ -37,12 +37,12 @@
     @include margin(30px, 0, 25px, 0);
   }
 
-  .rating{
-    @include margin(0, 0, 20px, 0);
-  }
-
   .key{
     font-weight: $font-medium;
+  }
+
+  .o-review-stats{
+    margin-bottom: 20px;
   }
   
 }

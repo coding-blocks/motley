@@ -1,0 +1,31 @@
+%progress{
+    @include dimensions(100%, 10px);
+    @include border-radius(7px);
+    display: block;
+}
+
+progress[value]{    
+    // &::-moz-progress-bar{
+    //     @extend %progress;
+    //     background-color: $faded-cont;
+    // }
+
+    &::-webkit-progress-bar{
+        @extend %progress;
+        background-color: $nav-border;
+    }
+
+    // &::-ms-fill{
+    //     @extend %progress;
+    //     background-color: $faded-cont;
+    // }
+
+    &::-webkit-progress-value{
+        @extend %progress;
+        background-color: $faded-cont;
+    }
+
+    @extend %progress;
+    background-color: $nav-border;  
+  
+}

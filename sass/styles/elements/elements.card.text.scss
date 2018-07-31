@@ -8,6 +8,10 @@
   background: $white;
 }
 
+.round {
+  @include border-radius(15px);
+}
+
 .card-text {
   font-size: $global-font-size;
   color: $global-font-text-color;
