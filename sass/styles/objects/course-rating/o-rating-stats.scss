@@ -1,10 +1,11 @@
-.o-review-stats{
+.o-rating-stats{
     progress{
         margin-bottom: 15px;
     }
 
     .score{
         min-width: 150px;
+        transform: translateY(-10px);
 
         .rating{
             @include margin(3px, 0, 10px, 0);

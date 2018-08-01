@@ -41,8 +41,12 @@
     font-weight: $font-medium;
   }
 
-  .o-review-stats{
+  .o-rating-stats{
     margin-bottom: 20px;
+  }
+
+  .summary{
+    min-height: 20vh;
   }
   
 }
@@ -55,6 +59,14 @@
   @extend %padding;
   @extend %grid-row;
   background-color: $nav-border;
+}
+
+.rating-carousel{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100vw;
+  position: relative;
+  left: -5%;
 }
 
 .o-recommended{
