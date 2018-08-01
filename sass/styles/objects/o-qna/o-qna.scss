@@ -1,0 +1,86 @@
+.o-qna {
+  height: 100%;
+  background-color: white;
+  padding: 2.5rem;
+  overflow: auto;
+
+  .info {
+    padding-top: 2.5rem;
+
+    .heading {
+      padding: 1rem 0;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+
+    td {
+      padding-right: 2rem;
+    }
+  }
+
+  .attempts {
+    margin-top: 20px;
+
+    .card {
+      height: auto;
+      padding: 2rem;
+      display: inline-block;
+
+      td {
+        padding: 1.2rem;
+      }
+
+      thead {
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+.o-qna-attempt {
+  height: 100%;
+  background-color: white;
+
+  .left {
+    .choice {
+      padding: 0.5rem 0;
+
+      .circle {
+        width: 2.2rem;
+        height: 2.2rem;
+        background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .text {
+        padding: 0 1rem;
+        display: inline-block;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 2rem;
+
+      &>a:nth-child(1):after {
+        content: '|';
+        padding: 0.5rem;
+        cursor: default;
+      }
+    }
+  }
+
+  .right {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

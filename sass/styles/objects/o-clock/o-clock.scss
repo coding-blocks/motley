@@ -1,0 +1,33 @@
+.o-clock {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $font-md;
+  }
+
+  .item:after {
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    color: $button-element-level; 
+  }
+
+  .seprator {
+    padding: 1rem;
+  }
+
+  .hrs:after {
+    content: 'Hours';
+  }
+
+  .mins:after {
+    content: 'Minutes';
+  }
+
+  .secs:after {
+    content: 'Seconds';
+  }
+}
