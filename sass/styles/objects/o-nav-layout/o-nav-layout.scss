@@ -26,7 +26,11 @@
   .nav-list {
     margin-top: 0;
   }
-  
+
+  .nav-items>.notify-icon{
+    width: 10px;
+  }
+
   .round-img{
     @include dimensions(40px, 40px);
     cursor: pointer;
