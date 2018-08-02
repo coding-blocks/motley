@@ -1,31 +1,33 @@
-%progress{
+progress{    
     @include dimensions(100%, 10px);
     @include border-radius(7px);
     display: block;
+    background-color: $nav-border;  
 }
 
-progress[value]{    
-    // &::-moz-progress-bar{
-    //     @extend %progress;
-    //     background-color: $faded-cont;
-    // }
+progress::-moz-progress-bar{
+    @include border-radius(7px);
+    display: block;
+    background-color: $faded-cont;
+}
 
-    &::-webkit-progress-bar{
-        @extend %progress;
-        background-color: $nav-border;
-    }
+progress::-webkit-progress-bar{
+    @include dimensions(100%, 10px);
+    @include border-radius(7px);
+    display: block;
+    background-color: $nav-border;
+}
 
-    // &::-ms-fill{
-    //     @extend %progress;
-    //     background-color: $faded-cont;
-    // }
+progress::-ms-fill{
+    @include dimensions(100%, 10px);
+    @include border-radius(7px);
+    display: block;
+    background-color: $faded-cont;
+}
 
-    &::-webkit-progress-value{
-        @extend %progress;
-        background-color: $faded-cont;
-    }
-
-    @extend %progress;
-    background-color: $nav-border;  
-  
+progress::-webkit-progress-value{
+    @include dimensions(100%, 10px);
+    @include border-radius(7px);
+    display: block;
+    background-color: $faded-cont;
 }
