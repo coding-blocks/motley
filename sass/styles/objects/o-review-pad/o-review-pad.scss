@@ -24,9 +24,14 @@
       align-items: center;
       color: $white;
       margin: 10px 0;
+      cursor: pointer;
 
       &.correct {
         background-color: $font-complete;
+      }
+
+      &.incorrect {
+        background-color: $font-sub-heading;
       }
     }
     

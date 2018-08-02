@@ -41,23 +41,67 @@
 }
 
 .o-qna-attempt {
+  display: flex;
+  justify-content: space-between;
   height: 100%;
   background-color: white;
 
   .left {
     .choice {
+      display: flex;
+      align-items: center;
       padding: 0.5rem 0;
+      cursor: pointer;
 
       .circle {
         width: 2.2rem;
-        height: 2.2rem;
-        background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        height: 2.2rem;  
         border-radius: 50%;
         display: inline-block;
+        background-color: $default-border;
       }
       .text {
         padding: 0 1rem;
         display: inline-block;
+        margin-right: auto;
+      }
+
+      &.marked {
+        .circle {
+          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        }
+      }
+
+      &.incorrect {
+        color: $font-sub-heading;
+        font-weight: bold;
+        cursor: default;
+
+        .circle {
+          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        }
+
+        &:after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('/images/wrong.svg')
+        }
+      }
+
+      &.correct {
+        color: $font-complete;
+
+        .circle {
+          background-color: $font-complete;
+        }
+
+        &:after {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('/images/right.svg')
+        }
       }
     }
 
