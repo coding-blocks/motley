@@ -33,6 +33,7 @@
     .section{
       @include dimensions(100%, 100%);
       height: auto;
+      border-right: unset;
     }
 
     .main-h, .sub-h, .notify-text, .button-solid, .accordian-heading, .accordian-li, .accordian-status, .header{
@@ -71,3 +72,8 @@
   }
 }
 
+@media all and (max-width: 575px) {
+  .o-content-section{
+    margin-top: -50px;
+  }
+}
