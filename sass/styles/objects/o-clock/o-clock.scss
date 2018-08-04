@@ -4,13 +4,13 @@
 
   .item {
     display: flex;
-    flex-direction: column;
+    @include flexbox(column);
     align-items: center;
     font-size: $font-md;
   }
 
   .item:after {
-    font-size: 1rem;
+    font-size: $font-xs;
     padding-top: 0.3rem;
     color: $button-element-level; 
   }
