@@ -39,17 +39,14 @@
   }
 
   .result-box {
-    display: flex;
-    @include flexbox(column);
-    align-items: center;
-    justify-content: center;
+    @include flexbox(column, true);
     font-size: 1.5rem;
     height: 500px;
 
     &:before {
       content: '';
       @include dimensions(30px, 30px);
-      border: 1px solid $font-complete;
+      @include border(solid, 1px, $font-complete);
       @include border-radius(50%);
       padding: 2rem;
       background: url('/images/right.svg') no-repeat center;
@@ -61,9 +58,7 @@
     }
 
     .score-card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexbox(row, true);
       margin: 1rem;
       @include dimensions(40%,200px);
 
@@ -118,14 +113,13 @@
 
   .left {
     .choice {
-      display: flex;
-      align-items: center;
+      @include flexbox(row, true);
       padding: 0.5rem 0;
       cursor: pointer;
 
       .circle {
         @include dimensions(2.2rem,2.2rem);
-        border-radius: 50%;
+        @include border-radius(50%);
         display: inline-block;
         background-color: $default-border;
       }
@@ -173,9 +167,8 @@
     }
 
     .navigation {
-      display: flex;
-      justify-content: center;
-      font-weight: 600;
+      @include flexbox(row, true);
+      font-weight: $font-medium;
       font-size: $font-mds;
       padding: 2rem;
 
@@ -188,10 +181,9 @@
   }
 
   .right {
-    background-color: #f7f7f7;
+    background-color: $grey-choices;
     overflow: auto;
     padding: 1rem 0;
-    
   }
 }
 

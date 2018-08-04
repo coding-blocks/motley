@@ -1,8 +1,6 @@
 .o-review-pad {
   margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, true);
 
   .title {
     font-size: $font-md;
@@ -15,20 +13,13 @@
     place-items: center;
 
     .circle {
-      background-color: #666666;
+      @include flexbox(row, true);
       @include dimensions(40px,40px);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include border-radius(50%);
+      background-color: $navLink;
       color: $white;
       margin: 10px 0;
       cursor: pointer;
-
-      &.incorrect {
-        background-color: $font-sub-heading;
-      }
     }
-    
   }
 }

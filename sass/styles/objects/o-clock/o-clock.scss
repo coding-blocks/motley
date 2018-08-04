@@ -3,9 +3,7 @@
   justify-content: center;
 
   .item {
-    display: flex;
-    @include flexbox(column);
-    align-items: center;
+    @include flexbox(column, true);
     font-size: $font-md;
   }
 
@@ -16,7 +14,7 @@
   }
 
   .seprator {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   .hrs:after {
