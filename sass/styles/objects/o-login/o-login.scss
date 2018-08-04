@@ -22,6 +22,10 @@
     @include margin(7px, 28px, 45px, 0);
   }
 
+  .input-text{
+    height: 55px;
+  }
+
   .button-solid{
     @include dimensions(30%, 62px);
     font-size: $font-sm;
@@ -64,4 +68,3 @@
     padding: 0;
   }
 }
-
