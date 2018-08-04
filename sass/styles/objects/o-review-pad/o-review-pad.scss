@@ -1,8 +1,8 @@
 .o-review-pad {
   margin: 2rem 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .title {
     font-size: $font-md;
