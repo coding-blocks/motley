@@ -16,8 +16,7 @@
 
     .circle {
       background-color: #666666;
-      width: 40px;
-      height: 40px;
+      @include dimensions(40px,40px);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -25,10 +24,6 @@
       color: $white;
       margin: 10px 0;
       cursor: pointer;
-
-      &.correct {
-        background-color: $font-complete;
-      }
 
       &.incorrect {
         background-color: $font-sub-heading;
