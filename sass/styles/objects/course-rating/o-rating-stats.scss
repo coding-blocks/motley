@@ -1,10 +1,12 @@
 .o-rating-stats{
+    padding: 0;
+
     progress{
         margin-bottom: 15px;
     }
 
     .score{
-        min-width: 150px;
+        min-width: 131px;
         transform: translateY(-10px);
 
         .rating{
