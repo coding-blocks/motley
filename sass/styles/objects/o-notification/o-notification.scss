@@ -3,7 +3,7 @@
   right: 0;
   left: unset;
   display: none;
-  top: 150%;
+  margin-top: 27px;
 
   .notify-text{
     color: $global-font-text-color;
@@ -17,6 +17,6 @@
   }
 
   .dropdown-li{
-    padding: 2px 0;
+    padding: 5px 0;
   }
 }
