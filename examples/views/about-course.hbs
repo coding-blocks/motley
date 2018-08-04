@@ -273,7 +273,7 @@
                     <span class="pos-rating">
                         <i class="fas fa-star"></i>
                     </span>
-                    <span class="pos-rating">``
+                    <span class="pos-rating">
                         <i class="fas fa-star"></i>
                     </span>
                     <span class="pos-rating">
@@ -1216,18 +1216,15 @@
 
 
 <script>
-    var buyRight= $('.o-buy-right');
     var buyTop= $('.o-buy-top')[0];
     var accordian= $('.o-about-accordian');
     var accordOffsetTop= accordian.offset().top- 350;
     console.log(buyTop);
     window.onscroll= function(){
         if(window.pageYOffset>= accordOffsetTop){
-            buyRight.addClass('slide-right');
             buyTop.classList.remove('slide-up');
         }else{
             buyTop.classList.add('slide-up');
-            buyRight.removeClass('slide-right');
         }
     }
 </script>
