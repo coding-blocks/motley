@@ -1,0 +1,22 @@
+@media screen and (max-width: 575px){
+    .o-rating-stats{
+        .stats{
+            .rating{
+                display: none;
+            }
+        }
+
+        .score{
+            min-width: 105px;
+            transform: translateY(-7px);
+            
+            .pos-rating, .neg-rating{
+                font-size: $font-sm;
+            }
+        }
+
+        .font-lg{
+            font-size: 2rem;
+        }
+    }
+}
