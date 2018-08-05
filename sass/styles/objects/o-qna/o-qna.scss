@@ -1,0 +1,190 @@
+.o-qna {
+  height: 100%;
+  background-color: white;
+  padding: 2.5rem;
+  overflow: auto;
+
+  .info {
+    padding-top: 2.5rem;
+
+    .heading {
+      padding: 1rem 0;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+
+    td {
+      padding-right: 2rem;
+    }
+  }
+
+  .attempts {
+    margin-top: 20px;
+
+    .card {
+      height: auto;
+      padding: 2rem;
+      display: inline-block;
+
+      td {
+        padding: 1.2rem;
+      }
+
+      thead {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .result-box {
+    @include flexbox(column, true);
+    font-size: 1.5rem;
+    height: 500px;
+
+    &:before {
+      content: '';
+      @include dimensions(30px, 30px);
+      @include border(solid, 1px, $font-complete);
+      @include border-radius(50%);
+      padding: 2rem;
+      background: url('/images/right.svg') no-repeat center;
+      background-size: 30px;
+    }
+
+    .title {
+      margin: 1rem;
+    }
+
+    .score-card {
+      @include flexbox(row, true);
+      margin: 1rem;
+      @include dimensions(40%,200px);
+
+      .circle-back {
+        position: absolute;
+      }
+
+      .circle-container {
+        width: 65px;
+        margin: 2rem;
+        
+        .progress-text {
+          font-size: 1.3rem;
+        }
+        
+        .sub {
+          font-size: 1rem;
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+
+        &.color-green {
+          .circle-back {
+            opacity: 0.3;
+            background: $font-complete;
+          }
+          .circle-front {
+            background: linear-gradient(to top, #8dbf75, #96e6a1);
+          }
+        }
+
+        &.color-black {
+          .circle-back {
+            opacity: 0.3;
+            background: $global-font-text-color;
+          }
+          .circle-front {
+            background: linear-gradient(to top, #7a7a7a, #414141);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.o-qna-attempt {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+
+  .left {
+    .choice {
+      @include flexbox(row, true);
+      padding: 0.5rem 0;
+      cursor: pointer;
+
+      .circle {
+        @include dimensions(2.2rem,2.2rem);
+        @include border-radius(50%);
+        display: inline-block;
+        background-color: $default-border;
+      }
+      .text {
+        padding: 0 1rem;
+        display: inline-block;
+        margin-right: auto;
+      }
+
+      &.marked {
+        .circle {
+          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        }
+      }
+
+      &.incorrect {
+        color: $font-sub-heading;
+        font-weight: bold;
+        cursor: default;
+
+        .circle {
+          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
+        }
+
+        &:after {
+          content: '';
+          @include dimensions(20px,20px);
+          background-image: url('/images/wrong.svg')
+        }
+      }
+
+      &.correct {
+        color: $font-complete;
+
+        .circle {
+          background-color: $font-complete;
+        }
+
+        &:after {
+          content: '';
+          @include dimensions(20px,20px);
+          background-image: url('/images/right.svg')
+        }
+      }
+    }
+
+    .navigation {
+      @include flexbox(row, true);
+      font-weight: $font-medium;
+      font-size: $font-mds;
+      padding: 2rem;
+
+      &>a:nth-child(1):after {
+        content: '|';
+        padding: 0.5rem;
+        cursor: default;
+      }
+    }
+  }
+
+  .right {
+    background-color: $grey-choices;
+    overflow: auto;
+    padding: 1rem 0;
+  }
+}
+
+
