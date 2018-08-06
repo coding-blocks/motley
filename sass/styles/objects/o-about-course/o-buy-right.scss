@@ -1,6 +1,6 @@
 .o-buy-right{
-  @include dimensions(37%, 80%);
-  position: fixed;
+  @include dimensions(27%, 80%);
+  position: absolute;
   top: 120px;
   transition: all 0.35s ease;
   right: 0;
