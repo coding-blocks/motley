@@ -1,0 +1,31 @@
+.o-clock {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    @include flexbox(column, true);
+    font-size: $font-md;
+  }
+
+  .item:after {
+    font-size: $font-xs;
+    padding-top: 0.3rem;
+    color: $button-element-level; 
+  }
+
+  .seprator {
+    padding: 0 1rem;
+  }
+
+  .hrs:after {
+    content: 'Hours';
+  }
+
+  .mins:after {
+    content: 'Minutes';
+  }
+
+  .secs:after {
+    content: 'Seconds';
+  }
+}

@@ -3,8 +3,9 @@ $list:  (red, $fail-red)
         (white, $white )
         (grey, $nav-border)
         (green, $font-complete)
-        (grey2, $expand-search-bg)
-        (grey3, $expand-search-result-bg);
+        (incorrect, $font-sub-heading)
+        (dark-search-bar, $expand-search-bg)
+        (dark-search-box, $expand-search-result-bg);
 
 @each $type, $color in $list {
   .bg-#{$type}{
