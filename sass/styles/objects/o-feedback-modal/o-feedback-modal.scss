@@ -10,4 +10,9 @@
     @include margin (50px, 0, 0, 0);
     max-width: 400px;
   }
+
+  .input-textarea {
+    border-radius: 10px;
+    resize: none;
+  }
 }
