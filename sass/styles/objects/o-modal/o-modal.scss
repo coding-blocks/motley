@@ -4,9 +4,10 @@
   }
 
   .modal-content{
-    @include border-radius(unset);
+    @include border-radius(10px);
     border: none;
     margin: 0 auto;
     display: block;
+    box-shadow: none;
   }
 }
