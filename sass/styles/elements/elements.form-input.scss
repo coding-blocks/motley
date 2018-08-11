@@ -58,3 +58,12 @@
     margin-top: -2px;
   }
 }
+
+.input-textarea {
+  @include dimensions (100%, auto);
+  @include padding-mixin (20px, 20px, 20px, 20px);
+  border-radius: 4px;
+  background: $nav-border;
+  border: none;
+  resize: none;
+}

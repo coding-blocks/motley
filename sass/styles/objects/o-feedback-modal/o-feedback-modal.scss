@@ -2,15 +2,6 @@
   font-size: $font-xs;
   @include padding-mixin (30px, 50px, 30px, 50px);
   
-  textarea {
-    @include dimensions (100%, auto);
-    @include padding-mixin (20px, 20px, 20px, 20px);
-    border-radius: 4px;
-    background: $nav-border;
-    border: none;
-    resize: none;
-  }
-  
   .title {
     @include margin (30px, 0, 30px, 0);
   }
