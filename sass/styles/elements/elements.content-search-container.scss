@@ -2,8 +2,8 @@
   .input-search {
     width: 100%;
     z-index: 102;
-    background-color: #4C4B4B;
-    color: #d5d5d5;
+    background-color: $content-search-box;
+    color: $search-box-input;
   }
   img {
     right: 5%;
@@ -11,16 +11,16 @@
     filter: invert(100%);
   }
   ::placeholder {
-    color: #a0a0a0;
+    color: $search-box-placeholder;
     opacity: 1;
   }
   .search-content {
-    background-color: #3B3838;
+    background-color: $content-search-box-bg;
   }
   .loader {
-    background-color: #3B3838;
+    background-color: $content-search-box-bg;
   }
   .pointer:hover {
-    color: #ffffff;
+    color: $white;
   }
 }
