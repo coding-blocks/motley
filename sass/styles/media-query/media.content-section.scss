@@ -40,6 +40,10 @@
       font-size: $global-font-size;
     }
 
+    .header {
+      max-height: 140px;
+    }
+
     .accordian-li{
       padding-left: 3%;
       padding-right: 5%;
@@ -55,7 +59,7 @@
     }
 
     .video-player{
-      padding: 23% 0;
+      padding: 15% 0;
     }
 
     .select-box{
@@ -68,6 +72,11 @@
       padding-right: 20px;
       margin-left: 0;
       display: none;
+    }
+
+    .search-container {
+      order: 3;
+      padding-right: 10px !important;
     }
   }
 }
