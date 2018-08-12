@@ -24,6 +24,9 @@
     border: none;
     margin: 0 0;
     max-width: 100%;
+    .active {
+        background: #6f6f6f;
+    }
   }
 
   .accordian-li{
