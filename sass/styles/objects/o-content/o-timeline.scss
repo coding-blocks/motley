@@ -31,6 +31,14 @@
     border-bottom: solid 1px $vp-border;
     background-color: $vp-background;
   }
+  
+  .accordian-li.active {
+    background: linear-gradient(to right,#ed7298,#ec8871);
+    color: #fff;
+    .circle-front {
+      background: #fff !important;
+    }
+  }
 
   .accordian-li-type{
     margin-right: 12px;
