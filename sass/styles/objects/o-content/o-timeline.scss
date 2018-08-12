@@ -32,6 +32,14 @@
     background-color: $vp-background;
   }
 
+  .accordian-li.active {
+    background: #434242;
+    color: #ff7500;
+    .circle-front {
+      background: radial-gradient(#ffeb00, #ff6514, #ff7500) !important;
+    }
+  }
+
   .accordian-li-type{
     margin-right: 12px;
   }
