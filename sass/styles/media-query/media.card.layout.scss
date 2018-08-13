@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .o-layout-card {
+  .c-layout-card {
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -32,7 +32,7 @@
   .grid {
     margin: 0;
 
-    .o-image-card {
+    .c-image-card {
       padding-top: 0;
       padding-right: 15px;
       margin: 0;
@@ -93,7 +93,7 @@
     height: auto;
   }
 
-  .o-course-card {
+  .c-course-card {
     .card-price-details {
       float: right;
     }
@@ -122,7 +122,7 @@
     top: 1px;
   }
 
-  .o-image-card {
+  .c-image-card {
     width: 25%;
   }
 
