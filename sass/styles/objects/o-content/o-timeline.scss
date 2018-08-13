@@ -37,13 +37,13 @@
   }
   
   .accordian-li.active {
-    background-color: #6f6f6f;
-    color: #fff;
+    background-color: $dimgray;
+    color: $white;
     .circle-front {
-      background: #fff !important;
+      background: $white !important;
     }
     .circle-back {
-      background: #8dbf75 !important;
+      background: $darkseagreen !important;
     }
   }
 
