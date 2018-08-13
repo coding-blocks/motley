@@ -23,12 +23,12 @@
     }
 
     .progress-text {
+      width: 100%;
       font-size: calc( .9vw + .9vh );
       text-align: center;
       margin: 0;
       position: absolute;
-      top: 36%;
-      left: 35%;
+      top: 35%;
       transform: none;
     }
 
@@ -57,5 +57,5 @@
         position: static;
       }
     }
-  }
+}
 

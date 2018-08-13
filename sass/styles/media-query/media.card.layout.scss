@@ -19,17 +19,8 @@
       margin:  0;
     }
 
-    .card-mentors:nth-child(2) {
-      z-index: 99;
-      margin-left: 20px;
-    }
-
     .rating {
       margin: 0;
-    }
-
-    .card-mentor-divider {
-      margin-top: 0;
     }
 
     .status-circle{
@@ -38,7 +29,7 @@
     }
 
     .header{
-      margin-bottom: 18px;
+      margin-bottom: 4%;
     }
 
     .price-detail{
@@ -61,32 +52,19 @@
 
   .card-heading {
     overflow: hidden;
-    max-width: 67%;
+    max-width: 65%;
     margin-top: 10px;
   }
 
   .card-text {
     overflow: hidden;
-    width: 67%;
+    width: 65%;
     display: inline-block;
     font-size: 1rem;
   }
 
   .card-mentor {
     display: flex;
-  }
-
-  .card-mentor-image {
-    padding-bottom: 11%;
-    width: 11%;
-  }
-
-  .card-mentors {
-    height: 50% !important;
-    position: absolute !important;
-    width: 50% !important;
-    left: 0;
-    top: 0;
   }
   
   .card-price-details {
@@ -95,10 +73,6 @@
 
   .card-image {
     width: 10%;
-  }
-
-  .button-dashed {
-    margin: 20px auto;
   }
 
   .card, .card-text, .card-heading {
@@ -117,9 +91,6 @@
   .o-course-card {
     .card-price-details {
       float: right;
-    }
-
-    .card-price-details {
       text-align: right;
     }
 
@@ -143,15 +114,10 @@
   }
 
   .o-course-card{
-    .header{
-      margin-bottom: 15px;
-    }
-
     .difficulty-div{
       top: 13px;
     }
   }
-
 
   .grid{
     padding: 0;
@@ -165,11 +131,11 @@
 
   .card-mentor-text {
     font-size: $card-sms;
-    padding-left: 0;
+    padding-left: 5px;
     top: 0;
   }
 
-  .card-mentor-name, .footer, .card-text, .button-solid,{
+  .card-mentor-name, .footer, .card-text, .button-solid, .button-dashed{
     font-size: $card-sm;
   }
 
@@ -179,12 +145,6 @@
 
   .button-dashed {
     margin: 20px auto;
-  }
-
-  .card-mentor-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .rating {
@@ -210,16 +170,16 @@
     width: 100%;
   }
 
-  .expert-level{
+  .expert-level, .beginner-level, .advanced-level{
     @include dimensions(15px, 15px);
-    @include border(3px, solid, $button-element-level);
+    border-width: 3px;
   }
 
-  .expert-text{
+  .expert-text, .beginner-text, .advanced-text{
     font-size: $card-sms;
   }
 
-  .button-solid{
+  .button-solid, .button-dashed{
     height: 30px;
   }
 

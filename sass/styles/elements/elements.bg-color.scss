@@ -2,7 +2,8 @@ $list:  (red, $fail-red)
         (black, $global-font-text-color)
         (white, $white )
         (grey, $nav-border)
-        (green, $font-complete);
+        (green, $font-complete)
+        (incorrect, $font-sub-heading);
 
 @each $type, $color in $list {
   .bg-#{$type}{

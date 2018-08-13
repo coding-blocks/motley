@@ -8,7 +8,7 @@
   }
 
   .accordian-li{
-    @include padding-mixin(4%, 5%, 4%, 4%);
+    @include padding-mixin(2%, 4%, 3%, 4%);
     height: auto;
     color: $global-font-text-color;
     text-align: justify;
@@ -29,11 +29,11 @@
 
   .round-img{
     @include dimensions(50px, 50px);
-    margin-right: 3%;
+    margin-right: 2%;
   }
 
   .accordian-collapsar{
-    margin-right: 5%;
+    margin-right: 4%;
   }
 
   .heading-u{
@@ -49,8 +49,8 @@
 
   .main-h{
     color: $global-font-text-color;
-    font-size: $font-sm;
     font-weight: $font-normal;
+    font-size: $font-sm;
     margin-bottom: 2px ;
   }
 
@@ -62,11 +62,10 @@
 
   .classroom-para{
     @include margin(0,0,0,0);
-    font-size: $font-sm;
   }
 
   .notify-icon{
-
+    width: 30px;
     .notify-dot {
       width: 8px;
       height: 8px;

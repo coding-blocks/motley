@@ -3,9 +3,13 @@
 }
 
 .card {
-  height: 500px;
+  height: 470px;
   box-shadow: 0 20px 57px 0 $card-box-shadow;
   background: $white;
+}
+
+.round {
+  @include border-radius(15px);
 }
 
 .card-text {
@@ -16,7 +20,7 @@
 
 .card-heading {
   overflow: hidden;
-  @include font($global-font-family, $font-sm, 500);
+  @include font($global-font-family, $font-mds, 300);
   color: $global-font-heading-color;
 
 }
@@ -27,5 +31,5 @@
 
 .grid-background {
   background-color: #f6f6f6;
-  padding: 5%;
+  padding: 2% 5%;
 }

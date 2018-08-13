@@ -3,16 +3,19 @@
   height: auto;
 
   .card-heading{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: $font-sm;
+    max-width: unset;
   }
 
   .card-text {
-    height: auto;
-    font-size: $global-font-size;
+    @include dimensions(auto, auto);
+    font-size: $card-md;
+    display: block;
   }
 
   .batch {
-    margin-bottom: 37px;
+    margin-bottom: 25px;
   }
 
   .grey {
@@ -34,18 +37,17 @@
 
   .my-course-enroll{
     font-size: $card-md;
-    margin-top: 5px;
+    margin-top: 15px;
     position: relative;
   }
 
   .button-parent{
-    min-height: 44px;
+    height: 40px;
   }
 
   .button-solid{
-    height: 44px;
     max-width: 121px;
-    top: 0;
+    top: 3px;
     right: 0;
     left: unset;
   }
@@ -53,10 +55,9 @@
   .button-dashed{
     @include border(solid, 1.5px, $button-element-level);
     position: absolute;
-    height: 44px;
-    max-width: 121px;
     right: 0;
-    font-size: $card-md;
+    top: 3px;
+    margin: 0;
   }
 
   .card{
@@ -70,7 +71,7 @@
   }
 
   .card-mentor-divider{
-    margin: 25px 0;
+    margin: 15px 0;
   }
 
   .tag-container{
@@ -79,11 +80,7 @@
     margin-top: 15px;
   }
 
-  .pill{
-    @include margin(5px, 10px, 5px, 0);
-  }
-
-  .pill-sm{
+  .pill, .pill-sm{
     @include margin(3px, 6px, 3px, 0);
   }
 

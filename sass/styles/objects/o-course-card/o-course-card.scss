@@ -1,11 +1,13 @@
 .o-course-card{
-  height: 560px;
-
   .card-mentor{
     margin-bottom: 0;
   }
+  
+  .card-price-details{
+    padding-right: 10px;
+  }
 
-  .header{
-    margin-bottom: 30px;
+  .card-mentor-divider{
+    margin: 15px 0;
   }
 }

@@ -1,17 +1,17 @@
 .o-notification{
-  padding-right: 10%;
-  padding-left: 40%;
   text-transform: none;
   right: 0;
   left: unset;
   display: none;
-  top: 90%;
-  
+  margin-top: 26px;
+
   .notify-text{
     color: $global-font-text-color;
     font-size: $card-md;
     text-align: justify;
     padding-right: 20px;
+    display: flex;
+    align-items: center;
   }
 
   .row{
@@ -19,6 +19,7 @@
   }
 
   .dropdown-li{
-    padding: 20px 0;
+    padding: 10px 0;
+    min-height: 57px;
   }
 }

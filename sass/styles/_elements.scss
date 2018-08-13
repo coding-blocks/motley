@@ -1,7 +1,8 @@
+@import "elements/elements.font-style";
 @import "elements/elements.alert";
 @import "elements/elements.modal";
 @import "elements/elements.card.text";
-@import "elements/elements.button-solid.scss";
+@import "elements/elements.buttons.scss";
 @import "elements/elements.navigation";
 @import "elements/elements.carousel";
 @import "elements/elements.level";
@@ -35,3 +36,4 @@
 @import "elements/html/elements.heading";
 @import "elements/elements.pill";
 @import "elements/elements.skeleton";
+@import "elements/html/elements.progress";
