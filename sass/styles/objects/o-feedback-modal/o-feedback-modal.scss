@@ -1,6 +1,7 @@
 .o-feedback-modal {
   font-size: $font-xs;
-  @include padding-mixin (5%, 10%, 10%, 10%);
+  overflow-y: auto;
+  @include padding-mixin (5%, 10%, 10%, 0%);
   
   .title {
     @include margin (30px, 0, 30px, 0);
