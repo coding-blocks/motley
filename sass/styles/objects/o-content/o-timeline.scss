@@ -35,7 +35,17 @@
   .accordian-li-type{
     margin-right: 12px;
   }
-
+  
+  .accordian-li.active {
+    background-color: #fff;
+    .circle-front {
+      background: #fff !important;
+    }
+    .circle-back {
+      background: #8dbf75 !important;
+    }
+  }
+  
   .accordian-heading, .accordian-status, .main-h, .sub-h{
     // font-size: $font-xs;
   }
