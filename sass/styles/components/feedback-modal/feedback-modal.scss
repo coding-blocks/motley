@@ -1,5 +1,9 @@
 .c-feedback-modal {
   font-size: $font-xs;
+  overflow-y:auto;
+  z-index: 201;
+  padding-bottom: 0px;
+
   @include padding-mixin (5%, 10%, 10%, 10%);
   
   .title {
