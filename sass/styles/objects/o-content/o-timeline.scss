@@ -31,6 +31,17 @@
     border-bottom: solid 1px $vp-border;
     background-color: $vp-background;
   }
+  
+  .accordian-li.active {
+    background-color: #6f6f6f;
+    color: #fff;
+    .circle-front {
+      background: #fff !important;
+    }
+    .circle-back {
+      background: #8dbf75 !important;
+    }
+  }
 
   .accordian-li-type{
     margin-right: 12px;
