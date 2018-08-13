@@ -1,6 +1,14 @@
 @media screen and (max-width: 767px) {
   .o-pb {
-    display: none;
+    .pb-desk {
+      width: 100%;
+      .tab-items {
+        display: flex;
+      }
+    }
+    .o-code-editor {
+      display: none;
+    }
   }
   .o-pb-alert {
     display: block;
