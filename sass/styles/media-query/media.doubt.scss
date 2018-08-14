@@ -12,7 +12,8 @@
             }
     
             .author-name {
-                margin-left: 13px;
+                margin-left: 13px;  
+                font-size: $font-xs;
     
                 .time {
                     font-size: $card-sm;
@@ -35,6 +36,7 @@
 
     .doubt-body{
         text-align: justify;
+        font-size: $card-md;
     }
 }
 

@@ -1,0 +1,26 @@
+.content-search-container {
+  .input-search {
+    width: 100%;
+    z-index: 102;
+    background-color: $content-search-box;
+    color: $search-box-input;
+  }
+  img {
+    right: 5%;
+    left: unset;
+    filter: invert(100%);
+  }
+  ::placeholder {
+    color: $search-box-placeholder;
+    opacity: 1;
+  }
+  .search-content {
+    background-color: $content-search-box-bg;
+  }
+  .loader {
+    background-color: $content-search-box-bg;
+  }
+  .pointer:hover {
+    color: $white;
+  }
+}
