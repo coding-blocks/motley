@@ -1,31 +1,38 @@
 #mentors {
-  @include dimensions(50px, 50px);
   @include border-radius(50%);
-  position: relative;
+  position: absolute;
   display: inline-block;
   background-color: $card-mentor;
 }
 
 .card-mentor-image {
-  display: inline-block;
   position: relative;
-  min-width: 51.53px;
+  width: 16%;
+  height: 0;
+  float: left;
+  padding-bottom: 9%;
+}
+
+.card-mentors{
+  max-width: 35px !important;
+  max-height: 35px;
+  height: 100%;
 }
 
 @for $i from 0 through 2 {
   .card-mentors:nth-child(#{$i+1}) {
     @extend #mentors;
     z-index: 100 - $i;
-    margin-left: - multiply-px($i,20px);
+    transform: translateX(multiply-px($i,63%)) ;
   }
 }
 
 .card-mentor-text {
-  display: inline-block;
+  padding-left: 5px;
   font-size: $card-md;
   position: relative;
-  top: -6px;
-  padding-left: 10px;
+  float: left;
+  width: 80%
 }
 
 .card-mentor-name {
@@ -35,5 +42,5 @@
 
 .card-mentor-divider {
   border: .5px solid $card-mentor;
-  margin: 20px 0;
+  margin: 10px 0;
 }

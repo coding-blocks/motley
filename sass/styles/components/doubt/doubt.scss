@@ -31,9 +31,11 @@
 		.author-name {
 			margin-left: 13px;
 			overflow: hidden;
+			font-size: $font-sm;
 
 			.time {
 				color: $navLink;
+				font-size: $font-xs;
 			}
 		}
 

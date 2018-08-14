@@ -6,14 +6,6 @@
 
 @media all and (max-width: 767px){
   .c-announcement{
-    .sub-h{
-      font-size: $card-sm;
-    }
-
-    .round-img{
-      @include dimensions(45px, 45px);
-    }
-
     .notify-icon{
       width: 0;
 
@@ -24,6 +16,26 @@
 
     .accordian-li{
       @include padding-mixin(4%, 7%, 10%, 6%);
+    }
+  }
+}
+
+@media all and(max-width: 575px){
+  .c-announcement{
+    .main-h{
+      font-size: $font-xs;
+    }
+
+    .sub-h{
+      font-size: $card-sm;
+    }
+
+    .round-img{
+      @include dimensions(35px, 35px);
+    }
+
+    .classroom-para{
+      font-size: $card-md;
     }
   }
 }

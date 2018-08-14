@@ -29,7 +29,7 @@
 
   .round-img{
     @include dimensions(50px, 50px);
-    margin-right: 3%;
+    margin-right: 2%;
   }
 
   .accordian-collapsar{
@@ -50,6 +50,7 @@
   .main-h{
     color: $global-font-text-color;
     font-weight: $font-normal;
+    font-size: $font-sm;
     margin-bottom: 2px ;
   }
 
@@ -64,7 +65,7 @@
   }
 
   .notify-icon{
-
+    width: 30px;
     .notify-dot {
       width: 8px;
       height: 8px;
