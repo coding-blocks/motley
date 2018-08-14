@@ -75,7 +75,7 @@
 .course-progress-box {
   padding-left: 44px;
 
-  .button-solid {
+  .button-solid, .button-dashed {
     @include dimensions(100%, 55px);
     max-width: 190px;
     font-size: $font-md;
