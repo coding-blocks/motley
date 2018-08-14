@@ -1,0 +1,25 @@
+.c-review-pad {
+  margin: 2rem 0;
+  @include flexbox(column, true);
+
+  .title {
+    font-size: $font-md;
+    padding: 2rem 0;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    place-items: center;
+
+    .circle {
+      @include flexbox(row, true);
+      @include dimensions(40px,40px);
+      @include border-radius(50%);
+      background-color: $navLink;
+      color: $white;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+  }
+}

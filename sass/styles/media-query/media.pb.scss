@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  .c-pb {
+    display: none;
+  }
+  .c-pb-alert {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background: white;
+  }
+
+  .c-content-section .section.collapse {
+    transform: none;
+  }
+}
+

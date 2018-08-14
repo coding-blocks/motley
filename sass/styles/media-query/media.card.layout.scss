@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .o-layout-card {
+  .c-layout-card {
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -79,7 +79,7 @@
     height: auto;
   }
 
-  .o-image-card {
+  .c-image-card {
     padding-top: 0;
     padding-right: 15px;
     margin: 0;
@@ -88,7 +88,7 @@
     min-width: 68px;
   }
 
-  .o-course-card {
+  .c-course-card {
     .card-price-details {
       float: right;
       text-align: right;
@@ -101,7 +101,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .o-layout-card{
+  .c-layout-card{
     @include padding-s(10px, 12px);
 
     .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details,{
@@ -113,7 +113,7 @@
     }
   }
 
-  .o-course-card{
+  .c-course-card{
     .difficulty-div{
       top: 13px;
     }
@@ -139,11 +139,11 @@
     font-size: $card-sm;
   }
 
-  .o-image-card {
+  .c-image-card {
     min-width: 50px
   }
 
-  .button-dashed {
+  .butt n-dashed {
     margin: 20px auto;
   }
 
