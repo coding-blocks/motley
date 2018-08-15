@@ -1,0 +1,22 @@
+.c-add-address {
+  .button-row {
+    @include margin(20px, 0, 0, 0);
+  }
+
+  .attributes {
+    .detail-row {
+      @include margin(20px, 0, 20px, 0);
+      width: 48%;
+    }
+  }
+
+  .button-solid {
+    width: 30%;
+    max-width: 162px;
+  }
+
+  .reset-button {
+    @include margin(0, 30px, 0, 0);
+  }
+
+}

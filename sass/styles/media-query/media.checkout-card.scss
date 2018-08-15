@@ -1,11 +1,11 @@
 @media screen{
-  .o-checkout-card{
+  .c-checkout-card{
     height: auto;
   }
 }
 
 @media screen and(max-width: 767px){
-  .o-checkout-card{
+  .c-checkout-card{
     font-size: $font-xs;
 
     .heading{
