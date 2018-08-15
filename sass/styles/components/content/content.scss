@@ -112,5 +112,41 @@
             width: 78%;
         }
     }
+    
+    .transition-image {
+      position: relative;
+      opacity: 0.1;
+    }
+
+    .transition-content {
+      position: absolute;
+      top: 150px;
+      left: 350px;
+      color: $spinner;
+    }
+    
+    .next-course {
+      color: $white;
+    }
+
+    .transition-spinner{
+      width: 80px;
+      height: 80px;
+      border: 2px solid $white;
+      border-top:3px solid $spinner;
+      border-radius: 100%;
+      position: absolute;
+      top: 310px;
+      left: 460px;
+      animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+      from{
+          transform: rotate(0deg);
+      }to{
+          transform: rotate(360deg);
+      }
+    }
 
 }
