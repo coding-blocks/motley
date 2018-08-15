@@ -1,0 +1,21 @@
+%diff {
+  display: inline-block;
+  margin-right: 3px;
+  border-radius: 50%;
+  width: 10px; 
+  height: 10px;
+}
+
+.difficulty-dots {
+  position: absolute;
+
+  .pos-diff {
+    @extend %diff;
+    background: orange;
+  }
+
+  .neg-diff {
+    @extend %diff;
+    background: white;
+  }
+}

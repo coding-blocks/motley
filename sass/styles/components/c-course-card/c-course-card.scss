@@ -1,0 +1,72 @@
+.c-course-card {
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+
+  .head {
+    color: white;
+    background: url('/images/andro-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .difficulty-dots {
+      right: 50px;
+      top: 25px;
+      z-index: 100;
+    }
+
+    .course-image {
+      width: 100%;
+      padding-top: 30px;
+
+      img {
+        @include dimensions (100px, 100px);
+        border-radius: 50%;
+      }
+    }
+
+    .course-name {
+      @include margin (20px, 0px, 5px, 0px);
+      font-size: $font-md;
+    }
+
+    .rating {
+      @include margin (20px, 0, 0, 0);
+      padding-bottom: 30px;
+    }
+  }
+
+  .foot {
+    .card-mentor {
+      @include padding-mixin (0, 30px, 0, 30px);
+      margin-top: 35px;
+    }
+    
+    .price-explore {
+      @include padding-mixin (45px, 40px, 0, 40px);
+      margin-bottom: 40px;
+
+      .price {
+        font-size: $font-sm;
+      }
+    }
+
+    .divider {
+      @include padding-mixin (0, 20px, 0, 20px);
+    }
+
+    .enrollment {
+      @include margin (15px, 0, 0, 0);
+      padding-bottom: 30px;
+    }
+  }
+
+  .no-gutters {
+    margin: 0;
+    padding: 0;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+}
