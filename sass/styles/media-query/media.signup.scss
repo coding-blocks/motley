@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px){
-  .o-signup{
+  .c-signup{
     .first-name, .last-name{
       padding: 0;
     }
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 575px){
-  .o-signup{
+  .c-signup{
     @include padding-s(35px, 25px);
 
     .heading-u-red{
