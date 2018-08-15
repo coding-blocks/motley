@@ -9,7 +9,7 @@
       margin: 0 auto;
     }
   }
-  .o-address-card{
+  .c-address-card{
     padding: 40px 35px;
 
     .para{
@@ -23,7 +23,7 @@
 }
 
 @media screen and(max-width: 575px){
-  .o-address-card{
+  .c-address-card{
     height: 280px;
 
     .para, .button, .button-dashed{

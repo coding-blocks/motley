@@ -1,0 +1,25 @@
+.c-client-page {
+  .client-row {
+    @include padding-mixin(10px, 0, 10px, 0);
+    overflow: hidden;
+  }
+
+  .attributes {
+    height: auto;
+    font-weight: $font-normal;
+  }
+
+  button {
+    @include margin(0, 0, 20px, 0);
+  }
+
+  .button-row {
+    @include padding-mixin(20px, 60px, 0, 0);
+  }
+
+  .button-solid {
+    width: 30%;
+    max-width: 180px;
+  }
+
+}

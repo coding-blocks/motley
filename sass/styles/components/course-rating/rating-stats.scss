@@ -1,0 +1,38 @@
+.c-rating-stats{
+    padding: 0;
+
+    progress{
+        margin-bottom: 15px;
+    }
+
+    .score{
+        min-width: 131px;
+        transform: translateY(-10px);
+
+        .rating{
+            @include margin(3px, 0, 10px, 0);
+        }
+
+        .pos-rating, .neg-rating{
+            font-size: $font-md;
+        }
+    }
+
+    .stats{
+        .rating{
+            transform: translateY(-6px);
+        }
+
+        .pos-rating, .neg-rating{
+            font-size: $card-sm;
+        }
+    }
+
+    .row{
+        padding: 0;
+    }
+
+    .font-lg{
+        font-size: 3rem;
+    }
+}

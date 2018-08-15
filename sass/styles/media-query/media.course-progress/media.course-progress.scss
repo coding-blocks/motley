@@ -1,6 +1,6 @@
 @media all and (max-width: 767px){
   .classroom-container{
-    margin-bottom: 15px;
+    margin: 15px  0;
 
     .classroom-header-box{
       border: none;
@@ -39,7 +39,7 @@
     padding: 0;
     margin-top: 15px;
 
-    .button-solid {
+    .button-solid, .button-dashed  {
       height: 45px;
       font-size: $global-font-size;
       margin: 0;

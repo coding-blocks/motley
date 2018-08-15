@@ -1,5 +1,5 @@
 @media all and (max-width:767px){
-  .o-overview-recent{
+  .c-overview-recent{
     .card{
       height: 470px;
     }
@@ -18,6 +18,15 @@
 
     .card-content {
       max-height: 75%;
+    }
+  }
+}
+
+@media all and (max-width: 575px){
+  .c-overview-recent{
+    .card{
+      padding-left: 5%;
+      padding-right: 4%;
     }
   }
 }
