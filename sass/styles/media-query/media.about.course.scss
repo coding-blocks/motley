@@ -97,3 +97,11 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 852px) {
+  .c-buy-top {
+    .button-dashed {
+      margin-right: 0;
+    }
+  }
+}
