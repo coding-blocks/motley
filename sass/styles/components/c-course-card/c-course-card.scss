@@ -5,7 +5,7 @@
 
   .head {
     color: white;
-    background: url('/images/andro-banner.jpg');
+    background: url('/images/android.svg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -21,6 +21,7 @@
 
       img {
         @include dimensions (100px, 100px);
+        border: 2px solid white;
         border-radius: 50%;
       }
     }
