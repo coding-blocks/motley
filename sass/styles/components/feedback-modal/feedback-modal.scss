@@ -2,9 +2,8 @@
   font-size: $font-xs;
   overflow-y:auto;
   z-index: 201;
-  padding-bottom: 0px;
 
-  @include padding-mixin (5%, 10%, 10%, 10%);
+  @include padding-mixin (5%, 10%, 0px, 10%);
   
   .title {
     @include margin (30px, 0, 30px, 0);
