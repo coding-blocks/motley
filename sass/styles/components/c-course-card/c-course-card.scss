@@ -17,35 +17,39 @@
 
     .course-image {
       width: 100%;
-      padding-top: 30px;
+      padding-top: 20px;
 
       img {
-        @include dimensions (100px, 100px);
+        @include dimensions (85px, 85px);
         border: 2px solid white;
         border-radius: 50%;
       }
     }
 
     .course-name {
-      @include margin (20px, 0px, 5px, 0px);
-      font-size: $font-md;
+      @include margin (10px, 0px, 5px, 0px);
+      font-size: $font-mds;
     }
 
     .rating {
-      @include margin (20px, 0, 0, 0);
-      padding-bottom: 30px;
+      @include margin (10px, 0, 0, 0);
+      padding-bottom: 15px;
     }
   }
 
   .foot {
     .card-mentor {
       @include padding-mixin (0, 30px, 0, 30px);
-      margin-top: 35px;
+      margin-top: 15px;
+    }
+
+    .card-mentor-divider {
+      margin: 0;
     }
     
     .price-explore {
-      @include padding-mixin (45px, 40px, 0, 40px);
-      margin-bottom: 40px;
+      @include padding-mixin (20px, 40px, 0, 40px);
+      margin-bottom: 20px;
 
       .price {
         font-size: $font-sm;
@@ -57,8 +61,7 @@
     }
 
     .enrollment {
-      @include margin (15px, 0, 0, 0);
-      padding-bottom: 30px;
+      padding-bottom: 15px;
     }
   }
 
