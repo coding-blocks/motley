@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .c-course-card {
+    font-size: $font-xs;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .c-course-card {
+    display: flex;
+
+    .head {
+      width: 45%;
+
+      .course-image {
+        padding-top: 10px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .course-name {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: $card-sm;
+      }
+
+      .course-description {
+        font-size: $card-sms;
+      }
+
+      .difficulty-dots {
+        display: none;
+      }
+
+      .rating {
+        margin-top: 5px;
+
+        .pos-rating {
+          font-size: $card-sm;
+        }
+
+        .neg-rating {
+          font-size: $card-sm;
+        }
+      }
+    }
+
+    .foot {
+      width: 65%;
+
+      .card-mentor {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .card-mentor-image {
+          width: 23%;
+        }
+        .card-mentors {
+          width: 23px;
+          height: 23px;
+        }
+      }
+
+      .price-explore {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        font-size: $card-sms;
+
+        .price {
+          font-size: $card-md;
+        }
+      }
+
+      .atBottom {
+        position: absolute;
+        bottom: 0;
+
+        .divider {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        .enrollment {
+          margin-top: 10px;
+          font-size: $card-sms;
+        }
+      }
+    }
+  }
+}
