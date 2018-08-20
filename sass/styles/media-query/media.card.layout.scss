@@ -104,7 +104,7 @@
   .c-layout-card{
     @include padding-s(10px, 12px);
 
-    .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details,{
+    .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details{
       font-size: $card-sms;
     }
 

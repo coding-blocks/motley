@@ -46,3 +46,12 @@
 .button-dashed {
   border: 2px solid;
 }
+
+.button-solid {
+  button:disabled,
+  button[disabled]{
+    border-radius: 42.5px;
+    background-color: #9e9e9e;
+    box-shadow:  none;
+  }
+}

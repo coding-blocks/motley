@@ -7,7 +7,7 @@
 }
 
 .c-buy-top{
-  @include dimensions(100%, 70px);
+  @include dimensions(100%, auto);
   position: fixed;
   top: 70px;
   z-index: 101;
