@@ -46,3 +46,10 @@
 .button-dashed {
   border: 2px solid;
 }
+.button-solid.disabled {
+  background-image: $button-gradient-disabled;
+  button {
+    cursor: default;
+    pointer-events:none;
+  }
+}
