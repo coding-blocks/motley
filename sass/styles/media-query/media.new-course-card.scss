@@ -51,11 +51,13 @@
     }
 
     .foot {
+      padding-left: 10px;
+      padding-right: 10px;
       width: 65%;
 
       .card-mentor {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
 
         .card-mentor-image {
           width: 23%;
@@ -67,8 +69,8 @@
       }
 
       .price-explore {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 40px;
         font-size: $card-sms;
 
@@ -82,7 +84,7 @@
         bottom: 0;
 
         .divider {
-          padding-left: 10px;
+          padding-left: 0;
           padding-right: 10px;
         }
 
