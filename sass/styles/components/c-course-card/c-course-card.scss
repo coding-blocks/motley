@@ -50,6 +50,7 @@
     .price-explore {
       @include padding-mixin (20px, 40px, 0, 40px);
       margin-bottom: 20px;
+      width: 100%;
 
       .price {
         font-size: $font-sm;
