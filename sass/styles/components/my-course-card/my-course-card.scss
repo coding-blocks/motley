@@ -1,0 +1,48 @@
+.my-course-card {
+  .button-solid {
+    max-width: 166px;
+    width: 166px;
+    font-size: $font-sm;
+
+    .fas {
+      margin-right: 10px;
+    }
+  }
+
+  .course-progress {
+    @include padding-mixin (30px, 30px, 0, 30px);
+
+    .row {
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    label {
+      font-size: $font-sm;
+    }
+
+    progress {
+      height: 7px;
+      width: 86%;
+    }
+
+    progress::-moz-progress-bar { 
+      height: 7px;
+      background-color: $color-button-primary;
+    }
+
+    progress::-webkit-progress-bar {
+      height: 7px;
+    }
+
+    progress::-webkit-progress-value {
+      height: 7px;
+      background-color: $color-button-primary;
+    }
+
+    progress:-ms-fill {
+      height: 7px;
+      background-color: $color-button-primary;
+    }
+  }
+}
