@@ -22,27 +22,9 @@
     }
 
     progress {
-      height: 7px;
       width: 86%;
     }
 
-    progress::-moz-progress-bar { 
-      height: 7px;
-      background-color: $color-button-primary;
-    }
-
-    progress::-webkit-progress-bar {
-      height: 7px;
-    }
-
-    progress::-webkit-progress-value {
-      height: 7px;
-      background-color: $color-button-primary;
-    }
-
-    progress:-ms-fill {
-      height: 7px;
-      background-color: $color-button-primary;
-    }
+    @include progress(7px, $color-button-primary);
   }
 }
