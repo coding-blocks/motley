@@ -55,6 +55,10 @@
     color: $default-accordian-font;
 }
 
+.accordian-li-length {
+    font-family: Lucida Console, monospace;
+}
+
 .accordian-li-type{
     @include dimensions(30px, 30px);
     text-align: center;
