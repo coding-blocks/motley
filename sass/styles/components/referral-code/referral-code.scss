@@ -1,11 +1,8 @@
 .c-referral-code {
   width: 100%;
-  flex-direction: column;
   background: $button-gradient;
   @include padding-s(15px, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox(column, true)
   color: $white;
 
   .coupon {
