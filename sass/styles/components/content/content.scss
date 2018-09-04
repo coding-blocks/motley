@@ -116,6 +116,8 @@
     .overlay-content{
         z-index: 100;
         position: absolute;
+        cursor: default;
+        user-select: none;
     }
 
     .text-overlay{
