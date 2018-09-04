@@ -4,11 +4,20 @@
   height: auto;
 
   .head {
-    padding-top: 30px;
     color: white;
-    background: url('/images/android.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+
+    .back-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .front-text {
+      margin-top: 30px;
+      z-index: 100;
+    }
 
     .round-img-b {
       @include dimensions (90px, 90px);
