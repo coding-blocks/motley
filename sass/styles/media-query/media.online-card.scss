@@ -1,0 +1,67 @@
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .online-card {
+    font-size: $font-xs;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .online-card {
+    display: flex;
+
+    .head {
+      width: 45%;
+      height: auto; 
+
+      .front-text {
+        @include padding-mixin (15px, 5px, 0, 5px);
+
+        .round-img-b {
+          min-height: 70px;
+          width: 70px;
+          height: 70px;
+        }
+
+        .course-name {
+          font-size: $font-xs;
+        }
+
+        .course-description {
+          font-size: $card-sm;
+        }
+        
+        .pos-rating {
+          font-size: $card-sm;
+        }
+
+        .neg-rating {
+          font-size: $card-sm;
+        }
+      }
+    }
+
+    .foot {
+      width: 55%;
+      @include padding-mixin (15px, 5px, 0, 5px);
+
+      .card-mentor {
+        .card-mentors {
+          width: 25px;
+          height: 25px;
+        }
+
+        .card-mentor-text {
+          font-size: $card-sms;
+        }
+
+        .card-mentor-name {
+          font-size: $card-sm;
+        }
+      }
+
+      .button-row {
+        margin-top: 10px;
+        font-size: $card-sm;
+      }
+    }
+  }
+}

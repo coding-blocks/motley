@@ -6,6 +6,7 @@
   .head {
     color: white;
     position: relative;
+    height: 260px;
 
     .back-img {
       position: absolute;
@@ -20,6 +21,7 @@
 
       .round-img-b {
         @include dimensions (90px, 90px);
+        min-height: 90px;
       }
 
       .course-name {
@@ -42,7 +44,7 @@
     @include padding-mixin (30px, 30px, 38px, 30px);
 
     .card-mentor {
-      margin-top: 25px;
+      margin-top: 28px;
 
       .card-mentors {
         height: 40px;
@@ -60,7 +62,7 @@
     }
 
     .button-row {
-      padding-top: 28px;
+      margin-top: 28px;
       width: 100%;
       font-size: $font-xs; 
     }
