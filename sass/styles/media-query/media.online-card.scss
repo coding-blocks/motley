@@ -13,35 +13,39 @@
       height: auto; 
 
       .front-text {
-        @include padding-mixin (15px, 5px, 0, 5px);
+        @include padding-mixin (15px, 5px, 15px, 5px);
 
         .round-img-b {
-          min-height: 70px;
-          width: 70px;
-          height: 70px;
+          min-height: 40px;
+          width: 40px;
+          height: 40px;
         }
 
         .course-name {
-          font-size: $font-xs;
+          margin-top: 7px;
+          font-size: $card-md;
         }
 
         .course-description {
-          font-size: $card-sm;
+          font-size: $card-sms;
         }
         
-        .pos-rating {
-          font-size: $card-sm;
-        }
+        .rating {
+          margin-top: 6px;
+          .pos-rating {
+            font-size: $card-sm;
+          }
 
-        .neg-rating {
-          font-size: $card-sm;
+          .neg-rating {
+            font-size: $card-sm;
+          }
         }
       }
     }
 
     .foot {
-      width: 55%;
-      @include padding-mixin (15px, 5px, 0, 5px);
+      width: 65%;
+      @include padding-mixin (15px, 10px, 0, 10px);
 
       .card-mentor {
         .card-mentors {
@@ -60,7 +64,7 @@
 
       .button-row {
         margin-top: 10px;
-        font-size: $card-sm;
+        font-size: $card-sms;
       }
     }
   }
