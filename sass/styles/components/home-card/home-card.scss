@@ -1,0 +1,18 @@
+.home-card {
+  .foot {
+    padding-bottom: 15px;
+    padding-top: 0;
+
+    .card-mentor-divider {
+      margin: 0;
+    }
+
+    .button-solid {
+      font-size: $font-sm;
+    }
+    
+    .divider {
+      @include margin (15px, 0, 5px, 0);
+    }
+  }
+}

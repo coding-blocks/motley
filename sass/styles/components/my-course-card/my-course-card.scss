@@ -10,8 +10,6 @@
   }
 
   .course-progress {
-    @include padding-mixin (30px, 30px, 0, 30px);
-
     .row {
       padding: 0;
       margin-top: 10px;

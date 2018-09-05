@@ -15,33 +15,33 @@
     }
 
     .front-text {
-      margin-top: 30px;
+      @include padding-mixin (30px, 0, 46px, 0);
       z-index: 100;
-    }
 
-    .round-img-b {
-      @include dimensions (90px, 90px);
-    }
+      .round-img-b {
+        @include dimensions (90px, 90px);
+      }
 
-    .course-name {
-      @include margin (14px, 0px, 5px, 0px);
-      font-size: $font-mds;
-    }
+      .course-name {
+        @include margin (14px, 0px, 5px, 0px);
+        font-size: $font-mds;
+      }
 
-    .course-description {
-      font-size: $card-md;
-    }
+      .course-description {
+        font-size: $card-md;
+      }
 
-    .rating {
-      @include margin (12px, 0, 0, 0);
-      padding-bottom: 46px;
-      padding-top: 0;
+      .rating {
+        @include margin (12px, 0, 0, 0);
+        padding: 0;
+      }
     }
   }
 
   .foot {
+    @include padding-mixin (30px, 30px, 38px, 30px);
+
     .card-mentor {
-      @include padding-mixin (0, 30px, 0, 30px);
       margin-top: 25px;
 
       .card-mentors {
@@ -59,17 +59,12 @@
       }
     }
 
-    .card-mentor-divider {
-      margin: 0;
-    }
-
     .button-row {
-      @include padding-mixin (28px, 30px, 0, 30px);
-      margin-bottom: 38px;
+      padding-top: 28px;
       width: 100%;
       font-size: $font-xs; 
     }
- }
+  }
 
   .no-gutters {
     margin: 0;
