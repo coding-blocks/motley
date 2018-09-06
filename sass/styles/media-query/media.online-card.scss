@@ -1,6 +1,13 @@
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .online-card {
     font-size: $font-xs;
+    display: flex;
+    .head{
+      @include dimensions(45%, auto);
+    }
+    .foot{
+      width: 55%;
+    }
   }
 }
 
@@ -9,16 +16,14 @@
     display: flex;
 
     .head {
-      width: 45%;
-      height: auto; 
+      @include dimensions(45%, auto);
 
       .front-text {
         @include padding-mixin (15px, 5px, 15px, 5px);
 
         .round-img-b {
+          @include dimensions(40px, 40px);
           min-height: 40px;
-          width: 40px;
-          height: 40px;
         }
 
         .course-name {
@@ -44,15 +49,10 @@
     }
 
     .foot {
-      width: 65%;
-      @include padding-mixin (15px, 10px, 0, 10px);
+      width: 55%;
+      @include padding-s(10px, 10px);
 
       .card-mentor {
-        .card-mentors {
-          width: 25px;
-          height: 25px;
-        }
-
         .card-mentor-text {
           font-size: $card-sms;
         }
@@ -66,6 +66,10 @@
         margin-top: 10px;
         font-size: $card-sms;
       }
+    }
+
+    .button-solid{
+      font-size: $card-sm;
     }
   }
 }

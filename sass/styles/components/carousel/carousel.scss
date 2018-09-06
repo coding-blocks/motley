@@ -11,7 +11,8 @@
   margin-left: 320px;
   height: 100%;
   .card {
-    @include dimensions(281px, 325px);
+    @include dimensions(281px, 265px);
+    padding: 20px 25px;
     border: none;
   }
 
@@ -27,7 +28,7 @@
 
   .card:nth-child(3) {
     height: 239px;
-    transform: translateY(20%);
+    transform: translateY(5%);
     left: 60px;
     .button-solid {
       display: none;
@@ -46,7 +47,7 @@
     height: 142px;
     left: 95px;
     position: absolute;
-    transform: translateY(72%);
+    transform: translateY(45%);
      .button-solid {
        display: none;
      }
@@ -88,10 +89,15 @@
   }
 
   .button-solid{
-    top: 80%;
+    position: absolute;
+    bottom: 20px;
     right: 20px;
     width: 90px;
     height: 41px;
+  }
+
+  .round-img-b{
+    @include dimensions(63px, 63px);
   }
 
 }

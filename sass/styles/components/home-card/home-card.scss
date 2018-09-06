@@ -1,8 +1,10 @@
 .home-card {
+  height: 505px;
+  
   .foot {
     padding-bottom: 15px;
     padding-top: 28px;
-
+  }
     .card-mentor {
       margin-top: 0;
     }
@@ -28,5 +30,4 @@
     .enrollment {
       font-size: $card-md;
     }
-  }
 }

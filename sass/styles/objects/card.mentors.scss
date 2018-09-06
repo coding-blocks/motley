@@ -10,13 +10,13 @@
   width: 16%;
   height: 0;
   float: left;
-  padding-bottom: 9%;
+  padding-bottom: 10.5%;
 }
 
 .card-mentors{
-  max-width: 35px !important;
-  max-height: 35px;
-  height: 100%;
+  @include dimensions(66%, 100%);
+  max-width: 40px !important;
+  max-height: 40px;
 }
 
 @for $i from 0 through 2 {
@@ -32,7 +32,7 @@
   font-size: $card-md;
   position: relative;
   float: left;
-  width: 80%
+  width: 84%
 }
 
 .card-mentor-name {

@@ -1,5 +1,4 @@
 .online-card {
-  border-radius: 15px;
   overflow: hidden;
   height: auto;
 
@@ -16,7 +15,7 @@
     }
 
     .front-text {
-      @include padding-mixin (30px, 0, 46px, 0);
+      @include padding-mixin (30px, 3px, 46px, 3px);
       z-index: 100;
 
       .round-img-b {
@@ -43,28 +42,23 @@
   .foot {
     @include padding-mixin (30px, 30px, 38px, 30px);
 
-    .card-mentor {
-      margin-top: 28px;
-
-      .card-mentors {
-        height: 40px;
-        width: 40px;
-      }
-
-      .card-mentor-text {
-        font-size: $card-mds;
-        padding-left: 18px;
-      }
-
-      .card-mentor-name {
-        font-size: $font-xs;
-      }
-    }
-
     .button-row {
-      margin-top: 28px;
+      margin-top: 9%;
       width: 100%;
       font-size: $font-xs; 
+    }
+  }
+
+  .card-mentor {
+    margin-top: 28px;
+
+    .card-mentor-text {
+      font-size: $card-mds;
+      padding-left: 15px;
+    }
+
+    .card-mentor-name {
+      font-size: $font-xs;
     }
   }
 
@@ -75,5 +69,9 @@
 
   .center-text {
     text-align: center;
+  }
+
+  .details{
+    flex: 1;
   }
 }
