@@ -1,0 +1,27 @@
+.my-course-card {
+  height: 505px;
+  .button-solid {
+    max-width: 166px;
+    width: 166px;
+    font-size: $font-sm;
+
+    .fas {
+      margin-right: 10px;
+    }
+  }
+
+  .course-progress {
+    font-size: $font-sm;
+
+    .row {
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    progress {
+      width: 85%;
+    }
+
+    @include progress(7px, $color-button-primary);
+  }
+}

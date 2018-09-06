@@ -7,8 +7,7 @@
 
 @media screen and (max-width: 767px) {
   .c-layout-card {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0;
 
     .footer {
       text-align: left;
@@ -102,8 +101,6 @@
 
 @media screen and (max-width: 575px) {
   .c-layout-card{
-    @include padding-s(10px, 12px);
-
     .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details{
       font-size: $card-sms;
     }

@@ -26,7 +26,6 @@ progress::-ms-fill{
 }
 
 progress::-webkit-progress-value{
-    @include dimensions(100%, 10px);
     @include border-radius(7px);
     display: block;
     background-color: $faded-cont;

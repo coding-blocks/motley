@@ -1,0 +1,33 @@
+.home-card {
+  height: 505px;
+  
+  .foot {
+    padding-bottom: 15px;
+    padding-top: 28px;
+  }
+    .card-mentor {
+      margin-top: 0;
+    }
+
+    .card-mentor-divider {
+      margin: 0;
+    }
+
+    .button-solid {
+      font-size: $font-sm;
+    }
+
+    .price {
+      .red {
+        font-size: $font-sm;
+      }
+    }
+    
+    .divider {
+      @include margin (29px, 0, 15px, 0);
+    }
+    
+    .enrollment {
+      font-size: $card-md;
+    }
+}

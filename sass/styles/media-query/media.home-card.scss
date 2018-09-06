@@ -1,0 +1,24 @@
+@media screen and (max-width: 575px) {
+  .home-card {
+    .foot {
+      .price {
+        .red {
+          font-size: $card-md;
+        }
+      }
+
+      .button-solid {
+        width: 65px;
+        font-size: $card-mds;
+      }
+
+      .divider {
+        @include margin (15px, 0, 7px, 0);
+      }
+
+      .enrollment {
+        font-size: $card-sms;
+      }
+    }
+  }
+}

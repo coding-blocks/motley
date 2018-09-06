@@ -3,6 +3,7 @@
 }
 
 .card {
+  @include border-radius(15px);
   height: 470px;
   box-shadow: 0 20px 57px 0 $card-box-shadow;
   background: $white;

@@ -1,13 +1,7 @@
 .c-layout-card  {
   display: block;
-  padding: 20px 25px;
+  margin-bottom: 30px;
   position: relative;
-
-  .button-solid {
-    position: absolute;
-    position: absolute;
-    right: 0;
-  }
 
   .button-parent {
     position: relative;
@@ -41,6 +35,11 @@
 
   .card-mentor{
     margin-bottom: 15px;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 
   .row{
