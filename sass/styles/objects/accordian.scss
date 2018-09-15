@@ -21,6 +21,10 @@
     background-color: $accordian-li;
     cursor: pointer;
     color: $default-accordian-font;
+    
+    &.inactive {
+    	cursor: default;
+    }
 }
 
 .accordian-li:first-child{

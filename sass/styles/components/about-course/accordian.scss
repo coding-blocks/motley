@@ -34,6 +34,11 @@
 
   .lecture-count{
     font-size: $font-sm;
+    min-width: fit-content;
+    
+    &.red:hover {
+      filter: brightness(60%);
+    }
   }
 
   .duration{
@@ -41,6 +46,7 @@
     font-size: $font-sm;
     width: 95px;
     text-align: right;
+    min-width: fit-content;
   }
 
 
