@@ -1,4 +1,13 @@
 .c-certificate {
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a {
+    color: blue;
+  }
+
   .top-row {
     display: flex;
     align-items: center;
@@ -74,7 +83,7 @@
     img {
       width: 130px;
     }
-
+  
     .text {
       margin-top: 20px;
       max-width: 330px;
