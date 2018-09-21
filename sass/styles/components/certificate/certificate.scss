@@ -1,4 +1,13 @@
 .c-certificate {
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a {
+    color: blue;
+  }
+
   .top-row {
     display: flex;
     align-items: center;
@@ -64,6 +73,30 @@
 
     .button-solid {
       min-width: 160px;
+    }
+  }
+
+  &.locked {
+    height: 100%;
+    @include flexbox(column, true);
+
+    img {
+      width: 130px;
+    }
+  
+    .text {
+      margin-top: 20px;
+      max-width: 330px;
+      color: $navLink;
+      text-align: center;
+      font-size: 1.16rem;
+      font-style: italic;
+    }
+
+    .title {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-weight: 600;
     }
   }
 }
