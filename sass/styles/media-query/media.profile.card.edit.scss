@@ -24,12 +24,8 @@
 
 @media screen and (max-width: 575px) {
   .c-profile-edit {
-    .button-solid {
-      height: 50px;
-    }
-    
     .round-img {
-      @include dimensions(60px, 60px);
+      @include dimensions(50px, 50px);
     }
 
     .attributes {

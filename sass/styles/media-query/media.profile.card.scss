@@ -2,7 +2,6 @@
   .c-profile {
     .button-circle {
       @include margin(0, 0, 20px, 0);
-      @include dimensions(60px, 60px);
       font-size: $card-sm;
     }
 

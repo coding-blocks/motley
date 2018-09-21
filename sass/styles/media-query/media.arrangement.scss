@@ -9,10 +9,6 @@
       font-size: $font-xs;
     }
 
-    .heading-u-red {
-      @include padding-mixin(0, 140px, 33px, 0);
-    }
-
     .attributes {
       .detail-row {
         width: 100%;
@@ -56,7 +52,6 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 180px, 20px, 0);
       font-size: $font-mds;
     }
   }
@@ -64,6 +59,8 @@
 
 @media screen and (max-width: 575px) {
   .c-arrangement {
+    padding: 0;
+
     .nav-info {
       display: none;
     }
@@ -74,7 +71,7 @@
 
     .card {
       @include padding-mixin(25px, 20px, 25px, 20px);
-      font-size: $card-sm;
+      font-size: $card-mds;
       font-weight: $font-medium;
     }
 
@@ -88,14 +85,14 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 93px, 13px, 0);
+      @include padding-mixin(0, 60px, 13px, 0);
       margin-bottom: 20px;
       font-size: $font-xs;
     }
 
     .attributes {
       .flex-row {
-        @include padding-mixin(20px, 0, 10px, 0);
+        @include padding-mixin(10px, 0, 10px, 0);
         justify-content: space-between;
       }
 
