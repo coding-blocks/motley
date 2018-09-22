@@ -1,6 +1,6 @@
 .login-signup{
-  @include dimensions(100%, auto);
-  background: url("/images/loginsvg.svg") no-repeat 50% -50px;
+  @include dimensions(100%, calc(100vh - 70px));
+  background: url("https://minio.cb.lk/motley/loginsvg.svg") no-repeat 50% -50px;
   background-size: 1250px;
 }
 
@@ -9,10 +9,6 @@
   @include padding-mixin(40px, 72px, 60px, 80px);
   @include margin(0, auto, 0, auto);
   max-width: 828px;
-
-  .input-text{
-    height: 60px;
-  }
 
   .input-btn{
     margin-bottom: 28px;
@@ -23,10 +19,9 @@
   }
 
   .button-solid{
-    @include dimensions(30%, 62px);
+    @include dimensions(37%, 62px);
     font-size: $font-sm;
     max-width: 198px;    
-    min-width: 120px;
   }
 
   .signup{
@@ -52,12 +47,6 @@
 
   .link-heading{
     font-size: $font-sm;
-  }
-
-  .button-circle{
-    width: 85px;
-    text-align: center;
-    margin-bottom: 18px;
   }
 
   .row{

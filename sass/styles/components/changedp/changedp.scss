@@ -29,13 +29,9 @@
 
 
   .button-solid{
-    @include dimensions(40%, 55px);
+    @include dimensions(30%, 40px);
     max-width: 190px;
     margin-left: 20px;
-  }
-
-  .footer{
-    margin-top: 35px;
   }
 
   p{

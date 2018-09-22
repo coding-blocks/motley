@@ -1,6 +1,13 @@
 .c-arrangement {
     justify-content: space-evenly;
     font-size: $font-sm;
+    padding: 30px 8%;
+
+    .nav-info{
+        position: fixed;
+        top: 100px;
+        left: 9%;
+    }
 
     .card {
         @include dimensions(100%, auto);
@@ -9,8 +16,8 @@
     }
 
     .heading-u-red {
-        @include padding-mixin(0, 160px, 33px, 0);
-        @include margin(0, 0, 30px, 0);
+        @include padding-mixin(0, 160px, 15px, 0);
+        @include margin(0, 0, 20px, 0);
         font-size: $font-mds;
     }
 
@@ -24,13 +31,12 @@
     }    
 
     .attributes {
-        @include margin(0, 0, 10px, 0);
         height: auto;
         justify-content: space-between;
         font-weight: $font-normal;
         
         .flex-row {
-          @include padding-mixin(40px, 0, 20px, 0);
+          @include padding-mixin(15px, 0, 15px, 0);
           justify-content: space-between;
         }
         
@@ -41,7 +47,6 @@
 
     .input-text {
         @include padding-mixin(0, 20px, 0, 20px);
-        height: 70px;
         color: $navLink;
     }
 

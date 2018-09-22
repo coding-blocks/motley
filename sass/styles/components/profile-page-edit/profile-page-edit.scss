@@ -4,11 +4,10 @@
   }
 
   .round-img {
-    @include dimensions(120px, 120px);
+    @include dimensions(90px, 90px);
   }
 
   .button-solid { 
-    @include dimensions(50%, 70px);
     max-width: 220px;
   }
 

@@ -4,28 +4,31 @@
   @include textalign(left);
 }
 
-@each $type,$width, $height, $border-radius,$background, $color
+@each $type,$width, $height, $border-radius,$background, $color, $padding
         in
   (dashed,
   $dashed-button-width,
   $dashed-button-height,
   $dashed-border-radius,
   $dashed-button-background,
-  $dashed-button-color),
+  $dashed-button-color,
+  10px),
 
   (solid,
   $solid-button-width,
   $solid-button-height,
   $solid-button-border-radius,
   $button-gradient,
-  $solid-button-color),
+  $solid-button-color,
+  15px),
 
   (circle,
   $circle-button-width,
   $circle-button-height,
   $circle-button-border-radius,
   $circle-button-background,
-  $circle-button-color){
+  $circle-button-color,
+  0){
 
   .button-#{$type} {
     @extend %button-text;
@@ -34,7 +37,7 @@
     color: $color;
     max-width: $width;
     height: $height;
-    padding: 0 10px;
+    padding: 0 $padding;
   }
 }
 

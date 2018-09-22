@@ -1,12 +1,12 @@
 @media screen and (max-width: 575px){
   .input-text{
-    height: 50px;
+    height: 40px;
     font-size: $card-md;
     padding-left: 25px;
 
     &.icon{
       padding-left: 40px;
-      background-size: 20px;
+      background-size: 15px;
       background-position-x: 10px;
     }
   }
