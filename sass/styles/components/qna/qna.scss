@@ -112,6 +112,8 @@
   background-color: white;
 
   .left {
+    overflow: auto;
+
     .choice {
       @include flexbox(row, true);
       padding: 0.5rem 0;
@@ -127,6 +129,11 @@
         padding: 0 1rem;
         display: inline-block;
         margin-right: auto;
+
+        .explaination {
+          font-weight: 100;
+          color: grey
+        }
       }
 
       &.marked {
