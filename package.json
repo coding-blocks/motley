@@ -23,7 +23,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "grunt clean",
+    "prestart": "node file-list-gen.js",
     "start": "grunt server",
+    "prebuild": "node file-list-gen.js",
     "build": "grunt build",
     "prePublishOnly": "npm run dist",
     "dist": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
