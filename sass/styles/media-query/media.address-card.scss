@@ -22,7 +22,27 @@
   }
 }
 
+/*
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .address-card {
+    .button-solid {
+      font-size: $card-md;
+    }
+  }  
+}
+*/
+
 @media screen and(max-width: 575px){
+
+  .address-card {
+    .heading {
+      font-size: $font-md;
+    }
+    .red, .button-solid {
+      font-size: $card-md;
+    }
+  }
+
   .c-address-card{
     height: 280px;
 
