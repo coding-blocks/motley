@@ -1,0 +1,12 @@
+input{
+  &[type=text], &[type=textarea]{
+    border: none;
+    width: 100%;
+  }
+}
+
+textarea{
+   border: none;
+    width: 100%;
+    max-width: 100%;
+}
