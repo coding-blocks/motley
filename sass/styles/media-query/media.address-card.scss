@@ -44,4 +44,12 @@
       height: 80px;
     }
   }
+  
+  .heading-bar{
+    font-size: $font-xs;
+    
+    .heading{
+      font-size: $font-md;
+    }
+  }
 }
