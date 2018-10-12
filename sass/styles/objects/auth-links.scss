@@ -3,7 +3,7 @@
 }
 
 .auth-link{
-  @include flexbox(column, true);
+  @include flexbox(column, center, center);
   width: 100%;
   padding-bottom: 100%;
   font-size: $font-xs;
