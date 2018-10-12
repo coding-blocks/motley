@@ -10,7 +10,10 @@
   .heading {
     font-size: $font-xl;
     font-weight: normal;
-    margin-bottom: 14px;
+    margin-bottom: $card-xs;
+  }
+  .button-solid {
+    float: right;
   }
 }
 .select-card {
@@ -34,7 +37,6 @@
   .para{
     height: 108px;
     overflow: auto;
-    margin-bottom: 0px;
 
     &::-webkit-scrollbar{
       background: transparent;
