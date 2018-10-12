@@ -10,10 +10,8 @@
   .heading {
     font-size: $font-xl;
     font-weight: normal;
+    margin-bottom: 14px;
   }
-}
-.heading {
-  margin-bottom: 14px;
 }
 .select-card {
   @include border(solid, 2px, $button-element-level);
