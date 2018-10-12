@@ -1,0 +1,21 @@
+.t-align-r{
+  text-align: right;
+}
+
+.t-align-l{
+  text-align: left;
+}
+
+//align all nested
+
+.t-align-ar{
+  *{
+    text-align: right;
+  }
+}
+
+.t-align-al{
+  *{
+    text-align: left;
+  }
+}

@@ -10,3 +10,8 @@ $list:  (red, $fail-red)
     background-color: $color  !important;
   }
 }
+
+.invert{
+  background-color: $invert;
+  color: $white;
+}
