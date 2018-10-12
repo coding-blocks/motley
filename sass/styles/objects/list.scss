@@ -1,0 +1,62 @@
+.list-item{
+  padding: 15px 20px;
+  
+  .row{
+    width: 100%;
+    padding: 0;
+  }
+
+  & > .row:not(:last-child){
+    padding-bottom: 10px;
+  }
+}
+
+.list-divided{
+  @include border(solid, 1px, $border);
+  @include border-radius(5px);
+
+  & > *:not(:last-child){
+    border-bottom: solid 1px $border
+  }
+}
+
+.list-shaded{
+  & > *:not(:last-child){
+    margin-bottom: 6px;
+  }
+
+  > *{
+    background-color: $light-filter;
+  }
+
+  &.invert{
+    background-color: $spaced-black;
+
+    > *{
+      background-color: $dark-filter;
+    }
+  }
+}
+
+.li-left{
+  @include flexbox(row, flex-start, center);
+  margin-right: auto;
+
+  & > *{
+    padding-left: 0;
+    text-align: left;
+  }
+}
+
+.li-right{
+  @include flexbox(row, flex-end, center);
+  margin-left: auto;
+
+  & > * {
+    padding-right: 0;
+    text-align: right;
+  }
+}
+
+@include li-left-right-padding(left, 5%);
+@include li-left-right-padding(right, 5%);
