@@ -1,19 +1,32 @@
 .address-card {
+  
   .button-solid {
+    font-size: $font-md;
     max-width: 100%;
+  }
+}
+.heading-bar {
+  font-size: $font-md;
+  .heading {
+    font-size: $font-xl;
+    font-weight: normal;
+    margin-bottom: $card-xs;
+  }
+  .button-solid {
+    float: right;
   }
 }
 .select-card {
   @include border(solid, 2px, $button-element-level);
 }
 .c-address-card{
-  height: 313px;
-  padding: 40px 35px;
+  height: auto;
+  padding: 40px 30px;
   margin-bottom: 30px;
 
   .heading{
-    font-size: $font-sm;
-    margin-bottom: 25px;
+    font-size: $font-mds;
+    margin-bottom: 15px;
   }
 
   .row{
@@ -24,7 +37,6 @@
   .para{
     height: 108px;
     overflow: auto;
-    margin-bottom: 35px;
 
     &::-webkit-scrollbar{
       background: transparent;
@@ -34,12 +46,12 @@
   .button-dashed{
     @include dimensions(49%, 50px);
     @include border-radius(63px);
-    font-size: $font-sm;
+    font-size: $font-mds;
     max-width: 178px;
   }
 
   .button{
-    font-size: $font-xs;
+    font-size: $font-sm;
 
     button{
       padding: 0;
