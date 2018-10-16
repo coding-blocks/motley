@@ -13,7 +13,6 @@
   .wallet-card {
     padding: 32px 31px;
     font-size: $font-md;
-    float: center;
     vertical-align: middle;
 
     .item-img{
@@ -23,11 +22,6 @@
         height: 35px;
         width: 35px;
       } 
-    }
-
-    .flex-container {
-      display: flex;
-      align-items: center;
     }
   }
 
