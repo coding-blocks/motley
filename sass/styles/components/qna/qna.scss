@@ -39,7 +39,7 @@
   }
 
   .result-box {
-    @include flexbox(column, true);
+    @include flexbox(column, center, center);
     font-size: 1.5rem;
     height: 500px;
 
@@ -58,7 +58,7 @@
     }
 
     .score-card {
-      @include flexbox(row, true);
+      @include flexbox(row, center, center);
       margin: 1rem;
       @include dimensions(40%,200px);
 
@@ -115,7 +115,7 @@
     overflow: auto;
 
     .choice {
-      @include flexbox(row, true);
+      @include flexbox(row, center, center);
       padding: 0.5rem 0;
       cursor: pointer;
 
@@ -174,7 +174,7 @@
     }
 
     .navigation {
-      @include flexbox(row, true);
+      @include flexbox(row, center, center);
       font-weight: $font-medium;
       font-size: $font-mds;
       padding: 2rem;

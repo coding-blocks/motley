@@ -1,7 +1,6 @@
 /*--------------------------INPUT TEXT---------------------------*/
 .input-text {
   @include dimensions(100%, 60px);
-  border: none;
   font-size: $font-sm;
   padding: 0 50px;
   background-color: $nav-border;

@@ -2,7 +2,7 @@
   width: 100%;
   background: $button-gradient;
   @include padding-s(15px, 0);
-  @include flexbox(column, true)
+  @include flexbox(column, center, center);
   color: $white;
 
   .coupon {
