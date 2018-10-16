@@ -148,6 +148,15 @@
         }
     }
 
+    .notes-list {
+        overflow: auto;
+        height: calc(100vh - 100px);
+
+        .footer {
+            position: absolute;
+        }
+    }
+
     .content-container{
         height: calc(100vh - 100px);
     }
