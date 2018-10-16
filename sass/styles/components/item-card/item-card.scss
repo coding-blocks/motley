@@ -10,6 +10,21 @@
   height: auto;
   margin-bottom: 4%;
 
+  .wallet-card {
+    padding: 32px 31px;
+    font-size: $font-md;
+    vertical-align: middle;
+
+    .item-img{
+      padding-right: 0%;
+
+      .img {
+        height: 35px;
+        width: 35px;
+      } 
+    }
+  }
+
   .header{
     margin-bottom: 25px;
   }
