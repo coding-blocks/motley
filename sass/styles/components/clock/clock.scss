@@ -3,7 +3,7 @@
   justify-content: center;
 
   .item {
-    @include flexbox(column, true);
+    @include flexbox(column, center, center);
     font-size: $font-md;
   }
 

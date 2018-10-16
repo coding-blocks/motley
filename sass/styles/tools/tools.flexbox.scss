@@ -1,4 +1,4 @@
-@mixin flexbox($direction, $center: false, $webkit: true, $ms:true){
+@mixin flexbox($direction, $justify-content: false, $align-items: false, $webkit: true, $ms:true){
     @if($webkit)    {display: -webkit-box};
     @if($webkit)    {display: -webkit-flex};
     @if($ms)        {display: -ms-flexbox};
@@ -7,6 +7,6 @@
     @if($webkit)    {-webkit-flex-direction: $direction};
     flex-direction: $direction;
 
-    @if($center)    {justify-content: center}
-    @if($center)    {align-items: center}
+    @if($justify-content)    {justify-content: $justify-content}
+    @if($align-items)    {align-items: $align-items}
 }
