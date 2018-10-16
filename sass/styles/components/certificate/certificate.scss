@@ -78,7 +78,7 @@
 
   &.locked {
     height: 100%;
-    @include flexbox(column, true);
+    @include flexbox(column, center, center);
 
     img {
       width: 130px;

@@ -38,12 +38,12 @@
   }
 
   .open-select-box {
-
+    @include dimensions(221px, 170px);
     margin-bottom: 4px;
     position: absolute;
     background: $editor-line-number;
     color: white;
-    width: 221px;
+    overflow-y: auto;
     display: none;
     border-top: 1px solid gray;
     z-index: 100;

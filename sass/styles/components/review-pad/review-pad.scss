@@ -1,6 +1,6 @@
 .c-review-pad {
   margin: 2rem 0;
-  @include flexbox(column, true);
+  @include flexbox(column, center, center);
 
   .title {
     font-size: $font-md;
@@ -13,7 +13,7 @@
     place-items: center;
 
     .circle {
-      @include flexbox(row, true);
+      @include flexbox(row, center, center);
       @include dimensions(40px,40px);
       @include border-radius(50%);
       background-color: $navLink;
