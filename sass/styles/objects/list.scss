@@ -62,3 +62,27 @@
 
 @include li-left-right-padding(left, 5%);
 @include li-left-right-padding(right, 5%);
+
+.list-style-circle{
+  list-style: circle !important;
+
+  *{
+    list-style-type: circle !important;
+  }
+}
+
+.list-style-disc{
+  list-style: disc !important;
+
+  *{
+    list-style-type: disc !important;
+  }
+}
+
+.list-style-square{
+  list-style: square !important;
+  
+  *{
+    list-style-type: square !important;
+  }
+}
