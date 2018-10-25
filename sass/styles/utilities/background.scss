@@ -1,0 +1,6 @@
+@each $name, $type in
+  (fingerprint,svg), (user,svg), (mail,svg), (lines,svg){
+    .#{$name}-bg{
+      background-image: url("https://minio.cb.lk/motley/#{$name}.#{$type}");
+    }
+}

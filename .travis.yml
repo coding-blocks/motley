@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 
-before_script: grunt build
+before_script: npm run build
 script: sh live.sh
 deploy:
   local-dir: live

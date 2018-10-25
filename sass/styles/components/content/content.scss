@@ -1,0 +1,158 @@
+.c-content-section{
+    background-color: $vp-background;
+    height: 100vh;//set according to height of navbar;
+    margin-top: -70px;
+
+    .header{
+        @include dimensions(100%, 100px);
+        max-height: 100px;
+        font-size: $font-sm;
+    }
+
+    .section-toggler{
+        width: 100%;
+        min-width: 30%;
+        justify-content: center;
+    }
+
+    .dashboard{
+        @include dimensions(100%, auto);
+        padding-left: 40px;
+    }
+
+    .button-dashed{
+        @include dimensions(180px, 43px);
+        @include border-radius(27px);
+        background-color: $vp-background;
+        color: $white;
+        font-size: $font-sm;
+        max-width: 239px;
+    }
+
+    .heading-d{
+        @include margin(0,0,0,0);
+        flex: none;
+    }
+
+    .main-h, .sub-h{
+        font-size: $font-sm;
+        font-weight: $font-normal;
+    }
+
+    .main-h{
+        @include margin(0,0,0,0);
+        color: $white;
+    }
+
+    .sub-h{
+        color: $faded-text;
+    }
+
+    .button-solid{
+        @include dimensions(100%, 44px);
+        text-align: center;
+        font-size: $font-sm;
+        max-width: 175px;
+        overflow: hidden;
+    }
+
+    .notify-text{
+        cursor: pointer;
+        margin-left: 20%;
+    }
+
+    .new{
+        @include dimensions(8px, 8px);
+    }
+
+    .content-section{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .section{
+        @include dimensions(30%, 100%);
+        overflow-y: auto;
+        background-color: $vp-background;
+        transition: all 0.35s ease;
+
+        &.collapse {
+            transform: translateX(-40%);
+        }
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    .tab-nav{
+        height: 100px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .section-collapsor{
+      display: none;
+      height: 60px;
+      cursor: pointer;
+      font-size: $global-font-size;
+      padding-left: 8%;
+      padding-right: 4%;
+    }
+
+    .content{
+        @include dimensions(100%, 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $vp-background;
+        transition: all 0.35s ease;
+        z-index: 40;
+
+        &.collapse{
+            right: 0;
+            width: 70%;
+        }
+    }
+
+    .overlay-content{
+        z-index: 100;
+        position: absolute;
+        cursor: default;
+        user-select: none;
+    }
+
+    .text-overlay{
+        z-index: 0;
+    }
+
+    .notes-list, .c-accordian{
+        height: 100%;
+
+        .footer{
+            width: 100%;
+            min-height: 75px;
+            background-color: $global-font-text-color;
+            position: sticky;
+            bottom: 0;
+
+            textarea{
+                background-color: $global-font-text-color;
+            }
+
+            .button-solid{
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .content-container{
+        height: calc(100vh - 100px);
+    }
+
+    .section-tabs{
+        height: calc(100vh - 100px);
+    }
+}

@@ -1,17 +1,9 @@
 @media all and (max-width: 767px){
-  .o-content-section{
+  .c-content-section{
     height: 100vh;
 
     .content-section{
       overflow: auto;
-    }
-
-    .section-toggler{
-      display: none;
-    }
-
-    .section-collapsor{
-      display: flex;
     }
 
     .dashboard{
@@ -55,13 +47,13 @@
     }
 
     .video-player{
-      padding: 23% 0;
+      padding: 10% 0;
     }
 
     .select-box{
       display: block;
       right: 46%;
-      bottom: 12%;
+      bottom: 1%;
     }
 
     .notify-text{
@@ -69,11 +61,39 @@
       margin-left: 0;
       display: none;
     }
+
+    .tab-nav{
+      height: 75px;
+    }
+
+    .tab-items{
+      display: flex;
+      font-size: $font-sm;
+    }
+
+    .section-tabs{
+      height: auto;
+    }
   }
 }
 
 @media all and (max-width: 575px) {
-  .o-content-section{
-    margin-top: -50px;
+  .c-content-section{
+    margin-top: -60px;
+
+    .header{
+      height: 75px;
+    }
+
+    .notes-list{
+      .list-item{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .content-container{
+        height: calc(100vh - 206px);
+    }
   }
 }

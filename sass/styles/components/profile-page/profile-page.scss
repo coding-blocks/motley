@@ -1,0 +1,15 @@
+.c-profile {
+  .button-solid {
+    max-width: 162px;
+  }
+
+  .auth-link {
+    @include margin(0, 10%, 0, 0);
+  }
+
+  .links {
+    @include padding-mixin (0, 0, 20px, 0);
+    margin-bottom: 7%;
+  }
+
+}

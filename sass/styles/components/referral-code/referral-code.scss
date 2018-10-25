@@ -1,0 +1,29 @@
+.c-referral-code {
+  width: 100%;
+  background: $button-gradient;
+  @include padding-s(15px, 0);
+  @include flexbox(column, center, center);
+  color: $white;
+
+  .coupon {
+    .text {
+      text-align: center;
+    }
+  }
+  .code {
+    padding: 0.4rem;
+    border: 1px dashed;
+    font-size: 2rem;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .shares {
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+}
+

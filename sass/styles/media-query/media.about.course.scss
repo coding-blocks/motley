@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .o-summary {
+  .c-summary {
     .classroom-text {
       font-size: 1.6rem;
       margin-top: 15px;
@@ -15,11 +15,11 @@
     }
   }
 
-  .o-buy-top {
+  .c-buy-top {
     display: none;
   }
 
-  .o-buy-right {
+  .c-buy-right {
     position: relative;
     width: 100%;
     top: 0;
@@ -34,12 +34,12 @@
     }
   }
 
-  .o-summary .para {
+  .c-summary .para {
     margin-top: 8px;
     margin-bottom: 8px;
   }
 
-  .o-about-accordian {
+  .c-about-accordian {
     .lecture-count {
       display: none;
     }
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .o-summary {
+  .c-summary {
     height: auto;
 
     .classroom-text {
@@ -72,12 +72,12 @@
     }
   }
 
-  .o-buy-right {
+  .c-buy-right {
     margin-top: 15px;
     height: auto;
   }
 
-  .o-buy-right.slide-right {
+  .c-buy-right.slide-right {
     transform: none;
   }
 
@@ -95,5 +95,13 @@
   .para {
     font-size: 1rem;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .c-buy-top {
+    .button-dashed {
+      margin-right: 0;
+    }
   }
 }

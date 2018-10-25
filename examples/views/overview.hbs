@@ -104,7 +104,7 @@
     </div>
 
     <div class="container-fluid pl-0 pr-0">
-        <div class="o-overview-recent row">
+        <div class="c-overview-recent row">
             <div class="col-12 col-md-6">
                 <div class="card">
                     <div class="heading">Recent Doubts</div>
@@ -234,85 +234,7 @@
 
             <div class="col-12 col-md-6">
                 <div class="card">
-                    <div class="heading">Announcements</div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            UPDATE: UI animation on Flinto
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            New Section: Principle App
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            New Design and Prototype Section!
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            New section: 9 videos
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            New section: 9 videos added with new features explained
-                        </div>
-
-                    </div>
-
-                    <div class="pull-right">
-                        Browse All
-                    </div>
+                   {{> certificate-locked}}
                 </div>
 
             </div>
@@ -326,7 +248,7 @@
         About This Course
     </div>
 
-    <div class="o-overview-course">
+    <div class="c-overview-course">
         <div class="row no-gutters flex-wrap-reverse">
             <div class="course-features col-12 col-md-5">
                 <div class="row no-gutters justify-content-center">
@@ -395,7 +317,7 @@
         About Instructors
     </div>
 
-    <div class="o-about-instructors">
+    <div class="c-about-instructors">
         <div class="row no-gutters">
             <div class="col-md-6 col-12">
                 <div class="img-desc row no-gutters">
@@ -515,4 +437,45 @@
 
         </div>
     </div>
+
+    {{!-- FAQs --}}
+    
+    <div class="heading-u mt-5 mb-5">
+        Frequently Asked Questions
+    </div>
+    
+    <div class="font-mds mb-4">
+        How scoring in Leaderboard works?
+    </div>
+    <div class="grey i mb-4">
+        Your score in Leaderboard is the sum of weighted scores of all the topics that you have attempted. Every Topic
+        (Lecture
+        questions + Practice section) that you solve has a weightage assigned to it. For each Topic, weighted score is
+        calculated as : (your score in that topic / max score of the topic) * weightage of topic.
+    </div>
+    
+    <div class="font-mds mb-4">
+        When do I complete an Assignment?
+    </div>
+    <div class="grey i mb-4">
+        You complete an assignment when you have attempted at least 80% of MCQ problems and you score an average of at
+        least 80%
+        in code problems, within an assignment.
+    </div>
+    
+    <div class="font-mds mb-4">
+        When do I complete a Lecture?
+    </div>
+    <div class="grey i mb-4">
+        You complete a lecture when you have attempted at least 80% of objective problems, have scored at least 80% in each
+        code problems, and have seen at least 80% of the total videos, within a lecture.
+    </div>
+    
+    <div class="font-mds mb-4">
+        When do I complete a Test?
+    </div>
+    <div class="grey i mb-4">
+        You complete a test when you have submitted the test.
+    </div>
+
 </div>

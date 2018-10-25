@@ -1,0 +1,31 @@
+.t-align-r, .t-align-ra{
+  text-align: right;
+}
+
+.t-align-l, .t-align-la{
+  text-align: left;
+}
+
+.t-align-c, .t-align-ca{
+  text-align: center;
+}
+
+//align all nested
+
+.t-align-ra{
+  *{
+    text-align: right;
+  }
+}
+
+.t-align-la{
+  *{
+    text-align: left;
+  }
+}
+
+.t-align-ca{
+  *{
+    text-align: center;
+  }
+}

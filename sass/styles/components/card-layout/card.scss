@@ -1,0 +1,68 @@
+.c-layout-card  {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+
+  .button-parent {
+    position: relative;
+    height: 30px;
+  }
+
+  .price-detail {
+    margin-top: 25px;
+  }
+
+  .pos-rating, .neg-rating, .edit-rating{
+    font-size: $global-font-size;
+  }
+
+  .rating{
+    margin: 23px 0;
+  }
+
+  .edit-rating{
+    border: none;
+  }
+
+  .header{
+    margin-bottom: 25px;
+  }
+
+  .footer{
+    text-align: center;
+    font-size: $card-md;
+  }
+
+  .card-mentor{
+    margin-bottom: 15px;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .row{
+    padding: 0;
+  }
+}
+
+.grid {
+  margin: 0;
+  padding:32px;
+}
+
+.c-image-card {
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.c-text-card {
+  margin-bottom: 5px;
+}
+
+.difficulty-div {
+  position: absolute;
+  right: 6%;
+  top: 30px;
+}

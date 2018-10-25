@@ -2,14 +2,15 @@
 @import "settings/settings.global";
 @import "settings/settings.font";
 
-@import "_utilities.scss";
 
 @import "_tools.scss";
+@import "_utilities.scss";
 
 @import "generic/normalize";
 @import "generic/reset";
 
 @import "_elements";
 @import "_objects";
+@import "_components";
 @import "_media-query";
 @import "trumps";

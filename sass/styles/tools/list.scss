@@ -1,0 +1,17 @@
+@mixin li-left-right-padding($direction, $padding){
+  @if $direction == left {
+    .li-left{
+      & > *:not(:last-child){
+        padding-right: $padding;
+      }
+    }
+  }
+
+  @if $direction == right {
+    .li-right{
+      & > *:not(:first-child){
+        padding-left: $padding;
+      }
+    }
+  }
+}

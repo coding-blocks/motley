@@ -1,0 +1,77 @@
+.online-card {
+  overflow: hidden;
+  height: auto;
+
+  .head {
+    color: white;
+    position: relative;
+    height: 260px;
+
+    .back-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .front-text {
+      @include padding-mixin (30px, 3px, 46px, 3px);
+      z-index: 100;
+
+      .round-img-b {
+        @include dimensions (90px, 90px);
+        min-height: 90px;
+      }
+
+      .course-name {
+        @include margin (14px, 0px, 5px, 0px);
+        font-size: $font-mds;
+      }
+
+      .course-description {
+        font-size: $card-md;
+      }
+
+      .rating {
+        @include margin (12px, 0, 0, 0);
+        padding: 0;
+      }
+    }
+  }
+
+  .foot {
+    @include padding-mixin (30px, 30px, 38px, 30px);
+
+    .button-row {
+      margin-top: 9%;
+      width: 100%;
+      font-size: $font-xs; 
+    }
+  }
+
+  .card-mentor {
+    margin-top: 28px;
+
+    .card-mentor-text {
+      font-size: $card-mds;
+      padding-left: 15px;
+    }
+
+    .card-mentor-name {
+      font-size: $font-xs;
+    }
+  }
+
+  .no-gutters {
+    margin: 0;
+    padding: 0;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .details{
+    flex: 1;
+  }
+}

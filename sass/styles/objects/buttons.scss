@@ -1,0 +1,59 @@
+
+%button-text {
+  @include font($global-font-family, $global-font-size, inherit);
+  @include textalign(left);
+}
+
+@each $type,$width, $height, $border-radius,$background, $color, $padding
+        in
+  (dashed,
+  $dashed-button-width,
+  $dashed-button-height,
+  $dashed-border-radius,
+  $dashed-button-background,
+  $dashed-button-color,
+  10px),
+
+  (solid,
+  $solid-button-width,
+  $solid-button-height,
+  $solid-button-border-radius,
+  $button-gradient,
+  $solid-button-color,
+  15px),
+
+  (circle,
+  $circle-button-width,
+  $circle-button-height,
+  $circle-button-border-radius,
+  $circle-button-background,
+  $circle-button-color,
+  0){
+
+  .button-#{$type} {
+    @extend %button-text;
+    @include border-radius($border-radius);
+    background: $background;
+    color: $color;
+    max-width: $width;
+    height: $height;
+    padding: 0 $padding;
+  }
+}
+
+
+.button-solid:hover {
+  box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);
+}
+
+.button-dashed {
+  border: 2px solid;
+}
+
+.button-solid.disabled {
+  background-image: $button-gradient-disabled;
+  button {
+    cursor: default;
+    pointer-events:none;
+  }
+}

@@ -7,6 +7,7 @@ $card-box-shadow: rgba(51, 51, 51, 0.1);
 
 $white: #ffffff;
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113));
+$button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160, 160, 160));
 $button-element-level: #ff6666;
 $classroom-border: #cccccc;
 $nav-border: #f6f6f6;
@@ -28,6 +29,7 @@ $transparent: transparent;
 $facebook: #3b5998;
 $google: #f4695a;
 $twitter: #03a9f4;
+$linkedin: #007BB6;
 
 $disabled-input: #ececec;
 
@@ -50,5 +52,16 @@ $dropdown-divider: #f4f4f4;
 
 $vp-select-box: #262626;
 $nav-info-bg: #fcfcfc;
+$grey-choices: #f7f7f7;
 
 $skeleton: #e8e8e8;
+$content-search-box: #4C4B4B;
+$content-search-box-bg: #3B3838;
+$search-box-placeholder: #a0a0a0;
+$search-box-input: #d5d5d5;
+$border: rgba(225, 225, 225, 0.75);
+$invert: #272727;
+$spaced-black: #222222;
+
+$light-filter: rgba(255, 255, 255, 0.9);
+$dark-filter: rgba(80, 80, 80, 0.1);

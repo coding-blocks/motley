@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) and (max-width: 1200px){
-  .o-item-card{
+  .c-item-card{
     .detail-row{
       font-size: $global-font-size;
     }
@@ -15,11 +15,16 @@
     .sub-h{
       font-size: $global-font-size;
     }
+
+    .wallet-card {
+      padding: 0px 0px;
+      font-size: $font-xs;
+    }
   }
 }
 
 @media screen and(max-width:  767px){
-  .o-item-card{
+  .c-item-card{
     height: auto;
     padding: 5% 3%;
 
@@ -29,6 +34,10 @@
       margin-bottom: 4%;
       padding-bottom: 4%;
     }
-  }
 
+    .wallet-card {
+      padding: 0px 0px;
+      font-size: $font-xs;
+    }
+  }
 }

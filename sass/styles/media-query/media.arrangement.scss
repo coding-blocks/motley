@@ -1,5 +1,5 @@
 @media screen and (max-width: 1200px) {
-  .o-arrangement {
+  .c-arrangement {
     .card {
       @include padding-mixin(40px, 40px, 40px, 40px);
       font-size: $font-xs;
@@ -7,10 +7,6 @@
 
     .input-text {
       font-size: $font-xs;
-    }
-
-    .heading-u-red {
-      @include padding-mixin(0, 140px, 33px, 0);
     }
 
     .attributes {
@@ -37,7 +33,7 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .o-arrangement{
+  .c-arrangement{
     .nav-info {
       display: none;
     }
@@ -56,14 +52,15 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 180px, 20px, 0);
       font-size: $font-mds;
     }
   }
 }
 
 @media screen and (max-width: 575px) {
-  .o-arrangement {
+  .c-arrangement {
+    padding: 0;
+
     .nav-info {
       display: none;
     }
@@ -74,7 +71,7 @@
 
     .card {
       @include padding-mixin(25px, 20px, 25px, 20px);
-      font-size: $card-sm;
+      font-size: $card-mds;
       font-weight: $font-medium;
     }
 
@@ -88,14 +85,14 @@
     }
 
     .heading-u-red {
-      @include padding-mixin(0, 93px, 13px, 0);
+      @include padding-mixin(0, 60px, 13px, 0);
       margin-bottom: 20px;
       font-size: $font-xs;
     }
 
     .attributes {
       .flex-row {
-        @include padding-mixin(20px, 0, 10px, 0);
+        @include padding-mixin(10px, 0, 10px, 0);
         justify-content: space-between;
       }
 
