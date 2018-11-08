@@ -60,3 +60,45 @@
   }
 
 }
+.feed-overlay {
+  z-index: 10;
+  position: absolute;
+  @include dimensions(100%, 100%);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.video-player {
+  .feed-box {
+    z-index: 15;
+    align-items: center;
+    display: flex;
+    @include dimensions(208px, 54px);
+    border-radius: 10px;
+    background-color: white;
+    position:absolute;
+    bottom:150px;
+    right:0;
+    margin: 10px;
+    margin-right: -7px;
+    &.collapsed {
+      width: 56px;
+    }
+
+    &.expanded {
+      width: 301px;
+    }
+  }
+
+  .feed-text {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  .love-ico {
+    padding-left: 10px;
+    width: 40px;
+  }
+  form {
+    padding-left: 10px;
+  }
+}
