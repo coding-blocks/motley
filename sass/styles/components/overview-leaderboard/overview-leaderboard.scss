@@ -1,0 +1,29 @@
+.c-overview-leaderboard {
+  margin-bottom: 70px;
+
+  .card {
+    @include padding-mixin (20px, 0, 20px, 0);
+    height: auto;
+  }
+
+  .generate-scroll-y {
+    @include padding-mixin (0, 30px, 0, 30px);
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  thead {
+    font-size: $font-sm;
+    color: $button-element-level;
+  }
+
+  tr, td {
+    height: 60px;
+    text-align: center;
+  }
+
+}
