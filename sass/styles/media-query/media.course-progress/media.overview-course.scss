@@ -9,3 +9,13 @@
     }
   }
 }
+
+@media all and (max-width: 575px){
+  .c-content-accordian, .c-about-accordian{
+    @include li-left-right-padding(left, 15%);
+
+    .list-divided>.row{
+      min-height: 70px;
+    }
+  } 
+}

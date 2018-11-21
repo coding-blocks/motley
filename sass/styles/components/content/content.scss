@@ -34,11 +34,6 @@
         flex: none;
     }
 
-    .main-h, .sub-h{
-        font-size: $font-sm;
-        font-weight: $font-normal;
-    }
-
     .main-h{
         @include margin(0,0,0,0);
         color: $white;

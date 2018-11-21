@@ -1,50 +1,59 @@
 .c-accordian{
-    font-size: $font-sm;
-    font-weight:$font-normal;
+    font-size: $font-md;
+    font-weight:$font-medium;
 
-    .accordian-ul{
-        @include margin(0, auto, 20px, auto);
+    @include li-left-right-padding(left, 12%);
+    @include li-left-right-padding(right, 13%);
+
+    .content-icon{
+        background-position: unset;
     }
 
-    .accordian-collapsar{
-        @include dimensions(30px, 30px);
-        @include margin(0px, 3%, 0px, 0px);
-        padding-top: 8px;
-        text-align: center;
-    }
-
-    .accordian-li-type{
-        @include margin(0px, 3%, 0px, 0px);
-        flex: none;
+    .status-circle{
+        @include flexbox(row, center, center);
+        padding-bottom: unset;
     }
     
     .circle-back{
-        @include dimensions(42px, 42px);
-        @include margin(0, 0, 0, 31px);
-        flex:none;
-        background: $status-back-incomplete;
+        @include dimensions(39px, 39px);
+        background: $black;
+        opacity: 0.13;
     }
 
     .circle-front{
-        @include dimensions(34px, 34px);
-        transform: translateY(12%);
+        @include dimensions(31px, 31px);
         background: $white;
-        position: static;
     }
 
-    .accordian-li[data-completed="true"]{
-        color: $font-complete;
-
-
+    .green{
         .circle-back{
-            background: $status-back-complete;
+            background: $font-complete;
+            opacity: 0.31
         }
     
         .circle-front{
             background: $font-complete;
         }
+
         .circle-front::after{
             content: "";
+            background-image: url("https://minio.cb.lk/motley/checked.svg");
+            width: 56%;
+            height: 40px;
+            position: absolute;
+            left: 22%;
+            background-repeat: no-repeat;
+            top: 24%;
         }
     }
+
+    .row{
+        padding: 22px 8% 22px 0;
+    }
+}
+
+.accordian-card{
+    @include dimensions(80%, auto);
+    margin: 0 auto; 
+    padding: 1.4% 4% 3.5% 4%;
 }

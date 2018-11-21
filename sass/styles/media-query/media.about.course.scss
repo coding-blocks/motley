@@ -38,26 +38,6 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
-
-  .c-about-accordian {
-    .lecture-count {
-      display: none;
-    }
-    .duration {
-      display: none;
-    }
-
-    .accordian-li, .accordian-head{
-      .flex-row:last-child{
-        display: none;
-      }
-
-      .li-left {
-        width: 100%;
-      }
-    }
-  }
-
 }
 
 @media screen and (max-width: 575px) {

@@ -6,3 +6,6 @@
   border-radius: $radius;
 }
 
+.border-radius-none{
+  border-radius: unset !important;
+}
