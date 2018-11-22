@@ -11,11 +11,15 @@
 }
 
 @media all and (max-width: 575px){
-  .c-content-accordian, .c-about-accordian{
+  .c-content-accordion, .c-about-accordion{
     @include li-left-right-padding(left, 15%);
 
     .list-divided>.row{
       min-height: 70px;
+    }
+
+    .deadline{
+      font-size: $card-md;
     }
   } 
 }
