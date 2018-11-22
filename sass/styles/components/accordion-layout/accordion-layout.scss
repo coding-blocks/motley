@@ -1,4 +1,4 @@
-.c-accordian{
+.c-accordion{
     font-size: $font-md;
     font-weight:$font-medium;
 
@@ -47,12 +47,18 @@
         }
     }
 
+    .list-divided > .list-divided{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
     .row{
         padding: 22px 8% 22px 0;
     }
 }
 
-.accordian-card{
+.accordion-card{
     @include dimensions(80%, auto);
     margin: 0 auto; 
     padding: 1.4% 4% 3.5% 4%;
