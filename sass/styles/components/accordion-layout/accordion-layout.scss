@@ -1,0 +1,59 @@
+.c-accordion{
+    font-size: $font-md;
+    font-weight:$font-medium;
+
+    @include li-left-right-padding(left, 12%);
+    @include li-left-right-padding(right, 13%);
+
+    .content-icon{
+        background-position: unset;
+    }
+
+    .status-circle{
+        @include flexbox(row, center, center);
+        padding-bottom: unset;
+    }
+    
+    .circle-back{
+        @include dimensions(39px, 39px);
+        background: $black;
+        opacity: 0.13;
+    }
+
+    .circle-front{
+        @include dimensions(31px, 31px);
+        background: $white;
+    }
+
+    .green{
+        .circle-back{
+            background: $font-complete;
+            opacity: 0.31
+        }
+    
+        .circle-front{
+            background: $font-complete;
+        }
+
+        .circle-front::after{
+            content: "";
+            background-image: url("https://minio.cb.lk/motley/checked.svg");
+            width: 56%;
+            height: 40px;
+            position: absolute;
+            left: 22%;
+            background-repeat: no-repeat;
+            top: 24%;
+        }
+    }
+
+    .row{
+        padding: 22px 8% 22px 0;
+    }
+}
+
+.accordion-card{
+    @include dimensions(80%, auto);
+    margin: 0 auto; 
+    padding: 1.4% 4% 3.5% 4%;
+}

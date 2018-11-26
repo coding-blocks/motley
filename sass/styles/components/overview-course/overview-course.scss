@@ -42,3 +42,15 @@
     padding-bottom: 100%;
   }
 }
+
+.c-content-accordion{
+  .deadline{
+    font-size: $font-sm;
+  }
+}
+
+.c-content-accordion, .c-about-accordion{
+  .list-divided>.row{
+    min-height: 100px;
+  }
+}

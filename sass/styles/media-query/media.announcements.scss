@@ -1,5 +1,5 @@
 @media all and (max-width: 490px){
-  .hading-d{
+  .heading-d{
     width: 63%;
   }
 }
@@ -12,10 +12,6 @@
       img{
         display: none;
       }
-    }
-
-    .accordian-li{
-      @include padding-mixin(4%, 7%, 10%, 6%);
     }
   }
 }

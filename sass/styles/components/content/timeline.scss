@@ -1,58 +1,36 @@
 .section{
   color: $white;
-  .c-accordian{
+  .c-accordion{
     padding-top: 0px;
+    font-size: $font-sm;
+    
+    @include li-left-right-padding(left, 15%);
+
+    .bellows{
+      background-color: $bellow-black;
+    }
+
+    .row{
+      padding-left: 8%;
+    }
   }
 
-  .accordian-li, .accordian-status, .accordian-head{
-      color: $white;
+  .deadline{
+    font-size: $card-md;
   }
 
-  .accordian-head{
-    @include padding-mixin(0, 19px, 0, 5px);
-    background-color: $vp-acc-head;
-    border-bottom: solid 1px $vp-border;
-  }
-
-  .accordian-collapsar{
-    @include dimensions(0px, 39px);
-    flex-grow: 1;
-    @include margin(0, 12px, 0, 0);
-  }
-
-  .accordian-ul{
-    border: none;
-    margin: 0 0;
-    max-width: 100%;
-  }
-
-  .accordian-li{
-    @include padding-mixin(10px, 14px, 10px, 5px);
-    border-bottom: solid 1px $vp-border;
-    background-color: $vp-background;
-  }
-
-  .accordian-li-type{
-    margin-right: 12px;
-  }
-
-  .accordian-heading, .accordian-status, .main-h, .sub-h{
-    // font-size: $font-xs;
-  }
-
-  .accordian-heading {
-    width: 0;
-    flex-grow: 10;
+  .main-h{
+    font-size: $font-md;
   }
 
   .circle-front{
-    @include dimensions(29px, 29px);
-    transform: translateY(13%);
+    @include dimensions(25px, 25px);
   }
 
   .circle-back{
-    @include dimensions(37px, 37px);
-    margin-left: 20px;
+    @include dimensions(32px, 32px);
+    opacity: 0.56;
+    background: $white;
   }
 
   .li-left{
@@ -76,10 +54,8 @@
     border-radius: 10px;
     background-color: white;
     position:absolute;
-    bottom:150px;
+    bottom: 54%;
     right:0;
-    margin: 10px;
-    margin-right: -7px;
     &.collapsed {
       width: 56px;
     }

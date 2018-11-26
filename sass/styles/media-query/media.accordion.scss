@@ -1,0 +1,14 @@
+@media screen and (max-width: 575px){
+  .c-accordion{
+    font-size: $global-font-size;
+
+    .row{
+      padding: 12px 3% 12px 0;
+    }
+  }
+  
+
+  .accordion-card{
+    width: 100%;
+  }
+}

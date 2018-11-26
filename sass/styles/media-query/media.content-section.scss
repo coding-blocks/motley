@@ -28,22 +28,8 @@
       border-right: unset;
     }
 
-    .main-h, .sub-h, .notify-text, .button-solid, .accordian-heading, .accordian-li, .accordian-status, .header{
+    .main-h, .sub-h, .notify-text, .button-solid, .header{
       font-size: $global-font-size;
-    }
-
-    .accordian-li{
-      padding-left: 3%;
-      padding-right: 5%;
-    }
-
-    .accordian-head{
-      padding-left: 3%;
-      padding-right: 4%;
-    }
-
-    .accordian-li-type, .accordian-collapsar{
-      margin-right: 4%;
     }
 
     .video-player{
@@ -94,6 +80,14 @@
 
     .content-container{
         height: calc(100vh - 206px);
+    }
+  }
+
+  .section{
+    .c-accordion{
+      .row{
+        padding-left: 3%;
+      }
     }
   }
 }
