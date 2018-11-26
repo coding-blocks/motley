@@ -19,3 +19,7 @@
   @extend .round-img;
   @include border(solid, 4px, white);
 }
+
+.round{
+  @include border-radius(50%);
+}
