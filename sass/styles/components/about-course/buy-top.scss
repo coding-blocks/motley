@@ -32,7 +32,6 @@
   }
 
   .main-h{
-    text-transform: uppercase;
     font-size: $font-md;
   }
 
@@ -42,12 +41,12 @@
 
   .button-solid{
     @extend %button-config;
+    margin-right: 3%;
   }
 
   .button-dashed{
     @extend %button-config;
     @include border(solid, 2px, $button-element-level);
-    margin-right: 3%;
   }
 
   &.slide-up{

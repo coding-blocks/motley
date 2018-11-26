@@ -21,10 +21,9 @@
 }
 
 .nav-items {
-  @include font($global-font-family, $global-font-size, $global-font-weight);
+  @include font($global-font-family, $font-sm, $global-font-weight);
   display: inline-block;
   @include margin(null, null, null, 40px);
-  text-transform: uppercase;
   position: relative;
 }
 

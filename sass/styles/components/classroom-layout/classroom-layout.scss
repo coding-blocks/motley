@@ -2,8 +2,7 @@
   margin: 40px 0;
 
   .classroom-header-box {
-    padding-right: 44px;
-    padding-left: 44px;
+    padding: 0 44px;
     border-right: 1px solid $classroom-border;
   }
   .classroom-header {
@@ -15,10 +14,7 @@
   }
 
   .classroom-text {
-    text-transform: uppercase;
     font-size: $font-xl;
-    transform: translateY(35%);
-    font-weight: $font-medium;
   }
 
   .classroom-image {
@@ -73,17 +69,13 @@
 }
 
 .course-progress-box {
-  padding-left: 44px;
+  padding: 0 44px;
 
   .button-solid, .button-dashed {
     @include dimensions(100%, 55px);
+    @include border-radius(30px);
     max-width: 190px;
     font-size: $font-md;
-    margin-top: 22px;
-  }
-
-  .progress-circle{
-    padding-right: 7%;
   }
 
   .status-circle {
@@ -100,6 +92,8 @@
   .divider-h{
     display: none;
   }
+
+  @include progress(10px, $color-button-primary);
 }
 
 .rating{

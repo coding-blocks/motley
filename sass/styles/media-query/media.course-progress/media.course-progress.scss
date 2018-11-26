@@ -8,9 +8,7 @@
     }
 
     .classroom-text{
-      transform: unset;
       font-size: $font-xs;
-      padding-top: 2%;
     }
 
     .classroom-image{
@@ -44,12 +42,6 @@
       font-size: $global-font-size;
       margin: 0;
     }
-
-    .progress-circle{
-      padding-right: 10px;
-      font-size: $global-font-size;
-      min-width: unset;
-    }
     
     .divider-h{
       display: block;
@@ -67,10 +59,6 @@
 
   .course-progress-heading{
     margin-bottom: 20px;
-    
-    .heading{
-      display: none;
-    }
   }
   
   .divider-h{
