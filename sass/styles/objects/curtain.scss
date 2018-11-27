@@ -1,0 +1,44 @@
+.curtains{
+  @include dimensions(100vw, 100vh);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  
+  .left, .right{
+    @include dimensions(30%, 100%);
+    transition: all 0.35s ease;
+    overflow-y: auto;
+    position: relative;
+
+    & > *{
+      @include dimensions(100%, 100%);
+      position: absolute;
+      z-index: -1;
+      transition: all 0.35s ease;
+    }
+  }
+
+  .left.collapse, .right.collapse{
+    width: 0;
+    position: static;
+    transition: all 0.35s ease;
+  }
+
+  .left.collapse{
+    & > * {
+      transform: translateX(-40%);
+    }
+  }
+
+  .right.collapse{
+    & > * {
+      transform: translateX(40%);
+    }
+  }
+
+  .main{
+    height: 100%;
+    flex: auto;
+    transition: all 0.35s ease;
+  }
+}
