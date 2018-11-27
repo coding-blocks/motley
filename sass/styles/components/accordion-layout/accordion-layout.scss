@@ -18,6 +18,7 @@
         @include dimensions(39px, 39px);
         background: $black;
         opacity: 0.13;
+        flex-shrink: 0;
     }
 
     .circle-front{
