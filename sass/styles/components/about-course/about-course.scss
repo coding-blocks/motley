@@ -33,14 +33,6 @@
     border: none;
   }
 
-  .heading-u{
-    @include margin(30px, 0, 25px, 0);
-  }
-
-  .key{
-    font-weight: $font-medium;
-  }
-
   .c-rating-stats{
     margin-bottom: 30px;
   }

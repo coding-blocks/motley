@@ -5,7 +5,7 @@
     <div class="classroom-header-box col-md-6 col-12">
         <div class="classroom-header row">
             <div class="classroom-image col-2">
-                <img src="images/c++" alt="">
+                <img class="round" src="images/c++" alt="">
             </div>
             <div class="classroom-text col-10">
                 Competitive Programming
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <p class="classroom-para">
+        <p class="classroom-para grey">
             Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted to ensure your success in challengessuch as Google CodeJam,
             Google Kickstart, ACM-ICPC, and more.
         </p>
@@ -60,26 +60,32 @@
             <div class="divider-h col-6 align-self-center"></div>
         </div>
 
-        <div class="progress row no-gutters justify-content-around align-items-center">
-            <div class="progress-circle col-3 col-md-3">
-                <div class="status-circle">
-                    <div class="circle-back"></div>
-                    <div class="circle-front d-flex flex-column justify-content-center">
-                        <p class="progress-text">26%</p>
-                    </div>
-                </div>
-            </div>
+        <div class="course-progress-detail col-5 col-md-9">
+            <p class="heading-mob">Course Progress</p>
+            {{!-- <p class="lectures-completed">12 of 46 completed</p>
+            <button class="reset-progress">Reset Progress</button> --}}
+        </div>
 
-            <div class="course-progress-detail col-5 col-md-9">
-                <p class="heading-mob">Course Progress</p>
-                <p class="lectures-completed">12 of 46 completed</p>
-                <button class="reset-progress">Reset Progress</button>
+        <div class="progress row no-gutters align-items-center mb-3">
+            <div class="progress col-10 col-md-11">
+                <progress max="100" value="25"></progress>
             </div>
+            <div class="col-2 pl-3 col-md-1">
+                26%
+            </div>
+            
+        </div>
+        <div class="row p-0 justify-content-between">
+            <span>12 of 46 Lectures Completed</span>
+            <button class="red">Reset Progress</button>
+        </div>
 
-            <div class="offset-md-5 col-4 col-md-5">
-                <div class="button-solid">
-                    <button>Resume</button>
-                </div>
+        <div class="row justify-content-around">
+            <div class="col-6 col-md-5">
+                <button class="button-solid">Buy Now</button>
+            </div>
+            <div class="col-6 col-md-5">
+                <button class="button-dashed">Resume</button>
             </div>
         </div>
     </div>
@@ -236,7 +242,8 @@
                 <div class="card">
                    {{> certificate-locked}}
                 </div>
-
+                <button class="button-solid">Submit</button>
+                <button class="button-dashed">Cancel</button>
             </div>
 
         </div>

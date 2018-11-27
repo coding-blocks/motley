@@ -44,6 +44,8 @@ https://coding-blocks.github.io/motley
  
  1. [Coding Blocks Online](https://online.codingblocks.com)
  2. [Coding Blocks Account Dashboard](https://account.codingblocks.com)
+ 3. [Coding Blocks Payments Portal](https://dukaan.codingblocks.com)
+ 4. [Coding Blocks Registration Portal](https://app.codingblocks.com)
 
  ## Maintainers
  
