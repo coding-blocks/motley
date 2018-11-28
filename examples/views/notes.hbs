@@ -1,73 +1,10 @@
 <div class="c-content-section">
-  <div class="content-section">
-    <div class="content collapse">
-      <div class="header flex-row">
-      
-        <div class="dashboard row no-gutters justify-content-between">
-          <div class="flex-row white pointer dsp-none-sm" onclick="sectionToggler()">
-            <i class="fas fa-bars fa-2x"></i>
-          </div>
-          <div class="col-5 heading-d align-self-center">
-            <div class="main-h">
-              Fast Exponentiation
-            </div>
-            <div class="sub-h">
-              Mathematics
-            </div>
-          </div>
-      
-          <div class="col-6">
-            <div class="row justify-content-end">
-              <div class="col-md-4 notify-type align-self-center">
-                <div class="notify-text">
-                  <span class="notify-dot new"></span>
-                  Solve Doubts
-                </div>
-              </div>
-      
-              <div class="button-solid col-12 col-md-4 align-self-center">
-                <button>&lt Go to Dashboard</button>
-              </div>
-            </div>
-      
-          </div>
-      
-        </div>
+  <div class="curtains">
+    <div class="left">
+      <div class="tab-nav">
+        <div class="tab-items active">Table Of Content</div>
+        <div class="tab-items">Notes(08)</div>
       </div>
-
-      <div class="content-container">
-        <div class="video-player">
-          <!--<iframe src="https://www.youtube.com/embed/mFbitwLUCRs" controls allowfullscreen></iframe>-->
-          <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
-        
-          </video>
-        
-          <div class="select-box">
-            <div class="open-select-box">
-              <ul>
-                <li>
-                  0.5x
-                </li>
-                <li>
-                  1x
-                </li>
-                <li>
-                  1.5x
-                </li>
-              </ul>
-            </div>
-            1x
-          </div>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="section">
-        <div class="tab-nav">
-          <div class="tab-items">Table Of Content</div>
-          <div class="tab-items active">Notes(08)</div>
-        </div>
 
       <div class="section-tabs">
         <div class="notes-list list-shaded spaced invert">
@@ -112,17 +49,17 @@
               </div>
             </div>
           </div>
-
+        
           <div class="list-item">
             <div class="row justify-content-center">
-                Note Deleted
+              Note Deleted
               <span class="ml-3">
                 <button class="red t-align-r">Undo</button>
               </span>
-              
+        
             </div>
           </div>
-
+        
           <div class="footer">
             <div class="list-item">
               <div class="row">
@@ -139,13 +76,97 @@
           </div>
         </div>
       </div>
-      
     </div>
+    <div class="main">
+      <div class="header flex-row">
+
+        <div class="dashboard row no-gutters justify-content-between">
+          <div class="flex-row white pointer dsp-none-xs" data-target="left">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="col-5 heading-d align-self-center">
+            <div class="main-h">
+              Fast Exponentiation
+            </div>
+            <div class="sub-h">
+              Mathematics
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="row justify-content-end">
+              <div class="col-md-4 notify-type align-self-center">
+                <div class="notify-text">
+                  <span class="notify-dot new"></span>
+                  Solve Doubts
+                </div>
+              </div>
+
+              <div class="button-solid col-12 col-md-4 align-self-center">
+                <button>&lt Go to Dashboard</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="video-player">
+          <div class="feed-overlay">
+          </div>
+          <div class="feed-box collapsed" style="bottom: 290px;">
+            <img src="images/love.svg" alt="" class="love-ico">
+          </div>
+          <div class="feed-box expanded" style="bottom: 220px;">
+            <div class="feed-text">Did you like the video?</div>
+            <form>
+              <input type="radio" name="gender" value="male" checked> Yes
+              <input type="radio" name="gender" value="female"> No
+            </form>
+            <img src="images/love.svg" alt="" class="love-ico">
+          </div>
+          <div class="feed-box">
+            <div class="feed-text">Feedback Submitted</div>
+            <img src="images/love.svg" alt="" class="love-ico">
+          </div>
+          {{!--
+        </div> --}}
+        <iframe src="https://www.youtube.com/embed/mFbitwLUCRs" controls allowfullscreen></iframe>
+        {{!-- <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+          poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
+
+        </video> --}}
+
+
+        <div class="select-box">
+          <div class="open-select-box">
+            <ul>
+              <li>
+                0.5x
+              </li>
+              <li>
+                1x
+              </li>
+              <li>
+                1.5x
+              </li>
+            </ul>
+          </div>
+          1x
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
 
 
 </div>
 
+{{!--
 <script>
   function sectionToggler() {
     var section = document.getElementsByClassName('section')[0];
@@ -154,4 +175,4 @@
     contentMedia.classList.toggle('collapse');
 
   }
-</script>
+</script> --}}
