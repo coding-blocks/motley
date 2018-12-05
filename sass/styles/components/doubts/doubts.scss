@@ -67,6 +67,8 @@
         color: whitesmoke;
         opacity: 0.5;
         font-size: 1.1rem;
+        max-height: 500px;
+        overflow: scroll;
       }
 
       .comment-toggle {
