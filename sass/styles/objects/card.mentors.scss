@@ -23,7 +23,7 @@
   .card-mentors:nth-child(#{$i+1}) {
     @extend #mentors;
     z-index: 100 - $i;
-    transform: translateX(multiply-px($i,63%)) ;
+    transform: translateX(calc($i,63%)) ;
   }
 }
 
