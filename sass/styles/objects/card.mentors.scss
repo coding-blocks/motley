@@ -1,3 +1,7 @@
+@function multiply-px($value1, $value2) {
+  @return $value1 * $value2;
+}
+
 #mentors {
   @include border-radius(50%);
   position: absolute;
