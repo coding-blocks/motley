@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px) {
+  .nagarro-banner {
+    margin: 0;
+    padding: 9% 15%;
+    width: 100%;
+    height: auto;
+
+    .information {
+      text-align: center;
+      height: auto;
+  
+      .highlights {
+        justify-content: space-around;
+
+        .highlight {
+          margin-right: 0
+        }
+      }
+  
+      .button-solid {
+        margin: 0 auto;
+      }
+    }
+
+    .logo {
+      width: 80px;
+      right: 0;
+      top:50px;
+    }
+
+    .banner-image {
+      justify-content: center;
+      align-items: center
+    }
+  }  
+}
