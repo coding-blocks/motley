@@ -60,6 +60,14 @@
     .section-tabs{
       height: auto;
     }
+
+    .curtains{
+      flex-direction: column;
+
+      .left, .main, .right{
+        width: 100%;
+      }
+    }
   }
 }
 
