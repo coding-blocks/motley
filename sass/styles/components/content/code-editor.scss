@@ -6,7 +6,7 @@
 }
 
 #editor{
-  @include dimensions(100%, 60%);
+  @include dimensions(100%, 50%);
   font-size: $font-xs;
   background: $editor-background;
 
@@ -17,28 +17,21 @@
 }
 
 .editor-options{
-  @include dimensions(100%, 100px);
-  max-height: 100px;
+  @include dimensions(100%, 55px);
+  max-height: 55px;
   background-color: $global-font-text-color;
   padding-left: 18px;
   padding-right: 30px;
 
   .select-box {
     background: $editor-line-number;
-    text-indent: 25px;
-    width: 221px;
-    height: 61px;
+    width: 187px;
+    height: 35px;
     color: $white;
-    display: flex;
-    align-items: center;
-
-     span {
-       float:right;
-     }
   }
 
   .open-select-box {
-    @include dimensions(221px, 170px);
+    @include dimensions(187px, 170px);
     margin-bottom: 4px;
     position: absolute;
     background: $editor-line-number;
@@ -60,16 +53,16 @@
   }
 
   .button-solid{
-    @include dimensions(140px, 45px);
+  
   }
 }
 
 .options-result{
-  @include dimensions(100%, 40%);
+  @include dimensions(100%, 50%);
 }
 
 .result {
-  @include dimensions(100%, calc(100% - 100px));
+  @include dimensions(100%, calc(100% - 35px));
 
   .button-solid {
     @include dimensions(100px, 40px);
@@ -102,7 +95,7 @@
 
 .output, .input {
   height: 100%;
-  padding-top: 22px;
+  padding-top: 10px;
 
   .heading {
     p {
@@ -125,6 +118,5 @@
 
   .row:nth-child(2) {
     height: calc(100% - 85px);
-    margin-top: 20px;
   }
 }

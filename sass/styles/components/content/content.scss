@@ -44,7 +44,7 @@
     }
 
     .button-solid{
-        @include dimensions(100%, 44px);
+        // @include dimensions(100%, 44px);
         text-align: center;
         font-size: $font-sm;
         max-width: 175px;
