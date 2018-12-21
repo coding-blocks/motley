@@ -1,6 +1,7 @@
 .c-doubts {
   background-color: #181818;
   color: $white;
+  overflow-y: auto;
 
   .top {
     position: sticky;
