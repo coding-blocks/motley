@@ -6,6 +6,7 @@
   
   .left, .right{
     @include dimensions(30%, 100%);
+    min-width: 30%;
     transition: all 0.35s ease;
     overflow-y: auto;
     position: relative;
@@ -20,6 +21,7 @@
 
   .left.collapse, .right.collapse{
     width: 0;
+    min-width: unset;
     position: static;
     transition: all 0.35s ease;
   }
