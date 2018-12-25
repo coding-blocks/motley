@@ -28,18 +28,18 @@
 
     .row {
         @include padding-mixin(0, 0, 0, 0);
-    }    
+    }
 
     .attributes {
         height: auto;
         justify-content: space-between;
         font-weight: $font-normal;
-        
+
         .flex-row {
           @include padding-mixin(15px, 0, 15px, 0);
           justify-content: space-between;
         }
-        
+
         .detail-row {
             @include margin(0, 0, 20px, 0);
         }
@@ -48,6 +48,7 @@
     .input-text {
         @include padding-mixin(0, 20px, 0, 20px);
         color: $navLink;
+        border: none;
     }
 
     .dropdown-ul {
