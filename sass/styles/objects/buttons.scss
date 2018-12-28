@@ -52,8 +52,18 @@
 
 .button-solid.disabled {
   background-image: $button-gradient-disabled;
+  box-shadow:  0 10px 41px 0 $button-gradient-disabled;
   button {
     cursor: default;
     pointer-events:none;
   }
+}
+
+button:disabled{ 
+  background-image: $button-gradient-disabled;
+  &:hover{
+    box-shadow:  unset;
+  }
+  color: $white;
+  cursor: default;
 }
