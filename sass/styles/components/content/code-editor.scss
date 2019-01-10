@@ -17,8 +17,8 @@
 }
 
 .editor-options{
-  @include dimensions(100%, 55px);
-  max-height: 55px;
+  width: 100%;
+  min-height: 55px;
   background-color: $global-font-text-color;
   padding-left: 18px;
   padding-right: 30px;
