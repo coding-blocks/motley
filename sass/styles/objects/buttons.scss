@@ -46,6 +46,11 @@
   box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);
 }
 
+.button-solid:active {
+  transform: translate (1px, -1px);
+  box-shadow: 2px 1px 5px rgba(236, 131, 122, 0.8);
+}
+
 .button-dashed {
   border: 2px solid;
 }
