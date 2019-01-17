@@ -17,8 +17,6 @@
 
   .bottom {
     position: sticky;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     bottom: 0;
     @include dimensions(100%, 65px);
