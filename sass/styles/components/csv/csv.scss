@@ -7,7 +7,7 @@
 
   .top {
     padding: 2.5rem;
-    padding-bottom: 0;
+    padding-bottom: 65px;
     .description {
       color: #666;
       font-size: 1.1rem;
@@ -16,7 +16,7 @@
   
 
   .bottom {
-    position: sticky;
+    position: absolute;
     flex-wrap: wrap;
     bottom: 0;
     @include dimensions(100%, 65px);
