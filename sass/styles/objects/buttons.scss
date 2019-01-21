@@ -33,7 +33,7 @@
     @extend %button-text;
     @include border-radius($border-radius);
     @include flexbox(row, center, center);
-    background-color: $background;
+    background: $background;
     color: $color;
     max-width: $width;
     height: $height;
