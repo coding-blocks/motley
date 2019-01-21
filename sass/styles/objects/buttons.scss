@@ -17,7 +17,7 @@
   $solid-button-width,
   $solid-button-height,
   $solid-button-border-radius,
-  $button-gradient,
+  $color-button-primary,
   $solid-button-color,
   15px),
 
@@ -33,7 +33,7 @@
     @extend %button-text;
     @include border-radius($border-radius);
     @include flexbox(row, center, center);
-    background: $background;
+    background-color: $background;
     color: $color;
     max-width: $width;
     height: $height;
