@@ -28,11 +28,14 @@
 }
 
 .home-row {
-   position: relative;
+  min-height: 320px;
+  position: relative;
+  margin-bottom: 12%;
+
   .home-column {
     position: static;
   }
-  margin-bottom: 3%;
+  
 }
 
 .custom-heading{
@@ -47,4 +50,19 @@
 
 .home-vh {
   //height: 35vh;
+}
+
+.phone{
+  @include dimensions(100%, 555px);
+  max-width: 292px;
+  z-index: 200;
+  position: absolute;
+  transform: translate(0%, -25%);
+}
+
+.phone-content{
+  @include dimensions(84%, 95%);
+  z-index: -100;
+  position: absolute;
+  top: 2%
 }

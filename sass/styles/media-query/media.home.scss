@@ -1,4 +1,4 @@
-@media all and (max-width: 1334px){
+@media all and (max-width: 1048px){
   .home-container{
     padding-left: 0;
 
@@ -7,6 +7,11 @@
       margin:0 auto;
       width: 80%;
     }
+  }
+
+  .phone{
+    height: auto;
+    transform: none;
   }
 
   .home-heading{
@@ -44,6 +49,10 @@
 @media all and(max-width: 767px){
   .home-img{
     max-width: unset;
+  }
+
+  .home-row{
+    margin-bottom: 20%;
   }
 }
 
