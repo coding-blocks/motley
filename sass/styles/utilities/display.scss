@@ -11,7 +11,9 @@ in
   }
 }
 
-//display none for screen sizes
+
+// display-none for screen sizes
+
 @each $size, $label in 
 (575px, xs),
 (767px, sm),

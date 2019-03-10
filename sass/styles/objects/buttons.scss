@@ -3,7 +3,7 @@
   @include font($global-font-family, $global-font-size, inherit);
 }
 
-@each $type,$width, $height, $border-radius,$background, $color, $padding
+@each $type,$width, $height, $border-radius,$background, $color, $padding-top-bottom, $padding-right-left
         in
   (dashed,
   $dashed-button-width,
@@ -11,7 +11,7 @@
   $dashed-border-radius,
   $dashed-button-background,
   $dashed-button-color,
-  10px),
+  10px, 15px),
 
   (solid,
   $solid-button-width,
@@ -19,7 +19,7 @@
   $solid-button-border-radius,
   $color-button-primary,
   $solid-button-color,
-  15px),
+  10px, 15px),
 
   (circle,
   $circle-button-width,
@@ -27,17 +27,16 @@
   $circle-button-border-radius,
   $circle-button-background,
   $circle-button-color,
-  0){
+  0, 0){
 
   .button-#{$type} {
     @extend %button-text;
     @include border-radius($border-radius);
-    @include flexbox(row, center, center);
     background-color: $background;
     color: $color;
-    max-width: $width;
-    height: $height;
-    padding: 0 $padding;
+    // max-width: $width;
+    // height: $height;
+    padding: $padding-top-bottom $padding-right-left;
   }
 }
 

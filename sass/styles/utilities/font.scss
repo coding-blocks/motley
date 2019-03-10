@@ -1,0 +1,53 @@
+// FONT SIZE
+
+$list: (font-xs, $font-xs)
+	   (font-sm, $font-sm)
+	   (font-mds, $font-mds)
+	   (font-md, $font-md)
+	   (font-lg, $font-lg)
+	   (font-xl, $font-xl)
+	   (card-md, $card-md)
+	   (card-mds, $card-mds)
+	   (card-sm, $card-sm)
+	   (card-sms, $card-sms)
+	   (card-xs, $card-xs);
+
+@each $type, $size in $list {
+  .#{$type}{
+    font-size: $size  !important;
+  }
+}
+
+
+// FONT STYLE
+
+.i{
+    font-style: italic !important;
+}
+
+.bold{
+    font-weight: $font-medium !important;
+}
+
+.normal{
+    font-weight: $font-normal !important;
+}
+
+
+// FONT WEIGHT
+
+.regular{
+  font-weight: $regular;
+}
+
+.semi-bold{
+  font-weight: $semi-bold;
+}
+
+.bold{
+  font-weight: $bold;
+}
+
+.extra-bold{
+  font-weight: $extra-bold;
+}

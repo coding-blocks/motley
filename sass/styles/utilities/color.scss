@@ -1,11 +1,44 @@
-$list:  (red, $button-element-level)
+// COLORS
+
+$color-list:  (red, $button-element-level)
         (black, $global-font-text-color)
         (white, $white )
         (grey, $navLink)
         (green, $font-complete);
 
-@each $type, $color in $list {
+@each $type, $color in $color-list {
   .#{$type}{
       color: $color  !important;
+  }
+}
+
+
+// BACKGROUND COLORS
+
+$background-list:  (red, $fail-red)
+        (black, $global-font-text-color)
+        (white, $white )
+        (grey, $nav-border)
+        (green, $font-complete)
+        (incorrect, $font-sub-heading);
+
+@each $type, $color in $background-list {
+  .bg-#{$type}{
+    background-color: $color  !important;
+  }
+}
+
+.invert{
+  background-color: $invert;
+  color: $white;
+}
+
+// GRADIENTS
+
+$gradient-list: (black, linear-gradient(30deg, #333333, #000000));
+
+@each $type, $color in $gradient-list {
+  .gradient-#{$type}{
+    background-image: $gradient-black  !important;
   }
 }

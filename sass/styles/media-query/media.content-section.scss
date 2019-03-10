@@ -67,6 +67,10 @@
       .left, .main, .right{
         width: 100%;
       }
+
+      .main {
+        height: 50%;
+      }
     }
   }
 }
@@ -87,7 +91,7 @@
     }
 
     .content-container{
-        height: calc(100vh - 206px);
+        height: calc(100% - 75px);
     }
   }
 
