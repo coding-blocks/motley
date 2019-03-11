@@ -1,0 +1,7 @@
+.img-desc{
+  @include flexbox(row);
+
+  & .description{
+    @include flexbox(column, space-between);
+  }
+}
