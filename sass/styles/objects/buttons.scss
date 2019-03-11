@@ -34,9 +34,11 @@
     @include border-radius($border-radius);
     background-color: $background;
     color: $color;
-    // max-width: $width;
-    // height: $height;
     padding: $padding-top-bottom $padding-right-left;
+
+    &.lg{
+      padding: 15px 30px;
+    }
   }
 }
 

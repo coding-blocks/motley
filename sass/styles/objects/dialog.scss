@@ -1,0 +1,30 @@
+.dialog{
+  border: solid 1px #e8e8e8;
+  border-radius: 10px;
+  position: relative;
+  padding: 2.2rem;
+
+  &::before{
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      right: 10%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 35px 0 0;
+      border-color: #e8e8e8 transparent transparent transparent;
+    }
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    right: 10%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 29px 34px 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
+}

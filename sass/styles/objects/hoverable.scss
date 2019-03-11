@@ -1,0 +1,16 @@
+.hoverable{
+  position: relative;
+
+  &:hover{
+    .pop-up{
+      display: block;
+    }
+  }
+
+  .pop-up{
+    position: absolute;
+    display: none;
+    z-index: 200;
+    top: 0;
+  }
+}

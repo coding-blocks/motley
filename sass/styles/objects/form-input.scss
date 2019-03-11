@@ -1,10 +1,12 @@
 /*--------------------------INPUT TEXT---------------------------*/
 .input-text {
-  @include dimensions(100%, 60px);
-  font-size: $font-sm;
-  padding: 0 50px;
-  background-color: $nav-border;
-  
+  @include dimensions(100%, 47px);
+  font-size: $font-mds;
+  padding: 0 20px;
+  background-color: $card-mentor;
+  border: none;
+  border-radius: 10px;
+
   &.icon{
     background-size: 25px;
     padding-left: 80px;
