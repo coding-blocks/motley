@@ -35,10 +35,10 @@ $background-list:  (red, $fail-red)
 
 // GRADIENTS
 
-$gradient-list: (black, linear-gradient(30deg, #333333, #000000));
+// $gradient-list: (black, linear-gradient(30deg, #333333, #000000));
 
-@each $type, $color in $gradient-list {
-  .gradient-#{$type}{
-    background-image: $gradient-black  !important;
-  }
-}
+// @each $type, $color in $gradient-list {
+//   .gradient-#{$type}{
+//     background-image: linear-gradient(30deg, #333333, #000000)  !important;
+//   }
+// }
