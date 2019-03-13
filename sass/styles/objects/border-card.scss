@@ -1,6 +1,21 @@
-.border-card {
+%border-card{
     @include dimensions(100%, auto);
-    border-radius: 10px;
-    border: solid 1px rgba(204, 204, 204, 0.21);
+    border-radius: 15px;
+    border: solid 1px #e8e8e8;
+    background-color: $white;
+}
+
+.border-card {
+    @extend %border-card;
     padding: 30px;
+}
+
+.back-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    background-color: $nav-border;
 }

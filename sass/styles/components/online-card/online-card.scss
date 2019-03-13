@@ -1,59 +1,43 @@
 .online-card {
   overflow: hidden;
   height: auto;
+  background-color: $white;
 
-  .head {
-    color: white;
-    position: relative;
-    height: 260px;
+   .difficulty-dots {
+    right: 25px;
+    top: 20px;
+    text-align: center;
+  }
 
-    .back-img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  
+  .course-name {
+    margin-top: 14px;
+    font-size: $font-mds;
+    font-weight: $extra-bold;
+  }
 
-    .front-text {
-      @include padding-mixin (30px, 3px, 46px, 3px);
-      z-index: 100;
+  .course-description {
+    font-size: $card-md;
+  }
 
-      .round-img-b {
-        @include dimensions (90px, 90px);
-        min-height: 90px;
-      }
-
-      .course-name {
-        @include margin (14px, 0px, 5px, 0px);
-        font-size: $font-mds;
-      }
-
-      .course-description {
-        font-size: $card-md;
-      }
-
-      .rating {
-        @include margin (12px, 0, 0, 0);
-        padding: 0;
-      }
-    }
+  .rating {
+    @include margin (10px, 0, 0, 0);
+    padding: 0;
   }
 
   .foot {
-    @include padding-mixin (30px, 30px, 38px, 30px);
-
     .button-row {
-      margin-top: 9%;
+      margin-top: 3%;
       width: 100%;
       font-size: $font-xs; 
     }
   }
 
   .card-mentor {
-    margin-top: 28px;
+    margin: 30px 0;
 
     .card-mentor-text {
-      font-size: $card-mds;
+      font-size: $card-md;
       padding-left: 15px;
     }
 
@@ -62,16 +46,30 @@
     }
   }
 
+  .divider-h{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
   .no-gutters {
     margin: 0;
     padding: 0;
   }
 
-  .center-text {
-    text-align: center;
-  }
-
   .details{
     flex: 1;
   }
+
+//css for popup online-card
+  &.pop-up{
+    width: 144%;
+    left: -23%;
+    top: -12%;
+    @include padding-mixin (40px, 40px, 24px, 40px);
+
+    .round-img{
+      @include dimensions(85px, 85px);
+    }
+  }
 }
+

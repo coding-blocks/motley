@@ -18,7 +18,7 @@ $color-list:  (red, $button-element-level)
 $background-list:  (red, $fail-red)
         (black, $global-font-text-color)
         (white, $white )
-        (grey, $nav-border)
+        (grey, $search-box-color)
         (green, $font-complete)
         (incorrect, $font-sub-heading);
 
@@ -35,10 +35,12 @@ $background-list:  (red, $fail-red)
 
 // GRADIENTS
 
-// $gradient-list: (black, linear-gradient(30deg, #333333, #000000));
+$gradient-list: (black, 'lr', linear-gradient(30deg, #333333, #000000)),
+(black, 'bt', linear-gradient(30deg, #333333, #000000))
+;
 
-// @each $type, $color in $gradient-list {
-//   .gradient-#{$type}{
-//     background-image: linear-gradient(30deg, #333333, #000000)  !important;
-//   }
-// }
+@each $type, $direction, $value in $gradient-list {
+  .gradient-#{$type}-#{$direction}{
+    background-image: linear-gradient(30deg, #333333, #000000)  !important;
+  }
+}

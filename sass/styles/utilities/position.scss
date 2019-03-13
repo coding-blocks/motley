@@ -1,0 +1,35 @@
+@each $type in 
+('static')
+('relative')
+('absolute')
+('sticky')
+('fixed')
+{
+  .position-#{$type}{
+    position: #{$type};
+  }
+}
+
+.tl{
+  top: 0;
+  left: 0;
+}
+
+.tr{
+  top: 0;
+  right: 0;
+}
+
+.bl{
+  bottom: 0;
+  left: 0;
+}
+
+.br{
+  bottom: 0;
+  right: 0;
+}
+
+.z-neg{
+  z-index: -1;
+}

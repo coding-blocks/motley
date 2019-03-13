@@ -1,5 +1,5 @@
 %bold {
-  font-weight: $font-medium;
+  font-weight: $extra-bold;
 }
 
 // Heading with Sub-Description
@@ -23,8 +23,7 @@
   @include padding-mixin(0, 60px, 10px, 0);
   @include margin(0, 0, 30px, 0);
   border-bottom: solid 1px $global-font-text-color;
-  color: $global-font-text-color;
-  font-size: $font-md;
+  font-size: $font-xl;
   @extend %bold;
   display: inline-block;
 }
@@ -50,5 +49,5 @@
 .heading{
     @extend %bold;
     text-transform: capitalize;
-    font-size: $font-md;
+    font-size: $font-xl;
 }

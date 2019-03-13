@@ -1,0 +1,18 @@
+.c-testimonial{
+  height: 206px;
+
+  .content{
+    max-height: 80px;
+    overflow: auto;
+  }
+
+  .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 2.2rem;
+    right: 2.2rem;
+  }
+  .img-container{
+    width: 35%;
+  }
+}

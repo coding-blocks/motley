@@ -1,3 +1,36 @@
 .border-none{
   border: none !important;
 }
+
+// BORDERS DIRECTIONS
+.border {
+  border: solid 1px $search-box-color;
+}
+
+@each $direction in ('top', 'right', 'bottom', 'left')
+{
+  .b-#{$direction}{
+    border-#{$direction}: solid 1px $search-box-color;
+  }
+}
+
+// BORDER COLOR
+@each $type, $color in 
+('red', $red),
+('green', $light-green),
+('black', $black)
+{
+  .b-#{$type}{
+    border-color: $color !important;
+  }
+}
+
+//BORDER RADIUS
+@each $value in
+(10),
+(15)
+{
+  .br-#{$value}{
+    border-radius: #{$value}px;
+  }
+}

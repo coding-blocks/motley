@@ -10,13 +10,12 @@
 .card-stack {
   margin-left: 320px;
   height: 100%;
-  .card {
-    @include dimensions(281px, 265px);
+  .border-card {
+    @include dimensions(230px, 265px);
     padding: 20px 25px;
-    border: none;
   }
 
-  .card:nth-child(2) {
+  .border-card:nth-child(2) {
     left: -290px;
   }
 
@@ -26,10 +25,10 @@
 
    }
 
-  .card:nth-child(3) {
-    height: 239px;
-    transform: translateY(5%);
-    left: 60px;
+  .border-card:nth-child(3) {
+    height: 190px;
+    transform: translateY(20%);
+    left: 45px;
     .button-solid {
       display: none;
     }
@@ -43,9 +42,9 @@
       display: none;
     }
   }
-  .card:nth-child(4) {
+  .border-card:nth-child(4) {
     height: 142px;
-    left: 95px;
+    left: 70px;
     position: absolute;
     transform: translateY(45%);
      .button-solid {
