@@ -1,0 +1,83 @@
+.home-banner {
+  @include dimensions(100%, 500px);
+  background-image: url('/images/home_bg.jpg');
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 500px;
+
+    .button-solid {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background-color: white;
+      color: #692fdc;
+    }
+  }
+}
+
+.feature-set {
+  padding: 60px 0;
+
+  .feature {
+    max-width: 175px;
+    font-size: 13px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 16px;
+      margin-top: 50px;
+    }
+  }
+}
+
+.partners {
+  @include flexbox(row, space-between, center);
+  flex-wrap: wrap;
+  padding: 51px 0;
+  font-size: 22px;
+  background-color: #fdfdfd;
+
+  .left {
+    max-width: 450px;
+  }
+}
+
+.success-stories {
+  font-size: 20px;
+
+  .video {
+    @include dimensions(100%, 390px);
+    background: linear-gradient(to right, #f09086, #f9897b);
+  }
+}
+
+.recommended-jobs {
+  padding: 53px 19%;
+
+  .job-cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    & > div {
+      width: 430px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    height: 300px;
+
+    button {
+      font-size: 20px;
+    }
+  }
+  
+}
