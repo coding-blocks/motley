@@ -28,7 +28,8 @@
 //BORDER RADIUS
 @each $value in
 (10),
-(15)
+(15),
+(20)
 {
   .br-#{$value}{
     border-radius: #{$value}px;

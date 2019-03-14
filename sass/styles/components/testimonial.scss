@@ -2,17 +2,19 @@
   height: 206px;
 
   .content{
-    max-height: 80px;
+    height: 80px;
     overflow: auto;
+    margin-bottom: 10px;
   }
 
   .footer{
-    width: 100%;
-    position: absolute;
-    bottom: 2.2rem;
-    right: 2.2rem;
+    float: right; 
+    text-align: right;
+
   }
+
   .img-container{
-    width: 35%;
+    max-height: 30px;
+    overflow: hidden;
   }
 }
