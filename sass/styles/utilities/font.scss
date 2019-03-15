@@ -37,17 +37,17 @@ $list: (font-xs, $font-xs)
 // FONT WEIGHT
 
 .regular{
-  font-weight: $regular;
+  font-weight: $regular !important;
 }
 
 .semi-bold{
-  font-weight: $semi-bold;
+  font-weight: $semi-bold !important;
 }
 
 .bold{
-  font-weight: $bold;
+  font-weight: $bold !important;
 }
 
 .extra-bold{
-  font-weight: $extra-bold;
+  font-weight: $extra-bold !important;
 }

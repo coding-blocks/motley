@@ -1,10 +1,34 @@
+%heading {
+  margin: 0;
+  font-weight: $extra-bold;
+}
+
 h1 {
-  @include margin(0, 0, 0, 0);
-  font-weight: $global-font-weight;
+  @extend %heading;
+  font-size: $font-xxl;
 }
 
 h2 {
-  @include margin(0, 0, 0, 0);
-  font-size: 24px;
-  font-weight: 800;
+  @extend %heading;
+  font-size: $font-xl;
+}
+
+h3 {
+  @extend %heading;
+  font-size: $font-lg;
+}
+
+h4 {
+  @extend %heading;
+  font-size: $font-md;
+}
+
+h5 {  
+  @extend %heading;
+  font-size: $font-mds;
+}
+
+h6 {
+  @extend %heading;
+  font-size: $font-sm;
 }
