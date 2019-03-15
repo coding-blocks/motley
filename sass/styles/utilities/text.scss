@@ -29,3 +29,24 @@
     text-align: center !important;
   }
 }
+
+// responsive versions of text-aligns; 
+// works similarly as boostrap 4
+
+@each $size, $label in 
+(576px, sm),
+(768px, md),
+(992px, lg)
+{
+  @media screen and(min-width: $size){
+    .t-align-#{$label}-r{
+      text-align: right !important;
+    }
+    .t-align-#{$label}-l{
+      text-align: left !important;
+    }
+    .t-align-#{$label}-c{
+      text-align: center !important;
+    }
+  }
+}
