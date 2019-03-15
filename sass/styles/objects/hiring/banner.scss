@@ -22,17 +22,13 @@
 
 .feature-set {
   @include padding-y(60px);
+  font-size: 0.92rem;
 
-  .feature {
-    max-width: 175px;
-    font-size: 0.92rem;
-
-    h3 {
-      font-weight: bold;
-      font-size: 1.42rem;
-      margin-bottom: 16px;
-      margin-top: 50px;
-    }
+  h3 {
+    font-weight: bold;
+    font-size: 1.42rem;
+    margin-bottom: 16px;
+    margin-top: 50px;
   }
 }
 
@@ -50,14 +46,10 @@
 }
 
 .recommended-jobs {
+  background-color: #fdfdfd;
   
-
   .bottom {
-    display: flex;
-    align-items: center;
     font-size: 1.57rem;
-    height: 300px;
-
     button {
       font-size: 1.42rem;
     }
