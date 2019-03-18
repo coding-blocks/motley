@@ -21,35 +21,23 @@
 }
 
 .feature-set {
-  padding: 60px 0;
+  @include padding-y(60px);
+  font-size: 0.92rem;
 
-  .feature {
-    max-width: 175px;
-    font-size: 13px;
-
-    h3 {
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 16px;
-      margin-top: 50px;
-    }
+  h3 {
+    font-weight: bold;
+    font-size: 1.42rem;
+    margin-bottom: 16px;
+    margin-top: 50px;
   }
 }
 
 .partners {
-  @include flexbox(row, space-between, center);
-  flex-wrap: wrap;
-  padding: 51px 0;
-  font-size: 22px;
-  background-color: #fdfdfd;
-
-  .left {
-    max-width: 450px;
-  }
+  font-size: 1.57rem;
 }
 
 .success-stories {
-  font-size: 20px;
+  font-size: 1.42rem;
 
   .video {
     @include dimensions(100%, 390px);
@@ -58,25 +46,12 @@
 }
 
 .recommended-jobs {
-  padding: 53px 19%;
-
-  .job-cards {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    & > div {
-      width: 430px;
-    }
-  }
-
+  background-color: #fdfdfd;
+  
   .bottom {
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    height: 300px;
-
+    font-size: 1.57rem;
     button {
-      font-size: 20px;
+      font-size: 1.42rem;
     }
   }
   
