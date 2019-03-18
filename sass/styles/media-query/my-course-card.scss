@@ -1,7 +1,13 @@
+@media screen and (max-width: 767px){
+  .my-course-card{
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 576px) and (max-width: 767px){
   .my-course-card{
     .course-progress{
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
   }
 }
@@ -13,10 +19,6 @@
       margin-bottom: 10px;
     }
     .button-solid{
-      width: 110px;
-      .fas{
-        margin-right: 5px;
-      }
     }
   }
 }

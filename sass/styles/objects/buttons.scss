@@ -1,6 +1,6 @@
 
 %button-text {
-  @include font($global-font-family, $global-font-size, inherit);
+  @include font($global-font-family, $font-xs, inherit);
 }
 
 @each $type,$width, $height, $border-radius,$background, $color, $padding-top-bottom, $padding-right-left

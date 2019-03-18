@@ -1,7 +1,7 @@
 %button-config{
   @include dimensions(100%, 42px);
   @include border-radius(40px);
-  font-size: $global-font-size;
+  font-size: $font-xs;
   font-weight: $font-medium;
   max-width: 190px;
 }
@@ -10,7 +10,7 @@
   @include dimensions(100%, auto);
   position: fixed;
   top: 70px;
-  z-index: 101;
+  z-index: 300;
   padding: 10px 4%;
   background-color: $vp-background;
   transition: all 0.35s ease;
@@ -36,7 +36,7 @@
   }
 
   .sub-h{
-    font-size: $global-font-size;
+    font-size: $font-xs;
   }
 
   .button-solid{

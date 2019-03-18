@@ -46,7 +46,7 @@
   .button-dashed{
     @include dimensions(152px, 48px);
     @include margin(60px, auto, 0, auto);
-    font-size: $global-font-size;
+    font-size: $font-xs;
     border-radius: 24px;
   }
 

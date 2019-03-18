@@ -6,12 +6,16 @@
 }
 
 @media screen and (max-width: 767px) {
-  .c-layout-card {
+  .online-card {
     padding: 0;
+
+    .course-name{
+      text-align: center;
+    }
 
     .footer {
       text-align: left;
-      font-size: $global-font-size;
+      font-size: $font-xs;
     }
 
     .card-mentor{
@@ -100,7 +104,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .c-layout-card{
+  .online-card{
     .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details{
       font-size: $card-sms;
     }

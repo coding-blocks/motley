@@ -1,0 +1,9 @@
+// div to provide background with negative z-index
+.back-div{
+  @include dimensions(100%, 80%);
+  background-color: #fdfdfd;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}

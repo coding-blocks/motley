@@ -13,13 +13,14 @@
       height: 100%;
       object-fit: cover;
     }
+
+    .content {
+      @include padding-mixin (25px, 25px, 46px, 25px);
+      @include dimensions(100%, 100%);
+      z-index: 100;
+    }
   }
 
-  .head-content {
-    @include padding-mixin (25px, 25px, 46px, 25px);
-    @include dimensions(100%, 100%);
-    z-index: 100;
-  }
 
   .foot{
     @include padding-mixin (55px, 30px, 23px, 30px);
@@ -30,8 +31,16 @@
       @include dimensions (86px, 86px);
       min-height: 86px;
       position: absolute;
-      top: -43px;
+      bottom: -43px;
       left: 30px;
   }
   
+}
+
+@media screen and (max-width: 767px){
+  .img-card{
+    .round-img-b{
+      position: static;
+    }
+  }
 }

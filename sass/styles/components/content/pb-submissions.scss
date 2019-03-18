@@ -59,7 +59,7 @@
   }
 
   .para{
-    font-size: $global-font-size;
+    font-size: $font-xs;
     text-align: center;
   }
 
@@ -80,7 +80,7 @@
   .button-solid{
     @include dimensions(46%, 42px);
     margin: 10px auto;
-    font-size: $global-font-size;
+    font-size: $font-xs;
     max-width: 150px;
   }
 }

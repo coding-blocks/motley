@@ -11,12 +11,12 @@
   margin-left: 320px;
   height: 100%;
   .border-card {
-    @include dimensions(230px, 265px);
+    @include dimensions(250px, 300px);
     padding: 20px 25px;
   }
 
   .border-card:nth-child(2) {
-    left: -290px;
+    left: -255px;
   }
 
    .card:hover {
@@ -27,8 +27,8 @@
 
   .border-card:nth-child(3) {
     height: 190px;
-    transform: translateY(20%);
-    left: 45px;
+    transform: translateY(30%);
+    left: 60px;
     .button-solid {
       display: none;
     }
@@ -44,9 +44,9 @@
   }
   .border-card:nth-child(4) {
     height: 142px;
-    left: 70px;
+    left: 80px;
     position: absolute;
-    transform: translateY(45%);
+    transform: translateY(57%);
      .button-solid {
        display: none;
      }
@@ -78,7 +78,7 @@
   }
 
   .card-text {
-    font-size: $global-font-size;
+    font-size: $font-xs;
     word-wrap: break-word;
     width: 90%;
   }

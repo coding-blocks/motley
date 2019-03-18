@@ -27,7 +27,7 @@
         display: block;
 
         .pos-rating, .neg-rating{
-          font-size: $global-font-size;
+          font-size: $font-xs;
         }
       }
     }
@@ -39,7 +39,7 @@
 
     .button-solid, .button-dashed  {
       height: 45px;
-      font-size: $global-font-size;
+      font-size: $font-xs;
       margin: 0;
     }
     
@@ -54,7 +54,7 @@
   }
 
   .course-progress-heading, .lectures-completed{
-    font-size: $global-font-size;
+    font-size: $font-xs;
   }
 
   .course-progress-heading{
@@ -70,10 +70,6 @@
     font-size: $font-xs;
     font-weight: $font-medium;
     display: block;
-  }
-
-  p{
-    margin: 0;
   }
 
   .reset-progress, .edit-rating{

@@ -9,6 +9,10 @@
     text-align: center;
   }
 
+  .enrollment{
+    text-align: center; 
+  }
+
   
   .course-name {
     margin-top: 14px;
@@ -43,6 +47,7 @@
 
     .card-mentor-name {
       font-size: $font-xs;
+      font-weight: $semi-bold;
     }
   }
 
@@ -72,4 +77,17 @@
     }
   }
 }
+
+@media screen and (max-width: 767px){
+  .online-card{
+    .head{
+      .content{
+        align-items: center;
+        padding: 15px 5px;
+      }
+    }
+  }
+}
+
+
 

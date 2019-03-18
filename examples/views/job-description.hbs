@@ -1,7 +1,7 @@
 {{> nav-bar}}
-<div class="container">
-  <div class="row no-gutters mt-5">
-    <div class="col-12 col-md-8">
+<div class="container c-job-description">
+  <div class="row mt-5">
+    <div class="col-12 col-lg-8">
       <div class="border-card p-5 mb-5">
         <div class="row no-gutters">
           <div class="col-12 col-md-6">
@@ -24,9 +24,11 @@
               </div>
             </div>
           </div>
+
+          <div class="divider-h d-md-none mt-4 mb-4"></div>
           
           <div class="col-12 col-md-6">
-            <div class="d-flex font-sm">
+            <div class="row font-sm pl-3">
               <div class="col-6">
                 <div class="mb-3">
                   Job Location: <span class="extra-bold">Noida</span>
@@ -50,10 +52,10 @@
           </div>
         </div>
       </div>
-      <div class="gradient-violet-lr p-4 white">
+      <div class="gradient-violet-lr p-4 white d-lg-none">
         View Job Description
       </div>
-      <div class="border-card p-5">
+      <div class="border-card job-description p-md-5 mb-4">
         <div class="font-md extra-bold mb-4">
           Job Description
         </div>
@@ -145,9 +147,9 @@
 
       </div>
     </div>
-    <div class="col-12 col-md-4 pl-5">
+    <div class="col-12 col-lg-4 pl-lg-5">
       <div class="position-relative br-10 overflow-hidden">
-        <div class="position-absolute tl z-neg bg-grey br-10 w-100 h-75"></div>
+        <div class="back-div br-10"></div>
         
         <div class="gradient-black-bt p-5">
           <div class="d-flex justify-content-between white mb-2 font-sm">
@@ -169,21 +171,28 @@
               complete these courses
             </div>
           </div>
-
-          <div class="img-card online-card mb-5">
+        </div>
+        <div class="p-0 p-md-5">
+          <div class="img-card online-card mb-4">
             <div class="head d-flex">
               <img class="back-img" src="images/android.svg">
-              <div class="difficulty-dots">
+              <div class="difficulty-dots dsp-none-sm">
                 <div class="pos-diff"></div>
                 <div class="pos-diff"></div>
                 <div class="neg-diff"></div>
                 <div>Medium</div>
               </div>
-              <div class="head-content d-flex flex-column justify-content-center">
+              <div class="content d-flex flex-column justify-content-center">
+                <div class="round-img-b">
+                  <img src="images/android-logo.svg">
+                </div>
                 <div class="course-name center-text">
                   Android App Development
                 </div>
-
+                <div class="i course-description t-align-c d-md-none">
+                  Learn how to make ubercool Android Apps with Java and Kotlin
+                </div>
+        
                 <div class="rating">
                   <span class="pos-rating">
                     <i class="fas fa-star"></i>
@@ -205,38 +214,62 @@
               </div>
             </div>
             <div class="foot">
-              <div class="round-img-b">
-                <img src="images/android-logo.svg">
+              <div class="card-mentor d-md-none">
+                <!--<div class="row no-gutters">-->
+                <div class="card-mentor-image">
+                  <img class="card-mentors" src="https://avatars0.githubusercontent.com/u/1327050?s=460&v=4"></img>
+                  <img class="card-mentors" src="https://avatars0.githubusercontent.com/u/1327050?s=460&v=4"></img>
+                </div>
+                <div class="card-mentor-text">
+                  <span>Instructors</span>
+                  <div class="card-mentor-name">Prateek Narang, Arnav Gupta +2 more</div>
+                </div>
+                <!--</div>-->
               </div>
-
               <div class="row button-row justify-content-between no-gutters align-items-center">
                 <div class="details">
                   <div class="price">
-                    <span class="red font-sm extra-bold">Rs 9000</span>
+                    <span class="red extra-bold font-sm">Rs 9000</span>
                     <span class="grey card-md"><strike>Rs 12000</strike></span>
                   </div>
+                  {{!-- <div>Batches starting 10th August</div> --}}
                 </div>
-
+        
                 <button class="button-solid">Explore</button>
-
+        
+              </div>
+              <div class="d-md-none">
+                <div class="divider">
+                  <div class="card-mentor-divider col-12 order-0 order-md-2"></div>
+                </div>
+                <div class="enrollment">
+                  <div class="col-12">Hurry Up! Enrollment ends 21st May 2018</div>
+                  <div class="col-12 red pointer">Click here to get Free Trial Now</div>
+                </div>
               </div>
             </div>
           </div>
-
+        
           <div class="img-card online-card">
             <div class="head d-flex">
               <img class="back-img" src="images/android.svg">
-              <div class="difficulty-dots">
+              <div class="difficulty-dots dsp-none-sm">
                 <div class="pos-diff"></div>
                 <div class="pos-diff"></div>
                 <div class="neg-diff"></div>
                 <div>Medium</div>
               </div>
-              <div class="head-content d-flex flex-column justify-content-center">
+              <div class="content d-flex flex-column justify-content-center">
+                <div class="round-img-b">
+                  <img src="images/android-logo.svg">
+                </div>
                 <div class="course-name center-text">
                   Android App Development
                 </div>
-
+                <div class="i course-description t-align-c d-md-none">
+                  Learn how to make ubercool Android Apps with Java and Kotlin
+                </div>
+        
                 <div class="rating">
                   <span class="pos-rating">
                     <i class="fas fa-star"></i>
@@ -258,23 +291,42 @@
               </div>
             </div>
             <div class="foot">
-              <div class="round-img-b">
-                <img src="images/android-logo.svg">
+              <div class="card-mentor d-md-none">
+                <!--<div class="row no-gutters">-->
+                <div class="card-mentor-image">
+                  <img class="card-mentors" src="https://avatars0.githubusercontent.com/u/1327050?s=460&v=4"></img>
+                  <img class="card-mentors" src="https://avatars0.githubusercontent.com/u/1327050?s=460&v=4"></img>
+                </div>
+                <div class="card-mentor-text">
+                  <span>Instructors</span>
+                  <div class="card-mentor-name">Prateek Narang, Arnav Gupta +2 more</div>
+                </div>
+                <!--</div>-->
               </div>
-
               <div class="row button-row justify-content-between no-gutters align-items-center">
                 <div class="details">
                   <div class="price">
-                    <span class="red font-sm extra-bold">Rs 9000</span>
+                    <span class="red extra-bold font-sm">Rs 9000</span>
                     <span class="grey card-md"><strike>Rs 12000</strike></span>
                   </div>
+                  {{!-- <div>Batches starting 10th August</div> --}}
                 </div>
-
+        
                 <button class="button-solid">Explore</button>
-
+        
+              </div>
+              <div class="d-md-none">
+                <div class="divider">
+                  <div class="card-mentor-divider col-12 order-0 order-md-2"></div>
+                </div>
+                <div class="enrollment">
+                  <div class="col-12">Hurry Up! Enrollment ends 21st May 2018</div>
+                  <div class="col-12 red pointer">Click here to get Free Trial Now</div>
+                </div>
               </div>
             </div>
           </div>
+        
         </div>
       </div>
     </dic>

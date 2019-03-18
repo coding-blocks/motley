@@ -1,21 +1,23 @@
 .c-testimonial{
-  height: 206px;
+  .dialog {
+    height: 206px;
 
-  .content{
-    height: 80px;
-    overflow: auto;
-    margin-bottom: 10px;
-    font-size: $font-xs;
-  }
+    .content{
+      height: 80px;
+      overflow: auto;
+      margin-bottom: 10px;
+      font-size: $font-xs;
+    }
 
-  .footer{
-    float: right; 
-    text-align: right;
+    .footer{
+      @include flexbox(column, false, flex-end);
+      text-align: right;
+    }
 
-  }
-
-  .img-container{
-    max-height: 30px;
-    overflow: hidden;
-  }
+    .img-container{
+      max-height: 30px;
+      width: 25%;
+      overflow: hidden;
+    }
+  } 
 }

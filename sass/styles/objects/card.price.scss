@@ -4,12 +4,12 @@
 }
 
 .card-batches {
-  font-size: $global-font-size;
+  font-size: $font-xs;
 }
 
 .card-batch-details {
   display: inline-block;
-  font-size: $global-font-size;
+  font-size: $font-xs;
   span {
     color: red;
   }

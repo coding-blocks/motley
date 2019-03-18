@@ -30,7 +30,7 @@
 .home-row {
   min-height: 320px;
   position: relative;
-  margin-bottom: 12%;
+  margin-bottom: 6%;
 
   .home-column {
     position: static;
@@ -57,7 +57,7 @@
   max-width: 292px;
   z-index: 200;
   position: absolute;
-  transform: translate(0%, -25%);
+  transform: translate(0%, -20%);
 }
 
 .phone-content{
@@ -66,3 +66,4 @@
   position: absolute;
   top: 2%
 }
+

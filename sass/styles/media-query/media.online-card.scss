@@ -15,17 +15,12 @@
   .online-card {
     display: flex;
 
+    .round-img-b {
+      @include dimensions(40px, 40px);
+      min-height: 40px;
+    }
     .head {
       @include dimensions(45%, auto);
-
-      .front-text {
-        @include padding-mixin (15px, 5px, 15px, 5px);
-
-        .round-img-b {
-          @include dimensions(40px, 40px);
-          min-height: 40px;
-        }
-
         .course-name {
           margin-top: 7px;
           font-size: $card-md;
@@ -45,7 +40,10 @@
             font-size: $card-sm;
           }
         }
-      }
+    }
+
+    .enrollment{
+      font-size: $card-sms;
     }
 
     .foot {
