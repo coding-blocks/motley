@@ -2,13 +2,13 @@
     @include padding-s(25px, 18px);
     @include border-radius(15px);
 
-    height: 225px;
-    overflow-y: auto;   
+    height: 225px;  
     margin-bottom: 30px;
 
     .heading{
         font-size: $font-sm;
         margin-top: 15px;
+        font-weight: $semi-bold;
     }
 
     .rating{

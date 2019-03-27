@@ -3,7 +3,11 @@
   height: auto;
   background-color: $white;
 
-   .difficulty-dots {
+  .head{
+    height: 206px;
+  }
+
+  .difficulty-dots {
     right: 25px;
     top: 20px;
     text-align: center;
@@ -30,6 +34,7 @@
   }
 
   .foot {
+    padding-top: 55px;
     .button-row {
       margin-top: 3%;
       width: 100%;

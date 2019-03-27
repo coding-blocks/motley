@@ -1,10 +1,10 @@
 .img-card{
   @extend %border-card;
-  
+  overflow: hidden;
+
   .head {
     color: white;
     position: relative;
-    height: 206px;
     transition: all 0.35s ease;
 
     .back-img {
@@ -17,13 +17,13 @@
     .content {
       @include padding-mixin (25px, 25px, 46px, 25px);
       @include dimensions(100%, 100%);
-      z-index: 100;
+      position: relative;
     }
   }
 
 
   .foot{
-    @include padding-mixin (55px, 30px, 23px, 30px);
+    padding: 20px 30px;
     position: relative;
   }
 

@@ -19,8 +19,6 @@
 .pill{
   @extend %pill;
   @include padding-s(0, 20px);
-
-  font-size: $card-md;
   height: 35px;
 }
 

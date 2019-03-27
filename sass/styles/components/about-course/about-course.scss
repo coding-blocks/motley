@@ -1,76 +1,32 @@
-%padding{
-  @include padding-mixin(55px, 5%, 80px, 5%);
-}
-
-%grid-row{
-  .grid{
-    margin: 0;
-  }
-
-  .row{
-    padding: 0;
-  }
-}
-
 .c-summary{
-  padding: 2% 5%;
-  min-height: calc(100vh - 70px);
+  .badge{
+    position: relative;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    background-image: $gradient-black;
+    align-items: center;
+    border-radius: 15px;
 
-  .classroom-container{
-    margin: 25px 0;
-    padding: 0;
+    img{
+      position: absolute;
+      right: 0;
+      width: 15%;
+    }
   }
-
-  .classroom-header-box{
-    padding: 0;
-  }
-
-  .classroom-image{
-    max-width: 95px;
-  }
-
-  .classroom-header-box{
-    border: none;
-  }
-
-  .c-rating-stats{
-    margin-bottom: 30px;
-  }
-
-  .summary{
-    min-height: 20vh;
-  }
-  
-}
-
-.c-instructor{
-  @extend %padding;
-}
-
-.c-batches{
-  @extend %padding;
-  @extend %grid-row;
-  background-color: $nav-border;
 }
 
 .rating-carousel{
   flex-wrap: nowrap;
   overflow-x: auto;
-  width: 100vw;
   position: relative;
-  left: -5.6%;
   padding-bottom: 20px;
 }
 
-.c-recommended{
-  @extend %padding;
-  @extend %grid-row;
-
-  .heading-u{
-    margin: 0;
+.c-about-instructors{
+  background-color: #f6f6f6;
+  padding-top: 3rem;
+  
+  img{
+    border: solid 2px $default-border;
   }
 }
-
-.custom-heading{
-    margin-left: 10%;
-  }

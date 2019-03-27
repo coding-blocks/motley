@@ -1,0 +1,108 @@
+{{> nav-bar}}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-3 col-12">
+      <div class="border-card br-20 bg-light-grey mb-5">
+        <h5 class="mb-3">Find User</h5>
+        <form action="">
+          <input type="text" class="input-text mb-4">
+          <button class="button-solid">Search</button>
+        </form>
+      </div>
+      <div class="border-card mb-4">
+        <h5 class="mb-3">Select User</h5>
+        <div class="row">
+          <div class="col-1">
+            <input type="radio" name="username">
+          </div>
+          <div class="col-10">
+            <div class="red font-sm mb-2">Username: sidjain2901-gh</div>
+            <div>Firstname: Siddharth</div>
+            <div>Lastname: Jain</div>
+            <div>Mobile: +91-9560839425</div>
+          </div>
+        </div>
+        
+        <div class="divider-h mb-4 mt-4"></div>
+        
+        <button class="mb-3 font-sm extra-bold">All Payments</button>
+        <br>
+        <button class="red font-sm extra-bold">Start New Payment</button>
+      </div>
+    </div>
+
+    <div class="col-md-9 col-12 pl-md-5">
+      <div class="border-card font-mds p-sm-5">
+        <form action="">
+          <h5 class="red mb-5">Start New Payment</h5>
+          <div class="row align-items-center mb-4">
+            <div class="col-12 col-md-8 d-flex align-items-center">
+              <label for="" class="pr-4">Select Product</label>  
+              <input type="text" class="input-text">
+            </div>
+
+            <div class="col-12 col-md-4 d-flex align-items-center">
+              <label for="" class="pr-4">Quantity</label>
+              <input type="number" class="input-text">
+            </div>
+          </div>
+          <div class="row pt-2 mb-4">
+            <div class="col-12 col-md-8 d-flex">
+              <label for="" class="pr-3">Type of Payment</label>
+              <input type="radio" name="payment_type" class="mr-3 ml-3">
+              <label for="paritial">Partial Payment</label>
+              <input type="radio" name="payment_type" class="mr-3 ml-3">
+              <label for="full">Full Payment</label>
+            </div>
+          </div>
+
+          <div class="row pt-2">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <label for="" class="red extra-bold pr-4">Partial Amount (Rs)</label>
+              <input type="text" class="input-text" disabled>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <label for="" class="red extra-bold pr-4">Balance Amount (Rs)</label>
+              <input type="text" class="input-text" disabled>
+            </div>
+          </div>
+
+          <div class="divider-h mb-5 mt-5"></div>
+          
+          <div class="d-flex align-items-center">
+            <b class="red">Choose Payment Method</b>
+            <div class="col-6 col-md-4">
+              <select name="payment_method" class="input-text" id="">
+                <option value="cash">CASH</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="divider-h mb-5 mt-5"></div>
+          <div class="row align-items-center mb-4">
+            <div class="col-12 col-md-5 d-flex align-items-center">
+              <label for="" class="pr-4">Coupon Code</label>
+              <input type="text" class="input-text">
+            </div>
+            <div class="col-12 col-md-7 d-flex align-items-center">
+              <label for="" class="pr-4">Comment</label>
+              <input type="text" class="input-text">
+            </div>
+          </div>
+          <div class="d-flex align-items-center pt-2">
+            <b class="red pr-4">Total Amount (Rs) = (Price - Discount - Credits) + Tax :</b>
+            <input type="text" class="input-text">
+          </div>
+
+          <div class="divider-h mb-5 mt-5"></div>
+          <div class="t-align-c">
+            <button class="button-solid lg">Record Payment</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 .c-rating-stats{
     padding: 0;
+    margin-bottom: 30px;
 
     progress{
         margin-bottom: 15px;
@@ -14,7 +15,7 @@
         }
 
         .pos-rating, .neg-rating{
-            font-size: $font-md;
+            font-size: $font-xl;
         }
     }
 
@@ -24,7 +25,7 @@
         }
 
         .pos-rating, .neg-rating{
-            font-size: $card-sm;
+            font-size: $font-sm;
         }
     }
 
@@ -33,6 +34,6 @@
     }
 
     .font-lg{
-        font-size: 3rem;
+        font-size: 4.7143rem !important;
     }
 }

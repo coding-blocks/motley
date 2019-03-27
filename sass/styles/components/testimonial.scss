@@ -21,3 +21,24 @@
     }
   } 
 }
+
+.c-testimonial-video{
+  text-align: center;
+  position: relative;
+  padding-top: 70px;
+
+  .back-div{
+    height: 65%;
+  }
+
+  .video-container{
+    @include dimensions(85%, 425px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+
+  iframe{
+    @include dimensions(100%, 100%);
+  }
+}

@@ -46,7 +46,6 @@
 
   .button-dashed{
     @extend %button-config;
-    @include border(solid, 2px, $button-element-level);
   }
 
   &.slide-up{
