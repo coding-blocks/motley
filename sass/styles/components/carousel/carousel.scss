@@ -16,7 +16,11 @@
   }
 
   .border-card:nth-child(2) {
-    left: -255px;
+    left: -305px;
+  }
+
+  .border-card:nth-child(1) {
+    left: -20px;
   }
 
    .card:hover {
@@ -28,7 +32,7 @@
   .border-card:nth-child(3) {
     height: 190px;
     transform: translateY(30%);
-    left: 60px;
+    left: 10px;
     .button-solid {
       display: none;
     }
@@ -44,7 +48,7 @@
   }
   .border-card:nth-child(4) {
     height: 142px;
-    left: 80px;
+    left: 30px;
     position: absolute;
     transform: translateY(57%);
      .button-solid {

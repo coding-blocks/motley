@@ -17,7 +17,7 @@
   $solid-button-width,
   $solid-button-height,
   $solid-button-border-radius,
-  $color-button-primary,
+  $button-gradient,
   $solid-button-color,
   10px, 15px),
 
@@ -46,6 +46,9 @@
   }
 }
 
+.button-solid{
+  background-image: $button-gradient;
+}
 
 .button-solid:hover {
   box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);

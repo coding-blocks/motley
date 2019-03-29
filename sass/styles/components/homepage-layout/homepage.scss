@@ -1,6 +1,6 @@
 .home-container {
   margin-top: 50px;
-  padding-left: 50px;
+  padding: 0 4rem;
   
   .input-search{
     display: none;
@@ -30,7 +30,7 @@
 .home-row {
   min-height: 320px;
   position: relative;
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 
   .home-column {
     position: static;
@@ -48,8 +48,12 @@
   }
 }
 
-.home-vh {
-  //height: 35vh;
+.c-brag-card{
+  text-align: center;
+  .text{
+    font-size: 2.428rem;
+    font-weight: $extra-bold;
+  }
 }
 
 .phone{

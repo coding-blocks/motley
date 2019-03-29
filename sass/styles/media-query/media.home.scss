@@ -1,17 +1,18 @@
 @media all and (max-width: 1048px){
   .home-container{
-    padding-left: 0;
+    padding: 0;
 
     .input-search{
       display: block;
       margin:0 auto;
-      width: 80%;
+      width: 100%;
     }
   }
 
   .phone{
     height: auto;
     transform: none;
+    max-width: 150px;
   }
 
   .home-heading{
@@ -43,10 +44,6 @@
 @media all and(max-width: 767px){
   .home-img{
     max-width: unset;
-  }
-
-  .home-row{
-    margin-bottom: 20%;
   }
 }
 
