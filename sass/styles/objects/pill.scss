@@ -2,6 +2,7 @@
   @include width-fit();
   @include border-radius(17px);
   @include flexbox(row);
+  @include selector(none);
 
   background-color: $otp-input-bg;
   align-items: center;

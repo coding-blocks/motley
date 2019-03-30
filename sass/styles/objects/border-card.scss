@@ -9,13 +9,3 @@
     @extend %border-card;
     padding: 30px;
 }
-
-.back-div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 75%;
-    width: 100%;
-    z-index: -1;
-    background-color: $nav-border;
-}

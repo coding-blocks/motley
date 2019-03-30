@@ -1,11 +1,5 @@
 @media screen and (max-width: 575px){
     .c-doubt{
-        padding: 40px 0;
-
-        .head{
-            padding: 0 7%;
-        }
-
         .doubt-head{
             .round-img {
                 @include dimensions(35px, 35px)
@@ -29,7 +23,6 @@
                 width: 8%;
                 min-width: 73px;
                 font-size: $card-sm;
-                height: 28px;
             }
         }
     }

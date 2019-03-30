@@ -7,10 +7,12 @@
 
 @import "generic/normalize";
 @import "generic/reset";
+@import "_utilities.scss";
+
+@import "_animations.scss";
 
 @import "_elements";
 @import "_objects";
 @import "_components";
 @import "_media-query";
-@import "_utilities.scss";
 @import "trumps";
