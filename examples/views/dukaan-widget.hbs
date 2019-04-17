@@ -1,0 +1,71 @@
+{{> nav-bar}}
+
+<div class="container mt-5">
+  <div class="col-12 col-md-10 mx-auto">
+    <div class="border-card p-0 overflow-hidden mb-5">
+      <form action="">
+        <div class="row bg-black justify-content-between white p-md-5 p-4 m-0">
+          <h4 class="col-6">Verify Order &amp; Apply Coupon</h4>
+          <h4 class="col-6 pl-md-5">Choose Payment Type</h4>
+        </div>
+        <div class="row p-4 p-md-5">
+          <div class="col-12 col-md-6 pr-md-5 b-right">
+            <div class="img-desc mb-3">
+              <div class="col-3 pl-0">
+                <img class="round" src="/images/c++" alt="">
+              </div>
+              <div class="description justify-content-center">
+                <div>
+                  <h4>Competitive Programming</h4>
+                  <div class="grey">Pitampura Center</div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="font-xl extra-bold">Rs. 1000</span> <span class="font-sm pl-3">+ 18% Tax</span>
+            </div>
+        
+            <div class="row justify-content-between align-items-center no-gutters mb-2">
+              <div class="font-mds col-6">Apply Coupon Code</div>
+              <div class="col-6">
+                <input type="text" class="input-text">
+              </div>
+            </div>
+            <div class="row justify-content-between no-gutters mb-5">
+              <div class="green">Applied Successfully</div>
+              <button class="red">Remove</button>
+            </div>
+            <div class="row justify-content-between no-gutters">
+              <div class="font-mds">Discount</div>
+              <div class="extra-bold font-md">Rs 500</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 font-mds pl-md-5 pt-md-4">
+            <div class="row justify-content-between mb-4 no-gutters">
+              <div>
+                Amount to be Paid <br>
+                (inclusive of taxes)
+              </div>
+              <div class="font-md extra-bold">
+                Rs 500
+              </div>
+            </div>
+        
+            <input type="radio" name="payment_type" value="partial" class="mb-3"> Partial Payment <br>
+            <input type="radio" name="payment_type" value="full"> Full Payment <br>
+        
+            <div class="row justify-content-between align-items-center mt-4 mb-5 no-gutters">
+              <div class="extra-bold red col-6">Partial Amount (Rs)</div>
+              <div class="col-6">
+                <input type="text" class="input-text">
+              </div>
+            </div>
+        
+            <button class="button-solid lg">Proceed to Pay</button>
+        
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
