@@ -30,3 +30,30 @@
   display: none;
   padding: 0 9%;
 }
+
+// tab-nav underline
+
+.tab-nav-underline {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 3px $search-box-color;
+  font-size: $font-mds;
+
+  & .tab{
+    padding: 15px 5%;
+    font-weight: $semi-bold;
+    color: #333;
+    position: relative;
+    bottom: -3px;
+    cursor: pointer;
+
+    &:hover{
+      border-bottom: solid 3px #cbcbcb;
+    }
+
+    &.active{
+      border-bottom: solid 3px $salmon;
+    }
+  }
+}
+
