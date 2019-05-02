@@ -142,6 +142,21 @@
       padding: 13px 0;
     }
 
+    .stars {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+
+      i {
+        font-size: 1.5rem;
+      }
+
+    }
+
+    button:hover {
+      font-weight: 700;
+    }
+    
     &.resolved {
 
       div {
@@ -159,13 +174,33 @@
         opacity: 0.5;
       }
     }
-  }
 
-  .doubt-card:after {
-    content: '';
-    background-color: #141414;
-    display: block;
-    height: 5px;
+    &:after {
+      content: '';
+      background-color: #141414;
+      display: block;
+      height: 5px;
+    }
+
+    &.inverted {
+      background-color: $white;
+      .body {
+        color: black;
+
+        .text {
+          color: black;
+        }
+
+        input {
+          margin: 15px 0px;
+          background-color: white
+        }
+      }
+
+      &:after {
+        background-color: white;
+      }
+    }
   }
   
 
@@ -187,5 +222,5 @@
     color: #999;
   }
     
-   
+  
 }
