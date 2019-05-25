@@ -65,3 +65,20 @@
   border-bottom-left-radius: 10px;
   z-index: 100;
 }
+
+.fade-clamp{
+  position:relative;
+  height: 1em;
+  overflow: hidden;
+
+  &:after{
+    content:'';
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 1em;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 50%);
+  }
+}
