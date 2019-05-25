@@ -1,0 +1,28 @@
+.dcb-card{
+    overflow: hidden;
+    .img-card{
+        height: 400px;
+        padding: 30px;
+
+        .back-img{
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .divider-dcb{
+        width: 80%;
+        margin: 0 auto;
+        border-color: $white;
+        border-style: inset;
+        border-width: 5px;
+        z-index: 100;
+    }
+
+    .head-left{
+        float: left;
+        width: 30%;
+        height: auto;
+        background-color: red;
+    }
+}

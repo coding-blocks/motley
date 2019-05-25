@@ -1,0 +1,26 @@
+.div-list{
+    list-style: none;
+
+    .div-list-item{
+        float: left;
+        padding: 5px 15px 5px 15px;
+        font-family: NunitoSans;
+        display: inline-block;
+
+        &:not(:last-child){
+            border-right: solid 2px $white;
+        }
+    }
+
+    .list-heading{
+        font-size: 16px;
+        color: #ffcc66;
+        font-weight: 800;
+    }
+
+    .list-data{
+        font-size: 16px;
+        color: #ffffff;
+    }
+}
+
