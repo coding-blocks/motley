@@ -1,14 +1,33 @@
 <div class="dcb-card c-layout-card col-12 col-sm-12 col-md-8 col-lg-8">
   <div class="img-card online-card">
-    <img class="back-img" src="images/android.svg">
-    <div class="head d-flex">
-      <div class="head-left">
-        <span>TODAY'S CODE BYTE</span>
+    {{!-- <div class="head d-flex"> --}}
+    <div class"row">    
+      <div class="head-left col-md-6 col-lg-6 col-sm-6">
+        <span class="dcb-heading">TODAY'S CODE BYTE</span>
         <br>
-        <span>Sunday, 28th April</span>
+        <span class="dcb-subheading">Sunday, 28th April</span>
+      </div>
+      <div class="head-right col-md-6 col-lg-6 col-sm-6">
+        <ul class="div-list timer">
+          <li class="timer-item">
+              <div class="list-heading">00</div>
+              <br>
+              <div class="list-data">Days</div>
+          </li>
+          <li class="timer-item">
+              <div class="list-heading">12</div>
+              <br>
+              <div class="list-data">Hours</div>
+          </li>
+          <li class="timer-item">
+              <div class="list-heading">30</div>
+              <br>
+              <div class="list-data">Minutes</div>
+          </li>
+        </ul>
       </div>
     </div>
-    {{!-- <hr class="divider-dcb"> --}}
+    <hr class="divider-h bg-white"/>
     <div class="foot">
       
     </div>

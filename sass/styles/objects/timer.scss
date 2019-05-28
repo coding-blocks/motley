@@ -2,12 +2,11 @@
     .timer-item{
         float: left;
         padding: 5px 15px 5px 15px;
-        font-family: NunitoSans;
         display: inline-block;
         width: 50px;
 
         .list-heading{
-            font-size: 20px !important;
+            font-size: 1.428rem !important;
             font-weight: 800 !important;
             color: $white !important;
             width: 50px;
@@ -15,18 +14,17 @@
         }
     
         .list-data{
-            font-size: 12px !important;
+            font-size: 0.875rem !important;
             width: 50px;
             text-align: center;
             transform: translateY(-12px)
         }
         
         .fa-clock{
-            font-size: 30px;
             color: $white;
             text-align: center;
             width: 40px;
-            transform: translateY(5px)
+            transform: translateY(8px)
         }
     }
 }

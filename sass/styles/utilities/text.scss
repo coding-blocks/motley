@@ -30,6 +30,12 @@
   }
 }
 
+.text-ellipses{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 // responsive versions of text-aligns; 
 // works similarly as boostrap 4
 

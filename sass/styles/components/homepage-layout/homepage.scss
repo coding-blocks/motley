@@ -72,31 +72,3 @@
   position: absolute;
   top: 2%
 }
-
-
-.fade-right-overflow::after{
-  content: '';
-  position: absolute;
-  right: -1%;
-  height: 100%;
-  width: 3%;
-  background-color: $white;
-  display: block;
-  box-shadow: 8px 0 5px $white;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.fade-left-overflow::before{
-  content: '';
-  position: absolute;
-  left: -1%;
-  height: 100%;
-  width: 3%;
-  background-color: $white;
-  display: block;
-  box-shadow: -8px 0 5px $white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 100;
-}

@@ -42,5 +42,9 @@
   "bugs": {
     "url": "https://github.com/coding-blocks/motley/issues"
   },
-  "homepage": "https://github.com/coding-blocks/motley#readme"
+  "homepage": "https://github.com/coding-blocks/motley#readme",
+  "dependencies": {
+    "build": "^0.1.4",
+    "run": "^1.4.0"
+  }
 }

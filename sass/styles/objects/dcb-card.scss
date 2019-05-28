@@ -1,28 +1,37 @@
 .dcb-card{
     overflow: hidden;
+    box-sizing: border-box;
+    color: $white;
     .img-card{
         height: 400px;
         padding: 30px;
-
-        .back-img{
-            top: 0;
-            left: 0;
-        }
-    }
-
-    .divider-dcb{
-        width: 80%;
-        margin: 0 auto;
-        border-color: $white;
-        border-style: inset;
-        border-width: 5px;
-        z-index: 100;
+        background-image: linear-gradient(30deg,#193b84, #2675bb);
     }
 
     .head-left{
         float: left;
         width: 30%;
         height: auto;
-        background-color: red;
+        margin: 20px;
+    }
+
+    .head-right{
+        float: right;
+        width:50%;
+    }
+    
+    .dcb-heading{
+        font-size: 1.286rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    .dcb-subheading{
+        font-size:  1.321rem;
+        font-weight: bold;
+    }
+
+    .scale-large{
+        transform: scale(1.5)
     }
 }
