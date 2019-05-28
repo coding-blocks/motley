@@ -6,15 +6,15 @@
         width: 50px;
 
         .list-heading{
-            font-size: 1.428rem !important;
-            font-weight: 800 !important;
-            color: $white !important;
+            font-size: $font-md;
+            font-weight: $extra-bold;
+            color: $white;
             width: 50px;
             text-align: center;
         }
     
         .list-data{
-            font-size: 0.875rem !important;
+            font-size: $card-md;
             width: 50px;
             text-align: center;
             transform: translateY(-12px)

@@ -12,13 +12,13 @@
     }
 
     .list-heading{
-        font-size: 1.143rem;
+        font-size: $font-sm;
         color: #ffcc66;
-        font-weight: 800;
+        font-weight: $extra-bold;
     }
 
     .list-data{
-        font-size: 1.143rem;
+        font-size: $font-sm;
         color: $white;
     }
 }

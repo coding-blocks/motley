@@ -21,13 +21,13 @@
     }
     
     .dcb-heading{
-        font-size: 1.286rem;
-        font-weight: 800;
+        font-size: $font-mds;
+        font-weight: $extra-bold;
         margin-bottom: 15px;
     }
 
     .dcb-subheading{
-        font-size:  1.321rem;
+        font-size: $font-mds;
         font-weight: bold;
     }
 
