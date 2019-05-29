@@ -1,23 +1,18 @@
 .dcb-card{
-    overflow: hidden;
-    box-sizing: border-box;
     color: $white;
+    margin: 0;
+
     .img-card{
-        height: 400px;
-        padding: 30px;
-        background-image: linear-gradient(30deg,#193b84, #2675bb);
+        padding: 40px 45px 40px 40px;
+        background-image:linear-gradient(to right, #193b84, #2675bb);
     }
 
-    .head-left{
+    .float-left{
         float: left;
-        width: 30%;
-        height: auto;
-        margin: 20px;
     }
 
-    .head-right{
+    .float-right{
         float: right;
-        width:50%;
     }
     
     .dcb-heading{
@@ -33,5 +28,24 @@
 
     .scale-large{
         transform: scale(1.5)
+    }
+
+    .dcb-content{
+        font-size: $font-xs;
+    }
+
+    .dcb-divider{
+        height: 1px;
+    }
+
+    .button-solid{
+        background-image: linear-gradient($white, $white);
+        font-size: $font-sm;
+        color: #246db3;
+        font-weight: $bold;
+    }
+
+    .button-solid:hover {
+        box-shadow:  0 0px 20px 0 $white;
     }
 }

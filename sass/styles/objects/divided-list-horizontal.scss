@@ -3,11 +3,15 @@
 
     .list-item{
         float: left;
-        padding: 5px 15px 5px 15px;
+        padding: 0 15px;
         display: inline-block;
 
         &:not(:last-child){
-            border-right: solid 2px $white;
+            border-right: solid 1px $white;
+        }
+
+        &:first-child{
+            padding: 0 15px 0 0;
         }
     }
 
@@ -20,6 +24,48 @@
     .list-data{
         font-size: $font-sm;
         color: $white;
+        font-weight: $bold;
     }
 }
 
+@media screen and (max-width: 1310px){
+    .divided-list{
+        .list-item{
+            .list-heading{
+                font-size: $font-xs;
+            }
+        
+            .list-data{
+                font-size: $font-xs;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .divided-list{
+        .list-item{
+            .list-heading{
+                font-size: $card-md;
+            }
+        
+            .list-data{
+                font-size: $card-md;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) and (min-width: 770px){
+    .divided-list{
+        .list-item{
+            &:nth-child(3){
+                padding: 0 15px 0 0;
+            }
+
+            &:last-child{
+                border-right: solid 1px $white;
+            }
+        }
+    }
+}
