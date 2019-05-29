@@ -17,7 +17,6 @@
 
     .list-heading{
         font-size: $font-sm;
-        color: #ffcc66;
         font-weight: $extra-bold;
     }
 
@@ -28,44 +27,44 @@
     }
 }
 
-@media screen and (max-width: 1310px){
-    .divided-list{
-        .list-item{
-            .list-heading{
-                font-size: $font-xs;
-            }
-        
-            .list-data{
-                font-size: $font-xs;
-            }
-        }
-    }
-}
+// @media screen and (max-width: 576px){
+//     .divided-list{
+//         .list-item{
+//             .list-heading{
+//                 font-size: $font-xs;
+//             }
 
-@media screen and (max-width: 1210px){
-    .divided-list{
-        .list-item{
-            .list-heading{
-                font-size: $card-md;
-            }
-        
-            .list-data{
-                font-size: $card-md;
-            }
-        }
-    }
-}
+//             .list-data{
+//                 font-size: $font-xs;
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 870px) and (min-width: 770px){
-    .divided-list{
-        .list-item{
-            &:nth-child(3){
-                padding: 0 15px 0 0;
-            }
+// @media screen and (max-width: 492px){
+//     .divided-list{
+//         .list-item{
+//             .list-heading{
+//                 font-size: $card-sm;
+//             }
 
-            &:last-child{
-                border-right: solid 1px $white;
-            }
-        }
-    }
-}
+//             .list-data{
+//                 font-size: $card-sm;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 418px){
+//     .divided-list{
+//         .list-item{
+//             .list-heading{
+//                 font-size: $card-xs;
+//             }
+
+//             .list-data{
+//                 font-size: $card-xs;
+//             }
+//         }
+//     }
+// }

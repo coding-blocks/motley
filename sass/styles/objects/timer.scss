@@ -1,14 +1,12 @@
 .timer{
     margin: 0;
     .timer-item{
-        float: left;
         padding: 0 15px 0 0;
+        float: left;
         display: inline-block;
 
         .list-heading{
             font-size: $font-md;
-            font-weight: $extra-bold;
-            color: $white;
             text-align: center;
         }
     

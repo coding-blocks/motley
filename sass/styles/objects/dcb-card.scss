@@ -7,45 +7,55 @@
         background-image:linear-gradient(to right, #193b84, #2675bb);
     }
 
-    .float-left{
-        float: left;
+    .button-solid-white{
+        color: #246db3;
     }
 
-    .float-right{
-        float: right;
+    .divided-list{
+        .list-heading{
+            color: #ffcc66;
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $font-xs;
+                }
+    
+                .list-data{
+                    font-size: $font-xs;
+                }
+            }
+        }
     }
     
-    .dcb-heading{
-        font-size: $font-mds;
-        font-weight: $extra-bold;
-        margin-bottom: 15px;
+    @media screen and (max-width: 492px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $card-sm;
+                }
+    
+                .list-data{
+                    font-size: $card-sm;
+                }
+            }
+        }
     }
-
-    .dcb-subheading{
-        font-size: $font-mds;
-        font-weight: bold;
-    }
-
-    .scale-large{
-        transform: scale(1.5)
-    }
-
-    .dcb-content{
-        font-size: $font-xs;
-    }
-
-    .dcb-divider{
-        height: 1px;
-    }
-
-    .button-solid{
-        background-image: linear-gradient($white, $white);
-        font-size: $font-sm;
-        color: #246db3;
-        font-weight: $bold;
-    }
-
-    .button-solid:hover {
-        box-shadow:  0 0px 20px 0 $white;
+    
+    @media screen and (max-width: 418px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $card-xs;
+                }
+    
+                .list-data{
+                    font-size: $card-xs;
+                }
+            }
+        }
     }
 }
