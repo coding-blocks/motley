@@ -1,12 +1,12 @@
 %round-img{
   @include border-radius(50%);
-  @include dimensions(99px, 99px);
   display: inline-block;
   background-color: $nav-border;
   overflow: hidden;
 }
 
 .round-img{
+  @include dimensions(99px, 99px);
   @extend %round-img;
   img{
     max-width: 100%;
@@ -16,7 +16,7 @@
 
 //round-img with border
 .round-img-b{
-  @extend .round-img;
+  @extend %round-img;
   @include border(solid, 4px, white);
 }
 
