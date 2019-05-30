@@ -1,0 +1,61 @@
+.dcb-card{
+    color: $white;
+    margin: 0;
+
+    .img-card{
+        padding: 40px 45px 40px 40px;
+    }
+
+    .button-solid-white{
+        color: #246db3;
+        font-weight: $bold;
+    }
+
+    .divided-list{
+        .list-heading{
+            color: #ffcc66;
+        }
+    }
+
+    @media screen and (max-width: 575px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $font-xs;
+                }
+    
+                .list-data{
+                    font-size: $font-xs;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 492px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $card-sm;
+                }
+    
+                .list-data{
+                    font-size: $card-sm;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 418px){
+        ul[class=divided-list]{
+            .list-item{
+                .list-heading{
+                    font-size: $card-xs;
+                }
+    
+                .list-data{
+                    font-size: $card-xs;
+                }
+            }
+        }
+    }
+}

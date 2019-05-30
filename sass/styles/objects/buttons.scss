@@ -1,4 +1,3 @@
-
 %button-text {
   @include font($global-font-family, $font-xs, inherit);
 }
@@ -27,7 +26,16 @@
   $circle-button-border-radius,
   $circle-button-background,
   $circle-button-color,
-  0, 0){
+  0, 0),
+
+  (solid-white,
+  $solid-button-width,
+  $solid-button-height,
+  $solid-button-border-radius,
+  $white,
+  $solid-button-color,
+  10px, 15px),
+  {
 
   .button-#{$type} {
     @extend %button-text;
@@ -52,6 +60,14 @@
 
 .button-solid:hover {
   box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);
+}
+
+.button-solid-white{
+  background-image: unset;
+}
+
+.button-solid-white:hover {
+  box-shadow:  0 0px 20px 0 $white;
 }
 
 .button-dashed {
