@@ -7,13 +7,6 @@
     position: relative;
     transition: all 0.35s ease;
 
-    .back-img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
     .content {
       @include padding-mixin (25px, 25px, 46px, 25px);
       @include dimensions(100%, 100%);
@@ -21,6 +14,13 @@
     }
   }
 
+  .back-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
 
   .foot{
     padding: 20px 30px;
