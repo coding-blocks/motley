@@ -35,6 +35,14 @@
   $white,
   $solid-button-color,
   10px, 15px),
+
+  (gradient-blue,
+  $solid-button-width,
+  $solid-button-height,
+  $solid-button-border-radius,
+  $white,
+  $hb-blue,
+  10px, 15px),
   {
 
   .button-#{$type} {
@@ -68,6 +76,18 @@
 
 .button-solid-white:hover {
   box-shadow:  0 0px 20px 0 $white;
+}
+
+.button-gradient-blue{
+  border: solid 1px $hb-blue;
+  font-weight: $bold;
+  font-size: $font-sm;
+}
+
+.button-gradient-blue:hover{
+  border: unset;
+  background-image: $button-gradient-blue;
+  color: $white;
 }
 
 .button-dashed {
