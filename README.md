@@ -1,4 +1,5 @@
 # Motley
+[![Build Status](https://travis-ci.org/coding-blocks/motley.svg?branch=master)](https://travis-ci.org/coding-blocks/motley)
 
 Motley is a new generation CSS framework based on [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) and [Sass](https://sass-lang.com/) , it allows you to design component-driven webpages with little or no effort. 
 
