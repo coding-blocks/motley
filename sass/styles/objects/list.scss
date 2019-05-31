@@ -1,4 +1,4 @@
-.list-item{
+%list-item{
   padding: 15px 20px;
   
   .row{
@@ -18,6 +18,10 @@
   & > *:not(:last-child){
     border-bottom: solid 1px $border; 
   }
+
+  .list-item{
+    @extend %list-item;
+  }
 }
 
 .list-shaded{
@@ -35,6 +39,10 @@
     > *{
       background-color: $dark-filter;
     }
+  }
+
+  .list-item{
+    @extend %list-item;
   }
 }
 
