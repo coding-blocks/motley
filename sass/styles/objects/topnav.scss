@@ -1,0 +1,43 @@
+.topnav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 100;
+    margin-left: 0;
+    margin-right: 0;
+
+    .logo{
+		text-align: center;
+    }
+    
+    .top-nav-option{
+        text-align: center;
+        float: left;
+    }
+
+    .top-nav-option:hover{
+        a{
+            h6{
+                color: #f19633;
+            }
+        }
+    }
+
+    .top-nav-option:active{
+        a{
+            h6{
+                color: #f19633;
+            }
+        }
+    }
+
+    h6{
+        font-weight: $bold;
+    }
+
+    .img-desc{
+        padding-top: 0;
+    }
+}

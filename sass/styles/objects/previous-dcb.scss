@@ -21,17 +21,12 @@
                 color: #111f31;
                 font-size: $font-xs;
             }
-
-            &:not(:last-child){
-                border-right: solid 1px #999999;
-            }
         }
     }
 
-    .button-solid-white{
-        color: #246db3;
+    .button-gradient-blue{
         font-weight: $bold;
-        border: solid 1px #246db3;
+        font-size: $font-sm;
     }
 
     @media screen and (max-width: 575px){
@@ -46,5 +41,9 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 767px){
+        padding: 20px;
     }
 }
