@@ -7,9 +7,14 @@
     z-index: 100;
     margin-left: 0;
     margin-right: 0;
+    border-bottom: solid 1px #eeeeee;
+
+    ul{
+        margin: unset;
+    }
 
     .logo{
-		text-align: center;
+		text-align: left;
     }
     
     .top-nav-option{
@@ -33,11 +38,19 @@
         }
     }
 
+    .top-nav-option:first-child{
+        width: 16.67%;
+    }
+
     h6{
         font-weight: $bold;
     }
 
     .img-desc{
         padding-top: 0;
+    }
+
+    .right-nav{
+        margin: unset;
     }
 }
