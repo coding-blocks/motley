@@ -1,0 +1,67 @@
+.c-cc{
+  .border-card{
+    border: solid 1px #2e1084;
+  }
+
+  .banner{
+    @include dimensions(100vw, 400px);
+  }
+
+  .red{
+    color: #f6013d !important;
+  }
+
+  .round{
+    border-radius: 50px;
+  }
+
+  .status-img{
+    width: 35px;
+  }
+}
+
+.label-dashed{
+  background-image: linear-gradient(to right, #e9414d, #2d2982);
+  position: relative;
+  border-radius: 18px;
+  padding: 5px 10px;
+
+  &:before{
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: inherit;
+    top: 1px;
+    left: 1px;
+  }
+
+  & > * {
+    position: relative;
+  }
+}
+
+.gradient-red-blue{
+  background-image: linear-gradient(to right, #e9414d, #2d2982);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bg-gradient-red-blue-lr{
+  background-image: linear-gradient(to right, #e9414d, #2d2982);
+}
+
+.s-10x10{
+  @include dimensions(10px, 10px);
+  display: inline-block;
+}
+
+.button-solid.btn-grad-red-blue{
+  background-image: linear-gradient(to right, #ff003a, #381184);
+
+  &:hover{
+    box-shadow:  0 0px 20px 0 #ff003a;
+  }
+}
