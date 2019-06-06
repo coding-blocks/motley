@@ -4,10 +4,10 @@
   }
 
   .banner{
-    @include dimensions(100vw, 400px);
+    width: 100vw;
   }
 
-  .red{
+  .divided-list{
     color: #f6013d !important;
   }
 
@@ -21,7 +21,7 @@
 }
 
 .label-dashed{
-  background-image: linear-gradient(to right, #e9414d, #2d2982);
+  background-image: $gradient-red-blue;
   position: relative;
   border-radius: 18px;
   padding: 5px 10px;
@@ -42,26 +42,11 @@
   }
 }
 
-.gradient-red-blue{
-  background-image: linear-gradient(to right, #e9414d, #2d2982);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
 .bg-gradient-red-blue-lr{
-  background-image: linear-gradient(to right, #e9414d, #2d2982);
+  background-image: $gradient-red-blue;
 }
 
 .s-10x10{
   @include dimensions(10px, 10px);
   display: inline-block;
-}
-
-.button-solid.btn-grad-red-blue{
-  background-image: linear-gradient(to right, #ff003a, #381184);
-
-  &:hover{
-    box-shadow:  0 0px 20px 0 #84114b;
-  }
 }
