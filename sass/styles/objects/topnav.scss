@@ -53,4 +53,20 @@
     .right-nav{
         margin: unset;
     }
+
+    @media screen and (max-width: 1200px){
+        .top-nav-option{
+            h6{
+                font-size: $font-xs;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        .top-nav-option{
+            h6{
+                font-size: $card-sm;
+            }
+        }
+    }
 }
