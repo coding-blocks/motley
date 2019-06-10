@@ -1,0 +1,30 @@
+.hb-leaderboard{
+    color: #333333;
+    
+    .border-card{
+        padding: 20px 0;
+    }
+
+    table{
+        vertical-align: middle;
+
+        thead{
+            color: #246db3;
+        }
+
+        tbody{
+            color: #333333;
+            text-align: center;
+
+            .self{
+                background-image: linear-gradient(to right, #193b84, #2675bb);
+                color: $white;
+                font-weight: $extra-bold;
+            }
+        }
+    }
+}
+
+.t-align-center{
+    text-align: center;
+}

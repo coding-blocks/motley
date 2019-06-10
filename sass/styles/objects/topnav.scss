@@ -7,6 +7,7 @@
     margin-left: 0;
     margin-right: 0;
     border-bottom: solid 1px #eeeeee;
+    z-index: 10;
 
     ul{
         margin: unset;
@@ -51,6 +52,10 @@
 
     .right-nav{
         margin: unset;
+
+        .top-nav-option:first-child{
+            width: unset;
+        }
     }
 
     @media screen and (max-width: 1200px){
