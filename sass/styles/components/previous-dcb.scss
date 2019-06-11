@@ -1,18 +1,13 @@
 .previous-dcb{
     padding: 40px;
 
-    .list-divided{
-        & > *:not(:last-child){
-            border-bottom: unset; 
-          }        
-    }
     h4{
         color: #111f31;
     }
 
     .divided-list{
         .list-heading{
-            color: #246db3;
+            color: $hb-blue;
             font-size: $font-xs;
         }
         
