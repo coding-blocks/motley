@@ -2,7 +2,7 @@
     <div class="row topnav py-3 justify-content-between">
         <div class="col-6 offset-1">
             <ul>
-                <li class="top-nav-option px-3 mt-3 d-sm-none d-md-block">
+                <li class="top-nav-option px-3 mt-3 d-sm-none d-md-block active">
                     <a href="#online-courses">
                         <h6>Online Courses</h6>
                     </a>
@@ -19,7 +19,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-3 align-items-center">
+        <div class="align-items-center">
             <ul class="right-nav">
                 <li class="top-nav-option px-3 pt-3">
                     <a href="#search">
@@ -36,8 +36,8 @@
                         <i class="far fa-question-circle fa-lg"></i>
                     </a>
                 </li>
-                <li>
-                    <div class="img-desc align-items-center pl-3 font-sm pt-2">
+                <li class="top-nav-option px-3">
+                    <div class="img-desc align-items-center font-sm pt-2">
                         <img class="round s-30x30" src="/images/placeholder.gif" alt="">
                         <div class="description ml-3">
                             Hi, Siddharth
@@ -48,27 +48,27 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="sidenav pt-3 col-1 small-sidenav">
+        <div class="sidenav pt-3 col-1 d-sm-none d-md-block">
             <div class="logo pb-5">
                 <i class="fab fa-slack fa-3x"></i>
             </div>
-            <a href="#dashboard" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-3 py-sm-2 px-sm-2">
+            <a href="#dashboard" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-2 py-sm-2 px-sm-2">
                 <i class="fas fa-chart-pie font-xl"></i>
                 <h6 class="pt-2">Dashboard</h6>
             </a>
-            <a href="#daily-code" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-3 py-sm-2 px-sm-2">
+            <a href="#daily-code" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-2 py-sm-2 px-sm-2">
                 <i class="far fa-calendar font-xl"></i>
                 <h6 class="pt-2">Daily Code</h6>
             </a>
-            <a href="#contests" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-3 py-sm-2 px-sm-2">
+            <a href="#contests" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-2 py-sm-2 px-sm-2 active">
                 <i class="fas fa-trophy font-xl"></i>
                 <h6 class="pt-2">Contests</h6>
             </a>
-            <a href="#practice" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-3 py-sm-2 px-sm-2">
+            <a href="#practice" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-2 py-sm-2 px-sm-2">
                 <i class="fas fa-code font-xl"></i>
                 <h6 class="pt-2">Practice</h6>
             </a>
-            <a href="#compete" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-3 py-sm-2 px-sm-2">
+            <a href="#compete" class="nav-element py-lg-4 px-lg-4 py-md-3 px-md-2 py-sm-2 px-sm-2">
                 <i class="fas fa-graduation-cap font-xl"></i>
                 <h6 class="pt-2">Compete</h6>
             </a>
@@ -110,7 +110,7 @@
                                 is greater than its next element and divides the array into two monotonically increasing
                                 halves.</div>
                             <div class="row justify-content-between">
-                                <div class="col-md-8 col-sm-12 col-12">
+                                <div class="col-sm-12 col-12 col-lg-10">
                                     <ul class="divided-list">
                                         <li class="list-item">
                                             <div class="list-heading">Hard</div>
@@ -319,18 +319,14 @@
                     <div class="img-card daily-goal-card">
                         <h4>Daily Goal</h4>
                         <div class="font-xs">Complete daily goal to count it as streak</div>
-                        <div class="progressBarContainer mt-4 mb-2">
-                            <div id="progressBar1" class="progressBar bg-gradient-blue-lr" style="width: 50%;"></div>
-                        </div>
+                        <progress value="50" max="100" class="mt-4 mb-2"></progress>
                         <h6 class="bold">20/100 Points Scored</h6>
                         <div class="divider-h my-4"></div>
                         <h4>Unlock Badge</h4>
                         <div class="font-xs">Complete 3 more consecutive DCB’s to unlock badge</div>
                         <img src="/images/hexagon.jpg" alt="Badge Logo" class="badge mt-5 mb-3" />
                         <h5 style="color: #246db3">Streak Master</h5>
-                        <div class="progressBarContainer mt-4 mb-2">
-                            <div id="progressBar2" class="progressBar bg-gradient-blue-lr" style="width: 50%;"></div>
-                        </div>
+                        <progress value="50" max="100" class="mt-4 mb-2"></progress>
                         <h6 class="bold">4 of 7 DCB’s completed</h6>
                         <div class="divider-h my-4"></div>
                         <h4>My Badges</h4>
@@ -361,17 +357,17 @@
 
                     <div class="hb-leaderboard pt-5">
                         <div class="border-card mb-5">
-                            <h4 class="mb-5 t-align-center pt-4">Leaderboard</h4>
+                            <h4 class="mb-5 t-align-c pt-4">Leaderboard</h4>
                             <table class="w-100">
                                 <thead class="font-sm extra-bold">
-                                    <td class="pb-4 t-align-center">Rank</td>
+                                    <td class="pb-4 t-align-c">Rank</td>
                                     <td class="pb-4">User</td>
-                                    <td class="pb-4 t-align-center">Score</td>
+                                    <td class="pb-4 t-align-c">Score</td>
                                 </thead>
                                 <tbody>
                                     <tr class="self">
-                                        <td class="pb-4 pt-2">#40</td>
-                                        <td class="pb-4 pt-2">
+                                        <td class="pb-4 pt-4">#40</td>
+                                        <td class="pb-4 pt-4">
                                             <div class="img-desc align-items-center">
                                                 <img class="round s-30x30" src="/images/placeholder.gif" alt="">
                                                 <div class="description ml-3">
@@ -379,11 +375,11 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="pb-4 pt-2">2345</td>
+                                        <td class="pb-4 pt-4">2345</td>
                                     </tr>
                                     <tr>
-                                        <td class="pb-4 pt-2">01</td>
-                                        <td class="pb-4 pt-2">
+                                        <td class="pb-4 pt-4">01</td>
+                                        <td class="pb-4 pt-4">
                                             <div class="img-desc align-items-center">
                                                 <img class="round s-30x30" src="/images/placeholder.gif" alt="">
                                                 <div class="description ml-3">
@@ -391,7 +387,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="pb-4 pt-2">2345</td>
+                                        <td class="pb-4 pt-4">2345</td>
                                     </tr>
                                     <tr>
                                         <td class="pb-4 pt-2">01</td>

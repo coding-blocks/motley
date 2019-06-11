@@ -30,7 +30,7 @@
         }
     }
 
-    .top-nav-option:active{
+    .top-nav-option.active{
         a{
             h6{
                 color: #f19633;
@@ -38,24 +38,12 @@
         }
     }
 
-    .top-nav-option:first-child{
-        width: 16.67%;
-    }
-
     h6{
         font-weight: $bold;
     }
 
-    .img-desc{
-        padding-top: 0;
-    }
-
     .right-nav{
         margin: unset;
-
-        .top-nav-option:first-child{
-            width: unset;
-        }
     }
 
     @media screen and (max-width: 1200px){

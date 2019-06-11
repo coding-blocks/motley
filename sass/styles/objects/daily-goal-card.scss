@@ -1,12 +1,7 @@
 .daily-goal-card{
     text-align: center;
     padding: 40px;
-    color: #333333;
-
-    .divider-h{
-        width: 100%;
-        margin: 0 auto;
-    }
+    color: $global-font-text-color;
 
     .badge{
         width: 30%;
@@ -22,20 +17,13 @@
             width: 100%;
         }
     }
-}
 
-.progressBarContainer{
-    width: 90%;
-    height: 10px;
-    background-color: #f3f3f3; 
-    border-radius: 15px;
-    margin: 0 auto;
-      
-    .progressBar{
-        max-width: 100%;
-        height: 100%;
-        border-radius: 15px;
+    progress{
+        width: 90%;
+        margin: 0 auto;
     }
+
+    @include progress(10px, $bg-gradient-blue-lr)
 }
 
 @media screen and (max-width: 1200px){

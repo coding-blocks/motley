@@ -11,16 +11,14 @@
     }
 
     .divided-list{
-        .list-item{
-            .list-heading{
-                color: #246db3;
-                font-size: $font-xs;
-            }
-            
-            .list-data{
-                color: #111f31;
-                font-size: $font-xs;
-            }
+        .list-heading{
+            color: #246db3;
+            font-size: $font-xs;
+        }
+        
+        .list-data{
+            color: #111f31;
+            font-size: $font-xs;
         }
     }
 
@@ -31,14 +29,12 @@
 
     @media screen and (max-width: 575px){
         .divided-list{
-            .list-item{
-                .list-heading{
-                    font-size: $card-md;
-                }
+            .list-heading{
+                font-size: $card-md;
+            }
 
-                .list-data{
-                    font-size: $card-md;
-                }
+            .list-data{
+                font-size: $card-md;
             }
         }
     }

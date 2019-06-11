@@ -6,25 +6,19 @@
     }
 
     table{
-        vertical-align: middle;
-
         thead{
-            color: #246db3;
+            color: $hb-blue;
         }
 
         tbody{
-            color: #333333;
+            color: $global-font-text-color;
             text-align: center;
 
             .self{
-                background-image: linear-gradient(to right, #193b84, #2675bb);
+                background-image: $bg-gradient-blue-lr;
                 color: $white;
                 font-weight: $extra-bold;
             }
         }
     }
-}
-
-.t-align-center{
-    text-align: center;
 }
