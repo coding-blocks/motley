@@ -1,0 +1,21 @@
+.c-hb-leaderboard{
+    .border-card{
+        padding: 20px 0;
+    }
+
+    table{
+        thead{
+            color: $hb-blue;
+        }
+
+        tbody{
+            text-align: center;
+
+            .self{
+                background-image: $bg-gradient-blue-lr;
+                color: $white;
+                font-weight: $extra-bold;
+            }
+        }
+    }
+}

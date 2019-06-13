@@ -1,0 +1,47 @@
+.c-sidenav{
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #1b1e26;
+	z-index: 500;
+	padding-left: 0;
+	padding-right: 0;
+
+	.nav-element{
+		display: block;
+		position: relative;
+		color: $grey;
+		text-align: center;
+	}
+	
+	.nav-element:hover{
+		color: $white;
+		font-weight: $extra-bold;
+	}
+
+	.nav-element.active{
+		background-color: #181b22;
+		border-left: solid 2px $orange;
+		color: $white;
+		font-weight: $extra-bold;
+	}
+
+	h6{
+		font-weight: $font-normal;
+		font-size: $card-md;
+	}
+
+	.logo{
+		color: $white;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 1200px){
+		h6{
+			font-size: $card-sm;
+		}
+	}
+}
+

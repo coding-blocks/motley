@@ -1,4 +1,4 @@
-.dcb-card{
+.c-dcb-card{
     color: $white;
     margin: 0;
 
@@ -12,12 +12,17 @@
     }
 
     .divided-list{
+        .list-item{
+            &:not(:last-child){
+                border-right: solid 1px $white;
+            }
+        }
         .list-heading{
             color: #ffcc66;
         }
     }
 
-    @media screen and (max-width: 575px){
+    @media screen and (max-width: 1212px){
         ul[class=divided-list]{
             .list-item{
                 .list-heading{
@@ -31,7 +36,7 @@
         }
     }
     
-    @media screen and (max-width: 492px){
+    @media screen and (max-width: 1118px){
         ul[class=divided-list]{
             .list-item{
                 .list-heading{
@@ -45,7 +50,7 @@
         }
     }
     
-    @media screen and (max-width: 418px){
+    @media screen and (max-width: 880px){
         ul[class=divided-list]{
             .list-item{
                 .list-heading{
