@@ -1,0 +1,23 @@
+.a-hb{
+    @media (min-width: 576px) {
+        .container {
+          max-width: 750px; 
+        } 
+    }
+    @media (min-width: 768px) {
+        .container {
+          max-width: 900px; 
+          padding: 0;
+        } 
+    }
+    @media (min-width: 992px) {
+        .container {
+          max-width: 1150px; 
+        } 
+    }
+    @media (min-width: 1200px) {
+        .container {
+          max-width: 1300px; 
+        } 
+    }
+}
