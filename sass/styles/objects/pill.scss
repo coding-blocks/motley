@@ -1,34 +1,29 @@
 %pill{
   @include width-fit();
-  @include border-radius(17px);
-  @include flexbox(row);
+  @include border-radius(25px);
   @include selector(none);
-
+  display: inline-block;
   background-color: $otp-input-bg;
-  align-items: center;
   cursor: default;
 }
 
 .pill-sm{
   @extend %pill;
-  @include padding-s(0, 12px);
+  @include padding-s(6px, 12px);
 
   font-size: $card-sms;
-  height: 17px;
 }
 
 .pill{
   @extend %pill;
-  @include padding-s(0, 20px);
-  height: 35px;
+  @include padding-s(10px, 20px);
 }
 
 .pill-lg{
   @extend %pill;
-  @include padding-s(0, 30px);
+  @include padding-s(15px, 30px);
   @include border-radius(30px);
 
   font-size: $font-sm;
-  height: 45px;
 }
 
