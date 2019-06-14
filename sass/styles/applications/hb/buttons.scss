@@ -1,0 +1,7 @@
+.button-solid.button-orange{
+    background-image: $gradient-orange-lr;
+
+    &:hover{
+        box-shadow:  0 10px 41px 0 $white;
+    }
+}

@@ -10,7 +10,7 @@
 }
 
 body {
-  @include font($global-font-family, 14px, normal);
+  @include font($global-font-family, inherit, normal);
   padding-top: 70px;
 }
 
