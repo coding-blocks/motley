@@ -25,6 +25,7 @@
 .prev {
   padding-right: 20px;
   border-right: 1px solid;
+  margin-top: 20px;
 }
 
 .home-row {
@@ -33,7 +34,8 @@
   margin-bottom: 8%;
 
   .home-column {
-    position: static;
+    position: relative;
+    overflow-x: hidden;
   }
   
 }
@@ -70,4 +72,3 @@
   position: absolute;
   top: 2%
 }
-

@@ -1,0 +1,24 @@
+//Theme for CricketCup
+
+.main-nav, .sidebar{
+  %red-blue-gradient{
+    background-image: linear-gradient(to right, #e9414d, #2d2982);
+  }
+  
+  .button-solid{
+    @extend %red-blue-gradient;
+  
+    &:hover{
+      box-shadow:  0 0px 20px 0 $cricket-cup;
+    }
+  }
+  
+  .button-dashed{
+    @extend %red-blue-gradient;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    border: 2px solid $cricket-cup;
+  }
+}
