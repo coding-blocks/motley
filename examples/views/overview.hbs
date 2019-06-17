@@ -1,588 +1,542 @@
 {{> nav-bar }}
 
-<div class="classroom-container row">
+<div class="container pt-5">
+  <div class="border-card bg-gradient-black-lr c-course-progress mb-4">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="img-desc mb-5">
+          <div class="col-4 col-md-3 pl-0 pr-5">
+            <img class="round round-img-b" src="/images/c++" alt="">
+          </div>
 
-    <div class="classroom-header-box col-md-6 col-12">
-        <div class="classroom-header row">
-            <div class="classroom-image col-2">
-                <img class="round" src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="">
+          <div class="description">
+            <div>
+              <h2>
+                C++ Compelete Course
+              </h2>
+              <div class="font-mds">
+                Taught By: Prateek Narang, Deepak Aggarwal
+              </div>
             </div>
-            <div class="classroom-text col-10">
-                Competitive Programming
-
-                <div class="rating mob">
-                    <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="pos-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="neg-rating">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="edit-rating">Edit my rating</span>
-
-                </div>
+            <div class="red semi-bold font-mds">
+              Batch Ends 20 Mar 2019
             </div>
+          </div>
         </div>
-        <p class="classroom-para grey">
-            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted to ensure your success in challengessuch as Google CodeJam,
-            Google Kickstart, ACM-ICPC, and more.
-        </p>
-        <div class="rating">
+
+        <div class="d-flex">
+          <strong class="font-md">Rate this course?</strong>
+          <div class="rating ml-3">
             <span class="pos-rating">
-                <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </span>
-                <span class="pos-rating">
-                <i class="fas fa-star"></i>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
             </span>
-                <span class="pos-rating">
-                <i class="fas fa-star"></i>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
             </span>
-                <span class="pos-rating">
-                <i class="fas fa-star"></i>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
             </span>
-                <span class="neg-rating">
-                <i class="fas fa-star"></i>
+            <span class="neg-rating">
+              <i class="fas fa-star"></i>
             </span>
-            <span class="edit-rating">Edit my rating</span>
+          </div>
         </div>
+      </div>
+
+      <div class="col-1 dsp-md-none">
+        <div class="divider-v mx-auto"></div>
+      </div>
+      <div class="divider-h d-md-none"></div>
+
+      <div class="col-12 col-md-5 extra-bold">
+        <h4 class="mb-3">
+          Course Progress
+        </h4>
+
+        {{!-- <div class="course-progress-detail col-5 col-md-9">
+          <p class="heading-mob">Course Progress</p>
+        </div> --}}
+
+        <div class="progress row no-gutters align-items-center mb-2">
+          <div class="progress col-10 col-md-11">
+            <progress max="100" value="25"></progress>
+          </div>
+          <div class="col-2 pl-3 col-md-1 font-md">
+            26%
+          </div>
+
+        </div>
+        <div class="row no-gutters justify-content-between mb-4">
+          <span class="font-mds extra-bold">12 of 46 Lectures Completed</span>
+          <button class="red font-sm regular">Reset Progress</button>
+        </div>
+
+        <div class="row no-gutters font-sm pt-3">
+          <div>
+            <button class="button-solid pr-4 pl-4 font-sm">Buy Now</button>
+          </div>
+          <div class="ml-3">
+            <button class="button-dashed pr-4 pl-4 font-sm">Resume</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="course-progress-box col-md-6 col-12 ">
-        <div class="course-progress-heading row no-gutters">
-            <div class="heading col-4 col-md-6 align-self-center">Course Progress</div>
-            <div class="divider-h col-6 align-self-center"></div>
-        </div>
+  </div>
 
-        <div class="course-progress-detail col-5 col-md-9">
-            <p class="heading-mob">Course Progress</p>
-            {{!-- <p class="lectures-completed">12 of 46 completed</p>
-            <button class="reset-progress">Reset Progress</button> --}}
-        </div>
-
-        <div class="progress row no-gutters align-items-center mb-3">
-            <div class="progress col-10 col-md-11">
-                <progress max="100" value="25"></progress>
+  <div class="row pt-3">
+    <div class="col-12 col-md-3">
+      <div class="br-15 bottom-nav bg-light-grey p-3">
+        <ul class="row m-0 font-md justify-content-between">
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <i class="fas fa-chart-line"></i>
             </div>
-            <div class="col-2 pl-3 col-md-1">
-                26%
+            <div class="dsp-none-md col-9 b-bottom py-4">Dashboard</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <i class="fa fa-list" aria-hidden="true"></i>
             </div>
-            
-        </div>
-        <div class="row justify-content-between">
-            <span>12 of 46 Lectures Completed</span>
-            <button class="red">Reset Progress</button>
-        </div>
-
-        <div class="row justify-content-around">
-            <div class="col-6 col-md-5">
-                <button class="button-solid">Buy Now</button>
+            <div class="dsp-none-md col-9 b-bottom py-4">About Course</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <img src="images/support.svg" alt="">
             </div>
-            <div class="col-6 col-md-5">
-                <button class="button-dashed">Resume</button>
+            <div class="dsp-none-md col-9 b-bottom py-4">Doubts</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <img src="images/docs.svg" alt="">
             </div>
-        </div>
+            <div class="dsp-none-md col-9 b-bottom py-4">Curriculum</div>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-
-<div class="tab-nav">
-        <div class="tab-items active">Overview</div>
-        <div class="tab-icons active"><img src="images/docs-white.svg" alt=""></div>
-        <div class="tab-items">Course Content</div>
-        <div class="tab-icons"><img src="images/menu-white.svg" alt=""></div>
-        <div class="tab-items">Announcements</div>
-        <div class="tab-icons"><img src="images/announcement-white.svg" alt=""></div>
-        <div class="tab-items">Solve Your Doubts</div>
-        <div class="tab-icons"><img src="images/support-white.svg" alt=""></div>
-</div>
-
-
-<div class="overview-container">
-    <!-- -----------------------------------------Recent Activity--------------------------------- -->
-    <div class="heading-u">
-        Recent Activity
-    </div>
-
-    <div class="container-fluid pl-0 pr-0">
-        <div class="c-overview-recent row">
-            <div class="col-12 col-md-6">
-                <div class="card">
-                    <div class="heading">Recent Doubts</div>
-                    <div class="card-content">
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Varun asked a doubt "<a class="faded" title="hello">sample text lorem ipsum let ips istim tum</a>"
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Sid asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Sid asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Sid asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Sid asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        <div class="card-text col-10 align-self-center">
-                            Sid asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            Varun asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="notify-type">
-                                <div class="notify-icon">
-                                    <span class="notify-dot"></span>
-                                    <img src="images/support.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-text col-10 align-self-center">
-                            Varun asked a doubt "<span class="faded">sample text lorem ipsum let ips istim tum</span>"
-                        </div>
-                    </div>
-
-                    </div>
-
-                    <div class="pull-right">
-                        Browse All
-                    </div>
+    <div class="col-12 col-md-6">
+      <div class="c-leaderboard border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Contest Leaderboard</h4>
+        <table class="w-100">
+          <thead class="font-sm red extra-bold">
+            <td class="pb-4">Rank</td>
+            <td class="pb-4">User</td>
+            <td class="pb-4">College</td>
+            <td class="pb-4">Score</td>
+          </thead>
+          <tbody>
+            <tr class="extra-bold">
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
                 </div>
-
-            </div>
-
-            <div class="col-12 col-md-6">
-                <div class="card">
-                   {{> certificate-locked}}
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
                 </div>
-                <button class="button-solid">Submit</button>
-                <button class="button-dashed">Cancel</button>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">PEC, Chandigarh</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="c-announcements border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-4">Course Announcements</h4>
+        <div class="list-divided border-none">
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
             </div>
-
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="row no-gutters justify-content-between">
+              <div class="img-desc align-items-center">
+                <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+                <div class="description ml-3">
+                  <h6>Siddharth Jain</h6>
+                  <span class="card-md grey">2 hours ago</span>
+                </div>
+              </div>
+              <div>
+                <span class="red card-md mr-3">3 Replies</span>
+                <button class="button-solid card-md">Reply</button>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- ----------------------------------------Leaderboard---------------------------------------- -->
-    <div class="heading-u">
-      Leaderboard
-    </div>
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Summary</h4>
 
-    <div class="c-overview-leaderboard">
-      <div class="card">
-        <div class="generate-scroll-y">
-          <table class="table table-responsive">
-            <thead>
-              <tr>
-                <th data-field="rank">Rank</th>
-                <th data-field="user">User</th>
-                <th data-field="college">College</th>
-                <th data-field="score">Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-10.svg" class="img-circle marginR10" width="25">
-                  Ishaan Sharma
-                </td>
-                <td>
-                  ---OTHER / NOT LISTED / NO COLLEGE ---
-                </td>
-                <td>333</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-10.svg" class="img-circle marginR10" width="25">
-                  Ishaan Sharma
-                </td>
-                <td>
-                  ---OTHER / NOT LISTED / NO COLLEGE ---
-                </td>
-                <td>333</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-10.svg" class="img-circle marginR10" width="25">
-                  Ishaan Sharma
-                </td>
-                <td>
-                  ---OTHER / NOT LISTED / NO COLLEGE ---
-                </td>
-                <td>333</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-10.svg" class="img-circle marginR10" width="25">
-                  Ishaan Sharma
-                </td>
-                <td>
-                  ---OTHER / NOT LISTED / NO COLLEGE ---
-                </td>
-                <td>333</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-14.svg" class="img-circle marginR10" width="25">
-                  Abdul Ahad Khan
-                </td>
-                <td>
-                  Amity School Of Engineering &amp; Technology (Noida)
-                </td>
-                <td>300</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-19.svg" class="img-circle marginR10" width="25">
-                  Tarun Nagpal
-                </td>
-                <td>
-                  Guru Nanak Dev Engineering College (Ludhiana)
-                </td>
-                <td>133</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>
-                  <img src="https://minio.codingblocks.com/img/avatar-36.svg" class="img-circle marginR10" width="25">
-                  Shah Faisal
-                </td>
-                <td>
-                  ---OTHER / NOT LISTED / NO COLLEGE ---
-                </td>
-                <td>100</td>
-              </tr>
-            </tbody>
-          </table>
+        <p class="grey">
+          Our Android Development online course facilitates and boosts your journey right from the fundamentals of UI to building
+          a full-fledged Android app. This online course by Coding Blocks with over 100 recorded videos and 5 live webinars,
+          covers the concepts such as UI design, firebase & push notifications, hardware sensors, networking, and databases.
+          interactive applications.
+        </p>
+
+        <p class="mt-4">
+          Major Topics Covered
+        </p>
+        
+        <div class="row">
+          <div class="pill m-2">Flow Charts</div>
+          <div class="pill m-2">Conditionals and Loops</div>
+          <div class="pill m-2">Strings</div>
+          <div class="pill m-2">Operators and Patterns</div>
+          <div class="pill m-2">Operators and Patterns</div>
+          <div class="pill m-2">Functions</div>
+        </div>
+      </div>
+
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4>Mentors</h4>
+        Know your Mentors for this course
+
+        <div class="divider-h mt-5 mb-5"></div>
+
+        <div class="img-desc row no-gutters mb-5">
+          <div class="col-3 pr-4">
+            <img class="round" src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="">
+        
+          </div>
+          <div class="description col-8">
+            <div class="heading-d">
+              <h6 class="bold">
+                Prateek Narang
+              </h6>
+              <div class="mb-3">
+                Founding Member, Coding Blocks
+              </div>
+              <div class="card-md">
+                Coding Blocks is pleased to bring you the ultimate competitive programming course,
+                hand
+                crafted Coding Blocks is pleased to bring you the ultimate competitive programming
+                course, hand crafted
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        <div class="img-desc row no-gutters">
+          <div class="col-3 pr-4">
+            <img class="round" src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="">
+        
+          </div>
+          <div class="description col-8">
+            <div class="heading-d">
+              <h6 class="bold">
+                Prateek Narang
+              </h6>
+              <div class="mb-3">
+                Founding Member, Coding Blocks
+              </div>
+              <div class="card-md">
+                Coding Blocks is pleased to bring you the ultimate competitive programming course,
+                hand
+                crafted Coding Blocks is pleased to bring you the ultimate competitive programming
+                course, hand crafted
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Course Introduction</h4>
+
+        <div class="bold mb-3">Lectures</div>
+        <div class="grey card-md mb-4">
+          • 2 to 3 lectures will be released every week.
+          <br>
+          • There are In-Class Quizzes, Assignments, Notes along with Lecture Videos in a lecture. You should attempt them all to
+          master each section that you study.
+          <br>
+          • You should complete the lectures within the week.
+        </div>
+
+        <div class="bold mb-3">Assignments and Tests</div>
+        <div class="grey card-md mb-4">
+          • After almost every lecture there will be one assignment.
+          <br>
+          • Assignments will have deadlines. Submissions after deadline will be subject to penalty (Penalty procedure is explained
+          separately).
+          <br>
+          • Apart from assignments there will be frequent tests analysing your concepts and understanding.
+        </div>
+
+        <div class="bold mb-3">Teaching Assistants and Doubts Resolution</div>
+        <div class="grey card-md mb-4">
+          • Apart from instructors taking the course, there are teaching assistants in the course who will be taking your doubts.
+          <br>
+          • You can ask doubt on any content that you are facing problem at, be it a video or a question. There is an “Ask Doubt”
+          button on the top right corner to raise your doubt.
         </div>
       </div>
     </div>
 
-    <!-- -----------------------------------------About this course--------------------------------- -->
-    <div class="heading-u">
-        About This Course
-    </div>
 
-    <div class="c-overview-course">
-        <div class="row no-gutters flex-wrap-reverse">
-            <div class="course-features col-12 col-md-5">
-                <div class="row no-gutters justify-content-center">
-                    <div class="img-3ox col-2 align-self-center">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="para col-4 align-self-center">
-                        30+ Hours Video Content
-                    </div>
-
-                    <div class="img-3ox col-2 align-self-center">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="para col-4 align-self-center">
-                        Full Lifetime Access
-                    </div>
-                </div>
-
-                <div class="row no-gutters justify-content-center">
-                    <div class="img-3ox col-2 align-self-center">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="para col-4 align-self-center">
-                        Certification of Completion
-                    </div>
-
-                    <div class="img-3ox col-2 align-self-center">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="para col-4 align-self-center">
-                        Supplemental Resources
-                    </div>
-                </div>
-
+    <div class="col-12 col-md-3">
+      <div class="border-card border-none bg-light-green mb-5 white">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <strong class="font-md">Join Whatsapp Group</strong>
+      </div>
+      <div class="c-certificate border-card border-none mb-5 white">
+        <div class="row justify-content-between no-gutters">
+          <div class="img-desc font-mds">
+            <div class="col-2">
+              <img src="/images/placeholder.gif" alt="">
             </div>
-
-            <div class="classroom-para col-12 offset-md-1 col-md-5">
-                Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted to ensure your success in challenges such as Google CodeJam, Google Kickstart, ACM-ICPC, and more. This 8 week programme will kickstart your foray in to the exciting world of competitive coding. You will master commonly used problem solving techniques, hone your mathematical analysis skills, and push the boundaries of your reasoning abilities. The course will cover Advanced Data Structures like Segment Trees, Binary Index / Fenwick Trees.
+            <div class="description">
+              <span>Generate</span>
+              <span>Certificate</span>
             </div>
+          </div>
+          <button class="button-solid">
+            <i class="fas fa-lock"></i>
+            Generate
+          </button>
         </div>
+        <div class="divider-h bg-white my-4"></div>
 
-    </div>
-
-    <!-------------------------------------------About Instructors-------------------------------------->
-    <div class="heading-u">
-        About Instructors
-    </div>
-
-    <div class="c-about-instructors">
-        <div class="row no-gutters">
-            <div class="col-md-6 col-12">
-                <div class="img-desc row no-gutters">
-                    <div class="col-3">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="description col-8">
-                        <div class="heading-d">
-                            <div class="main-h">
-                                Prateek Narang
-                            </div>
-                            <div class="sub-h">
-                                Founding Member, Coding Blocks
-                            </div>
-                        </div>
-
-                        <div class="classroom-para">
-                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="img-desc row no-gutters">
-                    <div class="col-3">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="description col-8">
-                        <div class="heading-d">
-                            <div class="main-h">
-                                Prateek Narang
-                            </div>
-                            <div class="sub-h">
-                                Founding Member, Coding Blocks
-                            </div>
-                        </div>
-
-                        <div class="classroom-para">
-                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
         </div>
-
-        <div class="row no-gutters">
-            <div class="col-md-6 col-12">
-                <div class="img-desc row no-gutters">
-                    <div class="col-3">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="description col-8">
-                        <div class="heading-d">
-                            <div class="main-h">
-                                Prateek Narang
-                            </div>
-                            <div class="sub-h">
-                                Founding Member, Coding Blocks
-                            </div>
-                        </div>
-
-                        <div class="classroom-para">
-                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="img-desc row no-gutters">
-                    <div class="col-3">
-                        <div class="img-container">
-                            <div class="round-img">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="description col-8">
-                        <div class="heading-d">
-                            <div class="main-h">
-                                Prateek Narang
-                            </div>
-                            <div class="sub-h">
-                                Founding Member, Coding Blocks
-                            </div>
-                        </div>
-
-                        <div class="classroom-para">
-                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted                            Coding Blocks is pleased to bring you the ultimate competitive programming course, hand crafted
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
         </div>
-    </div>
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
+        </div>
+        <img class="stamp" src="/images/stamp.png" alt="Coding Blocks Pvt Ltd">
+      </div>
+      <div class="border-card extra-bold font-mds border-none bg-gradient-black-bt mb-5">
+        <p class="white">
+          Get recruited by top multinational
+          companies and get worldwide
+          recongnition!
+        </p>
+        <p class="red">
+          Complete this course now & Apply
+          to jobs on Hiring Blocks
+        </p>
 
-    {{!-- FAQs --}}
-    
-    <div class="heading-u mt-5 mb-5">
-        Frequently Asked Questions
-    </div>
-    
-    <div class="font-mds mb-4">
-        How scoring in Leaderboard works?
-    </div>
-    <div class="grey i mb-4">
-        Your score in Leaderboard is the sum of weighted scores of all the topics that you have attempted. Every Topic
-        (Lecture
-        questions + Practice section) that you solve has a weightage assigned to it. For each Topic, weighted score is
-        calculated as : (your score in that topic / max score of the topic) * weightage of topic.
-    </div>
-    
-    <div class="font-mds mb-4">
-        When do I complete an Assignment?
-    </div>
-    <div class="grey i mb-4">
-        You complete an assignment when you have attempted at least 80% of MCQ problems and you score an average of at
-        least 80%
-        in code problems, within an assignment.
-    </div>
-    
-    <div class="font-mds mb-4">
-        When do I complete a Lecture?
-    </div>
-    <div class="grey i mb-4">
-        You complete a lecture when you have attempted at least 80% of objective problems, have scored at least 80% in each
-        code problems, and have seen at least 80% of the total videos, within a lecture.
-    </div>
-    
-    <div class="font-mds mb-4">
-        When do I complete a Test?
-    </div>
-    <div class="grey i mb-4">
-        You complete a test when you have submitted the test.
-    </div>
+        <button class="button-solid">Resume</button>
+      </div>
+      <div class="border-card mb-5">
+        <h4>Teaching Assistants</h4>
+        Know your TA’s for this course
 
+        <div class="divider-h mt-4 mb-4"></div>
+
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-card mb-5">
+        <h4>Course FAQ's</h4>
+
+        <div class="divider-h mt-4 mb-4"></div>
+        
+        <div class="bold">
+          When do I complete an Assignment?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete an assignment when you have attempted at least 80% of MCQ problems and you score an average of at least 80%
+          in code problems, within an assignment.
+        </p>
+
+        <div class="bold">
+          When do I complete a Lecture?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete a lecture when you have attempted at least 80% of objective problems, have scored at least 80% in each code
+          problems, and have seen at least 80% of the total videos, within a lecture.
+        </p>
+
+        <div class="bold">
+          When do I complete a Test?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete a test when you have submitted the test.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>

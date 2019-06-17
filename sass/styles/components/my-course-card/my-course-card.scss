@@ -5,16 +5,6 @@
     margin: 15px 0;
   }
 
-  .course-progress {
-    font-size: $font-sm;
-
-    progress {
-      width: 85%;
-    }
-
-    @include progress(7px, $color-button-primary);
-  }
-
   .footer{
     @include flexbox(row, space-between, center);
     font-size: $card-md;

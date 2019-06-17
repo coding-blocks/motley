@@ -1,0 +1,15 @@
+.tick{
+  position: relative;
+
+  &::after{
+    content: '';
+    @include dimensions(60%, 25%);
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    z-index: 100;
+    border-left: solid 2px white;
+    border-bottom: solid 2px white;
+    transform: rotate(-45deg);
+  }
+}

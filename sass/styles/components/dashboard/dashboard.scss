@@ -1,0 +1,42 @@
+.c-course-progress{
+  padding: 3rem 6rem;
+  color: white;
+
+  @include progress(10px, $button-element-level);
+}
+
+.c-dashboard-doubts, .c-announcements{
+  max-height: 830px;
+  overflow-y: auto;
+}
+
+.c-leaderboard{
+  max-height: 460px;
+  overflow-y: auto;
+}
+
+.c-certificate{
+  position: relative;
+  background-image: $gradient-blue-30-deg;
+  font-weight: $extra-bold;
+  padding: 30px;
+
+  .tick{
+    &::after{
+      border-left: solid 2px $blue;
+      border-bottom: solid 2px $blue;
+    }
+  }
+
+  .stamp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .c-course-progress{
+    padding: 3rem 4rem;
+  }
+}
