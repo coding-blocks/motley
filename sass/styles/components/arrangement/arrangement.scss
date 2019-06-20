@@ -45,38 +45,38 @@
         }
     }
 
-    .input-text {
-        @include padding-mixin(0, 20px, 0, 20px);
-        color: $navLink;
-        border: none;
-    }
+    // .input-text {
+    //     @include padding-mixin(0, 20px, 0, 20px);
+    //     color: $navLink;
+    //     border: none;
+    // }
 
-    .dropdown-ul {
-        box-shadow: unset;
-    }
+    // .dropdown-ul {
+    //     box-shadow: unset;
+    // }
 
-    .border-card {
-        @include padding-mixin(30px, 30px, 120px, 30px);
-        @include margin(0, 0, 30px, 0);
-        position: relative;
-    }
+    // .border-card {
+    //     @include padding-mixin(30px, 30px, 120px, 30px);
+    //     @include margin(0, 0, 30px, 0);
+    //     position: relative;
+    // }
 
-    .button-dashed {
-        @include margin(0, 0, 0, 0);
-        max-width: 136px;
-        min-width: 90px;
-        width: 40%;
-        font-size: $font-xs;
-        font-weight: $font-medium;
-    }
+    // .button-dashed {
+    //     @include margin(0, 0, 0, 0);
+    //     max-width: 136px;
+    //     min-width: 90px;
+    //     width: 40%;
+    //     font-size: $font-xs;
+    //     font-weight: $font-medium;
+    // }
 
-    .button-row {
-        width: 100%;
-        bottom: 40px;
-        position: absolute;
-    }
+    // .button-row {
+    //     width: 100%;
+    //     bottom: 40px;
+    //     position: absolute;
+    // }
 
-    .heading {
-        font-size: $font-sm;
-    }
+    // .heading {
+    //     font-size: $font-sm;
+    // }
 }

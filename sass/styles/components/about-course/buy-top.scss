@@ -26,19 +26,6 @@
     padding-left: 3%;
   }
 
-  .main-h, .sub-h{
-    color: $white;
-    font-weight: $font-normal;
-  }
-
-  .main-h{
-    font-size: $font-md;
-  }
-
-  .sub-h{
-    font-size: $font-xs;
-  }
-
   .button-solid{
     @extend %button-config;
     margin-right: 3%;
@@ -51,9 +38,5 @@
   &.slide-up{
     transform: translateY(-350px);
   }
-
-  .row{
-    padding: 0;
-  }
-  }
+}
   

@@ -51,15 +51,18 @@
     &.md {
       padding: 10px 25px;
     }
+    
+    transition: 0.3s;
   }
 }
 
 .button-solid{
   background-image: $button-gradient;
+  background-size: 200%;
 }
 
 .button-solid:hover {
-  box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);
+  background-position: right center;
 }
 
 .button-solid-white{
@@ -72,7 +75,7 @@
 
 .button-dashed {
   border: 2px solid ;
-}
+  }
 
 .button-solid.disabled {
   background-image: $button-gradient-disabled;

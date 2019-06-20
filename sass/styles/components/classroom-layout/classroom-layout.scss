@@ -3,7 +3,7 @@
 
   .classroom-header-box {
     padding: 0 44px;
-    border-right: 1px solid $classroom-border;
+    border-right: 1px solid $default-border;
   }
   .classroom-header {
     padding: 0;
@@ -96,7 +96,7 @@
     display: none;
   }
 
-  @include progress(10px, $color-button-primary);
+  // @include progress(10px, $color-button-primary);
 }
 
 .rating{

@@ -11,15 +11,29 @@ $google: #f4695a;
 $twitter: #03a9f4;
 $linkedin: #007BB6;
 
-$color-button-primary: #ed8080;
 $global-font-text-color: #333333;
 $global-font-heading-color: #333333;
+$font-complete: #8dbf75;
+$font-sub-heading: #f6776f;
+
+$color-button-primary: #ed8080;
+$button-element-level: #ff6666;
+
 $card-box-border: #e8e8e8;
+$default-border: #cccccc;
+$nav-border: #f6f6f6;
+$vp-border: #676767;
+$border: rgba(225, 225, 225, 0.75);
+
+$vp-background: #252525;
+$editor-background: #2e2e2e;
+$otp-input-bg: #ebebeb;
+$hover-bg: #fafafa;
+$content-search-box-bg: #3b3838;
+$nav-info-bg: #fcfcfc;
+
 $card-mentor: #e9e9e9;
 $card-box-shadow: rgba(51, 51, 51, 0.1);
-$button-element-level: #ff6666;
-$classroom-border: #cccccc;
-$nav-border: #f6f6f6;
 $rating-star: #fce298;
 $reset-progress: #fc4f4f;
 $faded-text: #999999;
@@ -27,36 +41,26 @@ $intermediate-level: #fecc6e;
 $accordion-li: #fdfdfd;
 $status-back-complete: #d7f1d3;
 $status-front-complete: #82d073;
-$font-complete: #8dbf75;
 $status-back-incomplete: #bebebe;
 $default-accordion-font: #666666;
-$default-border: #cccccc;
-$font-sub-heading: #f6776f;
 $navLink: #666666;
 $transparent: transparent;
 $disabled-input: #ececec;
-$vp-background: #252525;
+
 $vp-acc-head: #4c4c4c;
-$vp-border: #676767;
 $search-box-color: #f2f2f2;
 $faded-cont: #e4e4e4;
-$editor-background: #2e2e2e;
 $editor-line-number: #202020;
 $input-code-editor: #2a2a2a;
 $modal-fader: #111111;
 $fail-red: #e8685d;
-$otp-input-bg: #ebebeb;
-$hover-bg: #fafafa;
 $dropdown-divider: #f4f4f4;
 $vp-select-box: #262626;
-$nav-info-bg: #fcfcfc;
 $grey-choices: #f7f7f7;
 $skeleton: #f8f8f8;
 $content-search-box: #4c4b4b;
-$content-search-box-bg: #3b3838;
 $search-box-placeholder: #a0a0a0;
 $search-box-input: #d5d5d5;
-$border: rgba(225, 225, 225, 0.75);
 $invert: #272727;
 $spaced-black: #222222;
 $light-filter: rgba(255, 255, 255, 0.9);
@@ -66,7 +70,7 @@ $cricket-cup: #84114b;
 
 //Gradients
 $gradient-black: linear-gradient(30deg, #333333, #000000);
-$button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113));
+$button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
 $course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
 $button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160, 160, 160));
 $gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);

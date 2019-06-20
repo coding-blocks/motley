@@ -1,19 +1,16 @@
 /*--------------------------INPUT TEXT---------------------------*/
 .input-text {
-  @include dimensions(100%, 47px);
-  font-size: $font-mds;
-  padding: 0 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
   background-color: $card-mentor;
   border: none;
-  border-radius: 10px;
 
   &.icon{
     background-size: 25px;
-    padding-left: 80px;
+    padding-left: 5.7142rem;
     background-color: $nav-border;
     background-repeat: no-repeat;
-    background-position-x: 30px;
-    background-position-y: center;
+    background-position: 2.1428rem center;
   }
 }
 
@@ -21,21 +18,15 @@
   position: relative;
 
   input{
-    padding-right: 95px;
+    padding-right: 6.7857rem;
   }
 
   button{
-    @include dimensions(auto, auto);
     position: absolute;
-    right:30px;
+    right: 2.1428rem;
     top: 35%;
   }
 }
-
-.input-text[disabled]{
-  background: $disabled-input;
-}
-
 
 /*--------------------------INPUT CHECKBOX---------------------------*/
 .input-checkbox{

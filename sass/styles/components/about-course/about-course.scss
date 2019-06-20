@@ -18,12 +18,11 @@
 .rating-carousel{
   flex-wrap: nowrap;
   overflow-x: auto;
-  position: relative;
   padding-bottom: 20px;
 }
 
 .c-about-instructors{
-  background-color: #f6f6f6;
+  background-color: $nav-border;
   padding-top: 3rem;
   
   img{

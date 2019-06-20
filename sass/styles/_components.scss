@@ -34,9 +34,6 @@
 @import "components/login/login";
 @import "components/course-card/course-card";
 @import "components/arrangement/arrangement";
-@import "components/profile-page/profile-page";
-@import "components/profile-page-edit/profile-page-edit";
-@import "components/edit-profile/edit-profile";
 @import "components/app-page/app-page";
 @import "components/add-address/add-address";
 @import "components/address-page/address-page";
@@ -66,3 +63,5 @@
 @import "components/grid";
 @import "components/job-description";
 @import "components/cricket-cup";
+@import "components/hiring/banner.scss";
+@import "components/auth-links";

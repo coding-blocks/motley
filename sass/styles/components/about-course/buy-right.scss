@@ -22,7 +22,6 @@
   
   .video{
     @include dimensions(100%, 300px);
-    cursor: pointer;
     border: none;
   }
 

@@ -11,7 +11,7 @@
 
 .fade-left::before{
     @extend %fade;
-    left: 1px;
+    left: 0;
     width: 10px;
     box-shadow: 6px 0 5px $white;
     border-top-right-radius: 10px;
