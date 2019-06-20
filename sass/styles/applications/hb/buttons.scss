@@ -5,3 +5,15 @@
         box-shadow:  0 10px 41px 0 $white;
     }
 }
+
+.button-gradient-blue.button-orange{
+        border: solid 1px $orange;
+        font-weight: $bold;
+        color: $orange;
+      
+        &:hover{
+        // border: unset;
+        background-image: $gradient-orange-lr;
+        color: $white;
+      }
+}

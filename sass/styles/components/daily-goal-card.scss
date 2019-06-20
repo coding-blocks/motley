@@ -31,7 +31,7 @@
         margin: 0 auto;
     }
 
-    @include progress(10px, $bg-gradient-blue-lr)
+    @include progress(10px, $gradient-blue-lr)
 }
 
 @media screen and (max-width: 1200px){

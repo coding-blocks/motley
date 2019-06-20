@@ -1,0 +1,35 @@
+.a-hb{
+    .tab-nav-underline{
+        justify-content: space-around;
+        font-size: $font-sm;
+        bottom: -2px;
+
+        & .tab{
+            padding: unset;
+            font-weight: $extra-bold;
+            &:hover{
+                border-bottom: unset;
+                color: $orange;
+            }
+            &.active{
+                border-bottom: solid 2px $orange;
+                color: $orange;
+            }
+        }
+    }
+
+    .tab{
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .code-box{
+        width: 60%;
+        word-wrap: break-word;
+        background-color: $nav-border;
+        border-radius: 5px;
+    }
+}

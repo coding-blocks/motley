@@ -1,0 +1,67 @@
+.a-hb {
+	.lock{
+		width: 100%;
+	}
+
+  .hb-tab-nav {
+    .c-hb-leaderboard {
+
+      table{
+				td:first-child{
+					text-align: center;
+				}
+			}  
+      thead {
+        color: $orange;
+      }
+
+      tbody {
+        text-align: left;
+        font-weight: $semi-bold;
+
+        .self {
+          background-image: $gradient-orange-lr;
+          color: $white;
+          font-weight: $extra-bold;
+        }
+      }
+    }
+
+    table {
+      thead {
+        color: unset;
+        border-bottom: solid 1px $t-heading-border;
+      }
+
+      tbody {
+        text-align: left;
+        font-weight: bold;
+
+        .time-elapsed {
+          font-size: $font-xs;
+          font-weight: normal;
+          color: $faded-text;
+        }
+
+        .view {
+          cursor: grab;
+        }
+      }
+
+      .accepted {
+        color: #64bb5c;
+        font-size: $font-sm;
+      }
+
+      .error {
+        color: $orange;
+        font-size: $font-sm;
+      }
+
+      .wrong {
+        color: $salmon;
+        font-size: $font-sm;
+      }
+    }
+  }
+}
