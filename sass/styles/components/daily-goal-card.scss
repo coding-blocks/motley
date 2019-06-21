@@ -2,33 +2,10 @@
     text-align: center;
     padding: 40px;
 
-    .small-card{
-        text-align: left;
-
-        progress{
-            width: 90%;
-            margin: inherit;
-        }
-    }
-
-    .badge{
-        width: 30%;
-        margin: 0 auto;
-    }
-
     .badge-scroll{
         flex-wrap: nowrap;
         overflow-x: auto;
         position: relative;
-
-        .mybadge{
-            width: 100%;
-        }
-    }
-
-    progress{
-        width: 90%;
-        margin: 0 auto;
     }
 
     @include progress(10px, $gradient-blue-lr)
