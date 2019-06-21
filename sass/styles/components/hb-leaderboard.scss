@@ -4,18 +4,23 @@
     }
 
     table{
+        .self{
+            color: $white;
+            font-weight: $extra-bold;
+        }
+    }
+
+    table.blue{
         thead{
             color: $hb-blue;
         }
 
         tbody{
             text-align: center;
+        }
 
-            .self{
-                background-image: $gradient-blue-lr;
-                color: $white;
-                font-weight: $extra-bold;
-            }
+        .self{
+            background-image: $gradient-blue-lr;
         }
     }
 }
