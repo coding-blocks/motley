@@ -17,25 +17,3 @@
     }
   }
 }
-
-.submissions-table{
-  thead{
-    border-bottom: solid 1px $t-heading-border;
-  }
-  
-  .accepted, .error, .wrong{
-    font-size: $font-sm;
-  }
-
-  .accepted{
-    color: #64bb5c;
-  }
-
-  .error{
-    color: $orange;
-  }
-
-  .wrong{
-    color: $salmon;
-  }
-}
