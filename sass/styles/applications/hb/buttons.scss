@@ -1,0 +1,34 @@
+.button-solid.button-orange{
+	background-image: $gradient-orange-lr;
+}
+
+.button-dashed.button-orange{
+	border: solid 1px $orange;
+	font-weight: $bold;
+	color: $orange;
+
+	&:hover{
+	background-image: $gradient-orange-lr;
+	color: $white;
+	}
+}
+
+.button-solid.button-blue{
+	background-image: $button-gradient-blue;
+}
+
+.button-dashed.button-blue{
+	border: solid 1px $hb-blue;
+	font-weight: $bold;
+	color: $hb-blue;
+
+	&:hover{
+		background-image: $button-gradient-blue;
+		color: $white;
+	}
+}
+
+.button-solid.button-white{
+	background: $white;
+	color: $hb-blue;
+}

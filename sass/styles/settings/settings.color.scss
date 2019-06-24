@@ -22,6 +22,7 @@ $card-box-shadow: rgba(51, 51, 51, 0.1);
 $button-element-level: #ff6666;
 $classroom-border: #cccccc;
 $nav-border: #f6f6f6;
+$t-heading-border: #f3f3f3;
 $rating-star: #fce298;
 $reset-progress: #fc4f4f;
 $faded-text: #999999;
@@ -71,6 +72,7 @@ $grey: #a2a4a8;
 
 //Gradients
 $bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
+$gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black: linear-gradient(30deg, #333333, #000000);
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113));
 $course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));

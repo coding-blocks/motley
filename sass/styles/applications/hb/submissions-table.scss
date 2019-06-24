@@ -1,0 +1,19 @@
+.c-hb-leaderboard{
+  table{
+    td:first-child{
+      text-align: center;
+    }
+  }  
+  thead{
+    color: $orange;
+  }
+
+  tbody{
+    text-align: left;
+    font-weight: $semi-bold;
+
+    .self {
+      background-image: $gradient-orange-lr;
+    }
+  }
+}

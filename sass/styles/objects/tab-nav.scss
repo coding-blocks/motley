@@ -34,22 +34,20 @@
 // tab-nav underline
 
 .tab-nav-underline {
+  justify-content: space-around;
   display: flex;
   align-items: center;
-  border-bottom: solid 3px $search-box-color;
-  font-size: $font-mds;
+  border-bottom: solid 2px $search-box-color;
+  font-size: $font-sm;
+  bottom: -2px;
 
   & .tab{
     padding: 15px 5%;
-    font-weight: $semi-bold;
+    font-weight: $extra-bold;
     color: #333;
     position: relative;
-    bottom: -3px;
     cursor: pointer;
-
-    &:hover{
-      border-bottom: solid 3px #cbcbcb;
-    }
+    bottom: -2px;
 
     &.active{
       border-bottom: solid 3px $salmon;

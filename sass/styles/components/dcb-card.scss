@@ -6,11 +6,6 @@
         padding: 40px 45px 40px 40px;
     }
 
-    .button-solid-white{
-        color: #246db3;
-        font-weight: $bold;
-    }
-
     .divided-list{
         .list-item{
             &:not(:last-child){
@@ -50,7 +45,7 @@
         }
     }
     
-    @media screen and (max-width: 880px){
+    @media screen and (max-width: 575px){
         ul[class=divided-list]{
             .list-item{
                 .list-heading{

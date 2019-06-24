@@ -27,22 +27,6 @@
   $circle-button-background,
   $circle-button-color,
   0, 0),
-
-  (solid-white,
-  $solid-button-width,
-  $solid-button-height,
-  $solid-button-border-radius,
-  $white,
-  $solid-button-color,
-  10px, 15px),
-
-  (gradient-blue,
-  $solid-button-width,
-  $solid-button-height,
-  $solid-button-border-radius,
-  $white,
-  $hb-blue,
-  10px, 15px),
   {
 
   .button-#{$type} {
@@ -66,30 +50,13 @@
   background-image: $button-gradient;
 }
 
-.button-solid:hover {
-  box-shadow:  0 10px 41px 0 rgba(236, 131, 122, 0.2);
-}
-
-.button-solid-white{
-  background-image: unset;
-}
-
-.button-solid-white:hover {
-  box-shadow:  0 0px 20px 0 $white;
-}
-
-.button-gradient-blue{
-  border: solid 1px $hb-blue;
-}
-
-.button-gradient-blue:hover{
-  border: unset;
-  background-image: $button-gradient-blue;
-  color: $white;
-}
-
 .button-dashed {
-  border: 2px solid ;
+  border: 1px solid;
+
+  &:hover{
+    background-color: $dashed-button-color;
+    color: $white;
+  }
 }
 
 .button-solid.disabled {
