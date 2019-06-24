@@ -12,13 +12,7 @@
   }
 
   .button-solid{
-    @extend %button-config;
     margin-right: 4%;
-  }
-
-  .button-dashed{
-    @extend %button-config;
-    @include border(solid, 2px, $button-element-level);
   }
 
   .course-features{

@@ -5,6 +5,7 @@
   }
   progress::-moz-progress-bar { 
     background-color: $value-color;
+    background-image: $value-color;
   }
   progress::-webkit-progress-bar {
     height: $height;
@@ -12,9 +13,11 @@
   }
   progress::-webkit-progress-value {
     background-color: $value-color;
+    background-image: $value-color;
   }
   progress:-ms-fill {
     height: $height;
     background-color: $value-color;
+    background-image: $value-color;
   }
 }

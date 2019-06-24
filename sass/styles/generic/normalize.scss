@@ -11,6 +11,7 @@ html {
   -ms-text-size-adjust: 100%; // 2
   -webkit-text-size-adjust: 100%; // 2
   font-size: $global-font-size;
+  color: $global-font-text-color;
 }
 
 @media screen and (max-width:575px){
