@@ -1,0 +1,13 @@
+.code-editor{
+  height: 700px;
+
+  .input-div{
+    background-color: $code-editor;
+  }
+
+  textarea{
+    background-color: $dark-grey;
+    width: 95%;
+    resize: none;
+  }
+}
