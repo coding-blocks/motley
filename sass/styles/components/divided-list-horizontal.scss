@@ -7,7 +7,7 @@
         display: inline-block;
 
         &:not(:last-child){
-            border-right: solid 1px $white;
+            border-right: solid 1px $faded-text;
         }
 
         &:first-child{

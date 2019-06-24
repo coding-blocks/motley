@@ -1,8 +1,10 @@
 .c-course-progress{
   padding: 3rem 6rem;
   color: white;
+}
 
-  // @include progress(10px, $button-element-level);
+.c-course-progress, .my-course-card{
+  @include progress(10px, $button-element-level);
 }
 
 .c-dashboard-doubts, .c-announcements{

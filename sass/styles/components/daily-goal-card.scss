@@ -1,0 +1,38 @@
+.c-daily-goal-card{
+    text-align: center;
+    padding: 40px;
+
+    .badge{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .badge-scroll{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        position: relative;
+
+        .mybadge{
+            width: 100%;
+        }
+    }
+
+    progress{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include progress(10px, $bg-gradient-blue-lr)
+}
+
+@media screen and (max-width: 1200px){
+    .c-daily-goal-card{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .c-daily-goal-card{
+        padding: 20px;
+    }
+}

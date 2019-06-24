@@ -1,0 +1,40 @@
+.c-previous-dcb{
+    padding: 40px;
+
+    h4{
+        color: #111f31;
+    }
+
+    .divided-list{
+        .list-heading{
+            color: $hb-blue;
+            font-size: $font-xs;
+        }
+        
+        .list-data{
+            color: #111f31;
+            font-size: $font-xs;
+        }
+    }
+
+    .button-gradient-blue{
+        font-weight: $bold;
+        font-size: $font-sm;
+    }
+
+    @media screen and (max-width: 575px){
+        .divided-list{
+            .list-heading{
+                font-size: $card-md;
+            }
+
+            .list-data{
+                font-size: $card-md;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        padding: 20px;
+    }
+}
