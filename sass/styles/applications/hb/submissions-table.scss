@@ -22,20 +22,6 @@
   thead{
     border-bottom: solid 1px $t-heading-border;
   }
-
-  tbody{
-    font-weight: bold;
-
-    .time-elapsed{
-      font-size: $font-xs;
-      font-weight: normal;
-      color: $faded-text;
-    }
-
-    .view{
-      cursor: grab;
-    }
-  }
   
   .accepted, .error, .wrong{
     font-size: $font-sm;
