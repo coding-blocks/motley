@@ -1,5 +1,6 @@
 .c-code-editor{
   width: 100%;
+  border: none;
 
   .input-div{
     background-color: $code-editor;
@@ -7,8 +8,5 @@
 
   textarea{
     background-color: $dark-grey;
-    width: 97%;
-    resize: none;
-    color: $white;
   }
 }
