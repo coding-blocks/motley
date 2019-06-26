@@ -1,16 +1,3 @@
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .online-card {
-    font-size: $font-xs;
-    display: flex;
-    .head{
-      @include dimensions(45%, auto);
-    }
-    .foot{
-      width: 55%;
-    }
-  }
-}
-
 @media screen and (max-width: 575px) {
   .online-card {
     display: flex;
