@@ -82,3 +82,7 @@ $gradient-list: (black, 'lr', linear-gradient(30deg, #333333, #000000)),
 .bg-gradient-purple{
   background: linear-gradient(30deg, #271147, #553180);
 }
+
+.bg-gradient-orange{
+  background: $gradient-orange-lr;
+}

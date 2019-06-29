@@ -3,13 +3,6 @@
         padding: 20px 0;
     }
 
-    table{
-        .self{
-            color: $white;
-            font-weight: $extra-bold;
-        }
-    }
-
     table.blue{
         thead{
             color: $hb-blue;
@@ -17,10 +10,6 @@
 
         tbody{
             text-align: center;
-        }
-
-        .self{
-            background-image: $bg-gradient-blue-lr;
         }
     }
 }
