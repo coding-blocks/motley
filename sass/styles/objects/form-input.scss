@@ -7,7 +7,7 @@
   border: none;
   border-radius: 10px;
 
-  &.icon{
+  &.icon {
     background-size: 25px;
     padding-left: 80px;
     background-color: $nav-border;
@@ -17,61 +17,84 @@
   }
 }
 
-.input-btn{
+.input-btn {
   position: relative;
 
-  input{
+  input {
     padding-right: 95px;
   }
 
-  button{
+  button {
     @include dimensions(auto, auto);
     position: absolute;
-    right:30px;
+    right: 30px;
     top: 35%;
   }
 }
 
-.input-text[disabled]{
+.input-text[disabled] {
   background: $disabled-input;
 }
 
-
 /*--------------------------INPUT CHECKBOX---------------------------*/
-.input-checkbox{
-  visibility: hidden;
+.input-checkbox {
   position: relative;
-  margin-right: 6px;
 
-  &:checked::before{
-    @include dimensions(6px, 13px);
-    @include border(solid, 2px, $global-font-text-color);
-    content: '';
-    position: absolute;
-    z-index: 101;
-    left: 5px;
-    border-width: 0 2px 2px 0;
-    background: transparent;
-    transform: rotate(45deg) translate(1px, -1px);
-    visibility: visible;
+  & > input {
+    visibility: hidden;
+    margin-right: 10px;
   }
 
-  &::after{
-    @include dimensions(19px, 19px);
-    content: '';
+  &.checkbox-tick > input:checked ~ span::before,
+  &.checkbox-tick > input:checked + span::before {
+    width: 4px;
+    height: 10px;
+    border: solid 1px #333333;
+    content: "";
+    position: absolute;
+    z-index: 101;
+    left: 6px;
+    top: 4px;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+
+  &.checkbox-solid > input:checked ~ span::before,
+  &.checkbox-solid > input:checked + span::before {
+    content: "";
+    @include dimensions(16px, 16px);
+    position: absolute;
+    z-index: 101;
+    left: 0;
+    top: 2px;
+    background: $checkbox-solid;
+  }
+
+  & > input ~ span::after,
+  & > input + span::after {
+    content: "";
+    @include dimensions(16px, 16px);
     position: absolute;
     z-index: 100;
     left: 0;
+    top: 2px;
     background: $nav-border;
     visibility: visible;
     cursor: pointer;
-    margin-top: -2px;
   }
 }
 
+// @each $abbrev, $color in $checkbox-solid{
+//   .input-checkbox.checkbox-solid.#{$abbrev} > input:checked ~ span::before,
+//   .input-checkbox.checkbox-solid.#{$abbrev} > input:checked + span::before {
+//     background: $color;
+//   }
+// }
+
 .input-textarea {
-  @include dimensions (100%, auto);
-  @include padding-mixin (20px, 20px, 20px, 20px);
+  @include dimensions(100%, auto);
+  @include padding-mixin(20px, 20px, 20px, 20px);
   background: $nav-border;
   border: none;
 }
+
