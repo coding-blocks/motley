@@ -124,11 +124,23 @@ module.exports = function (grunt) {
       'live',
       'examples/html',
       'examples/public/stylesheets/'
-    ]
+    ],
+    createFolders: {
+      applications: config.applications
+    }
   });
+
+  grunt.registerTask('createFolders', 'Creating application folders', function (target) {
+    const { applications } = grunt.config.get().createFolders
+    applications.map(m => {
+      grunt.file.mkdir(`examples/views/${m}`)
+      grunt.file.mkdir(`examples/components/${m}`)
+    })
+  })
 
   grunt.registerTask('server', function (target) {
     grunt.task.run([
+      'createFolders',
       'hbs',
       'sass',
       'connect',
