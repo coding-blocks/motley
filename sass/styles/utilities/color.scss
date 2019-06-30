@@ -31,7 +31,8 @@ $background-list:  (red, $fail-red)
         (green, $font-complete)
         (light-green, #7ad06d)
         (incorrect, $font-sub-heading)
-        (light-grey, $nav-border);
+        (light-grey, $nav-border)
+        (dark-grey, $interview-grey);
 
 @each $type, $color in $background-list {
   .bg-#{$type}{
