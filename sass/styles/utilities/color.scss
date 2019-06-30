@@ -1,15 +1,7 @@
 // COLORS
 
-$color-list:  (red, $button-element-level)
-        (black, $global-font-text-color)
-        (white, $white )
-        (grey, $navLink)
-        (orange,$orange)
-        (green, $font-complete)
-        (yellow, $yellow);
-
-@each $type, $color in $color-list {
-  .#{$type}{
+@each $abbrev, $color in $bg-color-list {
+  .#{$abbrev}{
       color: $color  !important;
   }
 }
@@ -34,8 +26,8 @@ $background-list:  (red, $fail-red)
         (light-grey, $nav-border)
         (dark-grey, $interview-grey);
 
-@each $type, $color in $background-list {
-  .bg-#{$type}{
+@each $abbrev, $color in $bg-color-list {
+  .bg-#{$abbrev}{
     background-color: $color  !important;
   }
 }

@@ -95,3 +95,29 @@ $bg-gradient-purple: linear-gradient(30deg, #271147, #553180);
 //   orange: $gradient-orange-30-deg
 // );
 $checkbox-solid: $gradient-orange-30-deg;
+
+//Background Colors
+$bg-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey,
+);
+
+//Text Colors
+$text-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey
+);
