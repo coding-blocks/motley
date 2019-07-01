@@ -1,15 +1,16 @@
-//.card-stack {
-//  margin-left: 140px;
-//  position: relative;
-//  margin-top: 30px;
-//}
-//
-
-
-
-.card-stack {
+.c-card-stack {
   margin-left: 320px;
   height: 320px;
+  position: relative;
+
+  @for $i from 1 through 3 {
+    .border-card:nth-child(#{$i}) {
+      position: absolute;
+      left: multiply-px($i, 30px) ;
+      z-index: 100 - $i;
+    }
+  }
+
   .border-card {
     @include dimensions(250px, 300px);
     padding: 20px 25px;
@@ -23,12 +24,6 @@
     left: -20px;
   }
 
-   .card:hover {
-     box-shadow: 0 35px 57px 0 rgba(51, 51, 51, 0.1);
-     cursor: pointer;
-
-   }
-
   .border-card:nth-child(3) {
     height: 190px;
     transform: translateY(30%);
@@ -39,71 +34,33 @@
     .card-heading {
       display: none;
     }
-    .card-text {
-      display: none;
-    }
-    .c-image-card {
-      display: none;
-    }
   }
+
   .border-card:nth-child(4) {
     height: 142px;
     left: 30px;
     position: absolute;
     transform: translateY(57%);
-     .button-solid {
-       display: none;
-     }
-     .card-heading {
-       display: none;
-     }
-    .card-text {
+    .button-solid {
       display: none;
     }
-    .c-image-card {
+    .card-heading {
       display: none;
     }
-   }
-
-  .card-heading {
-    height: unset;
-    font-size: $font-sm;
-    word-wrap: break-word;
-    width: 90%;
   }
 
-  .card-image {
-    width: 22%;
+  .card-heading {
+    font-size: $font-sm;
+    word-wrap: break-word;
   }
 
   .word-wrap {
     word-wrap: break-word;
-    width: 90%;
   }
 
-  .card-text {
-    font-size: $font-xs;
-    word-wrap: break-word;
-    width: 90%;
-  }
-  .c-text-card {
-    margin-bottom: 24px;
-    margin-top: 10px;
-  }
-
-  .button-solid{
+  .button-solid {
     position: absolute;
     bottom: 20px;
     right: 20px;
   }
-
-  .round-img-b{
-    @include dimensions(63px, 63px);
-  }
-
-}
-
-.card-stack-btn {
-  font-size: $font-sm;
-  cursor: pointer;
 }

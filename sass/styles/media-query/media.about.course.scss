@@ -36,14 +36,6 @@
 }
 
 @media screen and (max-width: 575px) {
-  .c-summary {
-    height: auto;
-
-    .classroom-para {
-      font-size: 1rem;
-    }
-  }
-
   .c-buy-right {
     margin-top: 15px;
     height: auto;
@@ -56,17 +48,6 @@
   .rating {
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-  .pos-rating {
-    font-size: 1rem;
-  }
-  .neg-rating {
-    font-size: 1rem;
-  }
-
-  .para {
-    font-size: 1rem;
-    width: 100%;
   }
 }
 

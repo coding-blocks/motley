@@ -1,20 +1,13 @@
-.home-banner {
+.c-home-banner {
   @include dimensions(100%, 500px);
   background-image: url('/images/home_bg.jpg');
   padding: 30px 5%;
   display: flex;
   justify-content: space-between;
 
-  .left {
-    align-self: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-    max-width: 500px;
-
+  .li-left {
     .button-solid {
-      font-size: 1.5rem;
       font-weight: 800;
-      background-color: white;
       color: #692fdc;
     }
   }

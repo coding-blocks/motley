@@ -28,8 +28,7 @@
       border-right: unset;
     }
 
-    .main-h, .sub-h, .notify-text, .button-solid, .header{
-      font-size: $font-xs;
+    .main-h, .sub-h, .notify-text, .button-solid, .header{      
     }
 
     .video-player{
@@ -43,8 +42,6 @@
     }
 
     .notify-text{
-      padding-right: 20px;
-      margin-left: 0;
       display: none;
     }
 
@@ -53,8 +50,7 @@
     }
 
     .tab-items{
-      display: flex;
-      font-size: $font-sm;
+      display: flex;      
     }
 
     .section-tabs{

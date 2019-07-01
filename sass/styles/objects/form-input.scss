@@ -4,11 +4,11 @@
   border-radius: 10px;
   background-color: $card-mentor;
   border: none;
+  width: 100%;
 
   &.icon{
     background-size: 25px;
     padding-left: 5.7142rem;
-    background-color: $nav-border;
     background-repeat: no-repeat;
     background-position: 2.1428rem center;
   }
@@ -24,7 +24,7 @@
   button{
     position: absolute;
     right: 2.1428rem;
-    top: 35%;
+    top: 25%;
   }
 }
 

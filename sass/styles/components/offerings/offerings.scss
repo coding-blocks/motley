@@ -12,3 +12,10 @@
 	}
 }
 
+@media all and (max-width: 575px) {
+  .c-offerings {
+    .offering-card-heading {
+      margin-bottom: 15px;
+    }
+  }
+}

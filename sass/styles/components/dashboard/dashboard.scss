@@ -3,7 +3,7 @@
   color: white;
 }
 
-.c-course-progress, .my-course-card{
+.c-course-progress, .c-my-course-card{
   @include progress(10px, $button-element-level);
 }
 
@@ -28,12 +28,6 @@
       border-left: solid 2px $blue;
       border-bottom: solid 2px $blue;
     }
-  }
-
-  .stamp{
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 }
 

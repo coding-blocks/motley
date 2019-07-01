@@ -1,0 +1,25 @@
+.threads {
+  &.invert {
+    background-color: $threads-invert;
+    color: $white;
+  }
+
+  .thread {
+    padding-left: 5%;
+    padding-bottom: 20px;
+    border-left: 1px solid $threads-separator;
+
+    &:not(:last-child):after {
+      content: "";
+      height: 1px;
+      background-color: $threads-separator;
+      margin-top: 10px;
+      display: block;
+      opacity: 0.6;
+    }
+
+    &:first-child {
+      padding-top: 20px;
+    }
+  }
+}

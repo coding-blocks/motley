@@ -6,47 +6,39 @@
 }
 
 @media screen and (max-width: 767px) {
-  .online-card {
-    padding: 0;
+  // .online-card {
+  //   padding: 0;
 
-    .course-name{
-      text-align: center;
-    }
+  //   .course-name{
+  //     text-align: center;
+  //   }
 
-    .footer {
-      text-align: left;
-      font-size: $font-xs;
-    }
+  //   .footer {
+  //     text-align: left;
+  //     font-size: $font-xs;
+  //   }
 
-    .card-mentor{
-      margin:  0;
-    }
+  //   .card-mentor{
+  //     margin:  0;
+  //   }
 
-    .rating {
-      margin: 0;
-    }
+  //   .rating {
+  //     margin: 0;
+  //   }
 
-    .status-circle{
-      padding-bottom: 13%;
-      width: 13%;
-    }
+  //   .status-circle{
+  //     padding-bottom: 13%;
+  //     width: 13%;
+  //   }
 
-    .header{
-      margin-bottom: 4%;
-    }
+  //   .header{
+  //     margin-bottom: 4%;
+  //   }
 
-    .price-detail{
-      margin:  0;
-    }
-  }
-
-  .grid {
-    margin: 0;
-
-    .row {
-      padding: 0;
-    }
-  }
+  //   .price-detail{
+  //     margin:  0;
+  //   }
+  // }
 
   .card-layout {
     flex: 0 0 100%;
@@ -63,7 +55,7 @@
     overflow: hidden;
     width: 65%;
     display: inline-block;
-    font-size: 1rem;
+    // font-size: 1rem;
   }
 
   .card-mentor {
@@ -78,10 +70,6 @@
     width: 10%;
   }
 
-  .card, .card-text, .card-heading {
-    height: auto;
-  }
-
   .c-image-card {
     padding-top: 0;
     padding-right: 15px;
@@ -90,24 +78,13 @@
     width: 11%;
     min-width: 68px;
   }
-
-  .c-course-card {
-    .card-price-details {
-      float: right;
-      text-align: right;
-    }
-
-    .card-heading {
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media screen and (max-width: 575px) {
   .online-card{
-    .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details{
-      font-size: $card-sms;
-    }
+    // .pos-rating, .neg-rating, .edit-rating, .footer, .card-batches, .card-batch-details{
+    //   font-size: $card-sms;
+    // }
 
     .status-circle{
       right: 12px;
@@ -131,13 +108,13 @@
   }
 
   .card-mentor-text {
-    font-size: $card-sms;
+    // font-size: $card-sms;
     padding-left: 5px;
     top: 0;
   }
 
   .card-mentor-name, .footer, .card-text, .button-solid, .button-dashed{
-    font-size: $card-sm;
+    // font-size: $card-sm;
   }
 
   .c-image-card {
@@ -153,35 +130,13 @@
     margin-bottom: 25px;
   }
 
-  .card {
-    height: auto;
-  }
-
-  .card-text, .card-heading {
-    height: auto;
-  }
-
-  .card-heading{
-    font-size: $card-md;
-    margin: 0;
-  }
-  
-  .card-price-details {
-    text-align: left;
-    width: 100%;
-  }
-
   .expert-level, .beginner-level, .advanced-level{
     @include dimensions(15px, 15px);
     border-width: 3px;
   }
 
   .expert-text, .beginner-text, .advanced-text{
-    font-size: $card-sms;
-  }
-
-  .button-solid, .button-dashed{
-    padding: 5px 10px;
+    // font-size: $card-sms;
   }
 
   .card-mentor-divider{

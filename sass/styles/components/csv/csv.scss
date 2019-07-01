@@ -16,7 +16,7 @@
   
 
   .bottom {
-    position: absolute;
+    position: sticky;
     flex-wrap: wrap;
     bottom: 0;
     @include dimensions(100%, 65px);

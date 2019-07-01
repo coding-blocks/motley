@@ -1,44 +1,11 @@
-.c-changedp{
-  font-size: $card-md;
-  font-family: Cabin;
-
-  .heading{
-    font-size: $font-xs;
-  }
-
-  .modal-content{
-    @include dimensions(90%, auto);
-    max-width: 600px;
-    padding: 30px;
-  }
-
-  .row{   //to overwrite bootstrap
-    .images{
+.c-changedp {
+  .row {
+    .images {
       cursor: pointer;
-      @include padding-mixin(2%, 2%, 2%, 2%);
 
-      &:hover{
+      &:hover {
         @include border(solid, 2px, $nav-border);
       }
-
-      img{
-        width: 100%;
-      }
     }
-  }
-
-
-  .button-solid{
-    @include dimensions(30%, 40px);
-    max-width: 190px;
-    margin-left: 20px;
-  }
-
-  p{
-    @include margin(20px, 0, 20px, 0);
-  }
-
-  .row{
-    padding: 0;
   }
 }

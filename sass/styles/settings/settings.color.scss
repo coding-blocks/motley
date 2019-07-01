@@ -76,6 +76,14 @@ $cricket-cup: #84114b;
 $hb-blue: #246db3;
 $grey: #a2a4a8;
 
+//threads
+$threads-separator: #666666;
+$threads-invert: #191919;
+
+//lists
+$list-shaded-invert: #111111;
+$list-shaded-background: rgba(255, 255, 255, 0.9);
+
 //Gradients
 $bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-black: linear-gradient(30deg, #333333, #000000);
@@ -85,3 +93,9 @@ $button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160
 $gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);
 $gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
+
+//Gradient Text Colors
+$gradient-text-color-list: (
+  "red": $button-gradient,
+  "blue": $bg-gradient-blue-lr
+);

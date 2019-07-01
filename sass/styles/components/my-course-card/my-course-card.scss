@@ -1,12 +1,21 @@
-.my-course-card {
+.c-my-course-card {
   height: 460px;
 
   .card-mentor{
     margin: 15px 0;
   }
+}
 
-  .footer{
-    @include flexbox(row, space-between, center);
-    font-size: $card-md;
+@media screen and (max-width: 767px){
+  .c-my-course-card{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .c-my-course-card{
+    .course-progress{
+      margin-bottom: 10px;
+    }
   }
 }

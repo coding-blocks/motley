@@ -1,3 +1,36 @@
+.tab-nav{
+  @include dimensions(100%, 75px);
+  @include flexbox(row);
+  background-color: $global-font-heading-color;
+  color: $white;
+  font-size: $font-md;
+  font-weight: $font-medium;
+  justify-content: space-around;
+  .active{
+    border-bottom: solid 4px $button-element-level;
+  }
+}
+
+.tab-icons, .tab-items{
+  cursor: pointer;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-items{
+  display: flex;
+
+  &:hover{
+    color: $button-element-level;
+  }
+}
+
+.tab-icons{
+  display: none;
+  padding: 0 9%;
+}
+
 .tab-nav-underline {
   display: flex;
   align-items: center;
@@ -7,14 +40,11 @@
   & .tab {
     padding: 15px 5%;
     font-weight: $semi-bold;
-    color: #333;
     position: relative;
     bottom: -3px;
+    text-align: center;
+    flex: 1;
     cursor: pointer;
-
-    &:hover {
-      border-bottom: solid 3px #cbcbcb;
-    }
 
     &.active {
       border-bottom: solid 3px $salmon;
