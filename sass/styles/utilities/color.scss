@@ -1,6 +1,6 @@
 // COLORS
 
-@each $abbrev, $color in $bg-color-list {
+@each $abbrev, $color in $text-color-list {
   .#{$abbrev}{
       color: $color  !important;
   }
