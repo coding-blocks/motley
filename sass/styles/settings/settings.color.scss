@@ -71,6 +71,8 @@ $hb-blue: #246db3;
 $grey: #a2a4a8;
 $dark-grey: #1e1e1e;
 $code-editor: #171717;
+$interview-grey: #1b1e26;
+$purple: #271147;
 
 
 
@@ -85,6 +87,7 @@ $button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160
 $gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);
 $gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
+$bg-gradient-purple: linear-gradient(30deg, #271147, #553180);
 
 
 //Checkbox
@@ -92,3 +95,30 @@ $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
 //   orange: $gradient-orange-30-deg
 // );
 $checkbox-solid: $gradient-orange-30-deg;
+
+//Background Colors
+$bg-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey,
+);
+
+//Text Colors
+$text-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey,
+  "purple" : $purple
+);

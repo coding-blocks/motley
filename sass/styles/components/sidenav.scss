@@ -1,13 +1,14 @@
 .c-sidenav{
-	height: 100%;
+	@include dimensions(10.8rem, 100vh);
 	overflow: hidden;
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	background-color: #1b1e26;
 	z-index: 500;
 	padding-left: 0;
 	padding-right: 0;
+	
 
 	.nav-element{
 		display: block;
@@ -42,6 +43,10 @@
 		h6{
 			font-size: $card-sm;
 		}
+	}
+
+	@media (max-width: 767px){
+		height: auto;
 	}
 }
 

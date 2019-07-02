@@ -1,58 +1,46 @@
-.t-align-r, .t-align-ra{
-  text-align: right !important;
-}
+$text-align: (
+  "r": right,
+  "l": left,
+  "c": center,
+  "j": justify
+);
 
-.t-align-l, .t-align-la{
-  text-align: left !important;
-}
-
-.t-align-c, .t-align-ca{
-  text-align: center !important;
-}
+@each $abbrev, $value in $text-align {
+  .t-align-#{$abbrev} {
+    text-align: $value !important;
+  }
 
 //align all nested
-
-.t-align-ra{
-  *{
-    text-align: right !important;
+  .t-align-#{$abbrev}a {
+    * {
+      text-align: $value !important;
+    }
   }
 }
 
-.t-align-la{
-  *{
-    text-align: left !important;
-  }
-}
 
-.t-align-ca{
-  *{
-    text-align: center !important;
-  }
-}
-
-.text-ellipses{
-  white-space: nowrap; 
+.text-ellipses {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-// responsive versions of text-aligns; 
+// responsive versions of text-aligns;
 // works similarly as boostrap 4
 
-@each $size, $label in 
-(576px, sm),
-(768px, md),
-(992px, lg)
-{
-  @media screen and(min-width: $size){
-    .t-align-#{$label}-r{
+@each $size, $label in (576px, sm), (768px, md), (992px, lg) {
+  @media screen and(min-width: $size) {
+    .t-align-#{$label}-r {
       text-align: right !important;
     }
-    .t-align-#{$label}-l{
+    .t-align-#{$label}-l {
       text-align: left !important;
     }
-    .t-align-#{$label}-c{
+    .t-align-#{$label}-c {
       text-align: center !important;
+    }
+    .t-align-#{$label}-j {
+      text-align: justify !important;
     }
   }
 }
