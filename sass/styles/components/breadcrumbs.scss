@@ -1,20 +1,22 @@
-.breadcrumbs li {
-  display: inline-block;
-  position: relative;
-}
+.breadcrumbs {
+  li {
+    display: inline-block;
+    position: relative;
 
-.breadcrumbs li::after {
-  content: ">";
-  display: block;
-  position: absolute;
-  left: -3px;
-  top: 0;
-}
+    &::after {
+      content: ">";
+      display: block;
+      position: absolute;
+      left: -3px;
+      top: 0;
+    }
 
-.breadcrumbs li:first-of-type::after {
-  display: none;
-}
+    &:first-of-type::after{
+      display: none;
+    }
 
-.breadcrumbs li:last-child a {
-  font-weight: $regular;
+    &:last-child a{
+      font-weight: $regular;
+    }
+  }
 }
