@@ -1,20 +1,6 @@
 .divided-list{
     list-style: none;
 
-    .list-item{
-        float: left;
-        padding: 0 15px;
-        display: inline-block;
-
-        &:not(:last-child){
-            border-right: solid 1px $faded-text;
-        }
-
-        &:first-child{
-            padding: 0 15px 0 0;
-        }
-    }
-
     .list-heading{
         font-size: $font-sm;
     }
@@ -22,4 +8,12 @@
     .list-data{
         font-size: $font-sm;
     }
+}
+
+ul.divided-list > * {
+    display: inline-block;
+}
+
+ul.divided-list>*:not(:last-child) {
+    border-right: solid 1px $faded-text;
 }

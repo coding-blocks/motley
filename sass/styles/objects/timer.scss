@@ -23,3 +23,7 @@
         }
     }
 }
+
+ul.divided-list.timer > *:not(:last-child) {
+    border-right: unset;
+}

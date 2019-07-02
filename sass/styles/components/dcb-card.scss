@@ -1,56 +1,52 @@
-.c-dcb-card{
-    color: $white;
+.c-dcb-card {
+  color: $white;
 
-    .divided-list{
-        .list-item{
-            &:not(:last-child){
-                border-right: solid 1px $white;
-            }
-        }
-        .list-heading{
-            color: #ffcc66;
-        }
+  .divided-list {
+    .list-item {
+      &:not(:last-child) {
+        border-right: solid 1px $white;
+      }
     }
+    .list-heading {
+      color: #ffcc66;
+    }
+  }
 
-    @media screen and (max-width: 1212px){
-        ul[class=divided-list]{
-            .list-item{
-                .list-heading{
-                    font-size: $font-xs;
-                }
-    
-                .list-data{
-                    font-size: $font-xs;
-                }
-            }
-        }
+  @media screen and (max-width: 1212px) {
+    ul[class="divided-list"] {
+      .list-heading {
+        font-size: $font-xs;
+      }
+
+      .list-data {
+        font-size: $font-xs;
+      }
     }
-    
-    @media screen and (max-width: 1118px){
-        ul[class=divided-list]{
-            .list-item{
-                .list-heading{
-                    font-size: $card-sm;
-                }
-    
-                .list-data{
-                    font-size: $card-sm;
-                }
-            }
-        }
+  }
+
+  @media screen and (max-width: 1118px) {
+    ul[class="divided-list"] {
+      .list-heading {
+        font-size: $card-sm;
+      }
+
+      .list-data {
+        font-size: $card-sm;
+      }
     }
-    
-    @media screen and (max-width: 575px){
-        ul[class=divided-list]{
-            .list-item{
-                .list-heading{
-                    font-size: $card-xs;
-                }
-    
-                .list-data{
-                    font-size: $card-xs;
-                }
-            }
+  }
+
+  @media screen and (max-width: 575px) {
+    ul[class="divided-list"] {
+      .list-item {
+        .list-heading {
+          font-size: $card-xs;
         }
+
+        .list-data {
+          font-size: $card-xs;
+        }
+      }
     }
+  }
 }
