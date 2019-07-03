@@ -38,14 +38,12 @@
 
   @media screen and (max-width: 575px) {
     .divided-list {
-      .list-item {
-        .list-heading {
-          font-size: $card-xs;
-        }
+      .list-heading {
+        font-size: $card-xs;
+      }
 
-        .list-data {
-          font-size: $card-xs;
-        }
+      .list-data {
+        font-size: $card-xs;
       }
     }
   }
