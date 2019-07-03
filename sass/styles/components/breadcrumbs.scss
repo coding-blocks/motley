@@ -15,11 +15,11 @@
       display: none;
     }
 
-    &:last-child a{
+    &:last-child{
       font-weight: $regular;
     }
 
-    &:first-child a{
+    &:first-child{
       padding-left: 0 !important;
     }
   }
