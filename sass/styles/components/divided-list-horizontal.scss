@@ -1,19 +1,19 @@
-.divided-list{
-    list-style: none;
+.divided-list {
+  list-style: none;
 
-    .list-heading{
-        font-size: $font-sm;
-    }
+  .list-heading {
+    font-size: $font-sm;
+  }
 
-    .list-data{
-        font-size: $font-sm;
-    }
+  .list-data {
+    font-size: $font-sm;
+  }
 }
 
-ul.divided-list > * {
-    display: inline-block;
+.divided-list > * {
+  display: inline-block;
 }
 
-ul.divided-list>*:not(:last-child) {
-    border-right: solid 1px $faded-text;
+.divided-list > *:not(:last-child) {
+  border-right: solid 1px $faded-text;
 }
