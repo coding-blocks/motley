@@ -12,38 +12,14 @@
     }
   }
 
-  @media screen and (max-width: 1212px) {
+  @media screen and (max-width: 991px) {
     .divided-list {
       .list-heading {
-        font-size: $font-xs;
+        font-size: $card-md;
       }
 
       .list-data {
-        font-size: $font-xs;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1118px) {
-    .divided-list {
-      .list-heading {
-        font-size: $card-sm;
-      }
-
-      .list-data {
-        font-size: $card-sm;
-      }
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    .divided-list {
-      .list-heading {
-        font-size: $card-xs;
-      }
-
-      .list-data {
-        font-size: $card-xs;
+        font-size: $card-md;
       }
     }
   }

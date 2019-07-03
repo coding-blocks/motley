@@ -8,12 +8,20 @@
   .list-data {
     font-size: $font-sm;
   }
-}
 
-.divided-list > * {
-  display: inline-block;
-}
+  & > * {
+    display: inline-block;
 
-.divided-list > *:not(:last-child) {
-  border-right: solid 1px $faded-text;
+    &:not(:last-child) {
+      border-right: solid 1px $faded-text;
+    }
+
+    &:first-child {
+      padding-left: 0 !important;
+    }
+
+    &:last-child {
+        padding-right: 0 !important;
+      }
+  }
 }

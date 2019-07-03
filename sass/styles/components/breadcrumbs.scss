@@ -18,5 +18,9 @@
     &:last-child a{
       font-weight: $regular;
     }
+
+    &:first-child a{
+      padding-left: 0 !important;
+    }
   }
 }
