@@ -1,25 +1,27 @@
-.divided-list{
-    list-style: none;
+.divided-list {
+  list-style: none;
 
-    .list-item{
-        float: left;
-        padding: 0 15px;
-        display: inline-block;
+  .list-heading {
+    font-size: $font-sm;
+  }
 
-        &:not(:last-child){
-            border-right: solid 1px $faded-text;
-        }
+  .list-data {
+    font-size: $font-sm;
+  }
 
-        &:first-child{
-            padding: 0 15px 0 0;
-        }
+  & > * {
+    display: inline-block;
+
+    &:not(:last-child) {
+      border-right: solid 1px $faded-text;
     }
 
-    .list-heading{
-        font-size: $font-sm;
+    &:first-child {
+      padding-left: 0 !important;
     }
 
-    .list-data{
-        font-size: $font-sm;
-    }
+    &:last-child {
+        padding-right: 0 !important;
+      }
+  }
 }
