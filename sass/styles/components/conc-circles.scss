@@ -1,21 +1,16 @@
 .conc-circle{
   border-radius: 50%;
-  background-clip: content-box;
-  padding: 40px;
-  border: 40px solid $orange;
-  background: $hb-blue;
+  box-shadow: 0 0 0 2px $orange;
 
-  // &::after{
-  //   content: "";
-  //   position: absolute;
-  //   // top: 0;
-  //   // left: 0;
-  //   height: inherit;
-  //   width: inherit;
-  //   z-index: 100;
-  //   background: $orange;
-  //   border-radius: 50%;
-  // }
-
-
+  &::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    z-index: 1;
+    background: $white;
+    border-radius: inherit;
+  }
 }
