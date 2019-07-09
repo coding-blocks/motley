@@ -1,3 +1,20 @@
+/**
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Colors config file   
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+File contains color configuration for below listed objects and utilities:-
+- Objects
+  - Button Solid
+  - Button Dashed
+  - Tab Nav
+  - Checkbox
+
+- Utilities
+  - Text Colors
+  - Background Colors
+**/
+
 $black: #000000;
 $white: #ffffff;
 $salmon: #ff6666;
@@ -77,7 +94,7 @@ $purple: #271147;
 
 
 //Gradients
-$bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
+$gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-black: linear-gradient(30deg, #333333, #000000);
