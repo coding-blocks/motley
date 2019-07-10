@@ -7,45 +7,7 @@
 
   .li-left {
     .button-solid {
-      font-weight: 800;
       color: #692fdc;
     }
   }
-}
-
-.feature-set {
-  @include padding-y(60px);
-  font-size: 0.92rem;
-
-  h3 {
-    font-weight: bold;
-    font-size: 1.42rem;
-    margin-bottom: 16px;
-    margin-top: 50px;
-  }
-}
-
-.partners {
-  font-size: 1.57rem;
-}
-
-.success-stories {
-  font-size: 1.42rem;
-
-  .video {
-    @include dimensions(100%, 390px);
-    background: linear-gradient(to right, #f09086, #f9897b);
-  }
-}
-
-.recommended-jobs {
-  background-color: #fdfdfd;
-  
-  .bottom {
-    font-size: 1.57rem;
-    button {
-      font-size: 1.42rem;
-    }
-  }
-  
 }

@@ -66,3 +66,26 @@
   background: $nav-border;
   border: none;
 }
+
+@media screen and (max-width: 575px){
+  .input-text{
+    height: 40px;
+    padding-left: 25px;
+
+    &.icon{
+      padding-left: 40px;
+      background-size: 15px;
+      background-position-x: 10px;
+    }
+  }
+
+  .input-btn{
+    input{
+      padding-right: 70px;
+    }
+
+    button{
+      right: 10px;
+    }
+  }
+}

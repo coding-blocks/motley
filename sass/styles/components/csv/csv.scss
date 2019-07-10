@@ -14,33 +14,16 @@
     }
   }
   
-
   .bottom {
     position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     bottom: 0;
     @include dimensions(100%, 65px);
     background-color: white;
-    padding: 0 1.7rem;
+    padding: 0 1rem;
     box-shadow: 0px -2px 12px 0px rgba(0,0,0,0.1);
-
-    .testcase {
-      span {
-        color: $salmon;
-        margin: 0 1rem;
-      }
-    }
-
-    .submission {
-      span {
-        margin: 0 1rem;
-      }
-    }
-
-    .center-flex {
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-    }
   } 
 }

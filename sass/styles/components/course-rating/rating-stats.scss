@@ -1,5 +1,4 @@
 .c-rating-stats{
-    padding: 0;
     margin-bottom: 30px;
 
     progress{
@@ -11,7 +10,7 @@
         transform: translateY(-10px);
 
         .rating{
-            @include margin(3px, 0, 10px, 0);
+            margin: 3px 0 10px 0;
         }
 
         .pos-rating, .neg-rating{
@@ -32,4 +31,23 @@
     .font-lg{
         font-size: 4.7143rem !important;
     }
+}
+
+@media screen and (max-width: 575px) {
+  .c-rating-stats {
+    .stats {
+      .rating {
+        display: none;
+      }
+    }
+
+    .score {
+      min-width: 105px;
+      transform: translateY(-7px);
+    }
+
+    .font-lg {
+      font-size: 2rem;
+    }
+  }
 }

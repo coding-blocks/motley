@@ -1,5 +1,4 @@
 .address-card {
-  
   .button-solid {
     font-size: $font-md;
     max-width: 100%;
@@ -16,9 +15,11 @@
     float: right;
   }
 }
+
 .select-card {
   @include border(solid, 2px, $button-element-level);
 }
+
 .c-address-card{
   height: auto;
   padding: 40px 30px;

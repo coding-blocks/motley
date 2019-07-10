@@ -91,3 +91,47 @@
     padding: 0 6px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .c-item-card{
+    .detail-row{
+      font-size: $font-xs;
+    }
+
+    .price{
+      font-size: $font-sm;
+    }
+
+    .main-h{
+      font-size: $font-xs;
+    }
+
+    .sub-h{
+      font-size: $font-xs;
+    }
+
+    .wallet-card {
+      padding: 0px 0px;
+      font-size: $font-xs;
+    }
+  }
+}
+
+@media screen and(max-width:  767px){
+  .c-item-card{
+    height: auto;
+    padding: 5% 3%;
+
+    .item-details{
+      border-right: none;
+      border-bottom: solid 1px $card-box-border;
+      margin-bottom: 4%;
+      padding-bottom: 4%;
+    }
+
+    .wallet-card {
+      padding: 0px 0px;
+      font-size: $font-xs;
+    }
+  }
+}

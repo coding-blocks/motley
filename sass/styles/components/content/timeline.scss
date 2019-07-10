@@ -1,48 +1,40 @@
-.section-tabs{
+.section-tabs {
   color: $white;
-  .c-accordion{
+  .c-accordion {
     padding-top: 0px;
     font-size: $font-sm;
-    
+
     @include li-left-right-padding(left, 15%);
 
-    .bellows{
+    .bellows {
       background-color: $bellow-black;
     }
 
-    .row{
+    .row {
       padding-left: 8%;
     }
   }
 
-  .deadline{
-    font-size: $card-md;
-  }
-
-  .main-h{
-    font-size: $font-md;
-  }
-
-  .circle-front{
+  .circle-front {
     @include dimensions(25px, 25px);
   }
 
-  .circle-back{
+  .circle-back {
     @include dimensions(32px, 32px);
     opacity: 0.56;
     background: $white;
   }
 
-  .li-left{
+  .li-left {
     width: 80%;
   }
-
 }
+
 .feed-overlay {
   z-index: 10;
   position: absolute;
   @include dimensions(100%, 100%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video-player {
@@ -53,9 +45,9 @@
     @include dimensions(208px, 54px);
     border-radius: 10px;
     background-color: white;
-    position:absolute;
+    position: absolute;
     bottom: 54%;
-    right:0;
+    right: 0;
     &.collapsed {
       width: 56px;
     }
@@ -64,16 +56,7 @@
       width: 301px;
     }
   }
-
-  .feed-text {
-    padding-left: 20px;
-    font-size: 15px;
-  }
-
-  .love-ico {
-    padding-left: 10px;
-    width: 40px;
-  }
+  
   form {
     padding-left: 10px;
   }

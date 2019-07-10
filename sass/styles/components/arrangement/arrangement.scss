@@ -45,3 +45,70 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .c-arrangement {
+    .card {
+      padding: 40px;
+    }
+
+    .nav-info {
+      .card {
+        padding: 90px 0 50px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .c-arrangement{
+    .nav-info {
+      display: none;
+    }
+
+    .card {
+      padding: 55px 30px 25px 30px;
+    }
+
+    .input-text{
+      height: 50px;
+    }
+
+    .border-card{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .c-arrangement {
+    padding: 0;
+
+    .nav-info {
+      display: none;
+    }
+
+    .card {
+      padding: 25px 20px 25px 20px;
+      font-weight: $font-medium;
+    }
+
+    .attributes {
+      .input-text {
+        height: 40px;
+        width: 70%;
+      }
+    }
+
+    .border-card {
+      width: 100%;
+      padding-bottom: 90px;
+      padding-top: 20px;
+    }
+
+    .button-row {
+      bottom: 30px;
+    }
+  }
+}
