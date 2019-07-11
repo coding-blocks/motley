@@ -13,11 +13,11 @@
 
 @import "elements";
 @import "objects";
-@import "applications";
+@import "components";
+@import "media-query";
 
 //TODO: OPTION TO SELECT THEME AND INSERT THAT THEME HERE
 @import "themes";
+@import "applications";
 
-@import "components";
-@import "media-query";
 @import "trumps";

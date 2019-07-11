@@ -1,0 +1,6 @@
+mkdir examples/views/online-cb
+mkdir examples/views/dukaan
+mkdir examples/views/hb
+mkdir examples/components/online-cb
+mkdir examples/components/dukaan
+mkdir examples/components/hb

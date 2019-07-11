@@ -4,7 +4,7 @@ $color-list:  (red, $button-element-level)
         (black, $global-font-text-color)
         (white, $white )
         (grey, $navLink)
-        (green, $font-complete)
+        (green, $green)
         (yellow, $yellow);
 
 @each $type, $color in $color-list {

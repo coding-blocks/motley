@@ -14,10 +14,6 @@
     color: $default-accordion-font;
   }
 
-  p {
-    @include margin(0, 0, 0, 0);
-  }
-
   .round-img {
     @include dimensions(120px, 120px);
     margin-right: 28px;
@@ -28,19 +24,5 @@
     width: 100%;
     top: 0;
     z-index: 100;
-  }
-
-  .flex-row {
-    @include padding-mixin(30px, 0, 30px, 0);
-    width: 100%;
-    font-weight: $font-medium;
-    justify-content: space-between;
-  }
-
-  .separator {
-    width: 167px;
-    height: 1px;
-    opacity: 0.3;
-    background-color: #cccccc;
   }
 }
