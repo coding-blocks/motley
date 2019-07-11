@@ -1,11 +1,30 @@
-.top-bar{
-  top: 0;
-  left: 0;  
-}
+.code-window {
+  .top-bar {
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 
-.side-bar{
-  bottom:0;
-  left:0;
-  z-index: 500;
-  position: fixed;
+  .side-bar {
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    position: fixed;
+
+    .active {
+      background: $white;
+
+      * {
+        color: $orange;
+      }
+    }
+  }
+
+  .tab-nav-underline {
+    & .tab {
+      &.active {
+        border-bottom: solid 2px $navLink;
+      }
+    }
+  }
 }

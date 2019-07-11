@@ -1,35 +1,163 @@
-<div class="row white mx-0 bg-dark-grey align-items-center justify-content-between py-4 position-fixed w-100 top-bar">
-  <div class="col-xl-7 col-lg-6 col-5 offset-1">
-    <h2>CodSULE - May 2019</h2>
-    <div class="font-sm">This is a timed contest for 1 hour. You have just one chance to attempt this test.</div>
+<div class="code-window">
+  <div class="row white mx-0 bg-dark-grey align-items-center justify-content-between py-4 position-fixed w-100 top-bar">
+    <div class="col-xl-7 col-lg-6 col-5 offset-1">
+      <h2>CodSULE - May 2019</h2>
+      <div class="font-sm">This is a timed contest for 1 hour. You have just one chance to attempt this test.</div>
+    </div>
+    <ul class="divided-list timer font-xs">
+      <li class="timer-item pr-md-3 pr-2">
+        <div class="list-heading font-xl bold">00</div>
+        <div class="list-data">Days</div>
+      </li>
+      <li class="timer-item pr-md-3 pr-2">
+        <div class="list-heading font-xl bold">12</div>
+        <div class="list-data">Hours</div>
+      </li>
+      <li class="timer-item pr-md-3 pr-2">
+        <div class="list-heading font-xl bold">30</div>
+        <div class="list-data">Minutes</div>
+      </li>
+      <li class="timer-item pr-md-3 pr-2">
+        <div class="list-heading font-xl bold">05</div>
+        <div class="list-data">Seconds</div>
+      </li>
+    </ul>
+    <button class="button-solid button-orange font-sm extra-bold mr-2">Submit Test</button>
   </div>
-  <ul class="divided-list timer font-xs">
-    <li class="timer-item pr-md-3 pr-2">
-      <div class="list-heading font-xl bold">00</div>
-      <div class="list-data">Days</div>
-    </li>
-    <li class="timer-item pr-md-3 pr-2">
-      <div class="list-heading font-xl bold">12</div>
-      <div class="list-data">Hours</div>
-    </li>
-    <li class="timer-item pr-md-3 pr-2">
-      <div class="list-heading font-xl bold">30</div>
-      <div class="list-data">Minutes</div>
-    </li>
-    <li class="timer-item pr-md-3 pr-2">
-      <div class="list-heading font-xl bold">05</div>
-      <div class="list-data">Seconds</div>
-    </li>
-  </ul>
-  <button class="button-solid button-orange font-sm extra-bold mr-2">Submit Test</button>
-</div>
-<div class="row mx-0 t-align-c align-items-center">
-  <div class="col-1 bg-dark-grey side-bar h-100 px-0">
-    <img src="/images/hexagon.jpg" alt="" class="px-4 pt-3">
-    <a href="#" class="white">
-      <i class="fas fa-circle"></i>
-      <i class="fas fa-code"></i>
-      <span class="font-xl extra-bold">01</span>
-    </a>
+  <div class="row no-gutters t-align-c all-center">
+    <div class="col-1 bg-dark-grey side-bar h-100 px-0 pt-4">
+      <div class="white pb-xl-3 pb-5">
+        <i class="fab fa-slack fa-4x"></i>
+      </div>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg green">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-lg-2 font-mds"></i>
+        <span class="font-xl extra-bold">01</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4 active">
+        <span class="font-lg orange">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-lg-2 font-mds"></i>
+        <span class="font-xl extra-bold">02</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg red">&#10625;</span>
+        <i class="fas fa-puzzle-piece mx-1 mx-lg-2 font-mds"></i>
+        <span class="font-xl extra-bold">03</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-lg-2 font-mds"></i>
+        <span class="font-xl extra-bold">04</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg green">&#10625;</span>
+        <i class="fas fa-puzzle-piece mx-1 mx-lg-2 font-mds"></i>
+        <span class="font-xl extra-bold">05</span>
+      </a>
+    </div>
+    <div class="col-11 offset-1 mt-4">
+      <div class="row no-gutters mt-1 t-align-l">
+        <div class="col-6 pt-4 px-5">
+          <div class="row no-gutters align-items-center">
+            <div class="col-6">
+              <div class="font-mds">Problem 2</div>
+              <h4>Birthday Cake Candle</h4>
+            </div>
+            <div class="col-6">
+              <ul class="divided-list t-align-r">
+                <li class="px-3">
+                  {{!-- <div class="list-heading mb-2 orange extra">Hard</div> --}}
+                  <h4 class="orange">Hard</h4>
+                  <div class="list-data font-mds">Dificulty</div>
+                </li>
+                <li class="px-3">
+                  {{!-- <div class="list-heading mb-2 orange">200</div> --}}
+                  <h4 class="orange">200</h4>
+                  <div class="list-data font-mds">Max Points</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row align-items-center no-gutters my-4">
+            <div class="col-6">
+              <span class="mr-2 font-mds extra-bold">Status:</span>
+              <span class="orange font-mds extra-bold">Partially Solved</span>
+            </div>
+            <div class="col-6">
+              <div class="row no-gutters justify-content-end">
+                <div class="col-6">
+                  <progress value="50" max="100" class="mt-3 d-inline-block"></progress>
+                </div>
+                <div>
+                  <h5 class="d-inline-block mt-2 pl-3">20/100 Pts</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="tab-nav-underline w-100 justify-content-start">
+              <div class="tab active pr-5 pl-0">Problem</div>
+              <div class="tab px-5">Submissions</div>
+            </div>
+            <div class="py-4 overflow-y-auto" style="height: 50vh;">
+              <p>Bob runs a tile shop. He sells only square tiles. He charges $a per unit area and $b per unit
+                length of its side. Moreover, he also charges a constant amount of $c for each tile. He asks you
+                to calculate the total amount he gets after selling exactly one tile of side length x in range
+                [l,r].
+                Bob knows that his earnings is beyond your calculation, so he asks you to calculate amount
+                modulo (109+7).</p>
+              <div class="extra-bold">Input Format</div>
+              <p>First line contains number of test cases, T. Each test case contains 5 integers, a, b, c, l, r.
+              </p>
+              <div class="extra-bold">Constraints</div>
+              <div class="bg-grey br-5 w-60 px-4 py-2 my-2">
+                <p>1
+                  <=T<=10^5<br />1<=a,b,c,l,r<=10^9</p> </div> <div class="extra-bold">Output Format
+              </div>
+              <p>Output a single integer denoting answer as per the problem statement.</p>
+              <div class="extra-bold">Sample Input</div>
+              <div class="bg-grey br-5 w-60 px-4 py-2 my-2">
+                <p>1<br />1 1 1 1 10</p>
+              </div>
+              <div class="extra-bold">Sample Output</div>
+              <div class="bg-grey br-5 w-60 px-4 py-2 my-2">
+                <p>450</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="c-code-editor w-100 overflow-hidden">
+            <div class="row px-5 py-4 justify-content-between align-items-center bg-grey m-0">
+              <div class="col-3 p-0">
+                <span class="font-sm extra-bold">{...} Code Editor</span>
+              </div>
+              <div>
+                <i class="fas fa-expand-arrows-alt"></i>
+                <div class="dropdown d-inline-block">Choose Language</div>
+              </div>
+            </div>
+            <div>
+              {{!-- Code Editor goes here --}}
+            </div>
+            <div class="pt-4 pb-5 px-5 input-div">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-4 white extra-bold p-0">
+                  <i class="fas fa-angle-up mx-3"></i>
+                  <span>Provide Custom Input</span>
+                </div>
+                <div>
+                  <button class="button-dashed button-orange ml-3 mr-1">Compile and Test</button>
+                  <button class="button-solid button-orange mr-3 ml-1">Submit Code</button>
+                </div>
+              </div>
+              <textarea name="input" cols="30" rows="5" class="mx-auto my-4 white w-100">
+          {{!-- text goes here --}}
+        </textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

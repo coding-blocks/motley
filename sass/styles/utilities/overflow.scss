@@ -1,0 +1,19 @@
+$overflow: ("auto",auto) ("hidden",hidden) ("scroll",scroll) ("visible",visible);
+
+@each $abbrev, $label in $overflow {
+  .overflow-#{$abbrev} {
+    overflow: $label;
+  }
+}
+
+@each $abbrev, $label in $overflow {
+  .overflow-x-#{$abbrev} {
+    overflow-x: $label;
+  }
+}
+
+@each $abbrev, $label in $overflow {
+  .overflow-y-#{$abbrev} {
+    overflow-y: $label;
+  }
+}
