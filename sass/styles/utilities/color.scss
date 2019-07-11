@@ -13,19 +13,6 @@
   -webkit-background-clip: text;
 }
 
-
-// BACKGROUND COLORS
-
-$background-list:  (red, $fail-red)
-        (black, $global-font-text-color)
-        (white, $white )
-        (grey, $search-box-color)
-        (green, $font-complete)
-        (light-green, #7ad06d)
-        (incorrect, $font-sub-heading)
-        (light-grey, $nav-border)
-        (dark-grey, $interview-grey);
-
 @each $abbrev, $color in $bg-color-list {
   .bg-#{$abbrev}{
     background-color: $color  !important;
