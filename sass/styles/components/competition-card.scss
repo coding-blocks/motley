@@ -1,0 +1,13 @@
+.c-competition-card{
+  .divided-list{
+    @media screen and (max-width: 991px){
+      .list-heading{
+        font-size: $font-xs !important;
+      }
+
+      .list-data{
+        font-size: $card-md;
+      }
+    }
+  }
+}
