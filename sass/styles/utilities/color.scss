@@ -13,18 +13,7 @@
   -webkit-background-clip: text;
 }
 
-
-// BACKGROUND COLORS
-
-$background-list:  (red, $fail-red)
-        (black, $global-font-text-color)
-        (white, $white )
-        (grey, $search-box-color)
-        (green, $font-complete)
-        (light-green, #7ad06d)
-        (incorrect, $font-sub-heading)
-        (light-grey, $nav-border)
-        (dark-grey, $interview-grey);
+//BACKGROUND COLORS
 
 @each $abbrev, $color in $bg-color-list {
   .bg-#{$abbrev}{
@@ -69,13 +58,17 @@ $gradient-list: (black, 'lr', linear-gradient(30deg, #333333, #000000)),
 }
 
 .bg-gradient-blue-lr{
-  background-image: linear-gradient(to right, #193b84, #2675bb);
+  background-image: $gradient-blue-lr;
 }
 
 .bg-gradient-purple{
-  background: linear-gradient(30deg, #271147, #553180);
+  background: $bg-gradient-purple;
 }
 
 .bg-gradient-orange{
   background: $gradient-orange-lr;
+}
+
+.bg-gradient-dblue{
+  background: $bg-gradient-dblue;
 }
