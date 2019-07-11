@@ -13,6 +13,8 @@
   -webkit-background-clip: text;
 }
 
+//BACKGROUND COLORS
+
 @each $abbrev, $color in $bg-color-list {
   .bg-#{$abbrev}{
     background-color: $color  !important;
