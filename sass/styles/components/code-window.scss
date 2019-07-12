@@ -21,10 +21,20 @@
   }
 
   .tab-nav-underline {
+    top: 0;
+
     & .tab {
       &.active {
         border-bottom: solid 2px $navLink;
       }
     }
+  }
+
+  .flex-col {
+    align-items: unset;
+  }
+
+  .input-div{
+    height: 230px;
   }
 }
