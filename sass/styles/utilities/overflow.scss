@@ -1,19 +1,19 @@
-$overflow: ("auto",auto) ("hidden",hidden) ("scroll",scroll) ("visible",visible);
+$overflow: (auto) (hidden) (scroll) (visible);
 
-@each $abbrev, $label in $overflow {
-  .overflow-#{$abbrev} {
+@each $label in $overflow {
+  .overflow-#{$label} {
     overflow: $label;
   }
 }
 
-@each $abbrev, $label in $overflow {
-  .overflow-x-#{$abbrev} {
+@each $label in $overflow {
+  .overflow-x-#{$label} {
     overflow-x: $label;
   }
 }
 
-@each $abbrev, $label in $overflow {
-  .overflow-y-#{$abbrev} {
+@each $label in $overflow {
+  .overflow-y-#{$label} {
     overflow-y: $label;
   }
 }
