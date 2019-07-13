@@ -1,4 +1,4 @@
-.c-previous-dcb {
+.c-problem-list {
   padding: 40px;
 
   h4 {
@@ -31,5 +31,15 @@
 
   @media screen and (max-width: 767px) {
     padding: 20px;
+  }
+
+  .divider-h{
+    background-clip: content-box;
+  }
+}
+
+.hover-grey {
+  &:hover {
+    background: $t-heading-border;
   }
 }
