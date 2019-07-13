@@ -1,10 +1,11 @@
 .c-code-window {
   margin-top: -70px;
-  
+
   .top-bar {
     top: 0;
     left: 0;
     z-index: 100;
+    flex: 1;
   }
 
   .side-bar {
@@ -34,9 +35,5 @@
 
   .flex-col {
     align-items: unset;
-  }
-
-  .input-div{
-    height: 230px;
   }
 }
