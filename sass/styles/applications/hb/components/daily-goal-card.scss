@@ -19,14 +19,3 @@
     padding: 20px;
   }
 }
-
-.card-scroll {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  position: relative;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
