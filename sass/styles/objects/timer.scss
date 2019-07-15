@@ -1,29 +1,17 @@
-.timer{
-    margin: 0;
-    .timer-item{
-        padding: 0 15px 0 0;
-        float: left;
-        display: inline-block;
+.timer {
+  margin: 0;
+  .timer-item {
+    padding: 0 15px 0 0;
+    float: left;
+    display: inline-block;
 
-        .list-heading{
-            font-size: $font-md;
-            text-align: center;
-        }
-    
-        .list-data{
-            font-size: $card-md;
-            text-align: center;
-        }
-        
-        .fa-clock{
-            color: $white;
-            text-align: center;
-            width: 40px;
-            transform: translateY(8px)
-        }
+    .list-heading {
+      font-size: $font-md;
+      text-align: center;
     }
-}
+  }
 
-ul.divided-list.timer > *:not(:last-child) {
+  ul.divided-list.timer > *:not(:last-child) {
     border-right: unset;
+  }
 }

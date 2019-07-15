@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   
-  .left, .right{
+  .left-curtain, .right-curtain{
     @include dimensions(30%, 100%);
     min-width: 30%;
     transition: all 0.35s ease;
@@ -19,20 +19,20 @@
     }
   }
 
-  .left.collapse, .right.collapse{
+  .left-curtain.collapse, .right-curtain.collapse{
     width: 0;
     min-width: unset;
     position: static;
     transition: all 0.35s ease;
   }
 
-  .left.collapse{
+  .left-curtain.collapse{
     & > * {
       transform: translateX(-40%);
     }
   }
 
-  .right.collapse{
+  .right-curtain.collapse{
     & > * {
       transform: translateX(40%);
     }

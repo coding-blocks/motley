@@ -1,0 +1,55 @@
+.c-pb{
+  height: 100%;
+  position: relative;
+}
+
+.pb-desk{
+  @include dimensions(30%, 100%);
+  overflow-y: auto;
+  background-color: $vp-background;
+  transition: transform 0.35s ease;
+  background: $white;
+  position: relative;
+  float: left;
+
+  &.collapse {
+    transform: translateX(-40%);
+  }
+
+  .tab-nav{
+    background: $white;
+    color: $global-font-text-color;
+    padding:0;
+    box-shadow: 0px 14px 41px 0 rgba(51, 51, 51, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .tab-items{
+    font-size: $font-sm;
+  }
+
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-pb {
+    display: none;
+  }
+  .c-pb-alert {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background: white;
+  }
+
+  .c-content-section .section.collapse {
+    transform: none;
+  }
+}
+

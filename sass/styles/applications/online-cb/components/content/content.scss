@@ -1,0 +1,203 @@
+.c-content-section {
+  background-color: $vp-background;
+  height: 100vh; //set according to height of navbar;
+  margin-top: -70px;
+
+  .header {
+    @include dimensions(100%, 100px);
+    max-height: 100px;
+    font-size: $font-sm;
+  }
+
+  .section-toggler {
+    width: 100%;
+    min-width: 30%;
+    justify-content: center;
+  }
+
+  .dashboard {
+    @include dimensions(100%, auto);
+    padding-left: 40px;
+  }
+
+  .content-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .section {
+    @include dimensions(30%, 100%);
+    overflow-y: auto;
+    background-color: $vp-background;
+    transition: all 0.35s ease;
+
+    &.collapse {
+      transform: translateX(-40%);
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tab-nav {
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .content {
+    @include dimensions(100%, 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $vp-background;
+    transition: all 0.35s ease;
+    z-index: 40;
+
+    &.collapse {
+      right: 0;
+      width: 70%;
+    }
+  }
+
+  .overlay-content {
+    z-index: 5;
+    position: absolute;
+    cursor: default;
+    user-select: none;
+  }
+
+  .text-overlay {
+    z-index: 0;
+  }
+
+  .notes-list,
+  .c-accordion {
+    height: 100%;
+
+    .footer {
+      width: 100%;
+      min-height: 75px;
+      background-color: $global-font-text-color;
+      position: sticky;
+      bottom: 0;
+
+      textarea {
+        background-color: $global-font-text-color;
+      }
+
+      .button-solid {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .content-container {
+    height: calc(100% - 100px);
+    background-color: $vp-background;
+  }
+
+  .section-tabs {
+    height: calc(100% - 100px);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .c-content-section {
+    height: 100vh;
+
+    .content-section {
+      overflow: auto;
+    }
+
+    .dashboard {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 0;
+    }
+
+    .content {
+      position: static;
+      width: 100% !important;
+      height: unset;
+    }
+
+    .section {
+      @include dimensions(100%, 100%);
+      height: auto;
+      border-right: unset;
+    }
+
+    .video-player {
+      padding: 10% 0;
+    }
+
+    .select-box {
+      display: block;
+      right: 46%;
+      bottom: 1%;
+    }
+
+    .notify-text {
+      display: none;
+    }
+
+    .tab-nav {
+      height: 75px;
+    }
+
+    .tab-items {
+      display: flex;
+    }
+
+    .section-tabs {
+      height: auto;
+    }
+
+    .curtains {
+      flex-direction: column;
+
+      .left,
+      .main,
+      .right {
+        width: 100%;
+      }
+
+      .main {
+        height: 50%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 575px) {
+  .c-content-section {
+    margin-top: -60px;
+
+    .header {
+      height: 75px;
+    }
+
+    .notes-list {
+      .list-item {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .content-container {
+      height: calc(100% - 75px);
+    }
+  }
+
+  .section {
+    .c-accordion {
+      .row {
+        padding-left: 3%;
+      }
+    }
+  }
+}

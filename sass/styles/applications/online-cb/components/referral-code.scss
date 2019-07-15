@@ -1,0 +1,27 @@
+.c-referral-code {
+  width: 100%;
+  background: $button-gradient;
+  display: flex;
+  color: $white;
+
+  .code {
+    border: 1px dashed;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .c-referral-code {
+    justify-content: space-between;
+    padding: 15px, 50px;
+
+    .coupon {
+      display: flex;
+      align-items: center;
+
+      .text {
+        margin-right: 10px;
+      }
+    }
+  }
+}

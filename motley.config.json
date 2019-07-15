@@ -2,6 +2,7 @@
   "applications": [
     "hb",
     "online-cb",
-    "dukaan"
+    "dukaan",
+    "account"
   ]
 }

@@ -4,3 +4,12 @@
   height: $height;
 }
 
+@mixin max-dimensions($max-width, $max-height){
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+@mixin min-dimensions($min-width, $min-height){
+  min-width: $min-width;
+  min-height: $min-height;
+}

@@ -1,4 +1,6 @@
 const fs = require('fs')
+const config = require('./motley.config.json')
+
 fs.readdir(__dirname + '/examples/views', (err, files) => {
   let html = files
     .filter((f) => f.endsWith('.hbs')) // pick hbs files

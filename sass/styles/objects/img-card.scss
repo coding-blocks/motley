@@ -7,8 +7,8 @@
     transition: all 0.35s ease;
 
     .content {
-      @include padding-mixin (25px, 25px, 46px, 25px);
       @include dimensions(100%, 100%);
+      padding: 1.8rem;
       position: relative;
     }
   }

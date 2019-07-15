@@ -11,6 +11,10 @@
   }
 }
 
+.skeleton-lg, .skeleton-md, .skeleton-sm {
+  margin: 5px 10px;
+}
+
 .skeleton-lg {
   @extend %skeleton;
   width: 65%;
@@ -27,6 +31,19 @@
   @extend %skeleton;
   width: 40%;
   min-width: 25px;
+}
+
+.skeleton-card {
+  position: relative;
+  @include padding-mixin(5px, 5px, 20px, 5px);
+}
+
+.rod-component {
+  margin-top: 30px;
+}
+
+.rod-component-small {
+  margin-top: 10px;
 }
 
 .rod-component-small{

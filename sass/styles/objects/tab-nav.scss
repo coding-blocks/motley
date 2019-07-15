@@ -31,8 +31,6 @@
   padding: 0 9%;
 }
 
-// tab-nav underline
-
 .tab-nav-underline {
   justify-content: space-around;
   display: flex;
@@ -41,7 +39,7 @@
   font-size: $font-sm;
   bottom: -2px;
 
-  & .tab{
+  & .tab {
     padding: 15px 5%;
     font-weight: $extra-bold;
     color: #333;
@@ -49,9 +47,23 @@
     cursor: pointer;
     bottom: -2px;
 
-    &.active{
+    &.active {
       border-bottom: solid 3px $salmon;
     }
   }
 }
 
+@media all and (max-width: 767px){
+  .tab-items {
+    display: none;
+  }
+  .tab-icons {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 575px){
+  .tab-nav{
+    height: 50px;
+  }
+}

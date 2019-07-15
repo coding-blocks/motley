@@ -1,5 +1,15 @@
-@media screen and (max-width: 575px) {
+// @media (max-width: 1199px) {
+// }
+@media (min-width: 576px) and (max-width: 991) {
   html {
-    font-size: 11px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
   }
 }
