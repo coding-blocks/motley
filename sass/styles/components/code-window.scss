@@ -1,5 +1,6 @@
 .c-code-window {
   margin-top: -70px;
+  height: 100vh;
 
   .top-bar {
     top: 0;
@@ -35,5 +36,9 @@
 
   .flex-col {
     align-items: unset;
+  }
+
+  .code-area{
+    height: calc(100vh - 118px);
   }
 }
