@@ -1,0 +1,28 @@
+.c-rating-card {
+  @include border-radius(15px);
+  padding: 25px 18px;
+
+  height: 225px;
+  margin-bottom: 30px;
+
+  .heading {
+    font-size: $font-sm;
+    margin-top: 15px;
+    font-weight: $semi-bold;
+  }
+
+  .rating {
+    margin-top: 8px;
+    margin-bottom: 15;
+  }
+
+  .review {
+    height: 82px;
+    overflow-y: auto;
+  }
+
+  .pos-rating,
+  .neg-rating {
+    font-size: $font-xs;
+  }
+}

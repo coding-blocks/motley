@@ -1,0 +1,28 @@
+%diff {
+  display: inline-block;
+  margin-right: 3px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.difficulty-dots {
+  position: absolute;
+  font-size: $card-sm;
+
+  .pos-diff {
+    @extend %diff;
+    background: orange;
+  }
+
+  .neg-diff {
+    @extend %diff;
+    background: white;
+  }
+}
+
+.difficulty-div {
+  position: absolute;
+  right: 6%;
+  top: 30px;
+}

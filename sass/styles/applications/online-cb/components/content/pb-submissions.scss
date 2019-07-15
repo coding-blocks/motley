@@ -1,0 +1,59 @@
+.c-pb-submissions {
+  padding: 8%;
+
+  .card {
+    margin: 25px auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .circle-back {
+    @include dimensions(100%, 100%);
+    position: absolute;
+    top: 0;
+    background: $course-progress-circle-front;
+  }
+
+  .circle-front {
+    @include dimensions(75%, 75%);
+    position: absolute;
+    top: 12.5%;
+    left: 12.5%;
+    background: $button-gradient;
+  }
+
+  .circle-md {
+    @include dimensions(75%, 75%);
+    margin: 12.5%;
+  }
+
+  .circle-sm {
+    @include dimensions(100%, 100%);
+    max-width: 36px;
+    max-height: 36px;
+  }
+
+  .progress-text {
+    font-size: $font-mds;
+    font-weight: $font-medium;
+  }
+
+  .fail {
+    background: $fail-red;
+  }
+
+  .divider {
+    @include dimensions(80%, 2px);
+    background: $default-border;
+    margin: 9px auto;
+    opacity: 0.11;
+  }
+
+  .test-cases {
+    padding: 10px 7%;
+  }
+
+  .button-solid {
+    margin: 10px auto;
+  }
+}

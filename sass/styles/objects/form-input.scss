@@ -1,39 +1,31 @@
 /*--------------------------INPUT TEXT---------------------------*/
 .input-text {
-  @include dimensions(100%, 47px);
-  font-size: $font-mds;
-  padding: 0 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
   background-color: $card-mentor;
   border: none;
-  border-radius: 10px;
+  width: 100%;
 
   &.icon {
     background-size: 25px;
-    padding-left: 80px;
-    background-color: $nav-border;
+    padding-left: 5.7142rem;
     background-repeat: no-repeat;
-    background-position-x: 30px;
-    background-position-y: center;
+    background-position: 2.1428rem center;
   }
 }
 
 .input-btn {
   position: relative;
 
-  input {
-    padding-right: 95px;
+  input{
+    padding-right: 6.7857rem;
   }
 
-  button {
-    @include dimensions(auto, auto);
+  button{
     position: absolute;
-    right: 30px;
-    top: 35%;
+    right: 2.1428rem;
+    top: 25%;
   }
-}
-
-.input-text[disabled] {
-  background: $disabled-input;
 }
 
 /*--------------------------INPUT CHECKBOX---------------------------*/
@@ -98,3 +90,25 @@
   border: none;
 }
 
+@media screen and (max-width: 575px){
+  .input-text{
+    height: 40px;
+    padding-left: 25px;
+
+    &.icon{
+      padding-left: 40px;
+      background-size: 15px;
+      background-position-x: 10px;
+    }
+  }
+
+  .input-btn{
+    input{
+      padding-right: 70px;
+    }
+
+    button{
+      right: 10px;
+    }
+  }
+}

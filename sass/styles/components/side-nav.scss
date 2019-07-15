@@ -1,0 +1,28 @@
+.nav-info {
+  font-size: $font-sm;
+
+  .card {
+    @include padding-mixin(90px, 0, 50px, 0);
+    text-align: center;
+  }
+
+  .profile-pic {
+    @include padding-mixin(60px, 0, 0, 0);
+  }
+
+  .faded {
+    color: $default-accordion-font;
+  }
+
+  .round-img {
+    @include dimensions(120px, 120px);
+    margin-right: 28px;
+  }
+
+  .profile-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+}

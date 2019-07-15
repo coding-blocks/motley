@@ -1,0 +1,94 @@
+.c-code-editor {
+  width: 70%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: white;
+}
+
+#editor {
+  @include dimensions(100%, 50%);
+  font-size: $font-xs;
+  background: $editor-background;
+
+  .ace_gutter-layer {
+    background: $editor-line-number;
+    color: $white;
+  }
+}
+
+.editor-options {
+  width: 100%;
+  background-color: $global-font-text-color;
+
+  .select-box {
+    background: $editor-line-number;
+    width: 187px;
+    height: 35px;
+  }
+
+  .open-select-box {
+    @include dimensions(187px, 170px);
+    margin-bottom: 4px;
+    position: absolute;
+    background: $editor-line-number;
+    overflow-y: auto;
+    display: none;
+    border-top: 1px solid gray;
+    z-index: 100;
+    ul {
+      padding-left: 25px;
+      li {
+        padding-bottom: 10px;
+      }
+    }
+
+    .show-block {
+      display: block;
+    }
+  }
+}
+
+.options-result {
+  @include dimensions(100%, 50%);
+}
+
+.result {
+  @include dimensions(100%, calc(100% - 35px));
+
+  .button-solid {
+    @include dimensions(100px, 40px);
+    font-size: 1rem;
+    float: right;
+  }
+
+  & > .row {
+    height: 100%;
+  }
+}
+
+.output {
+  background-color: $editor-line-number;
+}
+
+.input {
+  background-color: #2a2a2a;
+}
+
+.output,
+.input {
+  height: 100%;
+  padding-top: 10px;
+
+  .input-box {
+    padding-top: 10px;
+    color: #ccc;
+    max-height: 100%;
+    overflow-y: scroll;
+    word-break: break-all;
+  }
+
+  .row:nth-child(2) {
+    height: calc(100% - 85px);
+  }
+}

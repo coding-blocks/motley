@@ -7,14 +7,12 @@
 .circle-back{
   @include dimensions(100%, 100%);
   @include border-radius(50%);
-  background: $course-progress-circle-front;
 }
 
 .circle-front{
   @include dimensions(75%, 75%);
   @include border-radius(50%);
   position: absolute;
-  background: $button-gradient;
 }
 
 .progress-text {

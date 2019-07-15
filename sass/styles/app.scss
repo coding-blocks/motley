@@ -3,22 +3,21 @@
 @import "settings/settings.font";
 
 
-@import "_tools.scss";
+@import "tools";
 
 @import "generic/normalize";
 @import "generic/reset";
-@import "_utilities.scss";
+@import "utilities";
 
-@import "_animations.scss";
+@import "animations";
 
-@import "_elements";
-@import "_objects";
-@import "_applications";
+@import "elements";
+@import "objects";
+@import "components";
+@import "media-query";
 
 //TODO: OPTION TO SELECT THEME AND INSERT THAT THEME HERE
-@import "_themes.scss";
+@import "themes";
+@import "applications";
 
-@import "_components";
-@import "_media-query";
 @import "trumps";
-

@@ -6,11 +6,13 @@
   }
 }
 
-.gradient-red{
-  background-image: linear-gradient(to top, #ed798c, #f48c81);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+@each $abbrev, $color in $gradient-text-color-list {
+  .gradient-#{$abbrev}{
+    background-image: $color;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 }
 
 //BACKGROUND COLORS

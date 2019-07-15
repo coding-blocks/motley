@@ -1,0 +1,11 @@
+.c-changedp {
+  .row {
+    .images {
+      cursor: pointer;
+
+      &:hover {
+        @include border(solid, 2px, $nav-border);
+      }
+    }
+  }
+}

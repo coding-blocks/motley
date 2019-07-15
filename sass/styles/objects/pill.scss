@@ -9,19 +9,19 @@
 
 .pill-sm{
   @extend %pill;
-  @include padding-s(6px, 12px);
+  padding: 0.4285rem, 0.8571rem;
 
   font-size: $card-sms;
 }
 
 .pill{
   @extend %pill;
-  @include padding-s(10px, 20px);
+  padding: 0.7142rem 1.4285rem;
 }
 
 .pill-lg{
   @extend %pill;
-  @include padding-s(15px, 30px);
+  padding: 1rem 2.1428rem;
   @include border-radius(30px);
 
   font-size: $font-sm;

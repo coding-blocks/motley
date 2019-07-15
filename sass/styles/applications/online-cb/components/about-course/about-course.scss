@@ -1,0 +1,94 @@
+.c-summary{
+  .badge{
+    position: relative;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    background-image: $gradient-black;
+    align-items: center;
+    border-radius: 15px;
+
+    img{
+      position: absolute;
+      right: 0;
+      width: 15%;
+    }
+  }
+}
+
+.c-rating-carousel{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.c-about-instructors{
+  background-color: $nav-border;
+  padding-top: 3rem;
+  
+  img{
+    border: solid 2px $default-border;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-summary {
+    .classroom-para {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .rating {
+      display: inline-block;
+    }
+  }
+
+  .c-about-instructors {
+    .classroom-para {
+      font-size: $font-xs;
+    }
+  }
+
+  .c-buy-top {
+    display: none;
+  }
+
+  .c-buy-right {
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-top: 35px;
+    
+    .button-dashed {
+      margin: 0;
+    }
+  }
+
+  .c-summary .para {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .c-buy-right {
+    margin-top: 15px;
+    height: auto;
+
+    .course-features{
+      padding: 0 1.5rem;
+    }
+  }
+
+  .rating {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .c-buy-top {
+    .button-dashed {
+      margin-right: 0;
+    }
+  }
+}

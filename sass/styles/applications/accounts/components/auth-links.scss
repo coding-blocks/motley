@@ -1,0 +1,34 @@
+.auth-link{
+  .button-circle {
+    @include dimensions(100%, 100%);
+    @include max-dimensions(50px, 50px);
+  }
+}
+
+.facebook{
+  background: $facebook;
+}
+
+.google{
+  background: $google;
+}
+
+.twitter{
+  background: $twitter;
+}
+
+.github{
+  background: $global-font-text-color;
+}
+
+.linkedin{
+  background: $linkedin;
+}
+
+@media screen and (max-width: 575px){
+  .auth-link{
+    .link-text{
+      display: none;
+    }
+  }
+}
