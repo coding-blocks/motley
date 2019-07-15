@@ -5,12 +5,18 @@ $text-align: (
   "j": justify
 );
 
+$vertical-align: (
+  "m": middle,
+  "t": top,
+  "b": bottom
+);
+
 @each $abbrev, $value in $text-align {
   .t-align-#{$abbrev} {
     text-align: $value !important;
   }
 
-//align all nested
+  //align all nested
   .t-align-#{$abbrev}a {
     * {
       text-align: $value !important;
@@ -18,6 +24,18 @@ $text-align: (
   }
 }
 
+@each $abbrev, $value in $vertical-align {
+  .v-align-#{$abbrev} {
+    vertical-align: $value !important;
+  }
+
+  //align all nested
+  .v-align-#{$abbrev}a {
+    * {
+      vertical-align: $value !important;
+    }
+  }
+}
 
 .text-ellipses {
   white-space: nowrap;
@@ -45,6 +63,19 @@ $text-align: (
   }
 }
 
+@each $size, $label in (576px, sm), (768px, md), (992px, lg) {
+  @media screen and (min-width: $size) {
+    .v-align-#{$label}-t {
+      vertical-align: top !important;
+    }
+    .v-align-#{$label}-m {
+      vertical-align: middle !important;
+    }
+    .v-align-#{$label}-b {
+      vertical-align: bottom !important;
+    }
+  }
+}
 .word-wrap {
   word-wrap: break-word;
 }
