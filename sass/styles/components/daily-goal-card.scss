@@ -3,8 +3,12 @@
 
     .badge-scroll{
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: hidden;
         position: relative;
+    }
+
+    .divider-h{
+        background-clip: content-box;
     }
 
     @include progress(10px, $gradient-blue-lr)
