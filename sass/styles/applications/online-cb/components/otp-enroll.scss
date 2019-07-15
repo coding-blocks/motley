@@ -1,0 +1,18 @@
+.c-otp-enroll {
+  @include dimensions(100%, auto);
+  @include padding-s(15px, 50px);
+  background: $nav-border;
+  font-weight: $font-medium;
+
+  .input-search {
+    @include border-radius(37px);
+    background-color: $otp-input-bg;
+    width: 100%;
+    max-width: 365px;
+    float: right;
+  }
+
+  .button-solid {
+    float: right;
+  }
+}

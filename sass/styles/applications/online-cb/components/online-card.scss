@@ -1,0 +1,204 @@
+.c-online-card {
+  overflow: hidden;
+  height: auto;
+  background-color: $white;
+
+  .head {
+    height: 206px;
+  }
+
+  .difficulty-dots {
+    right: 25px;
+    top: 20px;
+    text-align: center;
+  }
+
+  .course-description {
+    font-size: $card-md;
+  }
+
+  .rating {
+    @include margin(10px, 0, 0, 0);
+    padding: 0;
+  }
+
+  .foot {
+    padding-top: 55px;
+  }
+
+  .card-mentor {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .card-mentor-text {
+      font-size: $card-md;
+      padding-left: 15px;
+    }
+
+    .card-mentor-name {
+      font-weight: $semi-bold;
+    }
+  }
+
+  .divider-h {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  //css for popup online-card
+  &.pop-up {
+    width: 144%;
+    left: -23%;
+    top: -12%;
+    @include padding-mixin(40px, 40px, 24px, 40px);
+
+    .round-img {
+      @include dimensions(85px, 85px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .c-online-card {
+    display: flex;
+
+    .card-mentor {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .c-online-card {
+    font-size: $font-xs;
+    .head {
+      @include dimensions(45%, auto);
+      .content {
+        align-items: center;
+      }
+    }
+    .foot {
+      width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .c-online-card {
+    .round-img-b {
+      @include dimensions(40px, 40px);
+      min-height: 40px;
+    }
+    .head {
+      @include dimensions(45%, auto);
+
+      .content {
+        align-items: center;
+      }
+
+      .course-name {
+        margin-top: 7px;
+        font-size: $card-md;
+      }
+
+      .course-description {
+        font-size: $card-sms;
+      }
+
+      .rating {
+        margin-top: 6px;
+        .pos-rating {
+          font-size: $card-sm;
+        }
+
+        .neg-rating {
+          font-size: $card-sm;
+        }
+      }
+    }
+
+    .enrollment {
+      font-size: $card-sms;
+    }
+
+    .foot {
+      width: 55%;
+      @include padding-s(10px, 10px);
+
+      .card-mentor {
+        .card-mentor-text {
+          font-size: $card-sms;
+        }
+
+        .card-mentor-name {
+          font-size: $card-sm;
+        }
+      }
+
+      .button-row {
+        margin-top: 10px;
+        font-size: $card-sms;
+      }
+    }
+
+    .button-solid {
+      font-size: $card-sm;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-heading {
+    overflow: hidden;
+    max-width: 65%;
+    margin-top: 10px;
+  }
+
+  .card-mentor {
+    display: flex;
+  }
+
+  .card-image {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .c-course-card {
+    .difficulty-div {
+      top: 13px;
+    }
+  }
+
+  .card-layout {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .card-mentor-text {
+    padding-left: 5px;
+    top: 0;
+  }
+
+  .rating {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .expert-level,
+  .beginner-level,
+  .advanced-level {
+    @include dimensions(15px, 15px);
+    border-width: 3px;
+  }
+
+  .card-mentor-divider {
+    @include margin-s(10px, 0);
+  }
+}

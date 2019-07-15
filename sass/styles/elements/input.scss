@@ -1,12 +1,13 @@
 input{
   &[type=text], &[type=textarea], &[type=password]{
     border: none;
-    width: 100%;
+  }
+
+  &[disabled]{
+    background: $disabled-input;
   }
 }
 
 textarea{
-   border: none;
-    width: 100%;
-    max-width: 100%;
+  border: none;
 }

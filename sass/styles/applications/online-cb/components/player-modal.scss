@@ -1,0 +1,14 @@
+.c-player-modal{
+  z-index: 101 !important;
+  .footer {
+    label {
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .c-player-modal {
+    display: none;
+  }
+}

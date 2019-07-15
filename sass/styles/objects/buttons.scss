@@ -43,11 +43,14 @@
     &.md {
       padding: 10px 25px;
     }
+    
+    transition: 0.3s;
   }
 }
 
 .button-solid{
   background-image: $button-gradient;
+  background-size: 200%;
 }
 
 .button-dashed {

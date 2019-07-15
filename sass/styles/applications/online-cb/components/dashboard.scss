@@ -1,0 +1,48 @@
+.c-course-progress{
+  padding: 3rem 6rem;
+  color: white;
+}
+
+.c-course-progress, .c-my-course-card{
+  @include progress(10px, $button-element-level);
+}
+
+.c-dashboard-doubts, .c-announcements{
+  max-height: 830px;
+  overflow-y: auto;
+}
+
+.c-leaderboard{
+  max-height: 460px;
+  overflow-y: auto;
+}
+
+.c-certificate{
+  position: relative;
+  background-image: $gradient-blue-30-deg;
+  font-weight: $extra-bold;
+  padding: 30px;
+
+  .tick{
+    &::after{
+      border-left: solid 2px $blue;
+      border-bottom: solid 2px $blue;
+    }
+  }
+}
+
+@media all and (max-width: 575px){
+  .c-content-accordion, .c-about-accordion{
+    @include li-left-right-padding(left, 15%);
+
+    .list-divided>.row{
+      min-height: 70px;
+    }
+  } 
+}
+
+@media screen and (max-width: 767px){
+  .c-course-progress{
+    padding: 3rem 4rem;
+  }
+}
