@@ -3,15 +3,11 @@
   height: 100vh;
 
   .top-bar {
-    top: 0;
-    left: 0;
     z-index: 100;
     flex: 1;
   }
 
   .side-bar {
-    bottom: 0;
-    left: 0;
     z-index: 500;
     position: fixed;
 
@@ -42,3 +38,11 @@
     height: calc(100vh - 118px);
   }
 }
+
+// .back-blur{
+//   top: 0;
+//   left: 0;
+//   background-color: $interview-grey;
+//   z-index: 1000;
+//   opacity: 0.93;
+// }

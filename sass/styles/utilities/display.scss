@@ -1,27 +1,23 @@
-
-@each $dis
-in
-(block),
-(inline),
-(inline-block),
-(flex),
-(none){
-  .display-#{$dis}{
+@each $dis in (block), (inline), (inline-block), (flex), (none) {
+  .display-#{$dis} {
     @include display($dis !important);
   }
 }
 
-
 // display-none for screen sizes
 
-@each $size, $label in 
-(575px, xs),
-(767px, sm),
-(991px, md)
-{
-  @media screen and(max-width: $size){
-    .dsp-none-#{$label}{
+@each $size, $label in (575px, xs), (767px, sm), (991px, md) {
+  @media screen and(max-width: $size) {
+    .dsp-none-#{$label} {
       display: none !important;
     }
   }
+}
+
+.screen-height {
+  height: 100vh;
+}
+
+.screen-width {
+  width: 100vh;
 }

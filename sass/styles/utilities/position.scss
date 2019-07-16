@@ -1,35 +1,33 @@
-@each $type in 
-('static')
-('relative')
-('absolute')
-('sticky')
-('fixed')
-{
-  .position-#{$type}{
+@each $type in ("static") ("relative") ("absolute") ("sticky") ("fixed") {
+  .position-#{$type} {
     position: #{$type};
   }
 }
 
-.tl{
+.tl {
   top: 0;
   left: 0;
 }
 
-.tr{
+.tr {
   top: 0;
   right: 0;
 }
 
-.bl{
+.bl {
   bottom: 0;
   left: 0;
 }
 
-.br{
+.br {
   bottom: 0;
   right: 0;
 }
 
-.z-neg{
+.z-neg {
   z-index: -1;
+}
+
+.margin-70 {
+  margin-top: -70px;
 }
