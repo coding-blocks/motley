@@ -21,3 +21,11 @@
 .screen-width {
   width: 100vh;
 }
+
+.no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,4 +1,4 @@
-<div class="c-code-window flex-col">
+<div class="c-code-window flex-col a-hb">
   <div class="d-flex white bg-dark-grey align-items-center justify-content-between py-4 w-100 top-bar tl">
     <div class="col-xl-7 col-lg-6 col-5 offset-1">
       <h2>CAST - CODERS ADMISSION &amp; SCHOLARSHIP TEST </h2>
@@ -41,13 +41,13 @@
       </a>
     </div>
     <div class="col-11 offset-1">
-      <div class="row no-gutters code-area">
-        <div class="col-7 px-xl-5 px-4 pt-5 h-100 position-relative overflow-y-auto">
+      <div class="row no-gutters code-area overflow-hidden">
+        <div class="col-7 px-xl-5 px-4 pt-5 h-100 position-relative overflow-y-auto no-scrollbar">
           <div class="font-mds mb-4">Question 2</div>
           <div class="font-sm bold word-wrap">
             loremipsumloremipsumloremipsumloremipsumloremipsumloreremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloreremipsumloremipsum
           </div>
-          <div class="bg-grey h-20 my-4"></div>
+          <div class="bg-grey h-20 my-4 br-5"></div>
           <div class="pl-5 mt-5">
             <div class="radio-container mb-4">
               <input type="radio" name="group1" id="radio-1">
@@ -66,153 +66,74 @@
               <label for="radio-4"><span>Frappe</span></label>
             </div>
           </div>
-          <div class="row no-gutters position-sticky bl bg-white all-center pb-5">
-            <div>
-              <button class="button-dashed button-orange font-sm extra-bold mt-2">
-                <i class="fas fa-arrow-left mr-3"></i>Previous Question
-              </button>
-            </div>
-            <div>
-              <button class="button-solid button-orange font-sm extra-bold mx-5 mt-2">
-                Review Later
-              </button>
-            </div>
-            <div>
-              <button class="button-dashed button-orange font-sm extra-bold mt-2">
-                Next Question<i class="fas fa-arrow-right ml-3"></i>
-              </button>
+          <div class="position-sticky bl bg-white pb-5">
+            <div class="divider-h mb-2"></div>
+            <div class="row no-gutters all-center">
+              <div>
+                <button class="button-dashed button-orange font-sm extra-bold mt-2 mr-3">
+                  <i class="fas fa-arrow-left mr-3"></i>Previous
+                  <span class="d-xl-inline d-none"> Question</span>
+                </button>
+              </div>
+              <div>
+                <button class="button-solid button-orange font-sm extra-bold mx-3 mt-2">
+                  Review Later
+                </button>
+              </div>
+              <div>
+                <button class="button-dashed button-orange font-sm extra-bold mt-2 ml-3">
+                  Next<span class="d-xl-inline d-none"> Question</span>
+                  <i class="fas fa-arrow-right ml-3"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-5 p-5">
-          <div class="border-card h-100 px-xl-5 px-4 py-5 t-align-c overflow-visible">
-            <h2>Total Questions: 50</h2>
-            <div class="row all-center v-align-ma mt-4">
-              <div>
-                <span class="font-sm extra-bold green mx-xl-3 mx-2"><span
-                    class="font-xl mr-3">&#10625;</span>Attempted</span>
+        <div class="col-5 p-xl-5 p-4">
+          <div class="border-card question-card px-xl-5 px-4 pb-5 pt-0 t-align-c no-scrollbar">
+            <h2 class="pt-xl-5 pt-4">Total Questions: 50</h2>
+            <div class="position-sticky tl bg-white py-4">
+              <div class="row all-center v-align-ma">
+                <div>
+                  <span class="font-sm extra-bold green mx-xl-3 mx-2"><span
+                      class="font-xl mr-3">&#10625;</span>Attempted</span>
+                </div>
+                <div>
+                  <span class="font-sm extra-bold mx-xl-3 mx-2"><span
+                      class="font-xl mr-3">&#10625;</span>Unattempted</span>
+                </div>
+                <div>
+                  <span class="font-sm extra-bold orange mx-xl-3 mx-2"><span class="font-xl mr-3">&#10625;</span>Marked
+                    for Review</span>
+                </div>
               </div>
-              <div>
-                <span class="font-sm extra-bold mx-xl-3 mx-2"><span
-                    class="font-xl mr-3">&#10625;</span>Unattempted</span>
-              </div>
-              <div>
-                <span class="font-sm extra-bold orange mx-xl-3 mx-2"><span class="font-xl mr-3">&#10625;</span>Marked
-                  for Review</span>
-              </div>
+              <div class="divider-h mt-4"></div>
             </div>
-            <div class="divider-h my-4"></div>
-            <div class="row col-12 mx-0 px-0">
-              {{!-- <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div> --}}
-              <div class="row no-gutters w-100 mt-2">
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-black mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-                <div class="col-2">
-                  <div class="s-50x50 br-50 bg-green mx-auto"></div>
-                </div>
-              </div>
+            <div class="options font-lg bold">
+              <div class="circle bg-green">1</div>
+              <div class="circle">2</div>
+              <div class="circle bg-green">3</div>
+              <div class="circle">4</div>
+              <div class="circle bg-green">5</div>
+              <div class="circle bg-orange">6</div>
+              <div class="circle bg-green">7</div>
+              <div class="circle bg-orange">8</div>
+              <div class="circle">9</div>
+              <div class="circle bg-green">10</div>
+              <div class="circle bg-green">11</div>
+              <div class="circle">12</div>
+              <div class="circle">13</div>
+              <div class="circle bg-orange">14</div>
+              <div class="circle bg-green">15</div>
+              <div class="circle bg-green">16</div>
+              <div class="circle bg-green">17</div>
+              <div class="circle bg-green">18</div>
+              <div class="circle">19</div>
+              <div class="circle bg-green">20</div>
+              <div class="circle">21</div>
+              <div class="circle bg-orange">22</div>
+              <div class="circle bg-green">23</div>
+              <div class="circle bg-green">24</div>
             </div>
           </div>
         </div>

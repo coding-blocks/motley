@@ -34,7 +34,22 @@
     align-items: unset;
   }
 
-  .code-area{
+  .code-area {
     height: calc(100vh - 118px);
+  }
+
+  .question-card{
+    overflow-y: auto;
+    height: calc(100vh - 202px);
+    position: relative;
+  }
+
+  .options {
+    grid-template-columns: repeat(4, 1fr);
+
+    .circle {
+      @include dimensions(50px, 50px);
+      background-color: $interview-grey;
+    }
   }
 }
