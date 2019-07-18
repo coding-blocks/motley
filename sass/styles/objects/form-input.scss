@@ -17,11 +17,11 @@
 .input-btn {
   position: relative;
 
-  input{
+  input {
     padding-right: 6.7857rem;
   }
 
-  button{
+  button {
     position: absolute;
     right: 2.1428rem;
     top: 25%;
@@ -90,25 +90,64 @@
   border: none;
 }
 
-@media screen and (max-width: 575px){
-  .input-text{
+@media screen and (max-width: 575px) {
+  .input-text {
     height: 40px;
     padding-left: 25px;
 
-    &.icon{
+    &.icon {
       padding-left: 40px;
       background-size: 15px;
       background-position-x: 10px;
     }
   }
 
-  .input-btn{
-    input{
+  .input-btn {
+    input {
       padding-right: 70px;
     }
 
-    button{
+    button {
       right: 10px;
     }
+  }
+}
+
+/* -----------------------RADIO BUTTONS------------------------ */
+
+.radio-container {
+  & > input {
+    // visibility: hidden;
+    display: none;
+  }
+
+  label {
+    position: relative;
+  }
+
+  & span {
+    &::after {
+      content: "";
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      margin: auto;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      left: -40px;
+      width: 25px;
+      height: 25px;
+      background-color: #f3f3f3;
+      border-radius: 20px;
+    }
+  }
+
+  input:checked + label span::after {
+    background: $gradient-orange-lr;
   }
 }
