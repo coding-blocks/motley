@@ -1,6 +1,11 @@
-@each $name, $type in
-  (fingerprint,svg), (user,svg), (mail,svg), (lines,svg){
-    .#{$name}-bg{
-      background-image: url("https://minio.codingblocks.com/motley/#{$name}.#{$type}");
-    }
+@each $name, $type in (fingerprint, svg), (user, svg), (mail, svg), (lines, svg) {
+  .#{$name}-bg {
+    background-image: url("https://minio.codingblocks.com/motley/#{$name}.#{$type}");
+  }
+}
+
+.hover-grey {
+  &:hover {
+    background: $t-heading-border;
+  }
 }
