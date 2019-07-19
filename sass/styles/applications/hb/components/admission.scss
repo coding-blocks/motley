@@ -1,0 +1,13 @@
+.admission-card {
+  @media screen and (max-width: 1199px) {
+    .divided-list {
+      .list-heading {
+        font-size: $font-sm !important;
+      }
+
+      .list-data {
+        font-size: $font-xs !important;
+      }
+    }
+  }
+}

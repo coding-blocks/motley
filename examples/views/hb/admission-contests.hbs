@@ -3,73 +3,522 @@
   {{>sidenav}}
 
   <div class="hb-container">
-    <div class="container">
-      <h2 class="t-align-c">APAT CONTESTS</h2>
-      <div class="tab-nav-underline mt-4 font-md bold justify-content-between">
-        <div class="tab active py-4">
-          <i class="fas fa-podcast mr-3 fa-lg"></i>Live Contests (03)
-        </div>
-        <div class="tab py-4">
-          <i class="far fa-calendar mr-3 fa-lg"></i>Upcoming Contests (08)
-        </div>
-        <div class="tab py-4">
-          <i class="fas fa-archive mr-3 fa-lg"></i>Archived Contests (10)
-        </div>
+    <h2 class="t-align-c">APAT CONTESTS</h2>
+
+    {{!-- Live Contests --}}
+    <div class="tab-nav-underline mt-4 font-md bold justify-content-between">
+      <div class="tab active py-4 px-lg-5 px-4">
+        <i class="fas fa-podcast mr-3 fa-lg d-md-inline d-none"></i>Live Contests
+        <span class="d-md-inline d-none">(03)</span>
       </div>
-      <div class="">
-        <div class="row">
-          <div class="col-4">
-            <div class="img-card c-competition-card">
-              <div class="head bg-gradient-dblue p-5 all-center">
-                <div>
-                  <div class="img-desc align-items-center justify-content-center">
-                    <div class="col-2 px-0">
-                      <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="" class="">
-                    </div>
-                    <div class="description col-10">
-                      <h3>APAT</h3>
-                      <h3>Android App Dev.</h3>
-                    </div>
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="far fa-calendar mr-3 fa-lg d-md-inline d-none"></i>Upcoming Contests
+        <span class="d-md-inline d-none">(08)</span>
+      </div>
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="fas fa-archive mr-3 fa-lg d-md-inline d-none"></i>Archived Contests
+        <span class="d-md-inline d-none">(10)</span>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
                   </div>
-                  <ul class="divided-list">
-                    <li class="px-xl-3 px-2">
-                      <div class="list-heading font-mds extra-bold orange">12</div>
-                      <div class="list-data">Contests</div>
-                    </li>
-                    <li class="px-xl-3 px-2">
-                      <div class="list-heading font-mds extra-bold orange">234</div>
-                      <div class="list-data">Participants</div>
-                    </li>
-                    <li class="px-xl-3 px-2">
-                      <div class="list-heading font-mds extra-bold orange">45</div>
-                      <div class="list-data">Colleges</div>
-                    </li>
-                  </ul>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="foot align-items-center t-align-c px-2 py-4">
-                <div class="font-sm mb-4">STARTS IN</div>
-                <ul class="divided-list timer d-inline-block">
-                  <li class="timer-item">
-                    <div class="list-heading font-lg extra-bold">00</div>
-                    <div class="list-data">Days</div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
                   </li>
-                  <li class="timer-item">
-                    <div class="list-heading font-lg extra-bold">12</div>
-                    <div class="list-data">Hours</div>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
                   </li>
-                  <li class="timer-item">
-                    <div class="list-heading font-lg extra-bold">30</div>
-                    <div class="list-data">Minutes</div>
-                  </li>
-                  <li class="timer-item">
-                    <div class="list-heading font-lg extra-bold">25</div>
-                    <div class="list-data">Seconds</div>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
                   </li>
                 </ul>
-                <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Solve
-                  Challenge</button>
               </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">ENDS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Solve
+                Challenge</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">ENDS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Solve
+                Challenge</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">ENDS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Solve
+                Challenge</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Upcoming Contests --}}
+    <div class="tab-nav-underline mt-4 font-md bold justify-content-between">
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="fas fa-podcast mr-3 fa-lg d-md-inline d-none"></i>Live Contests
+        <span class="d-md-inline d-none">(03)</span>
+      </div>
+      <div class="tab active py-4 px-lg-5 px-4">
+        <i class="far fa-calendar mr-3 fa-lg d-md-inline d-none"></i>Upcoming Contests
+        <span class="d-md-inline d-none">(08)</span>
+      </div>
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="fas fa-archive mr-3 fa-lg d-md-inline d-none"></i>Archived Contests
+        <span class="d-md-inline d-none">(10)</span>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">STARTS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">STARTS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2 py-4">
+              <div class="font-sm mb-4">STARTS IN</div>
+              <ul class="divided-list timer d-inline-block">
+                <li class="timer-item pr-xl-2 pr-1">
+                  <div class="list-heading font-lg extra-bold">00</div>
+                  <div class="list-data">Days</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">12</div>
+                  <div class="list-data">Hours</div>
+                </li>
+                <li class="timer-item px-xl-2 px-1">
+                  <div class="list-heading font-lg extra-bold">30</div>
+                  <div class="list-data">Minutes</div>
+                </li>
+                <li class="timer-item pl-xl-2 pl-1">
+                  <div class="list-heading font-lg extra-bold">25</div>
+                  <div class="list-data">Seconds</div>
+                </li>
+              </ul>
+              <button class="button-solid button-orange extra-bold mt-4 mb-2 mx-auto d-block">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Archived Contests --}}
+    <div class="tab-nav-underline mt-4 font-md bold justify-content-between">
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="fas fa-podcast mr-3 fa-lg d-md-inline d-none"></i>Live Contests
+        <span class="d-md-inline d-none">(03)</span>
+      </div>
+      <div class="tab py-4 px-lg-5 px-4">
+        <i class="far fa-calendar mr-3 fa-lg d-md-inline d-none"></i>Upcoming Contests
+        <span class="d-md-inline d-none">(08)</span>
+      </div>
+      <div class="tab active py-4 px-lg-5 px-4">
+        <i class="fas fa-archive mr-3 fa-lg d-md-inline d-none"></i>Archived Contests
+        <span class="d-md-inline d-none">(10)</span>
+      </div>
+    </div>
+    <div>
+      <div class="font-mds t-align-c my-5">Archived Contests are already ended.<br>You can still participate, however you will not be awarded any points for these contest.</div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2">
+              <button class="button-solid button-orange extra-bold my-4 mx-auto d-block">Start Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2">
+              <button class="button-solid button-orange extra-bold my-4 mx-auto d-block">Start Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="img-card c-competition-card admission-card">
+            <div class="head bg-gradient-black py-5 px-4 all-center">
+              <div>
+                <div class="row no-gutters all-center">
+                  <div class="col-2 mr-xl-4 mr-0">
+                    <img src="https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bdf2.png" alt="IMG">
+                  </div>
+                  <div class="d-xl-block d-none">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                  <div class="d-xl-none d-block col-10 pl-3">
+                    <h3>APAT</h3>
+                    <h3>Android App Dev.</h3>
+                  </div>
+                </div>
+                <ul class="divided-list t-align-c mt-4 mb-0">
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">12</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">234</div>
+                    <div class="list-data font-mds">Participants</div>
+                  </li>
+                  <li class="px-xl-2 px-1 t-align-l">
+                    <div class="list-heading font-md extra-bold orange">1 hr</div>
+                    <div class="list-data font-mds">Time</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="foot align-items-center t-align-c px-2">
+              <button class="button-solid button-orange extra-bold my-4 mx-auto d-block">Start Now</button>
             </div>
           </div>
         </div>
