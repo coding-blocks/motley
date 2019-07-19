@@ -1,5 +1,5 @@
-.c-summary{
-  .badge{
+.c-summary {
+  .badge {
     position: relative;
     padding: 1rem 2rem;
     overflow: hidden;
@@ -7,7 +7,7 @@
     align-items: center;
     border-radius: 15px;
 
-    img{
+    img {
       position: absolute;
       right: 0;
       width: 15%;
@@ -15,17 +15,21 @@
   }
 }
 
-.c-rating-carousel{
+.c-card-carousel {
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding-bottom: 20px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.c-about-instructors{
+.c-about-instructors {
   background-color: $nav-border;
   padding-top: 3rem;
-  
-  img{
+
+  img {
     border: solid 2px $default-border;
   }
 }
@@ -57,7 +61,7 @@
     width: 100%;
     top: 0;
     margin-top: 35px;
-    
+
     .button-dashed {
       margin: 0;
     }
@@ -74,7 +78,7 @@
     margin-top: 15px;
     height: auto;
 
-    .course-features{
+    .course-features {
       padding: 0 1.5rem;
     }
   }
