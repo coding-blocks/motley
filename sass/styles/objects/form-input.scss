@@ -115,39 +115,34 @@
 
 /* -----------------------RADIO BUTTONS------------------------ */
 
-.radio-container {
-  & > input {
-    // visibility: hidden;
-    display: none;
+label.input-radio {
+  position: relative;
+  line-height: 25px;
+  padding-left: 25px;
+
+  input {
+    visibility: hidden;
   }
 
-  label {
-    position: relative;
-  }
-
-  & span {
+  span {
     &::after {
       content: "";
       top: 0;
-      bottom: 0;
+      left: 0;
       position: absolute;
       margin: auto;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &::after {
-      left: -40px;
       width: 25px;
       height: 25px;
       background-color: $t-heading-border;
       border-radius: 20px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  input:checked + label span::after {
+  input:checked + span::after {
     background: $gradient-orange-lr;
   }
 }
