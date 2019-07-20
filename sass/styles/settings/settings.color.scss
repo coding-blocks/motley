@@ -13,6 +13,7 @@ File contains color configuration for below listed objects and utilities:-
 - Utilities
   - Text Colors
   - Background Colors
+  - Hover Colors
 **/
 
 $black: #000000;
@@ -164,3 +165,6 @@ $gradient-text-color-list: (
   "red": $button-gradient,
   "blue": $gradient-blue-lr
 );
+
+// Hover Colors
+$hover-grey: #f3f3f3;
