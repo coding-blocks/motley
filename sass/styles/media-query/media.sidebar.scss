@@ -35,6 +35,7 @@
   
         .button-solid {
           @include margin(0, auto, 0, auto);
+          background-image: none;
         }
       }
   
