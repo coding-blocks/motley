@@ -2,6 +2,11 @@
   margin-top: -70px;
   height: 100vh;
 
+  .logo {
+    height: 150px;
+    flex-basis: 118px;
+  }
+
   .top-bar {
     z-index: 100;
     flex-basis: 118px;
@@ -38,7 +43,7 @@
     height: calc(100vh - 118px);
   }
 
-  .question-card{
+  .question-card {
     overflow-y: auto;
     height: calc(100vh - 202px);
     position: relative;
@@ -51,5 +56,18 @@
       @include dimensions(50px, 50px);
       background-color: $interview-grey;
     }
+  }
+}
+
+.cast-window {
+  .code-area {
+    height: calc(100vh - 150px);
+  }
+  .top-bar {
+    height: 150px;
+  }
+
+  .question-area {
+    height: calc(100% - 66px);
   }
 }
