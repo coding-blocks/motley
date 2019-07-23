@@ -2,16 +2,17 @@
   margin-top: -70px;
   height: 100vh;
 
+  .logo {
+    height: 118px;
+  }
+
   .top-bar {
-    top: 0;
-    left: 0;
+    height: 128px;
     z-index: 100;
-    flex: 1;
+    flex-basis: 118px;
   }
 
   .side-bar {
-    bottom: 0;
-    left: 0;
     z-index: 500;
     position: fixed;
 
@@ -38,7 +39,37 @@
     align-items: unset;
   }
 
-  .code-area{
+  .code-area {
     height: calc(100vh - 118px);
+  }
+
+  .question-card {
+    overflow-y: auto;
+    height: calc(100vh - 202px);
+    position: relative;
+  }
+
+  .options {
+    grid-template-columns: repeat(4, 1fr);
+
+    .circle {
+      @include dimensions(50px, 50px);
+      background-color: $interview-grey;
+    }
+  }
+}
+
+.c-cast-window {
+  .code-area {
+    height: calc(100vh - 128px);
+  }
+
+  .question-area {
+    height: calc(100% - 66px);
+  }
+
+  .logo{
+    height: 128px;
+    flex-basis: 118px; 
   }
 }

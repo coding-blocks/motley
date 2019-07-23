@@ -1,23 +1,21 @@
-.c-daily-goal-card{
-    text-align: center;
+.c-daily-goal-card {
+  text-align: center;
 
-    .badge-scroll{
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        position: relative;
-    }
+  .divider-h {
+    background-clip: content-box;
+  }
 
-    @include progress(10px, $gradient-blue-lr)
+  @include progress(10px, $gradient-blue-lr);
 }
 
-@media screen and (max-width: 1200px){
-    .c-daily-goal-card{
-        padding: 30px;
-    }
+@media screen and (max-width: 1200px) {
+  .c-daily-goal-card {
+    padding: 30px;
+  }
 }
 
-@media screen and (max-width: 992px){
-    .c-daily-goal-card{
-        padding: 20px;
-    }
+@media screen and (max-width: 992px) {
+  .c-daily-goal-card {
+    padding: 20px;
+  }
 }

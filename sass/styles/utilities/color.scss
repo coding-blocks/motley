@@ -63,17 +63,25 @@ $gradient-list: (black, "lr", linear-gradient(30deg, #333333, #000000)),
 }
 
 .bg-gradient-purple {
-  background: $bg-gradient-purple;
+  background: $gradient-purple;
 }
 
 .bg-gradient-orange {
   background: $gradient-orange-lr;
 }
 
-.bg-gradient-dblue {
-  background: $bg-gradient-dblue;
+.bg-gradient-dblue-lr {
+  background: $gradient-dblue;
+}
+
+.bg-gradient-lblue-lr {
+  background: $gradient-lblue;
+}
+
+.bg-gradient-green-lr {
+  background: $gradient-green;
 }
 
 .bg-gradient-black {
-  background: $bg-gradient-black-bt;
+  background: $gradient-black-bt;
 }
