@@ -3,11 +3,11 @@
   height: 100vh;
 
   .logo {
-    height: 150px;
-    flex-basis: 118px;
+    height: 118px;
   }
 
   .top-bar {
+    height: 128px;
     z-index: 100;
     flex-basis: 118px;
   }
@@ -61,14 +61,15 @@
 
 .c-cast-window {
   .code-area {
-    height: calc(100vh - 150px);
-  }
-
-  .top-bar {
-    height: 150px;
+    height: calc(100vh - 128px);
   }
 
   .question-area {
     height: calc(100% - 66px);
+  }
+
+  .logo{
+    height: 128px;
+    flex-basis: 118px; 
   }
 }
