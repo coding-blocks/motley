@@ -1,0 +1,47 @@
+.dashboard {
+  .divided-list {
+    & > * {
+      &:not(:last-child) {
+        border-right: solid 1px $hover-grey;
+      }
+    }
+  }
+
+  .mt-neg-10{
+    margin-top: -10px;
+  }
+
+  .border-orange{
+    border-color: $orange; 
+  }
+
+  .divider-h{
+    background-clip: content-box;
+  }
+
+  .c-hb-leaderboard{
+    table{
+      td:last-child{
+        text-align: center;
+      }
+    }  
+  }
+
+  .white-underline {
+    border-bottom: solid 1px white;
+  }
+
+  .banner-nav {
+    z-index: 1;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: $interview-grey;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+}
