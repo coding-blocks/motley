@@ -1,13 +1,13 @@
 // COLORS
 
 @each $abbrev, $color in $text-color-list {
-  .#{$abbrev}{
-      color: $color  !important;
+  .#{$abbrev} {
+    color: $color !important;
   }
 }
 
 @each $abbrev, $color in $gradient-text-color-list {
-  .gradient-#{$abbrev}{
+  .gradient-#{$abbrev} {
     background-image: $color;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -18,21 +18,20 @@
 //BACKGROUND COLORS
 
 @each $abbrev, $color in $bg-color-list {
-  .bg-#{$abbrev}{
-    background-color: $color  !important;
+  .bg-#{$abbrev} {
+    background-color: $color !important;
   }
 }
 
-.invert{
+.invert {
   background-color: $invert;
   color: $white;
 }
 
 // GRADIENTS
 
-$gradient-list: (black, 'lr', linear-gradient(30deg, #333333, #000000)),
-(black, 'bt', linear-gradient(30deg, #333333, #000000))
-;
+$gradient-list: (black, "lr", linear-gradient(30deg, #333333, #000000)),
+  (black, "bt", linear-gradient(30deg, #333333, #000000));
 
 // @each $type, $direction, $value in $gradient-list {
 //   .gradient-#{$type}-#{$direction}{
@@ -40,37 +39,45 @@ $gradient-list: (black, 'lr', linear-gradient(30deg, #333333, #000000)),
 //   }
 // }
 
-.bg-gradient-black-lr{
+.bg-gradient-black-lr {
   background-image: linear-gradient(30deg, #333333, #000000);
 }
-.bg-gradient-black-bt{
+.bg-gradient-black-bt {
   background-image: linear-gradient(to top, #333333, #000000);
 }
 
-.bg-gradient-violet-lr{
+.bg-gradient-violet-lr {
   background-image: linear-gradient(to right, #692fdc, #452ba3);
 }
 
-.bg-gradient-violet-bt{
+.bg-gradient-violet-bt {
   background-image: linear-gradient(to top, #692fdc, #452ba3);
 }
 
-.bg-gradient-red-lr{
+.bg-gradient-red-lr {
   background-image: linear-gradient(to right, #ed788d 0%, #ec837a);
 }
 
-.bg-gradient-blue-lr{
+.bg-gradient-blue-lr {
   background-image: $gradient-blue-lr;
 }
 
-.bg-gradient-purple{
-  background: $bg-gradient-purple;
+.bg-gradient-purple {
+  background: $gradient-purple;
 }
 
-.bg-gradient-orange{
+.bg-gradient-orange {
   background: $gradient-orange-lr;
 }
 
-.bg-gradient-dblue{
-  background: $bg-gradient-dblue;
+.bg-gradient-dblue-lr {
+  background: $gradient-dblue;
+}
+
+.bg-gradient-lblue-lr {
+  background: $gradient-lblue;
+}
+
+.bg-gradient-green-lr {
+  background: $gradient-green;
 }

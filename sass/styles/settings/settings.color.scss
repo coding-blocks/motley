@@ -112,7 +112,7 @@ $list-shaded-background: rgba(255, 255, 255, 0.9);
 //Gradients
 $gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
-$gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
+$gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-black: linear-gradient(30deg, #333333, #000000);
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
 $course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
@@ -120,15 +120,17 @@ $button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160
 $gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);
 $gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
-$bg-gradient-purple: linear-gradient(30deg, #271147, #553180);
-$bg-gradient-dblue: linear-gradient(to right, #0b024e, #000033);
+$gradient-purple: linear-gradient(30deg, #271147, #553180);
+$gradient-dblue: linear-gradient(to right, #0b024e, #000033);
+$gradient-green: linear-gradient(to right, #56aa4e, #7eda75);
+$gradient-lblue: linear-gradient(to right, #0b024e, #174e79);
 
 
 //Checkbox
 // $checkbox-solid: (
-//   orange: $gradient-orange-30-deg
+//   orange: $gradient-orange
 // );
-$checkbox-solid: $gradient-orange-30-deg;
+$checkbox-solid: $gradient-orange;
 
 //Background Colors
 $bg-color-list: (
