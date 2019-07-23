@@ -3,14 +3,61 @@
     {{>nav-hb}}
     <div class="row justify-content-center mx-0">
       {{>sidenav}}
-      <div class="offset-0 offset-md-1 col-11 px-5 dashboard">
-        <div class="position-relative">
+      <div class="offset-0 offset-md-1 col-11 px-5 dashboard pt-5">
+        <div class="position-relative mb-5 banner">
           <div class="banner-nav h-100 w-10 position-absolute tl flex-col all-center pointer">
             <span style="font-size: 50px;"><a href="#" class="white extra-bold">&lang;</a></span>
           </div>
-          <img src="https://www.mymaldives.com.au/wp-content/uploads/sites/11/2016/12/Beach-Banner.jpg" alt="BannerImage" class="w-100">
+          <img src="https://www.mymaldives.com.au/wp-content/uploads/sites/11/2016/12/Beach-Banner.jpg"
+            alt="BannerImage" class="w-100 h-100">
           <div class="banner-nav h-100 w-10 position-absolute tr flex-col all-center pointer">
             <span style="font-size: 50px;"><a href="#" class="white extra-bold">&rang;</a></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-8 pl-0">
+            {{>dashboard-metrics-card}}
+            <h4 class="my-5">Continue where you left</h4>
+            <div class="row mx-0">
+              <div class="col-6 pl-0">
+                {{>dashboard-dcb-card}}
+              </div>
+              <div class="col-6 pr-0">
+                {{>dashboard-interview-card}}
+              </div>
+            </div>
+            {{>dashboard-reg-contests-card}}
+          </div>
+          <div class="col-4 pr-0">
+            {{!-- Performance Graph Card to be placed here --}}
+            <div class="border-card p-5 mb-5">
+              <div class="row mx-0 justify-content-between">
+                <h4>Performance Graph</h4>
+                <div class="card-md">Past 6 Months</div>
+              </div>
+              <div class="bg-grey mt-4" style="height: 300px;"></div>
+            </div>
+            {{>dashboard-leaderboard}}
+          </div>
+        </div>
+        <h4 class="t-align-c my-5">Practice Problems</h4>
+        <div class="row mx-0">
+          <div class="col-4 pl-0">
+            {{>dashboard-practice-card}}
+          </div>
+          <div class="col-4">
+            {{>dashboard-practice-card}}
+          </div>
+          <div class="col-4 pr-0">
+            {{>dashboard-practice-card}}
+          </div>
+        </div>
+        <div class="row mx-0 my-5">
+          <div class="col-8 pl-0">
+            {{>dashboard-badge-card}}
+          </div>
+          <div class="col-4 pr-0">
+            {{>dashboard-bookmark-card}}
           </div>
         </div>
       </div>
