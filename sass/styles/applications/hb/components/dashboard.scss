@@ -31,12 +31,20 @@
     }  
   }
 
+  .large-font{
+    font-size: 2.571rem;
+  }
+
   .white-underline {
     border-bottom: solid 1px white;
   }
 
   .banner-nav {
     z-index: 1;
+
+    span{
+      font-size: 50px;
+    }
 
     &::before {
       content: "";
