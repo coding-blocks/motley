@@ -3,7 +3,7 @@
     {{>nav-hb}}
     <div class="row justify-content-center mx-0">
       {{>sidenav}}
-      <div class="offset-0 offset-md-1 col-11 px-5 dashboard pt-5">
+      <div class="offset-0 offset-md-1 col-11 px-lg-5 px-md-4 px-0 dashboard pt-5">
         <div class="position-relative mb-5 banner">
           <div class="banner-nav h-100 w-10 position-absolute tl flex-col all-center pointer">
             <span style="font-size: 50px;"><a href="#" class="white extra-bold">&lang;</a></span>
@@ -15,22 +15,22 @@
           </div>
         </div>
         <div class="row mx-0">
-          <div class="col-8 pl-0">
+          <div class="col-md-8 col-12">
             {{>dashboard-metrics-card}}
             <h4 class="my-5">Continue where you left</h4>
             <div class="row mx-0">
-              <div class="col-6 pl-0">
-                {{>dashboard-dcb-card}}
+              <div class="col-lg-6 col-12 pl-lg-0 px-2">
+                {{>dashboard-dcb-card}}`
               </div>
-              <div class="col-6 pr-0">
+              <div class="col-lg-6 col-12 pr-lg-0 px-2 mt-lg-0 mt-5">
                 {{>dashboard-interview-card}}
               </div>
             </div>
             {{>dashboard-reg-contests-card}}
           </div>
-          <div class="col-4 pr-0">
+          <div class="col-md-4 col-12">
             {{!-- Performance Graph Card to be placed here --}}
-            <div class="border-card p-5 mb-5">
+            <div class="border-card p-5 mb-5 mt-md-0 mt-5">
               <div class="row mx-0 justify-content-between">
                 <h4>Performance Graph</h4>
                 <div class="card-md">Past 6 Months</div>
@@ -40,23 +40,23 @@
             {{>dashboard-leaderboard}}
           </div>
         </div>
-        <h4 class="t-align-c my-5">Practice Problems</h4>
-        <div class="row mx-0">
-          <div class="col-4 pl-0">
+        <h4 class="t-align-c mb-5 mt-md-5 mt-0">Practice Problems</h4>
+        <div class="row mx-0 c-card-carousel">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
             {{>dashboard-practice-card}}
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
             {{>dashboard-practice-card}}
           </div>
-          <div class="col-4 pr-0">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
             {{>dashboard-practice-card}}
           </div>
         </div>
         <div class="row mx-0 my-5">
-          <div class="col-8 pl-0">
+          <div class="col-md-8 col-12 pl-md-0">
             {{>dashboard-badge-card}}
           </div>
-          <div class="col-4 pr-0">
+          <div class="col-md-4 col-12 pr-md-0 mt-md-0 mt-5">
             {{>dashboard-bookmark-card}}
           </div>
         </div>
