@@ -1,0 +1,40 @@
+<div class="a-hb">
+  <div>
+    {{>nav-hb}}
+    <div class="row justify-content-center mx-0">
+      {{>sidenav}}
+      <div class="offset-0 offset-md-1 col-11 px-5">
+        <div class="row mx-0 pt-5">
+          <div class="col-4">
+            <div class="border-card py-5 px-lg-5 px-4 t-align-c">
+              <div class="img-ring profile-img mx-auto mb-4">
+                <img class="round img"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL43mSCo0MAu3fCgV8t6QRsNzyiatE_Har4TjE8M6NZ-i0tKDzA"
+                  alt="">
+              </div>
+              <span class="gradient-text extra-bold font-lg">Siddarth Jain</span>
+              <div class="font-sm mt-1 mb-4">sidjain13@gmail.com</div>
+              <div class="pt-3">
+                <a href="#"><i class="fab fa-facebook-f fa-2x pr-xl-3 pr-lg-2 pr-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x px-xl-3 px-lg-2 px-1"></i></a>
+                <a href="#"><i class="fab fa-github fa-2x px-xl-3 px-lg-2 px-1"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in fa-2x pl-xl-3 pl-lg-2 pl-1"></i></a>
+              </div>
+              <div class="divider-h my-4"></div>
+              <div class="mb-2">Member since Jan 2018</div>
+              <button class="button-solid button-orange font-sm mt-4">Edit Profile</button>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="border-card p-5">
+              <h4 class="t-align-c">Submissions</h4>
+              <div class="bg-grey mt-4" style="height: 200px;"></div>
+              <div class="divider-h my-5"></div>
+              {{>profile-leaderboard}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
