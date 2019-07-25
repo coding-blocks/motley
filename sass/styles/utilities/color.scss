@@ -85,3 +85,7 @@ $gradient-list: (black, "lr", linear-gradient(30deg, #333333, #000000)),
 .bg-gradient-navy {
   background: $gradient-navy;
 }
+
+.bg-gradient-black {
+  background: $gradient-black-bt;
+}
