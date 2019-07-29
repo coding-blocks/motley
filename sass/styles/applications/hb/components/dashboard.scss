@@ -2,36 +2,36 @@
   .divided-list {
     & > * {
       &:not(:last-child) {
-        border-right: solid 1px $hover-grey;
+        border-right: solid 1px $light-grey-list;
       }
     }
   }
 
-  .banner{
+  .banner {
     height: 215px;
   }
 
-  .mt-neg-10{
+  .mt-neg-10 {
     margin-top: -10px;
   }
 
-  .border-orange{
-    border-color: $orange; 
+  .border-orange {
+    border-color: $orange;
   }
 
-  .divider-h{
+  .divider-h {
     background-clip: content-box;
   }
 
-  .c-hb-leaderboard{
-    table{
-      td:last-child{
+  .c-hb-leaderboard {
+    table {
+      td:last-child {
         text-align: center;
       }
-    }  
+    }
   }
 
-  .large-font{
+  .large-font {
     font-size: 2.571rem;
     line-height: 36px;
   }
@@ -39,7 +39,17 @@
   .white-underline {
     border-bottom: solid 1px white;
   }
-  // h-100 w-10 position-absolute tl flex-col all-center pointer
+
+  .bookmark {
+    .divided-list {
+      & > * {
+        &:not(:last-child) {
+          border-right: solid 1px $dark-grey-list;
+        }
+      }
+    }
+  }
+
   .banner-nav {
     @include flexbox(column, center, center);
     z-index: 1;
@@ -48,7 +58,7 @@
     position: absolute;
     cursor: pointer;
 
-    span{
+    span {
       font-size: 50px;
     }
 

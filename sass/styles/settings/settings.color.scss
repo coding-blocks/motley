@@ -9,6 +9,7 @@ File contains color configuration for below listed objects and utilities:-
   - Button Dashed
   - Tab Nav
   - Checkbox
+  - Divided List
 
 - Utilities
   - Text Colors
@@ -170,3 +171,8 @@ $gradient-text-color-list: (
 
 // Hover Colors
 $hover-grey: #f3f3f3;
+
+// Divided List Colors
+$dark-grey-list: #999999;
+$light-grey-list: #f3f3f3;
+$white-list: #ffffff;
