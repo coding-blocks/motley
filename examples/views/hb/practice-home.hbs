@@ -1,89 +1,94 @@
 <div class="a-hb">
-  {{>nav-hb}}
-  {{>sidenav}}
-
-  <div class="hb-container">
-    <div class="t-align-c">
-      <h2 class="mb-2">PRACTICE PROBLEMS</h2>
-      <div class="font-md bold">
-        Take these challenges and improve your problem solving skills
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          {{>practice-card}}
-        </div>
-        <div class="col-12 col-md-4">
-          {{>practice-card}}
-        </div>
-        <div class="col-12 col-md-4">
-          {{>practice-card}}
-        </div>
-      </div>
-    </div>
-
-    <div class="t-align-c pt-3 mb-4">
-      <h2 class="mb-1">INTERVIEW PREPARATION</h2>
-      <h5 class="orange">Tracks based learning</h5>
-    </div>
-
-    <div class="row pt-3">
-      <div class="col-sm-12 col-md-8">
-        <div class="border-card white p-5 bg-black">
-          <div class="row justify-content-between mb-4">
-            <div class="col-8 mb-3">
-              <h3>TODAY'S CODE BYTE</h3>
-              <p class="t-align-j">
-                This kit is a track based learning kit. You need to complete one level to unlock the next one. We have carefully curated
-                these challenges to help you prepare in the most comprehensive way possible. Also, Challenges are organised around core
-                concepts commonly tested during Interviews.
-              </p>
-            </div>
-            <div class="col-4">
-              <img src="placeholder.gif" alt="">
-            </div>
+  <div>
+    {{>nav-hb}}
+    <div class="row justify-content-center mx-0">
+      {{>sidenav}}
+      <div class="offset-0 offset-md-1 col-11 p-5">
+        <div class="t-align-c">
+          <h2 class="mb-2">PRACTICE PROBLEMS</h2>
+          <div class="font-md bold">
+            Take these challenges and improve your problem solving skills
           </div>
-          <div class="divider-h bg-white dcb-divider mb-4"></div>
-          
-          <div class="row justify-content-between align-items-center">
-            <div class="col-md-8 col-sm-12 col-12">
-              <ul class="divided-list">
-                <li class="px-3">
-                  <div class="orange extra-bold font-lg">345</div>
-                  <div class="list-data">Problems</div>
-                </li>
-                <li class="px-3">
-                  <div class="orange extra-bold font-lg">30</div>
-                  <div class="list-data">Quizzes</div>
-                </li>
-                <li class="px-3">
-                  <div class="orange extra-bold font-lg">10</div>
-                  <div class="list-data">Levels</div>
-                </li>
-              </ul>
+        </div>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              {{>practice-card}}
             </div>
-            <div>
-              <button class="button-solid button-orange font-sm">Solve Challenge</button>
+            <div class="col-12 col-md-4">
+              {{>practice-card}}
+            </div>
+            <div class="col-12 col-md-4">
+              {{>practice-card}}
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="border-card p-md-5 p-4 c-daily-goal-card">
-          <div class="font-sm bold">
-            <span>Current Level : </span>
-            <span class="orange">Level 0</span>
-            <i class="fas fa-crown"></i>
+
+        <div class="t-align-c pt-3 mb-4">
+          <h2 class="mb-1">INTERVIEW PREPARATION</h2>
+          <h5 class="orange">Tracks based learning</h5>
+        </div>
+
+        <div class="row pt-3">
+          <div class="col-sm-12 col-md-8">
+            <div class="border-card white p-5 bg-black">
+              <div class="row justify-content-between mb-4">
+                <div class="col-8 mb-3">
+                  <h3>TODAY'S CODE BYTE</h3>
+                  <p class="t-align-j">
+                    This kit is a track based learning kit. You need to complete one level to unlock the next one. We
+                    have carefully curated
+                    these challenges to help you prepare in the most comprehensive way possible. Also, Challenges are
+                    organised around core
+                    concepts commonly tested during Interviews.
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img src="placeholder.gif" alt="">
+                </div>
+              </div>
+              <div class="divider-h bg-white dcb-divider mb-4"></div>
+
+              <div class="row justify-content-between align-items-center mx-0">
+                <div class="col-md-8 col-sm-6 col-12 pl-0">
+                  <ul class="divided-list my-0">
+                    <li class="pr-3">
+                      <div class="orange extra-bold font-lg">345</div>
+                      <div class="list-data">Problems</div>
+                    </li>
+                    <li class="px-3">
+                      <div class="orange extra-bold font-lg">30</div>
+                      <div class="list-data">Quizzes</div>
+                    </li>
+                    <li class="pl-3">
+                      <div class="orange extra-bold font-lg">10</div>
+                      <div class="list-data">Levels</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-sm-0 mt-3">
+                  <button class="button-solid button-orange font-sm">Solve Challenge</button>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <img src="/images/hexagon.jpg" alt="Badge Logo" class="badge mt-3 mx-auto w-30" />
-          
-          <h5 class="mt-2">Interview Master</h5>
-          <div>Complete 7 More Levels to earn this badge</div>
-          <progress value="50" max="100" class="my-3 mx-auto w-90"></progress>
-          <h6 class="bold">20/100 Points Scored</h6>
+          <div class="col-sm-12 col-md-4">
+            <div class="border-card p-md-5 p-4 c-daily-goal-card">
+              <div class="font-sm bold">
+                <span>Current Level : </span>
+                <span class="orange">Level 0</span>
+                <i class="fas fa-crown"></i>
+              </div>
+
+              <img src="/images/hexagon.jpg" alt="Badge Logo" class="badge mt-3 mx-auto w-30" />
+
+              <h5 class="mt-2">Interview Master</h5>
+              <div>Complete 7 More Levels to earn this badge</div>
+              <progress value="50" max="100" class="my-3 mx-auto w-90"></progress>
+              <h6 class="bold">20/100 Points Scored</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>
