@@ -1,5 +1,6 @@
 .divided-list {
   list-style: none;
+  display: flex;
 
   .list-heading {
     font-size: $font-sm;

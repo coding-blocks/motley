@@ -1,0 +1,66 @@
+<div class="a-hb">
+  <div>
+    {{>nav-hb}}
+    <div class="row justify-content-center mx-0">
+      {{>sidenav}}
+      <div class="offset-0 offset-md-1 col-11 px-lg-5 px-md-4 px-0 dashboard pt-5">
+        <div class="position-relative mb-5 banner">
+          <div class="banner-nav tl">
+            <span><a href="#" class="white extra-bold">&lang;</a></span>
+          </div>
+          <img src="https://www.mymaldives.com.au/wp-content/uploads/sites/11/2016/12/Beach-Banner.jpg"
+            alt="BannerImage" class="w-100 h-100">
+          <div class="banner-nav tr">
+            <span><a href="#" class="white extra-bold">&rang;</a></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-12">
+            {{>dashboard-metrics-card}}
+            <h4 class="my-5">Continue where you left</h4>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                {{>dashboard-dcb-card}}
+              </div>
+              <div class="col-lg-6 col-12 mt-lg-0 mt-5">
+                {{>dashboard-interview-card}}
+              </div>
+            </div>
+            {{>dashboard-reg-contests-card}}
+          </div>
+          <div class="col-md-4 col-12">
+            {{!-- Performance Graph Card to be placed here --}}
+            <div class="border-card p-5 mb-5 mt-md-0 mt-5">
+              <div class="row mx-0 justify-content-between align-items-center">
+                <h4>Performance Graph</h4>
+                <div class="card-md">Past 6 Months</div>
+              </div>
+              <div class="bg-grey mt-4"></div>
+            </div>
+            {{>dashboard-leaderboard}}
+          </div>
+        </div>
+        <h4 class="t-align-c mb-5 mt-md-5 mt-0">Practice Problems</h4>
+        <div class="row c-card-carousel">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            {{>dashboard-practice-card}}
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            {{>dashboard-practice-card}}
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            {{>dashboard-practice-card}}
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-8 col-12">
+            {{>dashboard-badge-card}}
+          </div>
+          <div class="col-md-4 col-12 mt-md-0 mt-5">
+            {{>dashboard-bookmark-card}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
