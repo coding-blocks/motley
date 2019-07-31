@@ -24,10 +24,19 @@
 	}
 
 	.nav-element.active{
-		background-color: #181b22;
-		border-left: solid 2px $orange;
 		color: $white;
+		background-color: #181b22;
 		font-weight: $extra-bold;
+
+		&::before{
+			content: "";
+			height: 100%;
+			width: 4%;
+			position: absolute;
+			background: $gradient-orange;
+			left: 0;
+			top: 0;
+		}
 	}
 
 	h6{
