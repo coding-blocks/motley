@@ -15,14 +15,6 @@
     margin-top: -10px;
   }
 
-  .border-orange {
-    border-color: $orange;
-  }
-
-  .divider-h {
-    background-clip: content-box;
-  }
-
   .c-hb-leaderboard {
     table {
       td:last-child {
@@ -31,23 +23,8 @@
     }
   }
 
-  .large-font {
-    font-size: 2.571rem;
-    line-height: 36px;
-  }
-
   .white-underline {
     border-bottom: solid 1px white;
-  }
-
-  .bookmark {
-    .divided-list {
-      & > * {
-        &:not(:last-child) {
-          border-right: solid 1px $dark-grey-list;
-        }
-      }
-    }
   }
 
   .banner-nav {
@@ -71,5 +48,31 @@
       opacity: 0.5;
       z-index: -1;
     }
+  }
+}
+
+.profile-page,
+.dashboard {
+  .divider-h {
+    background-clip: content-box;
+  }
+
+  .large-font {
+    font-size: 2.571rem;
+    line-height: 36px;
+  }
+
+  .bookmark {
+    .divided-list {
+      & > * {
+        &:not(:last-child) {
+          border-right: solid 1px $dark-grey-list;
+        }
+      }
+    }
+  }
+
+  .border-orange {
+    border-color: $orange;
   }
 }
