@@ -1,14 +1,30 @@
-.c-hb-leaderboard{
-  table{
-    td:first-child{
+.c-hb-leaderboard {
+  table {
+    td:first-child {
       text-align: center;
     }
-  }  
-  thead{
+  }
+  thead {
     color: $orange;
   }
 
-  tbody{
+  tbody {
     text-align: left;
+  }
+
+  &.profile {
+    table{
+      td:first-child{
+        font-weight: $bold;
+        font-size: $font-sm;
+        text-align: left;
+      }
+
+      tbody {
+        td{
+          font-weight: $semi-bold;
+        }
+      }
+    } 
   }
 }
