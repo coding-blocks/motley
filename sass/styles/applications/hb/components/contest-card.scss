@@ -1,7 +1,22 @@
 .contest-card {
+  .head {
+    padding-bottom: 75px !important;
+    height: 180px;
+  }
+
+  .foot {
+    padding-top: 75px !important;
+  }
+
   .header-img {
     height: 60%;
     right: 5%;
     bottom: 0;
+  }
+
+  .course-logo {
+    left: 10%;
+    bottom: -50px;
+    background: inherit;
   }
 }
