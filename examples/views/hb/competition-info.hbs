@@ -1,73 +1,83 @@
 <div class="a-hb">
-  {{>nav-hb}}
-  {{>sidenav}}
-
-  <div class="hb-container">
-    <div class="border-card p-5 bg-gradient-lblue-lr white">
-      <div class="row align-items-center justify-content-between">
-        <div class="row no-gutters col-md-9 col-12 align-items-center">
-          <div class="col-md-4 col-12 pr-2">
-            <h3>CodSule</h3>
-            <h3 class="regular">June 2019 Edition</h3>
-          </div>
-          <div class="col-12 col-md-8 my-lg-0 my-4">
-            <ul class="divided-list my-0">
-              <li class="pr-4">
-                <div class="list-heading font-md extra-bold mb-2 orange">20</div>
-                <div class="list-data font-mds">Problems</div>
-              </li>
-              <li class="px-4">
-                <div class="list-heading font-md extra-bold mb-2 orange">15 June</div>
-                <div class="list-data font-mds">Starts</div>
-              </li>
-              <li class="pl-4">
-                <div class="list-heading font-md extra-bold mb-2 orange">19 June</div>
-                <div class="list-data font-mds">Ends</div>
-              </li>
-            </ul>
+  <div>
+    {{>nav-hb}}
+    <div class="row justify-content-center mx-0">
+      {{>sidenav}}
+      <div class="offset-0 offset-md-1 col-11 p-5">
+        <div class="border-card p-5 bg-gradient-lblue-lr white">
+          <div class="row align-items-center justify-content-between">
+            <div class="row no-gutters col-md-9 col-12 align-items-center">
+              <div class="col-md-4 col-12 pr-2">
+                <h3>CodSule</h3>
+                <h3 class="regular">June 2019 Edition</h3>
+              </div>
+              <div class="col-12 col-md-8 my-lg-0 my-4">
+                <ul class="divided-list my-0">
+                  <li class="pr-4">
+                    <div class="list-heading font-md extra-bold mb-2 orange">20</div>
+                    <div class="list-data font-mds">Problems</div>
+                  </li>
+                  <li class="px-4">
+                    <div class="list-heading font-md extra-bold mb-2 orange">15 June</div>
+                    <div class="list-data font-mds">Starts</div>
+                  </li>
+                  <li class="pl-4">
+                    <div class="list-heading font-md extra-bold mb-2 orange">19 June</div>
+                    <div class="list-data font-mds">Ends</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <button class="button-solid button-orange font-sm extra-bold my-3">Start Challenge</button>
+            </div>
           </div>
         </div>
-        <div>
-          <button class="button-solid button-orange font-sm extra-bold my-3">Start Challenge</button>
+        <img src="https://www.mrcpl.org/upload/Madison_Pictures/fingerplays/shapes/rectangle.png" alt="#"
+          class="w-100 my-5">
+        <div class="font-xs">
+          <div class="bold">Instructions</div>
+          <ul class="ml-4 circle-list">
+            <li class="my-3">
+              This is a test containing 2 programming and 2 subjective questions. The programming questions are simple
+              and
+              are to test your logical ability. The subjective questions are scenario based to understand your written
+              communication skills and empathy.
+            </li>
+            <li class="my-3">
+              Feel free to google for syntax for the programming questions, but make sure that you understand what you
+              are
+              coding. The next round will involve another programming question which will be on the similar lines of
+              what
+              you solved during this test.
+            </li>
+            <li class="my-3">
+              To get familiarised with our coding environment, try our Sample Test.
+            </li>
+            <li class="my-3">
+              You are free to choose any language from the list and code.
+            </li>
+            <li class="my-3">
+              If the code area contains the function signature, just complete the function alone, we'll take care of
+              the
+              main function, headers, etc.
+            </li>
+            <li class="my-3">
+              If you're expected to write the full code, it'd be mentioned in the code area. All inputs are from STDIN
+              and
+              output to STDOUT. If you're using Java, use the classname as 'Solution'.
+            </li>
+            <li class="my-3">
+              To understand more about the environment, time limits, etc. you can read the FAQ here.
+            </li>
+            <li class="my-3">
+              In coding questions, you can print to console to debug your code using the appropriate print command for
+              each
+              language (Eg: cout for C++, printf for C, etc.)
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <img src="https://www.mrcpl.org/upload/Madison_Pictures/fingerplays/shapes/rectangle.png" alt="#"
-      class="w-100 my-5">
-    <div class="font-xs">
-      <div class="bold">Instructions</div>
-      <ul class="ml-4 circle-list">
-        <li class="my-3">
-          This is a test containing 2 programming and 2 subjective questions. The programming questions are simple and
-          are to test your logical ability. The subjective questions are scenario based to understand your written
-          communication skills and empathy.
-        </li>
-        <li class="my-3">
-          Feel free to google for syntax for the programming questions, but make sure that you understand what you are
-          coding. The next round will involve another programming question which will be on the similar lines of what
-          you solved during this test.
-        </li>
-        <li class="my-3">
-          To get familiarised with our coding environment, try our Sample Test.
-        </li>
-        <li class="my-3">
-          You are free to choose any language from the list and code.
-        </li>
-        <li class="my-3">
-          If the code area contains the function signature, just complete the function alone, we'll take care of the
-          main function, headers, etc.
-        </li>
-        <li class="my-3">
-          If you're expected to write the full code, it'd be mentioned in the code area. All inputs are from STDIN and
-          output to STDOUT. If you're using Java, use the classname as 'Solution'.
-        </li>
-        <li class="my-3">
-          To understand more about the environment, time limits, etc. you can read the FAQ here.
-        </li>
-        <li class="my-3">
-          In coding questions, you can print to console to debug your code using the appropriate print command for each
-          language (Eg: cout for C++, printf for C, etc.)
-        </li>
-      </ul>
-    </div>
   </div>
+</div>
