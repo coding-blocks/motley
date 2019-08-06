@@ -1,4 +1,6 @@
 .contest-card {
+  background: transparent;
+
   .head {
     padding-bottom: 75px !important;
     height: 180px;
@@ -6,6 +8,16 @@
 
   .foot {
     padding-top: 75px !important;
+  }
+
+  .img-head {
+    height: 210px;
+
+    .back-img {
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   .header-img {
