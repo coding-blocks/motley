@@ -1,225 +1,226 @@
 <div class="a-hb">
-  {{>nav-hb}}
-  {{>sidenav}}
+  <div>
+    {{>nav-hb}}
+    <div class="row justify-content-center mx-0">
+      {{>sidenav}}
+      <div class="offset-0 offset-md-1 col-11 p-5">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            {{>competition-banner}}
 
-  <div class="hb-container">
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          {{>competition-banner}}
-
-          <div class="border-card py-5 px-0 my-5">
-            <h5 class="t-align-c mb-4">Overall Leaderboard</h5>
-            <div class="row pb-4 pt-0 align-items-center justify-content-around px-4">
-              <div class="col-1">
-                <h6>Filter</h6>
-              </div>
-              <div class="col-3 px-2">
-                <div class="dropdown py-3 px-2">
-                  <span class="font-xs">By College</span>
+            <div class="border-card py-5 px-0 my-5">
+              <h5 class="t-align-c mb-4">Overall Leaderboard</h5>
+              <div class="row pb-4 pt-0 align-items-center justify-content-around px-4">
+                <div class="col-1">
+                  <h6>Filter</h6>
+                </div>
+                <div class="col-3 px-2">
+                  <div class="dropdown py-3 px-2">
+                    <span class="font-xs">By College</span>
+                  </div>
+                </div>
+                <div class="col-3 px-2">
+                  <div class="dropdown py-3 px-2">
+                    <span class="font-xs">By Language</span>
+                  </div>
+                </div>
+                <div>
+                  <button class="button-solid button-orange font-sm extra-bold my-3">Apply Filter</button>
                 </div>
               </div>
-              <div class="col-3 px-2">
-                <div class="dropdown py-3 px-2">
-                  <span class="font-xs">By Language</span>
+              <div class="pt-4">
+                <div class="c-hb-leaderboard">
+                  <table class="w-100">
+                    <thead class="font-sm extra-bold">
+                      <td class="pb-4">Rank</td>
+                      <td class="pb-4">User</td>
+                      <td class="pb-4">College</td>
+                      <td class="pb-4">Language</td>
+                      <td class="pb-4">Score</td>
+                    </thead>
+                    <tbody>
+                      <tr class="white extra-bold bg-gradient-orange">
+                        <td class="pb-4 pt-4">#40</td>
+                        <td class="pb-4 pt-4">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-4">JSS Noida</td>
+                        <td class="pb-4 pt-4">C++</td>
+                        <td class="pb-4 pt-4">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-4">01</td>
+                        <td class="pb-4 pt-4">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-4">JSS Noida</td>
+                        <td class="pb-4 pt-4">C++</td>
+                        <td class="pb-4 pt-4">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">02</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">Python</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">03</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">Python</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">04</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">PEC, Chandigarh</td>
+                        <td class="pb-4 pt-2">C</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">05</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">Python</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">06</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">PEC, Chandigarh</td>
+                        <td class="pb-4 pt-2">C++</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">07</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">Python</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">08</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">C++</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-4 pt-2">09</td>
+                        <td class="pb-4 pt-2">
+                          <div class="img-desc align-items-center">
+                            <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                            <div class="description ml-3">
+                              Siddharth Jain
+                            </div>
+                          </div>
+                        </td>
+                        <td class="pb-4 pt-2">JSS Noida</td>
+                        <td class="pb-4 pt-2">C</td>
+                        <td class="pb-4 pt-2">2345</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="divider-h w-90 mx-auto my-4"></div>
+                  <div class="t-align-c bold">
+                    <a href="#">
+                      <i class="fas fa-angle-left mx-2"></i>
+                      <span>Prev</span>
+                    </a>
+                    <span class="regular mx-3">1-20 of 245</span>
+                    <a href="#">
+                      <span>Next</span>
+                      <i class="fas fa-angle-right mx-2"></i>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <button class="button-solid button-orange font-sm extra-bold my-3">Apply Filter</button>
-              </div>
-            </div>
-            <div class="pt-4">
-              <div class="c-hb-leaderboard">
-                <table class="w-100">
-                  <thead class="font-sm extra-bold">
-                    <td class="pb-4">Rank</td>
-                    <td class="pb-4">User</td>
-                    <td class="pb-4">College</td>
-                    <td class="pb-4">Language</td>
-                    <td class="pb-4">Score</td>
-                  </thead>
-                  <tbody>
-                    <tr class="white extra-bold bg-gradient-orange">
-                      <td class="pb-4 pt-4">#40</td>
-                      <td class="pb-4 pt-4">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-4">JSS Noida</td>
-                      <td class="pb-4 pt-4">C++</td>
-                      <td class="pb-4 pt-4">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-4">01</td>
-                      <td class="pb-4 pt-4">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-4">JSS Noida</td>
-                      <td class="pb-4 pt-4">C++</td>
-                      <td class="pb-4 pt-4">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">02</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">Python</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">03</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">Python</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">04</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">PEC, Chandigarh</td>
-                      <td class="pb-4 pt-2">C</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">05</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">Python</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">06</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">PEC, Chandigarh</td>
-                      <td class="pb-4 pt-2">C++</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">07</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">Python</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">08</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">C++</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                    <tr>
-                      <td class="pb-4 pt-2">09</td>
-                      <td class="pb-4 pt-2">
-                        <div class="img-desc align-items-center">
-                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
-                          <div class="description ml-3">
-                            Siddharth Jain
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pb-4 pt-2">JSS Noida</td>
-                      <td class="pb-4 pt-2">C</td>
-                      <td class="pb-4 pt-2">2345</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="divider-h w-90 mx-auto my-4"></div>
-                <div class="t-align-c bold">
-                  <a href="#">
-                    <i class="fas fa-angle-left mx-2"></i>
-                    <span>Prev</span>
-                  </a>
-                  <span class="regular mx-3">1-20 of 245</span>
-                  <a href="#">
-                    <span>Next</span>
-                    <i class="fas fa-angle-right mx-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          {{>up-competition-card}}
-
-          <div class="border-card p-5 white bg-gradient-orange my-5">
-            <div class="img-desc justify-content-center align-items-center">
-              <div class="col-4 pl-0">
-                <i class="fas fa-trophy fa-5x"></i>
-              </div>
-              <div class="description t-align-l col-8">
-                <div class="extra-bold font-xl">WIN PRIZES</div>
-                <h4>Upto Rs 1 Lakh</h4>
               </div>
             </div>
           </div>
 
-          {{>faq-card}}
-        </div>
-      </div>
+          <div class="col-12 col-md-4">
+            {{>up-competition-card}}
 
-      <div class="row">
-        <div class="col-12">
-          {{>competition-carousel}}
+            <div class="border-card p-5 white bg-gradient-orange my-5">
+              <div class="img-desc justify-content-center align-items-center">
+                <div class="col-4 pl-0">
+                  <i class="fas fa-trophy fa-5x"></i>
+                </div>
+                <div class="description t-align-l col-8">
+                  <div class="extra-bold font-xl">WIN PRIZES</div>
+                  <h4>Upto Rs 1 Lakh</h4>
+                </div>
+              </div>
+            </div>
+
+            {{>faq-card}}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            {{>competition-carousel}}
+          </div>
         </div>
       </div>
     </div>

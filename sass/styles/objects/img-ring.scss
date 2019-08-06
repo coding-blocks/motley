@@ -2,4 +2,18 @@
   border-radius: 50%;
   border: solid 2px $orange;
   padding: 0.25rem;
+  position: relative;
+
+  .img{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+  }
+
+  &.profile-img{
+    height: 150px;
+    width: 150px;
+  }
 }

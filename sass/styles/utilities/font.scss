@@ -1,55 +1,50 @@
 // FONT SIZE
 
-$list: (font-xs, $font-xs)
-	   (font-sm, $font-sm)
-	   (font-mds, $font-mds)
-	   (font-md, $font-md)
-	   (font-lg, $font-lg)
-		 (font-xl, $font-xl)
-		 (font-mdxl, $font-mdxl)
-	   (font-xxl, $font-xxl)
-	   (card-md, $card-md)
-	   (card-mds, $card-mds)
-	   (card-sm, $card-sm)
-	   (card-sms, $card-sms)
-	   (card-xs, $card-xs);
+$list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $font-md) (font-lg, $font-lg)
+  (font-xl, $font-xl) (font-mdxl, $font-mdxl) (font-xxl, $font-xxl) (card-md, $card-md) (card-mds, $card-mds)
+  (card-sm, $card-sm) (card-sms, $card-sms) (card-xs, $card-xs);
 
 @each $type, $size in $list {
-  .#{$type}{
-    font-size: $size  !important;
+  .#{$type} {
+    font-size: $size !important;
   }
 }
 
-
 // FONT STYLE
 
-.i{
-    font-style: italic !important;
+.i {
+  font-style: italic !important;
 }
 
-.bold{
-    font-weight: $font-medium !important;
+.bold {
+  font-weight: $font-medium !important;
 }
 
-.normal{
-    font-weight: $font-normal !important;
+.normal {
+  font-weight: $font-normal !important;
 }
-
 
 // FONT WEIGHT
 
-.regular{
+.regular {
   font-weight: $regular !important;
 }
 
-.semi-bold{
+.semi-bold {
   font-weight: $semi-bold !important;
 }
 
-.bold{
+.bold {
   font-weight: $bold !important;
 }
 
-.extra-bold{
+.extra-bold {
   font-weight: $extra-bold !important;
+}
+
+.gradient-text {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: $gradient-orange;
 }

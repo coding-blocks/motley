@@ -1,65 +1,66 @@
-.c-topnav{
-    padding-left: 14rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: $white;
-    margin-left: 0;
-    margin-right: 0;
-    border-bottom: solid 1px #eeeeee;
-    z-index: 400;
+.c-topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: solid 1px #eeeeee;
+  z-index: 400;
 
-    ul{
-        margin: unset;
-    }
+  ul {
+    margin: unset;
+  }
 
-    .logo{
-		text-align: left;
-    }
-    
-    .top-nav-option{
-        text-align: center;
-        float: left;
-    }
+  .logo {
+    text-align: left;
+  }
 
-    .top-nav-option:hover{
-        a{
-            h6{
-                color: #f19633;
-            }
-        }
-    }
+  .top-nav-option {
+    text-align: center;
+    float: left;
+  }
 
-    .top-nav-option.active{
-        a{
-            h6{
-                color: #f19633;
-            }
-        }
+  .top-nav-option:hover {
+    a {
+      h6 {
+        color: #f19633;
+      }
     }
+  }
 
-    h6{
-        font-weight: $bold;
+  .top-nav-option.active {
+    a {
+      h6 {
+        color: #f19633;
+      }
     }
+  }
 
-    .right-nav{
-        margin: unset;
-    }
+  h6 {
+    font-weight: $bold;
+  }
 
-    @media screen and (max-width: 1200px){
-        .top-nav-option{
-            h6{
-                font-size: $font-xs;
-            }
-        }
-    }
+  .right-nav {
+    margin: unset;
+    display: flex;
+    align-items: center;
+  }
 
-    @media screen and (max-width: 992px){
-        .top-nav-option{
-            h6{
-                font-size: $card-sm;
-            }
-        }
+  @media screen and (max-width: 1200px) {
+    .top-nav-option {
+      h6 {
+        font-size: $font-xs;
+      }
     }
+  }
+
+  @media screen and (max-width: 992px) {
+    .top-nav-option {
+      h6 {
+        font-size: $card-sm;
+      }
+    }
+  }
 }
