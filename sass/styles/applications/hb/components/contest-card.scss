@@ -9,7 +9,7 @@
     padding-top: 75px !important;
   }
 
-  .img-head {
+  &__img-head {
     height: 210px;
 
     .back-img {
@@ -19,13 +19,13 @@
     }
   }
 
-  .header-img {
+  &__header-img {
     height: 60%;
     right: 5%;
     bottom: -5%;
   }
 
-  .course-logo {
+  &__course-logo {
     left: 10%;
     bottom: -50px;
     background: inherit;
