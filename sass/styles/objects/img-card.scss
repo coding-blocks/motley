@@ -1,4 +1,4 @@
-.img-card{
+.img-card {
   @extend %border-card;
 
   .head {
@@ -13,43 +13,42 @@
     }
   }
 
-  .back-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
-  }
-
-  .foot{
+  .foot {
     padding: 20px 30px;
     position: relative;
   }
 
   .round-img-b {
-      @include dimensions (86px, 86px);
-      min-height: 86px;
-      position: absolute;
-      bottom: -43px;
-      left: 30px;
+    @include dimensions(86px, 86px);
+    min-height: 86px;
+    position: absolute;
+    bottom: -43px;
+    left: 30px;
   }
-  
 }
 
-@media screen and (max-width: 767px){
-  .img-card{
+.back-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+@media screen and (max-width: 767px) {
+  .img-card {
     display: flex;
     font-size: $font-xs;
-    
-    .round-img-b{
+
+    .round-img-b {
       position: static;
     }
 
-    .head{
+    .head {
       @include dimensions(45%, auto);
     }
 
-    .foot{
+    .foot {
       width: 55%;
     }
   }

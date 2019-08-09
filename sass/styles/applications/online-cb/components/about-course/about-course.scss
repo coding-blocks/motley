@@ -19,6 +19,7 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   scrollbar-width: none;
+  justify-content: center;
 
   &::-webkit-scrollbar {
     display: none;
