@@ -24,11 +24,19 @@
     }
 
     &__top-bar {
-      height: 65px;
+      height: 71px;
     }
   }
 
   .hamburger-nav.hamburger-nav--hidden {
     margin-left: -66%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hamburger-nav {
+    &__top-bar  {
+      height: 65px;
+    }
   }
 }
