@@ -1,0 +1,33 @@
+.contest-card {
+  background: transparent;
+
+  .head {
+    height: 180px;
+  }
+
+  .foot {
+    padding-top: 75px !important;
+  }
+
+  &__img-head {
+    height: 210px;
+
+    .back-img {
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__header-img {
+    height: 60%;
+    right: 5%;
+    bottom: -5%;
+  }
+
+  &__course-logo {
+    left: 10%;
+    bottom: -50px;
+    background: inherit;
+  }
+}
