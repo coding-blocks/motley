@@ -1,3 +1,7 @@
+.hamburger-nav {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .hamburger-nav {
     display: block;
@@ -9,10 +13,18 @@
     max-width: 400px;
     height: 100vh;
     z-index: 1500;
-    transition: margin  0.5s;
+    transition: margin 0.5s;
 
     &__ham-logo {
       width: 30%;
+    }
+
+    &__cross {
+      width: 5%;
+    }
+
+    &__top-bar {
+      height: 65px;
     }
   }
 
