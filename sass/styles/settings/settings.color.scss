@@ -136,40 +136,6 @@ $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
 // );
 $checkbox-solid: $gradient-orange;
 
-//Background Colors
-$bg-color-list: (
-  "orange": $orange,
-  "green": $green,
-  "black": $black,
-  "red": $salmon,
-  "salmon": $salmon,
-  "blue": $blue,
-  "white": $white,
-  "yellow": $yellow,
-  "grey": $grey,
-  "dark-grey": $interview-grey,
-);
-
-//Text Colors
-$text-color-list: (
-  "orange": $orange,
-  "green": $green,
-  "black": $black,
-  "red": $salmon,
-  "salmon": $salmon,
-  "blue": $blue,
-  "white": $white,
-  "yellow": $yellow,
-  "grey": $grey,
-  "purple" : $purple
-);
-
-//Gradient Text Colors
-$gradient-text-color-list: (
-  "red": $button-gradient,
-  "blue": $gradient-blue-lr
-);
-
 // Hover Colors
 $hover-grey: #f3f3f3;
 
