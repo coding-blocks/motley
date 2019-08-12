@@ -8,4 +8,9 @@
   .border-card {
     border-radius: 5px !important;
   }
+
+  &__owl-carousel {
+    -webkit-text-stroke: 1px black;
+    background: inherit;
+  }
 }
