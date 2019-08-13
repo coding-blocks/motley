@@ -1,3 +1,5 @@
+$grey: #f3f3f3;
+
 // Gradients
 $gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-purple: linear-gradient(30deg, #271147, #553180);
@@ -19,6 +21,7 @@ $gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
 $gradient-blue-lr: linear-gradient(to right, #1b40de, #2cb4ed);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
+$gradient-nostalgia-purple: linear-gradient(to right, #691e68, #695186);
 
 // Gradient List
 
@@ -42,7 +45,24 @@ $gradient-map: map-merge(
     lblue-lr: $gradient-lblue-lr,
     blue-lr: $gradient-blue-lr,
     orange-lr: $gradient-orange-lr,
-    black-bt: $gradient-black-bt
+    black-bt: $gradient-black-bt,
+    nostalgia-purple: $gradient-nostalgia-purple
   ),
   $gradient-map
+);
+
+//Background Colors
+$bg-color-list: map-merge(
+  $bg-color-list,
+  (
+    "grey": $grey
+  )
+);
+
+//Text Colors
+$text-color-list: map-merge(
+  $text-color-list,
+  (
+    "grey": $dark-grey
+  )
 );

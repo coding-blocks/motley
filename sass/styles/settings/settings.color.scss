@@ -25,6 +25,9 @@ $light-green: #b1d792;
 $yellow: #ffcc66;
 $blue: #246db3;
 $orange: #f19633;
+$grey: #a2a4a8;
+$purple: #271147;
+$dark-grey: #666666;
 
 $facebook: #3b5998;
 $google: #f4695a;
@@ -94,11 +97,9 @@ $bellow-black: #181818;
 $cricket-cup: #84114b;
 
 $hb-blue: #246db3;
-$grey: #a2a4a8;
 $dark-grey: #1e1e1e;
 $code-editor: #171717;
 $interview-grey: #1b1e26;
-$purple: #271147;
 
 
 
@@ -136,6 +137,14 @@ $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
 // );
 $checkbox-solid: $gradient-orange;
 
+// Hover Colors
+$hover-grey: #f3f3f3;
+
+// Divided List Colors
+$dark-grey-list: #999999;
+$light-grey-list: #f3f3f3;
+$white-list: #ffffff;
+
 //Background Colors
 $bg-color-list: (
   "orange": $orange,
@@ -169,11 +178,3 @@ $gradient-text-color-list: (
   "red": $button-gradient,
   "blue": $gradient-blue-lr
 );
-
-// Hover Colors
-$hover-grey: #f3f3f3;
-
-// Divided List Colors
-$dark-grey-list: #999999;
-$light-grey-list: #f3f3f3;
-$white-list: #ffffff;

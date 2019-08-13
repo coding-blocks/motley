@@ -1,4 +1,9 @@
 .breadcrumbs {
+
+  .active {
+    color: unset;
+  }
+
   & > * {
     display: inline-block;
     position: relative;
