@@ -43,6 +43,9 @@
 
     &__top-bar {
       height: 71px;
+      position: sticky;
+      background-color: $white;
+      top: 0;
     }
   }
 
