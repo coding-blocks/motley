@@ -42,9 +42,23 @@ $list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $
   font-weight: $extra-bold !important;
 }
 
-.gradient-text {
+.gradient-text-orange {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: $gradient-orange;
+}
+
+.gradient-text-green {
+  -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+  background-image: $gradient-neon;
+}
+
+.gradient-text-pink {
+  -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: $gradient-pink;
 }
