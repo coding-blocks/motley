@@ -3,9 +3,14 @@
 		&:hover{
 			color: $orange;
 		}
+
 		&.active{
 			border-bottom: solid 2px $orange;
 			color: $orange;
 		}
+
+		padding: 15px 0;
+		flex-grow: 1;
+		text-align: center;
 	}
 }
