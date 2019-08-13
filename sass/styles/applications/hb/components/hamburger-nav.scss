@@ -15,6 +15,24 @@
     z-index: 1500;
     transition: margin 0.5s;
 
+    &__menu-element {
+      position: relative;
+
+      &.active {
+        color: $black;
+
+        &::before {
+          content: "";
+          height: 100%;
+          width: 2%;
+          position: absolute;
+          background: $gradient-orange;
+          left: -3rem;
+          top: 0;
+        }
+      }
+    }
+
     &__ham-logo {
       width: 30%;
     }
@@ -35,7 +53,7 @@
 
 @media screen and (max-width: 575px) {
   .hamburger-nav {
-    &__top-bar  {
+    &__top-bar {
       height: 65px;
     }
   }
