@@ -1,7 +1,14 @@
 .c-code-card{
-  .input-div{
-    background-color: $code-editor;
-  }
+  height: 100vh;
+  color: $global-font-text-color;
+  background-color: $code-editor; 
+
+  // .border-card {
+  //   background-color: $code-editor;
+  // }
+  // .input-div{
+    
+  // }
 
   textarea{
     background-color: $dark-grey;

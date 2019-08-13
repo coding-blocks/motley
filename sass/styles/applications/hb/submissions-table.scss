@@ -28,3 +28,10 @@
     } 
   }
 }
+
+
+table.hover {
+  tr:hover {
+    background-color: $hover-grey;
+  }
+}
