@@ -1,16 +1,144 @@
 .landing-page {
-  &__vector-img {
+  &__vector-img1 {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  &__vector-img2 {
+    position: absolute;
+    bottom: -20%;
+    left: -2%;
+    width: 70%;
+  }
+
+  &__white-div {
+    width: 10%;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .font-super {
+    font-size: 3.71rem;
   }
 
   .border-card {
     border-radius: 5px !important;
   }
 
+  .mb-neg-15 {
+    margin-bottom: -15%;
+  }
+
+  .mt-neg-15 {
+    margin-top: -15px;
+  }
+
+  .font-36 {
+    font-size: 2.57rem;
+  }
+
+  .font-45 {
+    font-size: 3.21rem;
+  }
+
+  &__section {
+    padding: 5% 7%;
+
+    &__separator-5 {
+      height: 5px;
+    }
+
+    &__review-card {
+      width: 70%;
+    }
+
+    &--450 {
+      height: 450px;
+    }
+  }
+
+  &__footer {
+    padding: 2% 7%;
+  }
+
   &__owl-carousel {
     -webkit-text-stroke: 1px black;
     background: inherit;
+  }
+
+  &__hb-info {
+    z-index: 100;
+    margin-top: 10%;
+
+    &__info-img {
+      width: 70%;
+    }
+
+    &::before {
+      content: "";
+      background-color: $white;
+      opacity: 0.41;
+      position: absolute;
+      height: 100%;
+      width: 82%;
+      transform: rotate(-8deg) translateX(-5px) translateY(-5px);
+      z-index: -1;
+      border-radius: inherit;
+    }
+  }
+
+  &__blog-card--vertical {
+    height: 300px;
+  }
+
+  &__blog-card--horizontal {
+    height: 250px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__section--padding-bleed--lg {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    &__vector-img1 {
+      width: 75%;
+    }
+
+    &__hb-info {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__section {
+      padding: 5% 7%;
+
+      &__review-card {
+        width: 100%;
+      }
+    }
+
+    &__footer__logo {
+      width: 40%;
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__section--padding-bleed {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__hb-info {
+      z-index: 100;
+      margin-top: 10%;
+
+      &__info-img {
+        width: 40%;
+      }
+    }
   }
 }
