@@ -1,0 +1,63 @@
+.hamburger-nav {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    width: 66%;
+    max-width: 400px;
+    height: 100vh;
+    z-index: 1500;
+    transition: margin 0.5s;
+
+    &__menu-element {
+      position: relative;
+
+      &.active {
+        color: $black;
+
+        &::before {
+          content: "";
+          height: 100%;
+          width: 2%;
+          position: absolute;
+          background: $gradient-orange;
+          left: -3rem;
+          top: 0;
+        }
+      }
+    }
+
+    &__ham-logo {
+      width: 30%;
+    }
+
+    &__cross {
+      width: 5%;
+    }
+
+    &__top-bar {
+      height: 71px;
+      position: sticky;
+      background-color: $white;
+      top: 0;
+    }
+  }
+
+  .hamburger-nav.hamburger-nav--hidden {
+    margin-left: -66%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hamburger-nav {
+    &__top-bar {
+      height: 65px;
+    }
+  }
+}
