@@ -132,6 +132,8 @@ $gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
 $gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
+$gradient-neon: linear-gradient(30deg, #82da3b, #27a87c);
+$gradient-pink: linear-gradient(30deg, #f24f5f, #a3076c);
 
 
 //Checkbox
@@ -182,4 +184,12 @@ $text-color-list: (
 $gradient-text-color-list: (
   "red": $button-gradient,
   "blue": $gradient-blue-lr
+);
+
+$gradient-map: (
+  black-lr: linear-gradient(30deg, #333333, #000000),
+  black-bt: linear-gradient(to top, #333333, #000000),
+  violet-lr: linear-gradient(to right, #692fdc, #452ba3),
+  violet-bt: linear-gradient(to top, #692fdc, #452ba3),
+  red-lr: linear-gradient(to right, #ed788d 0%, #ec837a)
 );

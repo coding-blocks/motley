@@ -2,9 +2,6 @@
 @import "settings/settings.global";
 @import "settings/settings.font";
 
-@import "applications/hb/settings/settings.colors.scss";
-
-
 @import "tools";
 
 @import "generic/normalize";
@@ -20,6 +17,5 @@
 
 //TODO: OPTION TO SELECT THEME AND INSERT THAT THEME HERE
 @import "themes";
-@import "applications";
 
 @import "trumps";

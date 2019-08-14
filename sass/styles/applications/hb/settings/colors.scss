@@ -5,10 +5,8 @@ $gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-purple: linear-gradient(30deg, #271147, #553180);
 $gradient-navy: linear-gradient(30deg, #133155, #122a42);
 
-$gradient-pink: linear-gradient(30deg, #f24f5f, #a3076c);
 $gradient-purple-blue: linear-gradient(30deg, #8108da, #350ed8);
 $gradient-blue: linear-gradient(30deg, #1b40de, #2cb4ed);
-$gradient-neon: linear-gradient(30deg, #82da3b, #27a87c);
 $gradient-cyan: linear-gradient(30deg, #39ddbf, #1770ae);
 $gradient-dpink: linear-gradient(30deg, #e64b51, #d02ebd);
 $gradient-dpurple: linear-gradient(30deg, #271147, #553180);
@@ -25,8 +23,8 @@ $gradient-nostalgia-purple: linear-gradient(to right, #691e68, #695186);
 
 // Gradient List
 
-$gradient-map: () !default;
 $gradient-map: map-merge(
+  $gradient-map,
   (
     orange: $gradient-orange,
     purple: $gradient-purple,
@@ -47,8 +45,7 @@ $gradient-map: map-merge(
     orange-lr: $gradient-orange-lr,
     black-bt: $gradient-black-bt,
     nostalgia-purple: $gradient-nostalgia-purple
-  ),
-  $gradient-map
+  )
 );
 
 //Background Colors

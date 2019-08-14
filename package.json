@@ -28,7 +28,7 @@
     "prebuild": "node file-list-gen.js",
     "build": "grunt build",
     "prePublishOnly": "npm run dist",
-    "dist": "node-sass sass/styles/app.scss dist/app.min.css --output-style compressed && node-sass sass/styles/app.scss dist/app.css"
+    "dist": "node dist.js"
   },
   "repository": {
     "type": "git",

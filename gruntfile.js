@@ -62,7 +62,7 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         files: {
-          'examples/public/stylesheets/style.css': 'sass/styles/app.scss'
+          'examples/public/stylesheets/style.css': 'sass/styles/applications/hb/app.scss'
         }
       }
     },
