@@ -25,6 +25,9 @@ $light-green: #b1d792;
 $yellow: #ffcc66;
 $blue: #246db3;
 $orange: #f19633;
+$grey: #a2a4a8;
+$purple: #271147;
+$dark-grey: #666666;
 
 $facebook: #3b5998;
 $google: #f4695a;
@@ -94,11 +97,9 @@ $bellow-black: #181818;
 $cricket-cup: #84114b;
 
 $hb-blue: #246db3;
-$grey: #a2a4a8;
 $dark-grey: #1e1e1e;
 $code-editor: #171717;
 $interview-grey: #1b1e26;
-$purple: #271147;
 
 
 
@@ -143,3 +144,37 @@ $hover-grey: #f3f3f3;
 $dark-grey-list: #999999;
 $light-grey-list: #f3f3f3;
 $white-list: #ffffff;
+
+//Background Colors
+$bg-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey,
+  "dark-grey": $interview-grey,
+);
+
+//Text Colors
+$text-color-list: (
+  "orange": $orange,
+  "green": $green,
+  "black": $black,
+  "red": $salmon,
+  "salmon": $salmon,
+  "blue": $blue,
+  "white": $white,
+  "yellow": $yellow,
+  "grey": $grey,
+  "purple" : $purple
+);
+
+//Gradient Text Colors
+$gradient-text-color-list: (
+  "red": $button-gradient,
+  "blue": $gradient-blue-lr
+);

@@ -23,7 +23,6 @@ $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
 $gradient-nostalgia-purple: linear-gradient(to right, #691e68, #695186);
 
-
 // Gradient List
 
 $gradient-map: () !default;
@@ -50,4 +49,20 @@ $gradient-map: map-merge(
     nostalgia-purple: $gradient-nostalgia-purple
   ),
   $gradient-map
+);
+
+//Background Colors
+$bg-color-list: map-merge(
+  $bg-color-list,
+  (
+    "grey": $grey
+  )
+);
+
+//Text Colors
+$text-color-list: map-merge(
+  $text-color-list,
+  (
+    "grey": $dark-grey
+  )
 );

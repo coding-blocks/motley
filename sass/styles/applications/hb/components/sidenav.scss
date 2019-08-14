@@ -1,61 +1,85 @@
-.c-sidenav{
-	height: 100vh;
-	overflow: hidden;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	background-color: $black;
-	z-index: 500;
-	padding-left: 0;
-	padding-right: 0;
-	
+.c-sidenav {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  z-index: 500;
+  padding-left: 0;
+  padding-right: 0;
 
-	.nav-element{
-		display: block;
-		position: relative;
-		color: $grey;
-		text-align: center;
-	}
-	
-	.nav-element:hover{
-		color: $white;
-		font-weight: $extra-bold;
-	}
+  .nav-element {
+    display: block;
+    position: relative;
+    color: $grey;
+    text-align: center;
+  }
 
-	.nav-element.active{
-		color: $white;
-		background-color: #181b22;
-		font-weight: $extra-bold;
+  .nav-element:hover {
+    color: $white;
+    font-weight: $extra-bold;
+  }
 
-		&::before{
-			content: "";
-			height: 100%;
-			width: 4%;
-			position: absolute;
-			background: $gradient-orange;
-			left: 0;
-			top: 0;
-		}
-	}
+  .nav-element.active {
+    color: $white;
+    background-color: #181b22;
+    font-weight: $extra-bold;
 
-	h6{
-		font-weight: $font-normal;
-		font-size: $card-md;
-	}
+    &::before {
+      content: "";
+      height: 100%;
+      width: 4%;
+      position: absolute;
+      background: $gradient-orange;
+      left: 0;
+      top: 0;
+    }
+  }
 
-	.logo{
-		color: $white;
-		text-align: center;
-	}
+  h6 {
+    font-weight: $font-normal;
+    font-size: $card-md;
+  }
 
-	@media screen and (max-width: 1200px){
-		h6{
-			font-size: $card-sm;
-		}
-	}
-
-	@media (max-width: 767px){
-		height: auto;
-	}
+  .logo {
+    color: $white;
+    text-align: center;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .c-sidenav {
+    h6 {
+      font-size: $card-sm;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-sidenav {
+		height: auto;
+		
+		.col-2 {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+    .nav-element.active {
+      color: $white;
+      background-color: #181b22;
+      font-weight: $extra-bold;
+
+      &::before {
+        content: "";
+        height: 8%;
+        width: 100%;
+        position: absolute;
+        background: $gradient-orange;
+        left: 0;
+				bottom: 0;
+				top: unset;
+			}
+    }
+  }
+}
