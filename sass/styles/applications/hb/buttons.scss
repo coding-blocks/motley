@@ -1,52 +1,68 @@
-.button-solid{
-	&.button-orange{
-		background-image: $gradient-orange;
-	}
+.button-solid {
+  &.button-orange {
+    background-image: $gradient-orange;
+  }
 
-	&.button-blue{
-		background-image: $button-gradient-blue;
-	}
+  &.button-blue {
+    background-image: $button-gradient-blue;
+  }
 
-	&.button-white{
-		background: $white;
-		color: $hb-blue;
-	}
+  &.button-white {
+    background: $white;
+    color: $hb-blue;
+  }
 
-	&.button-green {
-		background: $gradient-green-lr;
-	}
+  &.button-green {
+    background: $gradient-green-lr;
+  }
+
+  &.disabled {
+    background: $grey !important;
+    cursor: auto;
+  }
 }
 
-.button-dashed{
-	font-weight: $bold;
+.button-dashed {
+  font-weight: $bold;
 
-	&.button-blue{
-		border: solid 1px $hb-blue;
-		color: $hb-blue;
+  &.button-blue {
+    border: solid 1px $hb-blue;
+    color: $hb-blue;
 
-		&:hover{
-			background-image: $button-gradient-blue;
-			color: $white;
-		}
-	}
+    &:hover {
+      background-image: $button-gradient-blue;
+      color: $white;
+    }
+  }
 
-	&.button-orange{
-		border: solid 1px $orange;
-		color: $orange;
+  &.button-orange {
+    border: solid 1px $orange;
+    color: $orange;
 
-		&:hover{
-			background-image: $gradient-orange;
-			color: $white;
-		}
-	}
+    &:hover {
+      background-image: $gradient-orange;
+      color: $white;
+    }
+  }
 
-	&.button-purple{
-		border: solid 1px $purple;
-		color: $purple;
+  &.button-purple {
+    border: solid 1px $purple;
+    color: $purple;
 
-		&:hover{
-			background-image: $gradient-purple;
-			color: $white;
-		}
-	}
+    &:hover {
+      background-image: $gradient-purple;
+      color: $white;
+    }
+  }
+
+  &.disabled {
+    border-color: $grey !important;
+    color: $grey !important;
+    cursor: auto;
+
+    &:hover {
+			background: $white !important;
+			color: $grey !important;
+    }
+  }
 }
