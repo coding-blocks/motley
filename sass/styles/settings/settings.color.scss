@@ -102,6 +102,7 @@ $code-editor: #171717;
 $interview-grey: #1b1e26;
 $purple: #271147;
 $black-grey: #14161c;
+$dcb-pink: #e54461;
 
 
 
@@ -173,7 +174,8 @@ $text-color-list: (
   "white": $white,
   "yellow": $yellow,
   "grey": $grey,
-  "purple" : $purple
+  "purple" : $purple,
+  "pink": $dcb-pink,
 );
 
 //Gradient Text Colors
