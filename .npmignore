@@ -4,4 +4,7 @@
 !dist
 !/dist
 !dist/
-
+!dist/hb/*
+!dist/account/*
+!dist/dukaan/*
+!dist/online-cb/*
