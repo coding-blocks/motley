@@ -1,13 +1,13 @@
 .test-cases-card {
-  .active {
+  &__active {
     background-color: $white;
   }
 
-  .grey-heading {
+  &__grey-heading {
     background-color: #ebebeb;
   }
 
-  .icon {
-    width: 15%;
+  &__icon {
+    height: 15px;
   }
 }
