@@ -114,7 +114,14 @@ $threads-invert: #191919;
 $list-shaded-invert: #111111;
 $list-shaded-background: rgba(255, 255, 255, 0.9);
 
+
+
+
+
 //Gradients
+$bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
+$gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
+$gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-black: linear-gradient(30deg, #333333, #000000);
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
 $course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
@@ -193,3 +200,9 @@ $gradient-map: (
   violet-bt: linear-gradient(to top, #692fdc, #452ba3),
   red-lr: linear-gradient(to right, #ed788d 0%, #ec837a)
 );
+
+//Checkbox
+// $checkbox-solid: (
+//   orange: $gradient-orange-30-deg
+// );
+$checkbox-solid: $gradient-orange-30-deg;
