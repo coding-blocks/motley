@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     background-color: $white;
-    width: 66%;
+    width: 100%;
     max-width: 400px;
     height: 100vh;
     z-index: 1500;
@@ -50,7 +50,7 @@
   }
 
   .hamburger-nav.hamburger-nav--hidden {
-    margin-left: -66%;
+    margin-left: -100%;
   }
 }
 

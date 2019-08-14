@@ -6,10 +6,12 @@
   }
 }
 @media (max-width: 767px) {
-
+  html {
+    font-size: 12px;
+  }
 }
 @media (max-width: 575px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
