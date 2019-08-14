@@ -48,6 +48,7 @@
     align-items: center;
   }
 
+  //Media Queries
   @media screen and (max-width: 1200px) {
     .top-nav-option {
       h6 {
@@ -60,6 +61,30 @@
     .top-nav-option {
       h6 {
         font-size: $card-sm;
+      }
+    }
+  }
+}
+
+//Hamburger CSS
+.hamburger-menu {
+  display: inline-block;
+
+  span {
+    display: block;
+    background: $black;
+    border-radius: 2px;
+  }
+
+  .ham-toggle {
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+
+    .hamburger {
+      span {
+        height: 3px;
+        margin: 5px 0;
       }
     }
   }
