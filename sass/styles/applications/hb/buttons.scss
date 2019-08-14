@@ -17,7 +17,7 @@
   }
 
   &.disabled {
-    background: $grey !important;
+    background: $faded-text !important;
     cursor: auto;
   }
 }
@@ -56,8 +56,8 @@
   }
 
   &.disabled {
-    border-color: $grey !important;
-    color: $grey !important;
+    border-color: $faded-text !important;
+    color: $faded-text !important;
     cursor: auto;
 
     &:hover {
