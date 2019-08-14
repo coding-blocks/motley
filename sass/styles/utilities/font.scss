@@ -25,9 +25,8 @@ $list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $
 }
 
 // FONT WEIGHT
-
 .light {
-  font-weight: $font-light !important;
+  font-weight: $light !important;
 }
 
 .regular {
