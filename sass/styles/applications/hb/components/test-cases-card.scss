@@ -1,0 +1,13 @@
+.test-cases-card {
+  &__active {
+    background-color: $white;
+  }
+
+  &__grey-heading {
+    background-color: #ebebeb;
+  }
+
+  &__icon {
+    height: 15px;
+  }
+}
