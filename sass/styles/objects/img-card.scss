@@ -34,22 +34,3 @@
   object-fit: cover;
   border-radius: inherit;
 }
-
-@media screen and (max-width: 767px) {
-  .img-card {
-    display: flex;
-    font-size: $font-xs;
-
-    .round-img-b {
-      position: static;
-    }
-
-    .head {
-      @include dimensions(45%, auto);
-    }
-
-    .foot {
-      width: 55%;
-    }
-  }
-}

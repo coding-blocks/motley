@@ -35,10 +35,10 @@
 (50)
 {
   .br-#{$value}{
-    border-radius: #{$value}px;
+    border-radius: #{$value}px !important;
   }
 }
 
 .br-none {
-  border-radius: none;
+  border-radius: none !important;
 }

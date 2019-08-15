@@ -70,6 +70,21 @@
     .card-mentor {
       margin-top: 0;
     }
+
+    display: flex;
+    font-size: $font-xs;
+
+    .round-img-b {
+      position: static;
+    }
+
+    .head {
+      @include dimensions(45%, auto);
+    }
+
+    .foot {
+      width: 55%;
+    }
   }
 }
 

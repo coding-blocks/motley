@@ -60,6 +60,7 @@ $bg-color-list: map-merge(
 $text-color-list: map-merge(
   $text-color-list,
   (
-    "grey": $dark-grey
+    "grey": $grey,
+    "dark-grey": $dark-grey
   )
 );

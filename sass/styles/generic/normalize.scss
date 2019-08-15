@@ -7,17 +7,11 @@
 //
 
 html {
-  font-family: sans-serif; // 1
+  font-family: $global-font-family; // 1
   -ms-text-size-adjust: 100%; // 2
   -webkit-text-size-adjust: 100%; // 2
   font-size: $global-font-size;
   color: $global-font-text-color;
-}
-
-@media screen and (max-width:575px){
-  html{
-    // font-size: 12px;
-  }
 }
 
 //
