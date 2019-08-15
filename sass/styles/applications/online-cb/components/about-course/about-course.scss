@@ -15,18 +15,6 @@
   }
 }
 
-.c-card-carousel {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-  justify-content: flex-start;
-  align-items: stretch;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .c-about-instructors {
   background-color: $nav-border;
   padding-top: 3rem;
