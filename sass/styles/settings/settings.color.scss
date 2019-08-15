@@ -10,6 +10,7 @@ File contains color configuration for below listed objects and utilities:-
   - Tab Nav
   - Checkbox
   - Divided List
+  - Border Card
 
 - Utilities
   - Text Colors
@@ -97,7 +98,6 @@ $bellow-black: #181818;
 $cricket-cup: #84114b;
 
 $hb-blue: #246db3;
-$dark-grey: #1e1e1e;
 $code-editor: #171717;
 $interview-grey: #1b1e26;
 $purple: #271147;
@@ -206,3 +206,6 @@ $gradient-map: (
 //   orange: $gradient-orange-30-deg
 // );
 $checkbox-solid: $gradient-orange-30-deg;
+
+//Border Card
+$border-card-border-color: #e8e8e8;

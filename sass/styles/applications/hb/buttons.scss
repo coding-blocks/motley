@@ -16,7 +16,7 @@
     background: $gradient-green-lr;
   }
 
-  &.disabled {
+  &.disabled, &:disabled {
     background: $faded-text !important;
     cursor: auto;
   }
@@ -55,7 +55,7 @@
     }
   }
 
-  &.disabled {
+  &.disabled, &:disabled {
     border-color: $faded-text !important;
     color: $faded-text !important;
     cursor: auto;

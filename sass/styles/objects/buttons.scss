@@ -65,7 +65,7 @@
   }
 }
 
-.button-solid.disabled {
+.button-solid.disabled, .button-solid:disabled {
   background-image: $button-gradient-disabled;
   box-shadow:  0 10px 41px 0 $button-gradient-disabled;
   button {
@@ -75,10 +75,6 @@
 }
 
 button:disabled{ 
-  background-image: $button-gradient-disabled;
-  &:hover{
-    box-shadow:  unset;
-  }
-  color: $white;
+  color: $dark-grey;
   cursor: default;
 }
