@@ -54,6 +54,10 @@
 .button-solid{
   background-image: $button-gradient;
   background-size: 200%;
+
+  &:hover {
+    background-position: right center;
+  }
 }
 
 .button-dashed {

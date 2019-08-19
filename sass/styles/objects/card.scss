@@ -8,3 +8,15 @@
 .card-image {
   width: 17%;
 }
+
+.c-card-carousel {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

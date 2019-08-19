@@ -1,6 +1,6 @@
 .button-solid {
   &.button-orange {
-    background-image: $gradient-orange;
+    background-image: $button-gradient-orange;
   }
 
   &.button-blue {
@@ -13,7 +13,7 @@
   }
 
   &.button-green {
-    background: $gradient-green-lr;
+    background-image: $gradient-green-lr;
   }
 
   &.disabled, &:disabled {
