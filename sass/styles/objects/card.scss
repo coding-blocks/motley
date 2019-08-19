@@ -20,3 +20,17 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .c-card-carousel-small {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
