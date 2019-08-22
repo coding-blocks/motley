@@ -1,10 +1,7 @@
 .badge-container {
   position: relative;
 
-  .badge-number--blue,
-  .badge-number--orange,
-  .badge-number--yellow,
-  .badge-number--red {
+  .badge-number {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -42,6 +39,6 @@
 
   .badge-number--yellow {
     border-color: #f8c332;
-    color: #f8c332; 
+    color: #f8c332;
   }
 }
