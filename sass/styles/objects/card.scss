@@ -4,6 +4,7 @@
   scrollbar-width: none;
   justify-content: flex-start;
   align-items: stretch;
+  width: 100%;
 
   &::-webkit-scrollbar {
     display: none;
@@ -28,6 +29,7 @@
     scrollbar-width: none;
     justify-content: flex-start;
     align-items: stretch;
+    width: 100%;
 
     &::-webkit-scrollbar {
       display: none;
