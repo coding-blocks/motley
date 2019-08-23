@@ -1,6 +1,5 @@
 .c-code-window {
   margin-top: -70px;
-  height: 100vh;
 
   .logo {
     height: 118px;
@@ -40,10 +39,6 @@
     align-items: unset;
   }
 
-  .code-area {
-    height: calc(100vh - 118px);
-  }
-
   .question-card {
     overflow-y: auto;
     height: calc(100vh - 202px);
@@ -58,6 +53,14 @@
       background-color: $interview-grey;
     }
   }
+
+  @media screen and (min-width: 769px) {
+    height: 100vh;
+
+    .code-area {
+      height: calc(100vh - 118px);
+    }
+  }
 }
 
 .c-cast-window {
@@ -69,8 +72,8 @@
     height: calc(100% - 66px);
   }
 
-  .logo{
+  .logo {
     height: 128px;
-    flex-basis: 118px; 
+    flex-basis: 118px;
   }
 }
