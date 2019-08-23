@@ -16,16 +16,19 @@ const getPartials = () => {
       return acc;
     }, {})
 
-  const applicationComponents = config.applications.map(m =>
-    fs.readdirSync(`./examples/components/${m}`)
-      .filter(filename => filename.split('.').pop() === 'hbs')
-      .map(filename => filename.split('.')[0])
-      .reduce((acc, filename) => {
-        acc[filename] = path.join(`./examples/components/${m}`, filename + '.hbs')
-        return acc;
-      }, {})
-  )
-  .reduce((acc, application) => Object.assign(acc, application), {})
+  const applicationComponents = config.applications.map(m => {
+    if (!fs.existsSync(`./examples/components/${m}`)) {
+      fs.mkdirSync(`./examples/components/${m}`)
+    }
+    return fs.readdirSync(`./examples/components/${m}`)
+            .filter(filename => filename.split('.').pop() === 'hbs')
+            .map(filename => filename.split('.')[0])
+            .reduce((acc, filename) => {
+              acc[filename] = path.join(`./examples/components/${m}`, filename + '.hbs')
+              return acc;
+            }, {})
+    })
+    .reduce((acc, application) => Object.assign(acc, application), {})
 
   return Object.assign(commonComponents, applicationComponents)
 }
@@ -39,18 +42,29 @@ const getFiles = () => {
       return acc;
     }, {})
 
-  const applicationViews = config.applications.map(m =>
-    fs.readdirSync(`./examples/views/${m}`)
-      .filter(filename => filename.split('.').pop() === 'hbs')
-      .map(filename => filename.split('.')[0])
-      .reduce((acc, filename) => {
-        acc[path.join('./examples/html', filename + '.html')] = path.join(`./examples/views/${m}`, filename + '.hbs')
-        return acc;
-      }, {})
-  )
+  const applicationViews = config.applications.map(m => {
+    if (!fs.existsSync(`./examples/views/${m}`)) {
+      fs.mkdirSync(`./examples/views/${m}`)
+    }
+    return fs.readdirSync(`./examples/views/${m}`)
+        .filter(filename => filename.split('.').pop() === 'hbs')
+        .map(filename => filename.split('.')[0])
+        .reduce((acc, filename) => {
+          acc[path.join('./examples/html', filename + '.html')] = path.join(`./examples/views/${m}`, filename + '.hbs')
+          return acc;
+        }, {})
+    })
     .reduce((acc, application) => Object.assign(acc, application), {})
 
   return Object.assign(commonViews, applicationViews)
+}
+
+const getAppScssFiles = () => {
+  const appScssfiles = { 'examples/public/stylesheets/style.css': 'sass/styles/app.scss' }
+  config.applications.map(app => {
+    appScssfiles[`examples/public/stylesheets/${app}.css`] = `sass/styles/applications/${app}/app.scss`
+  })
+  return appScssfiles
 }
 
 
