@@ -20,9 +20,15 @@
   }
 
   &__header-img {
-    height: 60%;
+    height: 55%;
     right: 5%;
     bottom: -5%;
+
+    @media screen and (min-width: 993px) {
+      &--narrow {
+        width: 45%;
+      }
+    }
   }
 
   &__course-logo {
