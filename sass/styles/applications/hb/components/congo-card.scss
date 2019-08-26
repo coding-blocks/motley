@@ -1,0 +1,11 @@
+.congo-card {
+  &__backdrop {
+    opacity: 0.45;
+  }
+
+  &__divider {
+    height: 4px;
+    width: 25%;
+    background-color: $white;
+  }
+}
