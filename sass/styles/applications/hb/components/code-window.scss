@@ -6,7 +6,6 @@
   }
 
   .top-bar {
-    height: 128px;
     z-index: 100;
     flex-basis: 118px;
   }
@@ -60,20 +59,42 @@
     .code-area {
       height: calc(100vh - 118px);
     }
+
+    .top-bar {
+      height: 128px;
+    }
+  }
+
+  .questions-card-phone {
+    transition: margin 0.5s;
+
+    .questions {
+      height: 250px;
+    }
+  }
+
+  .questions-card-phone--hidden {
+    margin-bottom: -250px;
+  }
+
+  .mb-45 {
+    margin-bottom: 45px;
   }
 }
 
 .c-cast-window {
-  .code-area {
-    height: calc(100vh - 128px);
-  }
+  @media screen and (min-width: 769px) {
+    .code-area {
+      height: calc(100vh - 128px);
+    }
 
-  .question-area {
-    height: calc(100% - 66px);
-  }
+    .question-area {
+      height: calc(100% - 66px);
+    }
 
-  .logo {
-    height: 128px;
-    flex-basis: 118px;
+    .logo {
+      height: 128px;
+      flex-basis: 118px;
+    }
   }
 }
