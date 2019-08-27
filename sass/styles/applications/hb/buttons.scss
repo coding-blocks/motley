@@ -25,6 +25,10 @@
 .button-dashed {
   font-weight: $bold;
 
+  &:hover {
+    background-color: unset;
+  }
+
   &.button-blue {
     border: solid 1px $hb-blue;
     color: $hb-blue;
@@ -51,6 +55,16 @@
 
     &:hover {
       background-image: $gradient-purple;
+      color: $white;
+    }
+  }
+
+  &.button-green {
+    border: solid 1px $green;
+    color: $green;
+
+    &:hover {
+      background-image: $gradient-green-lr;
       color: $white;
     }
   }

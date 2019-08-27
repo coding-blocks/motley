@@ -1,4 +1,16 @@
 /*--------------------------INPUT TEXT---------------------------*/
+.right-input {
+  position: relative;
+
+  &::after {
+    content: "Press Enter";
+    font-size: $font-sm;
+    font-weight: $bold;
+    position: absolute;
+    right: 5%;
+    bottom: 30%;
+  }
+}
 .input-text {
   padding: 10px 20px;
   border-radius: 10px;
@@ -11,6 +23,10 @@
     padding-left: 5.7142rem;
     background-repeat: no-repeat;
     background-position: 2.1428rem center;
+  }
+
+  &--non-rounded {
+    border-radius: 0;
   }
 }
 
