@@ -1,16 +1,16 @@
-.c-code-window {
+.code-window {
   margin-top: -70px;
 
-  .logo {
+  &__logo {
     height: 118px;
   }
 
-  .top-bar {
+  &__top-bar {
     z-index: 100;
     flex-basis: 118px;
   }
 
-  .side-bar {
+  &__side-bar {
     z-index: 500;
     position: fixed;
 
@@ -38,7 +38,7 @@
     align-items: unset;
   }
 
-  .question-card {
+  &__question-card {
     overflow-y: auto;
     height: calc(100vh - 202px);
     position: relative;
@@ -56,16 +56,16 @@
   @media screen and (min-width: 769px) {
     height: 100vh;
 
-    .code-area {
+    &__code-area {
       height: calc(100vh - 118px);
     }
 
-    .top-bar {
+    &__top-bar {
       height: 128px;
     }
   }
 
-  .questions-card-phone {
+  &__question-card--phone {
     transition: margin 0.5s;
 
     .questions {
@@ -73,26 +73,26 @@
     }
   }
 
-  .questions-card-phone--hidden {
+  &__question-card--phone--hidden {
     margin-bottom: -250px;
   }
 
-  .mb-45 {
+  &__mb-45 {
     margin-bottom: 45px;
   }
 }
 
-.c-cast-window {
+.cast-window {
   @media screen and (min-width: 769px) {
-    .code-area {
+    .code-window__code-area {
       height: calc(100vh - 128px);
     }
 
-    .question-area {
+    .code-window__question-area {
       height: calc(100% - 66px);
     }
 
-    .logo {
+    &__logo {
       height: 128px;
       flex-basis: 118px;
     }
