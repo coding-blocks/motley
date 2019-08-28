@@ -2,13 +2,14 @@
 .right-input {
   position: relative;
 
-  &::after {
-    content: "Press Enter";
-    font-size: $font-sm;
-    font-weight: $bold;
+  span {
     position: absolute;
-    right: 5%;
-    bottom: 30%;
+    right: 3%;
+    bottom: 28%;
+  }
+
+  .input-text {
+    height: 50px;
   }
 }
 .input-text {
