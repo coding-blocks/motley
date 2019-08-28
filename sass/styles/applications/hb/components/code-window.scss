@@ -3,19 +3,11 @@
 
   &__logo {
     height: 118px;
-
-    &--hidden {
-      display: none;
-    }
   }
 
   &__top-bar {
     z-index: 100;
     flex-basis: 118px;
-
-    &--hidden {
-      display: none !important;
-    }
   }
 
   &__side-bar {
@@ -66,10 +58,6 @@
 
     &__code-area {
       height: calc(100vh - 118px);
-
-      &--full {
-        height: 100vh;
-      }
     }
 
     &__top-bar {
@@ -79,6 +67,7 @@
 
   &__question-card--phone {
     transition: margin 0.5s;
+    z-index: 1;
 
     .questions {
       height: 250px;
