@@ -3,11 +3,19 @@
 
   &__logo {
     height: 118px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__top-bar {
     z-index: 100;
     flex-basis: 118px;
+
+    &--hidden {
+      display: none !important;
+    }
   }
 
   &__side-bar {
@@ -58,6 +66,10 @@
 
     &__code-area {
       height: calc(100vh - 118px);
+
+      &--full {
+        height: 100vh;
+      }
     }
 
     &__top-bar {
@@ -77,7 +89,7 @@
     margin-bottom: -250px;
   }
 
-  &__mb-45 {
+  &--mb-45 {
     margin-bottom: 45px;
   }
 }

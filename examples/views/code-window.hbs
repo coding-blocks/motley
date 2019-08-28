@@ -128,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12 code-window--mb-45">
+        <div class="col-md-6 col-12 code-window--mb-45 h-100 overflow-y-auto">
           <div class="c-code-card h-100 w-100 flex-col">
             <div class="row px-xl-5 px-4 py-4 justify-content-between bg-grey m-0">
               <div class="col-6 p-0">
@@ -145,11 +145,11 @@
             </div>
             <div class="pt-4 pb-4 px-xl-5 px-4 input-div">
               <div class="row justify-content-between align-items-center">
-                <div class="col-md-4 col-12 white extra-bold pr-0">
+                <div class="col-lg-4 col-12 white extra-bold pr-0">
                   <i class="fas fa-angle-up mr-xl-3 mr-2"></i>
                   <span>Provide Custom Input</span>
                 </div>
-                <div class="pr-3 d-none d-md-block">
+                <div class="pr-3 d-none d-lg-block">
                   <button class="button-dashed button-orange">Compile and Test</button>
                   <button class="button-solid button-orange ml-xl-2 ml-1">Submit Code</button>
                 </div>
@@ -157,14 +157,46 @@
               <textarea name="input" cols="30" rows="5" class="mx-auto my-4 white w-100">
                 {{!-- text goes here --}}
               </textarea>
-              <div class="d-flex my-1 justify-content-center d-md-none d-block">
+              <div class="d-flex my-1 justify-content-center d-lg-none d-block">
                 <button class="button-dashed button-orange">Compile and Test</button>
                 <button class="button-solid button-orange ml-2">Submit Code</button>
               </div>
             </div>
+            <div class="px-5 py-4 bg-gradient-orange white">
+              <div class="font-mdxl extra-bold">Damn! That’s an error!</div>
+              <div class="card-md bold">
+                You were close! Inspect your code again.
+              </div>
+            </div>
+          </div>
+          <div class="p-5 bg-grey">
+            <h2>Compilation Error</h2>
+            <div class="font-sm my-2">Check the compiler output, fix the error and try again.</div>
+            <div class="divider-h my-4"></div>
+            <div class="font-sm bold">Compile Message</div>
+            <div class="bg-white p-4 mt-3">
+              <div class="font-sm">Solution.cpp: In function 'int countingValleys(int, std::__cxx11::string)':
+                Solution.cpp:9:1: error: no return statement in function returning non-void
+                [-Werror=return-type]}^cc1plus: some warnings being treated as errors</div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-6">
+                <div class="font-sm bold">Input</div>
+                <div class="bg-white p-4 mt-3">
+                  <div class="font-sm">235</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="font-sm bold">Output</div>
+                <div class="bg-white p-4 mt-3">
+                  <div class="font-sm">235</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12 d-md-none d-block code-window__question-card--phone code-window__question-card--phone--hidden position-fixed bl">
+        <div
+          class="col-12 d-md-none d-block code-window__question-card--phone code-window__question-card--phone--hidden position-fixed bl">
           <div class="py-4 t-align-c white bg-dark-grey">
             <div class="card-md bold">View All Questions<i class="fas fa-angle-up ml-2 fa-lg"></i></div>
           </div>
