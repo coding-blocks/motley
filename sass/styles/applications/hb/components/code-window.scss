@@ -2,12 +2,11 @@
   margin-top: -70px;
 
   &__logo {
-    height: 118px;
+    height: 120px;
   }
 
   &__top-bar {
     z-index: 100;
-    flex-basis: 118px;
   }
 
   &__side-bar {
@@ -63,11 +62,11 @@
     height: 100vh;
 
     &__code-area {
-      height: calc(100vh - 118px);
+      height: calc(100vh - 120px);
     }
 
     &__top-bar {
-      height: 128px;
+      height: 120px;
     }
   }
 
@@ -91,10 +90,6 @@
 
 .cast-window {
   @media screen and (min-width: 768px) {
-    .code-window__code-area {
-      height: calc(100vh - 128px);
-    }
-
     .code-window__question-area {
       height: calc(100% - 66px);
     }
