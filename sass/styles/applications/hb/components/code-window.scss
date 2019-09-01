@@ -1,18 +1,15 @@
-.c-code-window {
+.code-window {
   margin-top: -70px;
-  height: 100vh;
 
-  .logo {
-    height: 118px;
+  &__logo {
+    height: 120px;
   }
 
-  .top-bar {
-    height: 128px;
+  &__top-bar {
     z-index: 100;
-    flex-basis: 118px;
   }
 
-  .side-bar {
+  &__side-bar {
     z-index: 500;
     position: fixed;
 
@@ -22,6 +19,12 @@
       * {
         color: $orange;
       }
+    }
+  }
+
+  &__input-div {
+    textarea {
+      max-height: 200px;
     }
   }
 
@@ -40,11 +43,7 @@
     align-items: unset;
   }
 
-  .code-area {
-    height: calc(100vh - 118px);
-  }
-
-  .question-card {
+  &__question-card {
     overflow-y: auto;
     height: calc(100vh - 202px);
     position: relative;
@@ -58,19 +57,46 @@
       background-color: $interview-grey;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+
+    &__code-area {
+      height: calc(100vh - 120px);
+    }
+
+    &__top-bar {
+      height: 120px;
+    }
+  }
+
+  &__question-card--phone {
+    transition: margin 0.5s;
+    z-index: 1;
+
+    .questions {
+      height: 250px;
+    }
+  }
+
+  &__question-card--phone--hidden {
+    margin-bottom: -250px;
+  }
+
+  &--mb-45 {
+    margin-bottom: 45px;
+  }
 }
 
-.c-cast-window {
-  .code-area {
-    height: calc(100vh - 128px);
-  }
+.cast-window {
+  @media screen and (min-width: 768px) {
+    .code-window__question-area {
+      height: calc(100% - 66px);
+    }
 
-  .question-area {
-    height: calc(100% - 66px);
-  }
-
-  .logo{
-    height: 128px;
-    flex-basis: 118px; 
+    &__logo {
+      height: 128px;
+      flex-basis: 118px;
+    }
   }
 }
