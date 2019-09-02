@@ -2,17 +2,7 @@ $grey: #f3f3f3;
 $code-editor-grey: #1e1e1e;
 
 // Gradients
-$gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
-$gradient-purple: linear-gradient(30deg, #271147, #553180);
 $gradient-navy: linear-gradient(30deg, #133155, #122a42);
-
-$gradient-purple-blue: linear-gradient(30deg, #8108da, #350ed8);
-$gradient-blue: linear-gradient(30deg, #1b40de, #2cb4ed);
-$gradient-cyan: linear-gradient(30deg, #39ddbf, #1770ae);
-$gradient-dpink: linear-gradient(30deg, #e64b51, #d02ebd);
-$gradient-dpurple: linear-gradient(30deg, #271147, #553180);
-$gradient-yellow: linear-gradient(30deg, #fb8732, #f8c332);
-$gradient-lgreen: linear-gradient(30deg, #82da3b, #27a87c);
 
 $gradient-dblue-lr: linear-gradient(to right, #0b024e, #000033);
 $gradient-green-lr: linear-gradient(to right, #56aa4e, #7eda75);
@@ -29,18 +19,7 @@ $button-gradient-orange: linear-gradient(to right, #ec6333, #f19633, #ec6333);
 $gradient-map: map-merge(
   $gradient-map,
   (
-    orange: $gradient-orange,
-    purple: $gradient-purple,
     navy: $gradient-navy,
-    pink: $gradient-pink,
-    purple-blue: $gradient-purple-blue,
-    blue: $gradient-blue,
-    neon: $gradient-neon,
-    cyan: $gradient-cyan,
-    dpink: $gradient-dpink,
-    dpurple: $gradient-dpurple,
-    yellow: $gradient-yellow,
-    lgreen: $gradient-lgreen,
     dblue-lr: $gradient-dblue-lr,
     green-lr: $gradient-green-lr,
     lblue-lr: $gradient-lblue-lr,

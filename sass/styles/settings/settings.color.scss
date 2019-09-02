@@ -33,7 +33,7 @@ $dark-grey: #666666;
 $facebook: #3b5998;
 $google: #f4695a;
 $twitter: #03a9f4;
-$linkedin: #007BB6;
+$linkedin: #007bb6;
 
 $global-font-text-color: #333333;
 $global-font-heading-color: #333333;
@@ -104,8 +104,6 @@ $purple: #271147;
 $black-grey: #14161c;
 $dcb-pink: #e54461;
 
-
-
 //threads
 $threads-separator: #666666;
 $threads-invert: #191919;
@@ -113,10 +111,6 @@ $threads-invert: #191919;
 //lists
 $list-shaded-invert: #111111;
 $list-shaded-background: rgba(255, 255, 255, 0.9);
-
-
-
-
 
 //Gradients
 $bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
@@ -139,9 +133,18 @@ $gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
 $gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
-$gradient-neon: linear-gradient(30deg, #82da3b, #27a87c);
-$gradient-pink: linear-gradient(30deg, #f24f5f, #a3076c);
 
+//Palette Colors
+$gradient-orange: linear-gradient(30deg, #e74e4b, #fb8133);
+$gradient-purple: linear-gradient(30deg, #271147, #553180);
+$gradient-purple-blue: linear-gradient(30deg, #8108da, #350ed8);
+$gradient-blue: linear-gradient(30deg, #1b40de, #2cb4ed);
+$gradient-cyan: linear-gradient(30deg, #39ddbf, #1770ae);
+$gradient-dpink: linear-gradient(30deg, #e64b51, #d02ebd);
+$gradient-yellow: linear-gradient(30deg, #fb8732, #f8c332);
+$gradient-lgreen: linear-gradient(30deg, #82da3b, #27a87c);
+$gradient-pink: linear-gradient(30deg, #f24f5f, #a3076c);
+$gradient-wblue: linear-gradient(30deg, #475ef6, #6fd9fc);
 
 //Checkbox
 // $checkbox-solid: (
@@ -169,7 +172,7 @@ $bg-color-list: (
   "yellow": $yellow,
   "grey": $grey,
   "dark-grey": $interview-grey,
-  "black-grey": $black-grey,
+  "black-grey": $black-grey
 );
 
 //Text Colors
@@ -183,8 +186,8 @@ $text-color-list: (
   "white": $white,
   "yellow": $yellow,
   "grey": $grey,
-  "purple" : $purple,
-  "pink": $dcb-pink,
+  "purple": $purple,
+  "pink": $dcb-pink
 );
 
 //Gradient Text Colors
@@ -198,7 +201,17 @@ $gradient-map: (
   black-bt: linear-gradient(to top, #333333, #000000),
   violet-lr: linear-gradient(to right, #692fdc, #452ba3),
   violet-bt: linear-gradient(to top, #692fdc, #452ba3),
-  red-lr: linear-gradient(to right, #ed788d 0%, #ec837a)
+  red-lr: linear-gradient(to right, #ed788d 0%, #ec837a),
+  orange: $gradient-orange,
+  purple: $gradient-purple,
+  purple-blue: $gradient-purple-blue,
+  blue: $gradient-blue,
+  cyan: $gradient-cyan,
+  dpink: $gradient-dpink,
+  yellow: $gradient-yellow,
+  lgreen: $gradient-lgreen,
+  pink: $gradient-pink,
+  wblue: $gradient-wblue,
 );
 
 //Checkbox
