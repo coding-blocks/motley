@@ -75,9 +75,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     sass: {
       dist: {
-        files: {
-          'examples/public/stylesheets/style.css': 'sass/styles/applications/hb/app.scss'
-        }
+        files: getAppScssFiles()
       }
     },
     hbs: {
