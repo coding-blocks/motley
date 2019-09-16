@@ -1,6 +1,18 @@
 .hover-pink {
   &:hover {
     font-weight: $bold;
+  }
+
+  &.active {
+    font-weight: $bold;
     color: $salmon;
+  }
+}
+
+input.underline-input {
+  border-bottom: solid 1px $hover-grey !important;
+
+  &:focus {
+    border-bottom: solid 1px $black !important;
   }
 }
