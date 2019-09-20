@@ -26,28 +26,28 @@
   .white-underline {
     border-bottom: solid 1px white;
   }
+}
 
-  .banner-nav {
-    @include flexbox(column, center, center);
-    z-index: 1;
+.banner-nav {
+  @include flexbox(column, center, center);
+  z-index: 1;
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  cursor: pointer;
+
+  span {
+    font-size: 50px;
+  }
+
+  &::before {
+    content: "";
     height: 100%;
-    width: 10%;
+    width: 100%;
     position: absolute;
-    cursor: pointer;
-
-    span {
-      font-size: 50px;
-    }
-
-    &::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background-color: $interview-grey;
-      opacity: 0.5;
-      z-index: -1;
-    }
+    background-color: $interview-grey;
+    opacity: 0.5;
+    z-index: -1;
   }
 }
 

@@ -1,0 +1,50 @@
+.course-card {
+  background: transparent;
+
+  .head {
+    height: 180px;
+  }
+
+  .foot {
+    padding-top: 60px !important;
+  }
+
+  &__difficulty {
+    margin-top: -0.5rem;
+  }
+
+  &__img-head {
+    height: 210px;
+
+    .back-img {
+      top: 0;
+      left: 0;
+      z-index: -5;
+    }
+  }
+
+  &__header-img {
+    height: 55%;
+    right: 5%;
+    bottom: -5%;
+
+    @media screen and (min-width: 993px) {
+      &--narrow {
+        width: 45%;
+      }
+    }
+  }
+
+  &__course-logo {
+    left: 5%;
+    bottom: -40px;
+    background: inherit;
+    border: solid 1px $white;
+  }
+}
+
+.mentor-card {
+  .head {
+    height: 160px;
+  }
+}

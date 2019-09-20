@@ -2,35 +2,41 @@
   @include font($global-font-family, $font-xs, inherit);
 }
 
-@each $type,$width, $height, $border-radius,$background, $color, $font-weight, $padding-top-bottom, $padding-right-left
-        in
-  (dashed,
-  $dashed-button-width,
-  $dashed-button-height,
-  $dashed-border-radius,
-  $dashed-button-background,
-  $dashed-button-color,
-  $dashed-button-weight,
-  10px, 15px),
-
-  (solid,
-  $solid-button-width,
-  $solid-button-height,
-  $solid-button-border-radius,
-  $button-gradient,
-  $solid-button-color,
-  $solid-button-weight,
-  10px, 15px),
-
-  (circle,
-  $circle-button-width,
-  $circle-button-height,
-  $circle-button-border-radius,
-  $circle-button-background,
-  $circle-button-color,
-  0, 0),
-  {
-
+@each $type, $width, $height, $border-radius, $background, $color, $font-weight, $padding-top-bottom,
+  $padding-right-left
+    in (
+      dashed,
+      $dashed-button-width,
+      $dashed-button-height,
+      $dashed-border-radius,
+      $dashed-button-background,
+      $dashed-button-color,
+      $dashed-button-weight,
+      10px,
+      15px
+    ),
+  (
+    solid,
+    $solid-button-width,
+    $solid-button-height,
+    $solid-button-border-radius,
+    $button-gradient,
+    $solid-button-color,
+    $solid-button-weight,
+    10px,
+    15px
+  ),
+  (
+    circle,
+    $circle-button-width,
+    $circle-button-height,
+    $circle-button-border-radius,
+    $circle-button-background,
+    $circle-button-color,
+    0,
+    0
+  )
+{
   .button-#{$type} {
     @extend %button-text;
     @include border-radius($border-radius);
@@ -39,46 +45,63 @@
     padding: $padding-top-bottom $padding-right-left;
     font-weight: $font-weight;
 
-    &.lg{
+    &.lg {
       padding: 15px 30px;
     }
 
     &.md {
       padding: 10px 25px;
     }
-    
+
     transition: 0.3s;
   }
 }
 
-.button-solid{
+.button-solid {
   background-image: $button-gradient;
   background-size: 200%;
 
   &:hover {
     background-position: right center;
   }
+
+  &.button-pink-orange {
+    background-image: $hi-gradient-pink-orange-lr;
+    background-size: 100%;
+  }
 }
 
 .button-dashed {
   border: 1px solid;
 
-  &:hover{
+  &:hover {
     background-color: $dashed-button-color;
     color: $white;
   }
-}
 
-.button-solid.disabled, .button-solid:disabled {
-  background-image: $button-gradient-disabled;
-  box-shadow:  0 10px 41px 0 $button-gradient-disabled;
-  button {
-    cursor: default;
-    pointer-events:none;
+  &.button-pink-orange {
+    border: solid 1px $hello-intern-pink;
+    color: $hello-intern-pink;
+
+    &:hover {
+      background-image: $hi-gradient-pink-orange-lr;
+      color: $white;
+      border: unset;
+    }
   }
 }
 
-button:disabled{ 
+.button-solid.disabled,
+.button-solid:disabled {
+  background-image: $button-gradient-disabled;
+  box-shadow: 0 10px 41px 0 $button-gradient-disabled;
+  button {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+button:disabled {
   color: $dark-grey;
   cursor: default;
 }
