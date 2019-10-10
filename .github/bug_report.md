@@ -12,11 +12,11 @@ labels: bug
   what you expected to happen
 -->
 
-### Steps To Reproduce
+### Steps to reproduce
 
 1.
 2.
 3.
 4.
 
-### Additional Details & Logs (if applicable)
+### Additional details & logs (if applicable)
