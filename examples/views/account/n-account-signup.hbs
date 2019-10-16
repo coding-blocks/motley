@@ -21,8 +21,8 @@
     </div>
     <div class="col-7 py-5 px-5">
       <div class="tab-nav-underline w-100 justify-content-start">
-        <div class="tab active px-0 font-md extra-bold">Login</div>
-        <div class="tab px-0 mx-5 font-md extra-bold">Sign Up</div>
+        <div class="tab px-0 font-md extra-bold">Login</div>
+        <div class="tab px-0 mx-5 font-md extra-bold active">Sign Up</div>
       </div>
 
       <div class="my-5 pt-4">
@@ -42,31 +42,61 @@
 
       <div class="row mt-4">
         <div class="col-6">
-          <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4"
-            placeholder="First Name">
+          <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4" placeholder="First Name">
         </div>
         <div class="col-6">
-          <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4"
-            placeholder="Last Name">
+          <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4" placeholder="Last Name">
         </div>
       </div>
 
-      <label class="input-checkbox checkbox-solid font-sm" for="solid">
-        <input type="checkbox" id="solid"> Remember Me
-        <span class="salmon-gradient"></span>
-      </label>
-
-      <div class="mt-5">
-        <button class="button-solid">Login Now</button>
-        <span class="font-sm ml-3 semi-bold"><a href="#" class="salmon">Login with OTP</a></span>
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="select">
+            <select name="slct" id="slct" class="pb-4 font-sm bold">
+              <option selected disabled hidden>Choose Gender</option>
+              <option value="1" class="py-2">Male</option>
+              <option value="2" class="py-2">Female</option>
+              <option value="3" class="py-2">Undisclosed</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-8">
+          <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100"
+            placeholder="+91 Phone Number">
+        </div>
       </div>
 
-      <div class="font-mds mt-5">You may also try login with:</div>
-      <div class="mt-4">
-        <a href="" class="mr-4"><i class="fa-2x fab fa-facebook-f"></i></a>
-        <a href="" class="mx-4"><i class="fa-2x fab fa-github"></i></a>
-        <a href="" class="mx-4"><i class="fa-2x fab fa-linkedin-in"></i></a>
-        <a href="" class="mx-4"><i class="fa-2x fab fa-twitter"></i></a>
+      <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4" placeholder="Choose College">
+
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="select">
+            <select name="slct" id="slct" class="pb-4 font-sm bold">
+              <option selected disabled hidden>Choose Branch</option>
+              <option value="1" class="py-2">IT</option>
+              <option value="2" class="py-2">CSE</option>
+              <option value="3" class="py-2">MAE</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="select">
+            <select name="slct" id="slct" class="pb-4 font-sm bold">
+              <option selected disabled hidden>Choose Graduation Year</option>
+              <option value="1" class="py-2">IT</option>
+              <option value="2" class="py-2">CSE</option>
+              <option value="3" class="py-2">MAE</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4" placeholder="Email Address">
+
+      <input type="text" id="addtype" class="underline-input pb-4 font-sm bold w-100 mt-4" placeholder="Password">
+
+      <div class="mt-5">
+        <button class="button-solid">Sign Up Now</button>
       </div>
     </div>
   </div>
