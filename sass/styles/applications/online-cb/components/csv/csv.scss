@@ -8,12 +8,13 @@
   .top {
     padding: 2.5rem;
     padding-bottom: 65px;
+
     .description {
       color: #666;
       font-size: 1.1rem;
     }
   }
-  
+
   .bottom {
     position: sticky;
     display: flex;
@@ -21,9 +22,11 @@
     align-items: center;
     flex-wrap: wrap;
     bottom: 0;
+
     @include dimensions(100%, 65px);
+
     background-color: white;
     padding: 0 1rem;
-    box-shadow: 0px -2px 12px 0px rgba(0,0,0,0.1);
-  } 
+    box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.1);
+  }
 }

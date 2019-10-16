@@ -1,9 +1,11 @@
-progress::-moz-progress-bar{
-    background-image: $gradient-orange-lr;
+progress::-moz-progress-bar {
+  background-image: $gradient-orange-lr;
 }
-progress::-ms-fill{
-    background-image: $gradient-orange-lr;
+
+progress::-ms-fill {
+  background-image: $gradient-orange-lr;
 }
-progress::-webkit-progress-value{
-    background-image: $gradient-orange-lr;
+
+progress::-webkit-progress-value {
+  background-image: $gradient-orange-lr;
 }

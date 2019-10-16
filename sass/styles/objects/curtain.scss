@@ -1,44 +1,49 @@
-.curtains{
+.curtains {
   @include dimensions(100vw, 100vh);
+
   display: flex;
   position: relative;
   overflow: hidden;
-  
-  .left-curtain, .right-curtain{
+
+  .left-curtain,
+  .right-curtain {
     @include dimensions(30%, 100%);
+
     min-width: 30%;
     transition: all 0.35s ease;
     overflow-y: auto;
     position: relative;
 
-    & > *{
+    & > * {
       @include dimensions(100%, 100%);
+
       position: absolute;
       z-index: 0;
       transition: all 0.35s ease;
     }
   }
 
-  .left-curtain.collapse, .right-curtain.collapse{
+  .left-curtain.collapse,
+  .right-curtain.collapse {
     width: 0;
     min-width: unset;
     position: static;
     transition: all 0.35s ease;
   }
 
-  .left-curtain.collapse{
+  .left-curtain.collapse {
     & > * {
       transform: translateX(-40%);
     }
   }
 
-  .right-curtain.collapse{
+  .right-curtain.collapse {
     & > * {
       transform: translateX(40%);
     }
   }
 
-  .main{
+  .main {
     height: 100%;
     flex: auto;
     transition: all 0.35s ease;

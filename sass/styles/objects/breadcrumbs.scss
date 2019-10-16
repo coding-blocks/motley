@@ -1,5 +1,4 @@
 .breadcrumbs {
-
   .active {
     color: unset;
   }
@@ -16,15 +15,15 @@
       top: 0;
     }
 
-    &:first-of-type::after{
+    &:first-of-type::after {
       display: none;
     }
 
-    &:last-child{
+    &:last-child {
       font-weight: $regular;
     }
 
-    &:first-child{
+    &:first-child {
       padding-left: 0 !important;
     }
   }

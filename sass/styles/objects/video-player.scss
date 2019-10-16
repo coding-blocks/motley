@@ -1,16 +1,18 @@
-.video-player{
+.video-player {
   @include dimensions(100%, 100%);
+
   background: $black;
   position: relative;
-  
-  video{
+
+  video {
     @include dimensions(100%, 100%);
+
     border: none;
   }
 
-  iframe{
+  iframe {
     @include dimensions(100%, 100%);
+
     border: none;
   }
 }
-  

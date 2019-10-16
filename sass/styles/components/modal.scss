@@ -1,10 +1,11 @@
-.c-modal{
-  .modal-dialog{
+.c-modal {
+  .modal-dialog {
     max-width: unset;
   }
 
-  .modal-content{
+  .modal-content {
     @include border-radius(10px);
+
     border: none;
     margin: 0 auto;
     display: block;

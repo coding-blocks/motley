@@ -4,17 +4,17 @@
 
 @each $type, $width, $height, $border-radius, $background, $color, $font-weight, $padding-top-bottom,
   $padding-right-left
-    in (
-      dashed,
-      $dashed-button-width,
-      $dashed-button-height,
-      $dashed-border-radius,
-      $dashed-button-background,
-      $dashed-button-color,
-      $dashed-button-weight,
-      10px,
-      15px
-    ),
+  in (
+    dashed,
+    $dashed-button-width,
+    $dashed-button-height,
+    $dashed-border-radius,
+    $dashed-button-background,
+    $dashed-button-color,
+    $dashed-button-weight,
+    10px,
+    15px
+  ),
   (
     solid,
     $solid-button-width,
@@ -35,11 +35,12 @@
     $circle-button-color,
     0,
     0
-  )
-{
+  ) {
   .button-#{$type} {
     @extend %button-text;
+
     @include border-radius($border-radius);
+
     background-color: $background;
     color: $color;
     padding: $padding-top-bottom $padding-right-left;
@@ -95,6 +96,7 @@
 .button-solid:disabled {
   background-image: $button-gradient-disabled;
   box-shadow: 0 10px 41px 0 $button-gradient-disabled;
+
   button {
     cursor: default;
     pointer-events: none;

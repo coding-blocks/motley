@@ -1,4 +1,4 @@
-/*--------------------------INPUT TEXT---------------------------*/
+/* --------------------------INPUT TEXT--------------------------- */
 .right-input {
   position: relative;
 
@@ -12,6 +12,7 @@
     height: 50px;
   }
 }
+
 .input-text {
   padding: 10px 20px;
   border-radius: 10px;
@@ -45,7 +46,7 @@
   }
 }
 
-/*--------------------------INPUT CHECKBOX---------------------------*/
+/* --------------------------INPUT CHECKBOX--------------------------- */
 .input-checkbox {
   position: relative;
 
@@ -58,7 +59,7 @@
   &.checkbox-tick > input:checked + span::before {
     width: 4px;
     height: 10px;
-    border: solid 1px #333333;
+    border: solid 1px #333;
     content: "";
     position: absolute;
     z-index: 101;
@@ -71,7 +72,9 @@
   &.checkbox-solid > input:checked ~ span::before,
   &.checkbox-solid > input:checked + span::before {
     content: "";
+
     @include dimensions(16px, 16px);
+
     position: absolute;
     z-index: 101;
     left: 0;
@@ -82,7 +85,9 @@
   & > input ~ span::after,
   & > input + span::after {
     content: "";
+
     @include dimensions(16px, 16px);
+
     position: absolute;
     z-index: 100;
     left: 0;
@@ -103,6 +108,7 @@
 .input-textarea {
   @include dimensions(100%, auto);
   @include padding-mixin(20px, 20px, 20px, 20px);
+
   background: $nav-border;
   border: none;
 }

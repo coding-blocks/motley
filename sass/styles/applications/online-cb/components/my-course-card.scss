@@ -1,20 +1,20 @@
 .c-my-course-card {
   height: 460px;
 
-  .card-mentor{
+  .card-mentor {
     margin: 15px 0;
   }
 }
 
-@media screen and (max-width: 767px){
-  .c-my-course-card{
+@media screen and (max-width: 767px) {
+  .c-my-course-card {
     height: auto;
   }
 }
 
-@media screen and (max-width: 575px){
-  .c-my-course-card{
-    .course-progress{
+@media screen and (max-width: 575px) {
+  .c-my-course-card {
+    .course-progress {
       margin-bottom: 10px;
     }
   }

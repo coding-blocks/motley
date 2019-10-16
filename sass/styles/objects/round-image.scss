@@ -1,20 +1,22 @@
-%round-img{
+%round-img {
   @include border-radius(50%);
+
   overflow: hidden;
 }
 
 //round-img with border
-.round-img-b{
+.round-img-b {
   @extend %round-img;
+
   @include border(solid, 4px, white);
 }
 
-.round{
+.round {
   @extend %round-img;
 }
 
-@media screen and (max-width: 575px){
-  .round-img-b{
+@media screen and (max-width: 575px) {
+  .round-img-b {
     @include border(solid, 2px, $white);
   }
 }

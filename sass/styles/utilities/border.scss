@@ -1,4 +1,4 @@
-.border-none{
+.border-none {
   border: none !important;
 }
 
@@ -7,34 +7,31 @@
   border: solid 1px $search-box-color;
 }
 
-@each $direction in ('top', 'right', 'bottom', 'left')
-{
-  .b-#{$direction}{
+@each $direction in ('top', 'right', 'bottom', 'left') {
+  .b-#{$direction} {
     border-#{$direction}: solid 1px $search-box-color;
   }
 }
 
 // BORDER COLOR
-@each $type, $color in 
-('red', $salmon),
-('green', $light-green),
-('black', $black)
-{
-  .b-#{$type}{
+@each $type, $color in
+  ('red', $salmon),
+  ('green', $light-green),
+  ('black', $black) {
+  .b-#{$type} {
     border-color: $color !important;
   }
 }
 
 //BORDER RADIUS
 @each $value in
-(5),
-(10),
-(15),
-(20),
-(25),
-(50)
-{
-  .br-#{$value}{
+  (5),
+  (10),
+  (15),
+  (20),
+  (25),
+  (50) {
+  .br-#{$value} {
     border-radius: #{$value}px !important;
   }
 }

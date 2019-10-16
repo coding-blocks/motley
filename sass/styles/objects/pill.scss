@@ -1,29 +1,32 @@
-%pill{
+%pill {
   @include width-fit();
   @include border-radius(25px);
   @include selector(none);
+
   display: inline-block;
   background-color: $otp-input-bg;
   cursor: default;
 }
 
-.pill-sm{
+.pill-sm {
   @extend %pill;
-  padding: 0.4285rem, 0.8571rem;
 
+  padding: 0.4285rem, 0.8571rem;
   font-size: $card-sms;
 }
 
-.pill{
+.pill {
   @extend %pill;
+
   padding: 0.7142rem 1.4285rem;
 }
 
-.pill-lg{
+.pill-lg {
   @extend %pill;
+
   padding: 1rem 2.1428rem;
+
   @include border-radius(30px);
 
   font-size: $font-sm;
 }
-

@@ -5,30 +5,36 @@
 
 h1 {
   @extend %heading;
+
   font-size: $font-xxl;
 }
 
 h2 {
   @extend %heading;
+
   font-size: $font-xl;
 }
 
 h3 {
   @extend %heading;
+
   font-size: $font-lg;
 }
 
 h4 {
   @extend %heading;
+
   font-size: $font-md;
 }
 
-h5 {  
+h5 {
   @extend %heading;
+
   font-size: $font-mds;
 }
 
 h6 {
   @extend %heading;
+
   font-size: $font-sm;
 }

@@ -1,14 +1,14 @@
 .c-doubts {
-  background-color: #111111;
+  background-color: #111;
   color: $white;
   overflow-y: auto;
 
   .position-sticky {
-    background-color: #111111;
+    background-color: #111;
   }
 
   input {
-    margin: 15px 0px;
+    margin: 15px 0;
     background-color: #272727;
   }
 
@@ -45,7 +45,7 @@
 
   input,
   textarea {
-    background-color: #111111;
+    background-color: #111;
     padding: 6px;
     border-bottom: 1px solid grey;
     color: grey;

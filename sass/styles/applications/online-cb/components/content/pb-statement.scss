@@ -1,7 +1,7 @@
-.c-pb-statement{
-  @include  padding-mixin(30px, 56px, 30px, 30px);
+.c-pb-statement {
+  @include padding-mixin(30px, 56px, 30px, 30px);
 
-  .para{
+  .para {
     margin: 25px 0;
   }
 }

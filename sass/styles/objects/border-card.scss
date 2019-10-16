@@ -1,5 +1,6 @@
 %border-card {
   @include dimensions(100%, auto);
+
   border-radius: 15px;
   border: solid 1px $border-card-border-color;
   background-color: $white;
@@ -8,5 +9,6 @@
 
 .border-card {
   @extend %border-card;
+
   padding: 2.1428rem;
 }

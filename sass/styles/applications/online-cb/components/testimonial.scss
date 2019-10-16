@@ -1,44 +1,46 @@
-.c-testimonial{
+.c-testimonial {
   .dialog {
     height: 206px;
 
-    .content{
+    .content {
       height: 80px;
       overflow: auto;
       margin-bottom: 10px;
       font-size: $font-xs;
     }
 
-    .footer{
+    .footer {
       @include flexbox(column, false, flex-end);
+
       text-align: right;
     }
 
-    .img-container{
+    .img-container {
       max-height: 30px;
       width: 25%;
       overflow: hidden;
     }
-  } 
+  }
 }
 
-.c-testimonial-video{
+.c-testimonial-video {
   text-align: center;
   position: relative;
   padding-top: 70px;
 
-  .back-div{
+  .back-div {
     height: 65%;
   }
 
-  .video-container{
+  .video-container {
     @include dimensions(85%, 425px);
+
     border-radius: 10px;
     overflow: hidden;
     margin: 50px auto;
   }
 
-  iframe{
+  iframe {
     @include dimensions(100%, 100%);
   }
 }

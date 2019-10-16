@@ -2,39 +2,44 @@
   height: 20px;
   border-radius: 20px;
   background-color: $skeleton;
- 
 }
 
 @keyframes shine {
-  to{
+  to {
     background-position: 100% 0;
   }
 }
 
-.skeleton-lg, .skeleton-md, .skeleton-sm {
+.skeleton-lg,
+.skeleton-md,
+.skeleton-sm {
   margin: 5px 10px;
 }
 
 .skeleton-lg {
   @extend %skeleton;
+
   width: 65%;
   min-width: 75px;
 }
 
 .skeleton-md {
   @extend %skeleton;
+
   width: 50%;
   min-width: 50px;
 }
 
 .skeleton-sm {
   @extend %skeleton;
+
   width: 40%;
   min-width: 25px;
 }
 
 .skeleton-card {
   position: relative;
+
   @include padding-mixin(5px, 5px, 20px, 5px);
 }
 
@@ -46,25 +51,27 @@
   margin-top: 10px;
 }
 
-.rod-component-small{
+.rod-component-small {
   .skeleton-lg {
     @extend %skeleton;
+
     width: 75%;
   }
-  
+
   .skeleton-md {
     @extend %skeleton;
+
     width: 50%;
   }
-  
+
   .skeleton-sm {
     @extend %skeleton;
+
     width: 25%;
   }
 }
 
 .skeleton-animation {
- 
   &::before {
     content: '';
     width: 100%;
@@ -72,16 +79,16 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient( 
-      to right,
-      rgba(255, 255, 255, 0), 
-      rgba(255, 255, 255, 0.5) 50%, 
-      rgba(255, 255, 255, 0) 80% 
-    );
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 80%
+      );
     background-position: 0 0;
     background-size: 50px 100%;
     background-repeat: no-repeat;
     animation: shine 1s infinite;
   }
-  
 }
