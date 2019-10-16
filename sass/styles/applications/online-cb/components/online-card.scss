@@ -69,13 +69,11 @@
 @media (max-width: 767px) {
   .c-online-card {
     display: flex;
+    font-size: $font-xs;
 
     .card-mentor {
       margin-top: 0;
     }
-
-    display: flex;
-    font-size: $font-xs;
 
     .round-img-b {
       position: static;

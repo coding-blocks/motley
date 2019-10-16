@@ -19,6 +19,8 @@
         "warn"
       ]
     }],
-    "no-empty-source": false
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null
   }
 }
