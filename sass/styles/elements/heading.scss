@@ -1,40 +1,33 @@
-%heading {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: $extra-bold;
 }
 
 h1 {
-  @extend %heading;
-
   font-size: $font-xxl;
 }
 
 h2 {
-  @extend %heading;
-
   font-size: $font-xl;
 }
 
 h3 {
-  @extend %heading;
-
   font-size: $font-lg;
 }
 
 h4 {
-  @extend %heading;
-
   font-size: $font-md;
 }
 
 h5 {
-  @extend %heading;
-
   font-size: $font-mds;
 }
 
 h6 {
-  @extend %heading;
-
   font-size: $font-sm;
 }

@@ -3,8 +3,10 @@
 
   .card {
     margin: 25px auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding: {
+      top: 10px;
+      bottom: 20px;
+    }
   }
 
   .circle-back {

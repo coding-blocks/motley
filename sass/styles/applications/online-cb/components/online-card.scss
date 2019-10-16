@@ -28,8 +28,10 @@
   }
 
   .card-mentor {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin: {
+      top: 30px;
+      bottom: 15px;
+    }
 
     &::after {
       content: "";
@@ -48,8 +50,10 @@
   }
 
   .divider-h {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: {
+      top: 25px;
+      bottom: 20px;
+    }
   }
 
   //css for popup online-card
@@ -210,8 +214,10 @@
   }
 
   .rating {
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: {
+      top: 0;
+      bottom: 25px;
+    }
   }
 
   .expert-level,

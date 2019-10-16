@@ -31,15 +31,14 @@
       display: flex;
       justify-content: center;
       padding: 5px 30px;
-    }
 
-    div:last-child {
-      padding: 5px 60px;
-      padding-bottom: 40px;
-      text-align: center;
-      font-style: italic;
-      color: whitesmoke;
-      opacity: 0.5;
+      &:last-child {
+        padding: 5px 60px 40px;
+        text-align: center;
+        font-style: italic;
+        color: whitesmoke;
+        opacity: 0.5;
+      }
     }
   }
 

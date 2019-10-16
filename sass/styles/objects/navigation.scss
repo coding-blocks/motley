@@ -92,8 +92,10 @@
   }
 
   .main-nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
     height: 60px;
 
     .hamburger-parent {

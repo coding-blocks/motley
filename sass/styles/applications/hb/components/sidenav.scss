@@ -6,8 +6,10 @@
   left: 0;
   background-color: $black;
   z-index: 500;
-  padding-left: 0;
-  padding-right: 0;
+  padding: {
+    right: 0;
+    left: 0;
+  }
 
   .nav-element {
     display: block;
@@ -61,8 +63,10 @@
     height: auto;
 
     .col-2 {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding: {
+        right: 0 !important;
+        left: 0 !important;
+      }
     }
 
     .nav-element.active {

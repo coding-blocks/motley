@@ -119,8 +119,10 @@
 
     .dashboard {
       width: 100%;
-      padding-left: 10px;
-      padding-right: 0;
+      padding: {
+        right: 0;
+        left: 10px;
+      }
     }
 
     .content {
@@ -188,8 +190,10 @@
 
     .notes-list {
       .list-item {
-        padding-left: 0;
-        padding-right: 0;
+        padding: {
+          right: 0;
+          left: 0;
+        }
       }
     }
 

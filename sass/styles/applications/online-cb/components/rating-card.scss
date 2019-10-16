@@ -12,8 +12,10 @@
   }
 
   .rating {
-    margin-top: 8px;
-    margin-bottom: 15;
+    margin: {
+      top: 8px;
+      bottom: 15;
+    }
   }
 
   .review {
