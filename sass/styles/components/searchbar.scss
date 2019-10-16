@@ -1,0 +1,16 @@
+.searchbar {
+  input {
+    border-radius: 25px;
+    position: relative;
+    background-color: $white;
+    height: 50px;
+    width: 100%;
+    color: $black;
+  }
+
+  img {
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+  }
+}

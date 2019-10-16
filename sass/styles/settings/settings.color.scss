@@ -103,6 +103,7 @@ $interview-grey: #1b1e26;
 $purple: #271147;
 $black-grey: #14161c;
 $dcb-pink: #e54461;
+$hello-intern-pink: #f24f60;
 
 //threads
 $threads-separator: #666666;
@@ -133,6 +134,12 @@ $gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
 $gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
+
+//Hello - Intern
+$hi-gradient-pink-orange-lr: linear-gradient(to right, #f24f60, #f19f33);
+$hi-gradient-dpink-lr: linear-gradient(to right, #a5066c, #f24f60);
+$hi-gradient-blue-lr: linear-gradient(to right, #1c40de, #2ab5ed);
+$hi-gradient-purple-lr: linear-gradient(to right, #8008db, #430cd7);
 
 //Palette Colors
 $gradient-orange: linear-gradient(30deg, #e74e4b, #fb8133);
@@ -213,6 +220,10 @@ $gradient-map: (
   lgreen: $gradient-lgreen,
   pink: $gradient-pink,
   wblue: $gradient-wblue,
+  hi-pink-orange: $hi-gradient-pink-orange-lr,
+  hi-dpink: $hi-gradient-dpink-lr,
+  hi-blue: $hi-gradient-blue-lr,
+  hi-purple: $hi-gradient-purple-lr,
 );
 
 //Checkbox

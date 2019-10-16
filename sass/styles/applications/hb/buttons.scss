@@ -1,4 +1,6 @@
 .button-solid {
+  background-size: 100%;
+  
   &.button-orange {
     background-image: $button-gradient-orange;
   }

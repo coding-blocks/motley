@@ -26,8 +26,8 @@ $card-sms: 0.625rem;  // 9px
 $card-xs: 0.5rem;     // 7px
 
 @font-face {
-  font-family: $global-font-family;
+  font-family: "Gilroy";
   font-style: $global-font-style;
   font-weight: $regular;
-  src: url('../fonts/Gilroy.ttf')
+  src: local("Gilroy"), url('https://minio.codingblocks.com/motley/Gilroy.ttf') format("truetype");
 }

@@ -1,0 +1,31 @@
+.gradient-text-hi-orange,
+.gradient-text-hi-pink,
+.gradient-text-hi-blue,
+.gradient-text-hi-purple {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 28px;
+}
+
+.gradient-text-hi-orange {
+  background-image: $hi-gradient-pink-orange-lr;
+}
+
+.gradient-text-hi-pink {
+  background-image: $hi-gradient-dpink-lr;
+}
+
+.gradient-text-hi-blue {
+  background-image: $hi-gradient-blue-lr;
+}
+
+.gradient-text-hi-purple {
+  background-image: $hi-gradient-purple-lr;
+}
+
+.overlay-icon {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
