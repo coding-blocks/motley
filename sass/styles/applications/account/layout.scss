@@ -1,0 +1,12 @@
+.topbar {
+  height: 108px;
+}
+
+.work-area {
+  margin-top: 38px;
+  height: calc(100vh - 108px);
+
+  &__side-menu {
+    width: max-content;
+  }
+}

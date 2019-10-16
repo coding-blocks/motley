@@ -42,6 +42,10 @@
     position: absolute;
     right: 2.1428rem;
     top: 25%;
+
+    &.centered {
+      top: 35%;
+    }
   }
 }
 
@@ -77,6 +81,11 @@
     left: 0;
     top: 2px;
     background: $checkbox-solid;
+  }
+
+  &.checkbox-solid > input:checked ~ span.salmon-gradient::before,
+  &.checkbox-solid > input:checked + span.salmon-gradient::before {
+    background: $button-gradient;
   }
 
   & > input ~ span::after,
@@ -161,5 +170,128 @@ label.input-radio {
 
   input:checked ~ span:last-child::after {
     background: $gradient-orange-lr;
+  }
+}
+
+
+
+
+// CSS FOR SELECT LIST
+
+.select {
+  cursor: pointer;
+  background-color: $white;
+
+  &_expand {
+    width: 0;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &::after {
+      content: "\003E";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+      color: #3e3e3e;
+      font-size: 28px;
+      pointer-events: none;
+      z-index: 2;
+      transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+      opacity: 0.6;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:checked::after {
+      transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+    }
+  }
+
+  &_expandLabel {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &_close {
+    display: none;
+  }
+
+  &_closeLabel {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  &_items {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid $hover-grey;
+    padding-top: 40px;
+  }
+
+  &_input {
+    display: none;
+  }
+
+  &_label {
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    display: block;
+    height: 0;
+    font-size: 1.2rem;
+    line-height: 40px;
+    overflow: hidden;
+    color: #3e3e3e;
+    background-color: #fff;
+    cursor: pointer;
+    padding-left: 20px;
+
+    &-placeholder {
+      height: 40px;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.6;
+      background-color: transparent;
+    }
+  }
+
+  &_expand:checked {
+    + .select_closeLabel {
+      display: block;
+
+      + .select_options {
+        .select_label {
+          height: 40px;
+          &:hover {
+            background-color: #f7f7f7;
+          }
+        }
+
+        + .select_expandLabel {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_input:checked + .select_label {
+    height: 40px;
+    margin-top: -40px;
   }
 }
