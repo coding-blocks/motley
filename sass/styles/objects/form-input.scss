@@ -185,10 +185,18 @@ select {
   border: 0 !important;
   background-image: none;
   color: $dark-grey;
-}
+  flex: 1;
+  cursor: pointer;
+  background: $white;
+  padding-bottom: 1.5rem;
 
-select::-ms-expand {
-  display: none;
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:active {
+    background: $white;
+  }
 }
 
 .select {
@@ -197,35 +205,25 @@ select::-ms-expand {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid $hover-grey;
-}
-select {
-  flex: 1;
-  cursor: pointer;
-  background: $white;
-  padding-bottom: 1.5rem;
-}
 
-select:active {
-  background: $white;
-}
+  &::after {
+    content: "\003E";
+    position: absolute;
+    color: $dark-grey;
+    top: 25%;
+    right: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    opacity: 0.6;
+  }
 
-.select::after {
-  content: "\003E";
-  position: absolute;
-  color: $dark-grey;
-  top: 25%;
-  right: 0;
-  transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
-  cursor: pointer;
-  pointer-events: none;
-  transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
-  opacity: 0.6;
-}
+  &:hover::after {
+    opacity: 1;
+  }
 
-.select:hover::after {
-  opacity: 1;
-}
-
-.select:active::after {
-  transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+  &:active::after {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+  }
 }
