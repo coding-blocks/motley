@@ -8,7 +8,7 @@ Motley is a new generation CSS framework based on [ITCSS](https://www.xfive.co/b
 https://coding-blocks.github.io/motley
 
  ## Building and Running Motley Locally
- Building and running Motley in your local dev environment is very easy. Be sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/en/docs/install) installed, then follow the directions below. 
+ Building and running Motley in your local dev environment are very easy. Be sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/en/docs/install) installed, then follow the directions below. 
  
  1. Clone the source code
 
