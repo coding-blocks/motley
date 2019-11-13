@@ -159,7 +159,16 @@ label.input-radio {
     }
   }
 
-  input:checked ~ span:last-child::after {
-    background: $gradient-orange-lr;
+  &.gradient-input {
+    input:checked ~ span:last-child::after {
+      background: $gradient-orange-lr;
+    }
+  }
+
+  &.check-inpuut {
+    input:checked ~ span:last-child::after {
+      content: "&#10004";
+      color: $salmon;
+    }
   }
 }
