@@ -45,6 +45,15 @@
   }
 }
 
+input.underline-input {
+  border-bottom: solid 1px $hover-grey !important;
+  padding-bottom: 1.5rem;
+
+  &:focus {
+    border-bottom: solid 1px $black !important;
+  }
+}
+
 /*--------------------------INPUT CHECKBOX---------------------------*/
 .input-checkbox {
   position: relative;
