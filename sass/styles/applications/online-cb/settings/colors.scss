@@ -1,0 +1,9 @@
+$grey: #666666;
+
+//Text Colors
+$text-color-list: map-merge(
+  $text-color-list,
+  (
+    "grey": $grey,
+  )
+);
