@@ -1,38 +1,40 @@
-.c-buy-right{
+.c-buy-right {
   @include dimensions(100%, auto);
 
-  .border-card{
+  .border-card {
     @include dimensions(100%, 100%);
+
     padding: 0;
     overflow: hidden;
   }
 
-  .button-container{
+  .button-container {
     margin: 4rem 0;
   }
 
-  .button-solid{
+  .button-solid {
     margin-right: 4%;
   }
 
-  .course-features{
+  .course-features {
     padding: 0 3.6rem;
     margin-bottom: 2rem;
   }
-  
-  .video{
+
+  .video {
     @include dimensions(100%, 300px);
+
     border: none;
   }
 
-  .footer{
+  .footer {
     padding: 5rem 2.5rem 2rem 3.6rem;
     font-size: $font-mds;
     font-weight: $extra-bold;
-    background-image: linear-gradient(30deg, #333333, #000000);
+    background-image: linear-gradient(30deg, #333, #000);
     position: relative;
 
-    .floating-img{
+    .floating-img {
       max-width: 80px !important;
       position: absolute;
       top: -23%;

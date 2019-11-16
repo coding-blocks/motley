@@ -1,7 +1,11 @@
-@mixin position($type, $top:false, $right:false, $bottom:false, $left:false){
+@mixin position($type, $top:false, $right:false, $bottom:false, $left:false) {
   position: $type;
-  @if $top {top: $top};
-  @if $left {left: $left};
-  @if $bottom {bottom: $bottom};
-  @if $right {right: $right};
+
+  @if $top { top: $top; }
+
+  @if $left { left: $left; }
+
+  @if $bottom { bottom: $bottom; }
+
+  @if $right { right: $right; }
 }

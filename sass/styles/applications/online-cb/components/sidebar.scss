@@ -6,7 +6,9 @@
   .sidebar {
     display: block;
     position: fixed;
+
     @include dimensions(55vw, 100%);
+
     top: 0;
     left: 0;
     z-index: 200;

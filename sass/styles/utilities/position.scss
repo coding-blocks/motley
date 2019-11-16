@@ -4,23 +4,29 @@
   }
 }
 
-.tl {
+.tl,
+.tr {
   top: 0;
+}
+
+.tl {
   left: 0;
 }
 
 .tr {
-  top: 0;
   right: 0;
 }
 
-.bl {
+.bl,
+.br {
   bottom: 0;
+}
+
+.bl {
   left: 0;
 }
 
 .br {
-  bottom: 0;
   right: 0;
 }
 

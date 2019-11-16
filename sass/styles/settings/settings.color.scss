@@ -1,6 +1,6 @@
 /**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Colors config file   
+    Colors config file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 File contains color configuration for below listed objects and utilities:-
@@ -18,33 +18,33 @@ File contains color configuration for below listed objects and utilities:-
   - Hover Colors
 **/
 
-$black: #000000;
-$white: #ffffff;
-$salmon: #ff6666;
+$black: #000;
+$white: #fff;
+$salmon: #f66;
 $green: #8dbf75;
 $light-green: #b1d792;
-$yellow: #ffcc66;
+$yellow: #fc6;
 $blue: #246db3;
 $orange: #f19633;
 $grey: #a2a4a8;
 $purple: #271147;
-$dark-grey: #666666;
+$dark-grey: #666;
 
 $facebook: #3b5998;
 $google: #f4695a;
 $twitter: #03a9f4;
 $linkedin: #007bb6;
 
-$global-font-text-color: #333333;
-$global-font-heading-color: #333333;
+$global-font-text-color: #333;
+$global-font-heading-color: #333;
 $font-complete: #8dbf75;
 $font-sub-heading: #f6776f;
 
 $color-button-primary: #ed8080;
-$button-element-level: #ff6666;
+$button-element-level: #f66;
 
 $card-box-border: #e8e8e8;
-$default-border: #cccccc;
+$default-border: #ccc;
 $nav-border: #f6f6f6;
 $vp-border: #676767;
 $border: rgba(225, 225, 225, 0.75);
@@ -59,20 +59,20 @@ $nav-info-bg: #fcfcfc;
 $card-mentor: #e9e9e9;
 $card-box-shadow: rgba(51, 51, 51, 0.1);
 
-$button-element-level: #ff6666;
-$classroom-border: #cccccc;
+$button-element-level: #f66;
+$classroom-border: #ccc;
 $nav-border: #f6f6f6;
 $t-heading-border: #f3f3f3;
 $rating-star: #fce298;
 $reset-progress: #fc4f4f;
-$faded-text: #999999;
+$faded-text: #999;
 $intermediate-level: #fecc6e;
 $accordion-li: #fdfdfd;
 $status-back-complete: #d7f1d3;
 $status-front-complete: #82d073;
 $status-back-incomplete: #bebebe;
-$default-accordion-font: #666666;
-$navLink: #666666;
+$default-accordion-font: #666;
+$navLink: #666;
 $transparent: transparent;
 $disabled-input: #ececec;
 
@@ -81,7 +81,7 @@ $search-box-color: #f2f2f2;
 $faded-cont: #e4e4e4;
 $editor-line-number: #202020;
 $input-code-editor: #2a2a2a;
-$modal-fader: #111111;
+$modal-fader: #111;
 $fail-red: #e8685d;
 $dropdown-divider: #f4f4f4;
 $vp-select-box: #262626;
@@ -91,7 +91,7 @@ $content-search-box: #4c4b4b;
 $search-box-placeholder: #a0a0a0;
 $search-box-input: #d5d5d5;
 $invert: #272727;
-$spaced-black: #222222;
+$spaced-black: #222;
 $light-filter: rgba(255, 255, 255, 0.9);
 $dark-filter: rgba(80, 80, 80, 0.1);
 $bellow-black: #181818;
@@ -106,18 +106,18 @@ $dcb-pink: #e54461;
 $hello-intern-pink: #f24f60;
 
 //threads
-$threads-separator: #666666;
+$threads-separator: #666;
 $threads-invert: #191919;
 
 //lists
-$list-shaded-invert: #111111;
+$list-shaded-invert: #111;
 $list-shaded-background: rgba(255, 255, 255, 0.9);
 
 //Gradients
 $bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
-$gradient-black: linear-gradient(30deg, #333333, #000000);
+$gradient-black: linear-gradient(30deg, #333, #000);
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
 $course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
 $button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160, 160, 160));
@@ -128,7 +128,7 @@ $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
 $gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-purple: linear-gradient(30deg, #271147, #553180);
 $gradient-navy: linear-gradient(30deg, #133155, #122a42);
-$gradient-dblue-lr: linear-gradient(to right, #0b024e, #000033);
+$gradient-dblue-lr: linear-gradient(to right, #0b024e, #003);
 $gradient-green-lr: linear-gradient(to right, #56aa4e, #7eda75);
 $gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
 $gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
@@ -163,9 +163,9 @@ $checkbox-solid: $gradient-orange;
 $hover-grey: #f3f3f3;
 
 // Divided List Colors
-$dark-grey-list: #999999;
+$dark-grey-list: #999;
 $light-grey-list: #f3f3f3;
-$white-list: #ffffff;
+$white-list: #fff;
 
 //Background Colors
 $bg-color-list: (
@@ -204,8 +204,8 @@ $gradient-text-color-list: (
 );
 
 $gradient-map: (
-  black-lr: linear-gradient(30deg, #333333, #000000),
-  black-bt: linear-gradient(to top, #333333, #000000),
+  black-lr: linear-gradient(30deg, #333, #000),
+  black-bt: linear-gradient(to top, #333, #000),
   violet-lr: linear-gradient(to right, #692fdc, #452ba3),
   violet-bt: linear-gradient(to top, #692fdc, #452ba3),
   red-lr: linear-gradient(to right, #ed788d 0%, #ec837a),

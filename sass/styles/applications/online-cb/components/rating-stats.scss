@@ -1,36 +1,38 @@
-.c-rating-stats{
-    margin-bottom: 30px;
+.c-rating-stats {
+  margin-bottom: 30px;
 
-    progress{
-        margin-bottom: 15px;
+  progress {
+    margin-bottom: 15px;
+  }
+
+  .score {
+    min-width: 131px;
+    transform: translateY(-10px);
+
+    .rating {
+      margin: 3px 0 10px 0;
     }
 
-    .score{
-        min-width: 131px;
-        transform: translateY(-10px);
+    .pos-rating,
+    .neg-rating {
+      font-size: $font-xl;
+    }
+  }
 
-        .rating{
-            margin: 3px 0 10px 0;
-        }
-
-        .pos-rating, .neg-rating{
-            font-size: $font-xl;
-        }
+  .stats {
+    .rating {
+      transform: translateY(-6px);
     }
 
-    .stats{
-        .rating{
-            transform: translateY(-6px);
-        }
-
-        .pos-rating, .neg-rating{
-            font-size: $font-sm;
-        }
+    .pos-rating,
+    .neg-rating {
+      font-size: $font-sm;
     }
+  }
 
-    .font-lg{
-        font-size: 4.7143rem !important;
-    }
+  .font-lg {
+    font-size: 4.7143rem !important;
+  }
 }
 
 @media screen and (max-width: 575px) {

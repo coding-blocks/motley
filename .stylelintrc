@@ -1,0 +1,26 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "./sass/styles/generic/normalize.scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "at-root",
+        "each",
+        "else",
+        "extend",
+        "for",
+        "function",
+        "if",
+        "include",
+        "mixin",
+        "return",
+        "warn"
+      ]
+    }],
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null
+  }
+}

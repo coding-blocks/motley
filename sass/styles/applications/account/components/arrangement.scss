@@ -18,6 +18,7 @@
   .heading-u-red {
     @include padding-mixin(0, 160px, 15px, 0);
     @include margin(0, 0, 20px, 0);
+
     font-size: $font-mds;
   }
 
@@ -37,6 +38,7 @@
 
     .flex-row {
       @include padding-mixin(15px, 0, 15px, 0);
+
       justify-content: space-between;
     }
 
@@ -62,7 +64,7 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .c-arrangement{
+  .c-arrangement {
     .nav-info {
       display: none;
     }
@@ -71,11 +73,11 @@
       padding: 55px 30px 25px 30px;
     }
 
-    .input-text{
+    .input-text {
       height: 50px;
     }
 
-    .border-card{
+    .border-card {
       width: 100%;
     }
   }
@@ -103,8 +105,10 @@
 
     .border-card {
       width: 100%;
-      padding-bottom: 90px;
-      padding-top: 20px;
+      padding: {
+        top: 20px;
+        bottom: 90px;
+      }
     }
 
     .button-row {

@@ -1,32 +1,35 @@
-.tab-nav{
+.tab-nav {
   @include dimensions(100%, 75px);
   @include flexbox(row);
+
   background-color: $global-font-heading-color;
   color: $white;
   font-size: $font-md;
   font-weight: $font-medium;
   justify-content: space-around;
-  .active{
+
+  .active {
     border-bottom: solid 4px $button-element-level;
   }
 }
 
-.tab-icons, .tab-items{
+.tab-icons,
+.tab-items {
   cursor: pointer;
   flex: 1;
   align-items: center;
   justify-content: center;
 }
 
-.tab-items{
+.tab-items {
   display: flex;
 
-  &:hover{
+  &:hover {
     color: $button-element-level;
   }
 }
 
-.tab-icons{
+.tab-icons {
   display: none;
   padding: 0 9%;
 }
@@ -53,17 +56,18 @@
   }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
   .tab-items {
     display: none;
   }
+
   .tab-icons {
     display: flex;
   }
 }
 
-@media all and (max-width: 575px){
-  .tab-nav{
+@media all and (max-width: 575px) {
+  .tab-nav {
     height: 50px;
   }
 }

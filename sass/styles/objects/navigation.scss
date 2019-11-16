@@ -2,19 +2,19 @@
   border-bottom: 1px solid $nav-border;
   padding: 20px;
   position: fixed;
-  top:0;
+  top: 0;
   background: $white;
   width: 100%;
   height: 70px;
-  max-height:70px;
+  max-height: 70px;
   z-index: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-list{
-  margin:  0;
+.nav-list {
+  margin: 0;
   display: flex;
   align-items: center;
   padding: 0;
@@ -22,8 +22,11 @@
 
 .nav-items {
   @include font($global-font-family, $font-sm, $global-font-weight);
+
   display: inline-block;
+
   @include margin(null, null, null, 40px);
+
   position: relative;
 }
 
@@ -31,7 +34,7 @@
   color: $button-gradient;
 }
 
-.nav-search{
+.nav-search {
   width: 350px;
 }
 
@@ -41,11 +44,9 @@
 
 .pointer {
   cursor: pointer;
-}
 
-.pointer {
   .notify-dot {
-    position: absolute;   
+    position: absolute;
   }
 }
 
@@ -53,16 +54,17 @@
   color: $button-element-level;
 }
 
-.nav-right, .nav-left{
+.nav-right,
+.nav-left {
   display: flex;
   align-items: center;
 }
 
 @media all and (max-width: 875px) {
-  .main-nav{
+  .main-nav {
     .hamburger-parent {
       display: inline-block;
-      opacity: .4;
+      opacity: 0.4;
       font-size: $font-md;
       margin-right: 20px;
       cursor: pointer;
@@ -71,47 +73,51 @@
 
   .menu-icon {
     display: inline-block;
+
     @include dimensions(50px, 50px);
-    background-size: 50px ;
+
+    background-size: 50px;
     background-image: url("/images/menu-icon.png");
   }
 }
 
-@media all and(max-width: 575px){
-  .nav-logo{
+@media all and(max-width: 575px) {
+  .nav-logo {
     height: 30px;
     margin: 0;
   }
 
-  .logo-link{
+  .logo-link {
     min-width: unset;
   }
 
-  .main-nav{
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .main-nav {
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
     height: 60px;
 
-    .hamburger-parent{
+    .hamburger-parent {
       font-size: $font-xs;
     }
 
-    .card{
+    .card {
       @include padding-s(5px, 25px);
+
       width: 240px;
     }
 
-    .nav-info{
+    .nav-info {
       font-size: $card-md;
 
-      .flex-row{
+      .flex-row {
         @include padding-s(20px, 0);
       }
     }
 
-    .round-img{
+    .round-img {
       @include dimensions(40px, 40px);
     }
   }
-
 }

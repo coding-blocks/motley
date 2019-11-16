@@ -1,55 +1,57 @@
-.c-cc{
-  .border-card{
+.c-cc {
+  .border-card {
     border: solid 1px #2e1084;
   }
 
-  .banner{
+  .banner {
     width: 100vw;
   }
 
-  .divided-list{
+  .divided-list {
     color: #f6013d !important;
   }
 
-  .round{
+  .round {
     border-radius: 50px;
   }
 
-  .status-img{
+  .status-img {
     width: 35px;
   }
 
-  %red-blue-gradient{
+  %red-blue-gradient {
     background-image: linear-gradient(to right, #e9414d, #2d2982);
   }
 
-  .red, .active{
+  .red,
+  .active {
     @extend %red-blue-gradient;
+
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
   }
 
-  .button-solid{
+  .button-solid {
     @extend %red-blue-gradient;
 
-    &:hover{
-      box-shadow:  0 0px 20px 0 $cricket-cup;
+    &:hover {
+      box-shadow: 0 0 20px 0 $cricket-cup;
     }
   }
 }
 
-.label-dashed{
+.label-dashed {
   background-image: $gradient-red-blue;
   position: relative;
   border-radius: 18px;
   padding: 5px 10px;
 
-  &:before{
+  &::before {
     width: calc(100% - 2px);
     height: calc(100% - 2px);
     content: '';
-    background-color: #ffffff;
+    background-color: #fff;
     position: absolute;
     border-radius: inherit;
     top: 1px;
@@ -61,11 +63,12 @@
   }
 }
 
-.bg-gradient-red-blue-lr{
+.bg-gradient-red-blue-lr {
   background-image: $gradient-red-blue;
 }
 
-.s-10x10{
+.s-10x10 {
   @include dimensions(10px, 10px);
+
   display: inline-block;
 }
