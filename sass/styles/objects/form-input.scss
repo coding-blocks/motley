@@ -39,10 +39,20 @@
     padding-right: 6.7857rem;
   }
 
+  a {
+    position: absolute;
+    right: 2.1428rem;
+    top: 35%;
+  }
+
   button {
     position: absolute;
     right: 2.1428rem;
     top: 25%;
+
+    &.centered {
+      top: 35%;
+    }
   }
 }
 
@@ -80,6 +90,11 @@
     left: 0;
     top: 2px;
     background: $checkbox-solid;
+  }
+
+  &.checkbox-solid > input:checked ~ span.salmon-gradient::before,
+  &.checkbox-solid > input:checked + span.salmon-gradient::before {
+    background: $button-gradient;
   }
 
   & > input ~ span::after,
@@ -167,5 +182,60 @@ label.input-radio {
 
   input:checked ~ span:last-child::after {
     background: $gradient-orange-lr;
+  }
+}
+
+// CSS FOR SELECT LIST
+
+select.underline-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  color: $dark-grey;
+  flex: 1;
+  cursor: pointer;
+  background: $white;
+  padding-bottom: 1.25rem;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:active {
+    background: $white;
+  }
+}
+
+.select-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid $hover-grey;
+
+  &::after {
+    content: "\003E";
+    position: absolute;
+    color: $dark-grey;
+    top: 25%;
+    right: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    opacity: 0.6;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:active::after {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
   }
 }
