@@ -20,6 +20,7 @@
       .circle-back {
         background: $font-complete;
       }
+
       .circle-front {
         background: linear-gradient(to top, #8dbf75, #96e6a1);
       }
@@ -29,6 +30,7 @@
       .circle-back {
         background: $global-font-text-color;
       }
+
       .circle-front {
         background: linear-gradient(to top, #7a7a7a, #414141);
       }
@@ -64,9 +66,11 @@
           background-image: linear-gradient(to top, #ed719c, #ec8a6d);
         }
 
-        &:after {
+        &::after {
           content: "";
+
           @include dimensions(20px, 20px);
+
           background-image: url("/images/wrong.svg");
           margin-left: 30px;
         }
@@ -79,9 +83,11 @@
           background-color: $font-complete;
         }
 
-        &:after {
+        &::after {
           content: "";
+
           @include dimensions(20px, 20px);
+
           background-image: url("/images/right.svg");
           margin-left: 30px;
         }

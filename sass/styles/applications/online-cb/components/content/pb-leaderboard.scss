@@ -1,9 +1,8 @@
-.c-pb-leaderboard{
+.c-pb-leaderboard {
   padding: 40px 0;
 
-  .badge{
+  .badge {
     @include dimensions(108px, 126px);
     @include margin(0, auto, 25px, auto);
   }
 }
-

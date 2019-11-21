@@ -11,10 +11,11 @@
 
 body {
   @include font($global-font-family, inherit, normal);
+
   padding-top: 70px;
 }
 
-@media screen and (max-width:  575px) {
+@media screen and (max-width: 575px) {
   body {
     padding-top: 60px;
     // font-size
@@ -23,8 +24,8 @@ body {
 
 @media print {
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     background: transparent !important;
     color: #000 !important; // Black prints faster: h5bp.com/s
     box-shadow: none !important;
@@ -36,18 +37,18 @@ body {
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
 
   // Don't show links that are fragment identifiers,
   // or use the `javascript:` pseudo protocol
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: "";
   }
 
@@ -88,12 +89,14 @@ body {
   .navbar {
     display: none;
   }
+
   .btn,
   .dropup > .btn {
     > .caret {
       border-top-color: #000 !important;
     }
   }
+
   .label {
     border: 1px solid #000;
   }
@@ -106,6 +109,7 @@ body {
       background-color: #fff !important;
     }
   }
+
   .table-bordered {
     th,
     td {
@@ -129,14 +133,14 @@ ul {
 }
 
 a {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
+
 input:focus {
-  outline:none !important;
+  outline: none !important;
 }
 
 .height-100 {
-  height: 100%
+  height: 100%;
 }
-

@@ -8,6 +8,7 @@
 
 #editor {
   @include dimensions(100%, 50%);
+
   font-size: $font-xs;
   background: $editor-background;
 
@@ -29,6 +30,7 @@
 
   .open-select-box {
     @include dimensions(187px, 170px);
+
     margin-bottom: 4px;
     position: absolute;
     background: $editor-line-number;
@@ -36,8 +38,10 @@
     display: none;
     border-top: 1px solid gray;
     z-index: 100;
+
     ul {
       padding-left: 25px;
+
       li {
         padding-bottom: 10px;
       }
@@ -58,6 +62,7 @@
 
   .button-solid {
     @include dimensions(100px, 40px);
+
     font-size: 1rem;
     float: right;
   }

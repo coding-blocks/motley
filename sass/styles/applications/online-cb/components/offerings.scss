@@ -1,15 +1,17 @@
 .c-offerings {
-	.heading {
-		margin-bottom: 35px;
-		margin-top: 40px;
-		font-size: $font-mds;
-		font-weight: $bold;
-	}
+  .heading {
+    margin: {
+      top: 40px;
+      bottom: 35px;
+    }
+    font-size: $font-mds;
+    font-weight: $bold;
+  }
 
-	.border-card{
-		max-width: 205px;
-		margin: 0 auto;
-	}
+  .border-card {
+    max-width: 205px;
+    margin: 0 auto;
+  }
 }
 
 @media all and (max-width: 575px) {

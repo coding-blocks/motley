@@ -36,6 +36,7 @@
 
 .phone {
   @include dimensions(100%, 555px);
+
   max-width: 292px;
   z-index: 200;
   position: absolute;
@@ -44,6 +45,7 @@
 
 .c-phone-content {
   @include dimensions(84%, 95%);
+
   z-index: -100;
   position: absolute;
   top: 2%;

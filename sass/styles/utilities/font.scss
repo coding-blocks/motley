@@ -16,10 +16,6 @@ $list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $
   font-style: italic !important;
 }
 
-.bold {
-  font-weight: $font-medium !important;
-}
-
 .normal {
   font-weight: $font-normal !important;
 }
@@ -46,22 +42,22 @@ $list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $
 }
 
 .gradient-text-orange {
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: $gradient-orange;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $gradient-orange;
 }
 
 .gradient-text-green {
   -webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
   background-image: $gradient-lgreen;
 }
 
 .gradient-text-pink {
   -webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-image: $gradient-pink;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $gradient-pink;
 }

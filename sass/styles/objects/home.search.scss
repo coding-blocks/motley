@@ -1,6 +1,6 @@
 .input-search {
   @include border-radius(28px);
-  background-color: $search-box-color;
+
   position: relative;
   border: none;
   background-color: transparent;
@@ -14,4 +14,3 @@
   left: 89%;
   position: absolute;
 }
-

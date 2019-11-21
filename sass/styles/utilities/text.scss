@@ -51,12 +51,15 @@ $vertical-align: (
     .t-align-#{$label}-r {
       text-align: right !important;
     }
+
     .t-align-#{$label}-l {
       text-align: left !important;
     }
+
     .t-align-#{$label}-c {
       text-align: center !important;
     }
+
     .t-align-#{$label}-j {
       text-align: justify !important;
     }
@@ -68,14 +71,17 @@ $vertical-align: (
     .v-align-#{$label}-t {
       vertical-align: top !important;
     }
+
     .v-align-#{$label}-m {
       vertical-align: middle !important;
     }
+
     .v-align-#{$label}-b {
       vertical-align: bottom !important;
     }
   }
 }
+
 .word-wrap {
   word-wrap: break-word;
 }

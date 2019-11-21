@@ -1,23 +1,25 @@
-.c-login-signup{
-  @include dimensions(100%, calc(100vh - 70px));  
+.c-login-signup {
+  @include dimensions(100%, calc(100vh - 70px));
+
   background-size: 1250px;
 }
 
-.c-login{
+.c-login {
   @include dimensions(80%, auto);
   @include padding-mixin(40px, 70px, 15pxpx, 70px);
+
   margin: 30px auto;
   max-width: 828px;
 }
 
-@media screen and (max-width: 767px){
-  .c-login{
+@media screen and (max-width: 767px) {
+  .c-login {
     padding: 35px 50px;
   }
 }
 
-@media screen and (max-width:  575px){
-  .c-login{
+@media screen and (max-width: 575px) {
+  .c-login {
     padding: 30px 30px;
     width: 90%;
   }

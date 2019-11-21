@@ -1,14 +1,14 @@
 .c-doubts {
-  background-color: #111111;
+  background-color: #111;
   color: $white;
   overflow-y: auto;
 
   .position-sticky {
-    background-color: #111111;
+    background-color: #111;
   }
 
   input {
-    margin: 15px 0px;
+    margin: 15px 0;
     background-color: #272727;
   }
 
@@ -31,21 +31,20 @@
       display: flex;
       justify-content: center;
       padding: 5px 30px;
-    }
 
-    div:last-child {
-      padding: 5px 60px;
-      padding-bottom: 40px;
-      text-align: center;
-      font-style: italic;
-      color: whitesmoke;
-      opacity: 0.5;
+      &:last-child {
+        padding: 5px 60px 40px;
+        text-align: center;
+        font-style: italic;
+        color: whitesmoke;
+        opacity: 0.5;
+      }
     }
   }
 
   input,
   textarea {
-    background-color: #111111;
+    background-color: #111;
     padding: 6px;
     border-bottom: 1px solid grey;
     color: grey;
