@@ -4,6 +4,7 @@
       text-align: center;
     }
   }
+
   thead {
     color: $orange;
   }
@@ -13,22 +14,21 @@
   }
 
   &.profile {
-    table{
-      td:first-child{
+    table {
+      td:first-child {
         font-weight: $bold;
         font-size: $font-sm;
         text-align: left;
       }
 
       tbody {
-        td{
+        td {
           font-weight: $semi-bold;
         }
       }
-    } 
+    }
   }
 }
-
 
 table.hover {
   tr:hover {

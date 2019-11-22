@@ -8,6 +8,7 @@
 
     .content {
       @include dimensions(100%, 100%);
+
       padding: 1.8rem;
       position: relative;
     }
@@ -20,6 +21,7 @@
 
   .round-img-b {
     @include dimensions(86px, 86px);
+
     min-height: 86px;
     position: absolute;
     bottom: -43px;

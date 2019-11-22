@@ -1,20 +1,24 @@
-@mixin progress($height: 10px, $value-color: $faded-cont, $background: $nav-border){
-  progress{
+@mixin progress($height: 10px, $value-color: $faded-cont, $background: $nav-border) {
+  progress {
     height: $height;
     background-color: $background;
   }
-  progress::-moz-progress-bar { 
+
+  progress::-moz-progress-bar {
     background-color: $value-color;
     background-image: $value-color;
   }
+
   progress::-webkit-progress-bar {
     height: $height;
     background-color: $background;
   }
+
   progress::-webkit-progress-value {
     background-color: $value-color;
     background-image: $value-color;
   }
+
   progress:-ms-fill {
     height: $height;
     background-color: $value-color;

@@ -1,0 +1,10 @@
+.img-ring {
+  border: solid 1px $salmon;
+  height: 10rem;
+  width: 10rem;
+
+  &--profile {
+    height: 5.714rem;
+    width: 5.714rem;
+  } 
+}

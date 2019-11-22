@@ -1,12 +1,17 @@
-@mixin flexbox($direction, $justify-content: false, $align-items: false, $webkit: true, $ms:true){
-    @if($webkit)    {display: -webkit-box};
-    @if($webkit)    {display: -webkit-flex};
-    @if($ms)        {display: -ms-flexbox};
-    display: flex;
+@mixin flexbox($direction, $justify-content: false, $align-items: false, $webkit: true, $ms:true) {
+  @if ($webkit) { display: -webkit-box; }
 
-    @if($webkit)    {-webkit-flex-direction: $direction};
-    flex-direction: $direction;
+  @if ($webkit) { display: -webkit-flex; }
 
-    @if($justify-content)    {justify-content: $justify-content}
-    @if($align-items)    {align-items: $align-items}
+  @if ($ms) { display: -ms-flexbox; }
+
+  display: flex;
+
+  @if ($webkit) { -webkit-flex-direction: $direction; }
+
+  flex-direction: $direction;
+
+  @if ($justify-content) { justify-content: $justify-content; }
+
+  @if ($align-items) { align-items: $align-items; }
 }

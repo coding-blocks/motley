@@ -1,65 +1,67 @@
-%list-item{
+%list-item {
   padding: 15px 20px;
-  
-  .row{
+
+  .row {
     width: 100%;
     padding: 0;
   }
 
-  & > .row:not(:last-child){
+  & > .row:not(:last-child) {
     padding-bottom: 10px;
   }
 }
 
-.list-divided{
+.list-divided {
   @include border(solid, 1px, $border);
   @include border-radius(5px);
 
-  & > *:not(:last-child){
-    border-bottom: solid 1px $border; 
+  & > *:not(:last-child) {
+    border-bottom: solid 1px $border;
   }
 
-  .list-item{
+  .list-item {
     @extend %list-item;
   }
 }
 
-.list-shaded{
-  & > *:not(:last-child){
+.list-shaded {
+  & > *:not(:last-child) {
     margin-bottom: 6px;
   }
 
-  > *{
+  > * {
     background-color: $list-shaded-background;
   }
 
-  &.invert{
+  &.invert {
     background-color: $black;
 
-    > *{
+    > * {
       background-color: $list-shaded-invert;
     }
   }
 
-  .list-item{
+  .list-item {
     @extend %list-item;
   }
 }
 
-.li-left{
+.li-left {
   @include flexbox(row, flex-start, center);
+
   margin-right: auto;
   text-align: left;
 
-  & > *{
+  & > * {
     padding-left: 0;
     text-align: left;
     flex: 0 0 auto;
   }
 }
 
-.li-right{
+.li-right {
   @include flexbox(row, flex-end, center);
+
   margin-left: auto;
   text-align: right;
 
@@ -73,26 +75,31 @@
 @include li-left-right-padding(left, 5%);
 @include li-left-right-padding(right, 5%);
 
-.list-style-circle{
+.list-style-circle {
   list-style: circle !important;
 
-  *{
+  * {
     list-style-type: circle !important;
   }
 }
 
-.list-style-disc{
+.list-style-disc {
   list-style: disc !important;
 
-  *{
+  * {
     list-style-type: disc !important;
   }
 }
 
-.list-style-square{
+.list-style-square {
   list-style: square !important;
-  
-  *{
+
+  * {
     list-style-type: square !important;
   }
+}
+
+.clear-list {
+  list-style-type: none;
+  margin: 0;
 }

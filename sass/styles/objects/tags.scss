@@ -1,10 +1,11 @@
-.tag{
+.tag {
   @include border-radius(10px);
   @include selector(none);
+
   padding: 3px 12px;
   background-color: $nav-border;
 
-  &.red{
+  &.red {
     color: white !important;
     background-image: $button-gradient;
   }

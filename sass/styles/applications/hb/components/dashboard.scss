@@ -30,6 +30,7 @@
 
 .banner-nav {
   @include flexbox(column, center, center);
+
   z-index: 1;
   height: 100%;
   width: 10%;

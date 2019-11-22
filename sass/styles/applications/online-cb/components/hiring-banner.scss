@@ -1,5 +1,6 @@
 .c-home-banner {
   @include dimensions(100%, 500px);
+
   background-image: url('/images/home_bg.jpg');
   padding: 30px 5%;
   display: flex;

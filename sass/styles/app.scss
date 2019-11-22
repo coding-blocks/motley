@@ -1,15 +1,11 @@
 @import "settings/settings.color";
 @import "settings/settings.global";
 @import "settings/settings.font";
-
 @import "tools";
-
 @import "generic/normalize";
 @import "generic/reset";
 @import "utilities";
-
 @import "animations";
-
 @import "elements";
 @import "objects";
 @import "components";
@@ -17,5 +13,4 @@
 
 //TODO: OPTION TO SELECT THEME AND INSERT THAT THEME HERE
 @import "themes";
-
 @import "trumps";

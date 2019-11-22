@@ -70,8 +70,10 @@
   }
 
   .c-summary .para {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: {
+      top: 8px;
+      bottom: 8px;
+    }
   }
 }
 
@@ -86,8 +88,10 @@
   }
 
   .rating {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: {
+      top: 10px;
+      bottom: 10px;
+    }
   }
 }
 

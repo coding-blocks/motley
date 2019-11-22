@@ -54,6 +54,7 @@
 
     .circle {
       @include dimensions(50px, 50px);
+
       background-color: $interview-grey;
     }
   }

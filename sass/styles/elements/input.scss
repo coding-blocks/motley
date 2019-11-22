@@ -1,13 +1,15 @@
-input{
-  &[type=text], &[type=textarea], &[type=password]{
+input {
+  &[type=text],
+  &[type=textarea],
+  &[type=password] {
     border: none;
   }
 
-  &[disabled]{
+  &[disabled] {
     background: $disabled-input;
   }
 }
 
-textarea{
+textarea {
   border: none;
 }

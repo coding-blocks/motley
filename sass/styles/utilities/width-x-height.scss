@@ -1,7 +1,8 @@
-@for $i from 1 through 10{
+@for $i from 1 through 10 {
   $width: ($i * 10px);
   $height: ($i * 10px);
-  .s-#{$i * 10}x#{$i * 10}{
+
+  .s-#{$i * 10}x#{$i * 10} {
     @include dimensions($width, $height);
   }
 }

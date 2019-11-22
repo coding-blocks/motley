@@ -1,5 +1,6 @@
 #mentors {
   @include border-radius(50%);
+
   position: absolute;
   display: inline-block;
   background-color: $card-mentor;
@@ -14,8 +15,9 @@
   border-radius: 35%;
 }
 
-.card-mentors{
+.card-mentors {
   @include dimensions(66%, 100%);
+
   max-width: 40px !important;
   max-height: 40px;
 }
@@ -23,10 +25,11 @@
 @for $i from 0 through 2 {
   .card-mentors:nth-child(#{$i+1}) {
     @extend #mentors;
+
     z-index: 100 - $i;
-    -ms-transform: translateX(multiply-px($i,63%)) ;
-    -webkit-transform: translateX(multiply-px($i,63%)) ;
-    transform: translateX(multiply-px($i,63%)) ;
+    -ms-transform: translateX(multiply-px($i, 63%));
+    -webkit-transform: translateX(multiply-px($i, 63%));
+    transform: translateX(multiply-px($i, 63%));
   }
 }
 
@@ -35,7 +38,7 @@
   font-size: $card-md;
   position: relative;
   float: left;
-  width: 84%
+  width: 84%;
 }
 
 .card-mentor-name {
@@ -44,6 +47,6 @@
 }
 
 .card-mentor-divider {
-  border: .5px solid $card-mentor;
+  border: 0.5px solid $card-mentor;
   margin: 10px 0;
 }

@@ -1,12 +1,11 @@
-@mixin aspect-ratio($width, $height){
-  .u-ar-#{$width}-to-#{$height}{
+@mixin aspect-ratio($width, $height) {
+  .u-ar-#{$width}-to-#{$height} {
     position: relative;
     padding-bottom: 100% * ($height / $width);
-    
+
     & > * {
       @include dimensions(100%, 100%);
       @include position(absolute, 0, false, false, 0);
-    
     }
   }
 }

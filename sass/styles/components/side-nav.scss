@@ -3,6 +3,7 @@
 
   .card {
     @include padding-mixin(90px, 0, 50px, 0);
+
     text-align: center;
   }
 
@@ -16,6 +17,7 @@
 
   .round-img {
     @include dimensions(120px, 120px);
+
     margin-right: 28px;
   }
 

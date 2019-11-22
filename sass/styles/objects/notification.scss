@@ -1,10 +1,12 @@
-.notification{
+.notification {
   position: relative;
 
-  &:after{
+  &::after {
     content: '';
+
     @include position(absolute, -4px, -4px);
     @include dimensions(8px, 8px);
+
     border-radius: 50%;
     background-color: $salmon;
   }
