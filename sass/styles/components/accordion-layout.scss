@@ -51,6 +51,12 @@
     }
   }
 
+  .list-divided > .list-divided {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
   .row {
     padding: 22px 8% 22px 0;
   }
