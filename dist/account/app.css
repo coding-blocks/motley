@@ -3636,8 +3636,11 @@ label.input-radio {
     border-radius: 20px; }
   label.input-radio > span:last-child:hover {
     cursor: pointer; }
-  label.input-radio input:checked ~ span:last-child::after {
+  label.input-radio.gradient-input input:checked ~ span:last-child::after {
     background: linear-gradient(to right, #ec6333, #f19633); }
+  label.input-radio.check-inpuut input:checked ~ span:last-child::after {
+    content: "&#10004";
+    color: #f66; }
 
 select.underline-select {
   -webkit-appearance: none;

@@ -2508,7 +2508,7 @@ html {
   color: #fc6 !important; }
 
 .grey {
-  color: #666 !important; }
+  color: #a2a4a8 !important; }
 
 .purple {
   color: #271147 !important; }
@@ -3636,8 +3636,11 @@ label.input-radio {
     border-radius: 20px; }
   label.input-radio > span:last-child:hover {
     cursor: pointer; }
-  label.input-radio input:checked ~ span:last-child::after {
+  label.input-radio.gradient-input input:checked ~ span:last-child::after {
     background: linear-gradient(to right, #ec6333, #f19633); }
+  label.input-radio.check-inpuut input:checked ~ span:last-child::after {
+    content: "&#10004";
+    color: #f66; }
 
 select.underline-select {
   -webkit-appearance: none;
@@ -6335,6 +6338,28 @@ ul.divided-list.timer > *:not(:last-child) {
 .mentor-card .head {
   height: 160px; }
 
+.buy-course-card .course-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: solid 1.5px #fff;
+  position: relative;
+  padding: 0.75rem; }
+
+.goodies-card {
+  position: relative; }
+  .goodies-card .free-tag {
+    top: 10%;
+    right: 12%; }
+  .goodies-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    height: 25%;
+    width: 6px;
+    background: linear-gradient(to right, #ec6333, #f19633); }
+
 .difficulty-dots .pos-diff, .difficulty-dots .neg-diff {
   display: inline-block;
   margin-right: 3px;
@@ -7693,6 +7718,28 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .mentor-card .head {
   height: 160px; }
+
+.buy-course-card .course-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: solid 1.5px #fff;
+  position: relative;
+  padding: 0.75rem; }
+
+.goodies-card {
+  position: relative; }
+  .goodies-card .free-tag {
+    top: 10%;
+    right: 12%; }
+  .goodies-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    height: 25%;
+    width: 6px;
+    background: linear-gradient(to right, #ec6333, #f19633); }
 
 .play-store-button {
   background-color: #2c2d32;
