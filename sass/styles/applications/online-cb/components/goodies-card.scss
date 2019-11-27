@@ -1,0 +1,18 @@
+.goodies-card {
+  position: relative;
+
+  .free-tag {
+    top: 10%;
+    right: 12%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    height: 25%;
+    width: 6px;
+    background: $gradient-orange-lr;
+  }
+}

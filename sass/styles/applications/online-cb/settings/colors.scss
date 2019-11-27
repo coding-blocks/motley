@@ -7,3 +7,29 @@ $text-color-list: map-merge(
     "grey": $grey,
   )
 );
+
+//Gradients
+$gradient-blue: linear-gradient(to right, #1c40de, #2ab5ed);
+$gradient-lblue: linear-gradient(to right, #475ff5, #6ed9fc);
+$gradient-dblue: linear-gradient(to right, #0467f6, #0800a3);
+$gradient-navy: linear-gradient(to right, #19316c, #01b3c9);
+$gradient-cyan: linear-gradient(to right, #39dec0, #1d87b1);
+$gradient-purple: linear-gradient(to right, #8f3ce5, #3a30d6);
+$gradient-dpurple: linear-gradient(to right, #00205b, #84358e);
+$gradient-magenta: linear-gradient(to right, #f24f60, #a5066c);
+$gradient-pink: linear-gradient(to right, #e74b50, #d12ebd);
+$gradient-green: linear-gradient(to top, #83db3b, #26a87c);
+$gradient-yellow: linear-gradient(to top, #fa8733, #f7c332);
+$gradient-orange: linear-gradient(to top, #e74e4b, #fb8133);
+
+//Gradient List
+$gradient-map: map-merge(
+  $gradient-map,
+  (
+    lblue: $gradient-lblue,
+    dblue: $gradient-dblue,
+    dpurple: $gradient-dpurple,
+    magenta: $gradient-magenta,
+    green: $gradient-green,
+  )
+)
