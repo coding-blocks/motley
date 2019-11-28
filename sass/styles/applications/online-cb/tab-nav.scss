@@ -1,0 +1,19 @@
+.tab-nav-underline {
+  & .tab {
+    &:hover {
+      color: $orange;
+    }
+
+    &.active {
+      border-bottom: solid 1px $orange;
+      color: $orange;
+      font-weight: $bold;
+    }
+
+    margin-right: 3rem;
+    font-size: $font-sm;
+    font-weight: $font-normal;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
