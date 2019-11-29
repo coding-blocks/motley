@@ -10,6 +10,11 @@
     background-image: $gradient-green; 
   }
 
+  &.button-white {
+    background: $white !important;
+    color: $orange;
+  }
+
   &.disabled,
   &:disabled {
     cursor: auto;

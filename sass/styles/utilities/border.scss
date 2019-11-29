@@ -17,7 +17,8 @@
 @each $type, $color in
   ('red', $salmon),
   ('green', $light-green),
-  ('black', $black) {
+  ('black', $black),
+  ('orange', $orange) {
   .b-#{$type} {
     border-color: $color !important;
   }
