@@ -4420,6 +4420,15 @@ select.underline-select {
   list-style-type: none;
   margin: 0; }
 
+.list-with-divider > .list-with-divider-item:not(:last-child):after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
 .curtains {
   width: 100vw;
   height: 100vh;
@@ -5073,6 +5082,54 @@ ul.divided-list.timer > *:not(:last-child) {
 @media screen and (max-width: 575px) {
   .hamburger-nav__top-bar {
     height: 65px; } }
+
+.c-topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  margin-right: 0;
+  margin-left: 0;
+  border-bottom: solid 1px #eee;
+  z-index: 400; }
+  .c-topnav ul {
+    margin: unset; }
+  .c-topnav .logo {
+    text-align: left; }
+  .c-topnav .top-nav-option {
+    text-align: center;
+    float: left; }
+  .c-topnav .top-nav-option:hover a h6 {
+    color: #f19633; }
+  .c-topnav .top-nav-option.active a h6 {
+    color: #f19633; }
+  .c-topnav h6 {
+    font-weight: 700; }
+  .c-topnav .right-nav {
+    margin: unset;
+    display: flex;
+    align-items: center; }
+  @media screen and (max-width: 1200px) {
+    .c-topnav .top-nav-option h6 {
+      font-size: 1rem; } }
+  @media screen and (max-width: 992px) {
+    .c-topnav .top-nav-option h6 {
+      font-size: 0.75rem; } }
+
+.hamburger-menu {
+  display: inline-block; }
+  .hamburger-menu span {
+    display: block;
+    background: #000;
+    border-radius: 2px; }
+  .hamburger-menu .ham-toggle {
+    width: 25px;
+    position: relative;
+    cursor: pointer; }
+    .hamburger-menu .ham-toggle .hamburger span {
+      height: 3px;
+      margin: 5px 0; }
 
 @media (max-width: 575px) {
   html {

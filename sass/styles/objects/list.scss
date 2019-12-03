@@ -103,3 +103,16 @@
   list-style-type: none;
   margin: 0;
 }
+
+
+.list-with-divider {
+  & > .list-with-divider-item:not(:last-child):after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e8e8e8;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
