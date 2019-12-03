@@ -35,3 +35,34 @@ progress::-webkit-progress-value {
   display: block;
   background-color: $faded-cont;
 }
+
+.progress-lock {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5%;
+
+  &--50 {
+    left: 40%;
+  }
+
+  &--90 {
+    left: 75%;
+  }
+
+  @media screen and (max-width: 767px){
+    &--50 {
+      left: 30%;
+    }
+
+    &--90 {
+      left: 65%;
+    }
+
+    &__bubble {
+      max-width: 110px;
+      text-align: center;
+    }
+  }
+}
