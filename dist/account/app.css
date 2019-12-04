@@ -3125,6 +3125,25 @@ progress::-webkit-progress-value {
   display: block;
   background-color: #e4e4e4; }
 
+.progress-lock {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5%; }
+  .progress-lock--50 {
+    left: 40%; }
+  .progress-lock--90 {
+    left: 75%; }
+  @media screen and (max-width: 767px) {
+    .progress-lock--50 {
+      left: 30%; }
+    .progress-lock--90 {
+      left: 65%; }
+    .progress-lock__bubble {
+      max-width: 110px;
+      text-align: center; } }
+
 button {
   padding: 0; }
   button:disabled {
