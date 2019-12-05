@@ -89,3 +89,7 @@ $vertical-align: (
 .circle-list {
   list-style: disc;
 }
+
+.commafy > * :not(:last-child):after {
+  content: ", ";
+}

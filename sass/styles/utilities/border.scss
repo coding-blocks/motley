@@ -8,7 +8,7 @@
 }
 
 @each $direction in ('top', 'right', 'bottom', 'left') {
-  .b-#{$direction} {
+  .border-#{$direction} {
     border-#{$direction}: solid 1px $search-box-color;
   }
 }
