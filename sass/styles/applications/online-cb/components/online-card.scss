@@ -27,28 +27,6 @@
     padding-top: 55px;
   }
 
-  .card-mentor {
-    margin: {
-      top: 30px;
-      bottom: 15px;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-
-    .card-mentor-text {
-      font-size: $card-md;
-      padding-left: 15px;
-    }
-
-    .card-mentor-name {
-      font-weight: $semi-bold;
-    }
-  }
-
   .divider-h {
     margin: {
       top: 25px;
@@ -74,10 +52,6 @@
   .c-online-card {
     display: flex;
     font-size: $font-xs;
-
-    .card-mentor {
-      margin-top: 0;
-    }
 
     .round-img-b {
       position: static;
@@ -157,16 +131,6 @@
 
       @include padding-s(10px, 10px);
 
-      .card-mentor {
-        .card-mentor-text {
-          font-size: $card-sms;
-        }
-
-        .card-mentor-name {
-          font-size: $card-sm;
-        }
-      }
-
       .button-row {
         margin-top: 10px;
         font-size: $card-sms;
@@ -186,10 +150,6 @@
     margin-top: 10px;
   }
 
-  .card-mentor {
-    display: flex;
-  }
-
   .card-image {
     width: 10%;
   }
@@ -206,11 +166,6 @@
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
-  }
-
-  .card-mentor-text {
-    padding-left: 5px;
-    top: 0;
   }
 
   .rating {

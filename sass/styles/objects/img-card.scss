@@ -12,6 +12,16 @@
       padding: 1.8rem;
       position: relative;
     }
+
+    &__course-logo {
+      height: 60px;
+      width: 60px;
+      background: inherit;
+      border: solid 1px $white;
+      border-radius: 30px;
+      padding: 0.5rem;
+      position: relative;
+    }
   }
 
   .foot {
