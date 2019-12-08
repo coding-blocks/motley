@@ -6564,6 +6564,17 @@ ul.divided-list.timer > *:not(:last-child) {
     width: 6px;
     background: linear-gradient(to right, #ec6333, #f19633); }
 
+.c-sidenav {
+  width: 100vw; }
+
+@media (min-width: 768px) {
+  .c-sidenav {
+    width: 12vw; }
+  .ml-sidenav {
+    margin-left: 12vw; }
+  .ml-sidenav-neg {
+    margin-left: -12vw; } }
+
 .a-ocb .tab-nav-underline .tab {
   margin-right: 3rem;
   font-size: 1.143rem;
@@ -8028,6 +8039,17 @@ ul.divided-list.timer > *:not(:last-child) {
     height: 25%;
     width: 6px;
     background: linear-gradient(to right, #ec6333, #f19633); }
+
+.c-sidenav {
+  width: 100vw; }
+
+@media (min-width: 768px) {
+  .c-sidenav {
+    width: 12vw; }
+  .ml-sidenav {
+    margin-left: 12vw; }
+  .ml-sidenav-neg {
+    margin-left: -12vw; } }
 
 .play-store-button {
   background-color: #2c2d32;
