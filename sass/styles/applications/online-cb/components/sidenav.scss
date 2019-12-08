@@ -1,0 +1,17 @@
+.c-sidenav {
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .c-sidenav {
+    width: 12vw;
+  }
+
+  .ml-sidenav {
+    margin-left: 12vw;
+  }
+
+  .ml-sidenav-neg {
+    margin-left: -12vw;
+  }
+}
