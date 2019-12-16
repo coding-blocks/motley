@@ -7,7 +7,7 @@
   }
 
   &.button-green {
-    background-image: $gradient-green; 
+    background-image: $gradient-green;
   }
 
   &.button-white {
@@ -39,6 +39,11 @@
     }
   }
 
+  &.button-white {
+    border: solid 1px #fff;
+    color: #fff;
+  }
+
   &.disabled,
   &:disabled {
     border-color: $faded-text !important;
@@ -47,7 +52,7 @@
 
     &:hover {
       background: $white !important;
-      color: $grey  !important;
-    } 
+      color: $grey !important;
+    }
   }
 }
