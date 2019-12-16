@@ -5,14 +5,11 @@
 }
 
 .circle-back {
-  @include dimensions(100%, 100%);
   @include border-radius(50%);
 }
 
 .circle-front {
-  @include dimensions(75%, 75%);
   @include border-radius(50%);
-
   position: absolute;
 }
 

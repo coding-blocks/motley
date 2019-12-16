@@ -1,12 +1,12 @@
 div.input-radio {
   display: flex;
-  padding-left: 25px;
-
+  
   input {
-    visibility: hidden;
+    display: none;
   }
-
+  
   label {
+    cursor: pointer;
     display: flex;
     align-items: center;
   }
