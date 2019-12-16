@@ -45,54 +45,6 @@
 
   .quiz-content {
     overflow: auto;
-
-    .choice {
-      align-items: center;
-
-      .round {
-        background-color: $default-border;
-      }
-
-      &.marked {
-        .round {
-          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
-        }
-      }
-
-      &.incorrect {
-        color: $font-sub-heading;
-
-        .round {
-          background-image: linear-gradient(to top, #ed719c, #ec8a6d);
-        }
-
-        &::after {
-          content: "";
-
-          @include dimensions(20px, 20px);
-
-          background-image: url("/images/wrong.svg");
-          margin-left: 30px;
-        }
-      }
-
-      &.correct {
-        color: $font-complete;
-
-        .round {
-          background-color: $font-complete;
-        }
-
-        &::after {
-          content: "";
-
-          @include dimensions(20px, 20px);
-
-          background-image: url("/images/right.svg");
-          margin-left: 30px;
-        }
-      }
-    }
   }
 
   .quiz-status {
