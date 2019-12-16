@@ -10,3 +10,4 @@ examples/public/stylesheets/
 *.swp
 *.swo
 dump.rdb
+.vscode
