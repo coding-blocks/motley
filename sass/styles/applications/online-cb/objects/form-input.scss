@@ -21,6 +21,13 @@ div.input-radio {
     border-radius: 20px;
   }
 
+  &.small {
+    label::before {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
   &.gradient-input {
     input:checked ~ label::before {
       content: "";
