@@ -1,0 +1,35 @@
+div.input-radio {
+  display: flex;
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  label::before {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-color: $t-heading-border;
+    border-radius: 20px;
+  }
+
+  &.gradient-input {
+    input:checked ~ label::before {
+      content: "";
+      background: $gradient-orange-lr;
+    }
+  }
+
+  input:checked ~ label::before {
+    content: "\2713";
+    color: $salmon;
+  }
+}
