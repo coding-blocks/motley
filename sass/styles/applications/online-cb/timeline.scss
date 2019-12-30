@@ -1,0 +1,11 @@
+.timeline {
+  background: $interview-grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__top-bar {
+    height: 80px;
+    border-bottom: solid 1px $border-grey;
+  }
+}
