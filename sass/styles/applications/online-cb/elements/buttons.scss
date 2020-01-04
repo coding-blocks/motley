@@ -10,6 +10,12 @@
     background-image: $gradient-green; 
   }
 
+  &.button-grey {
+    background-image: 0;
+    background-color: $light-grey !important;
+    color: #666666;
+  }
+
   &.button-white {
     background: $white !important;
     color: $orange;
