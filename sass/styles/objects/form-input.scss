@@ -197,27 +197,23 @@ label.input-radio {
 // CSS FOR SELECT LIST
 
 select.underline-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background-image: none;
   color: $dark-grey;
-  flex: 1;
-  cursor: pointer;
   background: $white;
-  padding-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
 
-  &::-ms-expand {
-    display: none;
-  }
+  // &::-ms-expand {
+  //   display: none;
+  // }
 
-  &:active {
-    background: $white;
-  }
+  // &:active {
+  //   background: $white;
+  // }
+}
+
+select.rounded-select {
+  color: $dark-grey;
+  background: $hover-grey;
+  border-radius: 50px;
 }
 
 .select-container {
@@ -226,6 +222,27 @@ select.underline-select {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid $hover-grey;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    flex: 1;
+    cursor: pointer;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
 
   &::after {
     content: "\003E";

@@ -19,6 +19,15 @@
   @extend %pill;
 
   padding: 0.7142rem 1.4285rem;
+
+  &.pill-dashed {
+    background: unset;
+    border: solid 1px $orange;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $gradient-orange;
+  }
 }
 
 .pill-lg {
