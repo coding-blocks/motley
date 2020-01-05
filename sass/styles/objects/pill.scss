@@ -28,6 +28,12 @@
     background-clip: text;
     background-image: $gradient-orange;
   }
+
+  &.pill-white {
+    background: unset;
+    border: solid 1px $white;
+    color: $white;
+  }
 }
 
 .pill-lg {
