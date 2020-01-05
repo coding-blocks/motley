@@ -200,20 +200,13 @@ select.underline-select {
   color: $dark-grey;
   background: $white;
   padding-bottom: 0.5rem;
-
-  // &::-ms-expand {
-  //   display: none;
-  // }
-
-  // &:active {
-  //   background: $white;
-  // }
 }
 
 select.rounded-select {
   color: $dark-grey;
   background: $hover-grey;
   border-radius: 50px;
+  padding: 0.6rem 0.6rem;
 }
 
 .select-container {

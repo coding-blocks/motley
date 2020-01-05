@@ -1,0 +1,14 @@
+.select-container {
+  border-bottom: unset;
+
+  &::after {
+    top: 45%;
+    right: 0.6rem;
+  }
+
+  select {
+    &:active {
+      background: $hover-grey;
+    }
+  }
+}
