@@ -3,6 +3,10 @@
   @include dimensions(100%, 1px);
 
   background: $card-box-border;
+
+  &.content-divider {
+    background-clip: content-box;
+  }
 }
 
 //<hr> divider vertical

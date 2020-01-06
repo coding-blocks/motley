@@ -1,10 +1,9 @@
-.buy-course-card {
-  .course-logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    border: solid 1.5px $white;
-    position: relative;
-    padding: 0.75rem;
-  }
+.course-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: solid 1.5px $white;
+  position: relative;
+  padding: 0.75rem;
+  background: inherit;
 }
