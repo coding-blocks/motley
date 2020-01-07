@@ -89,3 +89,9 @@ $vertical-align: (
 .circle-list {
   list-style: disc;
 }
+
+.hover-orange {
+  a:hover {
+    color: $orange;
+  }
+}
