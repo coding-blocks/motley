@@ -227,6 +227,7 @@ select.rounded-select {
     background-image: none;
     flex: 1;
     cursor: pointer;
+    padding-right: 2.5rem;
 
     &::-ms-expand {
       display: none;
