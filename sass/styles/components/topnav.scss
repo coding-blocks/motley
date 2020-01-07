@@ -48,6 +48,12 @@
     margin: unset;
     display: flex;
     align-items: center;
+
+    a {
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 
   //Media Queries
