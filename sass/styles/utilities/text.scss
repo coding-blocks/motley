@@ -90,6 +90,6 @@ $vertical-align: (
   list-style: disc;
 }
 
-.commafy > * :not(:last-child):after {
-  content: ", ";
+.commafy > :not(:last-child):after {
+  content: ",";
 }
