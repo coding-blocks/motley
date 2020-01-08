@@ -2885,6 +2885,9 @@ html {
 .circle-list {
   list-style: disc; }
 
+.hover-orange a:hover {
+  color: #f19633; }
+
 .position-static {
   position: static; }
 
@@ -3552,6 +3555,8 @@ textarea {
   width: 100%;
   height: 1px;
   background: #e8e8e8; }
+  .divider-h.content-divider {
+    background-clip: content-box; }
 
 .divider-v {
   width: 1px;
@@ -3700,23 +3705,15 @@ label.input-radio {
     color: #f66; }
 
 select.underline-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background-image: none;
   color: #666;
-  flex: 1;
-  cursor: pointer;
   background: #fff;
-  padding-bottom: 1.25rem; }
-  select.underline-select::-ms-expand {
-    display: none; }
-  select.underline-select:active {
-    background: #fff; }
+  padding-bottom: 0.5rem; }
+
+select.rounded-select {
+  color: #666;
+  background: #f3f3f3;
+  border-radius: 50px;
+  padding: 0.6rem 0.6rem; }
 
 .select-container {
   position: relative;
@@ -3724,6 +3721,22 @@ select.underline-select {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid #f3f3f3; }
+  .select-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    flex: 1;
+    cursor: pointer;
+    padding-right: 2.5rem; }
+    .select-container select::-ms-expand {
+      display: none; }
+    .select-container select:active {
+      background: #fff; }
   .select-container::after {
     content: "\003E";
     position: absolute;
@@ -4152,6 +4165,17 @@ select.underline-select {
 
 .pill {
   padding: 0.7142rem 1.4285rem; }
+  .pill.pill-dashed {
+    background: unset;
+    border: solid 1px #f19633;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(30deg, #e74e4b, #fb8133); }
+  .pill.pill-white {
+    background: unset;
+    border: solid 1px #fff;
+    color: #fff; }
 
 .pill-lg {
   padding: 1rem 2.1428rem;
@@ -4276,16 +4300,12 @@ select.underline-select {
   box-sizing: content-box; }
 
 .circle-back {
-  width: 100%;
-  height: 100%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%; }
 
 .circle-front {
-  width: 75%;
-  height: 75%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -5146,6 +5166,8 @@ ul.divided-list.timer > *:not(:last-child) {
     margin: unset;
     display: flex;
     align-items: center; }
+    .c-topnav .right-nav a:hover {
+      color: #f19633; }
   @media screen and (max-width: 1200px) {
     .c-topnav .top-nav-option h6 {
       font-size: 1rem; } }
