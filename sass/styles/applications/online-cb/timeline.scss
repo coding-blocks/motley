@@ -3,9 +3,10 @@
   position: fixed;
   top: 0;
   width: 100%;
+  color: $white;
 
   &__top-bar {
-    height: 80px;
     border-bottom: solid 1px $border-grey;
+    padding: 1.5rem;
   }
 }
