@@ -18,10 +18,13 @@ File contains color configuration for below listed objects and utilities:-
   - Hover Colors
 **/
 @font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Gilroy"), url("https://minio.codingblocks.com/motley/Gilroy.ttf") format("truetype"); }
+  font-family: 'Gilroy';
+  src: url("https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src: url("https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Bold.woff"); }
 
 .border-radius-none {
   border-radius: unset !important; }
