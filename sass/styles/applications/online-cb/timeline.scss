@@ -8,7 +8,7 @@
   overflow-y: auto;
 
   .divider-h {
-    background: #2b2f37;
+    background: $border-grey;
   }
 
   &__top-bar {
@@ -42,10 +42,10 @@
       }
 
       &__section {
-        border-bottom: solid 1px #2b2f37;
+        border-bottom: solid 1px $border-grey;
 
         a > .row:first-child {
-          border-bottom: solid 1px #2b2f37;
+          border-bottom: solid 1px $border-grey;
         }
 
         .video-indicator {
@@ -102,7 +102,7 @@
           margin-right: -1.5rem;
           margin-left: -1.5rem;
           padding: 1.5rem;
-          background: #2b2f37;
+          background: $border-grey;
         }
       }
 
