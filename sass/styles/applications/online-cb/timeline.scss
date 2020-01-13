@@ -1,0 +1,119 @@
+.timeline {
+  background: $interview-grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: $white;
+  height: 100vh;
+  overflow-y: auto;
+
+  .divider-h {
+    background: $border-grey;
+  }
+
+  &__top-bar {
+    border-bottom: solid 1px $border-grey;
+    padding: 1.5rem;
+    height: 82px;
+
+    .video-title {
+      max-height: 24px;
+    }
+
+    .text-ellipses {
+      white-space: unset;
+    }
+  }
+
+  &__main-area {
+    &__content-bar {
+      height: 100%;
+      overflow-y: auto;
+      position: relative !important;
+
+      .position-sticky {
+        top: 0;
+        background: #1b1e26;
+        z-index: 1;
+      }
+
+      h4 {
+        margin-bottom: 2.2rem;
+      }
+
+      &__section {
+        border-bottom: solid 1px $border-grey;
+
+        a > .row:first-child {
+          border-bottom: solid 1px $border-grey;
+        }
+
+        .video-indicator {
+          height: 15px;
+        }
+      }
+    }
+
+    &__video-area {
+      overflow-y: auto;
+      height: 100%;
+
+      .doubt-card {
+        height: 120px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &__main-area {
+      padding-top: 2.2rem;
+      height: calc(100vh - 82px);
+
+      &__content-bar {
+        padding-left: 1.5rem;
+      }
+
+      &__video-area {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        .main-card {
+          height: calc(100vh - 232.8px);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &__top-bar {
+      display: none;
+    }
+
+    &__main-area {
+      &__content-bar {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .collapsible-content--hidden {
+          display: none;
+        }
+
+        &__title--phone {
+          margin-right: -1.5rem;
+          margin-left: -1.5rem;
+          padding: 1.5rem;
+          background: $border-grey;
+        }
+      }
+
+      &__video-area {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .doubt-card {
+          display: none;
+        }
+      }
+    }
+  }
+}
