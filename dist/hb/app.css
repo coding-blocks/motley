@@ -3441,7 +3441,8 @@ textarea {
     border: solid 1px #fff;
     border-radius: 30px;
     padding: 0.5rem;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
 
 .img-card .foot {
   padding: 20px 30px;
@@ -3776,6 +3777,25 @@ select.rounded-select {
     opacity: 1; }
   .select-container:active::after {
     transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75); }
+
+.search-bar {
+  background: #f3f3f3;
+  border-radius: 50px;
+  padding: 0.5rem 3rem 0.5rem 2rem; }
+  .search-bar input {
+    background: unset;
+    color: #000;
+    width: 100%; }
+  .search-bar .icon {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.75rem; }
+  .search-bar--inverted {
+    background: #292c33; }
+    .search-bar--inverted input {
+      color: #c4c4c4; }
+    .search-bar--inverted .icon {
+      color: #c4c4c4; }
 
 .input-search {
   -moz-border-radius: 28px;
