@@ -1,6 +1,5 @@
 $grey: #f3f3f3;
 $orange: #f2734c;
-$code-editor-grey: #1e1e1e;
 
 // Gradients
 $gradient-navy: linear-gradient(30deg, #133155, #122a42);
@@ -44,9 +43,19 @@ $text-color-list: map-merge(
   $text-color-list,
   (
     "grey": $grey,
-    "dark-grey": $dark-grey
+    "dark-grey": $dark-grey,
+    "orange": $orange
   )
 );
 
 //Border card
 $border-card-border-color: #f3f3f3;
+
+//Tags
+$tag-dashed-border-color: $orange;
+$tag-dashed-text-color: $orange;
+
+
+//Pills
+$pill-dashed-border-color: $orange;
+$pill-dashed-text-color: $orange;
