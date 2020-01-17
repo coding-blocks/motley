@@ -4,7 +4,7 @@
   @include selector(none);
 
   display: inline-block;
-  background-color: $otp-input-bg;
+  font-weight: $bold;
   cursor: default;
 }
 
@@ -12,6 +12,7 @@
   @extend %pill;
 
   padding: 0.4285rem, 0.8571rem;
+  background-color: $otp-input-bg;
   font-size: $card-sms;
 }
 
@@ -34,14 +35,25 @@
     border: solid 1px $white;
     color: $white;
   }
+  padding: 0.6rem 1rem;
+  background-color: $otp-input-bg;
 }
 
 .pill-lg {
   @extend %pill;
 
   padding: 1rem 2.1428rem;
+  background-color: $otp-input-bg;
 
   @include border-radius(30px);
 
   font-size: $font-sm;
+}
+
+.pill-dashed {
+  @extend %pill;
+
+  padding: 0.6rem 1rem;
+  border: solid 1px $pill-dashed-border-color;
+  color: $pill-dashed-text-color;
 }

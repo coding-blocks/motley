@@ -2,18 +2,18 @@ $overflow: (auto) (hidden) (scroll) (visible);
 
 @each $label in $overflow {
   .overflow-#{$label} {
-    overflow: $label;
+    overflow: $label !important;
   }
 }
 
 @each $label in $overflow {
   .overflow-x-#{$label} {
-    overflow-x: $label;
+    overflow-x: $label !important;
   }
 }
 
 @each $label in $overflow {
   .overflow-y-#{$label} {
-    overflow-y: $label;
+    overflow-y: $label !important;
   }
 }

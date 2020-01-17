@@ -1,0 +1,61 @@
+$grey: #f3f3f3;
+$orange: #f2734c;
+
+// Gradients
+$gradient-navy: linear-gradient(30deg, #133155, #122a42);
+
+$gradient-dblue-lr: linear-gradient(to right, #0b024e, #003);
+$gradient-green-lr: linear-gradient(to right, #83db3b, #26a87c);
+$gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
+$gradient-blue-lr: linear-gradient(to right, #1b40de, #2cb4ed);
+$gradient-orange-lr: linear-gradient(to right, #e74e4b, #fb8133);
+$gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
+$gradient-nostalgia-purple: linear-gradient(to right, #691e68, #695186);
+
+$button-gradient-green: linear-gradient(to right, #82da3b, #27a87c, #82da3b);
+$button-gradient-orange: linear-gradient(to right, #ec6333, #f19633, #ec6333);
+// Gradient List
+
+$gradient-map: map-merge(
+  $gradient-map,
+  (
+    navy: $gradient-navy,
+    dblue-lr: $gradient-dblue-lr,
+    green-lr: $gradient-green-lr,
+    lblue-lr: $gradient-lblue-lr,
+    blue-lr: $gradient-blue-lr,
+    orange-lr: $gradient-orange-lr,
+    black-bt: $gradient-black-bt,
+    nostalgia-purple: $gradient-nostalgia-purple
+  )
+);
+
+//Background Colors
+$bg-color-list: map-merge(
+  $bg-color-list,
+  (
+    "grey": $grey
+  )
+);
+
+//Text Colors
+$text-color-list: map-merge(
+  $text-color-list,
+  (
+    "grey": $grey,
+    "dark-grey": $dark-grey,
+    "orange": $orange
+  )
+);
+
+//Border card
+$border-card-border-color: #f3f3f3;
+
+//Tags
+$tag-dashed-border-color: $orange;
+$tag-dashed-text-color: $orange;
+
+
+//Pills
+$pill-dashed-border-color: $orange;
+$pill-dashed-text-color: $orange;

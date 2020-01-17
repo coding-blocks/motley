@@ -11,6 +11,8 @@ File contains color configuration for below listed objects and utilities:-
   - Checkbox
   - Divided List
   - Border Card
+  - Tags
+  - Pills
 
 - Utilities
   - Text Colors
@@ -204,7 +206,8 @@ $text-color-list: (
 //Gradient Text Colors
 $gradient-text-color-list: (
   "red": $button-gradient,
-  "blue": $gradient-blue-lr
+  "blue": $gradient-blue-lr,
+  "orange": $gradient-orange-lr
 );
 
 $gradient-map: (
@@ -237,3 +240,11 @@ $checkbox-solid: $gradient-orange-30-deg;
 
 //Border Card
 $border-card-border-color: #e8e8e8;
+
+//Tags
+$tag-dashed-border-color: $salmon;
+$tag-dashed-text-color: $salmon;
+
+//Pills
+$pill-dashed-border-color: $salmon;
+$pill-dashed-text-color: $salmon;
