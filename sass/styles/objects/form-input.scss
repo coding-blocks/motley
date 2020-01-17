@@ -259,3 +259,35 @@ select.rounded-select {
     transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
   }
 }
+
+// CSS for Search Bar
+
+.search-bar {
+  background: $hover-grey;
+  border-radius: 50px;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+
+  input {
+    background: unset;
+    color: $black;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.75rem;
+  }
+
+  &--inverted {
+    background: #292c33;
+    
+    input {
+      color: #c4c4c4;
+    }
+
+    .icon {
+      color: #c4c4c4;
+    }
+  }
+}

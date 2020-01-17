@@ -18,10 +18,13 @@ File contains color configuration for below listed objects and utilities:-
   - Hover Colors
 **/
 @font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Gilroy"), url("https://minio.codingblocks.com/motley/Gilroy.ttf") format("truetype"); }
+  font-family: 'Gilroy';
+  src: url("https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src: url("https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Bold.woff"); }
 
 .border-radius-none {
   border-radius: unset !important; }
@@ -3438,7 +3441,8 @@ textarea {
     border: solid 1px #fff;
     border-radius: 30px;
     padding: 0.5rem;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
 
 .img-card .foot {
   padding: 20px 30px;
@@ -3773,6 +3777,25 @@ select.rounded-select {
     opacity: 1; }
   .select-container:active::after {
     transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75); }
+
+.search-bar {
+  background: #f3f3f3;
+  border-radius: 50px;
+  padding: 0.5rem 3rem 0.5rem 2rem; }
+  .search-bar input {
+    background: unset;
+    color: #000;
+    width: 100%; }
+  .search-bar .icon {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.75rem; }
+  .search-bar--inverted {
+    background: #292c33; }
+    .search-bar--inverted input {
+      color: #c4c4c4; }
+    .search-bar--inverted .icon {
+      color: #c4c4c4; }
 
 .input-search {
   -moz-border-radius: 28px;
@@ -6694,6 +6717,75 @@ ul.divided-list.timer > *:not(:last-child) {
     content: "";
     display: block;
     clear: both; }
+
+.a-ocb .timeline {
+  background: #1b1e26;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  height: 100vh;
+  overflow-y: auto; }
+  .a-ocb .timeline .divider-h {
+    background: #2b2f37; }
+  .a-ocb .timeline__top-bar {
+    border-bottom: solid 1px #2b2f37;
+    padding: 1.5rem;
+    height: 82px; }
+    .a-ocb .timeline__top-bar .video-title {
+      max-height: 24px; }
+    .a-ocb .timeline__top-bar .text-ellipses {
+      white-space: unset; }
+  .a-ocb .timeline__main-area__content-bar {
+    height: 100%;
+    overflow-y: auto;
+    position: relative !important; }
+    .a-ocb .timeline__main-area__content-bar .position-sticky {
+      top: 0;
+      background: #1b1e26;
+      z-index: 1; }
+    .a-ocb .timeline__main-area__content-bar h4 {
+      margin-bottom: 2.2rem; }
+    .a-ocb .timeline__main-area__content-bar__section {
+      border-bottom: solid 1px #2b2f37; }
+      .a-ocb .timeline__main-area__content-bar__section a > .row:first-child {
+        border-bottom: solid 1px #2b2f37; }
+      .a-ocb .timeline__main-area__content-bar__section .video-indicator {
+        height: 15px; }
+  .a-ocb .timeline__main-area__video-area {
+    overflow-y: auto;
+    height: 100%; }
+    .a-ocb .timeline__main-area__video-area .doubt-card {
+      height: 120px; }
+  @media screen and (min-width: 992px) {
+    .a-ocb .timeline__main-area {
+      padding-top: 2.2rem;
+      height: calc(100vh - 82px); }
+      .a-ocb .timeline__main-area__content-bar {
+        padding-left: 1.5rem; }
+      .a-ocb .timeline__main-area__video-area {
+        padding-left: 3rem;
+        padding-right: 3rem; }
+        .a-ocb .timeline__main-area__video-area .main-card {
+          height: calc(100vh - 232.8px); } }
+  @media screen and (max-width: 992px) {
+    .a-ocb .timeline__top-bar {
+      display: none; }
+    .a-ocb .timeline__main-area__content-bar {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .a-ocb .timeline__main-area__content-bar .collapsible-content--hidden {
+        display: none; }
+      .a-ocb .timeline__main-area__content-bar__title--phone {
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+        padding: 1.5rem;
+        background: #2b2f37; }
+    .a-ocb .timeline__main-area__video-area {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .a-ocb .timeline__main-area__video-area .doubt-card {
+        display: none; } }
 
 .a-ocb .select-container {
   border-bottom: unset; }
