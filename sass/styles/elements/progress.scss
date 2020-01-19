@@ -43,26 +43,13 @@ progress::-webkit-progress-value {
   align-items: center;
   bottom: 5%;
 
-  &--50 {
-    left: 40%;
+  &__bubble {
+    display: none;
+    max-width: 110px;
+    text-align: center;
   }
 
-  &--90 {
-    left: 75%;
-  }
-
-  @media screen and (max-width: 767px){
-    &--50 {
-      left: 30%;
-    }
-
-    &--90 {
-      left: 65%;
-    }
-
-    &__bubble {
-      max-width: 110px;
-      text-align: center;
-    }
+  &:hover > &__bubble {
+    display: block;
   }
 }
