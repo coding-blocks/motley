@@ -13,6 +13,7 @@ File contains color configuration for below listed objects and utilities:-
   - Border Card
   - Tags
   - Pills
+  - Form Input
 
 - Utilities
   - Text Colors
@@ -246,3 +247,6 @@ $tag-dashed-text-color: $salmon;
 //Pills
 $pill-dashed-border-color: $salmon;
 $pill-dashed-text-color: $salmon;
+
+//Form Input
+$input-text-background-color: $hover-grey;
