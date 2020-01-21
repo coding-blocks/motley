@@ -94,6 +94,7 @@ $vertical-align: (
   a:hover {
     color: $orange;
   }
+}
 .commafy > :not(:last-child):after {
   content: ",";
 }
