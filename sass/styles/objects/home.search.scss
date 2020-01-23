@@ -1,6 +1,10 @@
 .input-search {
   @include border-radius(28px);
 
+  input {
+    background-color: transparent;
+  }
+
   position: relative;
   border: none;
   background-color: transparent;
