@@ -95,3 +95,7 @@ $vertical-align: (
     color: $orange;
   }
 }
+
+.commafy > :not(:last-child):after {
+  content: ",";
+}

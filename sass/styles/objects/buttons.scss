@@ -40,6 +40,7 @@
     @extend %button-text;
 
     @include border-radius($border-radius);
+    display: inline-block;
 
     background-color: $background;
     color: $color;
@@ -48,6 +49,7 @@
 
     &.lg {
       padding: 15px 30px;
+      border-radius: 30px;
     }
 
     &.md {
