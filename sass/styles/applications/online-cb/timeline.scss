@@ -70,12 +70,12 @@
       height: calc(100vh - 82px);
 
       &__content-bar {
-        padding-left: 1.5rem;
+        padding-left: 1.5rem !important;
       }
 
       &__video-area {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
 
         .main-card {
           height: calc(100vh - 232.8px);
