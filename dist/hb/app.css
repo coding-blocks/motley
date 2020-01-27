@@ -4803,30 +4803,6 @@ ul.divided-list.timer > *:not(:last-child) {
     height: 150px;
     width: 150px; }
 
-.timeline {
-  display: flex;
-  justify-content: space-between; }
-
-.timeline__event {
-  position: relative; }
-  .timeline__event > * {
-    position: relative;
-    z-index: 10; }
-  .timeline__event:not(:last-child) {
-    flex: 1; }
-    .timeline__event:not(:last-child):before {
-      content: "";
-      width: 100%;
-      height: 1px;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      background-color: #f3f3f3; }
-
-.timeline__event__tag {
-  position: absolute;
-  bottom: -30px; }
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px; } }

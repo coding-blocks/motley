@@ -1,5 +1,13 @@
 .tab-nav-underline {
+  border-bottom: solid 1px $search-box-color;
+
+  &.inverted {
+    border-bottom: solid 1px $border-grey;
+  }
+
   & .tab {
+    bottom: -1px;
+
     &:hover {
       color: $orange;
     }
