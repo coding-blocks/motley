@@ -2549,7 +2549,7 @@ html {
   -webkit-background-clip: text; }
 
 .bg-orange {
-  background-color: #f19633 !important; }
+  background-color: #f2734c !important; }
 
 .bg-green {
   background-color: #8dbf75 !important; }
@@ -4802,6 +4802,22 @@ ul.divided-list.timer > *:not(:last-child) {
   .img-ring.profile-img {
     height: 150px;
     width: 150px; }
+
+.divided-list {
+  list-style: none;
+  display: flex; }
+  .divided-list .list-heading {
+    font-size: 1.143rem; }
+  .divided-list .list-data {
+    font-size: 1.143rem; }
+  .divided-list > * {
+    display: inline-block; }
+    .divided-list > *:not(:last-child) {
+      border-right: solid 1px #999; }
+    .divided-list > *:first-child {
+      padding-left: 0 !important; }
+    .divided-list > *:last-child {
+      padding-right: 0 !important; }
 
 .button-solid.disabled,
 .button-solid:disabled {

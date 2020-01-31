@@ -2468,7 +2468,7 @@ html {
   border-color: #000 !important; }
 
 .b-orange {
-  border-color: #f19633 !important; }
+  border-color: #f2734c !important; }
 
 .br-5 {
   border-radius: 5px !important; }
@@ -2492,7 +2492,7 @@ html {
   border-radius: 0 !important; }
 
 .orange {
-  color: #f19633 !important; }
+  color: #f2734c !important; }
 
 .green {
   color: #8dbf75 !important; }
@@ -2549,7 +2549,7 @@ html {
   -webkit-background-clip: text; }
 
 .bg-orange {
-  background-color: #f19633 !important; }
+  background-color: #f2734c !important; }
 
 .bg-green {
   background-color: #8dbf75 !important; }
@@ -2918,7 +2918,7 @@ html {
   list-style: disc; }
 
 .hover-orange a:hover {
-  color: #f19633; }
+  color: #f2734c; }
 
 .commafy > :not(:last-child):after {
   content: ","; }
@@ -4241,7 +4241,7 @@ select.rounded-select {
   background-color: #ebebeb; }
   .pill.pill-dashed {
     background: unset;
-    border: solid 1px #f19633;
+    border: solid 1px #f2734c;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -4790,7 +4790,7 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .img-ring {
   border-radius: 50%;
-  border: solid 2px #f19633;
+  border: solid 2px #f2734c;
   padding: 0.25rem;
   position: relative; }
   .img-ring .img {
@@ -4802,6 +4802,22 @@ ul.divided-list.timer > *:not(:last-child) {
   .img-ring.profile-img {
     height: 150px;
     width: 150px; }
+
+.divided-list {
+  list-style: none;
+  display: flex; }
+  .divided-list .list-heading {
+    font-size: 1.143rem; }
+  .divided-list .list-data {
+    font-size: 1.143rem; }
+  .divided-list > * {
+    display: inline-block; }
+    .divided-list > *:not(:last-child) {
+      border-right: solid 1px #999; }
+    .divided-list > *:first-child {
+      padding-left: 0 !important; }
+    .divided-list > *:last-child {
+      padding-right: 0 !important; }
 
 @media (min-width: 576px) {
   .container {
@@ -5255,7 +5271,7 @@ ul.divided-list.timer > *:not(:last-child) {
     display: flex;
     align-items: center; }
     .c-topnav .right-nav a:hover {
-      color: #f19633; }
+      color: #f2734c; }
   @media screen and (max-width: 1200px) {
     .c-topnav .top-nav-option h6 {
       font-size: 1rem; } }
@@ -5330,8 +5346,8 @@ ul.divided-list.timer > *:not(:last-child) {
       background-image: linear-gradient(to right, #193b84, #2675bb);
       color: #fff; }
   .a-hb .button-dashed.button-orange {
-    border: solid 1px #f19633;
-    color: #f19633; }
+    border: solid 1px #f2734c;
+    color: #f2734c; }
     .a-hb .button-dashed.button-orange:hover {
       background-image: linear-gradient(30deg, #e74e4b, #fb8133);
       color: #fff; }
@@ -5360,16 +5376,16 @@ ul.divided-list.timer > *:not(:last-child) {
   flex-grow: 1;
   text-align: center; }
   .a-hb .tab-nav-underline .tab:hover {
-    color: #f19633; }
+    color: #f2734c; }
   .a-hb .tab-nav-underline .tab.active {
-    border-bottom: solid 2px #f19633;
-    color: #f19633; }
+    border-bottom: solid 2px #f2734c;
+    color: #f2734c; }
 
 .a-hb .c-hb-leaderboard table td:first-child {
   text-align: center; }
 
 .a-hb .c-hb-leaderboard thead {
-  color: #f19633; }
+  color: #f2734c; }
 
 .a-hb .c-hb-leaderboard tbody {
   text-align: left; }
@@ -5458,22 +5474,6 @@ ul.divided-list.timer > *:not(:last-child) {
     .c-dcb-home .dcb-body .c-dcb-card {
       text-align: left; }
 
-.divided-list {
-  list-style: none;
-  display: flex; }
-  .divided-list .list-heading {
-    font-size: 1.143rem; }
-  .divided-list .list-data {
-    font-size: 1.143rem; }
-  .divided-list > * {
-    display: inline-block; }
-    .divided-list > *:not(:last-child) {
-      border-right: solid 1px #999; }
-    .divided-list > *:first-child {
-      padding-left: 0 !important; }
-    .divided-list > *:last-child {
-      padding-right: 0 !important; }
-
 .c-previous-dcb {
   padding: 40px; }
   .c-previous-dcb h4 {
@@ -5512,7 +5512,7 @@ ul.divided-list.timer > *:not(:last-child) {
     .code-window__side-bar .active {
       background: #fff; }
       .code-window__side-bar .active * {
-        color: #f19633; }
+        color: #f2734c; }
   .code-window__input-div textarea {
     max-height: 200px; }
   .code-window .tab-nav-underline {
@@ -5621,7 +5621,7 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .profile-page .border-orange,
 .dashboard .border-orange {
-  border-color: #f19633; }
+  border-color: #f2734c; }
 
 @media screen and (max-width: 1199px) {
   .admission-card .divided-list .list-heading {
