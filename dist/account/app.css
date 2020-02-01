@@ -2468,7 +2468,7 @@ html {
   border-color: #000 !important; }
 
 .b-orange {
-  border-color: #f19633 !important; }
+  border-color: #f2734c !important; }
 
 .br-5 {
   border-radius: 5px !important; }
@@ -2492,7 +2492,7 @@ html {
   border-radius: 0 !important; }
 
 .orange {
-  color: #f19633 !important; }
+  color: #f2734c !important; }
 
 .green {
   color: #8dbf75 !important; }
@@ -2549,7 +2549,7 @@ html {
   -webkit-background-clip: text; }
 
 .bg-orange {
-  background-color: #f19633 !important; }
+  background-color: #f2734c !important; }
 
 .bg-green {
   background-color: #8dbf75 !important; }
@@ -2682,6 +2682,10 @@ html {
   scrollbar-width: none; }
   .no-scrollbar::-webkit-scrollbar {
     display: none; }
+
+@media screen and (max-width: 767px) {
+  .d-phone-none {
+    display: none; } }
 
 .flex-row {
   display: -webkit-box;
@@ -2897,7 +2901,7 @@ html {
   list-style: disc; }
 
 .hover-orange a:hover {
-  color: #f19633; }
+  color: #f2734c; }
 
 .commafy > :not(:last-child):after {
   content: ","; }
@@ -4220,7 +4224,7 @@ select.rounded-select {
   background-color: #ebebeb; }
   .pill.pill-dashed {
     background: unset;
-    border: solid 1px #f19633;
+    border: solid 1px #f2734c;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -4769,7 +4773,7 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .img-ring {
   border-radius: 50%;
-  border: solid 2px #f19633;
+  border: solid 2px #f2734c;
   padding: 0.25rem;
   position: relative; }
   .img-ring .img {
@@ -4781,6 +4785,22 @@ ul.divided-list.timer > *:not(:last-child) {
   .img-ring.profile-img {
     height: 150px;
     width: 150px; }
+
+.divided-list {
+  list-style: none;
+  display: flex; }
+  .divided-list .list-heading {
+    font-size: 1.143rem; }
+  .divided-list .list-data {
+    font-size: 1.143rem; }
+  .divided-list > * {
+    display: inline-block; }
+    .divided-list > *:not(:last-child) {
+      border-right: solid 1px #999; }
+    .divided-list > *:first-child {
+      padding-left: 0 !important; }
+    .divided-list > *:last-child {
+      padding-right: 0 !important; }
 
 @media (min-width: 576px) {
   .container {
@@ -5234,7 +5254,7 @@ ul.divided-list.timer > *:not(:last-child) {
     display: flex;
     align-items: center; }
     .c-topnav .right-nav a:hover {
-      color: #f19633; }
+      color: #f2734c; }
   @media screen and (max-width: 1200px) {
     .c-topnav .top-nav-option h6 {
       font-size: 1rem; } }

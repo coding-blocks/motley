@@ -1,6 +1,7 @@
 .button-solid {
   background-size: 200%;
   font-weight: $bold;
+  display: inline-block;
 
   &.button-orange {
     background-image: $button-gradient-orange;
@@ -29,6 +30,7 @@
 
 .button-dashed {
   font-weight: $bold;
+  display: inline-block;
 
   &:hover {
     background-color: unset;
@@ -39,7 +41,7 @@
     color: $orange;
 
     &:hover {
-      background-image: $button-gradient-orange;
+      background-image: $button-gradient-orange-hover;
       color: $white;
     }
   }
@@ -54,5 +56,13 @@
       background: $white !important;
       color: $grey  !important;
     } 
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .button-align-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
   }
 }

@@ -27,6 +27,8 @@ $gradient-orange: linear-gradient(to right, #e74e4b, #fb8133);
 
 $button-gradient-green: linear-gradient(to right, #82da3b, #27a87c, #82da3b);
 $button-gradient-orange: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
+$button-gradient-orange-hover: linear-gradient(to right, #fb8133, #e74e4b);
+$button-gradient-green-hover: linear-gradient(to right, #82da3b, #27a87c);
 
 //Gradient List
 $gradient-map: map-merge(
