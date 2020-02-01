@@ -6884,15 +6884,13 @@ ul.divided-list.timer > *:not(:last-child) {
   @media screen and (max-width: 767px) {
     .a-ocb .hamburger-nav__ham-logo {
       width: 45%; } }
-  .a-ocb .img-card {
-    overflow: visible; }
-    .a-ocb .img-card .head {
-      position: relative; }
-      .a-ocb .img-card .head .card-badge {
-        position: absolute;
-        width: 20%;
-        right: 2%;
-        bottom: 20%; }
+  .a-ocb .img-card .head {
+    position: relative; }
+    .a-ocb .img-card .head .card-badge {
+      position: absolute;
+      width: 20%;
+      right: -2%;
+      bottom: 20%; }
 
 .difficulty-dots .pos-diff, .difficulty-dots .neg-diff {
   display: inline-block;
