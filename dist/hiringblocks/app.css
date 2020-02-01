@@ -2860,6 +2860,12 @@ html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  .text-ellipses--small {
+    max-width: 200px; }
+  .text-ellipses--med {
+    max-width: 250px; }
+  .text-ellipses--large {
+    max-width: 300px; }
 
 @media screen and (min-width: 576px) {
   .t-align-sm-r {
