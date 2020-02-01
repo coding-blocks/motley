@@ -1,0 +1,14 @@
+.img-card {
+  overflow: visible;
+
+  .head {
+    position: relative;
+
+    .card-badge {
+      position: absolute;
+      width: 20%;
+      right: 2%;
+      bottom: 20%;
+    }
+  }
+}
