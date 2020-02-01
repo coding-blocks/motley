@@ -1,15 +1,15 @@
 .track-indicator {
   position: absolute;
-  top: 2rem;
-  left: -8px;
-  font-size: 2.2rem;
+  top: 1.9rem;
+  left: -7px;
+  font-size: 3rem;
   color: $hover-grey;
 
   &.complete {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: $gradient-yellow;
+    background-image: $gradient-orange;
   }
 }
 
