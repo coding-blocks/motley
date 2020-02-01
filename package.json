@@ -1,6 +1,6 @@
 {
   "name": "@coding-blocks/motley",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Motley is a new generation CSS framework based on ITCSS and Sass , it allows you to design component-driven webpages with little or no effort.",
   "devDependencies": {
     "bootstrap-sass-grid": "^4.0.1",
