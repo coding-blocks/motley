@@ -2704,6 +2704,10 @@ html {
   .no-scrollbar::-webkit-scrollbar {
     display: none; }
 
+@media screen and (max-width: 767px) {
+  .d-phone-none {
+    display: none; } }
+
 .flex-row {
   display: -webkit-box;
   display: -webkit-flex;

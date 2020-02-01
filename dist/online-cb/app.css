@@ -2704,6 +2704,10 @@ html {
   .no-scrollbar::-webkit-scrollbar {
     display: none; }
 
+@media screen and (max-width: 767px) {
+  .d-phone-none {
+    display: none; } }
+
 .flex-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6684,7 +6688,8 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .a-ocb .button-solid {
   background-size: 200%;
-  font-weight: 700; }
+  font-weight: 700;
+  display: inline-block; }
   .a-ocb .button-solid.button-orange {
     background-image: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b); }
   .a-ocb .button-solid.button-green {
@@ -6700,14 +6705,15 @@ ul.divided-list.timer > *:not(:last-child) {
     background: #999; }
 
 .a-ocb .button-dashed {
-  font-weight: 700; }
+  font-weight: 700;
+  display: inline-block; }
   .a-ocb .button-dashed:hover {
     background-color: unset; }
   .a-ocb .button-dashed.button-orange {
     border: solid 1px #f2734c;
     color: #f2734c; }
     .a-ocb .button-dashed.button-orange:hover {
-      background-image: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
+      background-image: linear-gradient(to right, #fb8133, #e74e4b);
       color: #fff; }
   .a-ocb .button-dashed.disabled, .a-ocb .button-dashed:disabled {
     border-color: #999 !important;

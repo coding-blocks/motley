@@ -41,6 +41,18 @@ $vertical-align: (
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &--small {
+    max-width: 200px;
+  }
+
+  &--med {
+    max-width: 250px;
+  }
+
+  &--large {
+    max-width: 300px;
+  }
 }
 
 // responsive versions of text-aligns;
