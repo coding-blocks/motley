@@ -40,6 +40,7 @@
     @extend %button-text;
 
     @include border-radius($border-radius);
+    display: inline-block;
 
     background-color: $background;
     color: $color;
