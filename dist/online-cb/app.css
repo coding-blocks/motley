@@ -13,6 +13,7 @@ File contains color configuration for below listed objects and utilities:-
   - Border Card
   - Tags
   - Pills
+  - Form Input
 
 - Utilities
   - Text Colors
@@ -3646,7 +3647,7 @@ textarea {
 
 .input-text {
   padding: 10px 20px;
-  background-color: #e9e9e9;
+  background-color: #f3f3f3;
   border: none;
   width: 100%; }
   .input-text.icon {
@@ -6659,15 +6660,15 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .track-indicator {
   position: absolute;
-  top: 2rem;
-  left: -8px;
-  font-size: 2.2rem;
+  top: 1.9rem;
+  left: -7px;
+  font-size: 3rem;
   color: #f3f3f3; }
   .track-indicator.complete {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(to right, #fa8733, #f7c332); }
+    background-image: linear-gradient(to right, #e74e4b, #fb8133); }
 
 .tracks-container {
   padding-left: 7.325%; }
@@ -6883,6 +6884,13 @@ ul.divided-list.timer > *:not(:last-child) {
   @media screen and (max-width: 767px) {
     .a-ocb .hamburger-nav__ham-logo {
       width: 45%; } }
+  .a-ocb .img-card .head {
+    position: relative; }
+    .a-ocb .img-card .head .card-badge {
+      position: absolute;
+      width: 20%;
+      right: -2%;
+      bottom: 20%; }
 
 .difficulty-dots .pos-diff, .difficulty-dots .neg-diff {
   display: inline-block;
@@ -8210,15 +8218,15 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .track-indicator {
   position: absolute;
-  top: 2rem;
-  left: -8px;
-  font-size: 2.2rem;
+  top: 1.9rem;
+  left: -7px;
+  font-size: 3rem;
   color: #f3f3f3; }
   .track-indicator.complete {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(to right, #fa8733, #f7c332); }
+    background-image: linear-gradient(to right, #e74e4b, #fb8133); }
 
 .tracks-container {
   padding-left: 7.325%; }
