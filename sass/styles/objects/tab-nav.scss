@@ -35,7 +35,6 @@
 }
 
 .tab-nav-underline {
-  justify-content: space-around;
   display: flex;
   align-items: center;
   border-bottom: solid 2px $search-box-color;
@@ -54,6 +53,34 @@
       border-bottom: solid 3px $salmon;
       color: $salmon;
     }
+  }
+}
+
+.tab-nav-underline {
+  border-bottom: solid 1px $search-box-color;
+
+  &.inverted {
+    border-bottom: solid 1px $border-grey;
+  }
+
+  & .tab {
+    bottom: -1px;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &.active {
+      border-bottom: solid 1px $orange;
+      color: $orange;
+      font-weight: $bold;
+    }
+
+    margin-right: 3rem;
+    font-size: $font-sm;
+    font-weight: $font-normal;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

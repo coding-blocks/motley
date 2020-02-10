@@ -11,6 +11,7 @@ $gradient-blue-lr: linear-gradient(to right, #1b40de, #2cb4ed);
 $gradient-orange-lr: linear-gradient(to right, #e74e4b, #fb8133);
 $gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
 $gradient-nostalgia-purple: linear-gradient(to right, #691e68, #695186);
+$gradient-dpurple: linear-gradient(to right, #00205b, #84358e);
 
 $button-gradient-green: linear-gradient(to right, #82da3b, #27a87c, #82da3b);
 $button-gradient-orange: linear-gradient(to right, #ec6333, #f19633, #ec6333);
@@ -26,6 +27,7 @@ $gradient-map: map-merge(
     blue-lr: $gradient-blue-lr,
     orange-lr: $gradient-orange-lr,
     black-bt: $gradient-black-bt,
+    dpurple: $gradient-dpurple,
     nostalgia-purple: $gradient-nostalgia-purple
   )
 );

@@ -1,0 +1,32 @@
+.timeline {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.timeline__event {
+  position: relative; 
+
+  & > * {
+    position: relative;
+    z-index: 10; 
+  }
+
+  &:not(:last-child) {
+    flex: 1; 
+  }
+
+  &:not(:last-child):before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background-color: #f3f3f3; 
+  }
+}
+
+.timeline__event__tag {
+  position: absolute;
+  bottom: -30px; 
+}
