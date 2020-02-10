@@ -81,13 +81,13 @@
   &.gradient-tick > input:checked ~ span::before,
   &.gradient-tick > input:checked + span::before {
     content: " ";
-    height: 6px;
-    width: 12px;
+    height: 5px;
+    width: 10px;
     border-left: 2px solid $orange;
     border-bottom: 2px solid $orange;
     position: absolute;
     top: 6px;
-    left: 6px;
+    left: 4px;
     transform: rotate(-45deg);
     border-image-source: $gradient-orange;
     border-image-slice: 1;
@@ -129,10 +129,10 @@
 
   &.gradient-tick > input ~ span::after,
   &.gradient-tick > input + span::after {
-    @include dimensions(25px, 25px);
+    @include dimensions(18px, 18px);
 
     left: 0;
-    top: -2px;
+    top: 0;
     border-radius: 15px;
   }
 }
@@ -182,6 +182,11 @@ label.input-radio {
   line-height: 25px;
   padding-left: 25px;
 
+  &.checked-input {
+    line-height: 15px;
+    padding-left: 15px;
+  }
+
   input {
     visibility: hidden;
   }
@@ -204,6 +209,11 @@ label.input-radio {
     }
   }
 
+  &.checked-input >span:last-child::after {
+    height: 18px;
+    width: 18px;
+  }
+
   &.gradient-input {
     input:checked ~ span:last-child::after {
       background: $gradient-orange-lr;
@@ -213,13 +223,13 @@ label.input-radio {
   &.checked-input {
     input:checked ~ span:last-child::before {
       content: " ";
-      height: 6px;
-      width: 12px;
+      height: 5px;
+      width: 10px;
       border-left: 2px solid $orange;
       border-bottom: 2px solid $orange;
       position: absolute;
-      top: 8px;
-      left: 6px;
+      top: 6px;
+      left: 4px;
       transform: rotate(-45deg);
       border-image-source: $gradient-orange;
       border-image-slice: 1;
