@@ -64,12 +64,6 @@
     margin-right: 10px;
   }
 
-  & > span {
-    img {
-      display: none;
-    }
-  }
-
   &.checkbox-tick > input:checked ~ span::before,
   &.checkbox-tick > input:checked + span::before {
     width: 4px;
@@ -84,16 +78,20 @@
     transform: rotate(45deg);
   }
 
-  &.gradient-tick > input:checked ~ span,
-  &.gradient-tick > input:checked + span {
-    img {
-      display: block;
-      position: absolute;
-      top: 3px;
-      left: 5px;
-      width: 15px;
-      z-index: 1000;
-    }
+  &.gradient-tick > input:checked ~ span::before,
+  &.gradient-tick > input:checked + span::before {
+    content: " ";
+    height: 6px;
+    width: 12px;
+    border-left: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transform: rotate(-45deg);
+    border-image-source: $gradient-orange;
+    border-image-slice: 1;
+    z-index: 1000;
   }
 
   &.checkbox-solid > input:checked ~ span::before,
@@ -206,12 +204,6 @@ label.input-radio {
     }
   }
 
-  & > span {
-    img {
-      display: none;
-    }
-  }
-
   &.gradient-input {
     input:checked ~ span:last-child::after {
       background: $gradient-orange-lr;
@@ -219,15 +211,19 @@ label.input-radio {
   }
 
   &.checked-input {
-    input:checked ~ span:last-child {
-      img {
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: 15px;
-        z-index: 10;
-      }
+    input:checked ~ span:last-child::before {
+      content: " ";
+      height: 6px;
+      width: 12px;
+      border-left: 2px solid $orange;
+      border-bottom: 2px solid $orange;
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      transform: rotate(-45deg);
+      border-image-source: $gradient-orange;
+      border-image-slice: 1;
+      z-index: 10;
     }
   }
 }
