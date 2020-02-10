@@ -3658,6 +3658,8 @@ textarea {
   .input-checkbox > input {
     visibility: hidden;
     margin-right: 10px; }
+  .input-checkbox > span img {
+    display: none; }
   .input-checkbox.checkbox-tick > input:checked ~ span::before,
   .input-checkbox.checkbox-tick > input:checked + span::before {
     width: 4px;
@@ -3670,6 +3672,14 @@ textarea {
     top: 4px;
     border-width: 0 1px 1px 0;
     transform: rotate(45deg); }
+  .input-checkbox.gradient-tick > input:checked ~ span img,
+  .input-checkbox.gradient-tick > input:checked + span img {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 15px;
+    z-index: 1000; }
   .input-checkbox.checkbox-solid > input:checked ~ span::before,
   .input-checkbox.checkbox-solid > input:checked + span::before {
     content: "";
@@ -3695,6 +3705,13 @@ textarea {
     background: #f6f6f6;
     visibility: visible;
     cursor: pointer; }
+  .input-checkbox.gradient-tick > input ~ span::after,
+  .input-checkbox.gradient-tick > input + span::after {
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: -2px;
+    border-radius: 15px; }
 
 .input-textarea {
   width: 100%;
@@ -3738,11 +3755,17 @@ label.input-radio {
     border-radius: 20px; }
   label.input-radio > span:last-child:hover {
     cursor: pointer; }
+  label.input-radio > span img {
+    display: none; }
   label.input-radio.gradient-input input:checked ~ span:last-child::after {
     background: linear-gradient(to right, #ec6333, #f19633); }
-  label.input-radio.check-inpuut input:checked ~ span:last-child::after {
-    content: "&#10004";
-    color: #f66; }
+  label.input-radio.checked-input input:checked ~ span:last-child img {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    z-index: 10; }
 
 select.underline-select {
   color: #666;
@@ -4420,7 +4443,6 @@ select.rounded-select {
   padding: 0 9%; }
 
 .tab-nav-underline {
-  justify-content: space-around;
   display: flex;
   align-items: center;
   border-bottom: solid 2px #f2f2f2;
@@ -4436,6 +4458,24 @@ select.rounded-select {
     .tab-nav-underline .tab.active {
       border-bottom: solid 3px #f66;
       color: #f66; }
+
+.tab-nav-underline {
+  border-bottom: solid 1px #f2f2f2; }
+  .tab-nav-underline.inverted {
+    border-bottom: solid 1px #2b2f37; }
+  .tab-nav-underline .tab {
+    bottom: -1px;
+    margin-right: 3rem;
+    font-size: 1.143rem;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0; }
+    .tab-nav-underline .tab:hover {
+      color: #f2734c; }
+    .tab-nav-underline .tab.active {
+      border-bottom: solid 1px #f2734c;
+      color: #f2734c;
+      font-weight: 700; }
 
 @media all and (max-width: 767px) {
   .tab-items {
@@ -4808,6 +4848,30 @@ ul.divided-list.timer > *:not(:last-child) {
       padding-left: 0 !important; }
     .divided-list > *:last-child {
       padding-right: 0 !important; }
+
+.timeline {
+  display: flex;
+  justify-content: space-between; }
+
+.timeline__event {
+  position: relative; }
+  .timeline__event > * {
+    position: relative;
+    z-index: 10; }
+  .timeline__event:not(:last-child) {
+    flex: 1; }
+  .timeline__event:not(:last-child):before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    background-color: #f3f3f3; }
+
+.timeline__event__tag {
+  position: absolute;
+  bottom: -30px; }
 
 @media (min-width: 576px) {
   .container {
