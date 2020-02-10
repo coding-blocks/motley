@@ -64,12 +64,6 @@
     margin-right: 10px;
   }
 
-  & > span {
-    img {
-      display: none;
-    }
-  }
-
   &.checkbox-tick > input:checked ~ span::before,
   &.checkbox-tick > input:checked + span::before {
     width: 4px;
@@ -84,16 +78,20 @@
     transform: rotate(45deg);
   }
 
-  &.gradient-tick > input:checked ~ span,
-  &.gradient-tick > input:checked + span {
-    img {
-      display: block;
-      position: absolute;
-      top: 3px;
-      left: 5px;
-      width: 15px;
-      z-index: 1000;
-    }
+  &.gradient-tick > input:checked ~ span::before,
+  &.gradient-tick > input:checked + span::before {
+    content: " ";
+    height: 5px;
+    width: 10px;
+    border-left: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    transform: rotate(-45deg);
+    border-image-source: $gradient-orange;
+    border-image-slice: 1;
+    z-index: 1000;
   }
 
   &.checkbox-solid > input:checked ~ span::before,
@@ -131,10 +129,10 @@
 
   &.gradient-tick > input ~ span::after,
   &.gradient-tick > input + span::after {
-    @include dimensions(25px, 25px);
+    @include dimensions(18px, 18px);
 
     left: 0;
-    top: -2px;
+    top: 0;
     border-radius: 15px;
   }
 }
@@ -184,6 +182,11 @@ label.input-radio {
   line-height: 25px;
   padding-left: 25px;
 
+  &.checked-input {
+    line-height: 15px;
+    padding-left: 15px;
+  }
+
   input {
     visibility: hidden;
   }
@@ -206,10 +209,9 @@ label.input-radio {
     }
   }
 
-  & > span {
-    img {
-      display: none;
-    }
+  &.checked-input >span:last-child::after {
+    height: 18px;
+    width: 18px;
   }
 
   &.gradient-input {
@@ -219,15 +221,19 @@ label.input-radio {
   }
 
   &.checked-input {
-    input:checked ~ span:last-child {
-      img {
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: 15px;
-        z-index: 10;
-      }
+    input:checked ~ span:last-child::before {
+      content: " ";
+      height: 5px;
+      width: 10px;
+      border-left: 2px solid $orange;
+      border-bottom: 2px solid $orange;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      transform: rotate(-45deg);
+      border-image-source: $gradient-orange;
+      border-image-slice: 1;
+      z-index: 10;
     }
   }
 }
