@@ -3679,8 +3679,6 @@ textarea {
   .input-checkbox > input {
     visibility: hidden;
     margin-right: 10px; }
-  .input-checkbox > span img {
-    display: none; }
   .input-checkbox.checkbox-tick > input:checked ~ span::before,
   .input-checkbox.checkbox-tick > input:checked + span::before {
     width: 4px;
@@ -3693,13 +3691,19 @@ textarea {
     top: 4px;
     border-width: 0 1px 1px 0;
     transform: rotate(45deg); }
-  .input-checkbox.gradient-tick > input:checked ~ span img,
-  .input-checkbox.gradient-tick > input:checked + span img {
-    display: block;
+  .input-checkbox.gradient-tick > input:checked ~ span::before,
+  .input-checkbox.gradient-tick > input:checked + span::before {
+    content: " ";
+    height: 5px;
+    width: 10px;
+    border-left: 2px solid #f2734c;
+    border-bottom: 2px solid #f2734c;
     position: absolute;
-    top: 3px;
-    left: 5px;
-    width: 15px;
+    top: 6px;
+    left: 4px;
+    transform: rotate(-45deg);
+    border-image-source: linear-gradient(to right, #e74e4b, #fb8133);
+    border-image-slice: 1;
     z-index: 1000; }
   .input-checkbox.checkbox-solid > input:checked ~ span::before,
   .input-checkbox.checkbox-solid > input:checked + span::before {
@@ -3728,10 +3732,10 @@ textarea {
     cursor: pointer; }
   .input-checkbox.gradient-tick > input ~ span::after,
   .input-checkbox.gradient-tick > input + span::after {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     left: 0;
-    top: -2px;
+    top: 0;
     border-radius: 15px; }
 
 .input-textarea {
@@ -3762,6 +3766,9 @@ label.input-radio {
   position: relative;
   line-height: 25px;
   padding-left: 25px; }
+  label.input-radio.checked-input {
+    line-height: 15px;
+    padding-left: 15px; }
   label.input-radio input {
     visibility: hidden; }
   label.input-radio > span:last-child::after {
@@ -3776,16 +3783,23 @@ label.input-radio {
     border-radius: 20px; }
   label.input-radio > span:last-child:hover {
     cursor: pointer; }
-  label.input-radio > span img {
-    display: none; }
+  label.input-radio.checked-input > span:last-child::after {
+    height: 18px;
+    width: 18px; }
   label.input-radio.gradient-input input:checked ~ span:last-child::after {
     background: linear-gradient(to right, #ec6333, #f19633); }
-  label.input-radio.checked-input input:checked ~ span:last-child img {
-    display: block;
+  label.input-radio.checked-input input:checked ~ span:last-child::before {
+    content: " ";
+    height: 5px;
+    width: 10px;
+    border-left: 2px solid #f2734c;
+    border-bottom: 2px solid #f2734c;
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 15px;
+    top: 6px;
+    left: 4px;
+    transform: rotate(-45deg);
+    border-image-source: linear-gradient(to right, #e74e4b, #fb8133);
+    border-image-slice: 1;
     z-index: 10; }
 
 select.underline-select {
@@ -6746,6 +6760,17 @@ ul.divided-list.timer > *:not(:last-child) {
 .course-info-card-logo {
   border: solid 1px #fff; }
 
+.track-card__head {
+  height: 150px;
+  position: relative;
+  color: white; }
+  .track-card__head__logo {
+    position: absolute;
+    left: 1.5rem;
+    bottom: -40px;
+    border: 2px solid white;
+    border-radius: 50%; }
+
 .a-ocb {
   margin-bottom: 8rem; }
   .a-ocb .tab-nav-underline {
@@ -6877,7 +6902,8 @@ ul.divided-list.timer > *:not(:last-child) {
     width: 100%;
     color: #fff;
     height: 100vh;
-    overflow-y: auto; }
+    overflow-y: auto;
+    overflow-x: hidden; }
     .a-ocb .timeline .divider-h {
       background: #2b2f37; }
     .a-ocb .timeline__top-bar {
@@ -8303,6 +8329,17 @@ ul.divided-list.timer > *:not(:last-child) {
 
 .course-info-card-logo {
   border: solid 1px #fff; }
+
+.track-card__head {
+  height: 150px;
+  position: relative;
+  color: white; }
+  .track-card__head__logo {
+    position: absolute;
+    left: 1.5rem;
+    bottom: -40px;
+    border: 2px solid white;
+    border-radius: 50%; }
 
 .play-store-button {
   background-color: #2c2d32;
