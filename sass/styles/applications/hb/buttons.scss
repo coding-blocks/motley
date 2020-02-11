@@ -1,6 +1,6 @@
 .button-solid {
   background-size: 100%;
-  
+
   &.button-orange {
     background-image: $button-gradient-orange;
   }
@@ -18,7 +18,8 @@
     background-image: $gradient-green-lr;
   }
 
-  &.disabled, &:disabled {
+  &.disabled,
+  &:disabled {
     background: $faded-text !important;
     cursor: auto;
   }
@@ -71,14 +72,15 @@
     }
   }
 
-  &.disabled, &:disabled {
+  &.disabled,
+  &:disabled {
     border-color: $faded-text !important;
     color: $faded-text !important;
     cursor: auto;
 
     &:hover {
-			background: $white !important;
-			color: $grey !important;
+      background: $white !important;
+      color: $grey !important;
     }
   }
 }

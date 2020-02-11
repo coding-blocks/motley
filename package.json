@@ -1,6 +1,6 @@
 {
   "name": "@coding-blocks/motley",
-  "version": "0.4.9",
+  "version": "0.7.2",
   "description": "Motley is a new generation CSS framework based on ITCSS and Sass , it allows you to design component-driven webpages with little or no effort.",
   "devDependencies": {
     "bootstrap-sass-grid": "^4.0.1",
@@ -18,7 +18,9 @@
     "jade": "^1.11.0",
     "matchdep": "^2.0.0",
     "node-sass": "^4.9.0",
-    "serve-static": "^1.13.2"
+    "serve-static": "^1.13.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,7 +30,8 @@
     "prebuild": "node file-list-gen.js",
     "build": "grunt build",
     "prePublishOnly": "npm run dist",
-    "dist": "node dist.js"
+    "dist": "node dist.js",
+    "stylelint": "stylelint **/*.scss"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,17 @@
 //<hr> divider horizontal
-.divider-h{
+.divider-h {
   @include dimensions(100%, 1px);
+
   background: $card-box-border;
+
+  &.content-divider {
+    background-clip: content-box;
+  }
 }
 
 //<hr> divider vertical
-.divider-v{
+.divider-v {
   @include dimensions(1px, 100%);
+
   background: $card-box-border;
 }

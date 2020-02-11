@@ -11,11 +11,13 @@
 
   .status-circle {
     @include flexbox(row, center, center);
+
     padding-bottom: unset;
   }
 
   .circle-back {
     @include dimensions(39px, 39px);
+
     background: $black;
     opacity: 0.13;
     flex-shrink: 0;
@@ -23,6 +25,7 @@
 
   .circle-front {
     @include dimensions(31px, 31px);
+
     background: $white;
   }
 
@@ -48,6 +51,12 @@
     }
   }
 
+  .list-divided > .list-divided {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
   .row {
     padding: 22px 8% 22px 0;
   }
@@ -57,14 +66,14 @@
   padding: 1.4% 4% 3.5% 4%;
 }
 
-@media screen and (max-width: 575px){
-  .c-accordion{
-    .row{
+@media screen and (max-width: 575px) {
+  .c-accordion {
+    .row {
       padding: 12px 3% 12px 0;
     }
   }
 
-  .accordion-card{
+  .accordion-card {
     width: 100%;
   }
 }

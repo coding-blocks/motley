@@ -23,7 +23,6 @@ INPUT TEXT
 </div>
 
 
-
 <!--
 INPUT CHECKBOX
 -->
@@ -40,6 +39,11 @@ INPUT CHECKBOX
 	<span></span>
 </label>
 
+<label class="input-checkbox gradient-tick" for="gradient">
+	<input type="checkbox" id="gradient"> Click to Tick
+	<span></span>
+</label>
+
 <!--
 INPUT RADIO BUTTONS
 -->
@@ -47,16 +51,82 @@ INPUT RADIO BUTTONS
 <h3>Radiobuttons</h3>
 
 <div>
-	<label for="radio-a" class="input-radio d-block">
+	<label for="radio-a" class="input-radio gradient-input d-block">
 		<input type="radio" name="group-2" id="radio-a">Option1
 		<span></span>
 	</label>
-	<label for="radio-b" class="input-radio d-block">
+	<label for="radio-b" class="input-radio gradient-input d-block">
 		<input type="radio" name="group-2" id="radio-b">Option2
 		<span></span>
 	</label>
-	<label for="radio-c" class="input-radio d-block">
+	<label for="radio-c" class="input-radio gradient-input d-block">
 		<input type="radio" name="group-2" id="radio-c">Option3
 		<span></span>
 	</label>
+</div>
+
+<h3>Radiobuttons Checked</h3>
+
+<div>
+	<label for="radio-h" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-h">Option1
+		<span></span>
+	</label>
+	<label for="radio-i" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-i">Option2
+		<span></span>
+	</label>
+	<label for="radio-j" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-j">Option3
+		<span></span>
+	</label>
+</div>
+
+
+{{!-- INPUT SELECT LISTS --}}
+
+<h3>Select Lists</h3>
+
+<div class="d-flex">
+	<div class="col-4">
+		<div class="select-container">
+			<select name="slct" id="slct" class="pb-4 underline-select">
+				<option selected disabled hidden>Choose an option</option>
+				<option value="1" class="py-2">Pure CSS</option>
+				<option value="2" class="py-2">No JS</option>
+				<option value="3" class="py-2">Nice!</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class="d-flex my-5 a-ocb">
+	<div class="col-4">
+		<div class="select-container">
+			<select name="slct" id="slct" class="rounded-select">
+				<option selected disabled hidden>Choose an option</option>
+				<option value="1" class="py-2">Pure CSS</option>
+				<option value="2" class="py-2">No JS</option>
+				<option value="3" class="py-2">Nice!</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+{{!-- SEARCHBARS --}}
+
+<div class="d-flex my-5">
+	<div class="col-4">
+		<div class="search-bar">
+			<input type="text" placeholder="Search Here">
+			<i class="fas fa-search icon"></i>
+		</div>
+	</div>
+
+	<div class="col-4">
+		<div class="search-bar search-bar--inverted">
+			<input type="text" placeholder="Search Here">
+			<i class="fas fa-search icon"></i>
+		</div>
+	</div>
 </div>

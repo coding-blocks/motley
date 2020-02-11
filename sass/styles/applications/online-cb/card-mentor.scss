@@ -1,0 +1,11 @@
+.card-mentor {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

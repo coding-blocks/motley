@@ -1,0 +1,15 @@
+.track-card {
+  &__head {
+    height: 150px;
+    position: relative;
+    color: white;
+
+    &__logo {
+      position: absolute;
+      left: 1.5rem;
+      bottom: -40px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+  }
+}

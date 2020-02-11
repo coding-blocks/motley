@@ -1,0 +1,22 @@
+.track-indicator {
+  position: absolute;
+  top: 1.9rem;
+  left: -7px;
+  font-size: 3rem;
+  color: $hover-grey;
+
+  &.complete {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $gradient-orange;
+  }
+}
+
+.tracks-container {
+  padding-left: 7.325%;
+
+  .track-indicator {
+    top: 45%;
+  }
+}

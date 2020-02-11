@@ -1,0 +1,17 @@
+.topbar {
+  height: 100px;
+}
+
+.work-area {
+  margin-top: 30px;
+  height: calc(100vh - 100px);
+
+  &__side-menu {
+    width: max-content;
+  }
+
+  &__main-area {
+    padding-left: 5.5rem !important;
+    padding-right: 5.5rem !important;
+  }
+}

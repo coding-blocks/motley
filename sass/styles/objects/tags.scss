@@ -1,11 +1,29 @@
-.tag{
-  @include border-radius(10px);
+%tag {
+  @include border-radius(50px);
   @include selector(none);
-  padding: 3px 12px;
+
+  padding: 5px 7px;
+  font-size: $card-md;
+}
+
+.tag {
+  @extend %tag;
   background-color: $nav-border;
 
-  &.red{
-    color: white !important;
+  &.tag-red {
+    color: white;
     background-image: $button-gradient;
   }
+
+  &.tag-orange {
+    color: white;
+    background-image: $gradient-orange;
+  }
+}
+
+.tag-dashed {
+  @extend %tag;
+
+  color: $tag-dashed-text-color;
+  border: solid 1px $tag-dashed-border-color;
 }

@@ -1,9 +1,11 @@
-.tick{
+.tick {
   position: relative;
 
-  &::after{
+  &::after {
     content: '';
+
     @include dimensions(60%, 25%);
+
     position: absolute;
     left: 20%;
     top: 30%;

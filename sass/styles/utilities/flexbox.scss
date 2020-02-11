@@ -1,21 +1,23 @@
-.flex-row{
+.flex-row {
   @include flexbox(row);
+
   justify-content: flex-start;
   align-items: center;
 }
 
-.flex-col{
+.flex-col {
   @include flexbox(column);
+
   justify-content: flex-start;
   align-items: center;
 }
 
-.all-center{
+.all-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-1{
+.flex-1 {
   flex: 1;
 }

@@ -1,0 +1,9 @@
+.tab-nav-underline {
+  & .tab {
+    bottom: -1px;
+
+    &.active {
+      border-bottom: solid 1px $salmon;
+    }
+  }
+}

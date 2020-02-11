@@ -30,8 +30,8 @@
 
 // GRADIENTS
 
-$gradient-list: (black, "lr", linear-gradient(30deg, #333333, #000000)),
-  (black, "bt", linear-gradient(30deg, #333333, #000000));
+$gradient-list: (black, "lr", linear-gradient(30deg, #333, #000)),
+  (black, "bt", linear-gradient(30deg, #333, #000));
 
 // @each $type, $direction, $value in $gradient-list {
 //   .gradient-#{$type}-#{$direction}{

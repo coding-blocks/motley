@@ -8,8 +8,20 @@
 
     .content {
       @include dimensions(100%, 100%);
+
       padding: 1.8rem;
       position: relative;
+    }
+
+    &__course-logo {
+      height: 60px;
+      width: 60px;
+      background: inherit;
+      border: solid 1px $white;
+      border-radius: 30px;
+      padding: 0.5rem;
+      position: relative;
+      overflow: hidden;
     }
   }
 
@@ -20,6 +32,7 @@
 
   .round-img-b {
     @include dimensions(86px, 86px);
+
     min-height: 86px;
     position: absolute;
     bottom: -43px;

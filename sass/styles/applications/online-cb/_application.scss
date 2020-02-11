@@ -1,1 +1,17 @@
 @import "components";
+
+.a-ocb {
+
+  margin-bottom: 8rem;
+
+  @import "tab-nav.scss";
+  @import "_elements.scss";
+  @import "_objects.scss";
+  @import "progress.scss";
+  @import "gradient-text.scss";
+  @import "card-mentor.scss";
+  @import "timeline.scss";
+  @import "form-input.scss";
+  @import "hamburger-nav.scss";
+  @import "img-card.scss";
+}

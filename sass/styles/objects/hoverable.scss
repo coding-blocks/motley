@@ -1,13 +1,13 @@
-.hoverable{
+.hoverable {
   position: relative;
 
-  &:hover{
-    .pop-up{
+  &:hover {
+    .pop-up {
       display: block;
     }
   }
 
-  .pop-up{
+  .pop-up {
     position: absolute;
     display: none;
     z-index: 200;

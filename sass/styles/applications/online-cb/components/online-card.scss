@@ -19,6 +19,7 @@
 
   .rating {
     @include margin(10px, 0, 0, 0);
+
     padding: 0;
   }
 
@@ -26,28 +27,11 @@
     padding-top: 55px;
   }
 
-  .card-mentor {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    &::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-
-    .card-mentor-text {
-      font-size: $card-md;
-      padding-left: 15px;
-    }
-
-    .card-mentor-name {
-      font-weight: $semi-bold;
-    }
-  }
-
   .divider-h {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: {
+      top: 25px;
+      bottom: 20px;
+    }
   }
 
   //css for popup online-card
@@ -55,6 +39,7 @@
     width: 144%;
     left: -23%;
     top: -12%;
+
     @include padding-mixin(40px, 40px, 24px, 40px);
 
     .round-img {
@@ -65,12 +50,6 @@
 
 @media (max-width: 767px) {
   .c-online-card {
-    display: flex;
-
-    .card-mentor {
-      margin-top: 0;
-    }
-
     display: flex;
     font-size: $font-xs;
 
@@ -91,12 +70,15 @@
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .c-online-card {
     font-size: $font-xs;
+
     .head {
       @include dimensions(45%, auto);
+
       .content {
         align-items: center;
       }
     }
+
     .foot {
       width: 55%;
     }
@@ -107,8 +89,10 @@
   .c-online-card {
     .round-img-b {
       @include dimensions(40px, 40px);
+
       min-height: 40px;
     }
+
     .head {
       @include dimensions(45%, auto);
 
@@ -127,6 +111,7 @@
 
       .rating {
         margin-top: 6px;
+
         .pos-rating {
           font-size: $card-sm;
         }
@@ -143,17 +128,8 @@
 
     .foot {
       width: 55%;
+
       @include padding-s(10px, 10px);
-
-      .card-mentor {
-        .card-mentor-text {
-          font-size: $card-sms;
-        }
-
-        .card-mentor-name {
-          font-size: $card-sm;
-        }
-      }
 
       .button-row {
         margin-top: 10px;
@@ -174,10 +150,6 @@
     margin-top: 10px;
   }
 
-  .card-mentor {
-    display: flex;
-  }
-
   .card-image {
     width: 10%;
   }
@@ -196,20 +168,18 @@
     padding: 0;
   }
 
-  .card-mentor-text {
-    padding-left: 5px;
-    top: 0;
-  }
-
   .rating {
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: {
+      top: 0;
+      bottom: 25px;
+    }
   }
 
   .expert-level,
   .beginner-level,
   .advanced-level {
     @include dimensions(15px, 15px);
+
     border-width: 3px;
   }
 

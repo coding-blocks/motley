@@ -2,9 +2,11 @@
   @if $float == right {
     float: right;
   }
+
   @else if $float == left {
     float: left;
   }
+
   @else {
     float: none;
   }

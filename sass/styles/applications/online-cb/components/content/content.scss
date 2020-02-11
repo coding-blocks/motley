@@ -5,6 +5,7 @@
 
   .header {
     @include dimensions(100%, 100px);
+
     max-height: 100px;
     font-size: $font-sm;
   }
@@ -17,6 +18,7 @@
 
   .dashboard {
     @include dimensions(100%, auto);
+
     padding-left: 40px;
   }
 
@@ -28,6 +30,7 @@
 
   .section {
     @include dimensions(30%, 100%);
+
     overflow-y: auto;
     background-color: $vp-background;
     transition: all 0.35s ease;
@@ -50,6 +53,7 @@
 
   .content {
     @include dimensions(100%, 100%);
+
     position: absolute;
     top: 0;
     right: 0;
@@ -115,8 +119,10 @@
 
     .dashboard {
       width: 100%;
-      padding-left: 10px;
-      padding-right: 0;
+      padding: {
+        right: 0;
+        left: 10px;
+      }
     }
 
     .content {
@@ -127,6 +133,7 @@
 
     .section {
       @include dimensions(100%, 100%);
+
       height: auto;
       border-right: unset;
     }
@@ -183,8 +190,10 @@
 
     .notes-list {
       .list-item {
-        padding-left: 0;
-        padding-right: 0;
+        padding: {
+          right: 0;
+          left: 0;
+        }
       }
     }
 

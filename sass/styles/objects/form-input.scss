@@ -1,4 +1,4 @@
-/*--------------------------INPUT TEXT---------------------------*/
+/* --------------------------INPUT TEXT--------------------------- */
 .right-input {
   position: relative;
 
@@ -12,10 +12,10 @@
     height: 50px;
   }
 }
+
 .input-text {
   padding: 10px 20px;
-  border-radius: 10px;
-  background-color: $card-mentor;
+  background-color: $input-text-background-color;
   border: none;
   width: 100%;
 
@@ -38,10 +38,20 @@
     padding-right: 6.7857rem;
   }
 
+  a {
+    position: absolute;
+    right: 2.1428rem;
+    top: 35%;
+  }
+
   button {
     position: absolute;
     right: 2.1428rem;
     top: 25%;
+
+    &.centered {
+      top: 35%;
+    }
   }
 }
 
@@ -67,7 +77,7 @@ input.underline-input {
   &.checkbox-tick > input:checked + span::before {
     width: 4px;
     height: 10px;
-    border: solid 1px #333333;
+    border: solid 1px #333;
     content: "";
     position: absolute;
     z-index: 101;
@@ -77,10 +87,28 @@ input.underline-input {
     transform: rotate(45deg);
   }
 
+  &.gradient-tick > input:checked ~ span::before,
+  &.gradient-tick > input:checked + span::before {
+    content: " ";
+    height: 5px;
+    width: 10px;
+    border-left: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    transform: rotate(-45deg);
+    border-image-source: $gradient-orange;
+    border-image-slice: 1;
+    z-index: 1000;
+  }
+
   &.checkbox-solid > input:checked ~ span::before,
   &.checkbox-solid > input:checked + span::before {
     content: "";
+
     @include dimensions(16px, 16px);
+
     position: absolute;
     z-index: 101;
     left: 0;
@@ -88,10 +116,17 @@ input.underline-input {
     background: $checkbox-solid;
   }
 
+  &.checkbox-solid > input:checked ~ span.salmon-gradient::before,
+  &.checkbox-solid > input:checked + span.salmon-gradient::before {
+    background: $button-gradient;
+  }
+
   & > input ~ span::after,
   & > input + span::after {
     content: "";
+
     @include dimensions(16px, 16px);
+
     position: absolute;
     z-index: 100;
     left: 0;
@@ -99,6 +134,15 @@ input.underline-input {
     background: $nav-border;
     visibility: visible;
     cursor: pointer;
+  }
+
+  &.gradient-tick > input ~ span::after,
+  &.gradient-tick > input + span::after {
+    @include dimensions(18px, 18px);
+
+    left: 0;
+    top: 0;
+    border-radius: 15px;
   }
 }
 
@@ -112,6 +156,7 @@ input.underline-input {
 .input-textarea {
   @include dimensions(100%, auto);
   @include padding-mixin(20px, 20px, 20px, 20px);
+
   background: $nav-border;
   border: none;
 }
@@ -146,6 +191,11 @@ label.input-radio {
   line-height: 25px;
   padding-left: 25px;
 
+  &.checked-input {
+    line-height: 15px;
+    padding-left: 15px;
+  }
+
   input {
     visibility: hidden;
   }
@@ -168,7 +218,129 @@ label.input-radio {
     }
   }
 
-  input:checked ~ span:last-child::after {
-    background: $gradient-orange-lr;
+  &.checked-input >span:last-child::after {
+    height: 18px;
+    width: 18px;
+  }
+
+  &.gradient-input {
+    input:checked ~ span:last-child::after {
+      background: $gradient-orange-lr;
+    }
+  }
+
+  &.checked-input {
+    input:checked ~ span:last-child::before {
+      content: " ";
+      height: 5px;
+      width: 10px;
+      border-left: 2px solid $orange;
+      border-bottom: 2px solid $orange;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      transform: rotate(-45deg);
+      border-image-source: $gradient-orange;
+      border-image-slice: 1;
+      z-index: 10;
+    }
+  }
+}
+
+// CSS FOR SELECT LIST
+
+select.underline-select {
+  color: $dark-grey;
+  background: $white;
+  padding-bottom: 0.5rem;
+}
+
+select.rounded-select {
+  color: $dark-grey;
+  background: $hover-grey;
+  border-radius: 50px;
+  padding: 0.6rem 0.6rem;
+}
+
+.select-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid $hover-grey;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    flex: 1;
+    cursor: pointer;
+    padding-right: 2.5rem;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:active {
+      background: $white;
+    }
+  }
+
+  &::after {
+    content: "\003E";
+    position: absolute;
+    color: $dark-grey;
+    top: 25%;
+    right: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    opacity: 0.6;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:active::after {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+  }
+}
+
+// CSS for Search Bar
+
+.search-bar {
+  background: $hover-grey;
+  border-radius: 50px;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+
+  input {
+    background: unset;
+    color: $black;
+    width: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    right: 2.5rem;
+    top: 0.75rem;
+  }
+
+  &--inverted {
+    background: #292c33;
+
+    input {
+      color: #c4c4c4;
+    }
+
+    .icon {
+      color: #c4c4c4;
+    }
   }
 }

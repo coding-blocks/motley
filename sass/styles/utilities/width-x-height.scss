@@ -1,7 +1,12 @@
-@for $i from 1 through 10{
+@for $i from 1 through 12 {
   $width: ($i * 10px);
   $height: ($i * 10px);
-  .s-#{$i * 10}x#{$i * 10}{
+
+  .s-#{$i * 10}x#{$i * 10} {
     @include dimensions($width, $height);
   }
+}
+
+.wh-100 {
+  @include dimensions(100%, 100%);
 }

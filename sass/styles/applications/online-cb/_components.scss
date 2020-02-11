@@ -2,7 +2,6 @@
 @import "./components/nav-layout";
 @import "./components/carousel";
 @import "./components/classroom-layout";
-@import "./components/accordion-layout";
 @import "./components/dashboard";
 @import "./components/homepage";
 @import "./components/about-course/buy-top";
@@ -12,6 +11,7 @@
 @import "./components/content/content";
 @import "./components/content/timeline";
 @import "./components/content/problem";
+@import "./components/content/video";
 @import "./components/content/pb-statement";
 @import "./components/content/pb-leaderboard";
 @import "./components/content/pb-submissions";
@@ -38,3 +38,9 @@
 @import "./components/hiring-banner.scss";
 @import "./components/doubts";
 @import "./components/course-card.scss";
+@import "./components/course-card-buy.scss";
+@import "./components/goodies-card.scss";
+@import "./components/sidenav.scss";
+@import "./components/tracks.scss";
+@import "./components/course-logos.scss";
+@import "./components/track-card.scss";

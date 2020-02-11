@@ -41,6 +41,18 @@ $vertical-align: (
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &--small {
+    max-width: 200px;
+  }
+
+  &--med {
+    max-width: 250px;
+  }
+
+  &--large {
+    max-width: 300px;
+  }
 }
 
 // responsive versions of text-aligns;
@@ -51,12 +63,15 @@ $vertical-align: (
     .t-align-#{$label}-r {
       text-align: right !important;
     }
+
     .t-align-#{$label}-l {
       text-align: left !important;
     }
+
     .t-align-#{$label}-c {
       text-align: center !important;
     }
+
     .t-align-#{$label}-j {
       text-align: justify !important;
     }
@@ -68,18 +83,31 @@ $vertical-align: (
     .v-align-#{$label}-t {
       vertical-align: top !important;
     }
+
     .v-align-#{$label}-m {
       vertical-align: middle !important;
     }
+
     .v-align-#{$label}-b {
       vertical-align: bottom !important;
     }
   }
 }
+
 .word-wrap {
   word-wrap: break-word;
 }
 
-.circle-list{
+.circle-list {
   list-style: disc;
+}
+
+.hover-orange {
+  a:hover {
+    color: $orange;
+  }
+}
+
+.commafy > :not(:last-child):after {
+  content: ",";
 }

@@ -1,21 +1,20 @@
-.status-circle{
+.status-circle {
   position: relative;
   padding-bottom: 100%;
   box-sizing: content-box;
 }
 
-.circle-back{
-  @include dimensions(100%, 100%);
+.circle-back {
   @include border-radius(50%);
 }
 
-.circle-front{
-  @include dimensions(75%, 75%);
+.circle-front {
   @include border-radius(50%);
   position: absolute;
 }
 
 .progress-text {
   color: $white;
+
   @include textalign(center);
 }

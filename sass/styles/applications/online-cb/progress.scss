@@ -1,0 +1,43 @@
+progress {
+  &.progress-orange {
+    &::-webkit-progress-value {
+      background-image: $gradient-orange;
+    }
+
+    &::-moz-progress-bar {
+      background-image: $gradient-orange;
+    }
+
+    &::-ms-fill {
+      background-image: $gradient-orange;
+    }
+  }
+
+  &.progress-green {
+    &::-webkit-progress-value {
+      background-image: $gradient-green;
+    }
+
+    &::-moz-progress-bar {
+      background-image: $gradient-green;
+    }
+
+    &::-ms-fill {
+      background-image: $gradient-green;
+    }
+  }
+
+  &.progress-yellow {
+    &::-webkit-progress-value {
+      background-image: $gradient-yellow;
+    }
+
+    &::-moz-progress-bar {
+      background-image: $gradient-yellow;
+    }
+
+    &::-ms-fill {
+      background-image: $gradient-yellow;
+    }
+  }
+}
