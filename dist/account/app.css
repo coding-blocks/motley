@@ -3652,7 +3652,13 @@ textarea {
     .input-btn button.centered {
       top: 35%; }
 
-/* --------------------------INPUT CHECKBOX--------------------------- */
+input.underline-input {
+  border-bottom: solid 1px #f3f3f3 !important;
+  padding-bottom: 1.5rem; }
+  input.underline-input:focus {
+    border-bottom: solid 1px #000 !important; }
+
+/*--------------------------INPUT CHECKBOX---------------------------*/
 .input-checkbox {
   position: relative; }
   .input-checkbox > input {
