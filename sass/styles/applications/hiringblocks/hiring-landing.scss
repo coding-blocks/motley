@@ -1,0 +1,39 @@
+.hiring-landing {
+  @media screen and (min-width: 992px) {
+    &__section {
+      padding: 3.75rem 8.5rem;
+
+      &--form-section {
+        height: 640px;
+        overflow: hidden;
+        position: relative;
+
+        &__back-img {
+          position: absolute;
+          right: 0;
+          top: 30%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    &__section {
+      padding: 2rem 5rem;
+
+      &--form-section {
+        height: 640px;
+        overflow: hidden;
+        position: relative;
+
+        &__back-img {
+          position: absolute;
+          right: 0;
+          bottom: 8%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
