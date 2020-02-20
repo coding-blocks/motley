@@ -20,32 +20,32 @@
     & > img {
       max-width: 25px !important;
     }
-  }
 
-  .nav-element:hover {
-    color: $white;
-    font-weight: $extra-bold;
-  }
-
-  .nav-element.active {
-    color: $white;
-    background-color: #181b22;
-    font-weight: $extra-bold;
-
-    &::before {
-      content: "";
-      height: 100%;
-      width: 4%;
-      position: absolute;
-      background: $gradient-orange;
-      left: 0;
-      top: 0;
+    &:hover {
+      color: $white;
+      font-weight: $extra-bold;
     }
-  }
 
-  h6 {
-    font-weight: $font-normal;
-    font-size: $card-md;
+    &.active {
+      color: $white;
+      background-color: #181b22;
+      font-weight: $extra-bold;
+
+      &::before {
+        content: "";
+        height: 100%;
+        width: 4%;
+        position: absolute;
+        background: $gradient-orange;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    h6 {
+      font-weight: $font-normal;
+      font-size: $card-md;
+    }
   }
 
   .logo {
