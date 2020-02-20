@@ -16,6 +16,10 @@
     position: relative;
     color: $grey;
     text-align: center;
+
+    & > img {
+      max-width: 25px !important;
+    }
   }
 
   .nav-element:hover {
