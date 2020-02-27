@@ -61,3 +61,10 @@ $list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $
   background-clip: text;
   background-image: $gradient-pink;
 }
+
+.gradient-text-yellow {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $gradient-yellow;
+}
