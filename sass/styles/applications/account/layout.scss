@@ -1,17 +1,26 @@
 .topbar {
-  height: 100px;
+  height: 80px;
 }
 
 .work-area {
-  margin-top: 30px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
 
   &__side-menu {
     width: max-content;
   }
 
   &__main-area {
-    padding-left: 5.5rem !important;
-    padding-right: 5.5rem !important;
+    @media screen and (min-width: 992px) {
+      padding-left: 5.5rem !important;
+      padding-right: 5.5rem !important;
+    }
+
+    @media screen and (min-width: 556px){
+      padding-left: 2.5rem !important;
+      padding-right: 2.5rem !important;
+    }
+
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 }
