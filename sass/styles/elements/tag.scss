@@ -1,0 +1,13 @@
+.side-tag {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: -2.1428rem;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    background: $gradient-yellow;
+  }
+}
