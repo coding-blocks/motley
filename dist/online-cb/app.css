@@ -2815,6 +2815,12 @@ html {
   background-clip: text;
   background-image: linear-gradient(to right, #e74b50, #d12ebd); }
 
+.gradient-text-yellow {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #fa8733, #f7c332); }
+
 .t-align-r {
   text-align: right !important; }
 
@@ -3222,6 +3228,17 @@ input[disabled] {
 
 textarea {
   border: none; }
+
+.side-tag {
+  position: relative; }
+  .side-tag::after {
+    content: " ";
+    position: absolute;
+    left: -2.1428rem;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to right, #fa8733, #f7c332); }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -5247,24 +5264,26 @@ ul.divided-list.timer > *:not(:last-child) {
     position: relative;
     color: #666;
     text-align: center; }
-  .c-sidenav .nav-element:hover {
-    color: #fff;
-    font-weight: 800; }
-  .c-sidenav .nav-element.active {
-    color: #fff;
-    background-color: #181b22;
-    font-weight: 800; }
-    .c-sidenav .nav-element.active::before {
-      content: "";
-      height: 100%;
-      width: 4%;
-      position: absolute;
-      background: linear-gradient(to right, #e74e4b, #fb8133);
-      left: 0;
-      top: 0; }
-  .c-sidenav h6 {
-    font-weight: 500;
-    font-size: 0.875rem; }
+    .c-sidenav .nav-element > img {
+      max-width: 25px !important; }
+    .c-sidenav .nav-element:hover {
+      color: #fff;
+      font-weight: 800; }
+    .c-sidenav .nav-element.active {
+      color: #fff;
+      background-color: #181b22;
+      font-weight: 800; }
+      .c-sidenav .nav-element.active::before {
+        content: "";
+        height: 100%;
+        width: 4%;
+        position: absolute;
+        background: linear-gradient(to right, #e74e4b, #fb8133);
+        left: 0;
+        top: 0; }
+    .c-sidenav .nav-element h6 {
+      font-weight: 500;
+      font-size: 0.875rem; }
   .c-sidenav .logo {
     color: #fff;
     text-align: center; }
@@ -5328,7 +5347,8 @@ ul.divided-list.timer > *:not(:last-child) {
       height: 71px;
       position: sticky;
       background-color: #fff;
-      top: 0; }
+      top: 0;
+      z-index: 1; }
   .hamburger-nav.hamburger-nav--hidden {
     margin-left: -100%; } }
 
@@ -6880,11 +6900,6 @@ ul.divided-list.timer > *:not(:last-child) {
   .a-ocb progress.progress-yellow::-moz-progress-bar {
     background-image: linear-gradient(to right, #fa8733, #f7c332); }
   .a-ocb progress.progress-yellow::-ms-fill {
-    background-image: linear-gradient(to right, #fa8733, #f7c332); }
-  .a-ocb .gradient-text-yellow {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
     background-image: linear-gradient(to right, #fa8733, #f7c332); }
   .a-ocb .gradient-text-pink {
     -webkit-text-fill-color: transparent;

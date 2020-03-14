@@ -1,0 +1,31 @@
+.hiring-landing {
+  &__main-section {
+    padding: 4rem 8.5rem;
+
+    @media screen and (max-width: 1199px) {
+      padding: 4rem 5rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 4rem 2rem;
+    }
+  }
+
+  &__form-section {
+    @media screen and (min-width: 992px) {
+      height: 640px;
+    }
+
+    &__back-img {
+      bottom: -20%;
+
+      @media screen and (max-width: 1499px) {
+        bottom: -5%;
+      }
+
+      @media screen and (max-width: 1199px) {
+        bottom: 0;
+      }
+    }
+  }
+}
