@@ -1,38 +1,30 @@
 .hiring-landing {
-  @media screen and (min-width: 992px) {
-    &__section {
-      padding: 3.75rem 8.5rem;
+  &__main-section {
+    padding: 4rem 8.5rem;
 
-      &--form-section {
-        height: 640px;
-        overflow: hidden;
-        position: relative;
+    @media screen and (max-width: 1199px) {
+      padding: 4rem 5rem;
+    }
 
-        &__back-img {
-          position: absolute;
-          right: 0;
-          top: 30%;
-          width: 100%;
-        }
-      }
+    @media screen and (max-width: 575px) {
+      padding: 4rem 2rem;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    &__section {
-      padding: 2rem 5rem;
+  &__form-section {
+    @media screen and (min-width: 992px) {
+      height: 640px;
+    }
 
-      &--form-section {
-        height: 640px;
-        overflow: hidden;
-        position: relative;
+    &__back-img {
+      bottom: -20%;
 
-        &__back-img {
-          position: absolute;
-          right: 0;
-          bottom: 8%;
-          width: 100%;
-        }
+      @media screen and (max-width: 1499px) {
+        bottom: -5%;
+      }
+
+      @media screen and (max-width: 1199px) {
+        bottom: 0;
       }
     }
   }
