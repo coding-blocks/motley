@@ -3,17 +3,17 @@
   justify-content: space-between;
 
   &__event {
-    position: relative; 
-  
+    position: relative;
+
     & > * {
       position: relative;
-      z-index: 10; 
+      z-index: 10;
     }
-  
+
     &:not(:last-child) {
-      flex: 1; 
+      flex: 1;
     }
-  
+
     &:not(:last-child):before {
       content: "";
       width: 100%;
@@ -21,12 +21,41 @@
       position: absolute;
       z-index: 1;
       top: 50%;
-      background-color: #f3f3f3; 
+      background-color: #f3f3f3;
     }
 
-    &__tag {
-      position: absolute;
-      bottom: -30px;
+    &__container {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > button {
+        font-size: $font-xl;
+      }
+
+      &__tag {
+        position: absolute;
+        bottom: -30px;
+        font-size: $font-sm;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      &__container {
+        .s-60x60 {
+          height: 50px !important;
+          width: 50px !important;
+        }
+
+        & > button {
+          font-size: $font-md;
+        }
+
+        &__tag {
+          font-size: $card-sm;
+        }
+      }
     }
   }
 }

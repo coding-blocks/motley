@@ -4928,9 +4928,25 @@ ul.divided-list.timer > *:not(:last-child) {
       z-index: 1;
       top: 50%;
       background-color: #f3f3f3; }
-    .profile-timeline__event__tag {
-      position: absolute;
-      bottom: -30px; }
+    .profile-timeline__event__container {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .profile-timeline__event__container > button {
+        font-size: 1.713rem; }
+      .profile-timeline__event__container__tag {
+        position: absolute;
+        bottom: -30px;
+        font-size: 1.143rem; }
+    @media screen and (max-width: 575px) {
+      .profile-timeline__event__container .s-60x60 {
+        height: 50px !important;
+        width: 50px !important; }
+      .profile-timeline__event__container > button {
+        font-size: 1.428rem; }
+      .profile-timeline__event__container__tag {
+        font-size: 0.75rem; } }
 
 .button-solid.disabled,
 .button-solid:disabled {
@@ -5550,6 +5566,17 @@ ul.divided-list.timer > *:not(:last-child) {
     .hamburger-menu .ham-toggle .hamburger span {
       height: 3px;
       margin: 5px 0; }
+
+.hiring-modal {
+  width: 50% !important;
+  padding: 0 !important; }
+  @media screen and (max-width: 767px) {
+    .hiring-modal {
+      width: 90% !important; } }
+
+@media screen and (max-width: 767px) {
+  .profile-left-pane {
+    border-right: unset !important; } }
 
 .play-store-button {
   background-color: #2c2d32;
