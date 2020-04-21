@@ -8,7 +8,7 @@ const fileListViews = shell.find('examples/views')
     .map(hbsFileName => {
         let fileName = hbsFileName.replace(".hbs", "")
         fileName = fileName.split("/").pop()
-        return `<div class="row p-3"><a target="preview" href="/${fileName}.html">${fileName}</a></div>`
+        return `<div class="row p-3"><a target="preview" href="${fileName}.html">${fileName}</a></div>`
     })
     .join('\n')
 
