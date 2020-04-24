@@ -66,10 +66,11 @@ input.underline-input {
 
 /*--------------------------INPUT CHECKBOX---------------------------*/
 .input-checkbox {
+  cursor: pointer;
   position: relative;
 
   & > input {
-    visibility: hidden;
+    visibility: hidden !important;
     margin-right: 10px;
   }
 
@@ -121,8 +122,12 @@ input.underline-input {
     background: $button-gradient;
   }
 
-  & > input ~ span::after,
-  & > input + span::after {
+  &.checkbox-tick > input ~ span::after,
+  &.checkbox-tick > input + span::after,
+  &.checkbox-solid > input ~ span::after,
+  &.checkbox-solid > input + span::after,
+  &.gradient-tick > input ~ span::after,
+  &.gradient-tick > input + span::after {
     content: "";
 
     @include dimensions(16px, 16px);
@@ -143,6 +148,71 @@ input.underline-input {
     left: 0;
     top: 0;
     border-radius: 15px;
+  }
+
+  &.toggle {
+    display: inline-flex;
+
+    & > input {
+      display: none;
+      position: absolute;
+    }
+
+    & > span.checkbox {
+      position: relative;
+      width: 60px;
+      margin: 0 1rem;
+      
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        top: -30%;
+      }
+
+      &::before {
+        width: 60px;
+        height: 30px;
+        left: 0;
+        background: $hover-grey;
+        border-radius: 30px;
+      }
+
+      &::after {
+        width: 22px;
+        height: 22px;
+        left: 4px;
+        top: calc(-30% + 4px);
+        background: $faded-text;
+        border-radius: 50%;
+        transition: all 200ms ease-out;
+      }
+    }
+
+    & > input:checked,
+    & > input:checked {
+      & + span.checkbox,
+      & ~ span.checkbox {
+        &::after {
+          left: 34px;
+          background: $gradient-orange;
+        }
+      }
+
+      & + span.active-text,
+      & ~ span.active-text {
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: $gradient-orange;
+      }
+    }
+
+    & > span.inactive-text,
+    & > span.active-text {
+      font-weight: $bold;
+    }
   }
 }
 
@@ -218,7 +288,7 @@ label.input-radio {
     }
   }
 
-  &.checked-input >span:last-child::after {
+  &.checked-input > span:last-child::after {
     height: 18px;
     width: 18px;
   }
@@ -322,6 +392,7 @@ select.rounded-select {
 
   input {
     background: unset;
+    border: unset;
     color: $black;
     width: 100%;
   }

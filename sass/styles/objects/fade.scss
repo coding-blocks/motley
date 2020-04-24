@@ -13,8 +13,8 @@
   @extend %fade;
 
   left: 0;
-  width: 10px;
-  box-shadow: 6px 0 5px $white;
+  width: 1rem;
+  box-shadow: 0.5rem 0 0.75rem $white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -22,9 +22,9 @@
 .fade-right::after {
   @extend %fade;
 
-  right: -1px;
-  width: 10px;
-  box-shadow: -6px 0 5px $white;
+  right: 0;
+  width: 1rem;
+  box-shadow: -0.5rem 0 0.75rem $white;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
