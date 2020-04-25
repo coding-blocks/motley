@@ -3,11 +3,20 @@
   overflow-x: auto;
 
   table {
-    thead, tbody {
+    thead {
+      td,
+      th {
+        padding-bottom: 1rem;
+      }
+    }
+
+    thead,
+    tbody {
       text-align: left;
     }
 
-    td, th {
+    td,
+    th {
       padding-left: 1rem;
       padding-right: 1rem;
 
@@ -17,8 +26,9 @@
       text-overflow: ellipsis;
     }
 
-    @media screen and (min-width: 768px){
-      td, th {
+    @media screen and (min-width: 768px) {
+      td,
+      th {
         max-width: 350px;
         white-space: nowrap;
         overflow: hidden;
