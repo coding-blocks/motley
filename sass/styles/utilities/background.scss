@@ -9,3 +9,20 @@
     background: $hover-grey;
   }
 }
+
+.hover-indicator {
+  &:hover {
+    background: $hover-grey;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 1.25%;
+      top: 20%;
+      left: 0;
+      background: $gradient-orange;
+    }
+  }
+}
