@@ -1,0 +1,11 @@
+.hiding-section {
+  // transition: height 0.25s ease-in-out;
+  margin-bottom: 1.5rem;
+  
+  &--hidden {
+    // height: 0;
+    // opacity: 0;
+    margin-bottom: 0;
+    display: none;
+  }
+}

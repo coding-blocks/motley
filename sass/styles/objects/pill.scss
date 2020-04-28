@@ -56,4 +56,9 @@
   padding: 0.6rem 1rem;
   border: solid 1px $pill-dashed-border-color;
   color: $pill-dashed-text-color;
+
+  &.pill-grey {
+    border: solid 1px $global-font-text-color;
+    color: $global-font-text-color;
+  } 
 }
