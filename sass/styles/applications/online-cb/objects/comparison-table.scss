@@ -1,0 +1,37 @@
+.comparison-table {
+  border-style: hidden;
+  td,
+  th {
+    padding: 1.5rem;
+    border-right: 1px solid $border-card-border-color;
+
+    &:not(:first-child) {
+      text-align: center;
+      width: 15%;
+    }
+  }
+
+  thead > tr {
+    td {
+      border-bottom: 1px solid $border-card-border-color;
+      padding-bottom: 3rem;
+
+      &:not(:first-child) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  tbody > tr {
+    &:first-child {
+      td {
+        padding-top: 3rem;
+      }
+    }
+
+    td:first-child {
+      font-weight: $bold;
+      font-size: $font-mds;
+    }
+  }
+}
