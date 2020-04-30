@@ -31,7 +31,13 @@
 }
 
 .d-phone-none {
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.d-tab-none {
+  @media screen and (max-width: 991px) {
     display: none;
   }
 }
