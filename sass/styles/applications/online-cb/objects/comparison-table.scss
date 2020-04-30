@@ -2,7 +2,7 @@
   border-style: hidden;
   td,
   th {
-    padding: 1.5rem;
+    padding: 1.3rem;
     border-right: 1px solid $border-card-border-color;
 
     &:not(:first-child) {
@@ -14,7 +14,7 @@
   thead > tr {
     td {
       border-bottom: 1px solid $border-card-border-color;
-      padding-bottom: 3rem;
+      padding-bottom: 1.3rem;
 
       &:not(:first-child) {
         padding-top: 0;
@@ -25,7 +25,7 @@
   tbody > tr {
     &:first-child {
       td {
-        padding-top: 3rem;
+        padding-top: 1.3rem;
       }
     }
 
