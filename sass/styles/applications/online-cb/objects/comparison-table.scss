@@ -5,6 +5,10 @@
     padding: 1.3rem;
     border-right: 1px solid $border-card-border-color;
 
+    &:first-child {
+      padding-left: 0 !important;
+    }
+
     &:not(:first-child) {
       text-align: center;
       width: 15%;
@@ -32,6 +36,53 @@
     td:first-child {
       font-weight: $bold;
       font-size: $font-mds;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    thead > tr {
+      td {
+        padding: 1.5rem !important;
+      }
+    }
+
+    td {
+      &:not(:first-child) {
+        width: unset;
+      }
+    }
+
+    .course-features {
+      font-size: $card-md;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    td:first-child {
+      width: 50%;
+    }
+
+    tbody > tr {
+      td {
+        padding: 1rem 0.5rem !important;
+
+        &:first-child {
+          border-right: unset;
+        }
+      }
+    }
+
+    thead > tr {
+      td {
+        padding: 1.5rem 0.5rem !important;
+        border-right: unset;
+      }
+    }
+
+    tbody > tr:first-child {
+      td {
+        padding-top: 1.5rem !important;
+      }
     }
   }
 }
