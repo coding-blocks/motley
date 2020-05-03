@@ -1,0 +1,28 @@
+.live-courses {
+  table {
+    thead {
+      td {
+        border-bottom: 1px solid $border-card-border-color;
+        padding-bottom: 2rem;
+      }
+    }
+
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            padding-top: 2rem;
+          }
+        }
+      }
+    }
+
+    td {
+      padding: 1rem;
+
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+  }
+}
