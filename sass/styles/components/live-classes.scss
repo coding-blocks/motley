@@ -25,4 +25,33 @@
       }
     }
   }
+
+  .contact-us {
+    position: absolute;
+    bottom: -11px;
+    right: 10%;
+    background: $white;
+  }
+
+  .live-classes-popup-card {
+    position: absolute;
+    // width: 500px !important;
+    display: none;
+    z-index: 100;
+    width: 105%;
+    top: -25%;
+    left: -2.5%;
+
+    &__logo {
+      width: 30%;
+      height: 30%;
+      border: solid 1px $orange;
+    }
+
+    @media screen and (min-width: 768px) {
+      &--active {
+        display: block;
+      }
+    }
+  }
 }
