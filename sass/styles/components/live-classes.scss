@@ -1,0 +1,59 @@
+.live-courses {
+  position: relative;
+  
+  table {
+    thead {
+      td {
+        border-bottom: 1px solid $border-card-border-color;
+        padding-bottom: 2rem;
+      }
+    }
+
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            padding-top: 2rem;
+          }
+        }
+      }
+    }
+
+    td {
+      padding: 1rem;
+
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+  }
+
+  .contact-us {
+    position: absolute;
+    bottom: -11px;
+    right: 10%;
+    background: $white;
+  }
+
+  .live-classes-popup-card {
+    position: absolute;
+    // width: 500px !important;
+    display: none;
+    z-index: 100;
+    width: 105%;
+    top: -25%;
+    left: -2.5%;
+
+    &__logo {
+      width: 30%;
+      height: 30%;
+      border: solid 1px $orange;
+    }
+
+    @media screen and (min-width: 768px) {
+      &--active {
+        display: block;
+      }
+    }
+  }
+}

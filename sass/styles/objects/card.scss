@@ -1,3 +1,15 @@
+.card {
+  @include border-radius(15px);
+
+  padding: 30px;
+  box-shadow: 0 20px 57px 0 $card-box-shadow;
+  background: $white;
+}
+
+.card-image {
+  width: 17%;
+}
+
 .c-card-carousel {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -11,18 +23,6 @@
   }
 }
 
-.card {
-  @include border-radius(15px);
-
-  padding: 30px;
-  box-shadow: 0 20px 57px 0 $card-box-shadow;
-  background: $white;
-}
-
-.card-image {
-  width: 17%;
-}
-
 @media screen and (max-width: 767px) {
   .c-card-carousel-small {
     flex-wrap: nowrap;
@@ -34,6 +34,23 @@
 
     &::-webkit-scrollbar {
       display: none;
+    }
+  }
+}
+
+@each $size, $label in (576px, sm), (768px, md), (992px, lg) {
+  @media screen and (max-width: $size) {
+    .c-card-carousel-#{$label} {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }

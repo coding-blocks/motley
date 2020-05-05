@@ -1,0 +1,23 @@
+.img-review-card {
+  border-radius: 5px;
+  position: relative;
+  overflow: visible;
+  padding-top: 5.5rem !important;
+
+  .author {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+
+  .icon {
+    position: absolute;
+    left: 10%;
+    top: -20px;
+  }
+
+  .review-body {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+}

@@ -4,6 +4,10 @@
   }
 }
 
+.bg-none {
+  background: transparent !important;
+}
+
 .hover-grey {
   &:hover {
     background: $hover-grey;
