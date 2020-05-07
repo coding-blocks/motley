@@ -111,3 +111,7 @@ $vertical-align: (
 .commafy > :not(:last-child):after {
   content: ",";
 }
+
+.chars-spaced {
+  letter-spacing: 0.15rem;
+}
