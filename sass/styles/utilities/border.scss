@@ -7,6 +7,10 @@
   border: solid 1px $search-box-color;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 @each $direction in ('top', 'right', 'bottom', 'left') {
   .border-#{$direction} {
     border-#{$direction}: solid 1px $search-box-color;
@@ -18,7 +22,8 @@
   ('red', $salmon),
   ('green', $light-green),
   ('black', $black),
-  ('orange', $orange) {
+  ('orange', $orange),
+  ('white', $white) {
   .b-#{$type} {
     border-color: $color !important;
   }
