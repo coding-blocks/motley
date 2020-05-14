@@ -4,6 +4,14 @@
   }
 }
 
+.bg-none {
+  background: transparent !important;
+}
+
+.bg-inherit {
+  background: inherit;
+}
+
 .hover-grey {
   &:hover {
     background: $hover-grey;
