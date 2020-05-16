@@ -34,6 +34,7 @@ $light-grey: #f3f3f3;
 $grey: #a2a4a8;
 $dark-grey: #666;
 $border-grey: #2b2f37;
+$del-text-grey: #e7dddd;
 
 $facebook: #3b5998;
 $google: #f4695a;
@@ -205,6 +206,7 @@ $text-color-list: (
   "pink": $dcb-pink,
   "med-grey": $faded-text,
   "dark-grey": $dark-grey,
+  "del-text-grey": $del-text-grey 
 );
 
 //Gradient Text Colors

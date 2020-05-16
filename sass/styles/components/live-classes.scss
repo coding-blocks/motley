@@ -59,5 +59,14 @@
 
   .coursepage-card {
     position: relative;
+
+    &__logo {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border: solid 2px $white;
+      border-radius: 50%;
+      right: 0;
+    }
   }
 }
