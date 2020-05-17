@@ -23,7 +23,8 @@
   ('green', $light-green),
   ('black', $black),
   ('orange', $orange),
-  ('white', $white) {
+  ('white', $white),
+  ('orange', $orange) {
   .b-#{$type} {
     border-color: $color !important;
   }
