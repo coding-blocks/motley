@@ -8,7 +8,7 @@
 }
 
 .border-2 {
-  border-width: 2px;
+  border-width: 2px !important;
 }
 
 @each $direction in ('top', 'right', 'bottom', 'left') {
@@ -23,7 +23,8 @@
   ('green', $light-green),
   ('black', $black),
   ('orange', $orange),
-  ('white', $white) {
+  ('white', $white),
+  ('orange', $orange) {
   .b-#{$type} {
     border-color: $color !important;
   }
