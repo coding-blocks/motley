@@ -89,3 +89,33 @@
     }
   }
 }
+
+.mentor-row {
+  display: flex;
+  align-items: center;
+
+  &__image-container {
+    display: flex;
+
+    &__mentor-image {
+      border-radius: 50%;
+      background-color: $card-mentor;
+      border: 1px solid $white;
+
+      @for $i from 0 through 2 {
+        &:nth-child(#{$i + 1}) {
+
+          z-index: 100 - $i;
+          -ms-transform: translateX(multiply-px($i, -37%));
+          -webkit-transform: translateX(multiply-px($i, -37%));
+          transform: translateX(multiply-px($i, -37%));
+        }
+      }
+    }
+  }
+
+  &__text-container {
+    flex: 1;
+    padding-left: 0.5rem;
+  }
+}

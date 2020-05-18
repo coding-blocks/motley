@@ -1,0 +1,11 @@
+.upgrade-modal {
+  .close {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+
+    @media screen and (max-width: 767px){
+      right: 1.5rem;
+    }
+  }
+}

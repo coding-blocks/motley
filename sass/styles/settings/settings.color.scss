@@ -34,6 +34,7 @@ $light-grey: #f3f3f3;
 $grey: #a2a4a8;
 $dark-grey: #666;
 $border-grey: #2b2f37;
+$del-text-grey: #e7dddd;
 
 $facebook: #3b5998;
 $google: #f4695a;
@@ -44,6 +45,8 @@ $global-font-text-color: #333;
 $global-font-heading-color: #333;
 $font-complete: #8dbf75;
 $font-sub-heading: #f6776f;
+
+$scrollbar-color: #efefef;
 
 $color-button-primary: #ed8080;
 $button-element-level: #f66;
@@ -203,6 +206,7 @@ $text-color-list: (
   "pink": $dcb-pink,
   "med-grey": $faded-text,
   "dark-grey": $dark-grey,
+  "del-text-grey": $del-text-grey 
 );
 
 //Gradient Text Colors
