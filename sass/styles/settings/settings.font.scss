@@ -25,21 +25,13 @@ $card-sm: 0.75rem;    // 10px
 $card-sms: 0.625rem;  // 9px
 $card-xs: 0.5rem;     // 7px
 
-// @font-face {
-//   font-family: "Gilroy";
-//   font-style: $global-font-style;
-//   font-weight: $regular;
-//   src: local("Gilroy"), url('https://minio.codingblocks.com/motley/Gilroy.ttf') format("truetype");
-// }
-
-
 @font-face {
-  font-family: 'Gilroy';
-  src: url('https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Regular.ttf');
+  font-family: 'Muli';
+  src: url('https://unpkg.com/@coding-blocks/motley@1.0.0/dist/font/Muli.ttf');
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  font-weight: 700;
-  src: url('https://cb-amoeba-dev.s3.ap-south-1.amazonaws.com/fonts/Gilroy-Bold.woff');
+  font-family: 'Muli';
+  font-style: italic;
+  src: url('https://unpkg.com/@coding-blocks/motley@1.0.0/dist/font/Muli-Italic.ttf');
 }
