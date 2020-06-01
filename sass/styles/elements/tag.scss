@@ -10,4 +10,20 @@
     height: 100%;
     background: $gradient-yellow;
   }
+
+  &--orange {
+    &::after {
+      background: $gradient-orange;
+    }
+  }
+
+  &--std {
+    &::after {
+      left: -3rem;
+
+      @media screen and (max-width: 767px){
+        left: -1.5rem;
+      }
+    }
+  }
 }

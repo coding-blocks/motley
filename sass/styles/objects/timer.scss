@@ -2,7 +2,7 @@
   margin: 0;
 
   .timer-item {
-    padding: 0 15px 0 0;
+    padding: 0 1rem 0 0;
     float: left;
     display: inline-block;
 
@@ -14,6 +14,31 @@
     .list-data {
       font-size: $card-md;
       text-align: center;
+    }
+  }
+
+  &--dots {
+    .timer-item {
+      padding: 0 1.5rem 0 0;
+      position: relative;
+
+      &:not(:last-child)::after {
+        content: ":";
+        font-size: $font-md;
+        font-weight: $extra-bold;
+        color: $white;
+        position: absolute;
+        right: 0.7rem;
+        top: 0;
+      }
+    }
+
+    .list-heading {
+      font-weight: $extra-bold;
+    }
+
+    .list-data {
+      font-size: $card-sm;
     }
   }
 }
