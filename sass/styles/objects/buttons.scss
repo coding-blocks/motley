@@ -74,7 +74,8 @@
   }
 
   &.button-orange {
-    background-image: $gradient-orange;
+    // background-image: $gradient-orange;
+    background-image: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
   }
 
   &.button-white {
