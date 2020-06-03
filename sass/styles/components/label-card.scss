@@ -1,0 +1,45 @@
+.label-card {
+  &__head {
+    height: 225px;
+    position: relative;
+    background: $gradient-orange;
+
+    &__cover {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  &__label {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: $gradient-orange;
+    position: absolute;
+    height: 40px;
+    width: 55%;
+    top: -40px;
+    left: 22.5%;
+  }
+
+  &__foot {
+    border: 1px solid $search-box-color;
+    margin-top: -15px;
+    background: $white;
+    position: relative;
+    padding-top: 3.8rem;
+    padding-bottom: 3rem;
+
+    &__tag {
+      position: absolute;
+      background: $white;
+      top: -50px;
+      right: 7.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $orange;
+      border-radius: 50%;
+    }
+  }
+}

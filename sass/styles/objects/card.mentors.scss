@@ -92,7 +92,7 @@
 
 .mentor-row {
   display: flex;
-  align-items: center;
+  align-items: center !important;
 
   &__image-container {
     display: flex;
