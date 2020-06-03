@@ -113,6 +113,8 @@ $black-grey: #14161c;
 $dcb-pink: #e54461;
 $hello-intern-pink: #f24f60;
 
+$timeline-grey: #292c33;
+
 //threads
 $threads-separator: #666;
 $threads-invert: #191919;
@@ -188,6 +190,7 @@ $bg-color-list: (
   "grey": $grey,
   "light-grey": $light-grey,
   "dark-grey": $interview-grey,
+  "med-grey": $timeline-grey,
   "black-grey": $black-grey
 );
 
