@@ -1,0 +1,50 @@
+.events-page {
+  &__section {
+    padding: 7.5rem 10rem;
+  }
+
+  &__event-card {
+    &__head {
+      height: 500px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+
+      &__date-tag {
+        position: absolute;
+        background: $white;
+        bottom: -50px;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $orange;
+      }
+    }
+  }
+
+  &__events-carousel {
+    position: relative;
+
+    &__navigation {
+      position: absolute;
+      cursor: pointer;
+      top: calc(40% - 25px);
+      background: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+
+      &--left {
+        left: calc(8.5% - 25px);
+      }
+
+      &--right {
+        right: calc(8.5% + 5px);
+      }
+    }
+  }
+}

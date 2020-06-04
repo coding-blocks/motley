@@ -125,7 +125,7 @@ $list-shaded-background: rgba(255, 255, 255, 0.9);
 
 //Gradients
 $bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
-$gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
+// $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
 $gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-black: linear-gradient(30deg, #333, #000);
 $button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
@@ -135,7 +135,7 @@ $gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);
 $gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 $button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
 
-$gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
+// $gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
 $gradient-purple: linear-gradient(30deg, #271147, #553180);
 $gradient-navy: linear-gradient(30deg, #133155, #122a42);
 $gradient-dblue-lr: linear-gradient(to right, #0b024e, #003);
@@ -152,7 +152,7 @@ $hi-gradient-blue-lr: linear-gradient(to right, #1c40de, #2ab5ed);
 $hi-gradient-purple-lr: linear-gradient(to right, #8008db, #430cd7);
 
 //Palette Colors
-$gradient-orange: linear-gradient(30deg, #e74e4b, #fb8133);
+$gradient-orange: linear-gradient(to right, #e74e4b, #fb8133);
 $gradient-purple: linear-gradient(30deg, #271147, #553180);
 $gradient-purple-blue: linear-gradient(30deg, #8108da, #350ed8);
 $gradient-blue: linear-gradient(30deg, #1b40de, #2cb4ed);
