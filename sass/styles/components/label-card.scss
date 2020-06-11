@@ -20,6 +20,53 @@
     width: 55%;
     top: -40px;
     left: 22.5%;
+
+    & > div {
+      &::after,
+      &::before,
+      & > div::after,
+      & > div::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+      }
+
+      &::before {
+        background: #e74e4b;
+        left: -10px;
+      }
+
+      &::after {
+        background: #fb8133;
+        right: -10px;
+      }
+
+      &::before,
+      &::after {
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+      }
+
+      & > div {
+        &::before {
+          left: -20px;
+        }
+
+        &::after {
+          right: -20px;
+        }
+
+        &::before,
+        &::after {
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          z-index: 2;
+          background: $white;
+        }
+      }
+    }
   }
 
   &__foot {

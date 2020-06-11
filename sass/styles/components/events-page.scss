@@ -3,6 +3,14 @@
     padding: 7.5rem 10rem;
   }
 
+  &__meter {
+    & > div.bg-white {
+      height: 80px;
+      width: 80px;
+      border-radius: 5px;
+    }
+  }
+
   &__event-card {
     &__head {
       height: 500px;
@@ -20,6 +28,10 @@
         justify-content: center;
         border: 1px solid $orange;
       }
+    }
+
+    &__foot {
+      padding: 1.5rem 3rem;
     }
   }
 
@@ -44,6 +56,49 @@
 
       &--right {
         right: calc(8.5% + 5px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__section {
+      padding: 5rem 7.5rem;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &__section {
+      padding: 3rem 5rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__section {
+      padding: 2rem 3rem;
+    }
+
+    &__event-card {
+      &__foot {
+        padding: 1.5rem 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &__section {
+      padding: 2rem 1.5rem;
+    }
+
+    &__event-card {
+      &__foot {
+        padding: 4.5rem 1.5rem 1.5rem 1.5rem;
+      }
+    }
+
+    &__meter {
+      & > div.bg-white {
+        height: 60px;
+        width: 60px;
       }
     }
   }
