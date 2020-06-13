@@ -1,7 +1,7 @@
 %border-card {
   @include dimensions(100%, auto);
 
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid 1px $border-card-border-color;
   background-color: $white;
   overflow: hidden;
