@@ -15,7 +15,7 @@
   }
 
   &.button-green {
-    background-image: $gradient-green-lr;
+    background-image: $button-gradient-green;
   }
 }
 
@@ -48,7 +48,7 @@
     color: $orange;
 
     &:hover {
-      background-image: $gradient-orange-lr;
+      background-image: $gradient-orange;
       color: $white;
     }
   }
@@ -58,7 +58,7 @@
     color: $green;
 
     &:hover {
-      background-image: $gradient-green-lr;
+      background-image: $gradient-green;
       color: $white;
     }
   }

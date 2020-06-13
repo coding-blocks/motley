@@ -1,6 +1,4 @@
 .button-solid {
-  background-size: 100%;
-
   &.button-orange {
     background-image: $button-gradient-orange;
   }
@@ -15,7 +13,7 @@
   }
 
   &.button-green {
-    background-image: $gradient-green-lr;
+    background-image: $button-gradient-green;
   }
 
   &.disabled,
@@ -67,7 +65,7 @@
     color: $green;
 
     &:hover {
-      background-image: $gradient-green-lr;
+      background-image: $gradient-green;
       color: $white;
     }
   }

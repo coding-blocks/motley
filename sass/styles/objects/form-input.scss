@@ -114,7 +114,7 @@ input.underline-input {
     z-index: 101;
     left: 0;
     top: 2px;
-    background: $checkbox-solid;
+    background: $gradient-orange-angle;
   }
 
   &.checkbox-solid > input:checked ~ span.salmon-gradient::before,
@@ -295,7 +295,7 @@ label.input-radio {
 
   &.gradient-input {
     input:checked ~ span:last-child::after {
-      background: $gradient-orange-lr;
+      background: $gradient-orange;
     }
   }
 
