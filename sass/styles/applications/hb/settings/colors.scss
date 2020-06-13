@@ -1,6 +1,10 @@
 $grey: #f3f3f3;
 $code-editor-grey: #1e1e1e;
 
+//Gradients
+$gradient-purple-blue: linear-gradient(to right, #8108da, #350ed8);
+$gradient-lgreen: linear-gradient(to right, #82da3b, #27a87c);
+
 //Background Colors
 $bg-color-list: map-merge(
   $bg-color-list,
@@ -17,6 +21,16 @@ $text-color-list: map-merge(
     "dark-grey": $dark-grey
   )
 );
+
+//Background Gradients
+$gradient-map: map-merge(
+  $gradient-map,
+  (
+    "purple-blue": $gradient-purple-blue,
+    "lgreen": $gradient-lgreen,
+  )
+);
+
 
 //Border card
 $border-card-border-color: #f3f3f3;
