@@ -85,14 +85,19 @@
   &.button-white {
     background: $white !important;
   }
+
+  &.disabled,
+  &:disabled {
+    cursor: auto;
+    background: $button-gradient-disabled;
+  }
 }
 
 .button-dashed {
   border: 1px solid;
 
   &:hover {
-    background-color: $dashed-button-color;
-    color: $white;
+    color: $white !important;
   }
 
   &.button-pink-orange {
@@ -101,8 +106,6 @@
 
     &:hover {
       background-image: $hi-gradient-pink-orange-lr;
-      color: $white;
-      border: unset;
     }
   }
 
@@ -112,18 +115,35 @@
 
     &:hover {
       background-image: $gradient-orange;
-      color: $white;
+    }
+  }
+
+  &.button-green {
+    border: solid 1px $green;
+    color: $green;
+
+    &:hover {
+      background-image: $gradient-green;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    border-color: $faded-text !important;
+    color: $faded-text !important;
+    cursor: auto;
+
+    &:hover {
+      background: $button-gradient-disabled !important;
+      color: $white !important;
     }
   }
 }
 
-.button-solid.disabled,
-.button-solid:disabled {
-  background-image: $button-gradient-disabled;
-  box-shadow: 0 10px 41px 0 $button-gradient-disabled;
-
-  button {
-    cursor: default;
-    pointer-events: none;
+@media screen and (max-width: 575px) {
+  .button-align-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 }

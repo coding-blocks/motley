@@ -6,49 +6,9 @@
     background: $light-grey;
     color: #666666;
   }
-
-  &.disabled,
-  &:disabled {
-    cursor: auto;
-    background: $faded-text;
-  }
 }
 
 .button-dashed {
   font-weight: $bold;
   display: inline-block;
-
-  &:hover {
-    background-color: unset;
-  }
-
-  &.button-orange {
-    border: solid 1px $orange;
-    color: $orange;
-
-    &:hover {
-      background-image: $gradient-orange;
-      color: $white;
-    }
-  }
-
-  &.disabled,
-  &:disabled {
-    border-color: $faded-text !important;
-    color: $faded-text !important;
-    cursor: auto;
-
-    &:hover {
-      background: $white !important;
-      color: $grey  !important;
-    } 
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .button-align-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
 }

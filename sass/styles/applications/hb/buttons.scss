@@ -2,20 +2,10 @@
   &.button-blue {
     background-image: $button-gradient-blue;
   }
-
-  &.disabled,
-  &:disabled {
-    background: $faded-text !important;
-    cursor: auto;
-  }
 }
 
 .button-dashed {
   font-weight: $bold;
-
-  &:hover {
-    background-color: unset;
-  }
 
   &.button-blue {
     border: solid 1px $hb-blue;
@@ -23,17 +13,6 @@
 
     &:hover {
       background-image: $gradient-blue;
-      color: $white;
-    }
-  }
-
-  &.button-orange {
-    border: solid 1px $orange;
-    color: $orange;
-
-    &:hover {
-      background-image: $gradient-orange;
-      color: $white;
     }
   }
 
@@ -42,30 +21,7 @@
     color: $purple;
 
     &:hover {
-      background-image: $gradient-purple;
-      color: $white;
-    }
-  }
-
-  &.button-green {
-    border: solid 1px $green;
-    color: $green;
-
-    &:hover {
-      background-image: $gradient-green;
-      color: $white;
-    }
-  }
-
-  &.disabled,
-  &:disabled {
-    border-color: $faded-text !important;
-    color: $faded-text !important;
-    cursor: auto;
-
-    &:hover {
-      background: $white !important;
-      color: $grey !important;
+      background-image: $gradient-dpurple;
     }
   }
 }
