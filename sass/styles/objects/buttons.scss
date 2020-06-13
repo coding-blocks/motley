@@ -4,17 +4,17 @@
 
 @each $type, $width, $height, $border-radius, $background, $color, $font-weight, $padding-top-bottom,
   $padding-right-left
-  in (
-    dashed,
-    $dashed-button-width,
-    $dashed-button-height,
-    $dashed-border-radius,
-    $dashed-button-background,
-    $dashed-button-color,
-    $dashed-button-weight,
-    10px,
-    15px
-  ),
+    in (
+      dashed,
+      $dashed-button-width,
+      $dashed-button-height,
+      $dashed-border-radius,
+      $dashed-button-background,
+      $dashed-button-color,
+      $dashed-button-weight,
+      10px,
+      15px
+    ),
   (
     solid,
     $solid-button-width,
@@ -35,7 +35,8 @@
     $circle-button-color,
     0,
     0
-  ) {
+  )
+{
   .button-#{$type} {
     @extend %button-text;
 
@@ -74,12 +75,15 @@
   }
 
   &.button-orange {
-    // background-image: $gradient-orange;
-    background-image: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
+    background-image: $button-gradient-orange;
+  }
+
+  &.button-green {
+    background-image: $button-gradient-green;
   }
 
   &.button-white {
-    background: white !important;
+    background: $white !important;
   }
 }
 

@@ -1,19 +1,6 @@
 .button-solid {
-  &.button-orange {
-    background-image: $button-gradient-orange;
-  }
-
   &.button-blue {
     background-image: $button-gradient-blue;
-  }
-
-  &.button-white {
-    background: $white;
-    color: $hb-blue;
-  }
-
-  &.button-green {
-    background-image: $button-gradient-green;
   }
 
   &.disabled,

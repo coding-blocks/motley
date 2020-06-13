@@ -1,24 +1,10 @@
 .button-solid {
-  background-size: 200%;
   font-weight: $bold;
   display: inline-block;
-
-  &.button-orange {
-    background-image: $button-gradient-orange;
-  }
-
-  &.button-green {
-    background-image: $button-gradient-green; 
-  }
 
   &.button-grey {
     background: $light-grey;
     color: #666666;
-  }
-
-  &.button-white {
-    background: $white !important;
-    color: $orange;
   }
 
   &.disabled,
