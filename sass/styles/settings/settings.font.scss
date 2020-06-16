@@ -35,6 +35,11 @@ $card-xs: 0.5rem; // 7px
   src: url("https://unpkg.com/@coding-blocks/motley@1.0.1/dist/font/Muli-Italic.ttf");
 }
 
+@font-face {
+  font-family: "BebasNeue";
+  src: url(fonts/BebasNeue-Regular.ttf);
+}
+
 $text-size-list: (
   "font-xs": $font-xs,
   "font-sm": $font-sm,

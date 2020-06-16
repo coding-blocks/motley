@@ -1,0 +1,75 @@
+.certificate-lite {
+  height: 839px;
+  width: 1381px;
+  background: $white;
+  font-family: 'Gilroy', sans-serif;
+
+  &__left-section {
+    width: 220px;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(0deg, #19316c, #01b3c9);
+
+    img {
+      position: absolute;
+      bottom: 48px;
+      left: 48px;
+    }
+  }
+
+  &__right-section {
+    flex: 1;
+    padding: 80px 0 0 100px;
+    position: relative;
+
+    &__logo {
+      height: 80px !important;
+    }
+
+    &__title {
+      margin-top: 36px;
+      font-size: 82px;
+      font-family: "BebasNeue", sans-serif;
+      margin-bottom: 37px;
+    }
+
+    &__badge {
+      position: absolute;
+      background: linear-gradient(0deg, #19316c, #01b3c9);
+      top: 0;
+      right: 68px;
+      width: 235px;
+      height: 220px;
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+
+      .position-relative {
+        .extra-bold {
+          bottom: 25%;
+          font-size: 37px;
+        }
+      }
+    }
+
+    &__description {
+      margin-top: 136px;
+    }
+
+    &__signature-row {
+      margin-top: 38px;
+
+      .signature-divider {
+        height: 1px;
+        width: 169px;
+        background: #646464;
+        margin-bottom: 17px;
+      }
+
+      div:nth-child(2) {
+        .signature-divider {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
