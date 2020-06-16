@@ -1,54 +1,18 @@
 .button-solid {
-  background-size: 100%;
-
-  &.button-orange {
-    background-image: $button-gradient-orange;
-  }
-
   &.button-blue {
     background-image: $button-gradient-blue;
-  }
-
-  &.button-white {
-    background: $white;
-    color: $hb-blue;
-  }
-
-  &.button-green {
-    background-image: $gradient-green-lr;
-  }
-
-  &.disabled,
-  &:disabled {
-    background: $faded-text !important;
-    cursor: auto;
   }
 }
 
 .button-dashed {
   font-weight: $bold;
 
-  &:hover {
-    background-color: unset;
-  }
-
   &.button-blue {
     border: solid 1px $hb-blue;
     color: $hb-blue;
 
     &:hover {
-      background-image: $button-gradient-blue;
-      color: $white;
-    }
-  }
-
-  &.button-orange {
-    border: solid 1px $orange;
-    color: $orange;
-
-    &:hover {
-      background-image: $gradient-orange;
-      color: $white;
+      background-image: $gradient-blue;
     }
   }
 
@@ -57,30 +21,7 @@
     color: $purple;
 
     &:hover {
-      background-image: $gradient-purple;
-      color: $white;
-    }
-  }
-
-  &.button-green {
-    border: solid 1px $green;
-    color: $green;
-
-    &:hover {
-      background-image: $gradient-green-lr;
-      color: $white;
-    }
-  }
-
-  &.disabled,
-  &:disabled {
-    border-color: $faded-text !important;
-    color: $faded-text !important;
-    cursor: auto;
-
-    &:hover {
-      background: $white !important;
-      color: $grey !important;
+      background-image: $gradient-dpurple;
     }
   }
 }

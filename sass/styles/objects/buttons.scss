@@ -4,17 +4,17 @@
 
 @each $type, $width, $height, $border-radius, $background, $color, $font-weight, $padding-top-bottom,
   $padding-right-left
-  in (
-    dashed,
-    $dashed-button-width,
-    $dashed-button-height,
-    $dashed-border-radius,
-    $dashed-button-background,
-    $dashed-button-color,
-    $dashed-button-weight,
-    10px,
-    15px
-  ),
+    in (
+      dashed,
+      $dashed-button-width,
+      $dashed-button-height,
+      $dashed-border-radius,
+      $dashed-button-background,
+      $dashed-button-color,
+      $dashed-button-weight,
+      10px,
+      15px
+    ),
   (
     solid,
     $solid-button-width,
@@ -35,7 +35,8 @@
     $circle-button-color,
     0,
     0
-  ) {
+  )
+{
   .button-#{$type} {
     @extend %button-text;
 
@@ -74,12 +75,22 @@
   }
 
   &.button-orange {
-    // background-image: $gradient-orange;
-    background-image: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
+    background-image: $button-gradient-orange;
+  }
+
+  &.button-green {
+    background-image: $button-gradient-green;
   }
 
   &.button-white {
-    background: white !important;
+    background: $white !important;
+    color: $black;
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor: auto;
+    background: $button-gradient-disabled;
   }
 }
 
@@ -87,8 +98,7 @@
   border: 1px solid;
 
   &:hover {
-    background-color: $dashed-button-color;
-    color: $white;
+    color: $white !important;
   }
 
   &.button-pink-orange {
@@ -97,8 +107,6 @@
 
     &:hover {
       background-image: $hi-gradient-pink-orange-lr;
-      color: $white;
-      border: unset;
     }
   }
 
@@ -108,18 +116,35 @@
 
     &:hover {
       background-image: $gradient-orange;
-      color: $white;
+    }
+  }
+
+  &.button-green {
+    border: solid 1px $green;
+    color: $green;
+
+    &:hover {
+      background-image: $gradient-green;
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    border-color: $faded-text !important;
+    color: $faded-text !important;
+    cursor: auto;
+
+    &:hover {
+      background: $button-gradient-disabled !important;
+      color: $white !important;
     }
   }
 }
 
-.button-solid.disabled,
-.button-solid:disabled {
-  background-image: $button-gradient-disabled;
-  box-shadow: 0 10px 41px 0 $button-gradient-disabled;
-
-  button {
-    cursor: default;
-    pointer-events: none;
+@media screen and (max-width: 575px) {
+  .button-align-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 }

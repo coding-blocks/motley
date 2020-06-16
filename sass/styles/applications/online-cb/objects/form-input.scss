@@ -31,7 +31,7 @@ div.input-radio {
   &.gradient-input {
     input:checked ~ label::before {
       content: "";
-      background: $gradient-orange-lr;
+      background: $gradient-orange;
     }
   }
 

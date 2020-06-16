@@ -123,27 +123,28 @@ $threads-invert: #191919;
 $list-shaded-invert: #111;
 $list-shaded-background: rgba(255, 255, 255, 0.9);
 
-//Gradients
-$bg-gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
-// $gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
-$gradient-orange-30-deg: linear-gradient(30deg, #ec6333, #f19633);
-$gradient-black: linear-gradient(30deg, #333, #000);
-$button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
-$course-progress-circle-front: linear-gradient(to right, rgba(237, 114, 152, 0.4), rgba(236, 136, 113, 0.4));
-$button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160, 160, 160));
-$gradient-blue-30-deg: linear-gradient(30deg, #384282, #34729a);
-$gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
-$button-gradient-blue: linear-gradient(to right, #193b84, #2675bb);
+//Gradient Palette
+$gradient-orange: linear-gradient(to right, #e74e4b, #fb8133);
+$gradient-blue: linear-gradient(to right, #1c40de, #2ab5ed);
+$gradient-cyan: linear-gradient(to right, #39dec0, #1d87b1);
+$gradient-pink: linear-gradient(to right, #e74b50, #d12ebd);
+$gradient-dpink: linear-gradient(to right, #f24f60, #a5066c);
+$gradient-yellow: linear-gradient(to right, #fa8733, #f7c332);
+$gradient-green: linear-gradient(to right, #83db3b, #26a87c);
+$gradient-purple: linear-gradient(to right, #8008db, #430cd7);
+$gradient-lpurple: linear-gradient(ro right, #8F3CE5, #3A30D6);
+$gradient-lblue: linear-gradient(to right, #475ff5, #6ed9fc);
+$gradient-dcyan: linear-gradient(to right, #19316c, #01b3c9);
+$gradient-dblue: linear-gradient(to right, #0467f6, #0800a3);
+$gradient-dpurple: linear-gradient(to right, #00205b, #84358e);
+$gradient-black: linear-gradient(to right, #1b1d27, #07080b);
 
-// $gradient-orange: linear-gradient(30deg, #ec6333, #f19633);
-$gradient-purple: linear-gradient(30deg, #271147, #553180);
-$gradient-navy: linear-gradient(30deg, #133155, #122a42);
-$gradient-dblue-lr: linear-gradient(to right, #0b024e, #003);
-$gradient-green-lr: linear-gradient(to right, #56aa4e, #7eda75);
-$gradient-lblue-lr: linear-gradient(to right, #0b024e, #174e79);
-$gradient-blue-lr: linear-gradient(to right, #193b84, #2675bb);
-$gradient-orange-lr: linear-gradient(to right, #ec6333, #f19633);
-$gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
+//Button Gradients
+$button-gradient: linear-gradient(to right, rgb(237, 114, 152), rgb(236, 136, 113), rgb(237, 114, 152));
+$button-gradient-green: linear-gradient(to right, #83db3b, #26a87c, #83db3b);
+$button-gradient-orange: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
+$button-gradient-blue: linear-gradient(to right, #1c40de, #2ab5ed, #1c40de);
+$button-gradient-disabled: linear-gradient(to right, rgb(119, 131, 120), rgb(160, 160, 160));
 
 //Hello - Intern
 $hi-gradient-pink-orange-lr: linear-gradient(to right, #f24f60, #f19f33);
@@ -151,23 +152,12 @@ $hi-gradient-dpink-lr: linear-gradient(to right, #a5066c, #f24f60);
 $hi-gradient-blue-lr: linear-gradient(to right, #1c40de, #2ab5ed);
 $hi-gradient-purple-lr: linear-gradient(to right, #8008db, #430cd7);
 
-//Palette Colors
-$gradient-orange: linear-gradient(to right, #e74e4b, #fb8133);
-$gradient-purple: linear-gradient(30deg, #271147, #553180);
-$gradient-purple-blue: linear-gradient(30deg, #8108da, #350ed8);
-$gradient-blue: linear-gradient(30deg, #1b40de, #2cb4ed);
-$gradient-cyan: linear-gradient(30deg, #39ddbf, #1770ae);
-$gradient-dpink: linear-gradient(30deg, #e64b51, #d02ebd);
-$gradient-yellow: linear-gradient(30deg, #fb8732, #f8c332);
-$gradient-lgreen: linear-gradient(30deg, #82da3b, #27a87c);
-$gradient-pink: linear-gradient(30deg, #f24f5f, #a3076c);
-$gradient-wblue: linear-gradient(30deg, #475ef6, #6fd9fc);
+//Special Gradients
+$gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 
-//Checkbox
-// $checkbox-solid: (
-//   orange: $gradient-orange
-// );
-$checkbox-solid: $gradient-orange;
+//Non Linear Gradients
+$gradient-orange-angle: linear-gradient(30deg, #e74e4b, #fb8133);
+$gradient-black-bt: linear-gradient(to up, #1b1d27, #07080b);
 
 // Hover Colors
 $hover-grey: #f3f3f3;
@@ -176,6 +166,20 @@ $hover-grey: #f3f3f3;
 $dark-grey-list: #999;
 $light-grey-list: #f3f3f3;
 $white-list: #fff;
+
+//Border Card
+$border-card-border-color: #e8e8e8;
+
+//Tags
+$tag-dashed-border-color: $salmon;
+$tag-dashed-text-color: $salmon;
+
+//Pills
+$pill-dashed-border-color: $salmon;
+$pill-dashed-text-color: $salmon;
+
+//Form Input
+$input-text-background-color: $hover-grey;
 
 //Background Colors
 $bg-color-list: (
@@ -191,7 +195,7 @@ $bg-color-list: (
   "light-grey": $light-grey,
   "dark-grey": $interview-grey,
   "med-grey": $timeline-grey,
-  "black-grey": $black-grey
+  "black-grey": $black-grey,
 );
 
 //Text Colors
@@ -209,54 +213,38 @@ $text-color-list: (
   "pink": $dcb-pink,
   "med-grey": $faded-text,
   "dark-grey": $dark-grey,
-  "del-text-grey": $del-text-grey 
+  "del-text-grey": $del-text-grey,
 );
 
 //Gradient Text Colors
 $gradient-text-color-list: (
   "red": $button-gradient,
-  "blue": $gradient-blue-lr,
-  "orange": $gradient-orange-lr
+  "blue": $gradient-blue,
+  "orange": $gradient-orange,
+  "green": $gradient-green,
+  "pink": $gradient-pink,
+  "yellow": $gradient-yellow, 
 );
 
 $gradient-map: (
-  black-lr: linear-gradient(30deg, #333, #000),
-  black-bt: linear-gradient(to top, #333, #000),
-  violet-lr: linear-gradient(to right, #692fdc, #452ba3),
-  violet-bt: linear-gradient(to top, #692fdc, #452ba3),
-  red-lr: linear-gradient(to right, #ed788d 0%, #ec837a),
   orange: $gradient-orange,
-  purple: $gradient-purple,
-  purple-blue: $gradient-purple-blue,
   blue: $gradient-blue,
   cyan: $gradient-cyan,
+  pink: $gradient-pink,
   dpink: $gradient-dpink,
   yellow: $gradient-yellow,
-  lgreen: $gradient-lgreen,
-  pink: $gradient-pink,
-  wblue: $gradient-wblue,
+  green: $gradient-green,
+  purple: $gradient-purple,
+  lpurple: $gradient-lpurple,
+  lblue: $gradient-lblue,
+  dcyan: $gradient-dcyan,
+  dblue: $gradient-dblue,
+  dpurple: $gradient-dpurple,
+  black: $gradient-black,
+  black-bt: $gradient-black-bt,
   hi-pink-orange: $hi-gradient-pink-orange-lr,
   hi-dpink: $hi-gradient-dpink-lr,
   hi-blue: $hi-gradient-blue-lr,
   hi-purple: $hi-gradient-purple-lr,
+  violet-bt: linear-gradient(to top, #692fdc, #452ba3),
 );
-
-//Checkbox
-// $checkbox-solid: (
-//   orange: $gradient-orange-30-deg
-// );
-$checkbox-solid: $gradient-orange-30-deg;
-
-//Border Card
-$border-card-border-color: #e8e8e8;
-
-//Tags
-$tag-dashed-border-color: $salmon;
-$tag-dashed-text-color: $salmon;
-
-//Pills
-$pill-dashed-border-color: $salmon;
-$pill-dashed-text-color: $salmon;
-
-//Form Input
-$input-text-background-color: $hover-grey;

@@ -1,174 +1,179 @@
- <!-- Navigation Bar -->
- <header>
-     <nav class="main-nav">
-        <div class="nav-left">
-            <span class="hamburger-parent">
-                <i class="hamburger fas fa-bars"></i>
-            </span>
-            <span class="logo-parent">
-                <a class=" logo-link" href="/home.html">
-                    <img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
-                </a>
-            </span>
-        </div>
+<!-- Navigation Bar -->
+<header>
+	<nav class="main-nav">
+		<div class="nav-left">
+			<span class="hamburger-parent">
+				<i class="hamburger fas fa-bars"></i>
+			</span>
+			<span class="logo-parent">
+				<a class=" logo-link" href="/home.html">
+					<img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
+				</a>
+			</span>
+		</div>
 
-        <div class="nav-right">
-            <div class="input-search nav-search">
-                <input type="text" placeholder="Search here">
-                <img src="images/searchicon.png" alt="search">
-                <div class="search-box display-none">
-                    <div class="row search-content align-items-center">
-                    <div class="img-container col-md-3">
-                        <img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="online-logo" class="nav-logo pointer">
-                    </div>
-                    <div class="heading-container col-md-9">
-                            <div>Web Development</div>
-                            <div class="red font-sm">NOV-DEC 2017</div>
-                    </div>
-                    </div>
-                    <div class="row search-content align-items-center">
-                        <div class="img-container col-md-3">
-                            <img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="online-logo" class="nav-logo pointer">
-                        </div>
-                        <div class="heading-container col-md-9">
-                            <div>Web Development</div>
-                            <div class="red font-sm">NOV-DEC 2017</div>
-                        </div>
-                    </div>
+		<div class="nav-right">
+			<div class="search-bar nav-search">
+				<input type="text" placeholder="Search here">
+				{{!-- <div class="search-box display-none">
+					<div class="row search-content align-items-center">
+						<div class="img-container col-md-3">
+							<img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg"
+								alt="online-logo" class="nav-logo pointer">
+						</div>
+						<div class="heading-container col-md-9">
+							<div>Web Development</div>
+							<div class="red font-sm">NOV-DEC 2017</div>
+						</div>
+					</div>
+					<div class="row search-content align-items-center">
+						<div class="img-container col-md-3">
+							<img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg"
+								alt="online-logo" class="nav-logo pointer">
+						</div>
+						<div class="heading-container col-md-9">
+							<div>Web Development</div>
+							<div class="red font-sm">NOV-DEC 2017</div>
+						</div>
+					</div>
+					<div class="row search-content align-items-center">
+						<div class="img-container col-md-3">
+							<img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg"
+								alt="online-logo" class="nav-logo pointer">
+						</div>
+						<div class="heading-container col-md-9">
+							<div>Web Development</div>
+							<div class="red font-sm">NOV-DEC 2017</div>
+						</div>
+					</div>
+				</div> --}}
+			</div>
 
-                    <div class="row search-content align-items-center">
-                        <div class="img-container col-md-3">
-                            <img src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="online-logo" class="nav-logo pointer">
-                        </div>
-                        <div class="heading-container col-md-9">
-                            <div>Web Development</div>
-                            <div class="red font-sm">NOV-DEC 2017</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<ul class="nav-list dsp-none-sm">
+				<li class="nav-items pointer active">
+					About us
+				</li>
+				<li class="nav-items pointer">
+					All Courses
+				</li>
+				<li class="nav-items pointer">
+					Contact us
+				</li>
 
-            <ul class="nav-list dsp-none-sm">
-                <li class="nav-items pointer active">
-                    About us
-                </li>
-                <li class="nav-items pointer">
-                    All Courses
-                </li>
+				<li class="nav-items">
 
-                    Contact us
-                </li>
+					<i class="fas fa-bell notification"></i>
 
-                <li class="nav-items">
-                    
-                    <i class="fas fa-bell notification"></i>
-                    
-                    <div class="dropdown-ul c-notification">
-                        <div class="dropdown-li row">
-                            <div class="notify-type col-2 justify-content-center align-items-center">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
+					<div class="dropdown-ul c-notification">
+						<div class="dropdown-li row">
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
 
-                            <div class="notify-text col-10">Please hard refresh (Ctrl  Shift  R) your web app to make sure that you are on latest version of the app. We just deployed some major changes so that might be causing
-                                issues for you.</div>
-                        </div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
 
-                        <div class="dropdown-li row">
+						<div class="dropdown-li row">
 
-                            <div class="notify-type col-2 justify-content-center align-items-center">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="notify-text col-10">Please hard refresh (Ctrl  Shift  R) your web app to make sure that you are on latest version of the app. We just deployed some major changes so that might be causing
-                                issues for you.</div>
-                        </div>
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
 
-                        <div class="dropdown-li row">
+						<div class="dropdown-li row">
 
-                            <div class="notify-type col-2 justify-content-center align-items-center">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="notify-text col-10">Please hard refresh (Ctrl  Shift  R) your web app to make sure that you are on latest version of the app. We just deployed some major changes so that might be causing
-                                issues for you.</div>
-                        </div>
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
 
-                        <div class="dropdown-li row">
+						<div class="dropdown-li row">
 
-                            <div class="notify-type col-2 justify-content-center align-items-center">
-                                <div class="notify-icon">
-                                    <span class="notify-dot new"></span>
-                                    <img src="images/announcement.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="notify-text col-10">Please hard refresh (Ctrl  Shift  R) your web app to make sure that you are on latest version of the app. We just deployed some major changes so that might be causing
-                                issues for you.</div>
-                        </div>
-                    </div>
-                </li>
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
+					</div>
+				</li>
 
-                {{!-- <li class="nav-items pointer">
+				{{!-- <li class="nav-items pointer">
                     {{>button type='solid' text='Login'}}
                 </li> --}}
-            </ul>
+			</ul>
 
-            <div class="round-img">
-                <img src="/https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svgode-red.svg" alt="">
-            </div>
+			<div class="round-img">
+				<img src="/https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svgode-red.svg" alt="">
+			</div>
 
 
 
-            <div class="card">
-                <div class="top-offset"></div>
-                <div class="nav-info">
-                    <div class="flex-row justify-content-end">
-                        <span class="pointer red">MY PROFILE</span>
-                    </div>
-                    <div class="separator"></div>
-                    <div class="flex-row justify-content-end faded">
-                        <span class="pointer">LOGOUT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="card">
+				<div class="top-offset"></div>
+				<div class="nav-info">
+					<div class="flex-row justify-content-end">
+						<span class="pointer red">MY PROFILE</span>
+					</div>
+					<div class="separator"></div>
+					<div class="flex-row justify-content-end faded">
+						<span class="pointer">LOGOUT</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-     </nav>
-     <div class="sidebar sidebar-none">
-         <i class="close fas fa-times"></i>
-         <div class="upper-half">
-             <div class="round-img">
-             </div>
-             <div class="para">
-                 Hello, Guest
-             </div>
-             {{>button type='solid' text='Login'}}
-         </div>
-         <div class="lower-half">
-             <div class="para">
-                 About Us
-             </div>
-             <div class="para">
-                 All Courses
-             </div>
-             <div class="para">
-                 Contact Us
-             </div>
-             <div class="para">
-                 About Us
-             </div>
-             <div class="para">
-                 All Courses
-             </div>
-             <div class="para">
-                 Contact Us
-             </div>
-         </div>
-     </div>
- </header>
+	</nav>
+	<div class="sidebar sidebar-none">
+		<i class="close fas fa-times"></i>
+		<div class="upper-half">
+			<div class="round-img">
+			</div>
+			<div class="para">
+				Hello, Guest
+			</div>
+			{{>button type='solid' text='Login'}}
+		</div>
+		<div class="lower-half">
+			<div class="para">
+				About Us
+			</div>
+			<div class="para">
+				All Courses
+			</div>
+			<div class="para">
+				Contact Us
+			</div>
+			<div class="para">
+				About Us
+			</div>
+			<div class="para">
+				All Courses
+			</div>
+			<div class="para">
+				Contact Us
+			</div>
+		</div>
+	</div>
+</header>
