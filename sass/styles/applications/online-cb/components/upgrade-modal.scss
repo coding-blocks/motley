@@ -4,8 +4,14 @@
     top: 1.5rem;
     right: 3rem;
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       right: 1.5rem;
+    }
+  }
+
+  .feature-list {
+    @media screen and (min-width: 576px) {
+      border-right: solid 1px $search-box-color;
     }
   }
 }

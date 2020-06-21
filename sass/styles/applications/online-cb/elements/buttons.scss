@@ -1,68 +1,14 @@
 .button-solid {
-  background-size: 200%;
   font-weight: $bold;
   display: inline-block;
-
-  &.button-orange {
-    background-image: $button-gradient-orange;
-  }
-
-  &.button-green {
-    background-image: $button-gradient-green; 
-  }
 
   &.button-grey {
     background: $light-grey;
     color: #666666;
-  }
-
-  &.button-white {
-    background: $white !important;
-    color: $orange;
-  }
-
-  &.disabled,
-  &:disabled {
-    cursor: auto;
-    background: $faded-text;
   }
 }
 
 .button-dashed {
   font-weight: $bold;
   display: inline-block;
-
-  &:hover {
-    background-color: unset;
-  }
-
-  &.button-orange {
-    border: solid 1px $orange;
-    color: $orange;
-
-    &:hover {
-      background-image: $button-gradient-orange-hover;
-      color: $white;
-    }
-  }
-
-  &.disabled,
-  &:disabled {
-    border-color: $faded-text !important;
-    color: $faded-text !important;
-    cursor: auto;
-
-    &:hover {
-      background: $white !important;
-      color: $grey  !important;
-    } 
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .button-align-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
 }

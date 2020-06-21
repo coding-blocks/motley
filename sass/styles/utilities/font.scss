@@ -1,70 +1,18 @@
-// FONT SIZE
-
-$list: (font-xs, $font-xs) (font-sm, $font-sm) (font-mds, $font-mds) (font-md, $font-md) (font-lg, $font-lg)
-  (font-xl, $font-xl) (font-mdxl, $font-mdxl) (font-xxl, $font-xxl) (card-md, $card-md) (card-mds, $card-mds)
-  (card-sm, $card-sm) (card-sms, $card-sms) (card-xs, $card-xs);
-
-@each $type, $size in $list {
+// Font Size
+@each $type, $size in $text-size-list {
   .#{$type} {
     font-size: $size !important;
   }
 }
 
-// FONT STYLE
+// Font Weight
+@each $type, $weight in $text-weight-list {
+  .#{$type} {
+    font-weight: $weight !important;
+  }
+}
 
+// Font Style
 .i {
   font-style: italic !important;
-}
-
-.normal {
-  font-weight: $font-normal !important;
-}
-
-// FONT WEIGHT
-.light {
-  font-weight: $light !important;
-}
-
-.regular {
-  font-weight: $regular !important;
-}
-
-.semi-bold {
-  font-weight: $semi-bold !important;
-}
-
-.bold {
-  font-weight: $bold !important;
-}
-
-.extra-bold {
-  font-weight: $extra-bold !important;
-}
-
-.gradient-text-orange {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: $gradient-orange;
-}
-
-.gradient-text-green {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: $gradient-lgreen;
-}
-
-.gradient-text-pink {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: $gradient-pink;
-}
-
-.gradient-text-yellow {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: $gradient-yellow;
 }

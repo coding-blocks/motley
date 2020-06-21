@@ -1,65 +1,15 @@
-.button-solid {
-  &.disabled,
-  &:disabled {
-    background: $faded-text !important;
-    cursor: auto;
-  }
-  
+.button-solid {  
   &.lg {
     padding: 13px 20px;
     border-radius: 30px;
-  }
-
-  &.button-orange {
-    background-image: $button-gradient-orange;
-  }
-
-  &.button-green {
-    background-image: $gradient-green-lr;
   }
 }
 
 .button-dashed {
   font-weight: $bold;
 
-  &.disabled,
-  &:disabled {
-    border-color: $faded-text !important;
-    color: $faded-text !important;
-    cursor: auto;
-
-    &:hover {
-      background: $white !important;
-      color: $grey !important;
-    }
-  }
-
   &.lg {
     padding: 13px 20px;
     border-radius: 30px;
-  }
-
-  &:hover {
-    background-color: unset;
-  }
-
-  &.button-orange {
-    border: solid 1px $orange;
-    color: $orange;
-
-    &:hover {
-      background-image: $gradient-orange-lr;
-      color: $white;
-    }
-  }
-
-  &.button-green {
-    border: solid 1px $green;
-    color: $green;
-
-    &:hover {
-      background-image: $gradient-green-lr;
-      color: $white;
-    }
   }
 }

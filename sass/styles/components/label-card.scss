@@ -1,0 +1,92 @@
+.label-card {
+  &__head {
+    height: 225px;
+    position: relative;
+    background: $gradient-orange;
+
+    &__cover {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  &__label {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: $gradient-orange;
+    position: absolute;
+    height: 40px;
+    width: 55%;
+    top: -40px;
+    left: 22.5%;
+
+    & > div {
+      &::after,
+      &::before,
+      & > div::after,
+      & > div::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+      }
+
+      &::before {
+        background: #e74e4b;
+        left: -10px;
+      }
+
+      &::after {
+        background: #fb8133;
+        right: -10px;
+      }
+
+      &::before,
+      &::after {
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+      }
+
+      & > div {
+        &::before {
+          left: -20px;
+        }
+
+        &::after {
+          right: -20px;
+        }
+
+        &::before,
+        &::after {
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          z-index: 2;
+          background: $white;
+        }
+      }
+    }
+  }
+
+  &__foot {
+    border: 1px solid $search-box-color;
+    margin-top: -15px;
+    background: $white;
+    position: relative;
+    padding-top: 3.8rem;
+    padding-bottom: 3rem;
+
+    &__tag {
+      position: absolute;
+      background: $white;
+      top: -50px;
+      right: 7.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $orange;
+      border-radius: 50%;
+    }
+  }
+}

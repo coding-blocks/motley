@@ -1,5 +1,4 @@
 $grey: #666;
-$orange: #f2734c;
 $border-grey: #2b2f37;
 
 //Text Colors
@@ -10,34 +9,3 @@ $text-color-list: map-merge(
     "dark-orange": $orange,
   )
 );
-
-//Gradients
-$gradient-blue: linear-gradient(to right, #1c40de, #2ab5ed);
-$gradient-lblue: linear-gradient(to right, #475ff5, #6ed9fc);
-$gradient-dblue: linear-gradient(to right, #0467f6, #0800a3);
-$gradient-navy: linear-gradient(to right, #19316c, #01b3c9);
-$gradient-cyan: linear-gradient(to right, #39dec0, #1d87b1);
-$gradient-purple: linear-gradient(to right, #8f3ce5, #3a30d6);
-$gradient-dpurple: linear-gradient(to right, #00205b, #84358e);
-$gradient-magenta: linear-gradient(to right, #f24f60, #a5066c);
-$gradient-pink: linear-gradient(to right, #e74b50, #d12ebd);
-$gradient-green: linear-gradient(to right, #83db3b, #26a87c);
-$gradient-yellow: linear-gradient(to right, #fa8733, #f7c332);
-$gradient-orange: linear-gradient(to right, #e74e4b, #fb8133);
-
-$button-gradient-green: linear-gradient(to right, #82da3b, #27a87c, #82da3b);
-$button-gradient-orange: linear-gradient(to right, #e74e4b, #fb8133, #e74e4b);
-$button-gradient-orange-hover: linear-gradient(to right, #fb8133, #e74e4b);
-$button-gradient-green-hover: linear-gradient(to right, #82da3b, #27a87c);
-
-//Gradient List
-$gradient-map: map-merge(
-  $gradient-map,
-  (
-    lblue: $gradient-lblue,
-    dblue: $gradient-dblue,
-    dpurple: $gradient-dpurple,
-    magenta: $gradient-magenta,
-    green: $gradient-green,
-  )
-)

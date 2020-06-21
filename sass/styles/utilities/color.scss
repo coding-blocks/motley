@@ -7,11 +7,11 @@
 }
 
 @each $abbrev, $color in $gradient-text-color-list {
-  .gradient-#{$abbrev} {
-    background-image: $color;
+  .gradient-text-#{$abbrev} {
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $color;
   }
 }
 

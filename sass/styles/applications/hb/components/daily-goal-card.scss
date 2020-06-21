@@ -5,7 +5,7 @@
     background-clip: content-box;
   }
 
-  @include progress(10px, $gradient-blue-lr);
+  @include progress(10px, $gradient-blue);
 }
 
 @media screen and (max-width: 1200px) {
