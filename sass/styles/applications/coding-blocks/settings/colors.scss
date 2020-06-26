@@ -1,3 +1,6 @@
+// PALETTE SOLIDS
+
+// Neutral colors
 $black: #08090C;
 $dark-grey: #191D24;
 $med-grey: #2A2F3C;
@@ -6,12 +9,47 @@ $light-grey: #CCCCCC;
 $lighter-grey: #E0E0E0;
 $lightest-grey: #F5F5F5;
 
+// Greens
 $dark-green: #26A87C;
 $med-green: #55C25C;
 $green: #6CCE4B;
 $light-green: #83DB3B;
 
+// Blues
 $dark-blue: #1C40DE;
 $med-blue: #2167E3;
 $blue: #258EE8;
 $light-blue: #2AB5ED;
+
+// Reds
+$red: #E74E4B;
+$dark-orange: #F26A3E;
+$orange: #FB8133;
+$yellow: #FFBA08;
+
+// Purples
+$dark-purple: #3A30D6;
+$med-purple: #4F33DA;
+$purple: #6536DE;
+$light-purple: #8F3CE5;
+
+// Pinks
+$dark-pink: #A6076C;
+$med-pink: #BF1F68;
+$pink: #D93764;
+$light-pink: #F24F60;
+
+
+// PALETTE GRADIENTS
+
+$gradient-orange-dark: linear-gradient(90deg, #E74E4B, #F26A3E);
+$gradient-orange: linear-gradient(90deg, #F26A3E, #FB8133);
+$gradient-orange-light: linear-gradient(90deg, #FB8133, #FFBA08);
+
+$gradient-green-dark: linear-gradient(90deg, #26A87C, #55C25C);
+$gradient-green: linear-gradient(90deg, #55C25C, #6CCE4B);
+$gradient-green-light: linear-gradient(90deg, #6CCE4B, #83DB3B);
+
+$gradient-blue-dark: linear-gradient(90deg, #1C40DE, #2167E3);
+$gradient-blue: linear-gradient(90deg, #2167E3, #258EE8);
+$gradient-blue-light: linear-gradient(90deg, #258EE8, #2AB5ED);
