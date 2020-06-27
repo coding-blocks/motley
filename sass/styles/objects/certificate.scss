@@ -105,6 +105,11 @@
 
     &__right-section {
       width: 377px !important;
+
+      &__divider {
+        opacity: 0.5; 
+        margin: 42px 0 25px 0;
+      }
     }
 
     &__left-section {
@@ -140,6 +145,11 @@
         padding: 30px 31px 30px 31px;
         z-index: 1;
         width: 100%;
+
+        &__divider {
+          opacity: 0.5; 
+          margin: 24px 0 19px 0;
+        }
       }
     }
 
