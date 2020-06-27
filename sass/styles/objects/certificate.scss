@@ -1,8 +1,23 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy.ttf");
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("/fonts/GreatVibes-Regular.ttf");
+}
+
 .certificate-lite {
   height: 839px;
   width: 1381px;
   background: $white;
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
 
   &__left-section {
     width: 220px;
@@ -29,7 +44,7 @@
     &__title {
       margin-top: 36px;
       font-size: 82px;
-      font-family: "BebasNeue", sans-serif;
+      font-family: "BebasNeue", sans-serif !important;
       margin-bottom: 37px;
     }
 
@@ -70,6 +85,88 @@
           margin-top: 21px;
         }
       }
+    }
+  }
+}
+
+.certificate-excellence {
+  height: 485px;
+  width: 1000px;
+  background: #16171c;
+  position: relative;
+  border-radius: 10px;
+  font-family: "Gilroy", sans-serif;
+
+  &__main-section {
+    padding: 44px 183px 44px 75px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    &__right-section {
+      width: 377px !important;
+    }
+
+    &__left-section {
+      width: 313px !important;
+      border-radius: 10px;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        90deg,
+        #ffda82 2.25%,
+        #bf8442 13.23%,
+        #dbae63 42.19%,
+        #b38a4b 53.2%,
+        #b67f36 64.66%,
+        #855929 77.64%,
+        #ffdc83 87.62%,
+        #d69c51 98.11%
+      );
+
+      &::after {
+        content: "";
+        background: #16171c;
+        position: absolute;
+        border-radius: 10px;
+        width: 309px;
+        height: calc(100% - 4px);
+        z-index: 0;
+      }
+
+      &__content {
+        padding: 30px 31px 30px 31px;
+        z-index: 1;
+        width: 100%;
+      }
+    }
+
+    &__title1 {
+      font-family: "BebasNeue", sans-serif;
+      font-size: 80px;
+      margin-top: 18px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(
+        90deg,
+        #ffda82 2.25%,
+        #bf8442 13.23%,
+        #dbae63 42.19%,
+        #b38a4b 53.2%,
+        #b67f36 64.66%,
+        #855929 77.64%,
+        #ffdc83 87.62%,
+        #d69c51 98.11%
+      );
+    }
+
+    &__title2 {
+      font-family: "GreatVibes";
+      font-size: 64px;
+      margin-top: -28px;
     }
   }
 }
