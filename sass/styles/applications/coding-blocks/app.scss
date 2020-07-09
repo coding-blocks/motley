@@ -1,6 +1,7 @@
 @import "../../settings/settings.color";
 @import "../../settings/settings.global";
 @import "../../settings/settings.font";
+@import "settings";
 @import "../../tools";
 @import "../../generic/normalize";
 @import "../../generic/reset";
@@ -14,6 +15,5 @@
 //TODO: OPTION TO SELECT THEME AND INSERT THAT THEME HERE
 @import "../../themes";
 @import "application";
-@import "settings";
 @import "components";
 @import "../../trumps";
