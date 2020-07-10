@@ -1,0 +1,5 @@
+@each $type, $size in $text-size-list {
+  .#{$type} {
+    font-size: $size !important;
+  }
+}
