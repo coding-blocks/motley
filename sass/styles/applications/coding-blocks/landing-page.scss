@@ -1,0 +1,19 @@
+.landing-page {
+  color: $white;
+
+  .heading-font {
+    font-size: 4.142rem;
+  }
+
+  &__section {
+    padding: 7.142rem;
+
+    &:nth-child(2n-1) {
+      background: $grey-dark-2;
+    }
+
+    &:nth-child(2n) {
+      background: $black;
+    }
+  }
+}
