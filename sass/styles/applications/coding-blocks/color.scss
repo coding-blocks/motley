@@ -1,0 +1,34 @@
+// TEXT SOLIDS
+
+@each $abbrev, $color in $solid-color-list {
+  .text-#{$abbrev} {
+    color: $color !important;
+  }
+}
+
+// TEXT GRADIENTS
+
+@each $abbrev, $color in $gradient-color-list {
+  .text-gradient-#{$abbrev} {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: $color;
+  }
+}
+
+// BACKGROUND SOLIDS
+
+@each $abbrev, $color in $solid-color-list {
+  .bg-#{$abbrev} {
+    background-color: $color !important;
+  }
+}
+
+// BACKGROUND GRADIENTS
+
+@each $abbrev, $color in $gradient-color-list {
+  .bg-gradient-#{$abbrev} {
+    background: $color;
+  }
+}
