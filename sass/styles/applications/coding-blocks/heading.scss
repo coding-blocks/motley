@@ -1,0 +1,29 @@
+// @each $number in (1, 2, 3, 4, 5, 6) {
+//   h#{$number} {
+//     font-size: $heading-#{$number} !important;
+//   }
+// }
+
+h1 {
+  font-size: $heading-1;
+}
+
+h2 {
+  font-size: $heading-2;
+}
+
+h3 {
+  font-size: $heading-3;
+}
+
+h4 {
+  font-size: $heading-4;
+}
+
+h5 {
+  font-size: $heading-5;
+}
+
+h6 {
+  font-size: $heading-6;
+}

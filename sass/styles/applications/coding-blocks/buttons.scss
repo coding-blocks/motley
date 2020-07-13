@@ -27,7 +27,7 @@
 
   &.disabled,
   &:disabled {
-    background: $lighter-grey;
+    background: $grey-light-2;
     cursor: auto;
   }
 }
@@ -54,7 +54,7 @@
   &:disabled,
   &.disabled {
     border: 1px solid $light-grey;
-    color: $light-grey;
+    color: $grey-light-1;
     cursor: auto;
 
     &:hover {
@@ -64,7 +64,7 @@
 }
 
 .button-tertiary {
-  color: $dark-orange;
+  color: $orange-dark-1;
   font-size: $font-sm;
   transition: color 0.25s;
 
@@ -78,7 +78,7 @@
 
   &:disabled,
   &.disabled {
-    color: $light-grey;
+    color: $grey-light-1;
     cursor: auto;
   }
 }
