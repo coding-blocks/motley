@@ -1,0 +1,7 @@
+.divided-list {
+  & > * {
+    &:not(:last-child) {
+      border-right: solid 1px $hover-grey;
+    }
+  }
+}
