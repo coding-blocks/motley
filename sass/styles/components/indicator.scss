@@ -1,0 +1,10 @@
+.indicator {
+  position: absolute;
+  top: -5%;
+  left: -2.10rem;
+  font-size: 2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $gradient-orange;
+}
