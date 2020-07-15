@@ -24,7 +24,8 @@
   ('black', $black),
   ('orange', $orange),
   ('white', $white),
-  ('orange', $orange) {
+  ('orange', $orange),
+  ('pink', $pink) {
   .b-#{$type} {
     border-color: $color !important;
   }
