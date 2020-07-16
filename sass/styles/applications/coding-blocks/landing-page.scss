@@ -23,8 +23,17 @@
     }
 
     &--divided-section {
+      &__left-section,
+      &__right-section {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
       &__left-section {
         border-right: 1px solid $grey;
+        padding-right: 3.57rem;
       }
 
       &__right-section {

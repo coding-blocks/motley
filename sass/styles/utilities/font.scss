@@ -25,3 +25,17 @@
     0.5px -0.5px 0 rgba(255, 255, 255, 0.4),
     -0.5px 0.5px 0 rgba(255, 255, 255, 0.4);
 }
+
+.text-clamp-ellipses {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &--2 {
+    -webkit-line-clamp: 2;
+  }
+
+  &--3 {
+    -webkit-line-clamp: 3;
+  }
+}
