@@ -30,9 +30,13 @@
       background: $black;
     }
 
-    &__divided-section {
-      &__left-setion {
-        
+    &--divided-section {
+      &__left-section {
+        border-right: 1px solid $grey;
+      }
+
+      &__right-section {
+        padding-left: 7.142rem;
       }
     }
   }
