@@ -1,0 +1,19 @@
+.backdrop {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  margin: 0 1.5rem;
+
+  &:before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    height: calc(100% + 2rem);
+    width: calc(100% + 3rem);
+    left: -1.5rem;
+    top: -1rem;
+    border-radius: 10px;
+    background: $light-grey;
+    opacity: 0.3;
+  }
+}
