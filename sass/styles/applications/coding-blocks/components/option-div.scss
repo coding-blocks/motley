@@ -1,0 +1,37 @@
+.option-div {
+  cursor: pointer;
+  padding: 1.5rem;
+  color: $white;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid $grey-dark-2;
+  background: $grey-dark-2;
+
+  &__icon {
+    display: none;
+  }
+
+  &:hover {
+    border: solid 1px $orange;
+  }
+
+  &.selected {
+    border: solid 1px $orange;
+  }
+
+  &.selected > &__icon {
+    display: inline-block;
+  }
+
+  &--rect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--square > &__icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
