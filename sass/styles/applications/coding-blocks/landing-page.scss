@@ -41,4 +41,11 @@
       }
     }
   }
+
+  .side-tag {
+    &::after {
+      background: $orange;
+      left: calc(-3rem + 1px);
+    }
+  }
 }
