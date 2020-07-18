@@ -48,4 +48,13 @@
       left: calc(-3rem + 1px);
     }
   }
+
+  .success-story {
+    &__image {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%; 
+      margin-right: 6rem;
+    }
+  }
 }
