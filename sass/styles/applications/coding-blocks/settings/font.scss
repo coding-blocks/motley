@@ -13,22 +13,20 @@ $heading-3: 2.286rem; // 32px
 $heading-2: 2.571rem; // 36px
 $heading-1: 2.857rem; // 40px
 
-
 // Font Weights
 
 $extra-bold: 900;
 
-
 $text-size-list: (
-"font-1": $font-1,
-"font-2": $font-2,
-"font-3": $font-3,
-"font-4": $font-4,
-"font-5": $font-5,
-"heading-6": $heading-6,
-"heading-5": $heading-5,
-"heading-4": $heading-4,
-"heading-3": $heading-3,
-"heading-2": $heading-2,
-"heading-1": $heading-1,
-)
+  "font-1": $font-1,
+  "font-2": $font-2,
+  "font-3": $font-3,
+  "font-4": $font-4,
+  "font-5": $font-5,
+  "heading-6": $heading-6,
+  "heading-5": $heading-5,
+  "heading-4": $heading-4,
+  "heading-3": $heading-3,
+  "heading-2": $heading-2,
+  "heading-1": $heading-1,
+);
