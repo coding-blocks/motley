@@ -3,6 +3,8 @@
   padding: 1rem 2rem;
   color: $white;
   border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .button-primary {
@@ -67,6 +69,8 @@
   color: $orange-dark-1;
   font-size: $font-sm;
   transition: color 0.25s;
+  display: inline-flex;
+  align-items: center;
 
   &:hover {
     color: $red;

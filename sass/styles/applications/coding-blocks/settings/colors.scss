@@ -2,10 +2,10 @@
 
 // Neutral colors
 $black: #08090c;
-$grey-dark-2: #191d24;
+$grey-dark-2: #15171e;
 $grey-dark-1: #2a2f3c;
 $grey: #3b4254;
-$grey-light-1: #cccccc;
+$grey-light-1: #d6d6d6;
 $grey-light-2: #e0e0e0;
 $grey-light-3: #f5f5f5;
 
@@ -39,7 +39,6 @@ $pink-dark-1: #bf1f68;
 $pink: #d93764;
 $pink-light-1: #f24f60;
 
-
 // PALETTE GRADIENTS
 
 $gradient-orange-dark: linear-gradient(90deg, #e74e4b, #f26a3e);
@@ -54,11 +53,9 @@ $gradient-blue-dark: linear-gradient(90deg, #1c40de, #2167e3);
 $gradient-blue: linear-gradient(90deg, #2167e3, #258ee8);
 $gradient-blue-light: linear-gradient(90deg, #258ee8, #2ab5ed);
 
-
 // BUTTON GRADIENTS
 
-$button-gradient-orange: linear-gradient(90deg, #fb8133, #ffba08, #fb8133);
-
+$button-gradient-orange: linear-gradient(90deg, #f26a3e, #fb8133, #f26a3e);
 
 $solid-color-list: (
   "black": $black,
