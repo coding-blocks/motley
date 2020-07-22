@@ -1,0 +1,100 @@
+// PALETTE SOLIDS
+
+// Neutral colors
+$black: #08090c;
+$grey-dark-2: #15171e;
+$grey-dark-1: #2a2f3c;
+$grey: #3b4254;
+$grey-light-1: #d6d6d6;
+$grey-light-2: #e0e0e0;
+$grey-light-3: #f5f5f5;
+
+// Greens
+$green-dark-2: #26a87c;
+$green-dark-1: #55c25c;
+$green: #6cce4b;
+$green-light-1: #83db3b;
+
+// Blues
+$blue-dark-2: #1c40de;
+$blue-dark-1: #2167e3;
+$blue: #258ee8;
+$blue-light-1: #2ab5ed;
+
+// Reds
+$red: #e74e4b;
+$orange-dark-1: #f26a3e;
+$orange: #fb8133;
+$yellow: #ffba08;
+
+// Purples
+$purple-dark-2: #3a30d6;
+$purple-dark-1: #4f33da;
+$purple: #6536de;
+$purple-light-1: #8f3ce5;
+
+// Pinks
+$pink-dark-2: #a6076c;
+$pink-dark-1: #bf1f68;
+$pink: #d93764;
+$pink-light-1: #f24f60;
+
+// PALETTE GRADIENTS
+
+$gradient-orange-dark: linear-gradient(90deg, #e74e4b, #f26a3e);
+$gradient-orange: linear-gradient(90deg, #f26a3e, #fb8133);
+$gradient-orange-light: linear-gradient(90deg, #fb8133, #ffba08);
+
+$gradient-green-dark: linear-gradient(90deg, #26a87c, #55c25c);
+$gradient-green: linear-gradient(90deg, #55c25c, #6cce4b);
+$gradient-green-light: linear-gradient(90deg, #6cce4b, #83db3b);
+
+$gradient-blue-dark: linear-gradient(90deg, #1c40de, #2167e3);
+$gradient-blue: linear-gradient(90deg, #2167e3, #258ee8);
+$gradient-blue-light: linear-gradient(90deg, #258ee8, #2ab5ed);
+
+// BUTTON GRADIENTS
+
+$button-gradient-orange: linear-gradient(90deg, #f26a3e, #fb8133, #f26a3e);
+
+$solid-color-list: (
+  "black": $black,
+  "grey-dark-2": $grey-dark-2,
+  "grey-dark-1": $grey-dark-1,
+  "grey": $grey,
+  "grey-light-1": $grey-light-1,
+  "grey-light-2": $grey-light-2,
+  "grey-light-3": $grey-light-3,
+  "green-dark-2": $green-dark-2,
+  "green-dark-1": $green-dark-1,
+  "green": $green,
+  "green-light-1": $green-light-1,
+  "blue-dark-2": $blue-dark-2,
+  "blue-dark-1": $blue-dark-1,
+  "blue": $blue,
+  "blue-light-1": $blue-light-1,
+  "red": $red,
+  "orange-dark-1": $orange-dark-1,
+  "orange": $orange,
+  "yellow": $yellow,
+  "purple-dark-2": $purple-dark-2,
+  "purple-dark-1": $purple-dark-1,
+  "purple": $purple,
+  "purple-light-1": $purple-light-1,
+  "pink-dark-2": $pink-dark-2,
+  "pink-dark-1": $pink-dark-1,
+  "pink": $pink,
+  "pink-light-1": $pink-light-1,
+);
+
+$gradient-color-list: (
+  "orange-dark": $gradient-orange-dark,
+  "orange": $gradient-orange,
+  "orange-light": $gradient-orange-light,
+  "green-dark": $gradient-green-dark,
+  "green": $gradient-green,
+  "green-light": $gradient-green-light,
+  "blue-dark": $gradient-blue-dark,
+  "blue": $gradient-blue,
+  "blue-light": $gradient-blue-light,
+);

@@ -1,0 +1,88 @@
+%button {
+  font-size: $font-sm;
+  padding: 1rem 2rem;
+  color: $white;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-primary {
+  @extend %button;
+
+  background: $button-gradient-orange;
+  background-size: 200%;
+  transition: background-position 0.25s;
+
+  &:hover {
+    background-position: right;
+  }
+
+  &:active {
+    background: $gradient-orange-dark;
+  }
+
+  &:focus {
+    background: $gradient-orange-dark;
+    border: 1px solid $yellow;
+  }
+
+  &.disabled,
+  &:disabled {
+    background: $grey-light-2;
+    cursor: auto;
+  }
+}
+
+.button-secondary {
+  @extend %button;
+
+  border: 1px solid $white;
+  transition: background 0.25s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid $yellow;
+  }
+
+  &:disabled,
+  &.disabled {
+    border: 1px solid $light-grey;
+    color: $grey-light-1;
+    cursor: auto;
+
+    &:hover {
+      background: unset;
+    }
+  }
+}
+
+.button-tertiary {
+  color: $orange-dark-1;
+  font-size: $font-sm;
+  transition: color 0.25s;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    color: $red;
+  }
+
+  &:focus {
+    color: $yellow;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $grey-light-1;
+    cursor: auto;
+  }
+}

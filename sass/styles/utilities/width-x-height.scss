@@ -10,3 +10,7 @@
 .wh-100 {
   @include dimensions(100%, 100%);
 }
+
+.h-inherit {
+  height: inherit;
+}

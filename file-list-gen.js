@@ -19,7 +19,7 @@ html = `
 <div class="home-vh">
 	<div class="row no-gutters">
 		<div class="col-sm-3 pb-4 position-relative border-right" style="height: calc(100vh - 70px); overflow-y: scroll">
-			<h2 class="position-sticky bg-white p-4">Views</h2>
+			<h2 class="position-sticky bg-white p-4 tr">Views</h2>
 			${fileListViews}
 		</div>
 		<div class="col-sm-9 p-4">

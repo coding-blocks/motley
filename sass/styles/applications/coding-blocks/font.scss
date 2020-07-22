@@ -1,0 +1,9 @@
+@each $type, $size in $text-size-list {
+  .#{$type} {
+    font-size: $size !important;
+  }
+}
+
+.extra-bold {
+  font-weight: 900 !important;
+}
