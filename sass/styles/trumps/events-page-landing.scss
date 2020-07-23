@@ -1,0 +1,21 @@
+.events-page-landing {
+  &__section {
+    padding: 7.5rem 8.75rem;
+
+    &:nth-child(2n-1) {
+      background: #f2f2f2;
+    }
+
+    &:nth-child(2n) {
+      background: #f2f2f2;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 5rem 5rem;
+  }
+
+  @media screen and (max-width: 567px) {
+    padding: 2.5rem 2rem;
+  }
+}
