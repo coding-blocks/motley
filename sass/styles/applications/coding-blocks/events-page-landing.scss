@@ -9,13 +9,19 @@
     &:nth-child(2n) {
       background: #f2f2f2;
     }
+
+    @media screen and (max-width: 991px) {
+      padding: 5rem 5rem;
+    }
+
+    @media screen and (max-width: 567px) {
+      padding: 2.5rem 2rem;
+    }
   }
 
-  @media screen and (max-width: 991px) {
-    padding: 5rem 5rem;
-  }
-
-  @media screen and (max-width: 567px) {
-    padding: 2.5rem 2rem;
+  .button-primary {
+    background: #FFBA08;
+    border: 2px solid #0B1260;
+    color: #0B1260;
   }
 }
