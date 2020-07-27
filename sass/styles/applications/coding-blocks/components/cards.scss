@@ -26,4 +26,16 @@
       background: $orange-dark-1;
     }
   }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 30px;
+
+    &--border-highlight {
+      border-top: solid 1px rgba($color: $grey, $alpha: 0.5);
+    }
+  }
 }
