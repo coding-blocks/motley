@@ -18,15 +18,15 @@ $directions: (
     }
   }
 
-  // .px-#{$i * 5} {
-  //   padding-right: $padding !important;
-  //   padding-left: $padding !important;
-  // }
+  .px-#{$i * 5} {
+    padding-right: $padding !important;
+    padding-left: $padding !important;
+  }
 
-  // .py-#{$i * 5} {
-  //   padding-top: $padding !important;
-  //   padding-bottom: $padding !important;
-  // }
+  .py-#{$i * 5} {
+    padding-top: $padding !important;
+    padding-bottom: $padding !important;
+  }
 
   @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
     @media screen and(min-width: $size) {
@@ -40,15 +40,15 @@ $directions: (
         }
       }
 
-      // .px-#{$label}-#{$i * 5} {
-      //   padding-right: $padding !important;
-      //   padding-left: $padding !important;
-      // }
+      .px-#{$label}-#{$i * 5} {
+        padding-right: $padding !important;
+        padding-left: $padding !important;
+      }
 
-      // .py-#{$label}-#{$i * 5} {
-      //   padding-top: $padding !important;
-      //   padding-bottom: $padding !important;
-      // }
+      .py-#{$label}-#{$i * 5} {
+        padding-top: $padding !important;
+        padding-bottom: $padding !important;
+      }
     }
   }
 }
