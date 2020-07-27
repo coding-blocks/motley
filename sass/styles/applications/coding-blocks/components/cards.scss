@@ -1,0 +1,10 @@
+.card {
+  border-radius: 5px;
+  padding: 2rem;
+  border: solid 1px $grey-light-3;
+
+  &--dark {
+    background: $grey-dark-1;
+    color: $white;
+  }
+}
