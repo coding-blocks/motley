@@ -1,25 +1,3 @@
-// @for $i from 1 through 15 {
-//   $width: ($i * 10px);
-//   $height: ($i * 10px);
-
-//   .s-#{$i * 10}x#{$i * 10} {
-//     @include dimensions($width, $height);
-//   }
-// }
-
-// $text-align: (
-//   "r": right,
-//   "l": left,
-//   "c": center,
-//   "j": justify,
-// );
-
-// $vertical-align: (
-//   "m": middle,
-//   "t": top,
-//   "b": bottom,
-// );
-
 $directions: (
   "t": top,
   "b": bottom,
@@ -27,45 +5,50 @@ $directions: (
   "l": left,
 );
 
-// @each $abbrev, $value in $text-align {
-//   .t-align-#{$abbrev} {
-//     text-align: $value !important;
-//   }
-
-//   //align all nested
-//   .t-align-#{$abbrev}a {
-//     * {
-//       text-align: $value !important;
-//     }
-//   }
-// }
-
-// @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
-//   @media screen and(min-width: $size) {
-//     .t-align-#{$label}-r {
-//       text-align: right !important;
-//     }
-//   }
-// }
-
 @for $i from 1 through 20 {
   $padding: ($i * 5px);
 
   .p-#{$i * 5} {
-    padding: $padding;
+    padding: $padding !important;
   }
+
+  @each $dir-label, $direction in $directions {
+    .p#{$dir-label}-#{$i * 5} {
+      padding-#{$direction}: $padding !important;
+    }
+  }
+
+  // .px-#{$i * 5} {
+  //   padding-right: $padding !important;
+  //   padding-left: $padding !important;
+  // }
+
+  // .py-#{$i * 5} {
+  //   padding-top: $padding !important;
+  //   padding-bottom: $padding !important;
+  // }
 
   @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
     @media screen and(min-width: $size) {
       .p-#{$label}-#{$i * 5} {
-        padding: $padding;
+        padding: $padding !important;
       }
 
       @each $dir-label, $direction in $directions {
         .p#{$dir-label}-#{$label}-#{$i * 5} {
-          padding-#{$direction}: $padding;
+          padding-#{$direction}: $padding !important;
         }
       }
+
+      // .px-#{$label}-#{$i * 5} {
+      //   padding-right: $padding !important;
+      //   padding-left: $padding !important;
+      // }
+
+      // .py-#{$label}-#{$i * 5} {
+      //   padding-top: $padding !important;
+      //   padding-bottom: $padding !important;
+      // }
     }
   }
 }
