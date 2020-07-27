@@ -16,12 +16,14 @@
     position: relative;
     margin-bottom: 30px;
 
-    &--border-highlight {
+    &--border-highlight::after {
+      content: "";
       position: absolute;
       height: 100%;
       width: 4px;
       top: 0;
-      right: -26px;
+      right: -30px;
+      background: $orange-dark-1;
     }
   }
 }
