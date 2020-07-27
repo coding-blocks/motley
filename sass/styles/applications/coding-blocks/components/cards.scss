@@ -1,10 +1,27 @@
 .card {
   border-radius: 5px;
-  padding: 2rem;
+  padding: 30px;
   border: solid 1px $grey-light-3;
 
   &--dark {
     background: $grey-dark-1;
     color: $white;
+    border: unset;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+
+    &--border-highlight {
+      position: absolute;
+      height: 100%;
+      width: 4px;
+      top: 0;
+      right: -26px;
+    }
   }
 }
