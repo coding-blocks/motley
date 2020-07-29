@@ -45,7 +45,7 @@
   .side-tag {
     &::after {
       background: $orange;
-      left: calc(-3rem + 1px);
+      left: calc(-40px);
     }
   }
 
@@ -56,5 +56,35 @@
       border-radius: 50%; 
       margin-right: 6rem;
     }
+  }
+
+  @media screen and (max-width: 1199px){
+    &__section {
+      padding: 6rem;
+    } 
+  }
+
+  @media screen and (max-width: 991px){
+    &__section {
+      padding: 4.5rem;
+    }
+    
+    .side-tag {
+      &::after {
+        left: -20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    &__section {
+      padding: 4rem;
+    } 
+  }
+
+  @media screen and (max-width: 575px){
+    &__section {
+      padding: 2.5rem;
+    } 
   }
 }
