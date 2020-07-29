@@ -43,7 +43,11 @@
   .mentor-row {
     &__image-container {
       position: absolute;
-      right: -40px;
+      right: -15px;
+
+      &--mentor-2 {
+        right: -40px;
+      }
 
       &__mentor-image {
         border: unset;
