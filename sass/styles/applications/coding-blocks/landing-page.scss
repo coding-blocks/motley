@@ -13,6 +13,7 @@
 
   &__section {
     padding: 7.142rem;
+    position: relative;
 
     &:nth-child(2n-1) {
       background: $grey-dark-2;
@@ -40,6 +41,13 @@
         padding-left: 7.142rem;
       }
     }
+
+    &__vector {
+      position: absolute;
+      right: 6rem;
+      bottom: 0;
+      width: 700px;
+    }
   }
 
   .side-tag {
@@ -61,12 +69,22 @@
   @media screen and (max-width: 1199px){
     &__section {
       padding: 6rem;
+
+      &__vector {
+        width: 500px;
+        right: 4.5rem;
+      }
     } 
   }
 
   @media screen and (max-width: 991px){
     &__section {
       padding: 4.5rem;
+
+      &__vector {
+        width: 300px;
+        right: 4rem;
+      }
     }
     
     .side-tag {
