@@ -1,4 +1,4 @@
-@for $i from 1 through 20 {
+@for $i from 0 through 20 {
   $padding: ($i * 5px);
 
   .p-#{$i * 5} {

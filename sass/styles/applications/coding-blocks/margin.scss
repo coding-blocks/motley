@@ -1,4 +1,4 @@
-@for $i from 1 through 20 {
+@for $i from 0 through 20 {
   $margin: ($i * 5px);
 
   .m-#{$i * 5} {
