@@ -1,26 +1,6 @@
 @for $i from 0 through 20 {
   $margin: ($i * 5px);
 
-  .m-#{$i * 5} {
-    margin: $margin !important;
-  }
-
-  @each $dir-label, $direction in $directions {
-    .m#{$dir-label}-#{$i * 5} {
-      margin-#{$direction}: $margin !important;
-    }
-  }
-
-  .mx-#{$i * 5} {
-    margin-right: $margin !important;
-    margin-left: $margin !important;
-  }
-
-  .my-#{$i * 5} {
-    margin-top: $margin !important;
-    margin-bottom: $margin !important;
-  }
-
   @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
     @media screen and(min-width: $size) {
       .m-#{$label}-#{$i * 5} {
@@ -43,5 +23,25 @@
         margin-bottom: $margin !important;
       }
     }
+  }
+
+  .m-#{$i * 5} {
+    margin: $margin !important;
+  }
+
+  @each $dir-label, $direction in $directions {
+    .m#{$dir-label}-#{$i * 5} {
+      margin-#{$direction}: $margin !important;
+    }
+  }
+
+  .mx-#{$i * 5} {
+    margin-right: $margin !important;
+    margin-left: $margin !important;
+  }
+
+  .my-#{$i * 5} {
+    margin-top: $margin !important;
+    margin-bottom: $margin !important;
   }
 }
