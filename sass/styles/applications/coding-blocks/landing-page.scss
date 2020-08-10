@@ -46,7 +46,7 @@
       position: absolute;
       right: 6rem;
       bottom: 0;
-      width: 700px;
+      width: 45%;
     }
   }
 
@@ -102,7 +102,7 @@
       }
 
       &__vector {
-        width: 500px;
+        width: 50%;
         right: 4.5rem;
       }
     }
@@ -141,8 +141,10 @@
       }
 
       &__vector {
-        width: 300px;
-        right: 4rem;
+        margin-top: 25px;
+        position: initial;
+        width: 90%;
+        margin-bottom: -4.5rem;
       }
     }
 
