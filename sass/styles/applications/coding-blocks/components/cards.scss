@@ -4,6 +4,13 @@
   border: solid 1px $grey-light-3;
   position: relative;
 
+  &--equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &--dark {
     background: $grey-dark-1;
     color: $white;
