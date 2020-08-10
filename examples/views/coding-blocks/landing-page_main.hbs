@@ -179,8 +179,8 @@
 
     {{!-- Community and Superhero --}}
     <div class="landing-page__section landing-page__section--divided-section">
-      <div class="row">
-        <div class="col-lg-6 landing-page__section--divided-section__left-section">
+      <div class="row c-card-carousel-lg">
+        <div class="col-lg-6 col-12 landing-page__section--divided-section__left-section">
           <div>
             <div class="heading-font stroke-font text-grey-dark-2">
               JOIN OUR
@@ -198,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div class="row no-gutters align-items-center d-xl-flex d-lg-none d-flex">
+          <div class="row no-gutters align-items-center d-xl-flex d-lg-none d-sm-flex d-none">
             <button class="button-secondary flex-1" style="max-width: fit-content;">
               <div class="flex-1 t-align-l">
                 Visit Youtube channel
@@ -212,7 +212,7 @@
               <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/telegram_button.svg" class="ml-2">
             </button>
           </div>
-          <div class="d-xl-none d-lg-block d-none">
+          <div class="d-xl-none d-lg-block d-sm-none d-block">
             <button class="button-secondary">
               Visit Youtube channel
               <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube_button.svg" class="ml-2">
@@ -223,7 +223,7 @@
             </button>
           </div>
         </div>
-        <div class="col-lg-6 landing-page__section--divided-section__right-section">
+        <div class="col-lg-6 col-12 landing-page__section--divided-section__right-section">
           <div>
             <div class="heading-font stroke-font text-grey-dark-2">
               BECOME A
@@ -256,7 +256,7 @@
       <div class="row no-gutters align-items-center justify-content-between">
         <div class="flex-1">
           <div class="row no-gutters align-items-center justify-content-between">
-            <div>
+            <div class="flex-1">
               <div class="heading-font stroke-font text-black">
                 LATEST
               </div>
@@ -265,19 +265,19 @@
               </div>
               <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg">
             </div>
-            <div class="d-xl-none d-block">
-              <button class="button-primary">
+            <div class="col-xl-12 col-4 t-align-xl-l t-align-r d-sm-block d-none">
+              <button class="button-primary mt-xl-50">
                 View all
                 <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
               </button>
             </div>
           </div>
-          <div class="mt-xl-50 d-xl-block d-none">
+          {{!-- <div class="mt-xl-50 d-xl-block d-none">
             <button class="button-primary">
               View all
               <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
             </button>
-          </div>
+          </div> --}}
         </div>
         <div class="col-xl-9 mt-xl-0 mt-50">
           <div class="flex-row align-items-center">
@@ -444,6 +444,12 @@
             <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-big-right-active.svg"
               class="pointer d-md-block d-none">
           </div>
+        </div>
+        <div class="col-12 d-sm-none d-block">
+          <button class="button-primary mt-50">
+            View all
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+          </button>
         </div>
       </div>
     </div>
