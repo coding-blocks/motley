@@ -14,6 +14,7 @@
   &__section {
     padding: 7.142rem;
     position: relative;
+    overflow: hidden;
 
     &:nth-child(2n-1) {
       background: $grey-dark-2;
@@ -183,12 +184,20 @@
   @media screen and (max-width: 767px) {
     &__section {
       padding: 4rem;
+
+      &__vector {
+        margin-bottom: -4rem;
+      }
     }
   }
 
   @media screen and (max-width: 575px) {
     &__section {
       padding: 2.5rem;
+
+      &__vector {
+        margin-bottom: -2.5rem;
+      }
     }
 
     .heading-font {
