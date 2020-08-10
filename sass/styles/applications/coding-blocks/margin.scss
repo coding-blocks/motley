@@ -45,3 +45,49 @@
     margin-bottom: $margin !important;
   }
 }
+
+//Zero paddings - removable once we get rid of bootstrap
+
+.m-none {
+  padding: 0 !important;
+}
+
+@each $dir-label, $direction in $directions {
+  .m#{$dir-label}-none {
+    padding-#{$direction}: 0 !important;
+  }
+}
+
+.mx-none {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.my-none {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
+  @media screen and(min-width: $size) {
+    .m-#{$label}-none {
+      padding: 0 !important;
+    }
+
+    @each $dir-label, $direction in $directions {
+      .m#{$dir-label}-#{$label}-none {
+        padding-#{$direction}: 0 !important;
+      }
+    }
+
+    .mx-#{$label}-none {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .my-#{$label}-none {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
