@@ -43,6 +43,12 @@
       }
     }
 
+    &--footer {
+      &__main-section {
+        border-right: 1px solid $grey;
+      }
+    }
+
     &__vector {
       position: absolute;
       right: 6rem;
