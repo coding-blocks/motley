@@ -147,6 +147,13 @@
         }
       }
 
+      &--footer {
+        &__main-section {
+          border-right: unset;
+          border-bottom: 1px solid $grey;
+        }
+      }
+
       &__vector {
         margin-top: 25px;
         position: initial;
