@@ -13,6 +13,11 @@
     padding-left: 5.5rem !important;
     padding-right: 5.5rem !important;
 
+    @media screen and (max-width: 1199px) {
+      padding-left: 4rem !important;
+      padding-right: 4rem !important;
+    }
+
     @media screen and (max-width: 991px) {
       padding-left: 2.5rem !important;
       padding-right: 2.5rem !important;

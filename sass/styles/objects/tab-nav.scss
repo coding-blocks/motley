@@ -37,26 +37,7 @@
 .tab-nav-underline {
   display: flex;
   align-items: center;
-  border-bottom: solid 2px $search-box-color;
-  font-size: $font-sm;
-  bottom: -2px;
-
-  & .tab {
-    padding: 15px 5%;
-    font-weight: $extra-bold;
-    color: #333;
-    position: relative;
-    cursor: pointer;
-    bottom: -2px;
-
-    &.active {
-      border-bottom: solid 3px $salmon;
-      color: $salmon;
-    }
-  }
-}
-
-.tab-nav-underline {
+  font-size: font-sm;
   border-bottom: solid 1px $search-box-color;
 
   &.inverted {
@@ -65,6 +46,10 @@
 
   & .tab {
     bottom: -1px;
+    padding: 15px 5%;
+    color: #333;
+    position: relative;
+    cursor: pointer;
 
     &:hover {
       color: $orange;
