@@ -1,11 +1,11 @@
-.hover-pink {
+.hover-orange {
   &:hover {
     font-weight: $bold;
   }
 
   &.active {
     font-weight: $bold;
-    color: $salmon;
+    color: $orange;
   }
 }
 
