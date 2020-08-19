@@ -1,0 +1,22 @@
+.info-popup {
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.5);
+    position: relative;
+
+    &::after {
+      content: "You will only be able to attempt this test again after 15 days!";
+      position: absolute;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: solid 1px $orange;
+      background-color: $white;
+      width: max-content;
+      font-size: $card-sm;
+      top: -40px;
+      left: -200px;
+    }
+  }
+}
