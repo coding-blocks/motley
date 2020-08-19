@@ -1,0 +1,20 @@
+.copy-code {
+  cursor: pointer;
+
+  &:hover {
+    position: relative;
+    color: #d4d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: "Copy";
+      font-size: card-sm;
+      font-weight: $bold;
+      color: $black;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
