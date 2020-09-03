@@ -27,6 +27,10 @@
       height: 190px;
     }
 
+    &--left {
+      left: 1rem;
+    }
+
     @media screen and (max-width: 767px) {
       right: 0;
 
