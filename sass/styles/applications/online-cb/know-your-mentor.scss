@@ -1,0 +1,37 @@
+.know-your-mentor {
+  position: relative;
+
+  .beige {
+    color: #d69d72;
+  }
+
+  &__tag {
+    background: #d69d72;
+    position: absolute;
+    letter-spacing: 3px;
+    padding: 9px 25px;
+    border-radius: 40px;
+    line-height: 22px;
+    top: -20px;
+    width: fit-content;
+    left: calc(50% - 105px);
+  }
+
+  &__teacher {
+    position: absolute;
+    bottom: -4px;
+    right: 15%;
+
+    img {
+      height: 190px;
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 0;
+
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
