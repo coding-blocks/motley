@@ -12,3 +12,19 @@
   font-weight: $bold;
   display: inline-block;
 }
+
+.animated-icon-button {
+  display: flex;
+  align-items: center;
+  background: $interview-grey !important;
+
+  img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(2);
+    }
+  }
+}
