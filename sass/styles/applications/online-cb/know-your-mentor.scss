@@ -41,8 +41,22 @@
   }
 
   &__skewed-container {
-    background: #2A2E37;
+    background: #2a2e37;
     clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
     border-radius: 10px;
+  }
+
+  .big-screen-padding {
+    padding-left: 150px;
+  }
+
+  @media screen and (max-width: 575px) {
+    &__skewed-container {
+      clip-path: unset;
+    }
+
+    .big-screen-padding {
+      padding-left: unset;
+    }
   }
 }
