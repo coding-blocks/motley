@@ -16,4 +16,14 @@
     width: fit-content;
     left: calc(50% - 105px);
   }
+
+  &__teacher {
+    position: absolute;
+    bottom: -62px;
+    right: 0;
+    
+    img {
+      height: 190px;
+    }
+  }
 }
