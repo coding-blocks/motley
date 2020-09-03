@@ -1,0 +1,19 @@
+.know-your-mentor {
+  position: relative;
+
+  .beige {
+    color: #D69D72;
+  }
+
+  &__tag {
+    background: #D69D72;
+    position: absolute;
+    letter-spacing: 3px;
+    padding: 9px 25px;
+    border-radius: 40px;
+    line-height: 22px;
+    top: -20px;  
+    width: 220px;
+    left: calc(50% - 110px);
+  }
+}
