@@ -14,13 +14,63 @@
       margin-top: 65px;
 
       & > div {
-        color: #1F4FE0;
+        color: #1f4fe0;
         cursor: pointer;
 
         &.disabled {
-          color: #DCDCDC;
+          color: #dcdcdc;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 45px 75px;
+
+    &__left-pane {
+      padding-right: 75px;
+    }
+
+    &__right-pane {
+      padding-left: 75px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 40px 40px;
+
+    &__left-pane {
+      padding-right: 40px;
+    }
+
+    &__right-pane {
+      padding-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 40px;
+
+    &__left-pane {
+      padding-right: 0;
+    }
+
+    &__right-pane {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 40px 40px;
+
+    &__left-pane {
+      padding-right: 0;
+    }
+
+    &__right-pane {
+      padding-left: 0;
+      width: 100%;
     }
   }
 }
