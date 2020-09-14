@@ -1,0 +1,10 @@
+.horizontal-quiz-card {
+  padding: 60px 100px;
+  &__left-pane {
+    padding-right: 100px;
+  }
+
+  &__right-pane {
+    padding-left: 100px;
+  }
+}
