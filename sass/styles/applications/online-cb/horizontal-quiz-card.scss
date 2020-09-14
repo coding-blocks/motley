@@ -1,10 +1,26 @@
 .horizontal-quiz-card {
   padding: 60px 100px;
+  border-radius: 5px;
+  border: 1px solid $hover-grey;
+
   &__left-pane {
     padding-right: 100px;
   }
 
   &__right-pane {
     padding-left: 100px;
+
+    &__navigation {
+      margin-top: 65px;
+
+      & > div {
+        color: #1F4FE0;
+        cursor: pointer;
+
+        &.disabled {
+          color: #DCDCDC;
+        }
+      }
+    }
   }
 }
