@@ -162,7 +162,7 @@ input.underline-input {
       position: relative;
       width: 60px;
       margin: 0 1rem;
-      
+
       &::before,
       &::after {
         content: "";
@@ -313,6 +313,27 @@ label.input-radio {
       border-image-source: $gradient-orange;
       border-image-slice: 1;
       z-index: 10;
+    }
+  }
+
+  &.gradient-checked-input {
+    input:checked ~ span:last-child::before {
+      content: " ";
+      height: 6px;
+      width: 12px;
+      border-left: 2px solid $white;
+      border-bottom: 2px solid $white;
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      transform: rotate(-45deg);
+      // border-image-source: $white;
+      // border-image-slice: 1;
+      z-index: 10;
+    }
+
+    input:checked ~ span:last-child::after {
+      background: linear-gradient(90deg, #1C40DE 0%, #2167E3 100%);
     }
   }
 }
