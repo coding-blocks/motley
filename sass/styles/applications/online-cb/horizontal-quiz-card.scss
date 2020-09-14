@@ -28,6 +28,15 @@
     }
   }
 
+  &__options-row {
+    div:first-child:nth-last-child(2),
+    div:first-child:nth-last-child(2) ~ div {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100%;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     padding: 45px 75px;
 
