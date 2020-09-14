@@ -3,6 +3,10 @@
   border-radius: 5px;
   border: 1px solid $hover-grey;
 
+  &__logo {
+    max-width: 150px !important;
+  }
+
   &__left-pane {
     padding-right: 100px;
   }
@@ -62,7 +66,11 @@
   }
 
   @media screen and (max-width: 575px) {
-    padding: 40px 40px;
+    padding: 40px 20px;
+
+    &__logo {
+      max-width: 100px !important;
+    }
 
     &__left-pane {
       padding-right: 0;
