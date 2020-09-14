@@ -133,7 +133,7 @@ $gradient-dpink: linear-gradient(to right, #f24f60, #a5066c);
 $gradient-yellow: linear-gradient(to right, #fa8733, #f7c332);
 $gradient-green: linear-gradient(to right, #83db3b, #26a87c);
 $gradient-purple: linear-gradient(to right, #8008db, #430cd7);
-$gradient-lpurple: linear-gradient(ro right, #8F3CE5, #3A30D6);
+$gradient-lpurple: linear-gradient(to right, #8F3CE5, #3A30D6);
 $gradient-lblue: linear-gradient(to right, #475ff5, #6ed9fc);
 $gradient-dcyan: linear-gradient(to right, #19316c, #01b3c9);
 $gradient-dblue: linear-gradient(to right, #0467f6, #0800a3);
@@ -158,7 +158,7 @@ $gradient-red-blue: linear-gradient(to right, #e9414d, #2d2982);
 
 //Non Linear Gradients
 $gradient-orange-angle: linear-gradient(30deg, #e74e4b, #fb8133);
-$gradient-black-bt: linear-gradient(to up, #1b1d27, #07080b);
+$gradient-black-bt: linear-gradient(to top, #1b1d27, #07080b);
 
 // Hover Colors
 $hover-grey: #f3f3f3;
@@ -225,7 +225,7 @@ $gradient-text-color-list: (
   "orange": $gradient-orange,
   "green": $gradient-green,
   "pink": $gradient-pink,
-  "yellow": $gradient-yellow, 
+  "yellow": $gradient-yellow,
 );
 
 $gradient-map: (
