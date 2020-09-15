@@ -28,3 +28,17 @@
     }
   }
 }
+
+.transparent-scroll {
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  
+    &:hover {
+      background-color: unset;
+    }
+  }
+}
