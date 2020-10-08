@@ -24,4 +24,17 @@
     border: 2px solid #0b1260;
     color: #0b1260;
   }
+
+  .course-icons {
+    img {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+
+    img:nth-child(1) {
+      
+    }
+  }
 }
