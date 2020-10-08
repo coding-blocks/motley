@@ -47,6 +47,12 @@
     }
   }
 
+  .yellow-card  {
+    background: #ffba08;
+    border: 2px solid #0b1260;
+    color: #0b1260;
+  }
+
   @media screen and (max-width: 1199px) {
     &__section {
       padding: 6rem 6.5rem;
