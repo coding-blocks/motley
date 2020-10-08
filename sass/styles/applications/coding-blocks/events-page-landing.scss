@@ -117,5 +117,16 @@
     &__section {
       padding: 2.5rem 2rem;
     }
+
+    .course-icons {
+      img {
+        height: 45px;
+        width: 45px;
+      }
+
+      img:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
   }
 }
