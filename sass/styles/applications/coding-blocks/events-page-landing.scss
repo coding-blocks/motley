@@ -47,11 +47,16 @@
     }
   }
 
-  .yellow-card  {
+  .yellow-card {
     background: #ffba08;
     border: 2px solid #0b1260;
     color: #0b1260;
     border-radius: 5px;
+
+    &:nth-of-type(2) {
+      margin-top: 80px;
+      margin-left: -25px;
+    }
   }
 
   @media screen and (max-width: 1199px) {
@@ -133,6 +138,13 @@
 
       img:not(:last-child) {
         margin-right: 10px;
+      }
+    }
+
+    .yellow-card {
+      &:nth-of-type(2) {
+        margin-top: 40px;
+        margin-left: 0;
       }
     }
   }
