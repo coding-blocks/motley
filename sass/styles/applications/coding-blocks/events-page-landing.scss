@@ -5,23 +5,147 @@
     &:nth-child(2n-1) {
       background: #f2f2f2;
     }
-
-    @media screen and (max-width: 1199px) {
-      padding: 6rem 6.5rem;
-    }
-
-    @media screen and (max-width: 991px) {
-      padding: 5rem 5rem;
-    }
-
-    @media screen and (max-width: 567px) {
-      padding: 2.5rem 2rem;
-    }
   }
 
   .button-primary {
     background: #ffba08;
     border: 2px solid #0b1260;
     color: #0b1260;
+  }
+
+  .course-icons {
+    img {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+
+    img:nth-child(1) {
+      top: 15%;
+      left: 15%;
+    }
+
+    img:nth-child(2) {
+      top: 40%;
+      left: 5%;
+    }
+
+    img:nth-child(3) {
+      top: 65%;
+      left: 17%;
+    }
+
+    img:nth-child(4) {
+      top: 15%;
+      right: 15%;
+    }
+
+    img:nth-child(5) {
+      top: 60%;
+      right: 12%;
+    }
+  }
+
+  .yellow-card {
+    background: #ffba08;
+    border: 2px solid #0b1260;
+    color: #0b1260;
+    border-radius: 5px;
+
+    &:nth-of-type(2) {
+      margin-top: 80px;
+      margin-left: -25px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__section {
+      padding: 6rem 6.5rem;
+    }
+
+    .course-icons {
+      img:nth-child(1) {
+        top: 15%;
+        left: 10%;
+      }
+
+      img:nth-child(2) {
+        top: 45%;
+        left: 5%;
+      }
+
+      img:nth-child(3) {
+        top: 70%;
+        left: 10%;
+      }
+
+      img:nth-child(4) {
+        top: 15%;
+        right: 10%;
+      }
+
+      img:nth-child(5) {
+        top: 65%;
+        right: 8%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &__section {
+      padding: 5rem 5rem;
+    }
+
+    .course-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+
+      img {
+        position: static;
+      }
+
+      img:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .course-icons {
+      img {
+        height: 75px;
+        width: 75px;
+      }
+
+      img:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 567px) {
+    &__section {
+      padding: 2.5rem 2rem;
+    }
+
+    .course-icons {
+      img {
+        height: 45px;
+        width: 45px;
+      }
+
+      img:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    .yellow-card {
+      &:nth-of-type(2) {
+        margin-top: 40px;
+        margin-left: 0;
+      }
+    }
   }
 }
