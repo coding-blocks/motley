@@ -15,3 +15,12 @@
     -webkit-box-sizing: border-box;
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 65% minmax(150px, 35%);
+  grid-gap: 25px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+
+}
