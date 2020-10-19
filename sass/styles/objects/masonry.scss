@@ -26,4 +26,11 @@
   @media screen and (max-width: 767px){
     grid-template-columns: 100%;
   }
+
+  .grid-item {
+    &--primary {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
 }
