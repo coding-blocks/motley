@@ -8,6 +8,7 @@
 !dist/account/*
 !dist/dukaan/*
 !dist/online-cb/*
+!dist/cb-junior/*
 !dist/hiringblocks/*
 !dist/coding-blocks/*
 !dist/font/*
