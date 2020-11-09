@@ -2,45 +2,45 @@
   $padding: ($i * 5px);
 
   .p-#{$i * 5} {
-    padding: $padding !important;
+    padding: $padding;
   }
 
   @each $dir-label, $direction in $directions {
     .p#{$dir-label}-#{$i * 5} {
-      padding-#{$direction}: $padding !important;
+      padding-#{$direction}: $padding;
     }
   }
 
   .px-#{$i * 5} {
-    padding-right: $padding !important;
-    padding-left: $padding !important;
+    padding-right: $padding;
+    padding-left: $padding;
   }
 
   .py-#{$i * 5} {
-    padding-top: $padding !important;
-    padding-bottom: $padding !important;
+    padding-top: $padding;
+    padding-bottom: $padding;
   }
 
   @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
     @media screen and(min-width: $size) {
       .p-#{$label}-#{$i * 5} {
-        padding: $padding !important;
+        padding: $padding;
       }
 
       @each $dir-label, $direction in $directions {
         .p#{$dir-label}-#{$label}-#{$i * 5} {
-          padding-#{$direction}: $padding !important;
+          padding-#{$direction}: $padding;
         }
       }
 
       .px-#{$label}-#{$i * 5} {
-        padding-right: $padding !important;
-        padding-left: $padding !important;
+        padding-right: $padding;
+        padding-left: $padding;
       }
 
       .py-#{$label}-#{$i * 5} {
-        padding-top: $padding !important;
-        padding-bottom: $padding !important;
+        padding-top: $padding;
+        padding-bottom: $padding;
       }
     }
   }
@@ -49,45 +49,45 @@
 //Zero paddings - removable once we get rid of bootstrap
 
 .p-none {
-  padding: 0 !important;
+  padding: 0;
 }
 
 @each $dir-label, $direction in $directions {
   .p#{$dir-label}-none {
-    padding-#{$direction}: 0 !important;
+    padding-#{$direction}: 0;
   }
 }
 
 .px-none {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .py-none {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
   @media screen and(min-width: $size) {
     .p-#{$label}-none {
-      padding: 0 !important;
+      padding: 0;
     }
 
     @each $dir-label, $direction in $directions {
       .p#{$dir-label}-#{$label}-none {
-        padding-#{$direction}: 0 !important;
+        padding-#{$direction}: 0;
       }
     }
 
     .px-#{$label}-none {
-      padding-right: 0 !important;
-      padding-left: 0 !important;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .py-#{$label}-none {
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
