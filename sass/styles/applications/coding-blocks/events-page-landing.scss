@@ -5,6 +5,14 @@
     &:nth-child(2n-1) {
       background: #f2f2f2;
     }
+
+    &--first-section {
+      padding-bottom: calc(7.5rem + 100px);
+    }
+
+    .floating-section {
+      margin-top: calc(-7.5rem - 100px);
+    }
   }
 
   .button-primary {
@@ -62,6 +70,14 @@
   @media screen and (max-width: 1199px) {
     &__section {
       padding: 6rem 6.5rem;
+
+      &--first-section {
+        padding-bottom: calc(6rem + 100px);
+      }
+
+      .floating-section {
+        margin-top: calc(-6rem - 100px);
+      }
     }
 
     .course-icons {
@@ -95,6 +111,14 @@
   @media screen and (max-width: 991px) {
     &__section {
       padding: 5rem 5rem;
+
+      &--first-section {
+        padding-bottom: calc(5rem + 100px);
+      }
+
+      .floating-section {
+        margin-top: calc(-5rem - 100px);
+      }
     }
 
     .course-icons {
@@ -128,6 +152,14 @@
   @media screen and (max-width: 567px) {
     &__section {
       padding: 2.5rem 2rem;
+
+      &--first-section {
+        padding-bottom: calc(2.5rem + 100px);
+      }
+
+      .floating-section {
+        margin-top: calc(-5rem - 100px);
+      }
     }
 
     .course-icons {
