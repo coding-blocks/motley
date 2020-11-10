@@ -36,9 +36,21 @@
 
 .button-secondary {
   @extend %button;
+  box-sizing: border-box;
 
   border: 1px solid $white;
   transition: background 0.25s;
+
+  &--light {
+    border: 1px solid $grey-light-1;
+    color: $grey-light-1;
+
+    &:hover {
+      border: 1px solid $grey;
+      background-color: $grey !important;
+      color: $white;
+    }
+  }
 
   &:hover {
     background: rgba(255, 255, 255, 0.15);
