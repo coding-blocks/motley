@@ -1,0 +1,36 @@
+.masonry-plain {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+
+  .masonry-item {
+    display: inline-block;
+    width: 100%;
+    transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  grid-gap: 25px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+
+  @media screen and (max-width: 767px){
+    grid-template-columns: 100%;
+  }
+
+  .grid-item {
+    &--primary {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
