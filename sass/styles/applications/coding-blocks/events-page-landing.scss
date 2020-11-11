@@ -13,6 +13,10 @@
     .floating-section {
       margin-top: calc(-7.5rem - 100px);
     }
+
+    .floating-img {
+      margin-bottom: -7.5rem;
+    }
   }
 
   .button-primary {
@@ -67,6 +71,22 @@
     }
   }
 
+  .card {
+    position: relative;
+
+    .badge {
+      position: absolute;
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      right: 0;
+      top: 8%;
+      padding: 5px 10px;
+      font-size: $font-2;
+      font-weight: $bold;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     &__section {
       padding: 6rem 6.5rem;
@@ -77,6 +97,10 @@
 
       .floating-section {
         margin-top: calc(-6rem - 100px);
+      }
+
+      .floating-img {
+        margin-bottom: -6rem;
       }
     }
 
@@ -119,6 +143,10 @@
       .floating-section {
         margin-top: calc(-5rem - 100px);
       }
+
+      .floating-img {
+        margin-bottom: -5rem;
+      }
     }
 
     .course-icons {
@@ -159,6 +187,10 @@
 
       .floating-section {
         margin-top: calc(-5rem - 100px);
+      }
+
+      .floating-img {
+        margin-bottom: -2.5rem;
       }
     }
 
