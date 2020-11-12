@@ -19,11 +19,11 @@
     }
   }
 
-  .button-primary {
-    background: #ffba08;
-    border: 2px solid #0b1260;
-    color: #0b1260;
-  }
+  // .button-primary {
+  //   background: #ffba08;
+  //   border: 2px solid #0b1260;
+  //   color: #0b1260;
+  // }
 
   .course-icons {
     img {
@@ -73,6 +73,14 @@
 
   .card {
     position: relative;
+    border-radius: 10px;
+
+    .mentor-badge {
+      position: absolute;
+      width: fit-content;
+      right: 50px;
+      top: 35%;
+    }
 
     .badge {
       position: absolute;
