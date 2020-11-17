@@ -39,7 +39,6 @@ $pink-dark-1: #bf1f68;
 $pink: #d93764;
 $pink-light-1: #f24f60;
 
-
 // PALETTE GRADIENTS
 
 $gradient-orange-dark: linear-gradient(90deg, #e74e4b, #f26a3e);
@@ -54,6 +53,20 @@ $gradient-blue-dark: linear-gradient(90deg, #1c40de, #2167e3);
 $gradient-blue: linear-gradient(90deg, #2167e3, #258ee8);
 $gradient-blue-light: linear-gradient(90deg, #258ee8, #2ab5ed);
 
+$gradient-purple-dark: linear-gradient(90deg, #3a30d6, #4f33da);
+$gradient-pruple: linear-gradient(90deg, #4f33da, #6536de);
+$gradient-purple-light: linear-gradient(90deg, #6536de, #8f3ce5);
+
+$gradient-pink-dark: linear-gradient(90deg, #a6076c, #bf1f68);
+$gradient-pink: linear-gradient(90deg, #bf1f68, #d93764);
+$gradient-pink-light: linear-gradient(90deg, #d93764, #f24f60);
+
+// MIX GRADIENTS
+
+$gradient-blue-purple-light: linear-gradient(90deg, #2ab5ed, #8f3ce5);
+$gradient-blue-purple-dark: linear-gradient(90deg, #1c40de, #8f3ce5);
+$gradient-purple-pink-light: linear-gradient(90deg, #8f3ce5, #f24f60);
+$gradient-purple-pink-dark: linear-gradient(90deg, #3a30d6, #a6076c);
 
 // BUTTON GRADIENTS
 
@@ -99,4 +112,14 @@ $gradient-color-list: (
   "blue-dark": $gradient-blue-dark,
   "blue": $gradient-blue,
   "blue-light": $gradient-blue-light,
+  "purple-dark": $gradient-purple-dark,
+  "pruple": $gradient-pruple,
+  "purple-light": $gradient-purple-light,
+  "pink-dark": $gradient-pink-dark,
+  "pink": $gradient-pink,
+  "pink-light": $gradient-pink-light,
+  "blue-purple-light": $gradient-blue-purple-light,
+  "blue-purple-dark": $gradient-blue-purple-dark,
+  "purple-pink-light": $gradient-purple-pink-light,
+  "purple-pink-dark": $gradient-purple-pink-dark,
 );

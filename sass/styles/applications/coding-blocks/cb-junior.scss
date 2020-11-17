@@ -1,0 +1,22 @@
+.a-cbj {
+  .card {
+    border-radius: 20px;
+  }
+
+  .floating-video-pane {
+    background: rgba($color: #fff, $alpha: 0.4);
+    margin-right: -30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .floating-video-pane {
+      margin-right: 0;
+      border-radius: 20px;
+    }
+  }
+}
