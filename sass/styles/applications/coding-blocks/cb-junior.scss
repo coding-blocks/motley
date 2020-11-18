@@ -13,6 +13,30 @@
     justify-content: center;
   }
 
+  .pill-tag {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 200px;
+    padding: 15px 25px;
+
+    &--hoverable {
+      border: 1px solid #cecece;
+      color: $grey;
+      font-weight: bold;
+
+      &:hover,
+      &:active,
+      &.active {
+        border: 1px solid $orange;
+      }
+
+      &:active,
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     .floating-video-pane {
       margin-right: 0;
