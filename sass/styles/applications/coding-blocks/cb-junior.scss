@@ -38,6 +38,50 @@
     }
   }
 
+  .course-video-card {
+    border-radius: 20px;
+    position: relative;
+
+    .lecture-tag {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background: #fff;
+      padding: 6px 10px;
+      border-radius: 100px;
+      color: #fb8133;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .floating-button {
+      width: 80%;
+      justify-content: center;
+      position: absolute;
+      left: 10%;
+      bottom: -20px;
+      z-index: 10;
+      display: none;
+    }
+
+    &--unwatched {
+      &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #fff, $alpha: 0.7);
+        z-index: 5;
+      }
+
+      .floating-button {
+        display: flex;
+      }
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     .floating-video-pane {
       margin-right: 0;
