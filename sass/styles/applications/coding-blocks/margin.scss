@@ -4,90 +4,90 @@
   @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
     @media screen and(min-width: $size) {
       .m-#{$label}-#{$i * 5} {
-        margin: $margin !important;
+        margin: $margin;
       }
 
       @each $dir-label, $direction in $directions {
         .m#{$dir-label}-#{$label}-#{$i * 5} {
-          margin-#{$direction}: $margin !important;
+          margin-#{$direction}: $margin;
         }
       }
 
       .mx-#{$label}-#{$i * 5} {
-        margin-right: $margin !important;
-        margin-left: $margin !important;
+        margin-right: $margin;
+        margin-left: $margin;
       }
 
       .my-#{$label}-#{$i * 5} {
-        margin-top: $margin !important;
-        margin-bottom: $margin !important;
+        margin-top: $margin;
+        margin-bottom: $margin;
       }
     }
   }
 
   .m-#{$i * 5} {
-    margin: $margin !important;
+    margin: $margin;
   }
 
   @each $dir-label, $direction in $directions {
     .m#{$dir-label}-#{$i * 5} {
-      margin-#{$direction}: $margin !important;
+      margin-#{$direction}: $margin;
     }
   }
 
   .mx-#{$i * 5} {
-    margin-right: $margin !important;
-    margin-left: $margin !important;
+    margin-right: $margin;
+    margin-left: $margin;
   }
 
   .my-#{$i * 5} {
-    margin-top: $margin !important;
-    margin-bottom: $margin !important;
+    margin-top: $margin;
+    margin-bottom: $margin;
   }
 }
 
 //Zero margins - removable once we get rid of bootstrap
 
 .m-none {
-  margin: 0 !important;
+  margin: 0;
 }
 
 @each $dir-label, $direction in $directions {
   .m#{$dir-label}-none {
-    margin-#{$direction}: 0 !important;
+    margin-#{$direction}: 0;
   }
 }
 
 .mx-none {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .my-none {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @each $size, $label in (576px, sm), (768px, md), (992px, lg), (1200px, xl) {
   @media screen and(min-width: $size) {
     .m-#{$label}-none {
-      margin: 0 !important;
+      margin: 0;
     }
 
     @each $dir-label, $direction in $directions {
       .m#{$dir-label}-#{$label}-none {
-        margin-#{$direction}: 0 !important;
+        margin-#{$direction}: 0;
       }
     }
 
     .mx-#{$label}-none {
-      margin-right: 0 !important;
-      margin-left: 0 !important;
+      margin-right: 0;
+      margin-left: 0;
     }
 
     .my-#{$label}-none {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
