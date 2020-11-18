@@ -44,4 +44,10 @@
       border-radius: 20px;
     }
   }
+
+  @media screen and (max-width: 567px) {
+    .pill-tag {
+      padding: 10px 15px;
+    }
+  }
 }
