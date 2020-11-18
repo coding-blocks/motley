@@ -13,10 +13,103 @@
     justify-content: center;
   }
 
+  .pill-tag {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 200px;
+    padding: 10px 20px;
+
+    &--hoverable {
+      border: 1px solid $grey-light-1;
+      color: $grey;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover,
+      &:active,
+      &.active {
+        border: 1px solid $orange;
+      }
+
+      &:active,
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+
+  .course-video-card {
+    border-radius: 20px;
+    position: relative;
+
+    .lecture-tag {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background: $white;
+      padding: 6px 10px;
+      border-radius: 100px;
+      color: $orange;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .floating-button {
+      width: 80%;
+      justify-content: center;
+      position: absolute;
+      left: 10%;
+      bottom: -20px;
+      z-index: 10;
+      display: none;
+    }
+
+    &--unwatched {
+      &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #fff, $alpha: 0.7);
+        z-index: 5;
+      }
+
+      .floating-button {
+        display: flex;
+      }
+    }
+  }
+
+  .side-tag {
+    &::after {
+      background: #fb8133;
+    }
+
+    &--right {
+      &::after {
+        right: -30px !important;
+      }
+    }
+
+    &--left {
+      &::after {
+        left: -30px !important;
+      }
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     .floating-video-pane {
       margin-right: 0;
       border-radius: 20px;
+    }
+  }
+
+  @media screen and (max-width: 567px) {
+    .pill-tag {
+      padding: 10px 15px;
     }
   }
 }
