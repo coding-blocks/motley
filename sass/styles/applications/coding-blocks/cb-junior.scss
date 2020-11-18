@@ -46,10 +46,10 @@
       position: absolute;
       right: 25px;
       top: 25px;
-      background: #fff;
+      background: $white;
       padding: 6px 10px;
       border-radius: 100px;
-      color: #fb8133;
+      color: $orange;
       font-size: 18px;
       font-weight: 700;
     }
@@ -78,6 +78,24 @@
 
       .floating-button {
         display: flex;
+      }
+    }
+  }
+
+  .side-tag {
+    &::after {
+      background: #fb8133;
+    }
+
+    &--right {
+      &::after {
+        right: -30px !important;
+      }
+    }
+
+    &--left {
+      &::after {
+        left: -30px !important;
       }
     }
   }
