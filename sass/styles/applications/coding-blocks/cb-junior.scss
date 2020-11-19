@@ -90,6 +90,7 @@
     &--right {
       &::after {
         right: -30px !important;
+        left: unset;
       }
     }
 
