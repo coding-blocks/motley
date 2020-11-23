@@ -1,6 +1,19 @@
 .a-cbj {
   .card {
     border-radius: 20px;
+    position: relative;
+
+    .lecture-tag {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background: $white;
+      padding: 6px 10px;
+      border-radius: 100px;
+      color: $orange;
+      font-size: 18px;
+      font-weight: 700;
+    }
   }
 
   .floating-video-pane {
@@ -39,21 +52,6 @@
   }
 
   .course-video-card {
-    border-radius: 20px;
-    position: relative;
-
-    .lecture-tag {
-      position: absolute;
-      right: 25px;
-      top: 25px;
-      background: $white;
-      padding: 6px 10px;
-      border-radius: 100px;
-      color: $orange;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
     .floating-button {
       width: 80%;
       justify-content: center;
