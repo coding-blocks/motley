@@ -1,0 +1,26 @@
+.progress{
+	width: 100px;
+	height: 100px;
+}
+
+.progress .track, .progress .fill{
+	fill: rgba(0, 0, 0, 0);
+	stroke-width: 10;
+	transform: rotate(90deg)translate(0px, -80px);
+}
+
+.progress .track{
+	stroke: rgba(255,255,255,0.2);
+}
+
+.progress .fill {
+	stroke: rgb(255, 255, 255);
+	stroke-dasharray: 219.99078369140625;
+	stroke-dashoffset: -219.99078369140625;
+	transition: stroke-dashoffset 1s;
+}
+
+.progress.blue .fill {
+	stroke: rgb(104, 214, 198);
+}
+
