@@ -16,6 +16,15 @@
     }
   }
 
+  .leaderboard {
+    .current-user {
+      position: sticky;
+      background: $gradient-orange;
+      bottom: 0;
+      color: white;
+    }
+  }
+
   .floating-video-pane {
     background: rgba($color: #fff, $alpha: 0.4);
     margin-right: -30px;
