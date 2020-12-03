@@ -6,7 +6,7 @@ var forEach = function (array, callback, scope) {
 
 window.onload = function(){
 	var max = -219.99078369140625;
-	forEach(document.querySelectorAll('.progress'), function (index, value) {
+	forEach(document.querySelectorAll('.radial-progress'), function (index, value) {
 	percent = value.getAttribute('data-progress');
 		value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
 	});
