@@ -1,0 +1,26 @@
+.radial-progress {
+  width: 100%;
+  height: 100%;
+
+  .track,
+  .fill {
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 10;
+    transform: rotate(90deg) translate(0px, -80px);
+  }
+
+  .track {
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+
+  .fill {
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 219.99078369140625;
+    stroke-dashoffset: -219.99078369140625;
+    transition: stroke-dashoffset 1s;
+  }
+
+  &.orange .fill {
+    stroke: $orange;
+  }
+}
