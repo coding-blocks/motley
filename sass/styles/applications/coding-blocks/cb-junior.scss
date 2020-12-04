@@ -14,6 +14,46 @@
       font-size: 18px;
       font-weight: 700;
     }
+
+    &.notes-card {
+      background: rgba($color: $yellow, $alpha: 0.1);
+
+      .side-tag {
+        &::after {
+          background: $yellow;
+        }
+      }
+    }
+
+    &.quiz-card {
+      background: #e9f0fc;
+
+      .side-tag {
+        &::after {
+          background: $blue;
+        }
+      }
+    }
+
+    &.video-card {
+      background: #feedef;
+
+      .side-tag {
+        &::after {
+          background: $pink-light-1;
+        }
+      }
+    }
+
+    &.code-card {
+      background: #eef9ef;
+
+      .side-tag {
+        &::after {
+          background: $green-light-1;
+        }
+      }
+    }
   }
 
   .leaderboard {
@@ -104,6 +144,12 @@
     &--left {
       &::after {
         left: -30px !important;
+      }
+    }
+
+    &--rounded {
+      &::after {
+        border-radius: 10px;
       }
     }
   }
