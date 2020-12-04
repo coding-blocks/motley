@@ -16,10 +16,13 @@
     }
 
     &.notes-card {
-      background: rgba($color: $orange-light-2, $alpha: 0.1);
+      background: rgba($color: $yellow, $alpha: 0.1);
 
       .side-tag {
-        color: $orange-light-2;
+        &::after {
+          background: $yellow;
+          border-radius: 10px;
+        }
       }
     }
   }
