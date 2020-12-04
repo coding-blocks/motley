@@ -14,6 +14,14 @@
       font-size: 18px;
       font-weight: 700;
     }
+
+    &.notes-card {
+      background: rgba($color: $orange-light-2, $alpha: 0.1);
+
+      .side-tag {
+        color: $orange-light-2;
+      }
+    }
   }
 
   .leaderboard {
@@ -105,6 +113,10 @@
       &::after {
         left: -30px !important;
       }
+    }
+
+    &--rounded {
+      border-radius: 10px;
     }
   }
 
