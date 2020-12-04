@@ -34,6 +34,26 @@
         }
       }
     }
+
+    &.video-card {
+      background: #feedef;
+
+      .side-tag {
+        &::after {
+          background: $pink-light-1;
+        }
+      }
+    }
+
+    &.code-card {
+      background: #eef9ef;
+
+      .side-tag {
+        &::after {
+          background: $green-light-1;
+        }
+      }
+    }
   }
 
   .leaderboard {
