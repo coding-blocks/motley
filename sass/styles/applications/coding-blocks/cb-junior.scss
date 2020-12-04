@@ -21,7 +21,16 @@
       .side-tag {
         &::after {
           background: $yellow;
-          border-radius: 10px;
+        }
+      }
+    }
+
+    &.quiz-card {
+      background: #e9f0fc;
+
+      .side-tag {
+        &::after {
+          background: $blue;
         }
       }
     }
@@ -119,7 +128,9 @@
     }
 
     &--rounded {
-      border-radius: 10px;
+      &::after {
+        border-radius: 10px;
+      }
     }
   }
 
