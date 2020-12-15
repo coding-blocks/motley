@@ -1,0 +1,12 @@
+.nagarro-landing {
+  .cyan-underline {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 6px;
+      bottom: 0;
+    }
+  }
+}
