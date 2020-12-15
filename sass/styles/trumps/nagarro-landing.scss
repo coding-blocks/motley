@@ -3,6 +3,10 @@
     color: #47d7ac;
   }
 
+  .bg-cyan {
+    background-color: #e3fff7;
+  }
+
   .cyan-underline {
     position: relative;
 
@@ -24,6 +28,12 @@
     right: -50%;
     top: -25%;
     border-radius: 100%;
-    background-color: #E3FFF7;
+    background-color: #e3fff7;
+  }
+
+  .button-primary {
+    &.button-grey {
+      background: #3f3f3f !important;
+    }
   }
 }
