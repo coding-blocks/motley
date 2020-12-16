@@ -44,6 +44,11 @@
     bottom: 0;
   }
 
+  .hero-2 {
+    bottom: -50px;
+    right: 0;
+  }
+
   .hero-3 {
     top: -100px;
     left: 0;
@@ -55,16 +60,27 @@
     }
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     .hero-1 {
       right: -100px;
     }
   }
 
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 991px) {
     .hero-3 {
       top: 100px;
       left: -100px;
+    }
+
+    .hero-2 {
+      bottom: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .hero-2 {
+      right: -300px;
+      bottom: -150px;
     }
   }
 }
