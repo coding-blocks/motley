@@ -1,18 +1,35 @@
 .nagarro-landing {
   margin-top: -70px;
 
-  .faq-card {
-    overflow: hidden;
-    position: relative;
+  .faq-section {
+    .faq-card {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
 
-    &::after {
-      content: "";
-      height: 100%;
-      position: absolute;
-      width: 10px;
-      background: #58d3af;
-      left: 0;
-      top: 0;
+      &::after {
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 10px;
+        background: #58d3af;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .answer-section {
+      border: 1px solid #58d3af;
+      border-top: unset;
+      padding: 30px;
+      box-sizing: border-box;
+      margin-top: -5px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      &--closed {
+        display: none;
+      }
     }
   }
 
