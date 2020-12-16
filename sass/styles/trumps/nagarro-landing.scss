@@ -68,6 +68,22 @@
   .button-primary {
     &.button-grey {
       background: #3f3f3f !important;
+
+      &:hover {
+        background: $white !important;
+        color: #3f3f3f;
+      }
+    }
+
+    &.button-cyan {
+      border: 1px solid #58d3af;
+      background: $white !important;
+      color: #58d3af;
+
+      &:hover {
+        background: #58d3af !important;
+        color: $white;
+      }
     }
   }
 
@@ -77,7 +93,7 @@
   }
 
   .hero-2 {
-    bottom: -50px;
+    bottom: -75px;
     right: 0;
   }
 
