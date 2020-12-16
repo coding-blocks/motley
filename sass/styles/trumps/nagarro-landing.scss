@@ -38,4 +38,16 @@
       background: #3f3f3f !important;
     }
   }
+
+  .hero-3 {
+    top: -100px;
+    left: 0;
+  }
+
+  @media screen and (max-width: 991px){
+    .hero-3 {
+      top: 100px;
+      left: -100px;
+    }
+  }
 }
