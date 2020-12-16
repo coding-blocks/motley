@@ -1,6 +1,21 @@
 .nagarro-landing {
   margin-top: -70px;
 
+  .faq-card {
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 10px;
+      background: #58d3af;
+      left: 0;
+      top: 0;
+    }
+  }
+
   .cyan {
     color: #47d7ac;
   }
