@@ -1,6 +1,28 @@
 .nagarro-landing {
   margin-top: -70px;
 
+  .round-button-grey {
+    background: #3f3f3f;
+    border: 3px solid #59D6B0;
+    bottom: calc(50% - 75px);
+    left: -75px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  .round-button-cyan {
+    background: #59D6B0;
+    border: 3px solid #59D6B0;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+
   .faq-section {
     .faq-card {
       overflow: hidden;
@@ -110,7 +132,7 @@
 
   @media screen and (max-width: 767px) {
     .hero-1 {
-      right: -100px;
+      right: -150px !important;
     }
   }
 
@@ -122,6 +144,24 @@
 
     .hero-2 {
       bottom: 0 !important;
+    }
+
+    .hero-1 {
+      right: -100px;
+    }
+
+    .round-button-cyan {
+      height: 120px;
+      width: 120px;
+    }
+
+    .round-button-grey {
+      height: 120px;
+      width: 120px;
+      position: static;
+      top: unset;
+      left: unset;
+
     }
   }
 
