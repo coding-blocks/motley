@@ -133,6 +133,15 @@
     .hero-2 {
       bottom: 0 !important;
     }
+
+    .round-button-grey {
+      height: 120px;
+      width: 120px;
+      position: static;
+      top: unset;
+      left: unset;
+
+    }
   }
 
   @media screen and (max-width: 1199px) {
