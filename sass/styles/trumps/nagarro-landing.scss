@@ -9,6 +9,18 @@
     position: absolute;
     height: 150px;
     width: 150px;
+    cursor: pointer;
+  }
+
+  .round-button-cyan {
+    background: #59D6B0;
+    border: 3px solid #59D6B0;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
   }
 
   .faq-section {
@@ -120,7 +132,7 @@
 
   @media screen and (max-width: 767px) {
     .hero-1 {
-      right: -100px;
+      right: -150px !important;
     }
   }
 
@@ -132,6 +144,15 @@
 
     .hero-2 {
       bottom: 0 !important;
+    }
+
+    .hero-1 {
+      right: -100px;
+    }
+
+    .round-button-cyan {
+      height: 120px;
+      width: 120px;
     }
 
     .round-button-grey {
