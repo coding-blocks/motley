@@ -3,7 +3,12 @@
 
   .round-button-grey {
     background: #3f3f3f;
-    background: 3px solid #59D6B0;
+    border: 3px solid #59D6B0;
+    bottom: calc(50% - 75px);
+    left: -75px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
   }
 
   .faq-section {
