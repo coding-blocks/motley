@@ -24,12 +24,40 @@
   }
 
   .faq-section {
+    color: $white;
+    overflow: hidden;
+    width: 100%;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+
     .faq-card {
       overflow: hidden;
       position: relative;
       cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+
+      &:hover {
+        background: darken(#f5f5f5, $amount: 10%);
+      }
 
       &::after {
+        content: "\276f";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all 0.35s;
+      }
+
+      &::before {
         content: "";
         height: 100%;
         position: absolute;
