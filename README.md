@@ -42,13 +42,12 @@ https://coding-blocks.github.io/motley
  Motley is used in the following websites - 
  
  1. [Coding Blocks Online](https://online.codingblocks.com)
+ 2. [Hacker Blocks](https://hack.codingblocks.com)
  2. [Coding Blocks Account Dashboard](https://account.codingblocks.com)
- 3. [Coding Blocks Payments Portal](https://dukaan.codingblocks.com)
- 4. [Coding Blocks Registration Portal](https://app.codingblocks.com)
 
  ## Maintainers
  
- 1. [Aayush Arora](https://github.com/aayusharora) 
+ 1. [Bipin Kalra](https://github.com/BipinKalra) 
  2. [Vibhu Dujari](https://github.com/vdvibhu20)
  3. [Abhishek Gupta](https://github.com/abhishek97)
 
