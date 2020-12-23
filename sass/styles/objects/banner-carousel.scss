@@ -74,14 +74,15 @@
     padding: 0;
   }
 
-  .carousel {
+  .banner-carousel {
     position: relative;
-    padding-top: 75%;
+    // padding-top: 75%;
+    height: 75vh;
     /*   filter: drop-shadow(0 0 10px #0003); */
     /*   perspective: 100px; */
   }
 
-  .carousel__viewport {
+  .banner-carousel__viewport {
     position: absolute;
     top: 0;
     right: 0;
@@ -94,7 +95,7 @@
     scroll-snap-type: x mandatory;
   }
 
-  .carousel__slide {
+  .banner-carousel__slide {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
@@ -102,11 +103,11 @@
     /*   counter-increment: item; */
   }
 
-  .carousel__slide:nth-child(even) {
+  .banner-carousel__slide:nth-child(even) {
     background-color: #99f;
   }
 
-  /* .carousel__slide:before {
+  /* .banner-carousel__slide:before {
     content: counter(item);
     position: absolute;
     top: 50%;
@@ -116,7 +117,7 @@
     font-size: 2em;
   } */
 
-  .carousel__snapper {
+  .banner-carousel__snapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -126,30 +127,30 @@
   }
 
   @media (hover: hover) {
-    .carousel__snapper {
+    .banner-carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
       animation-duration: 4s;
       animation-iteration-count: infinite;
     }
 
-    .carousel__slide:last-child .carousel__snapper {
+    .banner-carousel__slide:last-child .banner-carousel__snapper {
       animation-name: tostart, snap;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
+    .banner-carousel__snapper {
       animation-name: none;
     }
   }
 
-  .carousel:hover .carousel__snapper,
-  .carousel:focus-within .carousel__snapper {
+  .banner-carousel:hover .banner-carousel__snapper,
+  .banner-carousel:focus-within .banner-carousel__snapper {
     animation-name: none;
   }
 
-  .carousel__navigation {
+  .banner-carousel__navigation {
     position: absolute;
     right: 0;
     bottom: 25px;
@@ -157,12 +158,12 @@
     text-align: center;
   }
 
-  .carousel__navigation-list,
-  .carousel__navigation-item {
+  .banner-carousel__navigation-list,
+  .banner-carousel__navigation-item {
     display: inline-block;
   }
 
-  .carousel__navigation-button {
+  .banner-carousel__navigation-button {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
@@ -174,38 +175,38 @@
     transition: transform 0.1s;
   }
 
-  .carousel__navigation-button:active,
-  .carousel__navigation-button:hover {
+  .banner-carousel__navigation-button:active,
+  .banner-carousel__navigation-button:hover {
     background-color: #fff;
   }
 
-  .carousel::before,
-  .carousel::after,
-  .carousel__prev,
-  .carousel__next {
+  .banner-carousel::before,
+  .banner-carousel::after,
+  .banner-carousel__prev,
+  .banner-carousel__next {
     position: absolute;
-    top: 0;
-    margin-top: 37.5%;
+    top: calc(50% - 28px);
+    // margin-top: 37.5%;
     width: 4rem;
     height: 4rem;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
     border-radius: 50%;
     font-size: 0;
     outline: 0;
   }
 
-  .carousel::before,
-  .carousel__prev {
+  .banner-carousel::before,
+  .banner-carousel__prev {
     left: -1rem;
   }
 
-  .carousel::after,
-  .carousel__next {
+  .banner-carousel::after,
+  .banner-carousel__next {
     right: -1rem;
   }
 
-  .carousel::before,
-  .carousel::after {
+  .banner-carousel::before,
+  .banner-carousel::after {
     content: "";
     z-index: 1;
     background-color: #333;
@@ -219,11 +220,11 @@
     pointer-events: none;
   }
 
-  .carousel::before {
+  .banner-carousel::before {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
   }
 
-  .carousel::after {
+  .banner-carousel::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
   }
 }
