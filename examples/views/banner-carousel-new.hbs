@@ -1,30 +1,48 @@
 <div class="a-cbm">
   <div class="container">
-    <div>
-      <div class="bg-grey-dark-2 position-relative">
-        {{!-- This height can be removed when theres an actual image here --}}
-        <img src="https://www.vyond.com/wp-content/uploads/2013/03/6-best-free-banner-maker-tools.png" class="w-100">
-        <div class="position-absolute bl w-100 px-80 pb-50 d-md-block d-none" style="z-index: 10;">
-          <div class="row no-gutters justify-content-between align-items-end">
-            <div class="flex-1">
-              <div class="heading-5 bold white mb-30">Learn Programming from the best mentor</div>
-              <div>
-                <button class="button-primary">Active State</button>
-                <button class="button-primary ml-20">Active State</button>
-              </div>
-            </div>
-            {{!-- Carousel Dot Navigation goes here --}}
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
           </div>
-        </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+          </div>
+        </li>
+      </ol>
+      <div class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
       </div>
-      <div class="p-25 t-align-c d-md-none d-block">
-        <div class="font-4 bold">Learn Programming from the best mentor</div>
-        <div class="mt-30 mb-20">
-          <button class="button-primary">Active State</button>
-          <button class="button-primary ml-10">Active State</button>
-        </div>
-        {{!-- Carousel Dot Navigation goes here --}}
-      </div>
-    </div>
+    </section>
   </div>
 </div>
