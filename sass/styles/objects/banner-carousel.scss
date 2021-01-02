@@ -259,13 +259,13 @@
       transition: background-color 0.6s ease;
 
       &:hover {
-        background-color: $white;
+        background-color: #eee;
       }
     }
   }
 
   .active {
-    background-color: $white;
+    background-color: #eee;
   }
 
   .fade {
