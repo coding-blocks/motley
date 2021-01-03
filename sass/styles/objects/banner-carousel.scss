@@ -248,6 +248,11 @@
   }
 
   &__navigation-dots {
+    bottom: 50px;
+    right: 80px;
+    z-index: 20px;
+    position: absolute;
+
     .dot {
       cursor: pointer;
       height: 15px;
@@ -259,13 +264,13 @@
       transition: background-color 0.6s ease;
 
       &:hover {
-        background-color: $white;
+        background-color: #eee;
       }
     }
   }
 
   .active {
-    background-color: $white;
+    background-color: #eee;
   }
 
   .fade {
@@ -295,5 +300,12 @@
 
   @media screen and (max-width: 767px) {
     height: auto;
+
+    &__navigation-dots {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+    }
   }
 }
