@@ -13,9 +13,21 @@
           </div>
         </div>
       </div>
+      <div class="p-25 t-align-c d-md-none d-block">
+        <div class="font-4 bold">Learn Programming from the best mentor</div>
+        <div class="mt-30 mb-20">
+          <button class="button-primary">Active State</button>
+          <button class="button-primary ml-10">Active State</button>
+        </div>
+        <div class="slideshow-container__navigation-dots">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
     </div>
 
-    <div class="slideshow-container__slide fade">
+    {{!-- <div class="slideshow-container__slide fade">
       <img src="https://wallpapercave.com/wp/wp2570989.jpg" class="w-100">
       <div class="position-absolute bl w-100 px-80 pb-50 d-md-block d-none" style="z-index: 10;">
         <div class="row no-gutters justify-content-between align-items-end">
@@ -43,28 +55,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <a class="slideshow-container__prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="slideshow-container__next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="slideshow-container__navigation-dots d-md-block d-none position-absolute br" style="z-index: 20; bottom: 50px; right: 80px;">
+    <div class="slideshow-container__navigation-dots d-md-block d-none position-absolute"
+      style="z-index: 20; bottom: 50px; right: 80px;">
       <span class="dot" onclick="currentSlide(0)"></span>
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-
-    <div class="p-25 t-align-c d-md-none d-block">
-      <div class="font-4 bold">Learn Programming from the best mentor</div>
-      <div class="mt-30 mb-20">
-        <button class="button-primary">Active State</button>
-        <button class="button-primary ml-10">Active State</button>
-      </div>
-      <div class="slideshow-container__navigation-dots">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-      </div>
     </div>
   </div>
 </div>
