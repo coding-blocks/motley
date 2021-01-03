@@ -248,6 +248,11 @@
   }
 
   &__navigation-dots {
+    bottom: 50px;
+    right: 80px;
+    z-index: 20px;
+    position: absolute;
+
     .dot {
       cursor: pointer;
       height: 15px;
@@ -295,5 +300,12 @@
 
   @media screen and (max-width: 767px) {
     height: auto;
+
+    &__navigation-dots {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+    }
   }
 }
