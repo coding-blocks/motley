@@ -17,6 +17,7 @@
   &--white {
     background: $white;
     color: $black;
+    mix-blend-mode: screen;
   }
 
   &:hover {
