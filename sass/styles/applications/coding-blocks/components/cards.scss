@@ -47,22 +47,24 @@
     }
   }
 
-  .mentor-row {
-    &__image-container {
-      position: absolute;
-      right: -15px;
+  &__mentor-container {
+    .mentor-row {
+      &__image-container {
+        position: absolute;
+        right: -15px;
 
-      &--mentor-2 {
-        right: -40px;
+        &--mentor-2 {
+          right: -40px;
+        }
+
+        &__mentor-image {
+          border: unset;
+        }
       }
 
-      &__mentor-image {
-        border: unset;
+      &__text-container {
+        padding-left: 0;
       }
-    }
-
-    &__text-container {
-      padding-left: 0;
     }
   }
 }
