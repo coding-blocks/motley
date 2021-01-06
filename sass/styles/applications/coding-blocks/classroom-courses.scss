@@ -19,15 +19,7 @@
       }
 
       &:hover {
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: rgba($color: #ff8830, $alpha: 0.1);
-        }
+        background: rgba($color: #ff8830, $alpha: 0.1);
       }
     }
 
@@ -43,15 +35,7 @@
       }
 
       &:hover {
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: rgba($color: #007dfe, $alpha: 0.1);
-        }
+        background: rgba($color: #007dfe, $alpha: 0.1);
       }
     }
 
@@ -67,15 +51,7 @@
       }
 
       &:hover {
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: rgba($color: #8c6bcf, $alpha: 0.1);
-        }
+        background: rgba($color: #8c6bcf, $alpha: 0.1);
       }
     }
   }
