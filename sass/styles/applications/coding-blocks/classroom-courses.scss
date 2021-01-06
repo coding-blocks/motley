@@ -55,4 +55,52 @@
       }
     }
   }
+
+  .class-flow {
+    font-size: $heading-3;
+    font-weight: $bold;
+
+    &__text-1, &__text-3 {
+      right: 0;
+      text-align: right;
+    }
+
+    &__text-2, &__text-4 {
+      left: 0;
+    }
+
+    &__text-1 {
+      top: 12.5%;
+    }
+
+    &__text-2 {
+      top: 37.5%;
+    }
+
+    &__text-3 {
+      top: 62.5%;
+    }
+
+    &__text-4 {
+      top: 87.5%;
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    .class-flow {
+      font-size: $heading-5;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .class-flow {
+      font-size: $heading-6;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .class-flow {
+      font-size: $font-4;
+    }
+  }
 }
