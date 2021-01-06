@@ -1,4 +1,8 @@
 .classroom-courses-page {
+  .button-primary {
+    border-radius: unset;
+  }
+
   .card {
     border-radius: unset;
     position: relative;
@@ -11,7 +15,6 @@
       }
 
       .button-primary {
-        border-radius: unset;
         background: #ff8830 !important;
       }
 
@@ -28,7 +31,7 @@
       }
     }
 
-    &--theme-orange {
+    &--theme-blue {
       border: 2px solid #007dfe;
 
       .highlight-text {
@@ -36,7 +39,6 @@
       }
 
       .button-primary {
-        border-radius: unset;
         background: #007dfe !important;
       }
 
@@ -49,6 +51,30 @@
           height: 100%;
           width: 100%;
           background: rgba($color: #007dfe, $alpha: 0.1);
+        }
+      }
+    }
+
+    &--theme-purple {
+      border: 2px solid #8c6bcf;
+
+      .highlight-text {
+        color: #8c6bcf;
+      }
+
+      .button-primary {
+        background: #8c6bcf !important;
+      }
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba($color: #8c6bcf, $alpha: 0.1);
         }
       }
     }
