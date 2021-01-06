@@ -1,0 +1,56 @@
+.classroom-courses-page {
+  .card {
+    border-radius: unset;
+    position: relative;
+
+    &--theme-orange {
+      border: 2px solid #ff8830;
+
+      .highlight-text {
+        color: #ff8830;
+      }
+
+      .button-primary {
+        border-radius: unset;
+        background: #ff8830 !important;
+      }
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba($color: #ff8830, $alpha: 0.1);
+        }
+      }
+    }
+
+    &--theme-orange {
+      border: 2px solid #007dfe;
+
+      .highlight-text {
+        color: #007dfe;
+      }
+
+      .button-primary {
+        border-radius: unset;
+        background: #007dfe !important;
+      }
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba($color: #007dfe, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}
