@@ -1,0 +1,106 @@
+.classroom-courses-page {
+  .button-primary {
+    border-radius: unset;
+  }
+
+  .card {
+    border-radius: unset;
+    position: relative;
+
+    &--theme-orange {
+      border: 2px solid #ff8830;
+
+      .highlight-text {
+        color: #ff8830;
+      }
+
+      .button-primary {
+        background: #ff8830 !important;
+      }
+
+      &:hover {
+        background: rgba($color: #ff8830, $alpha: 0.1);
+      }
+    }
+
+    &--theme-blue {
+      border: 2px solid #007dfe;
+
+      .highlight-text {
+        color: #007dfe;
+      }
+
+      .button-primary {
+        background: #007dfe !important;
+      }
+
+      &:hover {
+        background: rgba($color: #007dfe, $alpha: 0.1);
+      }
+    }
+
+    &--theme-purple {
+      border: 2px solid #8c6bcf;
+
+      .highlight-text {
+        color: #8c6bcf;
+      }
+
+      .button-primary {
+        background: #8c6bcf !important;
+      }
+
+      &:hover {
+        background: rgba($color: #8c6bcf, $alpha: 0.1);
+      }
+    }
+  }
+
+  .class-flow {
+    font-size: $heading-3;
+    font-weight: $bold;
+
+    &__text-1, &__text-3 {
+      right: 0;
+      text-align: right;
+    }
+
+    &__text-2, &__text-4 {
+      left: 0;
+    }
+
+    &__text-1 {
+      top: 12.5%;
+    }
+
+    &__text-2 {
+      top: 37.5%;
+    }
+
+    &__text-3 {
+      top: 62.5%;
+    }
+
+    &__text-4 {
+      top: 87.5%;
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    .class-flow {
+      font-size: $heading-5;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .class-flow {
+      font-size: $heading-6;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .class-flow {
+      font-size: $font-4;
+    }
+  }
+}
