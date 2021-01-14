@@ -1,3 +1,21 @@
 .pulse {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 0 #333;
+
+  &:hover {
+    animation: pulse 1.5s infinite cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  @keyframes pulse {
+    to {
+      box-shadow: 0 0 0 60px rgba(150, 150, 150, 0);
+    }
+  }
 }
