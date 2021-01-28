@@ -1,0 +1,15 @@
+.universe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .universe__star {
+    height: 100px;
+    width: 100px;
+    background: $grey-light-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
