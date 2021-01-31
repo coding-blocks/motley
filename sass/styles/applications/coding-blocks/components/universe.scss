@@ -20,6 +20,22 @@
       position: absolute;
       top: 50%;
       left: 50%;
+
+      img {
+        border-radius: inherit;
+      }
+
+      &::before {
+        content: "";
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        background: $gradient-orange-light;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        z-index: -1;
+        border-radius: 50%;
+      }
     }
 
     &--1 {
