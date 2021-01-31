@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  .universe__star {
+  &__star {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -12,5 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
   }
 }
