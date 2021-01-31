@@ -30,4 +30,16 @@
     width: 215px;
     border: 1px solid $orange;
   }
+
+  &__orbit-2 {
+    height: 330px;
+    width: 330px;
+    border: 1px solid rgba($color: $orange, $alpha: 0.6);
+  }
+
+  &__orbit-3 {
+    height: 445px;
+    width: 445px;
+    border: 1px solid rgba($color: $orange, $alpha: 0.2);
+  }
 }
