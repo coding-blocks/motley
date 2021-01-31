@@ -5,14 +5,43 @@
   // justify-content: center;
 
   &__star,
-  &__orbit-1,
-  &__orbit-2,
-  &__orbit-3 {
+  &__orbit {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     position: absolute;
+  }
+
+  &__orbit {
+    &__planet {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background: $gradient-orange;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: calc(-60px / 2);
+    }
+
+    &--1 {
+      height: 215px;
+      width: 215px;
+      border: 1px solid $orange;
+    }
+
+    &--2 {
+      height: 330px;
+      width: 330px;
+      border: 1px solid rgba($color: $orange, $alpha: 0.6);
+    }
+
+    &--3 {
+      height: 445px;
+      width: 445px;
+      border: 1px solid rgba($color: $orange, $alpha: 0.2);
+    }
   }
 
   &__star {
@@ -23,23 +52,5 @@
     justify-content: center;
     align-items: center;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
-  }
-
-  &__orbit-1 {
-    height: 215px;
-    width: 215px;
-    border: 1px solid $orange;
-  }
-
-  &__orbit-2 {
-    height: 330px;
-    width: 330px;
-    border: 1px solid rgba($color: $orange, $alpha: 0.6);
-  }
-
-  &__orbit-3 {
-    height: 445px;
-    width: 445px;
-    border: 1px solid rgba($color: $orange, $alpha: 0.2);
   }
 }
