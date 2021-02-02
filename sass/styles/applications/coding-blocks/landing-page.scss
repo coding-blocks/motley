@@ -111,6 +111,9 @@
   }
 
   .slideshow-container {
+    max-height: unset;
+    // overflow: hidden;
+
     &__navigation-dots {
       left: 100px;
       // bottom: 100px;
