@@ -50,7 +50,6 @@
   .side-tag {
     &::after {
       background: $orange;
-      left: calc(-40px);
     }
   }
 
@@ -189,12 +188,6 @@
         position: initial;
         width: 90%;
         margin-bottom: -4.5rem;
-      }
-    }
-
-    .side-tag {
-      &::after {
-        left: -20px;
       }
     }
 

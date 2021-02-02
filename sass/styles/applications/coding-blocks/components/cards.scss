@@ -67,4 +67,10 @@
       }
     }
   }
+
+  .side-tag {
+    &::after {
+      left: -30px;
+    }
+  }
 }
