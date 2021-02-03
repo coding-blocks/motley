@@ -40,45 +40,71 @@
   }
 }
 
+// .button-secondary {
+//   @extend %button;
+//   box-sizing: border-box;
+
+//   border: 1px solid $white;
+//   transition: background-color 0.25s;
+
+//   &--light {
+//     border: 1px solid $grey-light-1;
+//     color: $grey-light-1;
+
+//     &:hover {
+//       border: 1px solid $grey;
+//       background-color: $grey !important;
+//       color: $white;
+//     }
+//   }
+
+//   &:hover {
+//     background: rgba(255, 255, 255, 0.15);
+//   }
+
+//   &:active {
+//     background: rgba(255, 255, 255, 0.3);
+//   }
+
+//   &:focus {
+//     background: rgba(255, 255, 255, 0.3);
+//     border: 1px solid $yellow;
+//   }
+
+//   &:disabled,
+//   &.disabled {
+//     border: 1px solid $light-grey;
+//     color: $grey-light-1;
+//     cursor: auto;
+
+//     &:hover {
+//       background: unset;
+//     }
+//   }
+// }
+
 .button-secondary {
   @extend %button;
   box-sizing: border-box;
+  border: 1px solid $orange;
+  color: $orange;
+  // transition: background-color 0.25s;
 
-  border: 1px solid $white;
-  transition: background 0.25s;
+  &:hover, &:active, &:focus {
+    animation: button-emphasis 1s;
+  }
 
-  &--light {
-    border: 1px solid $grey-light-1;
-    color: $grey-light-1;
-
-    &:hover {
-      border: 1px solid $grey;
-      background-color: $grey !important;
-      color: $white;
+  @keyframes button-emphasis {
+    0% {
+      padding: 1rem 2rem;
     }
-  }
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.15);
-  }
+    50% {
+      padding: 1rem 3rem;
+    }
 
-  &:active {
-    background: rgba(255, 255, 255, 0.3);
-  }
-
-  &:focus {
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid $yellow;
-  }
-
-  &:disabled,
-  &.disabled {
-    border: 1px solid $light-grey;
-    color: $grey-light-1;
-    cursor: auto;
-
-    &:hover {
-      background: unset;
+    100% {
+      padding: 1rem 2rem;
     }
   }
 }

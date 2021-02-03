@@ -1,0 +1,131 @@
+.universe {
+  position: relative;
+  height: 500px;
+  width: 500px;
+
+  &__star,
+  &__orbit {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &__orbit {
+    &__planet {
+      border-radius: 50%;
+      background: $gradient-orange-light;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      img {
+        border-radius: inherit;
+      }
+
+      &::before {
+        content: "";
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        background: $gradient-orange-light;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        z-index: -1;
+        border-radius: 50%;
+      }
+    }
+
+    &--1 {
+      height: 215px;
+      width: 215px;
+      border: 1px solid $orange;
+
+      .universe__orbit__planet {
+        height: 60px;
+        width: 60px;
+        margin: -30px;
+      }
+    }
+
+    &--2 {
+      height: 330px;
+      width: 330px;
+      border: 1px solid rgba($color: $orange, $alpha: 0.6);
+
+      .universe__orbit__planet {
+        height: 50px;
+        width: 50px;
+        margin: -25px;
+      }
+    }
+
+    &--3 {
+      height: 445px;
+      width: 445px;
+      border: 1px solid rgba($color: $orange, $alpha: 0.2);
+
+      .universe__orbit__planet {
+        height: 40px;
+        width: 40px;
+        margin: -20px;
+      }
+    }
+  }
+
+  &__star {
+    height: 100px;
+    width: 100px;
+    background: $grey-light-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  // @media screen and (max-width: 1199px) {
+  //   height: 450px;
+  //   width: 450px;
+
+  //   &__star {
+  //     height: 85px;
+  //     width: 85px;
+  //   }
+
+  //   &__orbit {
+  //     &--1 {
+  //       height: 190px;
+  //       width: 190px;
+
+  //       .universe__orbit__planet {
+  //         height: 54px;
+  //         width: 54px;
+  //         margin: -27px;
+  //       }
+  //     }
+
+  //     &--2 {
+  //       height: 305;
+  //       width: 305px;
+
+  //       .universe__orbit__planet {
+  //         height: 44px;
+  //         width: 44px;
+  //         margin: -22px;
+  //       }
+  //     }
+
+  //     &--3 {
+  //       height: 420px;
+  //       width: 420px;
+
+  //       .universe__orbit__planet {
+  //         height: 34px;
+  //         width: 34px;
+  //         margin: -17px;
+  //       }
+  //     }
+  //   }
+  // }
+}

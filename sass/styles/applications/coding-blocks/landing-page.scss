@@ -1,15 +1,6 @@
 .landing-page {
-  color: $white;
-
-  .heading-font {
-    font-size: 4.142rem;
-    font-weight: $extra-bold;
-  }
-
-  .my-50 {
-    margin-top: 3.57rem;
-    margin-bottom: 3.57rem;
-  }
+  color: $grey;
+  z-index: 0;
 
   &__section {
     padding: 7.142rem;
@@ -17,11 +8,11 @@
     overflow: hidden;
 
     &:nth-child(2n-1) {
-      background: $grey-dark-2;
+      background: $white;
     }
 
     &:nth-child(2n) {
-      background: $black;
+      background: $grey-light-3;
     }
 
     &--divided-section {
@@ -34,7 +25,7 @@
       }
 
       &__left-section {
-        border-right: 1px solid $grey;
+        border-right: 1px solid $grey-light-1;
         padding-right: 3.57rem;
       }
 
@@ -45,7 +36,7 @@
 
     &--footer {
       &__main-section {
-        border-right: 1px solid $grey;
+        border-right: 1px solid $grey-light-1;
       }
     }
 
@@ -57,10 +48,25 @@
     }
   }
 
+  .course-section {
+    &__option {
+      border-top: 1px solid $grey-light-1;
+      border-bottom: 1px solid $grey-light-1;
+      cursor: pointer;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+
+      &:hover,
+      &.active {
+        background: $white;
+      }
+    }
+  }
+
   .side-tag {
     &::after {
       background: $orange;
-      left: calc(-40px);
     }
   }
 
@@ -92,6 +98,52 @@
 
   .divider-h {
     background: $grey;
+  }
+
+  .heading-font {
+    font-size: 4.142rem;
+    font-weight: $extra-bold;
+  }
+
+  .underline-highlight {
+    &--gradient-orange {
+      &::after {
+        background: $gradient-orange-light;
+      }
+    }
+  }
+
+  .mini-banner {
+    &__tag {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      padding: 5px 10px;
+      right: 60px;
+      color: white;
+      background: $gradient-orange-light;
+      border-radius: 2px;
+    }
+  }
+
+  .slideshow-container {
+    max-height: unset;
+    // overflow: hidden;
+
+    &__navigation-dots {
+      left: 100px;
+      // bottom: 100px;
+
+      .dot {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .big-photo {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
   }
 
   @media screen and (max-width: 1199px) {
@@ -159,12 +211,6 @@
         position: initial;
         width: 90%;
         margin-bottom: -4.5rem;
-      }
-    }
-
-    .side-tag {
-      &::after {
-        left: -20px;
       }
     }
 
