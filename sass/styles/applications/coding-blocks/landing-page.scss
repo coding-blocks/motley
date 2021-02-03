@@ -48,6 +48,22 @@
     }
   }
 
+  .course-section {
+    &__option {
+      border-top: 1px solid $grey-light-1;
+      border-bottom: 1px solid $grey-light-1;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover,
+      &.active {
+        background: $white;
+      }
+    }
+  }
+
   .side-tag {
     &::after {
       background: $orange;
