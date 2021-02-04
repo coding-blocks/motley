@@ -287,6 +287,11 @@
         bottom: 50px;
       }
     }
+
+    .big-photo {
+      height: 150px;
+      width: 150px;
+    }
   }
 
   @media screen and (max-width: 575px) {
@@ -320,6 +325,11 @@
 
     .slideshow-container {
       margin: 0 -2.5rem;
+    }
+
+    .big-photo {
+      height: 90px;
+      width: 90px;
     }
 
     // .course-section {
