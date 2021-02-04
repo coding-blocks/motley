@@ -61,6 +61,10 @@
         color: $orange;
       }
     }
+
+    &__cards {
+      padding-left: 75px;
+    }
   }
 
   .side-tag {
@@ -195,6 +199,10 @@
         border-bottom: unset;
         justify-content: center;
       }
+
+      &__cards {
+        padding-left: 0;
+      }
     }
   }
 
@@ -314,10 +322,10 @@
       margin: 0 -2.5rem;
     }
 
-    .course-section {
-      .course-section__navigation {
-        margin: 0 -2.5rem;
-      }
-    }
+    // .course-section {
+    //   .course-section__navigation {
+    //     margin: 0 -2.5rem;
+    //   }
+    // }
   }
 }
