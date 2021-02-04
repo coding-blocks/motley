@@ -309,11 +309,15 @@
         }
       }
     }
-  }
 
-  .tabs-secondary {
-    & .tab {
-      padding: 10px 15px;
+    .slideshow-container {
+      margin: 0 -2.5rem;
+    }
+
+    .course-section {
+      .course-section__navigation {
+        margin: 0 -2.5rem;
+      }
     }
   }
 }
