@@ -53,13 +53,12 @@
       border-top: 1px solid $grey-light-1;
       border-bottom: 1px solid $grey-light-1;
       cursor: pointer;
-      display: flex;
-      // justify-content: center;
       align-items: center;
 
       &:hover,
       &.active {
         background: $white;
+        color: $orange;
       }
     }
   }
@@ -187,6 +186,16 @@
         left: 75px;
       }
     }
+
+    .course-section {
+      &__option {
+        border-top: 1px solid $grey-light-1;
+        border-left: 1px solid $grey-light-1;
+        border-left: 1px solid $grey-light-1;
+        border-bottom: unset;
+        justify-content: center;
+      }
+    }
   }
 
   @media screen and (max-width: 991px) {
@@ -290,6 +299,14 @@
         height: 150px;
         width: 150px;
         margin-right: 2rem;
+      }
+    }
+
+    .course-section {
+      &__option {
+        .col-12 {
+          font-size: $font-4 !important;
+        }
       }
     }
   }
