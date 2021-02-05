@@ -107,7 +107,7 @@
       width: 377px !important;
 
       &__divider {
-        opacity: 0.5; 
+        opacity: 0.5;
         margin: 42px 0 25px 0;
       }
     }
@@ -147,7 +147,7 @@
         width: 100%;
 
         &__divider {
-          opacity: 0.5; 
+          opacity: 0.5;
           margin: 24px 0 19px 0;
         }
       }
@@ -179,4 +179,27 @@
       margin-top: -28px;
     }
   }
+}
+
+.certificate-completion {
+  height: 840px;
+  width: 1150px;
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+  background: linear-gradient(293.4deg, #19316c -4.31%, #01b3c9 98.54%);
+  padding: 70px 0 70px 135px;
+  color: $white;
+
+  &__title {
+    margin-top: 36px;
+    font-size: 82px;
+    font-family: "BebasNeue", sans-serif !important;
+    margin-bottom: 37px;
+  }
+
+  &__logo {
+    height: 80px;
+  }
+
+  
 }
