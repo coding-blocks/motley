@@ -1,13 +1,13 @@
 html {
-  @media (max-width: 575px) {
-    font-size: 11px;
-  }
-
-  @media (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     font-size: 12px;
   }
 
-  @media (max-width: 991px) {
-    font-size: 13px;
+  @media screen and (max-width: 767px) {
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 10px;
   }
 }

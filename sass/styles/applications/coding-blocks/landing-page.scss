@@ -53,14 +53,17 @@
       border-top: 1px solid $grey-light-1;
       border-bottom: 1px solid $grey-light-1;
       cursor: pointer;
-      display: flex;
-      // justify-content: center;
       align-items: center;
 
       &:hover,
       &.active {
         background: $white;
+        color: $orange;
       }
+    }
+
+    &__cards {
+      padding-left: 75px;
     }
   }
 
@@ -128,11 +131,10 @@
 
   .slideshow-container {
     max-height: unset;
-    // overflow: hidden;
 
     &__navigation-dots {
+      width: fit-content;
       left: 100px;
-      // bottom: 100px;
 
       .dot {
         margin: 0 10px 0 0;
@@ -180,6 +182,26 @@
 
       &:nth-child(3) {
         padding-left: 4rem;
+      }
+    }
+
+    .slideshow-container {
+      &__navigation-dots {
+        left: 75px;
+      }
+    }
+
+    .course-section {
+      &__option {
+        border-top: 1px solid $grey-light-1;
+        border-left: 1px solid $grey-light-1;
+        border-left: 1px solid $grey-light-1;
+        border-bottom: unset;
+        justify-content: center;
+      }
+
+      &__cards {
+        padding-left: 0;
       }
     }
   }
@@ -238,6 +260,17 @@
         padding-left: 2.5rem;
       }
     }
+
+    .slideshow-container {
+      &__navigation-dots {
+        left: 50%;
+        transform: translateX(-50%);
+
+        .dot:last-child {
+          margin: unset;
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -247,6 +280,17 @@
       &__vector {
         margin-bottom: -4rem;
       }
+    }
+
+    .slideshow-container {
+      &__navigation-dots {
+        bottom: 50px;
+      }
+    }
+
+    .big-photo {
+      height: 150px;
+      width: 150px;
     }
   }
 
@@ -260,7 +304,7 @@
     }
 
     .heading-font {
-      font-size: 2.571rem;
+      font-size: 3.5rem;
     }
 
     .success-story {
@@ -270,11 +314,28 @@
         margin-right: 2rem;
       }
     }
-  }
 
-  .tabs-secondary {
-    & .tab {
-      padding: 10px 15px;
+    .course-section {
+      &__option {
+        .col-12 {
+          font-size: $font-4 !important;
+        }
+      }
     }
+
+    .slideshow-container {
+      margin: 0 -2.5rem;
+    }
+
+    .big-photo {
+      height: 90px;
+      width: 90px;
+    }
+
+    // .course-section {
+    //   .course-section__navigation {
+    //     margin: 0 -2.5rem;
+    //   }
+    // }
   }
 }
