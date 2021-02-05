@@ -201,5 +201,43 @@
     height: 80px;
   }
 
-  
+  &__course-logo {
+    height: 150px;
+    width: 150px;
+    top: 60px;
+    right: 92px;
+    position: absolute;
+    border-radius: 50%;
+    background: inherit;
+    border: 5px solid $white;
+    padding: 30px;
+  }
+
+  &__divider {
+    height: 1px;
+    width: 225px;
+    // margin-top: 38px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  &__description {
+    margin-top: 96px;
+  }
+
+  &__signature-row {
+    margin-top: 38px;
+
+    .signature-divider {
+      height: 1px;
+      width: 169px;
+      background: $white;
+      margin-bottom: 17px;
+    }
+
+    div:nth-child(2) {
+      .signature-divider {
+        margin-top: 21px;
+      }
+    }
+  }
 }
