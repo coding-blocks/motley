@@ -51,10 +51,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 30px 40px;
+        border-top: solid 1px $search-box-color;
 
-        &:hover {
-          background: darken($color: #ffffff, $amount: 10%);
-        }
+        // &:hover {
+        //   background: darken($color: #ffffff, $amount: 10%);
+        // }
 
         &::after {
           content: "\276f";
@@ -76,7 +77,7 @@
 
       input:checked {
         + .hamburger-nav__accordion-menu-element__header {
-          background: darken($color: #f8f8f8, $amount: 10%);
+          // background: darken($color: #ffffff, $amount: 10%);
 
           &::after {
             transform: rotate(90deg);
@@ -84,7 +85,7 @@
         }
 
         ~ .hamburger-nav__accordion-menu-element__content {
-          max-height: 100vh;
+          max-height: 1000vh;
           padding: 15px 40px 30px 40px;
         }
       }
