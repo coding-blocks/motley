@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  .hamburger-nav {
+    right: 0;
+    left: unset;
+    transition: margin 1s;
+    overflow-y: auto;
+
+    &.hamburger-nav--hidden {
+      margin-left: unset;
+      margin-right: -100%;
+    }
+  }
+}
