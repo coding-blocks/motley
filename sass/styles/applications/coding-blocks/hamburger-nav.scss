@@ -53,16 +53,8 @@
         padding: 30px 40px;
         border-top: solid 1px $search-box-color;
 
-        // &:hover {
-        //   background: darken($color: #ffffff, $amount: 10%);
-        // }
-
-        &::after {
-          content: "\276f";
-          font-size: 12px;
-          text-align: center;
+        img {
           transition: all 0.5s;
-          transform: rotate(-90deg);
         }
       }
 
@@ -77,10 +69,8 @@
 
       input:checked {
         + .hamburger-nav__accordion-menu-element__header {
-          // background: darken($color: #ffffff, $amount: 10%);
-
-          &::after {
-            transform: rotate(90deg);
+          img {
+            transform: rotate(180deg);
           }
         }
 
