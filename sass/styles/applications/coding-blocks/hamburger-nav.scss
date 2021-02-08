@@ -9,5 +9,85 @@
       margin-left: unset;
       margin-right: -100%;
     }
+
+    &__menu-element {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      &.active,
+      &:hover {
+        color: $orange;
+
+        &::before {
+          content: "";
+          height: 100%;
+          width: 5px;
+          position: absolute;
+          background: $gradient-yellow;
+          left: -40px;
+          top: 0;
+        }
+      }
+    }
+
+    &__accordion-menu-element {
+      overflow: hidden;
+      width: 100%;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &__header {
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+
+        &:hover {
+          background: darken($color: #ffffff, $amount: 10%);
+        }
+
+        &::after {
+          content: "\276f";
+          font-size: 12px;
+          text-align: center;
+          transition: all 0.5s;
+          transform: rotate(-90deg);
+        }
+      }
+
+      &__content {
+        padding: 0 40px;
+        box-sizing: border-box;
+        max-height: 0;
+        background: $white;
+        transition: all 0.5s;
+        padding: 0 40px;
+      }
+
+      input:checked {
+        + .hamburger-nav__accordion-menu-element__header {
+          background: darken($color: #f8f8f8, $amount: 10%);
+
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+
+        ~ .hamburger-nav__accordion-menu-element__content {
+          max-height: 100vh;
+          padding: 15px 40px 30px 40px;
+        }
+      }
+    }
   }
 }
