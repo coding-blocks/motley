@@ -46,6 +46,11 @@
       bottom: 0;
       width: 45%;
     }
+
+    &.anomaly-section {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
   }
 
   .course-section {
@@ -280,6 +285,11 @@
       &__vector {
         margin-bottom: -4rem;
       }
+
+      &.anomaly-section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+      }
     }
 
     .slideshow-container {
@@ -300,6 +310,11 @@
 
       &__vector {
         margin-bottom: -2.5rem;
+      }
+
+      &.anomaly-section {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
       }
     }
 
