@@ -61,8 +61,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     dots[slideIndex - 1].className += " active";
   }
 
-  var prev = sliderContainer.getElementsByClassName("slideshow-container__prev")[0];
-  var next = sliderContainer.getElementsByClassName("slideshow-container__next")[0];
+  var prev = sliderContainer.getElementsByClassName(
+    "slideshow-container__prev"
+  )[0];
+  var next = sliderContainer.getElementsByClassName(
+    "slideshow-container__next"
+  )[0];
 
   prev.addEventListener("click", function () {
     plusSlides(-1);
@@ -71,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     plusSlides(1);
   });
 
-  new Array(sliderContainer.getElementsByClassName("dot")).forEach(function (dot,i) {
+  [...sliderContainer.getElementsByClassName("dot")].forEach(function (dot, i) {
     dot.addEventListener("click", function () {
       window.currentSlide(i);
     });
