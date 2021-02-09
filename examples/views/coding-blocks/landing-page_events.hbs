@@ -1,168 +1,172 @@
 <div class="a-cbm">
   <div class="landing-page">
     {{!-- Banner Section --}}
-    <div class="slideshow-container mt-50" id="slideshow-container">
-      <div class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100">
-        <div class="row align-items-center no-gutters">
-          <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
-            <div class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white">New</div>
-            <div class="heading-font stroke-font stroke-font--white">
-              INDUSTRIAL.
-            </div>
-            <div class="heading-font white">
-              TRAINING.
-            </div>
-            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg">
-            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
-              class="d-lg-none d-block">
-            <div class="my-50">
-              <div class="heading-2 bold text-orange">
-                Get flat 50% off!
+    <div class="width-limiter">
+      <div class="slideshow-container mt-50" id="slideshow-container">
+        <div class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100">
+          <div class="row align-items-center no-gutters">
+            <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
+              <div class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white">New</div>
+              <div class="heading-font stroke-font stroke-font--white">
+                INDUSTRIAL.
               </div>
-              <div class="mt-2 white heading-5">
-                Use Code - <strong>MONSOON</strong> | Valid till 01 Aug, 2020.
+              <div class="heading-font white">
+                TRAINING.
               </div>
-            </div>
-            <div>
-              <button class="button-primary">
-                Explore Now
-                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
-              </button>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg">
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+                class="d-lg-none d-block">
+              <div class="my-50">
+                <div class="heading-2 bold text-orange">
+                  Get flat 50% off!
+                </div>
+                <div class="mt-2 white heading-5">
+                  Use Code - <strong>MONSOON</strong> | Valid till 01 Aug, 2020.
+                </div>
+              </div>
+              <div>
+                <button class="button-primary">
+                  Explore Now
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+                </button>
+              </div>
             </div>
           </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+            class="landing-page__section__vector d-lg-block d-none">
         </div>
-        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
-          class="landing-page__section__vector d-lg-block d-none">
-      </div>
 
-      <a class="slideshow-container__prev pulse" onclick="plusSlides(-1)">
-        <span>&#10094;</span>
-      </a>
-      <a class="slideshow-container__next pulse" onclick="plusSlides(1)">
-        <span>&#10095;</span>
-      </a>
+        <a class="slideshow-container__prev pulse" onclick="plusSlides(-1)">
+          <span>&#10094;</span>
+        </a>
+        <a class="slideshow-container__next pulse" onclick="plusSlides(1)">
+          <span>&#10095;</span>
+        </a>
 
-      <div class="slideshow-container__navigation-dots">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
+        <div class="slideshow-container__navigation-dots">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
       </div>
     </div>
 
     {{!-- Upcoming events section --}}
     <div class="landing-page__section">
-      <div class="row no-gutters align-items-center justify-content-between mb-50">
-        <h2 class="col-md-5 col-12 mb-md-none mb-25">Upcoming Events</h2>
-        <div class="tabs-secondary">
-          <div class="tab active">All Events</div>
-          <div class="tab">Workshops</div>
-          <div class="tab">Contests</div>
-        </div>
-      </div>
-      <div class="row no-gutters c-card-carousel-lg">
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20">
-          <div class="card card--equal-height">
-            <div class="card__header card__header--border-highlight">
-              <div class="flex-1">
-                <div class="heading-6">WORKSHOP</div>
-              </div>
-              <div class="t-align-c">
-                <div class="heading-4 bold">12</div>
-                <div class="font-4">MAR</div>
-              </div>
-            </div>
-            <div>
-              <div class="heading-5 text-orange-dark-1 bold mb-10">Machine Learning</div>
-              <div class="font-4">
-                Learn how to build apps like spotify, netflix and more.
-              </div>
-            </div>
-            <div class="card__mentor-container">
-              <div class="mentor-row my-50">
-                <div class="mentor-row__text-container align-self-center pr-100">
-                  <div>MENTOR</div>
-                  <div class="font-5 bold mt-10">Arnav G, Prateek N</div>
-                </div>
-                <div class="mentor-row__image-container mentor-row__image-container--mentor-2">
-                  <img src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
-                    alt="photo ofRishab Kapoor" class="mentor-row__image-container__mentor-image s-80x80">
-                  <img src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
-                    alt="photo ofRishab Kapoor" class="mentor-row__image-container__mentor-image s-80x80">
-                </div>
-              </div>
-            </div>
-            <div class="card__footer card__footer--border-highlight">
-              <div class="flex-1">
-                <div class="font-4">8:00 PM Onwards</div>
-              </div>
-              <div class="button-tertiary">
-                Register Now
-                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
-              </div>
-            </div>
+      <div class="width-limiter">
+        <div class="row no-gutters align-items-center justify-content-between mb-50">
+          <h2 class="col-md-5 col-12 mb-md-none mb-25">Upcoming Events</h2>
+          <div class="tabs-secondary">
+            <div class="tab active">All Events</div>
+            <div class="tab">Workshops</div>
+            <div class="tab">Contests</div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 px-xl-20 px-sm-15 px-10">
-          <div class="card card--equal-height">
-            <div class="card__header card__header--border-highlight">
-              <div class="flex-1">
-                <div class="heading-6">CONTEST</div>
-              </div>
-              <div class="t-align-c">
-                <div class="heading-4 bold">28</div>
-                <div class="font-4">JAN</div>
-              </div>
-            </div>
-            <div>
-              <div class="heading-5 text-orange-dark-1 bold mb-10">CODEWARS</div>
-              <div class="font-4">
-                Build apps like spotify, netflix and win amazing prizes.
-              </div>
-            </div>
-            <div class="mt-50">
-              <div class="row no-gutters">
-                <div class="pr-40">
-                  <div>LEVEL</div>
-                  <div class="font-5 bold mt-10">Medium</div>
+        <div class="row no-gutters c-card-carousel-lg">
+          <div class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20">
+            <div class="card card--equal-height">
+              <div class="card__header card__header--border-highlight">
+                <div class="flex-1">
+                  <div class="heading-6">WORKSHOP</div>
                 </div>
-                <div>
-                  <div>QUESTIONS</div>
-                  <div class="font-5 bold mt-10">10</div>
+                <div class="t-align-c">
+                  <div class="heading-4 bold">12</div>
+                  <div class="font-4">MAR</div>
                 </div>
               </div>
-            </div>
-            <div class="card__footer card__footer--border-highlight">
-              <div class="flex-1">
-                <div class="font-4">8:00 PM Onwards</div>
-              </div>
-              <div class="button-tertiary">
-                Register Now
-                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 pl-xl-40 pl-sm-30 pl-20">
-          <div class="card card--equal-height">
-            <div class="card__header">
-              {{!-- Icon goes here --}}
-              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hourglass.svg">
-            </div>
-            <div>
-              <h5 class="text-yellow">Stay tuned!!</h5>
-              <div class="mt-10">
+              <div>
+                <div class="heading-5 text-orange-dark-1 bold mb-10">Machine Learning</div>
                 <div class="font-4">
-                  We will be coming up with more contests and workshops.
-                  <br />
-                  <br />
-                  Meanwhile, improve your skills on hackerblocks.
+                  Learn how to build apps like spotify, netflix and more.
+                </div>
+              </div>
+              <div class="card__mentor-container">
+                <div class="mentor-row my-50">
+                  <div class="mentor-row__text-container align-self-center pr-100">
+                    <div>MENTOR</div>
+                    <div class="font-5 bold mt-10">Arnav G, Prateek N</div>
+                  </div>
+                  <div class="mentor-row__image-container mentor-row__image-container--mentor-2">
+                    <img src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
+                      alt="photo ofRishab Kapoor" class="mentor-row__image-container__mentor-image s-80x80">
+                    <img src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
+                      alt="photo ofRishab Kapoor" class="mentor-row__image-container__mentor-image s-80x80">
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer card__footer--border-highlight">
+                <div class="flex-1">
+                  <div class="font-4">8:00 PM Onwards</div>
+                </div>
+                <div class="button-tertiary">
+                  Register Now
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
                 </div>
               </div>
             </div>
-            <div class="card__footer card__footer--border-highlight justify-content-end">
-              <div class="button-tertiary">
-                Visit HackerBlocks
-                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-8 col-11 px-xl-20 px-sm-15 px-10">
+            <div class="card card--equal-height">
+              <div class="card__header card__header--border-highlight">
+                <div class="flex-1">
+                  <div class="heading-6">CONTEST</div>
+                </div>
+                <div class="t-align-c">
+                  <div class="heading-4 bold">28</div>
+                  <div class="font-4">JAN</div>
+                </div>
+              </div>
+              <div>
+                <div class="heading-5 text-orange-dark-1 bold mb-10">CODEWARS</div>
+                <div class="font-4">
+                  Build apps like spotify, netflix and win amazing prizes.
+                </div>
+              </div>
+              <div class="mt-50">
+                <div class="row no-gutters">
+                  <div class="pr-40">
+                    <div>LEVEL</div>
+                    <div class="font-5 bold mt-10">Medium</div>
+                  </div>
+                  <div>
+                    <div>QUESTIONS</div>
+                    <div class="font-5 bold mt-10">10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer card__footer--border-highlight">
+                <div class="flex-1">
+                  <div class="font-4">8:00 PM Onwards</div>
+                </div>
+                <div class="button-tertiary">
+                  Register Now
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-8 col-11 pl-xl-40 pl-sm-30 pl-20">
+            <div class="card card--equal-height">
+              <div class="card__header">
+                {{!-- Icon goes here --}}
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hourglass.svg">
+              </div>
+              <div>
+                <h5 class="text-yellow">Stay tuned!!</h5>
+                <div class="mt-10">
+                  <div class="font-4">
+                    We will be coming up with more contests and workshops.
+                    <br />
+                    <br />
+                    Meanwhile, improve your skills on hackerblocks.
+                  </div>
+                </div>
+              </div>
+              <div class="card__footer card__footer--border-highlight justify-content-end">
+                <div class="button-tertiary">
+                  Visit HackerBlocks
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+                </div>
               </div>
             </div>
           </div>
@@ -171,15 +175,19 @@
     </div>
 
     {{!-- Upcoming course section --}}
-    <div class="landing-page__section">
-      <div class="row no-gutters align-items-center justify-content-between">
-        <div class="flex-1">
-          <h2 class="mb-10">Upcoming Course</h2>
-          <h1 class="text-pink-light-1">Building web app using React</h1>
-        </div>
-        <div class="position-relative all-center">
-          <div class="round all-center border b-white" style="height: 170px; width: 170px; border: 1px solid white;">
-            <img src="https://minio.codingblocks.com/amoeba/9c06343d-0b57-4194-85f6-c74352a0047d.png">
+    <div class="landing-page__section overflow-hidden" style="padding-top: 0; padding-bottom: 0;">
+      <div class="width-limiter">
+        <div class="row no-gutters align-items-center justify-content-between">
+          <div class="flex-1">
+            <h2 class="mb-10">Upcoming Course</h2>
+            <h1 class="text-pink-light-1">Building web app using React</h1>
+          </div>
+          <div class="position-relative all-center">
+            <div class="round all-center position-absolute"
+              style="height: 170px; width: 170px; border: 2px solid white;">
+              <img src="https://minio.codingblocks.com/amoeba/9c06343d-0b57-4194-85f6-c74352a0047d.png">
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/bubble-blast.svg">
           </div>
         </div>
       </div>
@@ -187,142 +195,144 @@
 
     {{!-- Footer --}}
     <div class="landing-page__section landing-page__section--footer">
-      <div class="row no-gutters pb-50" style="border-bottom:1px solid #3b4254;">
-        <div class="col-lg-9 col-12 pr-lg-20 pb-lg-none pb-50 landing-page__section--footer__main-section">
-          <div class="row no-gutters">
-            <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
-              <div class="flex-col justify-content-between h-100">
-                <div class="font-4 bold w-100">PRODUCTS</div>
-                <div class="w-100 mt-50">
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Online Coding Blocks</a>
+      <div class="width-limiter">
+        <div class="row no-gutters pb-50" style="border-bottom:1px solid #cccccc;">
+          <div class="col-lg-9 col-12 pr-lg-20 pb-lg-none pb-50 landing-page__section--footer__main-section">
+            <div class="row no-gutters">
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">PRODUCTS</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Online Coding Blocks</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Hacker Blocks</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Hiring Blocks</a>
+                    </div>
+                    <div>
+                      <a href="#" class="font-4">Online IDE</a>
+                    </div>
                   </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Hacker Blocks</a>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">COMPANY</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="#" class="font-4">About Us</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Meet the Team</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Success Stories</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Become a TA/Mentor</a>
+                    </div>
+                    <div>
+                      <a href="#" class="font-4">Blog</a>
+                    </div>
                   </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Hiring Blocks</a>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">RESOURCES</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Watch Youtube Videos</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Blogs</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Telegram Channel</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Study Material</a>
+                    </div>
+                    <div>
+                      <a href="#" class="font-4">Career Advice</a>
+                    </div>
                   </div>
-                  <div>
-                    <a href="#" class="white font-4">Online IDE</a>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">COMMUNITY</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Campus Ambassador</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Events and Workshops</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">BOSS 2020</a>
+                    </div>
+                    <div>
+                      <a href="#" class="font-4">Online IDE</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
-              <div class="flex-col justify-content-between h-100">
-                <div class="font-4 bold w-100">COMPANY</div>
-                <div class="w-100 mt-50">
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">About Us</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Meet the Team</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Success Stories</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Become a TA/Mentor</a>
-                  </div>
-                  <div>
-                    <a href="#" class="white font-4">Blog</a>
-                  </div>
+          </div>
+          <div class="col-lg-3 col-12 mt-lg-none mt-50 pl-xl-70 pl-lg-50">
+            <div class="row no-gutters">
+              <div class="col-lg-12 col-sm-6 col-12 mb-lg-50">
+                <div class="bold font-4 mb-sm-40 mb-30">
+                  CONTACT
+                </div>
+                <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
+                  admissionscodingblocks.com
+                </div>
+                <div class="font-4">
+                  1800 274 4504
                 </div>
               </div>
-            </div>
-            <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
-              <div class="flex-col justify-content-between h-100">
-                <div class="font-4 bold w-100">RESOURCES</div>
-                <div class="w-100 mt-50">
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Watch Youtube Videos</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Blogs</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Telegram Channel</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Study Material</a>
-                  </div>
-                  <div>
-                    <a href="#" class="white font-4">Career Advice</a>
-                  </div>
+              <div class="col-lg-12 col-sm-6 col-12 mt-sm-none mt-50">
+                <div class="bold font-4 mb-sm-40 mb-30">
+                  TECHNICAL SUPPORT
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
-              <div class="flex-col justify-content-between h-100">
-                <div class="font-4 bold w-100">COMMUNITY</div>
-                <div class="w-100 mt-50">
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Campus Ambassador</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">Events and Workshops</a>
-                  </div>
-                  <div class="mb-30">
-                    <a href="#" class="white font-4">BOSS 2020</a>
-                  </div>
-                  <div>
-                    <a href="#" class="white font-4">Online IDE</a>
-                  </div>
+                <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
+                  supportcodingblocks.com
+                </div>
+                <div class="font-4">
+                  +91 964 333 9747
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-12 mt-lg-none mt-50 pl-xl-70 pl-lg-50">
-          <div class="row no-gutters">
-            <div class="col-lg-12 col-sm-6 col-12 mb-lg-50">
-              <div class="bold font-4 mb-sm-40 mb-30">
-                CONTACT
-              </div>
-              <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
-                admissionscodingblocks.com
-              </div>
-              <div class="font-4">
-                1800 274 4504
-              </div>
+        <div class="row no-gutters align-items-center justify-content-sm-between justify-content-center mt-50">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/blocks-footer-logo.svg">
+          <div class="flex-1 t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none">
+            <div class="font-4 mb-10">
+              Privacy Policy | Terms of Service
             </div>
-            <div class="col-lg-12 col-sm-6 col-12 mt-sm-none mt-50">
-              <div class="bold font-4 mb-sm-40 mb-30">
-                TECHNICAL SUPPORT
-              </div>
-              <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
-                supportcodingblocks.com
-              </div>
-              <div class="font-4">
-                +91 964 333 9747
-              </div>
+            <div class="font-4">
+              Copyright 2020 - Coding Blocks Pvt. Ltd.
             </div>
           </div>
+          <div class="col-12 t-align-c d-sm-none d-block mt-50">
+            <div class="font-4 mb-10">
+              Privacy Policy | Terms of Service
+            </div>
+            <div class="font-4">
+              Copyright 2020 - Coding Blocks Pvt. Ltd.
+            </div>
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg" class="d-xl-block d-none">
         </div>
-      </div>
-      <div class="row no-gutters align-items-center justify-content-sm-between justify-content-center mt-50">
-        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/blocks-footer-logo.svg">
-        <div class="flex-1 white t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none">
-          <div class="font-4 mb-10">
-            Privacy Policy | Terms of Service
-          </div>
-          <div class="font-4">
-            Copyright 2020 - Coding Blocks Pvt. Ltd.
-          </div>
+        <div class="mt-50 d-xl-none d-block t-align-c">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg">
         </div>
-        <div class="col-12 t-align-c d-sm-none d-block mt-50">
-          <div class="font-4 mb-10">
-            Privacy Policy | Terms of Service
-          </div>
-          <div class="font-4">
-            Copyright 2020 - Coding Blocks Pvt. Ltd.
-          </div>
-        </div>
-        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg" class="d-xl-block d-none">
-      </div>
-      <div class="mt-50 d-xl-none d-block t-align-c">
-        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg">
       </div>
     </div>
   </div>
