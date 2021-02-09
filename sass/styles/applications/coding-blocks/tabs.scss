@@ -7,7 +7,7 @@
 
   & .tab {
     padding-bottom: 15px;
-    color: $white;
+    color: $grey;
     position: relative;
     cursor: pointer;
     bottom: -2px;
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    color: $white;
+    color: $grey;
 
     &.active {
       border-radius: 5px;
