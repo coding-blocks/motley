@@ -1,0 +1,12 @@
+.wakanda {
+  .button-primary {
+    background: #E5F2FF;
+    color: #0C81FF;
+    transition: all 0.2s;
+
+    &:hover, &.active {
+      background: #0C81FF;
+      color: #E5F2FF;
+    }
+  }
+}
