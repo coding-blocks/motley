@@ -9,6 +9,39 @@
       background: #0c81ff;
       color: #e5f2ff;
     }
+
+    &--submitted {
+      background: #fff9ed;
+      color: #fab124;
+
+      &:hover,
+      &.active {
+        background: #fab124;
+        color: #fff9ed;
+      }
+    }
+
+    &--accepted {
+      background: #ecfff0;
+      color: #18c139;
+
+      &:hover,
+      &.active {
+        background: #18c139;
+        color: #ecfff0;
+      }
+    }
+
+    &--rejected {
+      background: #ffece7;
+      color: #e45427;
+
+      &:hover,
+      &.active {
+        background: #ffece7;
+        color: #e45427;
+      }
+    }
   }
 
   .blue-text {
