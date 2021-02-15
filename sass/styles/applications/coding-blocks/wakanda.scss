@@ -28,8 +28,9 @@
     background: #e5f2ff;
     color: #0c81ff;
     transition: all 0.4s;
-    padding: 0.7px 1.75px;
+    padding: 0.7rem 1.75rem;
     border-radius: 10px;
+    font-weight: bold;
 
     &:hover,
     &.active {
@@ -68,6 +69,18 @@
       &.active {
         background: #e45427;
         color: #ffece7;
+      }
+    }
+
+    &.disabled {
+      background: $white !important;
+      color: #666666 !important;
+      border: solid 1px #666666 !important;
+      cursor: unset !important;
+
+      &:hover {
+        background: $white !important;
+        color: #666666 !important;
       }
     }
   }
