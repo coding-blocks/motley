@@ -45,6 +45,15 @@
     }
   }
 
+  .button-tertiary {
+    color: #007bff;
+
+    &.disabled,
+    &:disabled {
+      color: $grey;
+    }
+  }
+
   .blue-text {
     color: #007bff;
   }
