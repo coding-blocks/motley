@@ -57,7 +57,7 @@
 
     &:hover,
     &:active {
-      color: white;
+      color: $white;
       background: $grey;
     }
   }
@@ -70,5 +70,25 @@
   .pagination-button-next {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  .pagination-number {
+    padding: 10px 15px;
+    color: $grey;
+    border: solid 1px $grey-light-1;
+    cursor: pointer;
+
+    &:hover {
+      color: #007bff;
+    }
+
+    &--active {
+      background: #007bff;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
