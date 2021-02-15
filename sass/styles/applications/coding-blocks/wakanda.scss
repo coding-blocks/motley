@@ -8,6 +8,7 @@
     &.active {
       background: #0c81ff;
       color: #e5f2ff;
+      border: unset;
     }
 
     &--submitted {
@@ -38,13 +39,36 @@
 
       &:hover,
       &.active {
-        background: #ffece7;
-        color: #e45427;
+        background: #e45427;
+        color: #ffece7;
       }
     }
   }
 
   .blue-text {
     color: #007bff;
+  }
+
+  .pagination-button-prev,
+  .pagination-button-next {
+    padding: 10px 15px;
+    color: $grey;
+    border: solid 1px $grey-light-1;
+
+    &:hover,
+    &:active {
+      color: white;
+      background: $grey;
+    }
+  }
+
+  .pagination-button-prev {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .pagination-button-next {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
