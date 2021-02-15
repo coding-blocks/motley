@@ -1,0 +1,103 @@
+.wakanda {
+  .button-primary {
+    background: #e5f2ff;
+    color: #0c81ff;
+    transition: all 0.4s;
+
+    &:hover,
+    &.active {
+      background: #0c81ff;
+      color: #e5f2ff;
+      border: unset;
+    }
+
+    &--submitted {
+      background: #fff9ed;
+      color: #fab124;
+
+      &:hover,
+      &.active {
+        background: #fab124;
+        color: #fff9ed;
+      }
+    }
+
+    &--accepted {
+      background: #ecfff0;
+      color: #18c139;
+
+      &:hover,
+      &.active {
+        background: #18c139;
+        color: #ecfff0;
+      }
+    }
+
+    &--rejected {
+      background: #ffece7;
+      color: #e45427;
+
+      &:hover,
+      &.active {
+        background: #e45427;
+        color: #ffece7;
+      }
+    }
+  }
+
+  .button-tertiary {
+    color: #007bff;
+
+    &.disabled,
+    &:disabled {
+      color: $grey;
+    }
+  }
+
+  .blue-text {
+    color: #007bff;
+  }
+
+  .pagination-button-prev,
+  .pagination-button-next {
+    padding: 10px 15px;
+    color: $grey;
+    border: solid 1px $grey-light-1;
+
+    &:hover,
+    &:active {
+      color: $white;
+      background: $grey;
+    }
+  }
+
+  .pagination-button-prev {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .pagination-button-next {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .pagination-number {
+    padding: 10px 15px;
+    color: $grey;
+    border: solid 1px $grey-light-1;
+    cursor: pointer;
+
+    &:hover {
+      color: #007bff;
+    }
+
+    &--active {
+      background: #007bff;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
