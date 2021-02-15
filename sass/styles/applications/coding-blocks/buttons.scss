@@ -17,7 +17,7 @@
   &--white {
     background: $white;
     color: $black;
-    mix-blend-mode: screen;
+    mix-blend-mode: screen !important;
   }
 
   &:hover {
@@ -90,7 +90,9 @@
   color: $orange;
   // transition: background-color 0.25s;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     animation: button-emphasis 1s;
   }
 
