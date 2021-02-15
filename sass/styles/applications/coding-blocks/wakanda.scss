@@ -141,4 +141,25 @@
       }
     }
   }
+
+  .image-absolute-1 {
+    position: absolute;
+    top: -25px;
+    right: 15%;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-absolute-2 {
+    position: absolute;
+    top: calc(50% - 105px);
+    right: 5%;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-absolute-3 {
+    position: absolute;
+    bottom: -15px;
+    right: 10%;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  }
 }
