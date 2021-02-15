@@ -1,8 +1,35 @@
 .wakanda {
+  .card {
+    border-radius: 10px;
+  }
+
+  .wakanda-grey {
+    color: #666666;
+  }
+
+  .tabs-primary {
+    border-bottom: solid 2px rgba($color: #007bff, $alpha: 0.3);
+
+    & .tab {
+      color: #666666;
+
+      &.active {
+        border-bottom: solid 2px #007bff;
+        color: #007bff;
+      }
+
+      &:hover {
+        color: rgba($color: #007bff, $alpha: 0.3);
+      }
+    }
+  }
+
   .button-primary {
     background: #e5f2ff;
     color: #0c81ff;
     transition: all 0.4s;
+    padding: 0.7px 1.75px;
+    border-radius: 10px;
 
     &:hover,
     &.active {
