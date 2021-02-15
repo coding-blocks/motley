@@ -72,7 +72,8 @@
       }
     }
 
-    &.disabled {
+    &.disabled,
+    &:disabled {
       background: $white !important;
       color: #666666 !important;
       border: solid 1px #666666 !important;
