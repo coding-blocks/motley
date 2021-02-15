@@ -18,6 +18,11 @@
     background: $white;
     color: $black;
     mix-blend-mode: screen !important;
+
+    &:hover {
+      background: inherit !important;
+      color: $white !important;
+    }
   }
 
   &:hover {
