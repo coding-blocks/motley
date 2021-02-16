@@ -172,6 +172,22 @@
     }
   }
 
+  .journey-element {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: $gradient-orange;
+      right: -68px;
+      top: calc(50% - 8px);
+      z-index: 10;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     &__section {
       padding: 6rem;
@@ -190,6 +206,10 @@
         width: 50%;
         right: 4.5rem;
       }
+    }
+
+    .journey-track {
+      right: 6rem;
     }
 
     .blog-post {
@@ -265,6 +285,10 @@
       }
     }
 
+    .journey-track {
+      right: 4.5rem;
+    }
+
     .big-photo {
       height: 175px;
       width: 175px;
@@ -321,6 +345,10 @@
       }
     }
 
+    .journey-track {
+      right: 4rem;
+    }
+
     .slideshow-container {
       &__navigation-dots {
         bottom: 50px;
@@ -344,6 +372,16 @@
       &.anomaly-section {
         padding-top: 2.5rem !important;
         padding-bottom: 2.5rem !important;
+      }
+    }
+
+    .journey-track {
+      right: 2.5rem;
+    }
+
+    .journey-element {
+      &::after {
+        right: -53px;
       }
     }
 
