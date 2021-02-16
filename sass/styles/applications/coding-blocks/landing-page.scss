@@ -148,8 +148,8 @@
   }
 
   .big-photo {
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
     border-radius: 50%;
   }
 
@@ -215,6 +215,11 @@
       }
     }
 
+    .big-photo {
+      height: 200px;
+      width: 200px;
+    }
+
     .course-section {
       &__option {
         border-top: 1px solid $grey-light-1;
@@ -258,6 +263,11 @@
         width: 90%;
         margin-bottom: -4.5rem;
       }
+    }
+
+    .big-photo {
+      height: 175px;
+      width: 175px;
     }
 
     .success-story {
