@@ -1,5 +1,5 @@
 .landing-page {
-  color: $black;
+  color: #292f3d;
   z-index: 0;
 
   &__section {
@@ -151,6 +151,25 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
+  }
+
+  .journey-track {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 7.142rem;
+    background: #eeeeee;
+
+    &:after {
+      content: "";
+      height: inherit;
+      width: 0px;
+      border-left: 1px dashed #4b4b4b;
+      position: absolute;
+      top: 0;
+      left: 29px;
+    }
   }
 
   @media screen and (max-width: 1199px) {
