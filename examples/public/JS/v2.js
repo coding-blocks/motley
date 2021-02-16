@@ -26,6 +26,18 @@ window.onload = function () {
       reduceAngle += 45;
     });
   });
+
+  const leftButton = document.querySelector("#move-left");
+  const rightButton = document.querySelector("#move-right");
+  const carousel = document.querySelector("#carousel");
+
+  leftButton.addEventListener("click", () => {
+    carousel.scrollLeft += carousel.clientWidth;
+  });
+
+  rightButton.addEventListener("click", () => {
+    carousel.scrollLeft -= carousel.clientWidth;
+  });
 };
 
 // document.addEventListener("DOMConentLoaded", function (event) {

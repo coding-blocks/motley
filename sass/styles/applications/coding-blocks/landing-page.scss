@@ -1,5 +1,5 @@
 .landing-page {
-  color: $black;
+  color: #292f3d;
   z-index: 0;
 
   &__section {
@@ -148,9 +148,58 @@
   }
 
   .big-photo {
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
     border-radius: 50%;
+  }
+
+  .journey-track {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 7.142rem;
+    background: #eeeeee;
+
+    &:after {
+      content: "";
+      height: inherit;
+      width: 0px;
+      border-left: 1px dashed #4b4b4b;
+      position: absolute;
+      top: 0;
+      left: 29px;
+    }
+  }
+
+  .journey-element {
+    position: relative;
+
+    &:nth-child(2n-1) {
+      padding-right: 500px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(50% - 1px);
+        height: 2px;
+        width: 450px;
+        background: $gradient-orange;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: $gradient-orange;
+      right: -68px;
+      top: calc(50% - 8px);
+      z-index: 10;
+    }
   }
 
   @media screen and (max-width: 1199px) {
@@ -170,6 +219,20 @@
       &__vector {
         width: 50%;
         right: 4.5rem;
+      }
+    }
+
+    .journey-track {
+      right: 6rem;
+    }
+
+    .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 250px;
+  
+        &::before {
+          width: 215px;
+        }
       }
     }
 
@@ -194,6 +257,11 @@
       &__navigation-dots {
         left: 75px;
       }
+    }
+
+    .big-photo {
+      height: 200px;
+      width: 200px;
     }
 
     .course-section {
@@ -229,7 +297,7 @@
       &--footer {
         &__main-section {
           border-right: unset;
-          border-bottom: 1px solid $grey;
+          border-bottom: 1px solid $grey-light-1;
         }
       }
 
@@ -239,6 +307,15 @@
         width: 90%;
         margin-bottom: -4.5rem;
       }
+    }
+
+    .journey-track {
+      right: 4.5rem;
+    }
+
+    .big-photo {
+      height: 175px;
+      width: 175px;
     }
 
     .success-story {
@@ -292,6 +369,20 @@
       }
     }
 
+    .journey-track {
+      right: 4rem;
+    }
+
+    .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 150px;
+
+        &::before {
+          width: 125px;
+        }
+      }
+    }
+
     .slideshow-container {
       &__navigation-dots {
         bottom: 50px;
@@ -315,6 +406,24 @@
       &.anomaly-section {
         padding-top: 2.5rem !important;
         padding-bottom: 2.5rem !important;
+      }
+    }
+
+    .journey-track {
+      right: 2.5rem;
+    }
+
+    .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &::after {
+        right: -53px;
       }
     }
 
