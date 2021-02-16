@@ -175,6 +175,20 @@
   .journey-element {
     position: relative;
 
+    &:nth-child(2n-1) {
+      padding-right: 500px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(50% - 1px);
+        height: 2px;
+        width: 450px;
+        background: $gradient-orange;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -210,6 +224,16 @@
 
     .journey-track {
       right: 6rem;
+    }
+
+    .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 250px;
+  
+        &::before {
+          width: 215px;
+        }
+      }
     }
 
     .blog-post {
@@ -349,6 +373,16 @@
       right: 4rem;
     }
 
+    .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 150px;
+
+        &::before {
+          width: 125px;
+        }
+      }
+    }
+
     .slideshow-container {
       &__navigation-dots {
         bottom: 50px;
@@ -380,6 +414,14 @@
     }
 
     .journey-element {
+      &:nth-child(2n-1) {
+        padding-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
       &::after {
         right: -53px;
       }
