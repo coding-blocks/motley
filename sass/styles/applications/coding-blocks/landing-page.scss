@@ -155,11 +155,13 @@
 
   .journey-track {
     width: 60px;
-    height: 100%;
+    height: -webkit-fill-available;
     position: absolute;
     top: 0;
-    right: 7.142rem;
+    right: 0;
     background: #eeeeee;
+    margin-top: -7.142rem;
+    margin-bottom: -7.142rem;
 
     &:after {
       content: "";
@@ -223,13 +225,14 @@
     }
 
     .journey-track {
-      right: 6rem;
+      margin-top: -6rem;
+      margin-bottom: -6rem;
     }
 
     .journey-element {
       &:nth-child(2n-1) {
         padding-right: 250px;
-  
+
         &::before {
           width: 215px;
         }
@@ -310,7 +313,8 @@
     }
 
     .journey-track {
-      right: 4.5rem;
+      margin-top: -4.5rem;
+      margin-bottom: -4.5rem;
     }
 
     .big-photo {
@@ -370,7 +374,8 @@
     }
 
     .journey-track {
-      right: 4rem;
+      margin-top: -4rem;
+      margin-bottom: -4rem;
     }
 
     .journey-element {
@@ -410,7 +415,8 @@
     }
 
     .journey-track {
-      right: 2.5rem;
+      margin-top: -2.5rem;
+      margin-bottom: -2.5rem;
     }
 
     .journey-element {
