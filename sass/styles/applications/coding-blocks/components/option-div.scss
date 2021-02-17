@@ -1,11 +1,11 @@
 .option-div {
   cursor: pointer;
   padding: 1.5rem;
-  color: $white;
+  color: #959595;
   position: relative;
   border-radius: 5px;
-  border: 1px solid $grey-dark-2;
-  background: $grey-dark-2;
+  border: 1px solid $white;
+  background: $white;
 
   &__icon {
     display: none;
@@ -13,10 +13,12 @@
 
   &:hover {
     border: solid 1px $orange;
+    color: $black;
   }
 
   &.selected {
     border: solid 1px $orange;
+    color: $black;
   }
 
   &.selected > &__icon {
