@@ -92,7 +92,7 @@
     }
 
     &.theme-pink {
-      &__header {
+      .card__header {
         &--border-highlight::after {
           background: $pink;
         }
