@@ -73,4 +73,38 @@
       left: -30px;
     }
   }
+
+  &--course {
+    &__logo {
+      position: relative;
+
+      &__tag {
+        position: absolute;
+        padding: 2px 10px;
+        border-radius: 2px;
+        background: $gradient-orange-light;
+        color: $white;
+        font-size: $font-1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+
+    &.theme-pink {
+      &__header {
+        &--border-highlight::after {
+          background: $pink;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-pink;
+      }
+
+      .theme-text {
+        color: $pink;
+      }
+    }
+  }
 }
