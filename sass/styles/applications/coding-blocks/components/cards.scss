@@ -106,5 +106,69 @@
         color: $pink;
       }
     }
+
+    &.theme-blue {
+      .card__header {
+        &--border-highlight::after {
+          background: $blue;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-blue-light;
+      }
+
+      .theme-text {
+        color: $blue;
+      }
+    }
+
+    &.theme-green {
+      .card__header {
+        &--border-highlight::after {
+          background: $green;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-green-light;
+      }
+
+      .theme-text {
+        color: $green;
+      }
+    }
+
+    &.theme-orange {
+      .card__header {
+        &--border-highlight::after {
+          background: $orange;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-orange-light;
+      }
+
+      .theme-text {
+        color: $orange;
+      }
+    }
+
+    &.theme-purple {
+      .card__header {
+        &--border-highlight::after {
+          background: $purple;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-purple-light;
+      }
+
+      .theme-text {
+        color: $purple;
+      }
+    }
   }
 }
