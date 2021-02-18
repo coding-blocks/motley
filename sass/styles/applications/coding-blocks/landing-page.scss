@@ -209,6 +209,7 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    border: solid 1px $white;
 
     &::after {
       content: "";
