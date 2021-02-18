@@ -210,6 +210,9 @@
     cursor: pointer;
     position: relative;
     border: solid 1px $white;
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
 
     &::after {
       content: "";
@@ -485,6 +488,13 @@
     .big-photo {
       height: 90px;
       width: 90px;
+    }
+
+    .subject-course-button {
+      height: 75px;
+      width: 75px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     // .course-section {
