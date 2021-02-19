@@ -5,7 +5,7 @@
   background: $card-box-border;
 
   &.content-divider {
-    background-clip: content-box;
+    background-clip: content-box !important;
   }
 }
 
