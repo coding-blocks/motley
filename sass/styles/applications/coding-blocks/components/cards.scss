@@ -73,4 +73,102 @@
       left: -30px;
     }
   }
+
+  &--course {
+    &__logo {
+      position: relative;
+
+      &__tag {
+        position: absolute;
+        padding: 2px 10px;
+        border-radius: 2px;
+        background: $gradient-orange-light;
+        color: $white;
+        font-size: $font-1;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+
+    &.theme-pink {
+      .card__header {
+        &--border-highlight::after {
+          background: $pink;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-pink;
+      }
+
+      .theme-text {
+        color: $pink;
+      }
+    }
+
+    &.theme-blue {
+      .card__header {
+        &--border-highlight::after {
+          background: $blue;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-blue-light;
+      }
+
+      .theme-text {
+        color: $blue;
+      }
+    }
+
+    &.theme-green {
+      .card__header {
+        &--border-highlight::after {
+          background: $green;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-green-light;
+      }
+
+      .theme-text {
+        color: $green;
+      }
+    }
+
+    &.theme-orange {
+      .card__header {
+        &--border-highlight::after {
+          background: $orange;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-orange-light;
+      }
+
+      .theme-text {
+        color: $orange;
+      }
+    }
+
+    &.theme-purple {
+      .card__header {
+        &--border-highlight::after {
+          background: $purple;
+        }
+      }
+
+      .theme-background {
+        background: $gradient-purple-light;
+      }
+
+      .theme-text {
+        color: $purple;
+      }
+    }
+  }
 }

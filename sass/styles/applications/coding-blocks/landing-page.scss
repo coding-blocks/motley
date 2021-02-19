@@ -1,6 +1,7 @@
 .landing-page {
   color: #292f3d;
   z-index: 0;
+  font-family: "Mulish", sans-serif;
 
   &__section {
     padding: 7.142rem;
@@ -105,7 +106,7 @@
   }
 
   .divider-h {
-    background: $grey;
+    background: $grey-light-1;
   }
 
   .heading-font {
@@ -201,6 +202,64 @@
       right: -68px;
       top: calc(50% - 8px);
       z-index: 10;
+    }
+  }
+
+  .subject-course-button {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px $white;
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba($color: $white, $alpha: 0.75);
+      transition: height 0.25s;
+    }
+
+    &:hover,
+    &:active,
+    &.active {
+      &::after {
+        height: 0;
+      }
+    }
+  }
+
+  .track-button {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    // &:not(:last-child) {
+    //   border-bottom: 1px solid $grey-light-1;
+    // }
+
+    border: 5px solid $grey-light-3;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba($color: $white, $alpha: 0.75);
+      transition: height 0.25s;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover,
+    &.active,
+    &:active {
+      &::after {
+        height: 0;
+      }
     }
   }
 
@@ -460,6 +519,13 @@
     .big-photo {
       height: 90px;
       width: 90px;
+    }
+
+    .subject-course-button {
+      height: 75px;
+      width: 75px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     // .course-section {
