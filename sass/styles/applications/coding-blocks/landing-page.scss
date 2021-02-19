@@ -232,6 +232,31 @@
     }
   }
 
+  .track-button {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba($color: $grey-light-1, $alpha: 0.75);
+      transition: height 0.25s;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover,
+    &.active,
+    &:active {
+      &::after {
+        height: 0;
+      }
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     &__section {
       padding: 6rem;
