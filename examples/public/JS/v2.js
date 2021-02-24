@@ -1,13 +1,13 @@
 window.onload = function () {
-  document.querySelector("#mega-nav-toggle").addEventListener("click", () => {
-    const meganav = document.querySelector("#mega-nav");
+  // document.querySelector("#mega-nav-toggle").addEventListener("click", () => {
+  //   const meganav = document.querySelector("#mega-nav");
 
-    if (meganav.classList.contains("d-none")) {
-      meganav.classList.remove("d-none");
-    } else {
-      meganav.classList.add("d-none");
-    }
-  });
+  //   if (meganav.classList.contains("d-none")) {
+  //     meganav.classList.remove("d-none");
+  //   } else {
+  //     meganav.classList.add("d-none");
+  //   }
+  // });
 
   document.querySelectorAll(".universe").forEach((universe) => {
     let reduceAngle = 60;
@@ -27,17 +27,17 @@ window.onload = function () {
     });
   });
 
-  const leftButton = document.querySelector("#move-left");
-  const rightButton = document.querySelector("#move-right");
-  const carousel = document.querySelector("#carousel");
+  // const leftButton = document.querySelector("#move-left");
+  // const rightButton = document.querySelector("#move-right");
+  // const carousel = document.querySelector("#carousel");
 
-  leftButton.addEventListener("click", () => {
-    carousel.scrollLeft += carousel.clientWidth;
-  });
+  // leftButton.addEventListener("click", () => {
+  //   carousel.scrollLeft += carousel.clientWidth;
+  // });
 
-  rightButton.addEventListener("click", () => {
-    carousel.scrollLeft -= carousel.clientWidth;
-  });
+  // rightButton.addEventListener("click", () => {
+  //   carousel.scrollLeft -= carousel.clientWidth;
+  // });
 };
 
 // document.addEventListener("DOMConentLoaded", function (event) {
