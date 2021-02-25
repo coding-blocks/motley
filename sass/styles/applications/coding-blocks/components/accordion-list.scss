@@ -1,0 +1,25 @@
+.accordion-container {
+  &__accordion-head {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "\2022";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -7px;
+      font-size: 3rem;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: $gradient-orange;
+    }
+  }
+
+  &__accordion-body {
+    &--hidden {
+      display: none;
+    }
+  }
+}
