@@ -16,4 +16,10 @@
       background-image: $gradient-orange;
     }
   }
+
+  &__accordion-body {
+    &--hidden {
+      display: none;
+    }
+  }
 }
