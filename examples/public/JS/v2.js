@@ -9,23 +9,23 @@ window.onload = function () {
   //   }
   // });
 
-  document.querySelectorAll(".universe").forEach((universe) => {
-    let reduceAngle = 60;
-    universe.querySelectorAll(".universe__orbit").forEach((orbit) => {
-      let planets = orbit.querySelectorAll(".universe__orbit__planet");
-      let angle = 360 - 90;
-      let dangle = 360 / planets.length;
-      for (let i = 0; i < planets.length; ++i) {
-        let planet = planets[i];
-        angle += dangle;
-        planet.style.transform = `rotate(${angle - reduceAngle}deg) translate(${
-          orbit.clientWidth / 2
-        }px) rotate(-${angle - reduceAngle}deg)`;
-      }
+  // document.querySelectorAll(".universe").forEach((universe) => {
+  //   let reduceAngle = 60;
+  //   universe.querySelectorAll(".universe__orbit").forEach((orbit) => {
+  //     let planets = orbit.querySelectorAll(".universe__orbit__planet");
+  //     let angle = 360 - 90;
+  //     let dangle = 360 / planets.length;
+  //     for (let i = 0; i < planets.length; ++i) {
+  //       let planet = planets[i];
+  //       angle += dangle;
+  //       planet.style.transform = `rotate(${angle - reduceAngle}deg) translate(${
+  //         orbit.clientWidth / 2
+  //       }px) rotate(-${angle - reduceAngle}deg)`;
+  //     }
 
-      reduceAngle += 45;
-    });
-  });
+  //     reduceAngle += 45;
+  //   });
+  // });
 
   // const leftButton = document.querySelector("#move-left");
   // const rightButton = document.querySelector("#move-right");
@@ -38,6 +38,17 @@ window.onload = function () {
   // rightButton.addEventListener("click", () => {
   //   carousel.scrollLeft -= carousel.clientWidth;
   // });
+
+  const multipleEntriesArray = ["Pitampura", "Noida", "Live"];
+  let entryCounter = 0;
+
+  const multipleEntryToggle = document.querySelector("#multiple-entry-toggle");
+
+  multipleEntryToggle.addEventListener("click", () => {
+    multipleEntryToggle.innerHTML = multipleEntriesArray[entryCounter++];
+
+    if ((entryCounter = multipleEntriesArray.length - 1)) entryCounter = 0;
+  });
 };
 
 // document.addEventListener("DOMConentLoaded", function (event) {

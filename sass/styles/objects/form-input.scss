@@ -333,7 +333,7 @@ label.input-radio {
     }
 
     input:checked ~ span:last-child::after {
-      background: linear-gradient(90deg, #1C40DE 0%, #2167E3 100%);
+      background: linear-gradient(90deg, #1c40de 0%, #2167e3 100%);
     }
   }
 }
@@ -435,4 +435,15 @@ select.rounded-select {
       color: #c4c4c4;
     }
   }
+}
+
+.multiple-entry-toggle {
+  font-size: $font-4;
+  padding: 1rem 2rem;
+  color: $grey;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid $grey;
 }
