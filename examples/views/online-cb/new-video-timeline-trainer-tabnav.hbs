@@ -74,7 +74,11 @@
             <div class="d-flex align-items-center justify-content-between">
               <span class="font-normal mr-3">Course Progress</span>
               <div class="flex-1">
-                <progress value="30" max="100" class="progress-orange"></progress>
+                <progress
+                  value="30"
+                  max="100"
+                  class="progress-orange"
+                ></progress>
               </div>
               <span class="bold ml-3">100%</span>
             </div>
@@ -314,86 +318,151 @@
             </a>
           </div>
         </div>
-
-        <div class="card bg-white d-lg-none d-block mt-50">
-          <div class="font-md bold mb-5">About Mentors</div>
-          <div class="row no-gutters instructor-row align-items-center">
-            <img
-              src="https://minio.codingblocks.com/amoeba/c509cce7-b3ba-450f-bad4-c9a89a61bf91"
-              class="s-100x100 round"
-            />
-            <div class="ml-15 flex-1">
-              <div class="font-mds bold">Kartik Mathur</div>
-              <a
-                href="mailto:kartik.mathur@codingblocks.com"
-                class="grey mb-2"
-              >
-                kartik.mathur@codingblocks.com
-              </a>
-              <div class="t-align-j">
-                <div class="markdown-body">
-                  <p>
-                    Kartik Mathur is an NSIT graduate and extremely popular
-                    amongst his students for his engaging ways of teaching.
-                    His students are topping the charts in cracking Interviews
-                    across Top Tech and Product companies around the world
-                    with whooping packages. He is a Competitive programmer, a
-                    full stack Web developer and also contributes to many
-                    Start-ups in India and abroad. Known for his humour and
-                    memes, he can be usually located in Coding Blocks during
-                    the day or Starbucks in the evening.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div
         class="col-lg-9 col-12 timeline__main-area__video-area no-scrollbar order-lg-12 order-1"
       >
-        <div>
-          <div
-            class="overflow-y-auto no-scrollbar bg-white"
-            style="height: 450px"
-          ></div>
-          <div class="card bg-white mt-50 d-lg-block d-none">
-            <div class="font-md bold mb-5">About Mentors</div>
-            <div class="row no-gutters instructor-row align-items-center">
-              <img
-                src="https://minio.codingblocks.com/amoeba/c509cce7-b3ba-450f-bad4-c9a89a61bf91"
-                class="s-100x100 round"
-              />
-              <div class="ml-15 flex-1">
-                <div class="font-mds bold">Kartik Mathur</div>
-                <a
-                  href="mailto:kartik.mathur@codingblocks.com"
-                  class="grey mb-2"
-                >
-                  kartik.mathur@codingblocks.com
-                </a>
-                <div class="t-align-j">
-                  <div class="markdown-body">
-                    <p>
-                      Kartik Mathur is an NSIT graduate and extremely popular
-                      amongst his students for his engaging ways of teaching.
-                      His students are topping the charts in cracking Interviews
-                      across Top Tech and Product companies around the world
-                      with whooping packages. He is a Competitive programmer, a
-                      full stack Web developer and also contributes to many
-                      Start-ups in India and abroad. Known for his humour and
-                      memes, he can be usually located in Coding Blocks during
-                      the day or Starbucks in the evening.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <div class="card highlighted-container overflow-hidden p-sm-30 p-20">
+          <div class="tabs-primary w-100">
+            <div class="tab active">Problem</div>
+            <div class="tab">Submissions</div>
+            <div class="tab">Leaderboard</div>
+            <div class="tab">Solution</div>
+          </div>
+          <div class="py-4">
+            <p>
+              Bob runs a tile shop. He sells only square tiles. He charges $a
+              per unit area and $b per unit length of its side. Moreover, he
+              also charges a constant amount of $c for each tile. He asks you to
+              calculate the total amount he gets after selling exactly one tile
+              of side length x in range [l,r]. Bob knows that his earnings is
+              beyond your calculation, so he asks you to calculate amount modulo
+              (109+7).
+            </p>
+            <div class="extra-bold">Input Format</div>
+            <p>
+              First line contains number of test cases, T. Each test case
+              contains 5 integers, a, b, c, l, r.
+            </p>
+            <div class="extra-bold">Constraints</div>
+            <div class="highlighted-container-dark br-5 w-60 px-4 py-2 my-2">
+              <p>1 <=T<=10^5<br />1<=a,b,c,l,r<=10^9</p>
+            </div>
+            <div class="extra-bold">Output Format</div>
+            <p>
+              Output a single integer denoting answer as per the problem
+              statement.
+            </p>
+            <div class="extra-bold">Sample Input</div>
+            <div class="highlighted-container-dark br-5 w-60 px-4 py-2 my-2">
+              <p>1<br />1 1 1 1 10</p>
+            </div>
+            <div class="extra-bold">Sample Output</div>
+            <div class="highlighted-container-dark br-5 w-60 px-4 py-2 my-2">
+              <p>450</p>
             </div>
           </div>
         </div>
 
-        <!-- Other Cards here -->
+        <div class="card highlighted-container p-sm-30 p-20">
+          <div class="tabs-primary w-100">
+            <div class="tab">Problem</div>
+            <div class="tab active">Submissions</div>
+            <div class="tab">Leaderboard</div>
+            <div class="tab">Solution</div>
+          </div>
+          <div class="py-4 overflow-x-auto">
+            <table class="w-100" style="min-width: 502px">
+              <thead class="font-sm extra-bold b-bottom">
+                <td class="pb-2">Result</td>
+                <td class="pb-2">Score</td>
+                <td class="pb-2">Time</td>
+                <td class="pb-2">Language</td>
+              </thead>
+              <tbody class="bold">
+                <tr>
+                  <td class="pb-4 pt-4 green font-sm">
+                    <i class="fas fa-check pr-3"></i>
+                    <span>ACCEPTED</span>
+                  </td>
+                  <td class="pb-4 pt-4">200/200</td>
+                  <td class="pb-4 pt-4">100ms</td>
+                  <td class="pb-4 pt-4">C++</td>
+                  <td class="pb-4 pt-4 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">10 mins ago</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4 pt-2 orange font-sm">
+                    <i class="fas fa-exclamation pr-3"></i>
+                    <span>COMPILATION ERROR</span>
+                  </td>
+                  <td class="pb-4 pt-2">100/200</td>
+                  <td class="pb-4 pt-2">200ms</td>
+                  <td class="pb-4 pt-2">C</td>
+                  <td class="pb-4 pt-2 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">10 mins ago</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4 pt-2 red font-sm">
+                    <i class="fas fa-times pr-3"></i>
+                    <span>WRONG ANSWER</span>
+                  </td>
+                  <td class="pb-4 pt-2">40/200</td>
+                  <td class="pb-4 pt-2">150ms</td>
+                  <td class="pb-4 pt-2">Python</td>
+                  <td class="pb-4 pt-2 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">10 mins ago</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4 pt-2 orange font-sm">
+                    <i class="fas fa-exclamation pr-3"></i>
+                    <span>RUNTIME ERROR</span>
+                  </td>
+                  <td class="pb-4 pt-2">50/200</td>
+                  <td class="pb-4 pt-2">150ms</td>
+                  <td class="pb-4 pt-2">Python</td>
+                  <td class="pb-4 pt-2 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">10 mins ago</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4 pt-2 orange font-sm">
+                    <i class="fas fa-exclamation pr-3"></i>
+                    <span>TLE</span>
+                  </td>
+                  <td class="pb-4 pt-2">100/200</td>
+                  <td class="pb-4 pt-2">150ms</td>
+                  <td class="pb-4 pt-2">Python</td>
+                  <td class="pb-4 pt-2 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">20 mins ago</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pb-4 pt-2 orange font-sm">
+                    <i class="fas fa-exclamation pr-3"></i>
+                    <span>MLE</span>
+                  </td>
+                  <td class="pb-4 pt-2">200/200</td>
+                  <td class="pb-4 pt-2">150ms</td>
+                  <td class="pb-4 pt-2">C++</td>
+                  <td class="pb-4 pt-2 t-align-r">
+                    <a href="#View" class="pr-3 orange">View</a>
+                    <span class="grey normal">40 mins ago</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -69,28 +69,6 @@
     background: #e5e5e5;
     color: $black;
 
-    .button-solid {
-      &.button-blue {
-        background-image: linear-gradient(90deg, #2167e3, #258ee8, #2167e3);
-      }
-    }
-
-    progress {
-      &.progress-blue {
-        &::-webkit-progress-value {
-          background-image: linear-gradient(90deg, #2167e3, #258ee8);
-        }
-
-        &::-moz-progress-bar {
-          background-image: linear-gradient(90deg, #2167e3, #258ee8);
-        }
-
-        &::-ms-fill {
-          background-image: linear-gradient(90deg, #2167e3, #258ee8);
-        }
-      }
-    }
-
     .timeline {
       &__top-bar {
         border-bottom: solid 1px #d7d7d7;
@@ -132,6 +110,14 @@
     .search-bar {
       background: #d7d7d7;
     }
+
+    .highlighted-container-dark {
+      background: #dfdfdf;
+    }
+
+    .highlighted-container {
+      background: #ececec;
+    }
   }
 
   @media screen and (min-width: 992px) {
@@ -160,7 +146,7 @@
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     &__top-bar {
       display: none;
     }
@@ -209,6 +195,18 @@
               padding: 1.5rem;
               background: #d7d7d7;
             }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &--theme-light {
+      .tabs-primary {
+        & .tab {
+          &:not(:first-child) {
+            margin-left: 15px;
           }
         }
       }
