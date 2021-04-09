@@ -187,5 +187,27 @@
         }
       }
     }
+
+    &--theme-light {
+      .timeline {
+        &__main-area {
+          &__content-bar {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            .collapsible-content--hidden {
+              display: none;
+            }
+
+            &__title--phone {
+              margin-right: -1.5rem;
+              margin-left: -1.5rem;
+              padding: 1.5rem;
+              background: #d7d7d7;
+            }
+          }
+        }
+      }
+    }
   }
 }
