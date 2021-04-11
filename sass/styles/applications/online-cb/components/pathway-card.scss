@@ -1,0 +1,64 @@
+.pathway-card-wrapper {
+  width: 320px;
+  display: flex;
+  align-items: center;
+
+  .pathway-card {
+    width: 200px;
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: calc(50% - 1px);
+    //   left: -60px;
+    //   width: 60px;
+    //   border: 1px dashed green;
+    // }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: calc(50% - 1px);
+    //   right: 0px;
+    //   width: 60px;
+    //   border: 1px dashed green;
+    // }
+  }
+
+  .path-before {
+    width: 60px;
+    height: 0;
+    border: 1px dashed #ececec;
+  }
+
+  .path-after {
+    width: 60px;
+    height: 0;
+    border: 1px dashed #ececec;
+    position: relative;
+
+    &::after {
+      content: "\25C9";
+      color: #ececec;
+      position: absolute;
+      width: 12px;
+      top: -10px;
+      right: -6px;
+    }
+  }
+
+  &.complete {
+    .path-before {
+      border: 1px dashed #14df71;
+    }
+
+    .path-after {
+      border: 1px dashed #14df71;
+
+      &::after {
+        color: #14df71;
+      }
+    }
+  }
+}
