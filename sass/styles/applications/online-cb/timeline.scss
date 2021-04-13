@@ -65,6 +65,61 @@
     }
   }
 
+  &--theme-light {
+    background: #e5e5e5;
+    color: $black;
+
+    .timeline {
+      &__top-bar {
+        border-bottom: solid 1px #d7d7d7;
+        padding: 1.5rem 3rem;
+        height: 82px;
+
+        .video-title {
+          max-height: 24px;
+        }
+
+        .text-ellipses {
+          white-space: unset;
+        }
+      }
+
+      &__main-area {
+        &__content-bar {
+          &__title {
+            background: #e5e5e5;
+            border-bottom: solid 1px #d7d7d7;
+            padding-bottom: 20px;
+          }
+
+          h4 {
+            margin-bottom: unset;
+          }
+
+          &__section {
+            border-bottom: solid 1px #d7d7d7;
+
+            a > .row:first-child {
+              border-bottom: solid 1px #d7d7d7;
+            }
+          }
+        }
+      }
+    }
+
+    .search-bar {
+      background: #d7d7d7;
+    }
+
+    .highlighted-container-dark {
+      background: #dfdfdf;
+    }
+
+    .highlighted-container {
+      background: #ececec;
+    }
+  }
+
   @media screen and (min-width: 992px) {
     &__main-area {
       padding-top: 2.2rem;
@@ -83,9 +138,15 @@
         }
       }
     }
+
+    &--theme-light {
+      .timeline__main-area__content-bar {
+        padding-left: 3rem !important;
+      }
+    }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     &__top-bar {
       display: none;
     }
@@ -113,6 +174,40 @@
 
         .doubt-card {
           display: none;
+        }
+      }
+    }
+
+    &--theme-light {
+      .timeline {
+        &__main-area {
+          &__content-bar {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            .collapsible-content--hidden {
+              display: none;
+            }
+
+            &__title--phone {
+              margin-right: -1.5rem;
+              margin-left: -1.5rem;
+              padding: 1.5rem;
+              background: #d7d7d7;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &--theme-light {
+      .tabs-primary {
+        & .tab {
+          &:not(:first-child) {
+            margin-left: 15px;
+          }
         }
       }
     }
