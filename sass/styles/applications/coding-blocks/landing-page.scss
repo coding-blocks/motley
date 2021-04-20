@@ -5,7 +5,7 @@
   // font-family: "Rubik", sans-serif;
 
   &__section {
-    padding: 7.142rem;
+    padding: 75px;
     position: relative;
     overflow: hidden;
 
@@ -28,11 +28,11 @@
 
       &__left-section {
         border-right: 1px solid $grey-light-1;
-        padding-right: 3.57rem;
+        padding-right: 37.5px;
       }
 
       &__right-section {
-        padding-left: 7.142rem;
+        padding-left: 75px;
       }
     }
 
@@ -44,7 +44,7 @@
 
     &__vector {
       position: absolute;
-      right: 6rem;
+      right: 60px;
       bottom: 0;
       width: 45%;
     }
@@ -267,21 +267,21 @@
 
   @media screen and (max-width: 1199px) {
     &__section {
-      padding: 6rem;
+      padding: 60px;
 
       &--divided-section {
         &__left-section {
-          padding-right: 2.5rem;
+          padding-right: 30px;
         }
 
         &__right-section {
-          padding-left: 6rem;
+          padding-left: 60px;
         }
       }
 
       &__vector {
         width: 50%;
-        right: 4.5rem;
+        right: 50px;
       }
     }
 
@@ -345,7 +345,7 @@
 
   @media screen and (max-width: 991px) {
     &__section {
-      padding: 4.5rem;
+      padding: 50px;
 
       &--divided-section {
         &__left-section {
@@ -422,7 +422,7 @@
 
   @media screen and (max-width: 767px) {
     &__section {
-      padding: 4rem;
+      padding: 40px;
 
       &__vector {
         margin-bottom: -4rem;
@@ -463,7 +463,7 @@
 
   @media screen and (max-width: 575px) {
     &__section {
-      padding: 2.5rem;
+      padding: 25px;
 
       &__vector {
         margin-bottom: -2.5rem;
