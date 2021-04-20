@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/dukaan.css" rel="stylesheet">
+  <link href="stylesheets/online-cb.css" rel="stylesheet">
+  <link href="stylesheets/account.css" rel="stylesheet">
+  <link href="stylesheets/hb.css" rel="stylesheet">
+  <link href="stylesheets/hiringblocks.css" rel="stylesheet">
+  <link href="stylesheets/coding-blocks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://minio.codingblocks.com/motley/Gilroy.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.min.js"></script>
+  <script src="JS/radial-progress.js"></script>
+  <script src="JS/v2.js"></script>
+  <script type="text/javascript" src="JS/curtain.js"></script>
+</head>
+
+<body>
+  <div class="a-cbm" style="margin-top: -70px;">
+  <div class="super-navbar border-bottom">
+
+    <div class="hamburger-nav hamburger-nav--hidden border-left">
+      <div class="row no-gutters justify-content-end align-items-center border-bottom position-sticky tl bg-white z-pos"
+        style="height: 89px;">
+        <img src="\images\wrong_g.png" alt="#" class="mr-4 hamburger-nav__cross pointer">
+      </div>
+      <div class="t-align-c py-20">
+        <button class="button-primary">Login / Signup</button>
+      </div>
+      <div class="px-40">
+        <div class="mb-15 hamburger-nav__menu-element">
+          <div style="width: 50px;">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg">
+          </div>
+          <div class="font-5 ml-15">Learn</div>
+        </div>
+        <div class="mb-15 hamburger-nav__menu-element">
+          <div style="width: 50px;">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg">
+          </div>
+          <div class="font-5 ml-15">Practice</div>
+        </div>
+        <div class="mb-15 hamburger-nav__menu-element">
+          <div style="width: 50px;">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg">
+          </div>
+          <div class="font-5 ml-15">Get Hired</div>
+        </div>
+        <div class="mb-15 hamburger-nav__menu-element">
+          <div style="width: 50px;">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg">
+          </div>
+          <div class="font-5 ml-15">IDE</div>
+        </div>
+      </div>
+      <div class="hamburger-nav__accordion-menu-element">
+        <input type="checkbox" id="check1">
+        <label class="hamburger-nav__accordion-menu-element__header" for="check1">
+          <div class="flex-1 pr-20 font-5">
+            Courses
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg">
+        </label>
+        <div class="hamburger-nav__accordion-menu-element__content">
+          <div class="mb-50">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg" style="height: 40px;">
+            <div class="font-3 bold mt-15 text-grey-light-1">ONLINE COURSES</div>
+            <div class="mt-35 mb-15">
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer mr-20" href="#">
+                  C++ Master Course
+                </a>
+                <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+                  NEW
+                </div>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  JAVA Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Python for Developers
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Web Dev with Python - Django
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Data Science
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Competitive Programming
+                </a>
+              </div>
+            </div>
+            <button class="button-tertiary mt-15">
+              Explore All
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+          <div class="mb-50">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg" style="height: 40px;">
+            <div class="font-3 bold mt-15 text-grey-light-1">CLASSROOM COURSES</div>
+            <div class="mt-35 mb-15">
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  C++ Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  JAVA Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Python for Developers
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Web Dev with Python - Django
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer mr-20" href="#">
+                  Data Science
+                </a>
+                <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+                  NEW
+                </div>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Competitive Programming
+                </a>
+              </div>
+            </div>
+            <button class="button-tertiary mt-15">
+              Explore All
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+          <div class="mb-50">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg" style="height: 40px;">
+            <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
+            <div class="mt-35 mb-15">
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  C++ Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  JAVA Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Python for Developers
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Web Dev with Python - Django
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Data Science
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Competitive Programming
+                </a>
+              </div>
+            </div>
+            <button class="button-tertiary mt-15">
+              Explore All
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+          <div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg" style="height: 40px;">
+            <div class="row no-gutters align-items-center mt-15">
+              <div class="font-3 bold text-grey-light-1 mr-20">INDUSTRIAL TRAINING</div>
+              <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+                NEW
+              </div>
+            </div>
+            <div class="mt-35 mb-15">
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  C++ Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  JAVA Master Course
+                </a>
+              </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a class="font-4 bold pointer" href="#">
+                  Python for Developers
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger-nav__accordion-menu-element">
+        <input type="checkbox" id="check2">
+        <label class="hamburger-nav__accordion-menu-element__header" for="check2">
+          <div class="flex-1 pr-20 font-5">
+            Events
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg">
+        </label>
+      </div>
+      <div class="hamburger-nav__accordion-menu-element">
+        <input type="checkbox" id="check3">
+        <label class="hamburger-nav__accordion-menu-element__header" for="check3">
+          <div class="flex-1 pr-20 font-5">
+            Blog
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg">
+        </label>
+      </div>
+      <div class="hamburger-nav__accordion-menu-element">
+        <input type="checkbox" id="check4">
+        <label class="hamburger-nav__accordion-menu-element__header" for="check4">
+          <div class="flex-1 pr-20 font-5">
+            Campus Superheros
+          </div>
+        </label>
+      </div>
+      <div class="hamburger-nav__accordion-menu-element">
+        <input type="checkbox" id="check5">
+        <label class="hamburger-nav__accordion-menu-element__header" for="check5">
+          <div class="flex-1 pr-20 font-5">
+            Contact
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="h-100 width-limiter">
+      <div class="row no-gutters align-items-center justify-content-between h-100">
+        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-logo.svg">
+        <div class="flex-1 h-100">
+          <div class="row no-gutters align-items-center justify-content-end h-100">
+            <div class="super-navbar__link">
+              <div>
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg">
+                <div class="font-3 mt-10 d-md-block d-none">Learn</div>
+              </div>
+            </div>
+            <div class="super-navbar__link">
+              <div>
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg">
+                <div class="font-3 mt-10 d-md-block d-none">Practice</div>
+              </div>
+            </div>
+            <div class="super-navbar__link">
+              <div>
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg">
+                <div class="font-3 mt-10 d-md-block d-none">Get<br />Hired</div>
+              </div>
+            </div>
+            <div class="super-navbar__link">
+              <div>
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg">
+                <div class="font-3 mt-10 d-md-block d-none">IDE</div>
+              </div>
+            </div>
+            <div class="hamburger-menu d-md-none d-block ml-25">
+              <div class="ham-toggle">
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <button class="button-primary ml-20 d-md-block d-none">Login / Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-15 border-bottom px-25 d-md-block d-none">
+    <div class="width-limiter">
+      <div class="row no-gutters justify-content-end">
+        <div class="row no-gutters align-items-center mr-30 font-4 text-grey pointer" id="mega-nav-toggle">
+          <span>Courses</span>
+          <img src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg" class="ml-10" style="height: 15px;">
+        </div>
+        <div class="row no-gutters align-items-center mr-30 font-4 text-grey pointer">
+          <span>Events</span>
+          <img src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg" class="ml-10" style="height: 15px;">
+        </div>
+        <div class="row no-gutters align-items-center mr-30 font-4 text-grey pointer">
+          <span>Blogs</span>
+          <img src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg" class="ml-10" style="height: 15px;">
+        </div>
+        <div class="row no-gutters align-items-center mr-30 font-4 text-grey pointer">
+          <span>Campus Superheroes</span>
+        </div>
+        <div class="row no-gutters align-items-center font-4 text-grey pointer">
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-50 border-bottom px-25 d-none bg-white" id="mega-nav">
+    <div class="width-limiter">
+      <div class="row">
+        <div class="col-3">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg" style="height: 40px;">
+          <div class="font-3 bold mt-15 text-grey-light-1">ONLINE COURSES</div>
+          <div class="mt-35 mb-15">
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer mr-20" href="#">
+                C++ Master Course
+              </a>
+              <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+                NEW
+              </div>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                JAVA Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Python for Developers
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Web Dev with Python - Django
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Data Science
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Competitive Programming
+              </a>
+            </div>
+          </div>
+          <button class="button-tertiary mt-15">
+            Explore All
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </button>
+        </div>
+        <div class="col-3">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg" style="height: 40px;">
+          <div class="font-3 bold mt-15 text-grey-light-1">CLASSROOM COURSES</div>
+          <div class="mt-35 mb-15">
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                C++ Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                JAVA Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Python for Developers
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Web Dev with Python - Django
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer mr-20" href="#">
+                Data Science
+              </a>
+              <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+                NEW
+              </div>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Competitive Programming
+              </a>
+            </div>
+          </div>
+          <button class="button-tertiary mt-15">
+            Explore All
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </button>
+        </div>
+        <div class="col-3">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg" style="height: 40px;">
+          <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
+          <div class="mt-35 mb-15">
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                C++ Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                JAVA Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Python for Developers
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Web Dev with Python - Django
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Data Science
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Competitive Programming
+              </a>
+            </div>
+          </div>
+          <button class="button-tertiary mt-15">
+            Explore All
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </button>
+        </div>
+        <div class="col-3">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg" style="height: 40px;">
+          <div class="row no-gutters align-items-center mt-15">
+            <div class="font-3 bold text-grey-light-1 mr-20">INDUSTRIAL TRAINING</div>
+            <div class="bg-gradient-yellow white font-1 p-1 d-inline-block" style="border-radius: 2px;">
+              NEW
+            </div>
+          </div>
+          <div class="mt-35 mb-15">
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                C++ Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                JAVA Master Course
+              </a>
+            </div>
+            <div class="mb-20 row no-gutters align-items-center">
+              <a class="font-4 bold pointer" href="#">
+                Python for Developers
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-page">
+    <div class="landing-page__section pb-none">
+      <div class="width-limiter">
+        <div class="row align-items-center justify-content-between no-gutters">
+          <div class="flex-1 pr-xl-75 pr-25 d-lg-block d-none">
+            <div class="heading-3 bold text-grey mb-30">
+              Become a
+              <div class="d-inline-block text-black underline-highlight underline-highlight--gradient-orange">
+                App Developer
+              </div>
+            </div>
+            <div class="heading-font stroke-font">
+              LEARN THE MOST
+            </div>
+            <div class="heading-font">
+              WANTED SKILLS.
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg">
+            <div class="mt-30 mb-40">
+              <div class="row no-gutters align-items-center">
+                <button class="button-primary">
+                  Get Started
+                </button>
+                <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
+              </div>
+            </div>
+            <div class="mini-banner position-relative br-5">
+              <div class="bg-purple br-5" style="height: 110px;"></div>
+              <div class="mini-banner__tag">
+                <div class="font-2">Offer valid till 30th Jan</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-lg-none d-block t-align-c">
+            <div class="heading-3 bold text-grey mb-30">
+              Become a
+              <div class="d-inline-block text-black underline-highlight underline-highlight--gradient-orange">
+                App Developer
+              </div>
+            </div>
+            <div class="heading-font stroke-font">
+              LEARN THE MOST
+            </div>
+            <div class="heading-font">
+              WANTED SKILLS.
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg">
+            <div class="t-align-c" style="margin: 0 -2.5rem;">
+              <div class="universe universe--small mx-auto">
+                <div class="universe__star p-sm-20 p-10">
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg">
+                </div>
+                <div class="universe__orbit universe__orbit--1">
+                  <div class="position-relative h-100 w-100">
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="universe__orbit universe__orbit--2">
+                  <div class="position-relative h-100 w-100">
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="universe__orbit universe__orbit--3">
+                  <div class="position-relative h-100 w-100">
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                    <div class="universe__orbit__planet">
+                      <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="heading-6 mt-30">Helping people get their dream job.</div>
+              <button class="button-tertiary mt-10">
+                View all our Alumni
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+              </button>
+            </div>
+            <div class="mt-30 mb-40">
+              <div class="row no-gutters align-items-center justify-content-center">
+                <button class="button-primary">
+                  Get Started
+                </button>
+                <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
+              </div>
+            </div>
+            <div class="mini-banner position-relative br-5">
+              <div class="bg-purple br-5" style="height: 110px;"></div>
+              <div class="mini-banner__tag">
+                <div class="font-2">Offer valid till 30th Jan</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="t-align-c mx-auto d-sm-block d-none">
+            <div class="universe">
+              <div class="universe__star p-20">
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg">
+              </div>
+              <div class="universe__orbit universe__orbit--1">
+                <div class="position-relative h-100 w-100">
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="universe__orbit universe__orbit--2">
+                <div class="position-relative h-100 w-100">
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="universe__orbit universe__orbit--3">
+                <div class="position-relative h-100 w-100">
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                  <div class="universe__orbit__planet">
+                    <img src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="heading-6 mt-30">Helping people get their dream job.</div>
+            <button class="button-tertiary mt-10">
+              View all our Alumni
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+        </div>
+        <div class="mt-60">
+          <div class="t-align-c heading-3 bold mb-50">
+            Why Coding Blocks
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-xl-3 col-sm-5 col-12 mb-25">
+              <div class="card bg-grey-light-3">
+                <div class="row no-gutters align-items-center">
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops-dark.svg" class="mb-sm-3"
+                    style="height: 50px;">
+                  <div class="flex-1 d-sm-none d-block pl-20">
+                    <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">40K+</div>
+                    <div class="mt-1 font-4">Students Taught</div>
+                  </div>
+                </div>
+                <div class="d-sm-block d-none">
+                  <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">40K+</div>
+                  <div class="mt-1 font-4">Students Taught</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-5 col-12 mb-25">
+              <div class="card bg-grey-light-3">
+                <div class="row no-gutters align-items-center">
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/package-dark.svg" class="mb-sm-3"
+                    style="height: 50px;">
+                  <div class="flex-1 d-sm-none d-block pl-20">
+                    <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">80LPA</div>
+                    <div class="mt-1 font-4">Package Offered</div>
+                  </div>
+                </div>
+                <div class="d-sm-block d-none">
+                  <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">80LPA</div>
+                  <div class="mt-1 font-4">Package Offered</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-5 col-12 mb-25">
+              <div class="card bg-grey-light-3">
+                <div class="row no-gutters align-items-center">
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/students-placed-dark.svg" class="mb-sm-3"
+                    style="height: 50px;">
+                  <div class="flex-1 d-sm-none d-block pl-20">
+                    <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">30K+</div>
+                    <div class="mt-1 font-4">Students Placed</div>
+                  </div>
+                </div>
+                <div class="d-sm-block d-none">
+                  <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">30K+</div>
+                  <div class="mt-1 font-4">Students Placed</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-5 col-12 mb-25">
+              <div class="card bg-grey-light-3">
+                <div class="row no-gutters align-items-center">
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training-dark.svg"
+                    class="mb-sm-3" style="height: 50px;">
+                  <div class="flex-1 d-sm-none d-block pl-20">
+                    <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">200%</div>
+                    <div class="mt-1 font-4">Salary Hike</div>
+                  </div>
+                </div>
+                <div class="d-sm-block d-none">
+                  <div class="text-gradient-orange-light bold" style="font-size: 3.428rem;">200%</div>
+                  <div class="mt-1 font-4">Salary Hike</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideshow-container mt-50" id="slideshow-container">
+          <div class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100">
+            <div class="row align-items-center no-gutters">
+              <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
+                <div class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white">New</div>
+                <div class="heading-font stroke-font stroke-font--white">
+                  INDUSTRIAL.
+                </div>
+                <div class="heading-font white">
+                  TRAINING.
+                </div>
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg">
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+                  class="d-lg-none d-block">
+                <div class="my-50">
+                  <div class="heading-2 bold text-orange">
+                    Get flat 50% off!
+                  </div>
+                  <div class="mt-2 white heading-5">
+                    Use Code - <strong>MONSOON</strong> | Valid till 01 Aug, 2020.
+                  </div>
+                </div>
+                <div>
+                  <button class="button-primary">
+                    Explore Now
+                    <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+              class="landing-page__section__vector d-lg-block d-none">
+          </div>
+
+          <a class="slideshow-container__prev pulse" onclick="plusSlides(-1)">
+            <span>&#10094;</span>
+          </a>
+          <a class="slideshow-container__next pulse" onclick="plusSlides(1)">
+            <span>&#10095;</span>
+          </a>
+
+          <div class="slideshow-container__navigation-dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section bg-white py-none course-section">
+      <div class="width-limiter">
+        <div class="row no-gutters mb-60">
+          <div class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation">
+            <div class="heading-font stroke-font">
+              LEARN.
+            </div>
+            <div class="heading-font">
+              LEARN.
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_learn.svg" class="pb-xl-60 pb-30">
+            <div class="row no-gutters align-items-center">
+              <div class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters" id="online-courses">
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg" class="mr-xl-15">
+                <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">Online Courses</div>
+                <div class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15">Online<br />Courses</div>
+              </div>
+              <div class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters" id="classroom-courses">
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg" class="mr-xl-15">
+                <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">Classroom Courses</div>
+                <div class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15">Classroom<br />Courses</div>
+              </div>
+              <div class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters" id="live-courses">
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg" class="mr-xl-15">
+                <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">Live Courses</div>
+                <div class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15">Live<br />Courses</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 course-section__cards pt-lg-60 pt-30" id="online-courses-section">
+            <div class="heading-4 bold">Learn to code professionally in the industry!</div>
+            <div class="heading-6 text-blue mb-40 mt-2">Discover our most loved courses!</div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-8 course-section__cards pt-lg-60 pt-30 d-none" id="classroom-courses-section">
+            <div class="heading-4 bold">Learn to code professionally in the industry!</div>
+            <div class="heading-6 text-blue mb-40 mt-2">Discover our most loved courses!</div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-blue p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-8 course-section__cards pt-lg-60 pt-30 d-none" id="live-courses-section">
+            <div class="heading-4 bold">Learn to code professionally in the industry!</div>
+            <div class="heading-6 text-blue mb-40 mt-2">Discover our most loved courses!</div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-green p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div class="row no-gutters justify-content-between align-items-center">
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg" class="mr-1">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg" class="mr-1">
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold">&#8377;&nbsp;3499</span>
+                            <span class="font-sm bold med-grey"><del>&#8377;&nbsp;12999</del></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit">
+                      <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-grey-light-3">
+          <div class="row no-gutters justify-content-between align-items-center side-tag">
+            <div class="flex-1 pr-25">
+              <div class="heading-5">CONTACT OUT TECH EXPERTS FOR</div>
+              <div class="text-orange heading-2 bold mt-1">FREE COUNSELLING SESSION</div>
+            </div>
+            <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
+              <button class="button-secondary">
+                Schedule a Session
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section landing-page__section--divided-section">
+      <div class="width-limiter">
+        <div class="row">
+          <div class="col-lg-6 col-12 landing-page__section--divided-section__left-section">
+            <div class="t-align-sm-l t-align-c">
+              <div class="heading-font stroke-font">
+                PRACTICE.
+              </div>
+              <div class="heading-font">
+                PRACTICE.
+              </div>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg">
+              <div class="my-50">
+                <div class="heading-2 bold">
+                  Practice real interview Questions!
+                </div>
+                <div class="mt-2 text-pink heading-4">
+                  Over <strong>50m+</strong> Code submissions done.
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-sm-start justify-content-center">
+              <button class="button-primary">
+                Start Practicing
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+          <div class="divider-h d-lg-none d-block my-50 bg-grey-light-1"></div>
+          <div class="col-lg-6 col-12 landing-page__section--divided-section__right-section">
+            <div class="t-align-sm-l t-align-c">
+              <div class="heading-font stroke-font">
+                GET HIRED.
+              </div>
+              <div class="heading-font">
+                GET HIRED.
+              </div>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg">
+              <div class="my-50">
+                <div class="heading-2 bold">
+                  Land your dream job!
+                </div>
+                <div class="mt-2 text-blue-light-1 heading-4">
+                  Apply to the dream job with more than <strong>400+</strong> hiring partners
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-sm-start justify-content-center">
+              <button class="button-primary">
+                Apply for jobs
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 t-align-sm-l t-align-c">
+            <div class="heading-font stroke-font">
+              ALUMNI NETWORK.
+            </div>
+            <div class="heading-font">
+              ALUMNI NETWORK.
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg">
+          </div>
+        </div>
+        <div class="mt-50">
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 t-align-sm-l t-align-c">
+            <div class="heading-font stroke-font">
+              HALL OF FAME
+            </div>
+            <div class="heading-font">
+              SUCCESS STORIES
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_success.svg">
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/apostrophe.svg" class="d-md-block d-none">
+        </div>
+        <div class="mt-50">
+          <div class="flex-row align-items-center">
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-left-black.svg"
+              class="pointer d-md-block d-none" id="move-left">
+            <div class="row mx-lg-40 mx-md-25 c-card-carousel" id="carousel">
+              <div class="col-12">
+                <div
+                  class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c">
+                  <div class="col-12 d-md-none d-block mb-40">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-sm-5 col-12 mb-sm-none mb-40">
+                        <img
+                          src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                          class="success-story__image">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-2 bold text-orange mb-3">Nilesh placed at Apple, 72LPA</div>
+                        <div class="heading-4 bold">(B.Tech | ME, DTU)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                    class="success-story__image d-md-block d-none">
+                  <div class="flex-1">
+                    <div class="d-md-block d-none">
+                      <div class="heading-2 bold text-orange mb-3">Nilesh placed at Apple, 72LPA</div>
+                      <div class="heading-4 bold mb-40">(B.Tech | ME, DTU)</div>
+                    </div>
+                    <div class="heading-5 text-grey">
+                      Hii I am Nilesh from Delhi technology university. I have done competitive boot camp from coding
+                      blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple
+                      interview.
+                      <br /> <br />
+                      Thanks to Coding blocks!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div
+                  class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c">
+                  <div class="col-12 d-md-none d-block mb-40">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-sm-5 col-12 mb-sm-none mb-40">
+                        <img
+                          src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                          class="success-story__image">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-2 bold text-orange mb-3">BIPIN placed at Apple, 72LPA</div>
+                        <div class="heading-4 bold">(B.Tech | ME, DTU)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                    class="success-story__image d-md-block d-none">
+                  <div class="flex-1">
+                    <div class="d-md-block d-none">
+                      <div class="heading-2 bold text-orange mb-3">BIPIN placed at Apple, 72LPA</div>
+                      <div class="heading-4 bold mb-40">(B.Tech | ME, DTU)</div>
+                    </div>
+                    <div class="heading-5 text-grey">
+                      Hii I am Nilesh from Delhi technology university. I have done competitive boot camp from coding
+                      blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple
+                      interview.
+                      <br /> <br />
+                      Thanks to Coding blocks!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-right-black.svg"
+              class="pointer d-md-block d-none" id="move-right">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 t-align-sm-l t-align-c">
+            <div class="heading-font stroke-font">
+              OUR EXPERT
+            </div>
+            <div class="heading-font">
+              MENTORS
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg">
+          </div>
+          <div class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none">
+            <button class="button-secondary">
+              Learn more about us
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+        </div>
+        <div class="mt-sm-50 mt-25">
+          <div class="row no-gutters justify-content-center">
+            <div class="t-align-c px-20 mb-25">
+              <img
+                src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                class="big-photo">
+              <div class="mt-25 heading-4 bold d-sm-block d-none">Kartik Mathur</div>
+              <div class="mt-25 heading-6 bold d-sm-none d-block">Kartik Mathur</div>
+            </div>
+            <div class="t-align-c px-20 mb-25">
+              <img
+                src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                class="big-photo">
+              <div class="mt-25 heading-4 bold d-sm-block d-none">Kartik Mathur</div>
+              <div class="mt-25 heading-6 bold d-sm-none d-block">Kartik Mathur</div>
+            </div>
+            <div class="t-align-c px-20 mb-25">
+              <img
+                src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                class="big-photo">
+              <div class="mt-25 heading-4 bold d-sm-block d-none">Kartik Mathur</div>
+              <div class="mt-25 heading-6 bold d-sm-none d-block">Kartik Mathur</div>
+            </div>
+            <div class="t-align-c px-20 mb-25">
+              <img
+                src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
+                class="big-photo">
+              <div class="mt-25 heading-4 bold d-sm-block d-none">Kartik Mathur</div>
+              <div class="mt-25 heading-6 bold d-sm-none d-block">Kartik Mathur</div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters justify-content-center d-sm-none d-block">
+          <button class="button-secondary">
+            Learn more about us
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section landing-page__section--divided-section">
+      <div class="width-limiter">
+        <div class="row">
+          <div class="col-lg-6 landing-page__section--divided-section__left-section">
+            <div>
+              <div class="heading-font stroke-font">
+                FOR
+              </div>
+              <div class="heading-font">
+                COLLEGES
+              </div>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg">
+              <div class="my-sm-50 my-25">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                    <div class="row no-gutters align-items-center justify-content-between">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Placement Training</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                    <div class="row no-gutters align-items-center justify-content-between">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-platform-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Online Exam Platform</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row no-gutters align-items-center justify-content-between">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Workshops &amp; More</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="button-primary">
+                Let's Connect
+                <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg" class="ml-2">
+              </button>
+            </div>
+          </div>
+          <div class="divider-h d-lg-none d-block my-50 bg-grey-light-1"></div>
+          <div class="col-lg-6 landing-page__section--divided-section__right-section">
+            <div>
+              <div class="heading-font stroke-font">
+                FOR
+              </div>
+              <div class="heading-font">
+                COMPANIES
+              </div>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg">
+              <div class="my-50">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/training-program-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Training Programs</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hire-students-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Hire Students</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-sm-12 col-3 mb-sm-25">
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/evaluations-dark.svg"
+                          style="height: 50px;">
+                      </div>
+                      <div class="flex-1">
+                        <div class="heading-5">Evaluations &amp; More</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="button-primary">
+                Let's Connect
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 t-align-sm-l t-align-c">
+            <div class="heading-font stroke-font">
+              LATEST
+            </div>
+            <div class="heading-font">
+              FROM THE BLOG
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_blog.svg">
+          </div>
+          <div class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none">
+            <button class="button-secondary">
+              Read All Blogs
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+            </button>
+          </div>
+        </div>
+        <div class="mt-sm-50 mt-25">
+          <div class="row no-gutters c-card-carousel-md">
+            <div class="col-md-4 col-sm-5 col-8 flex-col justify-content-between blog-post">
+              <img src="https://scx1.b-cdn.net/csz/news/800/2018/hack.jpg" class="w-100">
+              <div class="mt-2 w-100">
+                <div class="heading-4 bold mt-4">AI to take over jobs?</div>
+                <div class="mt-3">
+                  <div class="heading-6 text-clamp-ellipses text-clamp-ellipses--2">
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                  </div>
+                </div>
+                <div class="button-tertiary mt-50">
+                  Read More
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5 col-8 flex-col justify-content-between blog-post">
+              <img src="https://scx1.b-cdn.net/csz/news/800/2018/hack.jpg" class="w-100">
+              <div class="mt-2 w-100">
+                <div class="heading-4 bold mt-4">AI to take over jobs?</div>
+                <div class="mt-3">
+                  <div class="heading-6 text-clamp-ellipses text-clamp-ellipses--2">
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                  </div>
+                </div>
+                <div class="button-tertiary mt-50">
+                  Read More
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5 col-8 flex-col justify-content-between blog-post">
+              <img
+                src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/6/8/w900X450/_112604965_ab3d06zxxzccx58-b06c-4475-810b-99d17e6df4c7.jpg"
+                class="w-100">
+              <div class="mt-2 w-100">
+                <div class="heading-4 bold mt-4">AI to take over jobs?</div>
+                <div class="mt-3">
+                  <div class="heading-6 text-clamp-ellipses text-clamp-ellipses--2">
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                    Something just like this is hampering my head space and fucking up!
+                  </div>
+                </div>
+                <div class="button-tertiary mt-50">
+                  Read More
+                  <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-sm-none d-block mt-25 row no-gutters justify-content-center">
+          <button class="button-secondary">
+            Read All Blogs
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg" class="ml-2">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 pr-lg-40 t-align-sm-l t-align-c">
+            <div class="heading-font stroke-font">
+              IN THE
+            </div>
+            <div class="heading-font">
+              NEWS
+            </div>
+            <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg">
+          </div>
+          <div class="col-lg-9 mt-lg-none mt-50">
+            <div class="flex-row align-items-center">
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-big-left-inactive.svg"
+                class="pointer d-sm-block d-none">
+              <div class="row mx-sm-40 c-card-carousel">
+                <div class="col-6 h-inherit">
+                  <div class="flex-col justify-content-between h-100 align-items-start">
+                    <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg">
+                    <div>
+                      <div class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2">
+                        Coding Blocks is the most promising edtech startup
+                      </div>
+                      <div class="button-tertiary">
+                        Read More
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                          class="ml-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 h-inherit">
+                  <div class="flex-col justify-content-between h-100 align-items-start">
+                    <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android_white.png">
+                    <div>
+                      <div class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2">
+                        Coding Blocks is the most promising edtech startup
+                      </div>
+                      <div class="button-tertiary">
+                        Read More
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                          class="ml-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 h-inherit">
+                  <div class="flex-col justify-content-between h-100 align-items-start">
+                    <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg">
+                    <div>
+                      <div class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2">
+                        Coding Blocks is the most promising edtech startup
+                      </div>
+                      <div class="button-tertiary">
+                        Read More
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                          class="ml-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 h-inherit">
+                  <div class="flex-col justify-content-between h-100 align-items-start">
+                    <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg">
+                    <div>
+                      <div class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2">
+                        Coding Blocks is the most promising edtech startup
+                      </div>
+                      <div class="button-tertiary">
+                        Read More
+                        <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                          class="ml-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-big-right-active.svg"
+                class="pointer d-sm-block d-none">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="landing-page__section landing-page__section--footer">
+      <div class="width-limiter">
+        <div class="row no-gutters pb-50" style="border-bottom:1px solid #cccccc;">
+          <div class="col-lg-9 col-12 pr-lg-20 pb-lg-none pb-50 landing-page__section--footer__main-section">
+            <div class="row no-gutters">
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">PRODUCTS</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="https://online.codingblocks.com/" class="font-4">Online Coding Blocks</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://hack.codingblocks.com/" class="font-4">Hacker Blocks</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://hire.codingblocks.com/" class="font-4">Hiring Blocks</a>
+                    </div>
+                    <div>
+                      <a href="https://ide.codingblocks.com/" class="font-4">Online IDE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">COMPANY</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/about.html" class="font-4">About Us</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/team.html" class="font-4">Meet the Team</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/success-stories.html" class="font-4">Success Stories</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/signup/job.html" class="font-4">Become a TA/Mentor</a>
+                    </div>
+                    <div>
+                      <a href="https://blog.codingblocks.com/" class="font-4">Blog</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">RESOURCES</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="https://www.youtube.com/channel/UCICWIYEx2mo4wYZzLwJ7wVw" class="font-4">Watch Youtube
+                        Videos</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://blog.codingblocks.com/" class="font-4">Blogs</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Telegram Channel</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">Study Material</a>
+                    </div>
+                    <div>
+                      <a href="#" class="font-4">Career Advice</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 h-inherit pr-xl-50 pr-lg-30 pr-20 mt-sm-none mt-50">
+                <div class="flex-col justify-content-between h-100">
+                  <div class="font-4 bold w-100">COMMUNITY</div>
+                  <div class="w-100 mt-50">
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/campus-ambassador-program.html" class="font-4">Campus
+                        Ambassador</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="https://codingblocks.com/events" class="font-4">Events and Workshops</a>
+                    </div>
+                    <div class="mb-30">
+                      <a href="#" class="font-4">BOSS 2021</a>
+                    </div>
+                    <div>
+                      <a href="https://ide.codingblocks.com/" class="font-4">Online IDE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 mt-lg-none mt-50 pl-xl-70 pl-lg-50">
+            <div class="row no-gutters">
+              <div class="col-lg-12 col-sm-6 col-12 mb-lg-50">
+                <div class="bold font-4 mb-sm-40 mb-30">
+                  CONTACT
+                </div>
+                <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
+                  admissionscodingblocks.com
+                </div>
+                <div class="font-4">
+                  1800 274 4504
+                </div>
+              </div>
+              <div class="col-lg-12 col-sm-6 col-12 mt-sm-none mt-50">
+                <div class="bold font-4 mb-sm-40 mb-30">
+                  TECHNICAL SUPPORT
+                </div>
+                <div class="font-4 mb-lg-30 mb-sm-20 mb-15">
+                  supportcodingblocks.com
+                </div>
+                <div class="font-4">
+                  +91 964 333 9747
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters align-items-center justify-content-sm-between justify-content-center mt-50">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/blocks-footer-logo.svg">
+          <div class="flex-1 t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none">
+            <div class="font-4 mb-10">
+              Privacy Policy | Terms of Service
+            </div>
+            <div class="font-4">
+              Copyright 2020 - Coding Blocks Pvt. Ltd.
+            </div>
+          </div>
+          <div class="col-12 t-align-c d-sm-none d-block mt-50">
+            <div class="font-4 mb-10">
+              Privacy Policy | Terms of Service
+            </div>
+            <div class="font-4">
+              Copyright 2020 - Coding Blocks Pvt. Ltd.
+            </div>
+          </div>
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg" class="d-xl-block d-none">
+        </div>
+        <div class="mt-50 d-xl-none d-block t-align-c">
+          <img src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

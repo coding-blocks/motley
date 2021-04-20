@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/dukaan.css" rel="stylesheet">
+  <link href="stylesheets/online-cb.css" rel="stylesheet">
+  <link href="stylesheets/account.css" rel="stylesheet">
+  <link href="stylesheets/hb.css" rel="stylesheet">
+  <link href="stylesheets/hiringblocks.css" rel="stylesheet">
+  <link href="stylesheets/coding-blocks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://minio.codingblocks.com/motley/Gilroy.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.min.js"></script>
+  <script src="JS/radial-progress.js"></script>
+  <script src="JS/v2.js"></script>
+  <script type="text/javascript" src="JS/curtain.js"></script>
+</head>
+
+<body>
+  <div class="a-hb">
+  <div>
+    <div class="row c-topnav py-4 justify-content-between align-items-center">
+    	<div class="col-6 px-0">
+    		<div class="d-md-none d-block d-flex align-items-center ml-3">
+    			<div class="hamburger-menu mr-3">
+    				<div class="ham-toggle">
+    					<div class="hamburger">
+    						<span></span>
+    						<span></span>
+    						<span></span>
+    					</div>
+    				</div>
+    			</div>
+    			<span class="font-sm">Hacker<strong> Blocks</strong></span>
+    		</div>
+    	</div>
+    	<div class="col-6 offset-1 d-md-block d-none">
+    		<ul>
+    			<li class="top-nav-option px-3 d-none d-md-block active">
+    				<a href="#online-courses">
+    					<h6>Online Courses</h6>
+    				</a>
+    			</li>
+    			<li class="top-nav-option px-3 d-none d-md-block">
+    				<a href="#classroom-courses">
+    					<h6>Classroom Courses</h6>
+    				</a>
+    			</li>
+    			<li class="top-nav-option px-3 d-none d-md-block">
+    				<a href="#hiring-blocks">
+    					<h6>Hiring Blocks</h6>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="align-items-center">
+    		<ul class="right-nav">
+    			<li class="top-nav-option px-3">
+    				<a href="#search">
+    					<i class="fas fa-search fa-lg"></i>
+    				</a>
+    			</li>
+    			<li class="top-nav-option px-3">
+    				<a href="#notification">
+    					<i class="far fa-bell fa-lg"></i>
+    				</a>
+    			</li>
+    			<li class="top-nav-option px-3">
+    				<a href="#help">
+    					<i class="far fa-question-circle fa-lg"></i>
+    				</a>
+    			</li>
+    			<li class="top-nav-option px-3 d-md-block d-none">
+    				<div class="img-desc align-items-center pl-3 font-sm">
+    					<img class="round s-30x30" src="/images/placeholder.gif" alt="">
+    					<div class="description ml-3">
+    						Hi, Siddharth
+    					</div>
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    
+    <div class="hamburger-nav b-right hamburger-nav--hidden overflow-y-auto no-scrollbar">
+    	<div class="d-flex py-3 justify-content-between align-items-center hamburger-nav__top-bar">
+    		<img src="\images\hb_logo_monochrome_full_dg.png" alt="HB" class="hamburger-nav__ham-logo ml-4">
+    		<img src="\images\wrong_g.png" alt="#" class="mr-4 hamburger-nav__cross pointer">
+    	</div>
+    	<div class="divider-h"></div>
+    	<div class="d-flex align-items-center my-4 pl-4">
+    		<div>
+    			<div class="img-ring s-80x80">
+    				<img class="round img"
+    					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL43mSCo0MAu3fCgV8t6QRsNzyiatE_Har4TjE8M6NZ-i0tKDzA"
+    					alt="">
+    			</div>
+    		</div>
+    		<div class="pl-4">
+    			<div class="extra-bold gradient-text">Siddharth Jain</div>
+    			<div class="bold card-sm"><a href="#" class="orange">View Profile</a></div>
+    		</div>
+    	</div>
+    	<div class="mt-5 px-4 overflow-y-auto no-scrollbar">
+    		<div class="d-flex justify-content-between">
+    			<div class="card-md extra-bold orange">Courses</div>
+    			<a href="#" class="orange"><i class="fas fa-angle-up fa-lg"></i></a>
+    		</div>
+    		<div class="my-4 pl-4">
+    			<div class="hamburger-nav__menu-element active">
+    				<div class="card-md extra-bold">Classroom Courses</div>
+    				<div class="card-sm light"><a href="#" class="orange">Explore All</a></div>
+    			</div>
+    			<div class="pl-4">
+    				<div class="mt-4">
+    					<div class="card-sm light extra-bold">Beginner Courses</div>
+    					<div class="card-sm light">C++ For Beginners</div>
+    					<div class="card-sm light">JAVA For Beginners</div>
+    					<div class="card-sm light">Python App Development</div>
+    				</div>
+    				<div class="mt-3">
+    					<div class="card-sm light extra-bold">Development Courses</div>
+    					<div class="card-sm light">Android App Dev</div>
+    					<div class="card-sm light">Python Django</div>
+    					<div class="card-sm light">Unity Game Development</div>
+    					<div class="card-sm light">Full Stack Web Dev</div>
+    				</div>
+    				<div class="mt-3">
+    					<div class="card-sm light extra-bold">Advanced Courses</div>
+    					<div class="card-sm light">Algo++</div>
+    					<div class="card-sm light">Algo.JAVA</div>
+    					<div class="card-sm light">Competitive Programming</div>
+    					<div class="card-sm light">Machine Learning</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="my-4 pl-4">
+    			<div class="hamburger-nav__menu-element">
+    				<div class="card-md extra-bold">Online Courses</div>
+    				<div class="card-sm light"><a href="#" class="orange">Explore All</a></div>
+    			</div>
+    		</div>
+    		<div class="card-md light mt-5 mb-4">Products</div>
+    		<div class="card-md light my-4">Resources</div>
+    		<div class="card-md light my-4">Campus Ambassadors</div>
+    		<div class="card-md light my-4">About Us</div>
+    		<div class="card-md light my-4">Contact Us</div>
+    	</div>
+    </div>    <div class="row justify-content-center mx-0">
+      <div class="c-sidenav bottom-nav col-md-1 col-12">
+      	<div class="logo pb-5 pt-4 d-md-block d-none">
+      		<i class="fab fa-slack fa-3x"></i>
+      	</div>
+      	<div class="row all-center">
+      		<div class="col-2 col-md-12">
+      			<a href="#dashboard" class="nav-element py-4 px-2">
+      				<i class="fas fa-chart-pie font-xl"></i>
+      				<h6 class="pt-2 d-none d-md-block">Dashboard</h6>
+      			</a>
+      		</div>
+      		<div class="col-2 col-md-12">
+      			<a href="#daily-code" class="nav-element py-4 px-2 active">
+      				<i class="far fa-calendar font-xl"></i>
+      				<h6 class="pt-2 d-none d-md-block">Daily Code</h6>
+      			</a>
+      		</div>
+      		<div class="col-2 col-md-12">
+      			<a href="#contests" class="nav-element py-4 px-2">
+      				<i class="fas fa-trophy font-xl"></i>
+      				<h6 class="pt-2 d-none d-md-block">Contests</h6>
+      			</a>
+      		</div>
+      		<div class="col-2 col-md-12">
+      			<a href="#practice" class="nav-element py-4 px-2">
+      				<i class="fas fa-code font-xl"></i>
+      				<h6 class="pt-2 d-none d-md-block">Practice</h6>
+      			</a>
+      		</div>
+      		<div class="col-2 col-md-12">
+      			<a href="#compete" class="nav-element py-4 px-2">
+      				<i class="fas fa-graduation-cap font-xl"></i>
+      				<h6 class="pt-2 d-none d-md-block">Compete</h6>
+      			</a>
+      		</div>
+      	</div>
+      </div>      <div class="offset-0 offset-md-1 col-11 px-lg-5 px-md-4 px-0 dashboard py-5">
+        <div class="position-relative mb-5 banner">
+          <div class="banner-nav tl">
+            <span><a href="#" class="white extra-bold">&lang;</a></span>
+          </div>
+          <img src="https://www.mymaldives.com.au/wp-content/uploads/sites/11/2016/12/Beach-Banner.jpg"
+            alt="BannerImage" class="w-100 h-100">
+          <div class="banner-nav tr">
+            <span><a href="#" class="white extra-bold">&rang;</a></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <div class="border-card py-5 px-4">
+              <div class="row mx-0 justify-content-center">
+                <div class="col-4 b-right">
+                  <div class="mx-auto">
+                    <h4 class="mb-3">All Time Best</h4>
+                    <div class="font-mdxl extra-bold orange">#32</div>
+                    <div class="extra-bold">Achieved on 18 May 2018</div>
+                  </div>
+                </div>
+                <div class="col-4 b-right">
+                  <h4 class="mb-3">Current Ranking</h4>
+                  <div class="font-mdxl extra-bold">4300</div>
+                  <div class="extra-bold green v-align-ma"><i class="fas fa-caret-up mr-2 fa-2x"></i>20 Ranks from last month</div>
+                </div>
+                <div class="col-4">
+                  <h4 class="mb-3">Performance</h4>
+                  <div class="font-mdxl extra-bold">34000 Points</div>
+                  <div class="extra-bold red v-align-ma"><i class="fas fa-caret-down mr-2 fa-2x"></i>200 Points from last month
+                  </div>
+                </div>
+              </div>
+            </div>            <h4 class="my-5">Continue where you left</h4>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="border-card p-0 h-100">
+                  <div class="bg-gradient-blue py-5 px-xl-5 px-4 all-center white">
+                    <div class="w-100">
+                      <div class="row justify-content-between align-items-center no-gutters">
+                        <h3>Daily Code Bytes</h3>
+                        <a href="#" class="white"><i class="fas fa-info-circle fa-lg"></i></a>
+                      </div>
+                      <div class="divider-h bg-white my-3"></div>
+                      <h3 class="bold mt-3">Birthday Candle</h3>
+                      <ul class="divided-list">
+                        <li class="pr-xl-3 pr-lg-2 pr-3">
+                          <div class="list-heading font-mds extra-bold yellow">Hard</div>
+                          <div class="list-data">Dificulty</div>
+                        </li>
+                        <li class="px-xl-3 px-lg-2 px-3">
+                          <div class="list-heading font-mds extra-bold yellow">345</div>
+                          <div class="list-data">Submissions</div>
+                        </li>
+                        <li class="pl-xl-3 pl-lg-2 pl-3">
+                          <div class="list-heading font-mds extra-bold yellow">200</div>
+                          <div class="list-data">Max Pts</div>
+                        </li>
+                      </ul>
+                      <button class="button-solid button-white mt-3 float-right extra-bold">Continue</button>
+                    </div>
+                  </div>
+                  <div class="align-items-center t-align-c px-xl-4 px-3 pb-5 pt-4">
+                    <div class="font-mds mb-4 mt-2">Earn your First Badge</div>
+                    <div class="img-desc font-sm pt-2 all-center px-md-3 px-2 mt-4">
+                      <div class="pr-0 col-2 col-lg-3 pl-2">
+                        <img src="/images/hexagon.jpg" alt="">
+                      </div>
+                      <div class="description ml-3 t-align-l col-lg-9 col-10 pl-0">
+                        <div class="row justify-content-between align-items-center no-gutters">
+                          <h3>Streak Master</h3>
+                          <a href="#" class="white"><i class="fas fa-info-circle fa-md blue"></i></a>
+                        </div>
+                        <span class="Font-sm">Solve 4 more DCB’s</span>
+                        <div class="row mx-0 mt-1 align-items-center">
+                          <div class="col-10 px-0">
+                            <progress value="35" max="100" class="w-90 d-inline-block"></progress>
+                          </div>
+                          <div class="col-2 px-0">
+                            <span class="card-md bold float-right">3/7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>              </div>
+              <div class="col-lg-6 col-12 mt-lg-0 mt-5">
+                <div class="border-card p-5 bg-gradient-navy white h-100">
+                  <div class="row justify-content-between align-items-center no-gutters">
+                    <div class="col-xl-10 col-6">
+                      <h3>Interview Preparation</h3>
+                    </div>
+                    <a href="#" class="white"><i class="fas fa-info-circle fa-lg"></i></a>
+                  </div>
+                  <div class="divider-h bg-white my-3"></div>
+                  <div class="font-sm bold p-md-0 py-4 my-2">
+                    <span>Current Level : </span>
+                    <span class="green">Level 3</span>
+                  </div>
+                  <img src="/images/hexagon.jpg" alt="Badge Logo" class="badge mt-3 mb-4 w-25">
+                  <h4 class="mb-1">Interview Master</h4>
+                  <div>Complete 7 More Levels to earn this badge</div>
+                  <progress value="20" max="100" class="w-75 my-4"></progress>
+                  <div class="extra-bold">3 of 10 Levels completed</div>
+                  <button class="button-solid button-green mt-5 font-sm">Continue Challenge</button>
+                </div>              </div>
+            </div>
+            <div class="border-card py-5 px-0 mt-5">
+              <div class="row justify-content-between align-items-center mx-0 px-sm-5 px-4 mb-4">
+                <h4>Registered Contests</h4>
+                <button class="button-solid button-orange font-sm">View All</button>
+              </div>
+              <div class="row no-gutters hover-grey py-4 px-sm-5 px-4">
+                <div class="li-left">
+                  <div class="mr-3">
+                    <div class="border-card py-3 px-4 t-align-c orange border-orange">
+                      <div class="extra-bold large-font">26</div>
+                      <div class="font-sm bold">JUNE</div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5 class="bold mb-1">APAT June 2019</h5>
+                    <div>Admission Contest</div>
+                  </div>
+                  <div class="row mx-0 align-items-center"></div>
+                </div>
+                <div class="t-align-r li-right">
+                  <div>
+                    <div><a href="#">Remind Me</a></div>
+                    <h6 class="mt-2"><a href="#" class="orange">View Contest<i class="fas fa-arrow-right ml-2"></i></a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="divider-h px-sm-5 px-4"></div>
+            
+              <div class="row no-gutters hover-grey py-4 px-sm-5 px-4">
+                <div class="li-left">
+                  <div class="mr-3">
+                    <div class="border-card py-3 px-4 t-align-c orange border-orange">
+                      <div class="extra-bold large-font">26</div>
+                      <div class="font-sm bold">JUNE</div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5 class="bold mb-1">APAT June 2019</h5>
+                    <div>Admission Contest</div>
+                  </div>
+                  <div class="row mx-0 align-items-center"></div>
+                </div>
+                <div class="t-align-r li-right">
+                  <div>
+                    <div><a href="#">Remind Me</a></div>
+                    <h6 class="mt-2"><a href="#" class="orange">View Contest<i class="fas fa-arrow-right ml-2"></i></a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="divider-h px-sm-5 px-4"></div>
+            
+              <div class="row no-gutters hover-grey py-4 px-sm-5 px-4">
+                <div class="li-left">
+                  <div class="mr-3">
+                    <div class="border-card py-3 px-4 t-align-c orange border-orange">
+                      <div class="extra-bold large-font">26</div>
+                      <div class="font-sm bold">JUNE</div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5 class="bold mb-1">APAT June 2019</h5>
+                    <div>Admission Contest</div>
+                  </div>
+                  <div class="row mx-0 align-items-center"></div>
+                </div>
+                <div class="t-align-r li-right">
+                  <div>
+                    <div><a href="#">Remind Me</a></div>
+                    <h6 class="mt-2"><a href="#" class="orange">View Contest<i class="fas fa-arrow-right ml-2"></i></a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="divider-h px-sm-5 px-4"></div>
+            
+              <div class="row no-gutters hover-grey py-4 px-sm-5 px-4">
+                <div class="li-left">
+                  <div class="mr-3">
+                    <div class="border-card py-3 px-4 t-align-c orange border-orange">
+                      <div class="extra-bold large-font">26</div>
+                      <div class="font-sm bold">JUNE</div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5 class="bold mb-1">APAT June 2019</h5>
+                    <div>Admission Contest</div>
+                  </div>
+                  <div class="row mx-0 align-items-center"></div>
+                </div>
+                <div class="t-align-r li-right">
+                  <div>
+                    <div><a href="#">Remind Me</a></div>
+                    <h6 class="mt-2"><a href="#" class="orange">View Contest<i class="fas fa-arrow-right ml-2"></i></a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="divider-h px-sm-5 px-4"></div>
+            
+              <div class="row no-gutters hover-grey py-4 px-sm-5 px-4">
+                <div class="li-left">
+                  <div class="mr-3">
+                    <div class="border-card py-3 px-4 t-align-c orange border-orange">
+                      <div class="extra-bold large-font">26</div>
+                      <div class="font-sm bold">JUNE</div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h5 class="bold mb-1">APAT June 2019</h5>
+                    <div>Admission Contest</div>
+                  </div>
+                  <div class="row mx-0 align-items-center"></div>
+                </div>
+                <div class="t-align-r li-right">
+                  <div>
+                    <div><a href="#">Remind Me</a></div>
+                    <h6 class="mt-2"><a href="#" class="orange">View Contest<i class="fas fa-arrow-right ml-2"></i></a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>          </div>
+          <div class="col-md-4 col-12">
+            <div class="border-card p-5 mb-5 mt-md-0 mt-5">
+              <div class="row mx-0 justify-content-between align-items-center">
+                <h4>Performance Graph</h4>
+                <div class="card-md">Past 6 Months</div>
+              </div>
+              <div class="bg-grey mt-4"></div>
+            </div>
+            <div class="c-hb-leaderboard">
+              <div class="border-card px-0 py-5">
+                <div class="pb-5 px-xl-5 px-md-3 px-5">
+                  <h4 class="mb-5 pt-2">Overall Leaderboard</h4>
+                  <div class="d-flex align-items-center my-4 justify-content-between">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-4">
+                        <div class="img-ring s-70x70">
+                          <img class="round w-100 h-100"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL43mSCo0MAu3fCgV8t6QRsNzyiatE_Har4TjE8M6NZ-i0tKDzA"
+                            alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-12 col-8 pl-lg-3 pl-md-0 pl-4">
+                        <div class="font-mds extra-bold mb-2 mt-lg-0 mt-md-2 mt-0">Siddharth Jain</div>
+                        <div>43000 Points</div>
+                      </div>
+                    </div>
+                    <div class="font-mdxl extra-bold">#1</div>
+                  </div>
+                  <div class="divider-h"></div>
+                  <div class="d-flex align-items-center my-4 justify-content-between">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-4">
+                        <div class="img-ring s-70x70">
+                          <img class="round w-100 h-100"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL43mSCo0MAu3fCgV8t6QRsNzyiatE_Har4TjE8M6NZ-i0tKDzA"
+                            alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-12 col-8 pl-lg-3 pl-md-0 pl-4">
+                        <div class="font-mds extra-bold mb-2 mt-lg-0 mt-md-2 mt-0">Honey Singh</div>
+                        <div>40000 Points</div>
+                      </div>
+                    </div>
+                    <div class="font-mdxl extra-bold">#2</div>
+                  </div>
+                  <div class="divider-h"></div>
+                  <div class="d-flex align-items-center mt-4 justify-content-between">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-4">
+                        <div class="img-ring s-70x70">
+                          <img class="round w-100 h-100"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL43mSCo0MAu3fCgV8t6QRsNzyiatE_Har4TjE8M6NZ-i0tKDzA"
+                            alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-md-12 col-8 pl-lg-3 pl-md-0 pl-4">
+                        <div class="font-mds extra-bold mb-2 mt-lg-0 mt-md-2 mt-0">Honey Singh</div>
+                        <div>40000 Points</div>
+                      </div>
+                    </div>
+                    <div class="font-mdxl extra-bold">#3</div>
+                  </div>
+                </div>
+                <table class="w-100">
+                  <thead class="font-sm extra-bold orange">
+                    <td class="pb-4 t-align-c">Rank</td>
+                    <td class="pb-4">User</td>
+                    <td class="pb-4">Score</td>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-gradient-orange white extra-bold">
+                      <td class="py-4">#40</td>
+                      <td class="py-4">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-4">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                    <tr class="hover-grey">
+                      <td class="py-3">01</td>
+                      <td class="py-3">
+                        <div class="img-desc align-items-center">
+                          <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                          <div class="description ml-3">
+                            Siddharth Jain
+                          </div>
+                        </div>
+                      </td>
+                      <td class="py-3">2345</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="divider-h w-90 mx-auto my-4"></div>
+                <div class="t-align-c bold mb-2">
+                  <a href="#">
+                    <i class="fas fa-angle-left mx-2"></i>
+                    <span>Prev</span>
+                  </a>
+                  <span class="regular mx-3">1-20 of 245</span>
+                  <a href="#">
+                    <span>Next</span>
+                    <i class="fas fa-angle-right mx-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>          </div>
+        </div>
+        <h4 class="t-align-c mb-5 mt-5">Practice Problems</h4>
+        <div class="row c-card-carousel">
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            <div class="border-card p-0">
+              <div class="bg-gradient-purple py-5 px-xl-5 px-md-3 px-4 all-center white">
+                <div>
+                  <div class="row justify-content-between no-gutters align-items-center">
+                    <div class="col-lg-10 col-md-9 col-10">
+                      <div>
+                        <h3 class="white-underline d-inline-block pb-3">Data Structures</h3>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-2">
+                      <img src="/images/stack" alt="Logo" class="" />
+                    </div>
+                  </div>
+                  <h4 class="bold mt-3">Birthday Candle</h4>
+                  <ul class="divided-list">
+                    <li class="pr-xl-3 pr-md-2 pr-3">
+                      <div class="list-heading extra-bold yellow">Hard</div>
+                      <div class="list-data">Dificulty</div>
+                    </li>
+                    <li class="px-xl-3 px-md-2 px-3">
+                      <div class="list-heading extra-bold yellow">345</div>
+                      <div class="list-data">Submissions</div>
+                    </li>
+                    <li class="pl-xl-3 pl-md-2 pl-3">
+                      <div class="list-heading extra-bold yellow">200</div>
+                      <div class="list-data">Max Pts</div>
+                    </li>
+                  </ul>
+                  <button class="button-solid button-white purple mt-3 float-right extra-bold">Continue</button>
+                </div>
+              </div>
+              <div class="align-items-center t-align-c px-xl-5 px-3 py-4">
+                <div class="font-mds bold">
+                  <span>Current Level : </span>
+                  <span class="orange">Level 0</span>
+                </div>
+                <div class="divider-h my-4"></div>
+                <div class="img-desc font-sm pt-2 all-center mt-4 mb-2">
+                  <div class="pr-0 col-2 col-lg-3 pl-2">
+                    <img src="/images/hexagon.jpg" alt="">
+                  </div>
+                  <div class="description ml-3 t-align-l col-lg-9 col-10 pl-0">
+                    <h3>Streak Master</h3>
+                    <span class="Font-sm mt-1">Solve 4 more DCB’s</span>
+                    <div class="row mx-0 mt-1">
+                      <div class="col-10 px-0">
+                        <progress value="35" max="100" class="w-90 d-inline-block"></progress>
+                      </div>
+                      <div class="col-2 px-0">
+                        <span class="extra-bold float-right">3/7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          </div>
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            <div class="border-card p-0">
+              <div class="bg-gradient-purple py-5 px-xl-5 px-md-3 px-4 all-center white">
+                <div>
+                  <div class="row justify-content-between no-gutters align-items-center">
+                    <div class="col-lg-10 col-md-9 col-10">
+                      <div>
+                        <h3 class="white-underline d-inline-block pb-3">Data Structures</h3>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-2">
+                      <img src="/images/stack" alt="Logo" class="" />
+                    </div>
+                  </div>
+                  <h4 class="bold mt-3">Birthday Candle</h4>
+                  <ul class="divided-list">
+                    <li class="pr-xl-3 pr-md-2 pr-3">
+                      <div class="list-heading extra-bold yellow">Hard</div>
+                      <div class="list-data">Dificulty</div>
+                    </li>
+                    <li class="px-xl-3 px-md-2 px-3">
+                      <div class="list-heading extra-bold yellow">345</div>
+                      <div class="list-data">Submissions</div>
+                    </li>
+                    <li class="pl-xl-3 pl-md-2 pl-3">
+                      <div class="list-heading extra-bold yellow">200</div>
+                      <div class="list-data">Max Pts</div>
+                    </li>
+                  </ul>
+                  <button class="button-solid button-white purple mt-3 float-right extra-bold">Continue</button>
+                </div>
+              </div>
+              <div class="align-items-center t-align-c px-xl-5 px-3 py-4">
+                <div class="font-mds bold">
+                  <span>Current Level : </span>
+                  <span class="orange">Level 0</span>
+                </div>
+                <div class="divider-h my-4"></div>
+                <div class="img-desc font-sm pt-2 all-center mt-4 mb-2">
+                  <div class="pr-0 col-2 col-lg-3 pl-2">
+                    <img src="/images/hexagon.jpg" alt="">
+                  </div>
+                  <div class="description ml-3 t-align-l col-lg-9 col-10 pl-0">
+                    <h3>Streak Master</h3>
+                    <span class="Font-sm mt-1">Solve 4 more DCB’s</span>
+                    <div class="row mx-0 mt-1">
+                      <div class="col-10 px-0">
+                        <progress value="35" max="100" class="w-90 d-inline-block"></progress>
+                      </div>
+                      <div class="col-2 px-0">
+                        <span class="extra-bold float-right">3/7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          </div>
+          <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+            <div class="border-card p-0">
+              <div class="bg-gradient-purple py-5 px-xl-5 px-md-3 px-4 all-center white">
+                <div>
+                  <div class="row justify-content-between no-gutters align-items-center">
+                    <div class="col-lg-10 col-md-9 col-10">
+                      <div>
+                        <h3 class="white-underline d-inline-block pb-3">Data Structures</h3>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-2">
+                      <img src="/images/stack" alt="Logo" class="" />
+                    </div>
+                  </div>
+                  <h4 class="bold mt-3">Birthday Candle</h4>
+                  <ul class="divided-list">
+                    <li class="pr-xl-3 pr-md-2 pr-3">
+                      <div class="list-heading extra-bold yellow">Hard</div>
+                      <div class="list-data">Dificulty</div>
+                    </li>
+                    <li class="px-xl-3 px-md-2 px-3">
+                      <div class="list-heading extra-bold yellow">345</div>
+                      <div class="list-data">Submissions</div>
+                    </li>
+                    <li class="pl-xl-3 pl-md-2 pl-3">
+                      <div class="list-heading extra-bold yellow">200</div>
+                      <div class="list-data">Max Pts</div>
+                    </li>
+                  </ul>
+                  <button class="button-solid button-white purple mt-3 float-right extra-bold">Continue</button>
+                </div>
+              </div>
+              <div class="align-items-center t-align-c px-xl-5 px-3 py-4">
+                <div class="font-mds bold">
+                  <span>Current Level : </span>
+                  <span class="orange">Level 0</span>
+                </div>
+                <div class="divider-h my-4"></div>
+                <div class="img-desc font-sm pt-2 all-center mt-4 mb-2">
+                  <div class="pr-0 col-2 col-lg-3 pl-2">
+                    <img src="/images/hexagon.jpg" alt="">
+                  </div>
+                  <div class="description ml-3 t-align-l col-lg-9 col-10 pl-0">
+                    <h3>Streak Master</h3>
+                    <span class="Font-sm mt-1">Solve 4 more DCB’s</span>
+                    <div class="row mx-0 mt-1">
+                      <div class="col-10 px-0">
+                        <progress value="35" max="100" class="w-90 d-inline-block"></progress>
+                      </div>
+                      <div class="col-2 px-0">
+                        <span class="extra-bold float-right">3/7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-8 col-12">
+            <div class="border-card py-5 px-lg-5 px-4 t-align-c">
+              <h4 class="mb-5 mt-2">Badges Earned</h4>
+              <div class="flex-row align-items-center px-2">
+                <span class="font-lg bold"><a href="#">〈</a></span>
+                <div class="row c-card-carousel mx-3 align-items-center">
+                  <div class="col-lg-4 col-md-6 col-sm-4 col-6 px-2">
+                    <div>
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                    <div class="mt-4">
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-4 col-6 px-2">
+                    <div>
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                    <div class="mt-4">
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-4 col-6 px-2">
+                    <div>
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                    <div class="mt-4">
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-4 col-6 px-2">
+                    <div>
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                    <div class="mt-4">
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-4 col-6 px-2">
+                    <div>
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                    <div class="mt-4">
+                      <img src="/images/hexagon.jpg" alt="Badge Logo" class="v-align-m w-30">
+                      <h5 class="mt-3">Data Structure</h5>
+                      <div class="card-md">Completed 10 DS Challenges</div>
+                      <div class="card-mds mt-2 grey">20 Feb 2018</div>
+                    </div>
+                  </div>
+                </div>
+                <span class="font-xl bold"><a href="#">〉</a></span>
+              </div>
+            </div>          </div>
+          <div class="col-md-4 col-12 mt-md-0 mt-5">
+            <div class="border-card py-5 px-4 bookmark">
+              <div class="row no-gutters justify-content-between align-items-center">
+                <div class="col-7">
+                  <h4 class="mb-2">Bookmarked Challenges</h4>
+                </div>
+                <div>
+                  <button class="button-solid button-orange font-sm extra-bold">View All</button>
+                </div>
+              </div>
+              <div class="mt-3 py-4">
+                <div class="row no-gutters align-items-center justify-content-between">
+                  <h5 class="bold mr-2">Birthday Cake Candle</h5>
+                  <h6><a href="#" class="orange">Solve<i class="fas fa-arrow-right ml-2"></i></a></h6>
+                </div>
+                <ul class="divided-list mt-3">
+                  <li class="pr-xl-2 pr-md-1 pr-2">
+                    <div class="list-heading extra-bold orange">Hard</div>
+                    <div class="list-data">Dificulty</div>
+                  </li>
+                  <li class="px-xl-2 px-md-1 px-2">
+                    <div class="list-heading extra-bold orange">345</div>
+                    <div class="list-data">Submissions</div>
+                  </li>
+                  <li class="pl-xl-2 pl-md-1 pl-2">
+                    <div class="list-heading extra-bold orange">200</div>
+                    <div class="list-data">Max Pts</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="divider-h"></div>
+              <div class="py-4">
+                <div class="row no-gutters align-items-center justify-content-between">
+                  <h5 class="bold mr-2">Birthday Cake Candle</h5>
+                  <h6><a href="#" class="orange">Solve<i class="fas fa-arrow-right ml-2"></i></a></h6>
+                </div>
+                <ul class="divided-list mt-3">
+                  <li class="pr-xl-2 pr-md-1 pr-2">
+                    <div class="list-heading extra-bold orange">Hard</div>
+                    <div class="list-data">Dificulty</div>
+                  </li>
+                  <li class="px-xl-2 px-md-1 px-2">
+                    <div class="list-heading extra-bold orange">345</div>
+                    <div class="list-data">Submissions</div>
+                  </li>
+                  <li class="pl-xl-2 pl-md-1 pl-2">
+                    <div class="list-heading extra-bold orange">200</div>
+                    <div class="list-data">Max Pts</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="divider-h"></div>
+              <div class="pt-4">
+                <div class="row no-gutters align-items-center justify-content-between">
+                  <h5 class="bold mr-2">Birthday Cake Candle</h5>
+                  <h6><a href="#" class="orange">Solve<i class="fas fa-arrow-right ml-2"></i></a></h6>
+                </div>
+                <ul class="divided-list mt-3">
+                  <li class="pr-xl-2 pr-md-1 pr-2">
+                    <div class="list-heading extra-bold orange">Hard</div>
+                    <div class="list-data">Dificulty</div>
+                  </li>
+                  <li class="px-xl-2 px-md-1 px-2">
+                    <div class="list-heading extra-bold orange">345</div>
+                    <div class="list-data">Submissions</div>
+                  </li>
+                  <li class="pl-xl-2 pl-md-1 pl-2">
+                    <div class="list-heading extra-bold orange">200</div>
+                    <div class="list-data">Max Pts</div>
+                  </li>
+                </ul>
+              </div>
+            </div>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/dukaan.css" rel="stylesheet">
+  <link href="stylesheets/online-cb.css" rel="stylesheet">
+  <link href="stylesheets/account.css" rel="stylesheet">
+  <link href="stylesheets/hb.css" rel="stylesheet">
+  <link href="stylesheets/hiringblocks.css" rel="stylesheet">
+  <link href="stylesheets/coding-blocks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://minio.codingblocks.com/motley/Gilroy.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.min.js"></script>
+  <script src="JS/radial-progress.js"></script>
+  <script src="JS/v2.js"></script>
+  <script type="text/javascript" src="JS/curtain.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+<header>
+	<nav class="main-nav">
+		<div class="nav-left">
+			<span class="hamburger-parent">
+				<i class="hamburger fas fa-bars"></i>
+			</span>
+			<span class="logo-parent">
+				<a class=" logo-link" href="/home.html">
+					<img src="images/online-logo.png" alt="online-logo" class="nav-logo pointer">
+				</a>
+			</span>
+		</div>
+
+		<div class="nav-right">
+			<div class="search-bar nav-search">
+				<input type="text" placeholder="Search here">
+			</div>
+
+			<ul class="nav-list dsp-none-sm">
+				<li class="nav-items pointer active">
+					About us
+				</li>
+				<li class="nav-items pointer">
+					All Courses
+				</li>
+				<li class="nav-items pointer">
+					Contact us
+				</li>
+
+				<li class="nav-items">
+
+					<i class="fas fa-bell notification"></i>
+
+					<div class="dropdown-ul c-notification">
+						<div class="dropdown-li row">
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
+
+						<div class="dropdown-li row">
+
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
+
+						<div class="dropdown-li row">
+
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
+
+						<div class="dropdown-li row">
+
+							<div class="notify-type col-2 justify-content-center align-items-center">
+								<div class="notify-icon">
+									<span class="notify-dot new"></span>
+									<img src="images/announcement.svg" alt="">
+								</div>
+							</div>
+							<div class="notify-text col-10">Please hard refresh (Ctrl Shift R) your web app to make sure that you are
+								on latest version of the app. We just deployed some major changes so that might be causing
+								issues for you.</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+
+			<div class="round-img">
+				<img src="/https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svgode-red.svg" alt="">
+			</div>
+
+
+
+			<div class="card">
+				<div class="top-offset"></div>
+				<div class="nav-info">
+					<div class="flex-row justify-content-end">
+						<span class="pointer red">MY PROFILE</span>
+					</div>
+					<div class="separator"></div>
+					<div class="flex-row justify-content-end faded">
+						<span class="pointer">LOGOUT</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+	<div class="sidebar sidebar-none">
+		<i class="close fas fa-times"></i>
+		<div class="upper-half">
+			<div class="round-img">
+			</div>
+			<div class="para">
+				Hello, Guest
+			</div>
+			<button class="button-solid" onclick="">Login</button>
+		</div>
+		<div class="lower-half">
+			<div class="para">
+				About Us
+			</div>
+			<div class="para">
+				All Courses
+			</div>
+			<div class="para">
+				Contact Us
+			</div>
+			<div class="para">
+				About Us
+			</div>
+			<div class="para">
+				All Courses
+			</div>
+			<div class="para">
+				Contact Us
+			</div>
+		</div>
+	</div>
+</header> 
+<div class="container pt-5">
+  <div class="border-card bg-gradient-black c-course-progress mb-4">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="img-desc mb-5">
+          <div class="col-4 col-md-3 pl-0 pr-5">
+            <img class="round round-img-b" src="/images/c++" alt="">
+          </div>
+
+          <div class="description">
+            <div>
+              <h2>
+                C++ Compelete Course
+              </h2>
+              <div class="font-mds">
+                Taught By: Prateek Narang, Deepak Aggarwal
+              </div>
+            </div>
+            <div class="red semi-bold font-mds">
+              Batch Ends 20 Mar 2019
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <strong class="font-md">Rate this course?</strong>
+          <div class="rating ml-3">
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="pos-rating">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="neg-rating">
+              <i class="fas fa-star"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1 dsp-md-none">
+        <div class="divider-v mx-auto"></div>
+      </div>
+      <div class="divider-h d-md-none"></div>
+
+      <div class="col-12 col-md-5 extra-bold">
+        <h4 class="mb-3">
+          Course Progress
+        </h4>
+
+
+        <div class="progress row no-gutters align-items-center mb-2">
+          <div class="progress col-10 col-md-11">
+            <progress max="100" value="25"></progress>
+          </div>
+          <div class="col-2 pl-3 col-md-1 font-md">
+            26%
+          </div>
+
+        </div>
+        <div class="row no-gutters justify-content-between mb-4">
+          <span class="font-mds extra-bold">12 of 46 Lectures Completed</span>
+          <button class="red font-sm regular">Reset Progress</button>
+        </div>
+
+        <div class="row no-gutters font-sm pt-3">
+          <div>
+            <button class="button-solid pr-4 pl-4 font-sm">Buy Now</button>
+          </div>
+          <div class="ml-3">
+            <button class="button-dashed pr-4 pl-4 font-sm">Resume</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-card">
+    <div class="col-12">
+      <div class="d-flex flex-wrap">
+        <div class="col-12 order-0 col-md-6">
+          <h3 class="">Your course has been expired!</h3>
+          <div class="grey">Buy extension for this course</div> 
+        </div>
+        <div class="col-6 order-1 t-align-l t-align-md-r">
+          <button class="button-solid">Buy Extension</button>
+        </div>
+
+        <div class="divider-h order-2 col-12 align-self-center my-4"></div>
+       
+        <div class="row w-100 order-3">
+          <div class="col-12 col-md-3 d-flex my-3">
+          <input class="mt-1" type="radio" name="extension">
+          <label class="ml-3" for="exampleCheck1">
+            <div class="font-mds bold">6 Month Extension </div>
+            <div class="grey">Expires 21 Aug 2020</div>
+            <div class="font-md red semi-bold mt-2">Rs. 1200</div>
+          </label>
+          </div>
+          <div class="col-12 col-md-3 d-flex my-3">
+            <input class="mt-1" type="radio" name="extension">
+            <label class="ml-3" for="exampleCheck1">
+              <div class="font-mds bold">6 Month Extension </div>
+              <div class="grey">Expires 21 Aug 2020</div>
+              <div class="font-md red semi-bold mt-2">Rs. 1200</div>
+            </label>
+          </div>
+          <div class="col-12 col-md-3 d-flex my-3">
+            <input class="mt-1" type="radio" name="extension">
+            <label class="ml-3" for="exampleCheck1">
+              <div class="font-mds bold">6 Month Extension </div>
+              <div class="grey">Expires 21 Aug 2020</div>
+              <div class="font-md red semi-bold mt-2">Rs. 1200</div>
+            </label>
+          </div>
+          <div class="col-12 col-md-3 d-flex my-3">
+            <input class="mt-1" type="radio" name="extension">
+            <label class="ml-3" for="exampleCheck1">
+              <div class="font-mds bold">6 Month Extension </div>
+              <div class="grey">Expires 21 Aug 2020</div>
+              <div class="font-md red semi-bold mt-2">Rs. 1200</div>
+            </label>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row pt-3">
+    <div class="col-12 col-md-3">
+      <div class="br-15 bottom-nav bg-light-grey p-3">
+        <ul class="row m-0 font-md justify-content-between">
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="dsp-none-md col-9 b-bottom py-4">Dashboard</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <i class="fa fa-list" aria-hidden="true"></i>
+            </div>
+            <div class="dsp-none-md col-9 b-bottom py-4">About Course</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <img src="images/support.svg" alt="">
+            </div>
+            <div class="dsp-none-md col-9 b-bottom py-4">Doubts</div>
+          </li>
+          <li class="col-3 col-sm-2 col-md-12 row align-items-center">
+            <div class="col-md-3 col-12 pr-3">
+              <img src="images/docs.svg" alt="">
+            </div>
+            <div class="dsp-none-md col-9 b-bottom py-4">Curriculum</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="c-leaderboard border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Contest Leaderboard</h4>
+        <table class="w-100">
+          <thead class="font-sm red extra-bold">
+            <td class="pb-4">Rank</td>
+            <td class="pb-4">User</td>
+            <td class="pb-4">College</td>
+            <td class="pb-4">Score</td>
+          </thead>
+          <tbody>
+            <tr class="extra-bold">
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">PEC, Chandigarh</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+            <tr>
+              <td class="pb-4 pt-2">01</td>
+              <td class="pb-4 pt-2">
+                <div class="img-desc align-items-center">
+                  <img class="round s-30x30" src="/images/placeholder.gif" alt="">
+                  <div class="description ml-3">
+                    Siddharth Jain
+                  </div>
+                </div>
+              </td>
+              <td class="pb-4 pt-2">JSS Noida</td>
+              <td class="pb-4 pt-2">2345</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="c-announcements border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-4">Course Announcements</h4>
+        <div class="list-divided border-none">
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="row no-gutters justify-content-between">
+              <div class="img-desc align-items-center">
+                <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+                <div class="description ml-3">
+                  <h6>Siddharth Jain</h6>
+                  <span class="card-md grey">2 hours ago</span>
+                </div>
+              </div>
+              <div>
+                <span class="red card-md mr-3">3 Replies</span>
+                <button class="button-solid card-md">Reply</button>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+          <div class="pt-4 mb-2 pb-3">
+            <div class="img-desc align-items-center">
+              <img src="/images/placeholder.gif" alt="" class="round s-30x30">
+              <div class="description ml-3">
+                <h6>Siddharth Jain <span class="tag red card-md ml-2">Mentor</span></h6>
+                <span class="card-md grey">2 hours ago</span>
+              </div>
+            </div>
+            <p class="overflow-hidden">
+              Attend webinar here - https://attendee.gotowebinar.com/register/163413109527138562
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Summary</h4>
+
+        <p class="grey">
+          Our Android Development online course facilitates and boosts your journey right from the fundamentals of UI to building
+          a full-fledged Android app. This online course by Coding Blocks with over 100 recorded videos and 5 live webinars,
+          covers the concepts such as UI design, firebase & push notifications, hardware sensors, networking, and databases.
+          interactive applications.
+        </p>
+
+        <p class="mt-4">
+          Major Topics Covered
+        </p>
+        
+        <div class="row">
+          <div class="pill m-2">Flow Charts</div>
+          <div class="pill m-2">Conditionals and Loops</div>
+          <div class="pill m-2">Strings</div>
+          <div class="pill m-2">Operators and Patterns</div>
+          <div class="pill m-2">Operators and Patterns</div>
+          <div class="pill m-2">Functions</div>
+        </div>
+      </div>
+
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4>Mentors</h4>
+        Know your Mentors for this course
+
+        <div class="divider-h mt-5 mb-5"></div>
+
+        <div class="img-desc row no-gutters mb-5">
+          <div class="col-3 pr-4">
+            <img class="round" src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="">
+        
+          </div>
+          <div class="description col-8">
+            <div class="heading-d">
+              <h6 class="bold">
+                Prateek Narang
+              </h6>
+              <div class="mb-3">
+                Founding Member, Coding Blocks
+              </div>
+              <div class="card-md">
+                Coding Blocks is pleased to bring you the ultimate competitive programming course,
+                hand
+                crafted Coding Blocks is pleased to bring you the ultimate competitive programming
+                course, hand crafted
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        <div class="img-desc row no-gutters">
+          <div class="col-3 pr-4">
+            <img class="round" src="https://minio.codingblocks.com/amoeba/1008db10-135f-4b2b-a65a-5eee36be2171.svg" alt="">
+        
+          </div>
+          <div class="description col-8">
+            <div class="heading-d">
+              <h6 class="bold">
+                Prateek Narang
+              </h6>
+              <div class="mb-3">
+                Founding Member, Coding Blocks
+              </div>
+              <div class="card-md">
+                Coding Blocks is pleased to bring you the ultimate competitive programming course,
+                hand
+                crafted Coding Blocks is pleased to bring you the ultimate competitive programming
+                course, hand crafted
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="border-card p-4 p-sm-5 mb-5">
+        <h4 class="mb-5">Course Introduction</h4>
+
+        <div class="bold mb-3">Lectures</div>
+        <div class="grey card-md mb-4">
+          • 2 to 3 lectures will be released every week.
+          <br>
+          • There are In-Class Quizzes, Assignments, Notes along with Lecture Videos in a lecture. You should attempt them all to
+          master each section that you study.
+          <br>
+          • You should complete the lectures within the week.
+        </div>
+
+        <div class="bold mb-3">Assignments and Tests</div>
+        <div class="grey card-md mb-4">
+          • After almost every lecture there will be one assignment.
+          <br>
+          • Assignments will have deadlines. Submissions after deadline will be subject to penalty (Penalty procedure is explained
+          separately).
+          <br>
+          • Apart from assignments there will be frequent tests analysing your concepts and understanding.
+        </div>
+
+        <div class="bold mb-3">Teaching Assistants and Doubts Resolution</div>
+        <div class="grey card-md mb-4">
+          • Apart from instructors taking the course, there are teaching assistants in the course who will be taking your doubts.
+          <br>
+          • You can ask doubt on any content that you are facing problem at, be it a video or a question. There is an “Ask Doubt”
+          button on the top right corner to raise your doubt.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-3">
+      <div class="border-card border-none bg-light-green mb-5 white">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <strong class="font-md">Join Whatsapp Group</strong>
+      </div>
+      <div class="c-certificate border-card border-none mb-5 white">
+        <div class="row justify-content-between no-gutters">
+          <div class="img-desc font-mds">
+            <div class="col-2">
+              <img src="/images/placeholder.gif" alt="">
+            </div>
+            <div class="description">
+              <span>Generate</span>
+              <span>Certificate</span>
+            </div>
+          </div>
+          <button class="button-solid">
+            <i class="fas fa-lock"></i>
+            Generate
+          </button>
+        </div>
+        <div class="divider-h bg-white my-4"></div>
+
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
+        </div>
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
+        </div>
+        <div class="img-desc my-3 align-items-center">
+          <div class="tick s-30x30 bg-white round mr-3"></div>
+          <div class="description">
+            <span>Course</span>
+            <span>Completion: 90%+</span>
+          </div>
+        </div>
+        <img class="stamp" src="/images/stamp.png" alt="Coding Blocks Pvt Ltd">
+      </div>
+      <div class="border-card extra-bold font-mds border-none bg-gradient-black-bt mb-5">
+        <p class="white">
+          Get recruited by top multinational
+          companies and get worldwide
+          recongnition!
+        </p>
+        <p class="red">
+          Complete this course now & Apply
+          to jobs on Hiring Blocks
+        </p>
+
+        <button class="button-solid">Resume</button>
+      </div>
+      <div class="border-card mb-5">
+        <h4>Teaching Assistants</h4>
+        Know your TA’s for this course
+
+        <div class="divider-h mt-4 mb-4"></div>
+
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+        <div class="img-desc align-items-center mb-4">
+          <img src="/images/placeholder.gif" alt="" class="round s-60x60">
+          <div class="description ml-3">
+            <h6>Siddharth Jain</h6>
+            <span class="card-md grey">sidjain2901@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-card mb-5">
+        <h4>Course FAQ's</h4>
+
+        <div class="divider-h mt-4 mb-4"></div>
+        
+        <div class="bold">
+          When do I complete an Assignment?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete an assignment when you have attempted at least 80% of MCQ problems and you score an average of at least 80%
+          in code problems, within an assignment.
+        </p>
+
+        <div class="bold">
+          When do I complete a Lecture?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete a lecture when you have attempted at least 80% of objective problems, have scored at least 80% in each code
+          problems, and have seen at least 80% of the total videos, within a lecture.
+        </p>
+
+        <div class="bold">
+          When do I complete a Test?
+        </div>
+        <p class="card-md grey mb-4">
+          You complete a test when you have submitted the test.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

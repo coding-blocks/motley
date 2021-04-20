@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/dukaan.css" rel="stylesheet">
+  <link href="stylesheets/online-cb.css" rel="stylesheet">
+  <link href="stylesheets/account.css" rel="stylesheet">
+  <link href="stylesheets/hb.css" rel="stylesheet">
+  <link href="stylesheets/hiringblocks.css" rel="stylesheet">
+  <link href="stylesheets/coding-blocks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://minio.codingblocks.com/motley/Gilroy.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.min.js"></script>
+  <script src="JS/radial-progress.js"></script>
+  <script src="JS/v2.js"></script>
+  <script type="text/javascript" src="JS/curtain.js"></script>
+</head>
+
+<body>
+  <div class="code-window flex-col">
+  <div class="d-flex white bg-dark-grey align-items-center justify-content-between py-4 w-100 code-window__top-bar tl">
+    <div class="col-xl-7 col-lg-6 col-md-5 col-sm-7 col-4 offset-md-1">
+      <h2>CodSULE - May 2019</h2>
+      <div class="font-sm text-ellipses">This is a timed contest for 1 hour. You have just one chance to attempt this
+        test.</div>
+    </div>
+    <div class="mr-3">
+      <ul class="divided-list timer font-xs d-inline">
+        <li class="timer-item pr-md-3 pr-2">
+          <div class="list-heading font-xl bold">00</div>
+          <div class="list-data">Days</div>
+        </li>
+        <li class="timer-item pr-md-3 pr-2">
+          <div class="list-heading font-xl bold">12</div>
+          <div class="list-data">Hours</div>
+        </li>
+        <li class="timer-item pr-md-3 pr-2">
+          <div class="list-heading font-xl bold">30</div>
+          <div class="list-data">Minutes</div>
+        </li>
+        <li class="timer-item pr-md-3 pr-2 d-md-block d-none">
+          <div class="list-heading font-xl bold">05</div>
+          <div class="list-data">Seconds</div>
+        </li>
+      </ul>
+      <button class="button-solid button-orange font-sm extra-bold ml-md-4 ml-2">Submit Test</button>
+    </div>
+  </div>
+  <div class="row no-gutters flex-1">
+    <div class="col-1 bg-dark-grey code-window__side-bar bl h-100 px-0 t-align-c d-none d-md-block">
+      <div class="white py-xl-3 py-5 code-window__logo">
+        <i class="fab fa-slack fa-4x mt-xl-4"></i>
+      </div>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg green">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-xl-3 font-mds"></i>
+        <span class="font-xl extra-bold">01</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4 active">
+        <span class="font-lg orange">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-xl-3 font-mds"></i>
+        <span class="font-xl extra-bold">02</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg red">&#10625;</span>
+        <i class="fas fa-puzzle-piece mx-1 mx-xl-3 font-mds"></i>
+        <span class="font-xl extra-bold">03</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg">&#10625;</span>
+        <i class="fas fa-code mx-1 mx-xl-3 font-mds"></i>
+        <span class="font-xl extra-bold">04</span>
+      </a>
+      <a href="#" class="white d-block v-align-ma py-4">
+        <span class="font-lg green">&#10625;</span>
+        <i class="fas fa-puzzle-piece mx-1 mx-xl-3 font-mds"></i>
+        <span class="font-xl extra-bold">05</span>
+      </a>
+    </div>
+    <div class="col-md-11 col-12 offset-md-1">
+      <div class="row no-gutters overflow-hidden code-window__code-area">
+        <div class="col-12 p-xl-5 p-4 position-relative h-100 overflow-y-auto">
+          <div class="row no-gutters justify-content-between">
+            <div class="col-lg-6 col-5 word-wrap">
+              <div class="font-mds">Problem 2</div>
+              <h4>Birthday Cake Candle</h4>
+            </div>
+            <div>
+              <ul class="divided-list t-align-r mt-0">
+                <li class="px-3">
+                  <h4 class="orange">Hard</h4>
+                  <div class="list-data font-mds">Dificulty</div>
+                </li>
+                <li class="px-3">
+                  <h4 class="orange">200</h4>
+                  <div class="list-data font-mds">Max Points</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider-h mt-2"></div>
+          <div class="row no-gutters mt-3">
+            <div class="tab-nav-underline w-100 justify-content-start">
+              <div class="tab active pr-5 pl-0">Problem</div>
+              <div class="tab px-5">Submissions</div>
+            </div>
+            <div class="py-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                gravida. Risus
+              </p>
+              <img src="https://www.mymaldives.com.au/wp-content/uploads/sites/11/2016/12/Beach-Banner.jpg"
+                alt="Cover-Image" class="mt-4">
+            </div>
+            <div class="divider-h my-5"></div>
+            <div class="tab-nav-underline w-100 justify-content-start bg-grey">
+              <div class="tab py-4 px-5">HTML</div>
+              <div class="tab py-4 px-5">CSS</div>
+              <div class="tab py-4 px-5">Java Script</div>
+              <div class="tab py-4 px-5">Console</div>
+              <div class="tab py-4 px-5">Result</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

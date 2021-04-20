@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/dukaan.css" rel="stylesheet">
+  <link href="stylesheets/online-cb.css" rel="stylesheet">
+  <link href="stylesheets/account.css" rel="stylesheet">
+  <link href="stylesheets/hb.css" rel="stylesheet">
+  <link href="stylesheets/hiringblocks.css" rel="stylesheet">
+  <link href="stylesheets/coding-blocks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://minio.codingblocks.com/motley/Gilroy.ttf" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="JS/bootstrap.min.js"></script>
+  <script src="JS/radial-progress.js"></script>
+  <script src="JS/v2.js"></script>
+  <script type="text/javascript" src="JS/curtain.js"></script>
+</head>
+
+<body>
+  <!--
+INPUT TEXT
+
+* Use "icon" class to show icon for input
+-->
+
+<h3>Normal Input</h3>
+<input type="text" class="input-text" placeholder="Enter Username">
+
+<h3>Input with Icon</h3>
+<input type="text" class="input-text icon fingerprint-bg" placeholder="Enter Username">
+
+<h3>Input non rounded</h3>
+<div class="right-input">
+	<span class="bold font-sm dark-grey">Press Enter</span>
+	<input type="text" class="input-text input-text--non-rounded" placeholder="Search problems by name">
+</div>
+
+<h3>Input with Overlay Button</h3>
+<div class="input-btn">
+	<input type="text" class="input-text" placeholder="Enter Username">
+	<button class="grey">Forgot?</button>
+</div>
+
+
+<!--
+INPUT CHECKBOX
+-->
+
+<h3>Checkbox</h3>
+
+<label class="input-checkbox checkbox-tick" for="tick">
+	<input type="checkbox" id="tick"> Click to Tick
+	<span></span>
+</label>
+
+<label class="input-checkbox checkbox-solid" for="solid">
+	<input type="checkbox" id="solid"> Click to Fill
+	<span></span>
+</label>
+
+<label class="input-checkbox gradient-tick" for="gradient">
+	<input type="checkbox" id="gradient"> Click to Tick
+	<span></span>
+</label>
+
+
+<br>
+<br>
+
+<label class="input-checkbox toggle" for="toggle-2">
+	<input type="checkbox" id="toggle-2">
+	<span class="inactive-text">Inactive</span>
+	<span class="checkbox"></span>
+	<span class="active-text">Active</span>
+</label>
+
+<br>
+<br>
+
+<!--
+INPUT RADIO BUTTONS
+-->
+
+<h3>Radiobuttons</h3>
+
+<div>
+	<label for="radio-a" class="input-radio gradient-input d-block">
+		<input type="radio" name="group-2" id="radio-a">Option1
+		<span></span>
+	</label>
+	<label for="radio-b" class="input-radio gradient-input d-block">
+		<input type="radio" name="group-2" id="radio-b">Option2
+		<span></span>
+	</label>
+	<label for="radio-c" class="input-radio gradient-input d-block">
+		<input type="radio" name="group-2" id="radio-c">Option3
+		<span></span>
+	</label>
+</div>
+
+<h3>Radiobuttons Checked</h3>
+
+<div>
+	<label for="radio-h" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-h">Option1
+		<span></span>
+	</label>
+	<label for="radio-i" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-i">Option2
+		<span></span>
+	</label>
+	<label for="radio-j" class="input-radio checked-input d-block">
+		<input type="radio" name="group-5" id="radio-j">Option3
+		<span></span>
+	</label>
+</div>
+
+<h3>Radiobuttons Gradient Checked</h3>
+
+<div>
+	<label for="radio-x" class="input-radio gradient-checked-input d-block">
+		<input type="radio" name="group-5" id="radio-x">Option1
+		<span></span>
+	</label>
+	<label for="radio-y" class="input-radio gradient-checked-input d-block">
+		<input type="radio" name="group-5" id="radio-y">Option2
+		<span></span>
+	</label>
+	<label for="radio-z" class="input-radio gradient-checked-input d-block">
+		<input type="radio" name="group-5" id="radio-z">Option3
+		<span></span>
+	</label>
+</div>
+
+<h3>Radiobuttons toggle</h3>
+
+<div>
+	<label for="radio-1">
+		<input type="radio" name="radio-toggle" id="radio-1" value="1">
+		Option1
+	</label>
+</div>
+
+
+
+<h3>Select Lists</h3>
+
+<div class="d-flex">
+	<div class="col-4">
+		<div class="select-container">
+			<select name="slct" id="slct" class="pb-4 underline-select">
+				<option selected disabled hidden>Choose an option</option>
+				<option value="1" class="py-2">Pure CSS</option>
+				<option value="2" class="py-2">No JS</option>
+				<option value="3" class="py-2">Nice!</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class="d-flex my-5 a-ocb">
+	<div class="col-4">
+		<div class="select-container">
+			<select name="slct" id="slct" class="rounded-select">
+				<option selected disabled hidden>Choose an option</option>
+				<option value="1" class="py-2">Pure CSS</option>
+				<option value="2" class="py-2">No JS</option>
+				<option value="3" class="py-2">Nice!</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+
+<div class="d-flex my-5">
+	<div class="col-4">
+		<div class="search-bar">
+			<input type="text" placeholder="Search Here">
+			<i class="fas fa-search icon"></i>
+		</div>
+	</div>
+
+	<div class="col-4">
+		<div class="search-bar search-bar--inverted">
+			<input type="text" placeholder="Search Here">
+			<i class="fas fa-search icon"></i>
+		</div>
+	</div>
+</div>
+
+<button class="a-cbm">
+	<div class="button-secondary" id="multiple-entry-toggle">
+		Pitampura
+	</div>
+</button>
+</body>
+
+</html>
