@@ -1,0 +1,9 @@
+// Delete this css file once V2 is launched
+
+.syllabus-grid-section {
+  .syllabus-grid-card:nth-child(2n-1) {
+    .card {
+      background-color: $grey-light-3;
+    }
+  }
+}
