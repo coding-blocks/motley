@@ -1,5 +1,7 @@
 # Motley
 [![Build Status](https://travis-ci.org/coding-blocks/motley.svg?branch=master)](https://travis-ci.org/coding-blocks/motley)
+[![downloads](https://img.shields.io/npm/dm/@coding-blocks/motley)](https://www.npmjs.com/package/@coding-blocks/motley)
+[![npm version](https://badge.fury.io/js/%40coding-blocks%2Fmotley.svg)](https://badge.fury.io/js/%40coding-blocks%2Fmotley)
 
 This project is just a bundle of common CSS that we use accross our frontend applications at Coding Blocks. It is based on [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) architecture and written using [Sass](https://sass-lang.com/). The purpose of this project is to make process of developing HTML and CSS loosely coupled with actual frontend project to allow easy contribution and scalability in terms of development effort.
 
