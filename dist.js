@@ -12,7 +12,7 @@ config.applications.map(app => {
   const outFileMin = `dist/${app}/app.min.css`
 
   if (!fs.existsSync(`dist/${app}`)){
-    fs.mkdirSync(`dist/${app}`)
+    fs.mkdirSync(`dist/${app}`, { recursive: true })
   }
 
   writeToDisc(sass.renderSync({file}), outFile)
