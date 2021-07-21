@@ -241,3 +241,60 @@
     }
   }
 }
+
+
+
+.certificate-nagarro{
+  height: 600px;
+  width: 900px;
+  .heading{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 4.5em;
+    font-weight: 800;
+    color: rgba(53, 75, 91, 1);
+  }
+  .subheading{
+    font-size: 1.4em;
+    margin-left: 50px;
+    padding-top:15px;
+    font-weight: 600;
+    color: #ED7235;    
+  }
+  .presented{
+    font-size: 1em;
+    padding-top: 25px;
+    margin-left: 50px;
+  }
+  .person{
+    font-size:2em;
+    padding-top: 25px;
+    margin-left: 50px;
+    letter-spacing: 0.01em;
+    color: rgba(19, 41, 75, 1);
+  }
+  .description{
+    padding-top: 15px;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  .sign{
+    margin-left: 30px;
+    width: 300;
+  }
+
+  .date{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-top: 90px;
+    padding-right:110px ;
+  }
+  .sign-img{
+    height: 140px;
+    size: 30%;
+  }
+}
