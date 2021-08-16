@@ -4,7 +4,7 @@
 
 // BORDERS DIRECTIONS
 .border {
-  border: solid 1px $search-box-color;
+  border: solid 1px $border-divider;
 }
 
 .border-2 {
@@ -13,7 +13,7 @@
 
 @each $direction in ('top', 'right', 'bottom', 'left') {
   .border-#{$direction} {
-    border-#{$direction}: solid 1px $search-box-color;
+    border-#{$direction}: solid 1px $border-divider;
   }
 }
 

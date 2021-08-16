@@ -1,8 +1,8 @@
 .card {
   border-radius: 5px;
   padding: 30px;
-  border: solid 1px $grey-light-3;
   position: relative;
+  background: $background-main-4;
 
   &--equal-height {
     height: 100%;

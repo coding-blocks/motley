@@ -1,9 +1,14 @@
+// GLOBALS
+$global-font-text-color: $white;
+
 // PALETTE SOLIDS
 
 // Neutral colors
 $black: #08090c;
-$grey-dark-2: #15171e;
 $grey-dark-1: #1a1c25;
+$grey-dark-2: #15171e;
+$grey-dark-3: #1c1e25;
+$grey-dark-4: #1F222C;
 $grey: #3b4254;
 $grey-light-1: #cccccc;
 $grey-light-2: #e0e0e0;
@@ -38,6 +43,17 @@ $pink-dark-2: #a6076c;
 $pink-dark-1: #bf1f68;
 $pink: #d93764;
 $pink-light-1: #f24f60;
+
+//THEME BACKGROUNDS SOLIDS: Modify these to change the theme
+
+$background-main: $grey-dark-2;
+$background-main-1: $grey-dark-1;
+$background-main-2: $grey-dark-2;
+$background-main-3: $grey-dark-3;
+$background-main-4: $grey-dark-4;
+$background-main-5: $black;
+
+$border-divider: rgba(255, 255, 255, 0.1);
 
 // PALETTE GRADIENTS
 
@@ -75,6 +91,11 @@ $button-gradient-blue: linear-gradient(90deg, #2167e3, #258ee8, #2167e3);
 
 $solid-color-list: (
   "black": $black,
+  "background-main": $background-main,
+  "background-main-1": $background-main-1,
+  "background-main-2": $background-main-2,
+  "background-main-3": $background-main-3,
+  "background-main-4": $background-main-4,
   "grey-dark-2": $grey-dark-2,
   "grey-dark-1": $grey-dark-1,
   "grey": $grey,

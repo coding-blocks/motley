@@ -18,7 +18,7 @@
 }
 
 .stroke-font {
-  -webkit-text-stroke: 1px rgba(41, 47, 61, 0.8);
+  -webkit-text-stroke: 1px $white;
   color: rgba($color: #ffffff, $alpha: 0);
 
   &--white {

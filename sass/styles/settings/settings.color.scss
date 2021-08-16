@@ -57,6 +57,7 @@ $default-border: #ccc;
 $nav-border: #f6f6f6;
 $vp-border: #676767;
 $border: rgba(225, 225, 225, 0.75);
+$border-divider: #f2f2f2;
 
 $vp-background: #252525;
 $editor-background: #2e2e2e;
@@ -183,6 +184,8 @@ $pill-dashed-text-color: $salmon;
 $input-text-background-color: $hover-grey;
 
 //Background Colors
+$background-main: $white;
+
 $bg-color-list: (
   "orange": $orange,
   "green": $green,

@@ -12,6 +12,7 @@
 body {
   @include font($global-font-family, inherit, normal);
 
+  background: $background-main;
   padding-top: 70px;
 }
 
