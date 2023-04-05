@@ -7,6 +7,18 @@
   border: solid 1px $border-divider;
 }
 
+@each $screen-width, $value in ('sm': 576px, 'md': 768px, 'lg': 992px, 'xl': 1200px, 'xxl': 1400px) {
+  @media screen and(min-width: $value) {
+    .border-#{$screen-width} {
+      border: solid 1px $border-divider;
+    }   
+
+    .border-#{$screen-width}-none {
+      border: none !important;
+    }   
+  }
+}
+
 .border-2 {
   border-width: 2px !important;
 }
@@ -14,6 +26,14 @@
 @each $direction in ('top', 'right', 'bottom', 'left') {
   .border-#{$direction} {
     border-#{$direction}: solid 1px $border-divider;
+  }
+
+  @each $screen-width, $value in ('sm': 576px, 'md': 768px, 'lg': 992px, 'xl': 1200px, 'xxl': 1400px) {
+    @media screen and(min-width: $value) {
+      .border-#{$direction}-#{$screen-width} {
+        border-#{$direction}: solid 1px $border-divider !important;
+      }
+    }
   }
 }
 
