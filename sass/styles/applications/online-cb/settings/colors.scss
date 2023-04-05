@@ -1,11 +1,35 @@
 $grey: #666;
+$grey-2: #BDBDBD;
+
 $border-grey: #2b2f37;
+$border-divider: #2C2D30;
+$global-font-text-color: $white;
+
+$background-main: #15171E;
+$background-main-1: #08090C;
+$background-main-2: #151712;
+$background-main-3: #1E212B;
+
+$hover-grey: #08090C;
 
 //Text Colors
 $text-color-list: map-merge(
   $text-color-list,
   (
     "grey": $grey,
+    "grey-2": $grey-2,
     "dark-orange": $orange,
+  )
+);
+
+//BACKGROUND COLORS
+$bg-color-list: map-merge(
+  $bg-color-list,
+  (
+    "grey": $grey,
+    "background-main": $background-main,
+    "background-main-1": $background-main-1,
+    "background-main-2": $background-main-2,
+    "background-main-3": $background-main-3
   )
 );
