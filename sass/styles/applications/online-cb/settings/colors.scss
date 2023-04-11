@@ -1,5 +1,6 @@
 $grey: #666;
 $grey-2: #BDBDBD;
+$grey-3: #828282;
 
 $border-grey: #2b2f37;
 $border-divider: #2C2D30;
@@ -12,12 +13,15 @@ $background-main-3: #1E212B;
 
 $hover-grey: #08090C;
 
+$gradient-pink: linear-gradient(180deg, #BB6BD9 0%, #7F39AD 100%);
+
 //Text Colors
 $text-color-list: map-merge(
   $text-color-list,
   (
     "grey": $grey,
     "grey-2": $grey-2,
+    "grey-3": $grey-3,
     "dark-orange": $orange,
   )
 );
@@ -33,3 +37,8 @@ $bg-color-list: map-merge(
     "background-main-3": $background-main-3
   )
 );
+
+$gradient-map: map-merge(
+  $gradient-map,  
+  ("gradient-pink-2": $gradient-pink )
+)

@@ -2,7 +2,7 @@
 .divider-h {
   @include dimensions(100%, 1px);
 
-  background: $card-box-border;
+  background: $border-divider;
 
   &.content-divider {
     background-clip: content-box !important;
@@ -13,5 +13,5 @@
 .divider-v {
   @include dimensions(1px, 100%);
 
-  background: $card-box-border;
+  background: $border-divider;
 }
