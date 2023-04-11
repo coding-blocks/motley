@@ -1,39 +1,39 @@
 progress {
-  @include dimensions(100%, 10px);
+  @include dimensions(100%, 7px);
   @include border-radius(7px);
 
   display: block;
-  background-color: $nav-border;
+  background-color: $grey-dark;
 }
 
 progress::-moz-progress-bar {
   @include border-radius(7px);
 
   display: block;
-  background-color: $faded-cont;
+  background-color: $grey-dark;
 }
 
 progress::-webkit-progress-bar {
-  @include dimensions(100%, 10px);
+  @include dimensions(100%, 7px);
   @include border-radius(7px);
 
   display: block;
-  background-color: $nav-border;
+  background-color: $grey-dark;
 }
 
 progress::-ms-fill {
-  @include dimensions(100%, 10px);
+  @include dimensions(100%, 7px);
   @include border-radius(7px);
 
   display: block;
-  background-color: $faded-cont;
+  background-color: $grey-dark;
 }
 
 progress::-webkit-progress-value {
   @include border-radius(7px);
 
   display: block;
-  background-color: $faded-cont;
+  background-color: $grey-dark;
 }
 
 .progress-lock {
